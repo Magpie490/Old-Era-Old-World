@@ -1,0 +1,66 @@
+
+uses_theocratic_feudal = {
+	OR={
+		AND = {
+			OR = {
+				culture_group = tibetan_group
+			}
+			religion_group = buddhist_group
+		}
+		has_religion_feature = religion_monastic
+	}
+	NOT = {
+		has_religion_feature = religion_ritual_sacrifice
+	}
+}
+neoziamet_government_trigger = {
+	religion_group = muslim
+	OR = {
+		AND = {
+			culture = turkish
+			year = 1200
+		}
+		culture_group = byzantine
+		culture_group = south_slavic
+	}
+}
+makhzen_government_trigger = {
+	religion_group = muslim
+	OR = {
+		culture = maghreb_arabic
+		culture = andalusian_arabic
+		culture_group = iberian
+	}
+}
+iqta_religion_trigger = {
+	religion_group = muslim
+	NOT = {
+		culture = maghreb_arabic
+		culture = andalusian_arabic
+		culture_group = iberian
+		AND = {
+			culture = turkish
+			year = 1200
+		}
+		culture_group = byzantine
+		culture_group = south_slavic
+	}
+}
+confederation_title_trigger = {
+	OR = {
+		title = e_hre
+	}
+}
+isnt_forced_to_theocracy = {
+	trigger_if = {
+		limit = { controls_religion = yes }
+		OR = {
+			religion_group = muslim
+			has_religion_feature = religion_temporal_head
+			AND = {
+				has_religion_features = no
+				is_reformed_religion = yes
+			}
+		}
+	}
+}
