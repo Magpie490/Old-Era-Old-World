@@ -1,12 +1,7 @@
 
 uses_theocratic_feudal = {
 	OR={
-		AND = {
-			OR = {
-				culture_group = tibetan_group
-			}
-			religion_group = buddhist_group
-		}
+		religion = buddhist
 		has_religion_feature = religion_monastic
 	}
 	NOT = {

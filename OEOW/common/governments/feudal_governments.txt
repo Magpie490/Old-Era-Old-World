@@ -462,7 +462,7 @@ feudal_governments = {
 		capital_move_delay = 600
 	}
 	theocratic_feudal_government = {
-		preferred_holdings = { CASTLE TEMPLE }
+		preferred_holdings = { CASTLE }
 		allowed_holdings = { 
 			CASTLE 
 			TEMPLE
@@ -509,7 +509,6 @@ feudal_governments = {
 				is_government_potential = roman_imperial_government
 				is_government_potential = order_government
 				is_government_potential = viceroyal_government
-				is_government_potential = viceroyal_government
 				is_government_potential = chinese_imperial_government
 				is_government_potential = confederation_government
 				is_government_potential = communal_government
@@ -518,7 +517,6 @@ feudal_governments = {
 			}
 			isnt_forced_to_theocracy = yes
 			uses_theocratic_feudal = yes
-			higher_tier_than = BARON
 			is_patrician = no
 			
 		}

@@ -50,13 +50,6 @@ theocracy_governments = {
 				is_female = yes
 				religion_allows_male_temple_holders = yes
 			}
-			OR = {
-				NOR = { religion = calvinist religion = neohuguenot}
-				NOT = { is_government_potential = theocratic_feudal_government }
-				NOT = { higher_tier_than = BARON }
-				controls_religion = yes
-			}
-			isnt_forced_to_theocracy = no
 		}
 		
 		color = { 220 220 220 }
