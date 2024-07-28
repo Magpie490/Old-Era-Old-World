@@ -1,0 +1,766 @@
+namespace=cleanup
+namespace=celtic
+namespace=razumist
+namespace=sufist
+namespace=gods
+
+character_event = {
+	id = cleanup.2221
+	hide_window = yes
+	trigger = {
+		NOT = { has_dlc = "Zeus" }
+		is_tribal = no
+		is_nomadic = no
+		is_republic = no
+		primary_title = {
+			NOR = {
+				has_law = crown_authority_0
+				has_law = crown_authority_1
+				has_law = crown_authority_2
+				has_law = crown_authority_3
+				has_law = crown_authority_4
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	immediate = {
+		primary_title = {
+			add_law = crown_authority_0
+		}
+	}
+}
+character_event = {
+	id = cleanup.2222
+	hide_window = yes
+	trigger = {
+		has_dlc = "Zeus" 
+		is_tribal = no
+		is_nomadic = no
+		is_republic = no
+		NOR = {
+			government = order_government
+			government = confederation_government
+		}
+		primary_title = {
+			NOR = {
+				has_law = out_of_realm_inheritance_law_0
+				has_law = out_of_realm_inheritance_law_1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	immediate = {
+		primary_title = {
+			add_law = out_of_realm_inheritance_law_0
+		}
+	}
+}
+character_event = {
+	id = cleanup.2223
+	hide_window = yes
+	trigger = {
+		has_dlc = "Zeus" 
+		is_tribal = no
+		is_nomadic = no
+		is_republic = no
+		is_theocracy = no
+		NOR = {
+			government = order_government
+			government = confederation_government
+		}
+		primary_title = {
+			NOR = {
+				has_law = vassal_wars_law_0
+				has_law = vassal_wars_law_1
+				has_law = vassal_wars_law_2
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	immediate = {
+		primary_title = {
+			add_law = vassal_wars_law_0
+		}
+	}
+}
+character_event = {
+	id = cleanup.3224
+	hide_window = yes
+	trigger = {
+		is_tribal = no
+		is_nomadic = no
+		OR = {
+			religion = catholic
+			religion = fraticelli
+		}
+		primary_title = {
+			NOR = {
+				has_law = investiture_law_0
+				has_law = investiture_law_1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	immediate = {
+		primary_title = {
+			add_law = investiture_law_0
+		}
+	}
+}
+
+character_event = {
+	id = cleanup.2224
+	hide_window = yes
+	trigger = {
+		NOR = {
+			government = eastern_feudal
+			government = mandate_heaven
+			government = chinese_imperial_government
+			government = roman_imperial_government
+			government = neoziamet_government
+			government = confucian_bureaucracy
+			government = merchant_republic_government
+		}
+		OR = {
+			has_character_modifier = government_corruption_0
+			has_character_modifier = government_corruption_1
+			has_character_modifier = government_corruption_2
+			has_character_modifier = government_corruption_3
+			has_character_modifier = government_corruption_4
+			has_character_modifier = government_corruption_5
+			has_character_modifier = government_corruption_6
+			has_character_modifier = government_corruption_7
+			has_character_modifier = government_corruption_8
+			has_character_modifier = government_corruption_9
+			has_character_modifier = government_corruption_10
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 21
+	}
+	immediate = {
+		remove_character_modifier = government_corruption_0
+		remove_character_modifier = government_corruption_1
+		remove_character_modifier = government_corruption_2
+		remove_character_modifier = government_corruption_3
+		remove_character_modifier = government_corruption_4
+		remove_character_modifier = government_corruption_5
+		remove_character_modifier = government_corruption_6
+		remove_character_modifier = government_corruption_7
+		remove_character_modifier = government_corruption_8
+		remove_character_modifier = government_corruption_9
+		remove_character_modifier = government_corruption_10
+	}
+}
+character_event = {
+	id = cleanup.3225
+	hide_window = yes
+	trigger = {
+		is_tributary = yes
+		suzerain = {
+			independent = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	immediate = {
+		suzerain = {
+			any_tributary = {
+				remove_tributary = ROOT
+			}
+		}
+	}
+}
+
+character_event = { 
+	id = cleanup.21001
+	hide_window = yes
+	
+	trigger = {
+		has_job_title = job_chancellor
+		NOR = {
+			trait = diplomat_4
+			trait = marshal_1
+			trait = marshal_2
+			trait = marshal_3
+			trait = marshal_4
+			trait = priest_1
+			trait = priest_2
+			trait = priest_3
+			trait = priest_4
+			trait = spymaster_1
+			trait = spymaster_2
+			trait = spymaster_3
+			trait = spymaster_4
+			trait = steward_1
+			trait = steward_2
+			trait = steward_3
+			trait = steward_4
+		}
+	}
+	mean_time_to_happen = {
+		years = 10
+		modifier = {
+			factor = 0.9
+			trait = genius
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				trait = quick
+				trait = shrewd
+			}
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				trait = dull
+				trait = slow
+			}
+		}
+		modifier = {
+			factor = 1.25
+			trait = diplomat_1
+		}
+		modifier = {
+			factor = 1.5
+			trait = diplomat_2
+		}
+		modifier = {
+			factor = 1.75
+			trait = diplomat_3
+		}
+		modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		modifier = {
+			factor = 1.15
+			trait = imbecile
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				trait = diplomat_1
+			}
+			remove_trait = diplomat_1
+			add_trait = diplomat_2
+		}
+		else_if = {
+			limit = {
+				trait = diplomat_2
+			}
+			remove_trait = diplomat_2
+			add_trait = diplomat_3
+		}
+		else_if = {
+			limit = {
+				trait = diplomat_3
+			}
+			remove_trait = diplomat_3
+			add_trait = diplomat_4
+		}
+		else_if = {
+			limit = {
+				trait = diplomat_4
+			}
+		}
+		else = {
+			add_trait = diplomat_1
+		}
+	}
+}
+
+character_event = { 
+	id = cleanup.21002
+	hide_window = yes
+	
+	trigger = {
+		has_job_title = job_marshal
+		NOR = {
+			trait = marshal_4
+			trait = diplomat_1
+			trait = diplomat_2
+			trait = diplomat_3
+			trait = diplomat_4
+			trait = priest_1
+			trait = priest_2
+			trait = priest_3
+			trait = priest_4
+			trait = spymaster_1
+			trait = spymaster_2
+			trait = spymaster_3
+			trait = spymaster_4
+			trait = steward_1
+			trait = steward_2
+			trait = steward_3
+			trait = steward_4
+		}
+	}
+	mean_time_to_happen = {
+		years = 10
+		modifier = {
+			factor = 0.9
+			trait = genius
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				trait = quick
+				trait = shrewd
+			}
+		}
+		modifier = {
+			factor = 1.25
+			trait = marshal_1
+		}
+		modifier = {
+			factor = 1.5
+			trait = marshal_2
+		}
+		modifier = {
+			factor = 1.75
+			trait = marshal_3
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				trait = dull
+				trait = slow
+			}
+		}
+		modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		modifier = {
+			factor = 1.15
+			trait = imbecile
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				trait = marshal_1
+			}
+			remove_trait = marshal_1
+			add_trait = marshal_2
+		}
+		else_if = {
+			limit = {
+				trait = marshal_2
+			}
+			remove_trait = marshal_2
+			add_trait = marshal_3
+		}
+		else_if = {
+			limit = {
+				trait = marshal_3
+			}
+			remove_trait = marshal_3
+			add_trait = marshal_4
+		}
+		else_if = {
+			limit = {
+				trait = marshal_4
+			}
+		}
+		else = {
+			add_trait = marshal_1
+		}
+	}
+}
+
+character_event = { 
+	id = cleanup.21003
+	hide_window = yes
+	
+	trigger = {
+		has_job_title = job_spiritual
+		NOR = {
+			trait = priest_4
+			trait = diplomat_1
+			trait = diplomat_2
+			trait = diplomat_3
+			trait = diplomat_4
+			trait = marshal_1
+			trait = marshal_2
+			trait = marshal_3
+			trait = marshal_4
+			trait = spymaster_1
+			trait = spymaster_2
+			trait = spymaster_3
+			trait = spymaster_4
+			trait = steward_1
+			trait = steward_2
+			trait = steward_3
+			trait = steward_4
+		}
+	}
+	mean_time_to_happen = {
+		years = 10
+		modifier = {
+			factor = 0.9
+			trait = genius
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				trait = quick
+				trait = shrewd
+			}
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				trait = dull
+				trait = slow
+			}
+		}
+		modifier = {
+			factor = 1.25
+			trait = priest_1
+		}
+		modifier = {
+			factor = 1.5
+			trait = priest_2
+		}
+		modifier = {
+			factor = 1.75
+			trait = priest_3
+		}
+		modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		modifier = {
+			factor = 1.15
+			trait = imbecile
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				trait = priest_1
+			}
+			remove_trait = priest_1
+			add_trait = priest_2
+		}
+		else_if = {
+			limit = {
+				trait = priest_2
+			}
+			remove_trait = priest_2
+			add_trait = priest_3
+		}
+		else_if = {
+			limit = {
+				trait = priest_3
+			}
+			remove_trait = priest_3
+			add_trait = priest_4
+		}
+		else_if = {
+			limit = {
+				trait = priest_4
+			}
+		}
+		else = {
+			add_trait = priest_1
+		}
+	}
+}
+
+character_event = { 
+	id = cleanup.21004
+	hide_window = yes
+	
+	trigger = {
+		has_job_title = job_spymaster
+		NOR = {
+			trait = spymaster_4
+			trait = diplomat_1
+			trait = diplomat_2
+			trait = diplomat_3
+			trait = diplomat_4
+			trait = marshal_1
+			trait = marshal_2
+			trait = marshal_3
+			trait = marshal_4
+			trait = priest_1
+			trait = priest_2
+			trait = priest_3
+			trait = priest_4
+			trait = steward_1
+			trait = steward_2
+			trait = steward_3
+			trait = steward_4
+		}
+	}
+	mean_time_to_happen = {
+		years = 10
+		modifier = {
+			factor = 0.9
+			trait = genius
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				trait = quick
+				trait = shrewd
+			}
+		}
+		modifier = {
+			factor = 1.25
+			trait = spymaster_1
+		}
+		modifier = {
+			factor = 1.5
+			trait = spymaster_2
+		}
+		modifier = {
+			factor = 1.75
+			trait = spymaster_3
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				trait = dull
+				trait = slow
+			}
+		}
+		modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		modifier = {
+			factor = 1.15
+			trait = imbecile
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				trait = spymaster_1
+			}
+			remove_trait = spymaster_1
+			add_trait = spymaster_2
+		}
+		else_if = {
+			limit = {
+				trait = spymaster_2
+			}
+			remove_trait = spymaster_2
+			add_trait = spymaster_3
+		}
+		else_if = {
+			limit = {
+				trait = spymaster_3
+			}
+			remove_trait = spymaster_3
+			add_trait = spymaster_4
+		}
+		else_if = {
+			limit = {
+				trait = spymaster_4
+			}
+		}
+		else = {
+			add_trait = spymaster_1
+		}
+	}
+}
+character_event = { 
+	id = cleanup.21005
+	hide_window = yes
+	
+	trigger = {
+		has_job_title = job_treasurer
+		NOR = {
+			trait = steward_4
+			trait = diplomat_1
+			trait = diplomat_2
+			trait = diplomat_3
+			trait = diplomat_4
+			trait = marshal_1
+			trait = marshal_2
+			trait = marshal_3
+			trait = marshal_4
+			trait = priest_1
+			trait = priest_2
+			trait = priest_3
+			trait = priest_4
+			trait = spymaster_1
+			trait = spymaster_2
+			trait = spymaster_3
+			trait = spymaster_4
+		}
+	}
+	mean_time_to_happen = {
+		years = 10
+		modifier = {
+			factor = 0.9
+			trait = genius
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				trait = quick
+				trait = shrewd
+			}
+		}
+		modifier = {
+			factor = 1.25
+			trait = steward_1
+		}
+		modifier = {
+			factor = 1.5
+			trait = steward_2
+		}
+		modifier = {
+			factor = 1.75
+			trait = steward_3
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				trait = dull
+				trait = slow
+			}
+		}
+		modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		modifier = {
+			factor = 1.15
+			trait = imbecile
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				trait = steward_1
+			}
+			remove_trait = steward_1
+			add_trait = steward_2
+		}
+		else_if = {
+			limit = {
+				trait = steward_2
+			}
+			remove_trait = steward_2
+			add_trait = steward_3
+		}
+		else_if = {
+			limit = {
+				trait = steward_3
+			}
+			remove_trait = steward_3
+			add_trait = steward_4
+		}
+		else_if = {
+			limit = {
+				trait = steward_4
+			}
+		}
+		else = {
+			add_trait = steward_1
+		}
+	}
+}
+
+character_event = {#ensures each newly formed Holy Order has the Monastic Elective government
+	id = cleanup.71
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = muslim
+		NOT = {
+			holy_order = yes
+		}
+		is_feudal = yes
+		any_demesne_title = {
+			NOR = {
+				has_law = succ_muslim_elective
+				has_law = succ_dynastic_meritocratic
+				has_law = succ_salafi_elective
+				has_law = succ_primogeniture
+			}
+		}
+	}
+	immediate = {
+		any_demesne_title = {
+			limit = {
+				NOR = {
+					has_law = succ_muslim_elective
+					has_law = succ_dynastic_meritocratic
+					has_law = succ_salafi_elective
+					has_law = succ_primogeniture
+				}
+			}
+			add_law = {
+				law = succ_primogeniture
+				cooldown = no
+				opinion_effect = no
+			}
+		}
+	}
+}
+character_event = {
+	id = cleanup.13
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		current_heir = {
+			NOT = {
+				dynasty = ROOT
+			}
+		}
+		OR = {
+			has_game_rule = {
+				name = non_dynastic_succession
+				value = on
+			}
+			AND = {
+				has_game_rule = {
+					name = non_dynastic_succession
+					value = limited
+				}
+				OR = {
+					government = confucian_bureaucracy
+				}
+			}
+		}
+		NOT = { holy_order = yes }
+	}
+	
+	immediate = {
+		current_heir = {
+			ROOT = { set_player_character = PREV }
+		}
+	}
+}

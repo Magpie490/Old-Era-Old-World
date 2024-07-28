@@ -2266,6 +2266,8 @@ religious = {
 		ROOT = {
 			# General requirements
 			is_nomadic = no
+			NOT = { government = viceroyal_government }
+			NOT = { government = confederation_government }
 			pacifist = no
 			mercenary = no
 

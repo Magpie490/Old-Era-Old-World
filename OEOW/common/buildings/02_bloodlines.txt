@@ -31,6 +31,7 @@ castle = {
 		build_time = 365
 		fort_level = 0.5
 		land_morale = 0.05
+		tax_income = -0.25
 
 		add_number_to_name = no
 
@@ -60,6 +61,7 @@ castle = {
 		fort_level = 1
 		land_morale = 0.05
 		garrison_size = 0.05
+		tax_income = -0.25
 
 		add_number_to_name = no
 
@@ -90,6 +92,7 @@ castle = {
 		fort_level = 1.5
 		garrison_size = 0.15
 		archers = 50
+		tax_income = -0.25
 
 		add_number_to_name = no
 
@@ -120,6 +123,7 @@ castle = {
 		levy_size = 0.2
 		garrison_size = 0.3
 		light_infantry = 100
+		tax_income = -0.25
 
 		add_number_to_name = no
 
@@ -158,6 +162,7 @@ castle = {
 		build_time = 365
 		local_revolt_risk = -0.05
 		liege_prestige = 0.05
+		tax_income = -0.25
 
 		add_number_to_name = no
 
@@ -194,6 +199,7 @@ castle = {
 		fort_level = 1
 		local_revolt_risk = -0.05
 		garrison_size = 0.05
+		tax_income = -0.25
 
 		add_number_to_name = no
 
@@ -224,6 +230,7 @@ castle = {
 		fort_level = 1
 		local_revolt_risk = -0.05
 		garrison_size = 0.05
+		tax_income = -0.25
 
 		add_number_to_name = no
 
@@ -254,6 +261,7 @@ castle = {
 		fort_level = 1
 		local_revolt_risk = -0.05
 		garrison_size = 0.05
+		tax_income = -0.25
 
 		add_number_to_name = no
 
@@ -297,6 +305,7 @@ city = {
 		land_morale = 0.05
 		tech_growth_modifier = 0.05
 		tradevalue = 5
+		tax_income = -0.25
 
 		add_number_to_name = no
 
@@ -328,6 +337,7 @@ city = {
 		max_tradeposts = 2
 		tech_growth_modifier = 0.05
 		tradevalue = 5
+		tax_income = -0.25
 
 		add_number_to_name = no
 
@@ -360,6 +370,7 @@ city = {
 		levy_reinforce_rate = 0.1
 		disease_defence = 0.05
 		tradevalue = 5
+		tax_income = -0.25
 
 		add_number_to_name = no
 
@@ -391,6 +402,7 @@ city = {
 		economy_techpoints = 0.1
 		disease_defence = 0.1
 		tradevalue = 5
+		tax_income = -0.25
 
 		add_number_to_name = no
 

@@ -31,14 +31,12 @@ character_event = {
 	desc = evt_spymaster_001_desc_a
 	picture = GFX_evt_council
 	border = GFX_event_normal_frame_intrigue
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_uncover_plots
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			any_province_character = {
 				OR = {
@@ -62,6 +60,106 @@ character_event = {
 		years = 10
 
 		job_event_mtth_modifier_intrigue_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = schemer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seductress
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = impaler
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -108,7 +206,6 @@ character_event = {
 
 		ai_chance = { factor = 0 }
 	}
-
 	option = {
 		name = evt_spymaster_002_option_b
 
@@ -121,7 +218,6 @@ character_event = {
 			random_list = {
 				50 = {
 					set_character_flag = was_murdered_by_plot
-
 					death = {
 						death_reason = death_murder
 						killer = ROOT
@@ -137,7 +233,6 @@ character_event = {
 						}
 					}
 				}
-
 				50 = {
 					character_event = {
 						id = spymaster.003
@@ -178,7 +273,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = evt_spymaster_002_option_c
 
@@ -290,7 +384,6 @@ character_event = {
 	desc = evt_spymaster_101_desc_a
 	picture = GFX_evt_peasants
 	border = GFX_event_normal_frame_intrigue
-
 	has_job_title = yes
 
 	trigger = {
@@ -301,7 +394,6 @@ character_event = {
 
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			any_province_lord = {
 				OR = {
@@ -339,7 +431,6 @@ character_event = {
 						character = ROOT
 					}
 				}
-
 				save_event_target_as = killer_target
 			}
 		}
@@ -349,6 +440,110 @@ character_event = {
 		years = 10
 
 		job_event_mtth_modifier_inverted_intrigue_score = yes
+		mult_modifier = {
+			factor = 1.07
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 2
+			trait = duelist
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = schemer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = seductress
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = impaler
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = just
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 0.88
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -357,7 +552,6 @@ character_event = {
 		trigger = {
 			combat_rating < 5
 		}
-
 		random_list = {
 			25 = {
 				character_event = {
@@ -385,16 +579,13 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = evt_spymaster_101_option
 		tooltip_info = combat_rating
-
 		trigger = {
 			combat_rating >= 5
 			combat_rating < 10
 		}
-
 		random_list = {
 			35 = {
 				character_event = {
@@ -422,15 +613,12 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = evt_spymaster_101_option
 		tooltip_info = combat_rating
-
 		trigger = {
 			combat_rating >= 10
 		}
-
 		random_list = {
 			50 = {
 				character_event = {
@@ -539,7 +727,6 @@ character_event = {
 	desc = evt_spymaster_201_desc_a
 	picture = GFX_evt_council
 	border = GFX_event_normal_frame_intrigue
-
 	has_job_title = yes
 
 	trigger = {
@@ -547,101 +734,177 @@ character_event = {
 			has_job_action = action_uncover_plots
 			has_job_action = action_organize_spies_mystics
 		}
-
-		in_seclusion = no
+		NOT = { has_character_modifier = in_seclusion }
 		NOT = { has_character_modifier = bedridden_illness }
-
+		NOT = { trait = incapable }
 		location = {
-			owner = {
-				OR = {
-					AND = {
-						higher_real_tier_than = BARON
+			OR = {
+				owner = {
+					same_liege = ROOT
+					independent = no
+					NOT = { is_liege_of = ROOT }
+					NOT = { character = ROOT }
+					NOT = { trait = incapable }
+					NOT = { has_opinion_modifier = { who = liege modifier = opinion_coerced_into_leaving_faction } }
+					NOT = { has_character_flag = faction_member }
+					age = 16
+					prisoner = no
+					primary_title = { higher_tier_than = BARON }
+				}
+				owner = {
+					liege = { same_liege = ROOT }
+					independent = no
+					NOT = { is_liege_of = ROOT }
+					NOT = { character = ROOT }
+					liege = {
 						independent = no
-						same_liege = ROOT
-						is_incapable = no
-						is_adult = yes
+						NOT = { is_liege_of = ROOT }
+						NOT = { character = ROOT }
+						NOT = { trait = incapable }
+						NOT = { has_opinion_modifier = { who = liege modifier = opinion_coerced_into_leaving_faction } }
+						NOT = { has_character_flag = faction_member }
+						age = 16
 						prisoner = no
-
-						NOR = {
-							has_character_flag = faction_member
-							is_liege_of = ROOT
-							character = ROOT
-
-							has_opinion_modifier = {
-								name = opinion_coerced_into_leaving_faction
-								who = liege
-							}
-						}
-					}
-
-					AND = {
-						independent = no
-
-						liege = {
-							higher_real_tier_than = BARON
-							is_adult = yes
-							prisoner = no
-							same_liege = ROOT
-							independent = no
-							is_incapable = no
-
-							NOR = {
-								has_character_flag = faction_member
-								is_liege_of = ROOT
-								character = ROOT
-
-								has_opinion_modifier = {
-									name = opinion_coerced_into_leaving_faction
-									who = liege
-								}
-							}
-						}
-					}
-
-					NOR = {
-						is_liege_of = ROOT
-						character = ROOT
+						primary_title = { higher_tier_than = BARON }
 					}
 				}
 			}
 		}
 	}
-
+	
 	mean_time_to_happen = {
 		months = 110
-
 		job_event_mtth_modifier_intrigue_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = schemer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seductress
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = impaler
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 	}
-
+	
 	immediate = {
-		location = {
-			owner = {
-				if = {
-					limit = { same_liege = ROOT }
-					set_character_flag = faction_member
+		IF = {
+			limit = {
+				location = {
+					owner = {
+						same_liege = ROOT
+					}
 				}
 			}
-
-			liege = {
-				if = {
-					limit = { same_liege = ROOT }
-					set_character_flag = faction_member
+			location = { owner = { set_character_flag = faction_member } }
+		}
+		IF = {
+			limit = {
+				location = {
+					owner = {
+						liege = { same_liege = ROOT }
+					}
 				}
+			}
+			location = { 
+				owner = { liege = { set_character_flag = faction_member } }
 			}
 		}
 	}
-
+	
 	option = {
-		name = evt_spymaster_201_option_a
-
-		liege = {
-			show_scope_change = no
-
-			letter_event = {
-				id = spymaster.202
-				tooltip = evt_spymaster_201_option_a_tooltip
-			}
-		}
+		name = "EVTOPTA9000"
+		liege = { letter_event = { id = 9001 tooltip = EVTTOOLTIP9001 } }
 	}
 }
 
@@ -652,46 +915,35 @@ letter_event = {
 	border = GFX_event_letter_frame_intrigue
 
 	is_triggered_only = yes
-
+	
 	option = { # Blackmail
-		name = evt_spymaster_202_option_a
-
+		name = "EVTOPTA9001"
 		trigger = {
 			any_vassal = {
 				has_character_flag = faction_member
-
 				OR = {
 					trait = homosexual
 					trait = impaler
 					trait = lustful
 					trait = drunkard
 					trait = hedonist
-					trait = great_pox
+					trait = syphilitic
 				}
 			}
 		}
-
-		random_vassal = {
-			show_scope_change = no
-			
-			limit = { has_character_flag = faction_member }
-
-			letter_event = {
-				id = spymaster.203
-				tooltip = evt_spymaster_202_option_a_tooltip
-			}
+		ai_chance = {
+			factor = 10000
 		}
-
-		ai_chance = { factor = 10000 }
+		random_vassal = {
+			limit = { has_character_flag = faction_member }
+			letter_event = { id = spymaster.203 tooltip = EVTTOOLTIP9002 }
+		}	
 	}
-
 	option = { # Legalism
-		name = evt_spymaster_202_option_b
-
+		name = "EVTOPTB9001"
 		trigger = {
 			any_vassal = {
 				has_character_flag = faction_member
-
 				OR = {
 					trait = just
 					trait = honest
@@ -701,28 +953,19 @@ letter_event = {
 				}
 			}
 		}
-
-		random_vassal = {
-			show_scope_change = no
-			
-			limit = { has_character_flag = faction_member }
-
-			letter_event = {
-				id = spymaster.205
-				tooltip = evt_spymaster_202_option_b_tooltip
-			}
+		ai_chance = {
+			factor = 10000
 		}
-
-		ai_chance = { factor = 10000 }
+		random_vassal = {
+			limit = { has_character_flag = faction_member }
+			letter_event = { id = spymaster.205 tooltip = EVTTOOLTIP9005 }
+		}	
 	}
-
 	option = { # Threaten
-		name = evt_spymaster_202_option_c
-
+		name = "EVTOPTC9001"
 		trigger = {
 			any_vassal = {
 				has_character_flag = faction_member
-
 				OR = {
 					trait = craven
 					trait = paranoid
@@ -732,68 +975,58 @@ letter_event = {
 				}
 			}
 		}
-
-		random_vassal = {
-			show_scope_change = no
-			
-			limit = { has_character_flag = faction_member }
-
-			letter_event = {
-				id = spymaster.207
-				tooltip = evt_spymaster_202_option_c_tooltip
-			}
+		ai_chance = {
+			factor = 10000
 		}
-
-		ai_chance = { factor = 10000 }
+		random_vassal = {
+			limit = { has_character_flag = faction_member }
+			letter_event = { id = 9008 tooltip = EVTTOOLTIP9008 }
+		}	
 	}
-
 	option = { # Ask Nicely
-		name = evt_spymaster_202_option_d
-
+		name = "EVTOPTD9001"
 		trigger = {
 			any_vassal = {
 				has_character_flag = faction_member
-
-				NOR = {
-					trait = craven
-					trait = paranoid
-					trait = cynical
-					trait = humble
-					trait = slothful
-					trait = just
-					trait = honest
-					trait = trusting
-					trait = content
-					trait = kind
-					trait = homosexual
-					trait = impaler
-					trait = lustful
-					trait = drunkard
-					trait = hedonist
-					trait = great_pox
+				NOT = {
+					OR = {
+						trait = craven
+						trait = paranoid
+						trait = cynical
+						trait = humble
+						trait = slothful
+						trait = just
+						trait = honest
+						trait = trusting
+						trait = content
+						trait = kind
+						trait = homosexual
+						trait = impaler
+						trait = lustful
+						trait = drunkard
+						trait = hedonist
+						trait = syphilitic
+					}
 				}
 			}
 		}
-
+		ai_chance = {
+			factor = 100
+		}
 		random_vassal = {
 			limit = { has_character_flag = faction_member }
-
-			letter_event = {
-				id = spymaster.209
-				tooltip = evt_spymaster_202_option_d_tooltip
-			}
-		}
-
-		ai_chance = { factor = 100 }
+			letter_event = { id = spymaster.209 tooltip = EVTTOOLTIP9023 }
+		}	
 	}
-
 	option = { # Do Nothing
-		name = evt_spymaster_202_option_e
-
+		name = "EVTOPTE9001"
+		ai_chance = {
+			factor = 1
+		}
 		random_vassal = {
 			limit = { has_character_flag = faction_member }
 			clr_character_flag = faction_member
-		}
+		}	
 	}
 }
 
@@ -808,12 +1041,9 @@ letter_event = {
 	option = { # Agree (Homosexual)
 		name = evt_spymaster_203_option_a
 		tooltip_info = homosexual
-
-		trigger = { trait = homosexual }
-
+		trigger = { OR = {trait = homosexual trait = bisexual} }
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -827,16 +1057,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Impaler)
 		name = evt_spymaster_203_option_b
 		tooltip_info = impaler
-
 		trigger = { trait = impaler }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -850,16 +1076,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Lustful)
 		name = evt_spymaster_203_option_c
 		tooltip_info = lustful
-
 		trigger = { trait = lustful }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -873,16 +1095,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Drunkard)
 		name = evt_spymaster_203_option_d
 		tooltip_info = drunkard
-
 		trigger = { trait = drunkard }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -896,16 +1114,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Hedonist)
 		name = evt_spymaster_203_option_e
 		tooltip_info = hedonist
-
 		trigger = { trait = hedonist }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -919,16 +1133,13 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Syphilis)
 		name = evt_spymaster_203_option_f
-		tooltip_info = great_pox
+		tooltip_info = syphilitic
 
-		trigger = { trait = great_pox }
-
+		trigger = { trait = syphilitic }
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -957,7 +1168,6 @@ letter_event = {
 
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_coerced_into_leaving_faction
 				who = ROOT
@@ -982,12 +1192,9 @@ letter_event = {
 	option = { # Agree (Just)
 		name = evt_spymaster_205_option_a
 		tooltip_info = just
-
 		trigger = { trait = just }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1001,16 +1208,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Honest)
 		name = evt_spymaster_205_option_b
 		tooltip_info = honest
-
 		trigger = { trait = honest }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1024,16 +1227,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Trusting)
 		name = evt_spymaster_205_option_c
 		tooltip_info = trusting
-
 		trigger = { trait = trusting }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1047,16 +1246,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Content)
 		name = evt_spymaster_205_option_d
 		tooltip_info = content
-
 		trigger = { trait = content }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1070,16 +1265,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Kind)
 		name = evt_spymaster_205_option_e
 		tooltip_info = kind
-
 		trigger = { trait = kind }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1108,7 +1299,6 @@ letter_event = {
 
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_coerced_into_leaving_faction
 				who = ROOT
@@ -1133,12 +1323,9 @@ letter_event = {
 	option = { # Agree (Craven)
 		name = evt_spymaster_207_option_a
 		tooltip_info = craven
-
 		trigger = { trait = craven }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1152,16 +1339,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Paranoid)
 		name = evt_spymaster_207_option_b
 		tooltip_info = paranoid
-
 		trigger = { trait = paranoid }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1175,16 +1358,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Cynical)
 		name = evt_spymaster_207_option_c
 		tooltip_info = cynical
-
 		trigger = { trait = cynical }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1198,16 +1377,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Humble)
 		name = evt_spymaster_207_option_d
 		tooltip_info = humble
-
 		trigger = { trait = humble }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1221,16 +1396,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Slothful)
 		name = evt_spymaster_207_option_e
 		tooltip_info = slothful
-
 		trigger = { trait = slothful }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1335,18 +1506,15 @@ letter_event = {
 
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_angry
 				who = ROOT
 				years = 2
 			}
-
 			clr_character_flag = faction_member
 		}
 	}
 }
-
 
 ### 9020: Faction Recruitment - Spymaster finds Faction Member
 character_event = {
@@ -1355,7 +1523,6 @@ character_event = {
 	desc = evt_spymaster_301_desc_a
 	picture = GFX_evt_council
 	border = GFX_event_normal_frame_intrigue
-
 	has_job_title = yes
 
 	trigger = {
@@ -1366,9 +1533,7 @@ character_event = {
 
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		liege = { in_faction = yes }
-
 		location = {
 			owner = {
 				ROOT = {
@@ -1409,8 +1574,107 @@ character_event = {
 
 	mean_time_to_happen = {
 		months = 110
-
 		job_event_mtth_modifier_intrigue_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = schemer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seductress
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = impaler
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 	}
 
 	immediate = {
@@ -1450,19 +1714,18 @@ letter_event = {
 			liege = {
 				any_vassal = {
 					has_character_flag = faction_recruit
-
 					OR = {
 						trait = homosexual
+						trait = bisexual
 						trait = impaler
 						trait = lustful
 						trait = drunkard
 						trait = hedonist
-						trait = great_pox
+						trait = syphilitic
 					}
 				}
 			}
 		}
-
 		liege = {
 			any_vassal = {
 				limit = { has_character_flag = faction_recruit }
@@ -1474,7 +1737,6 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Threaten
 		name = evt_spymaster_302_option_b
 
@@ -1482,7 +1744,6 @@ letter_event = {
 			liege = {
 				any_vassal = {
 					has_character_flag = faction_recruit
-
 					OR = {
 						trait = craven
 						trait = paranoid
@@ -1493,7 +1754,6 @@ letter_event = {
 				}
 			}
 		}
-
 		liege = {
 			any_vassal = {
 				limit = { has_character_flag = faction_recruit }
@@ -1505,7 +1765,6 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Ask nicely
 		name = evt_spymaster_302_option_c
 
@@ -1513,7 +1772,6 @@ letter_event = {
 			liege = {
 				any_vassal = {
 					has_character_flag = faction_recruit
-
 					NOR = {
 						trait = craven
 						trait = paranoid
@@ -1521,16 +1779,16 @@ letter_event = {
 						trait = humble
 						trait = slothful
 						trait = homosexual
+						trait = bisexual
 						trait = impaler
 						trait = lustful
 						trait = drunkard
 						trait = hedonist
-						trait = great_pox
+						trait = syphilitic
 					}
 				}
 			}
 		}
-
 		liege = {
 			any_vassal = {
 				limit = { has_character_flag = faction_recruit }
@@ -1542,14 +1800,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Do Nothing
 		name = evt_spymaster_302_option_d
 
 		liege = {
 			any_vassal = {
 				limit = { has_character_flag = faction_recruit }
-
 				clr_character_flag = faction_recruit
 			}
 		}
@@ -1567,12 +1823,9 @@ letter_event = {
 	option = { # Agree (Homosexual)
 		name = evt_spymaster_203_option_a
 		tooltip_info = homosexual
-
-		trigger = { trait = homosexual }
-
+		trigger = { OR = {trait = homosexual trait = bisexual} }
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1586,16 +1839,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Impaler)
 		name = evt_spymaster_203_option_b
 		tooltip_info = impaler
-
 		trigger = { trait = impaler }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1609,16 +1858,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Lustful)
 		name = evt_spymaster_203_option_c
 		tooltip_info = lustful
-
 		trigger = { trait = lustful }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1632,16 +1877,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Drunkard)
 		name = evt_spymaster_203_option_d
 		tooltip_info = drunkard
-
 		trigger = { trait = drunkard }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1655,16 +1896,12 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Hedonist)
 		name = evt_spymaster_203_option_e
 		tooltip_info = hedonist
-
 		trigger = { trait = hedonist }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1678,16 +1915,14 @@ letter_event = {
 			}
 		}
 	}
-
 	option = { # Agree (Syphilis)
 		name = evt_spymaster_203_option_f
-		tooltip_info = great_pox
+		tooltip_info = syphilitic
 
-		trigger = { trait = great_pox }
+		trigger = { trait = syphilitic }
 
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1716,7 +1951,6 @@ letter_event = {
 
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_coerced_into_joining_faction
 				who = ROOT
@@ -1746,7 +1980,6 @@ letter_event = {
 
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1766,10 +1999,8 @@ letter_event = {
 		tooltip_info = cynical
 
 		trigger = { trait = cynical }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1789,10 +2020,8 @@ letter_event = {
 		tooltip_info = humble
 
 		trigger = { trait = humble }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1812,10 +2041,8 @@ letter_event = {
 		tooltip_info = slothful
 
 		trigger = { trait = slothful }
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1844,7 +2071,6 @@ letter_event = {
 
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_coerced_into_joining_faction
 				who = ROOT
@@ -1871,7 +2097,6 @@ letter_event = {
 
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_pleased
 				who = ROOT
@@ -1887,10 +2112,8 @@ letter_event = {
 
 	option = { # Never!
 		name = EXCELLENT
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_angry
 				who = ROOT
@@ -1918,7 +2141,6 @@ letter_event = {
 
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_coerced_into_joining_faction
 				who = ROOT
@@ -1945,13 +2167,11 @@ letter_event = {
 
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_angry
 				who = ROOT
 				years = 2
 			}
-
 			clr_character_flag = faction_recruit
 		}
 	}
@@ -1969,7 +2189,6 @@ character_event = {
 	desc = evt_spymaster_401_desc_a
 	picture = GFX_evt_library
 	border = GFX_event_normal_frame_intrigue
-
 	has_job_title = yes
 
 	trigger = {
@@ -1986,19 +2205,121 @@ character_event = {
 		years = 15
 
 		job_event_mtth_modifier_intrigue_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = schemer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seductress
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = impaler
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 
 		mult_modifier = {
 			factor = 0.5
-
 			OR = {
 				has_focus = focus_scholarship
 				liege = { has_focus = focus_scholarship }
 			}
 		}
-
 		mult_modifier = {
 			factor = 2
 			has_religion_feature = religion_dogmatic
+		}
+		mult_modifier = {
+			factor = 0.5
+			has_religion_feature = religion_cosmopolitan
 		}
 	}
 
@@ -2032,7 +2353,6 @@ letter_event = {
 			33 = { economy_techpoints = 50 }
 			33 = { culture_techpoints = 50 }
 		}
-
 		if = {
 			limit = { has_dlc = "Reapers" }
 
@@ -2057,7 +2377,6 @@ character_event = {
 	desc = evt_spymaster_501_desc_a
 	picture = GFX_evt_spymaster
 	border = GFX_event_normal_frame_intrigue
-
 	has_job_title = yes
 
 	trigger = {
@@ -2074,7 +2393,6 @@ character_event = {
 
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			any_province_lord = {
 				OR = {
@@ -2094,6 +2412,110 @@ character_event = {
 		years = 30
 
 		job_event_mtth_modifier_inverted_intrigue_score = yes
+		mult_modifier = {
+			factor = 1.07
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 2
+			trait = duelist
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = schemer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = seductress
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = impaler
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = just
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 0.88
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -2138,7 +2560,6 @@ character_event = {
 			show_scope_change = no
 
 			imprison = ROOT
-
 			liege = {
 				show_scope_change = no
 
@@ -2159,7 +2580,6 @@ character_event = {
 
 		ai_chance = { factor = 75 }
 	}
-
 	option = {
 		name = evt_spymaster_502_option_b
 
@@ -2233,6 +2653,7 @@ letter_event = {
 	}
 }
 
+
 ##############################
 # SPYMASTER
 # JOB: action_organize_spies
@@ -2245,14 +2666,12 @@ character_event = {
 	desc = evt_spymaster_601_desc_a
 	picture = GFX_evt_whispers
 	border = GFX_event_normal_frame_intrigue
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_organize_spies
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			any_province_lord = {
 				ROOT = {
@@ -2263,8 +2682,7 @@ character_event = {
 						}
 					}
 				}
-
-				trait = homosexual
+				OR = {trait = homosexual trait = bisexual}
 				is_female = no
 				num_of_vassals >= 1
 
@@ -2280,6 +2698,106 @@ character_event = {
 		years = 20
 
 		job_event_mtth_modifier_intrigue_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = schemer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seductress
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = impaler
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -2297,8 +2815,7 @@ character_event = {
 								}
 							}
 						}
-
-						trait = homosexual
+						OR = {trait = homosexual trait = bisexual}
 						is_female = no
 						num_of_vassals >= 1
 
@@ -2307,7 +2824,6 @@ character_event = {
 							character = ROOT
 						}
 					}
-
 					save_event_target_as = vicious_rumor_target
 					set_character_flag = vicious_rumor
 				}
@@ -2340,7 +2856,6 @@ letter_event = {
 
 		ai_chance = { factor = 30 }
 	}
-
 	option = {
 		name = evt_spymaster_602_option_b
 
@@ -2353,7 +2868,6 @@ letter_event = {
 
 		ai_chance = { factor = 70 }
 	}
-
 	option = {
 		name = evt_spymaster_602_option_c
 
@@ -2466,13 +2980,10 @@ character_event = {
 				}
 			}
 		}
-
 		ai_chance = {
 			factor = 30
-
 			mult_modifier = {
 				factor = 3.0
-
 				OR = {
 					trait = wroth
 					trait = paranoid
@@ -2492,13 +3003,10 @@ character_event = {
 				days = 1
 			}
 		}
-
 		ai_chance = {
 			factor = 30
-
 			mult_modifier = {
 				factor = 3.0
-
 				OR = {
 					trait = proud
 					trait = honest
@@ -2562,7 +3070,6 @@ character_event = {
 
 	option = {
 		name = evt_spymaster_607_option_a
-
 		trigger = { has_character_flag = spymaster_attacked }
 
 		clr_character_flag = spymaster_attacked
@@ -2571,12 +3078,10 @@ character_event = {
 			letter_event = { id = spymaster.608 }
 		}
 	}
-
 	option = {
 		name = evt_spymaster_607_option_b
 
 		trigger = { has_character_flag = spymaster_killed }
-
 		death = {
 			death_reason = death_murder_unknown
 			killer = FROM
@@ -2629,7 +3134,7 @@ character_event = {
 					value < 0
 				}
 
-				NOT = { trait = homosexual }
+				NOR = { trait = homosexual trait = bisexual}
 			}
 
 			opinion = {
@@ -2653,7 +3158,6 @@ character_event = {
 
 	option = {
 		name = evt_spymaster_610_option_a
-
 		prestige = -15
 
 		hidden_effect = {
@@ -2867,14 +3371,12 @@ character_event = {
 	desc = evt_spymaster_701_desc_a
 	picture = GFX_evt_whispers
 	border = GFX_event_normal_frame_intrigue
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_organize_spies
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			any_province_lord = {
 				ROOT = {
@@ -2900,6 +3402,106 @@ character_event = {
 		years = 20
 
 		job_event_mtth_modifier_intrigue_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = schemer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seducer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = seductress
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = impaler
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = just
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -2955,7 +3557,6 @@ letter_event = {
 			}
 		}
 	}
-
 	option = {
 		name = evt_spymaster_702_option_b
 
@@ -3003,7 +3604,6 @@ character_event = {
 
 	option = {
 		name = evt_spymaster_704_option_a
-
 		random_list = {
 			50 = {
 				FROM = {
@@ -3023,7 +3623,6 @@ character_event = {
 					days = 1
 				}
 			}
-
 			50 = {
 				FROM = {
 					show_scope_change = no
@@ -3044,7 +3643,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = evt_spymaster_704_option_b
 
@@ -3083,7 +3681,6 @@ character_event = {
 		name = evt_spymaster_705_option_b
 
 		trigger = { has_character_flag = spymaster_killed }
-
 		death = {
 			death_reason = death_murder
 			killer = FROM
@@ -3132,7 +3729,6 @@ character_event = {
 
 	option = {
 		name = evt_spymaster_707_option_a
-
 		prestige = -15
 
 		hidden_effect = {

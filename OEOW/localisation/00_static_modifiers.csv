@@ -96,7 +96,7 @@ nomad;Nomad;Nomade;Nomade;;nómada;;;;;;;;;x
 
 fort;Fort;Fort;Fort;;Fortaleza;;;;;;;;;x
 
-hospital;Hospital;Hôpital;Hospital;;Hospital;;;;;;;;;x
+hospital;Infrastructure;Hôpital;Hospital;;Hospital;;;;;;;;;x
 
 # Age
 age_child;Child;Enfant;Kind;;Niño;;;;;;;;;x

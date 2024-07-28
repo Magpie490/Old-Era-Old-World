@@ -18,6 +18,7 @@ buddhist_holy_war = {
 		# Attacker
 		ROOT = {
 			religion = buddhist
+			NOT = { government = viceroyal_government }
 			NOT = { same_realm = FROM }
 
 			trigger_if = {

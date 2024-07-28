@@ -3903,6 +3903,9 @@ title_councilmember_king = {
 
 	allowed_to_grant = {
 		higher_real_tier_than = DUKE
+		NOT = {
+			government = makhzen_government
+		}
 		has_law = law_voting_power_1
 		has_dlc = "Conclave"
 	}
@@ -3989,6 +3992,9 @@ title_councilmember_emperor = {
 
 	allowed_to_grant = {
 		real_tier = EMPEROR
+		NOT = {
+			government = makhzen_government
+		}
 		has_law = law_voting_power_1
 		has_dlc = "Conclave"
 	}

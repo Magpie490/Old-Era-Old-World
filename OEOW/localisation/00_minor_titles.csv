@@ -23,6 +23,43 @@ title_castellan;Castellan;Castellan;Kastellan;;Castellano;;;;;;;;;x
 title_castellan_desc;This honorific is awarded to a vassal that is held in high regard by their liege. As Castellan they are responsible for the maintenance and daily ongoings of the Fortress.;Ce titre honorifique est attribué à un vassal qui est tenu en haute estime par son seigneur lige. Il est responsable de la maintenance de la forteresse.;Diese Auszeichnung wird einem Vasallen verliehen, der von seinem Lehnsherrn hoch geschätzt wird. Der Kastellan ist für die Instandhaltung und den täglichen Betrieb der Festung verantwortlich.;;Este honorífico se otorga a un vasallo tenido en gran estima por su señor. Como Castellano será responsable del mantenimiento y los asuntos diarios de la fortaleza.;;;;;;;;;x
 title_champion;Champion;Champion;Champion;;Campeón;;;;;;;;;x
 title_champion_desc;The person that this title is bestowed upon is considered to be the Champion of the Realm. There is surely no greater honor for mortal men to aspire to.;La personne à qui ce titre est décerné est considérée comme le champion du royaume. Aucun mortel ne saurait espérer titre plus honorable.;Die Person, die diesen Titel erhalten hat, wird als Champion des Reiches angesehen. Es gibt wahrlich keine größere Ehre für Sterbliche.;;La persona a la que se le otorga este título es considerada como el Campeón del Reino. No se puede aspirar a un honor mayor para los hombres mortales.;;;;;;;;;x
+title_family_head;Family Head;;;;;;;;;;;;;x
+title_family_head_desc;This character is the head of one of the leading families within the transnistrian empire;;;;;;;;;;;;;x
+title_chouri_duke;Chouri;;;;;;;;;;;;;x
+title_chouri_duke_desc;This title represents a member of a liege's Choura Council.;;;;;;;;;x,,,,,,,,;;;;
+title_chouri_king;Chouri;;;;;;;;;;;;;x
+title_chouri_king_desc;This title represents a member of a liege's Choura Council.;;;;;;;;;x,,,,,,,,;;;;
+title_chouri_emperor;Chouri;;;;;;;;;;;;;x
+title_chouri_emperor_desc;This title represents a member of a liege's Choura Council.;;;;;;;;;x,,,,,,,,;;;;
+
+ca_dirt_road;Dirt Roads;;;;;;;;;x
+ca_dirt_road_desc;Permanent and maintained dirt roads exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
+ca_stone_road;Stone Roads;;;;;;;;;x
+ca_stone_road_desc;Permanent and maintained stone roads exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
+ct_dirt_road;Dirt Roads;;;;;;;;;x
+ct_dirt_road_desc;Permanent and maintained dirt roads exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
+ct_stone_road;Stone Roads;;;;;;;;;x
+ct_stone_road_desc;Permanent and maintained stone roads exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
+tp_dirt_road;Dirt Roads;;;;;;;;;x
+tp_dirt_road_desc;Permanent and maintained dirt roads exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
+tp_stone_road;Stone Roads;;;;;;;;;x
+tp_stone_road_desc;Permanent and maintained stone roads exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
+ct_stone_highway;Stone Highways;;;;;;;;;x
+ct_stone_highway_desc;Permanent and maintained stone highways exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
+tp_stone_highway;Stone Highways;;;;;;;;;x
+tp_stone_highway_desc;Permanent and maintained stone highways exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
+ca_stone_highway;Stone Highways;;;;;;;;;x
+ca_stone_highway_desc;Permanent and maintained stone highways exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
+ct_sauna_russian;Banya;;;;;;;;;x
+ct_sauna_russian_desc;Steam baths, traditional for Eastern Slavs, and an important part of Russian culture in perticular. Here people wash, relax and communicate with each other.;;;;;;;;;x
+ct_sauna_baltic;Pirts;;;;;;;;;x
+ct_sauna_baltic_desc;Steam baths, traditional for Baltic cultures. Here people wash, relax and communicate with each other.;;;;;;;;;x
+ct_sauna_finnish;Sauna;;;;;;;;;x
+ct_sauna_finnish_desc;Steam baths, traditional for Finnish people. Here people wash, relax and communicate with each other.;;;;;;;;;x
+ct_sauna_arab;Hammam;;;;;;;;;x
+ct_sauna_arab_desc;Steam baths, traditional for many middle eastern, Indian and north african cultures. Here people wash, relax and communicate with each other.;;;;;;;;;x
+ct_sauna_greek;Dimósia Loutrá;;;;;;;;;x
+ct_sauna_greek_desc;Public Steam baths, traditional for Greek people. Here people wash, relax and communicate with each other. It is a tradition revived following the apocalypse for hygiene purposes.;;;;;;;;;x
 title_cherbi;Cherbi;Cherbi;Cherbi;;Cherbi;;;;;;;;;x
 title_cherbi_desc;The Cherbi is the leader of the Kheshig, the imperial guard of the Mongol Empire. They are charged with the protection of the empire's most important nobility, and the position as their commander is a very prestigious one.;Le cherbi est le commandant des Kheshig, la garde impériale de l'empire mongol. Ils sont en charge de la protection de la plus haute noblesse de l'empire, et l'opportunité de diriger cette garde est l'un des plus hauts honneurs.;Der Cherbi ist der Anführer des Kheshig, der Garde des mongolischen Reiches. Die Garde beschützt die wichtigsten Adelsgeschlechter des Reiches und die Position ihres Kommandanten ist sehr prestigeträchtig.;;El Cherbi es el líder de la Kheshig, la guardia imperial del Imperio Mongol. Ellos se encargan de la protección de los nobles más importantes del imperio, y el puesto como su comandante es muy prestigioso.;;;;;;;;;x
 title_chief_architect;Chief Architect;Maître-architecte;Chef-Architekt;;Arquitecto Jefe;;;;;;;;;x

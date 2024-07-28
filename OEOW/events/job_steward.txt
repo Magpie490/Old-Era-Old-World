@@ -33,19 +33,16 @@ character_event = {
 	desc = evt_steward_001_desc_a
 	picture = GFX_evt_carriage
 	border = GFX_event_normal_frame_economy
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_squeeze_peasants
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			county = {
 				is_occupied = no
 			}
-
 			owner = {
 				job_treasurer = {
 					character = ROOT
@@ -56,8 +53,111 @@ character_event = {
 
 	mean_time_to_happen = {
 		years = 30
-
+		
+		mult_modifier = {
+			factor = 0.92
+			trait = emul_nabuchadnezzar
+		}
+		mult_modifier = {
+			factor = 0.92
+			liege = {
+				trait = emul_nabuchadnezzar
+			}
+		}
+		
 		job_event_mtth_modifier_stewardship_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = administrator
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gardener
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -97,14 +197,12 @@ character_event = {
 	title = evt_steward_101_title
 	desc = evt_steward_101_desc_a
 	picture = GFX_evt_peasants
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_squeeze_peasants
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			owner = {
 				job_treasurer = {
@@ -123,15 +221,109 @@ character_event = {
 			factor = 0.5
 			location = { revolt_risk >= 0.01 }
 		}
-
 		mult_modifier = {
 			factor = 0.5
 			location = { revolt_risk >= 0.02 }
 		}
-
 		mult_modifier = {
 			factor = 0.75
 			NOT = { culture = location }
+		}
+		mult_modifier = {
+			factor = 0.75
+			NOT = { religion = location }
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = administrator
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gardener
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = just
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = imbecile
 		}
 	}
 
@@ -141,7 +333,6 @@ character_event = {
 		trigger = {
 			stewardship < 5
 		}
-
 		random_list = {
 			25 = {
 				character_event = {
@@ -160,7 +351,6 @@ character_event = {
 					character_event = { id = steward.104 }
 				}
 			}
-
 			25 = {
 				death = {
 					death_reason = death_rabble
@@ -172,16 +362,13 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = evt_steward_101_option
 		tooltip_info = stewardship
-
 		trigger = {
 			stewardship >= 5
 			stewardship < 10
 		}
-
 		random_list = {
 			35 = {
 				character_event = {
@@ -200,7 +387,6 @@ character_event = {
 					character_event = { id = steward.104 }
 				}
 			}
-
 			15 = {
 				death = {
 					death_reason = death_rabble
@@ -212,15 +398,12 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = evt_steward_101_option
 		tooltip_info = stewardship
-
 		trigger = {
 			stewardship >= 10
 		}
-
 		random_list = {
 			50 = {
 				character_event = {
@@ -239,7 +422,6 @@ character_event = {
 					character_event = { id = steward.104 }
 				}
 			}
-
 			10 = {
 				death = {
 					death_reason = death_rabble
@@ -292,6 +474,7 @@ character_event = {
 	picture = GFX_evt_carriage
 
 	is_triggered_only = yes
+
 	notification = yes
 
 	ai = no
@@ -309,6 +492,7 @@ character_event = {
 	picture = GFX_evt_death
 
 	is_triggered_only = yes
+
 	notification = yes
 
 	ai = no
@@ -324,21 +508,18 @@ character_event = {
 	id = steward.201
 	desc = evt_steward_201_desc_a
 	picture = GFX_evt_peasants
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_squeeze_peasants
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			owner = {
 				job_treasurer = {
 					character = ROOT
 				}
 			}
-
 			NOT = { has_province_modifier = high_taxes }
 		}
 	}
@@ -352,20 +533,109 @@ character_event = {
 			factor = 0.75
 			location = { revolt_risk >= 0.01 }
 		}
-
 		mult_modifier = {
 			factor = 0.75
 			location = { revolt_risk >= 0.02 }
 		}
-
 		mult_modifier = {
 			factor = 0.75
 			NOT = { culture = location }
 		}
-
 		mult_modifier = {
 			factor = 0.75
 			NOT = { religion = location }
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = administrator
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gardener
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = just
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = imbecile
 		}
 	}
 
@@ -430,7 +700,6 @@ letter_event = {
 					name = high_taxes
 					years = 1
 				}
-
 				# Province barons
 				any_province_lord = {
 					show_scope_change = no
@@ -441,7 +710,6 @@ letter_event = {
 							character = FROM # steward
 						}
 					}
-
 					opinion = {
 						name = opinion_irritated
 						who = ROOT
@@ -452,6 +720,7 @@ letter_event = {
 		}
 	}
 }
+
 
 ##############################
 # STEWARD
@@ -465,7 +734,6 @@ character_event = {
 	desc = evt_steward_301_desc_a
 	picture = GFX_evt_castle_construction
 	border = GFX_event_normal_frame_economy
-
 	has_job_title = yes
 
 	trigger = {
@@ -488,8 +756,111 @@ character_event = {
 
 	mean_time_to_happen = {
 		years = 40
-
+		
+		mult_modifier = {
+			factor = 0.92
+			trait = emul_nimrod
+		}
+		mult_modifier = {
+			factor = 0.92
+			liege = {
+				trait = emul_nimrod
+			}
+		}
+		
 		job_event_mtth_modifier_stewardship_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = administrator
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gardener
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -548,14 +919,12 @@ character_event = {
 	desc = evt_steward_401_desc_a
 	picture = GFX_evt_castle_construction
 	border = GFX_event_normal_frame_economy
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_oversee_construction
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			any_province_lord = {
 				independent = no
@@ -573,6 +942,98 @@ character_event = {
 		years = 10
 
 		job_event_mtth_modifier_inverted_stewardship_score = yes
+		mult_modifier = {
+			factor = 1.07
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = administrator
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gardener
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = just
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -634,7 +1095,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = evt_steward_402_option_b
 
@@ -729,7 +1189,6 @@ letter_event = {
 			years = 2
 		}
 	}
-
 	option = {
 		name = evt_steward_406_option_b
 
@@ -749,24 +1208,20 @@ character_event = {
 	desc = evt_steward_501_desc_a
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_economy
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_settle_tribe
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			county = {
 				is_occupied = no
 			}
-
 			owner = {
 				job_treasurer = {
 					character = ROOT
 				}
-
 				NOT = { culture = PREV }
 			}
 
@@ -797,10 +1252,101 @@ character_event = {
 		years = 50
 
 		job_event_mtth_modifier_stewardship_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = administrator
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gardener
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 
 		mult_modifier = {
 			factor = 3
-
 			OR = {
 				has_game_rule = {
 					name = culture_conversion
@@ -818,63 +1364,60 @@ character_event = {
 			liege = { real_tier = COUNT }
 		}
 
-		mult_modifier = { # Roman Renaissance
+		mult_modifier = { #Roman Renaissance.
 			factor = 0.5
-
 			has_global_flag = flag_started_roman_renaissance
 			liege = { culture = roman }
-			location = { culture_group = latin }
+			location = { county = { culture_group = apeninian } }
 		}
-
 		mult_modifier = {
 			factor = 0.75
-
 			liege = {
 				culture = roman
-
 				any_owned_bloodline = {
 					has_bloodline_flag = bloodline_faster_roman
-					bloodline_is_active_for = PREV
 				}
 			}
 		}
-
-		modifier = { # Greek culture is more impervious to Romanization
+		mult_modifier = { #Greek culture is more impervious to Romanization.
 			factor = 2
-
 			liege = { culture = roman }
-			location = { culture = greek }
+			location = { county = { culture_group = byzantine } }
 		}
-
+		mult_modifier = { #Spanish Renaissance.
+			factor = 0.5
+			has_global_flag = spanish_culture
+			liege = { culture = spanish }
+			location = { county = { culture_group = hispanophone } }
+		}
 		mult_modifier = {
-			factor = 0.25
-
-			location = {
-				county = {
-					OR = {
-						culture = zhangzhung
-						culture = sumpa
-					}
-
-					owner = {
-						culture = bodpa
-
-						OR = {
-							any_owned_bloodline = {
-								has_bloodline_flag = bloodline_songtsen_gampo
-								bloodline_is_active_for = PREV
-							}
-
-							top_liege = {
-								any_owned_bloodline = {
-									has_bloodline_flag = bloodline_songtsen_gampo
-									bloodline_is_active_for = PREV
-								}
-							}
-						}
-					}
+			factor = 0.75
+			liege = {
+				culture = spanish
+				any_owned_bloodline = {
+					has_bloodline_flag = bloodline_faster_spanish
 				}
 			}
+		}
+		mult_modifier = { #Portuguese culture is more impervious to Hispanization.
+			factor = 2
+			liege = { culture = spanish }
+			location = { county = { culture = portuguese } }
+		}
+		mult_modifier = {
+			factor = 0.5
+			liege = { OR = { culture = durzi culture = deluzi } }
+			location = { county = { religion = druze } }
+		}
+		mult_modifier = {
+			factor = 0.5
+			liege = { culture = nusayri }
+			location = { county = { religion = alawite } }
+		}
+		mult_modifier = {
+			factor = 0.5
+			liege = { culture = mandaeans }
+			location = { county = { religion = mandaeanism } }
 		}
 	}
 
@@ -908,14 +1451,12 @@ character_event = {
 				show_scope_change = no
 
 				culture = ROOT
-
 				if = {
 					limit = { has_province_modifier = nomad_agitation }
 					remove_province_modifier = nomad_agitation
 				}
 			}
 		}
-
 		opinion = {
 			name = opinion_grateful
 			who = FROM
@@ -931,20 +1472,17 @@ character_event = {
 	desc = evt_steward_601_desc_a
 	picture = GFX_evt_peasants
 	border = GFX_event_normal_frame_economy
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_settle_tribe
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			owner = {
 				job_treasurer = {
 					character = ROOT
 				}
-
 				NOT = { culture = PREV }
 			}
 
@@ -981,15 +1519,105 @@ character_event = {
 			factor = 0.75
 			location = { has_province_modifier = depopulated_1 }
 		}
-
 		mult_modifier = {
 			factor = 0.50
 			location = { has_province_modifier = depopulated_2 }
 		}
-
 		mult_modifier = {
 			factor = 0.25
 			location = { has_province_modifier = depopulated_3 }
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = administrator
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gardener
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = just
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = imbecile
 		}
 	}
 
@@ -1036,21 +1664,18 @@ character_event = {
 	desc = evt_steward_701_desc_a
 	picture = GFX_evt_viking_battle_oldgods
 	border = GFX_event_normal_frame_war
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_build_legend
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		liege = {
 			# The AI pretty much always just let their warriors stand around, getting a prestige hit when they disband
 			trigger_if = {
 				limit = { ai = yes }
 				war = yes
 			}
-
 			is_adult = yes
 			prisoner = no
 			is_incapable = no
@@ -1064,7 +1689,6 @@ character_event = {
 					years >= 5
 				}
 			}
-
 			capital_scope = {
 				ROOT = { at_location = PREV }
 				county = { is_occupied = no }
@@ -1093,6 +1717,98 @@ character_event = {
 		}
 
 		job_event_mtth_modifier_stewardship_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = administrator
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gardener
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -1163,7 +1879,6 @@ character_event = {
 	border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
-
 	war = no
 
 	trigger = {
@@ -1191,21 +1906,18 @@ character_event = {
 	desc = evt_steward_801_desc_a
 	picture = GFX_evt_carriage
 	border = GFX_event_normal_frame_economy
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_collect_tribute
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		liege = {
 			ROOT = {
 				location = {
 					county = {
 						is_occupied = no
 					}
-
 					any_province_lord = {
 						capital_scope = {
 							province = PREVPREV
@@ -1229,14 +1941,116 @@ character_event = {
 
 	mean_time_to_happen = {
 		years = 5
-
+		
+		modifier = {
+			factor = 0.92
+			trait = emul_nabuchadnezzar
+		}
+		modifier = {
+			factor = 0.92
+			liege = {
+				trait = emul_nabuchadnezzar
+			}
+		}
+		
 		job_event_mtth_modifier_stewardship_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = administrator
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gardener
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 	}
 
 	immediate = {
 		liege = {
 			save_event_target_as = tribute_asker
-
 			ROOT = {
 				location = {
 					random_province_lord = {
@@ -1256,7 +2070,6 @@ character_event = {
 								has_character_modifier = hidden_extra_tribute
 							}
 						}
-
 						save_event_target_as = tribute_giver
 					}
 				}
@@ -1330,43 +2143,34 @@ character_event = {
 
 		ai_chance = {
 			factor = 100
-
 			mult_modifier = {
 				factor = 3.0
 				trait = charitable
 			}
-
 			mult_modifier = {
 				factor = 3.0
 				trait = content
 			}
-
 			mult_modifier = {
 				factor = 5.0
 				trait = craven
 			}
-
 			mult_modifier = {
 				factor = 2.0
-
 				opinion = {
 					who = event_target:tribute_asker
 					value >= 25
 				}
 			}
-
 			mult_modifier = {
 				factor = 2.0
-
 				opinion = {
 					who = event_target:tribute_asker
 					value >= 50
 				}
 			}
-
 			mult_modifier = {
 				factor = 2.0
-
 				opinion = {
 					who = event_target:tribute_asker
 					value >= 75
@@ -1387,15 +2191,12 @@ character_event = {
 		FROM = {
 			character_event = { id = steward.805 } # Notifications
 		}
-
 		ai_chance = {
 			factor = 100
-
 			mult_modifier = {
 				factor = 5.0
 				trait = greedy
 			}
-
 			mult_modifier = {
 				factor = 2.0
 
@@ -1404,7 +2205,6 @@ character_event = {
 					value < -25
 				}
 			}
-
 			mult_modifier = {
 				factor = 2.0
 
@@ -1413,7 +2213,6 @@ character_event = {
 					value < -50
 				}
 			}
-
 			mult_modifier = {
 				factor = 2.0
 
@@ -1468,7 +2267,6 @@ character_event = {
 				min = 5
 				value = 1.0 # One year's income
 			}
-
 			reverse_opinion = {
 				name = squeezed_for_extra_tribute
 				who = FROMFROM

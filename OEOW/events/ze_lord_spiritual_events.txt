@@ -49,7 +49,8 @@ character_event = {
 		}
 
 		any_independent_ruler = {
-			is_unreformed_pagan_trigger = yes
+			religion_group = pagan_group
+			is_reformed_religion = no
 			is_landed = yes
 			is_within_diplo_range = ROOT
 
@@ -91,14 +92,10 @@ character_event = {
 
 		random_independent_ruler = {
 			limit = {
-				is_unreformed_pagan_trigger = yes
+				religion_group = pagan_group
+				is_reformed_religion = no
 				is_landed = yes
 				is_within_diplo_range = ROOT
-
-				trigger_if = {
-					limit = { religion = aztec_pagan }
-					year >= 1350
-				}
 
 				NOT = {
 					has_opinion_modifier = {
@@ -167,7 +164,6 @@ letter_event = {
 
 		any_demesne_province = {
 			has_empty_holding = yes
-			owned_by = PREV
 		}
 
 		job_spiritual = {
@@ -224,10 +220,7 @@ letter_event = {
 		random_demesne_province = {
 			show_scope_change = no
 
-			limit = {
-				has_empty_holding = yes
-				owned_by = PREV
-			}
+			limit = { has_empty_holding = yes }
 
 			build_holding = {
 				type = temple
@@ -268,10 +261,18 @@ character_event = {
 				trait = cynical
 				trait = sympathy_christendom
 				trait = sympathy_islam
+				trait = sympathy_mormon
 				trait = sympathy_pagans
 				trait = sympathy_zoroastrianism
 				trait = sympathy_judaism
 				trait = sympathy_indian
+				trait = sympathy_old_world_cultist
+				trait = sympathy_buddhism
+				trait = sympathy_esoteric
+				trait = sympathy_syncratic
+				trait = sympathy_oceanic
+				trait = sympathy_chinese
+				trait = sympathy_shinto
 			}
 
 			opinion = {
@@ -310,10 +311,18 @@ character_event = {
 
 					christian         = { PREV = { add_trait = sympathy_christendom } }
 					muslim            = { PREV = { add_trait = sympathy_islam } }
+					mormonic            = { PREV = { add_trait = sympathy_mormon } }
 					pagan_group       = { PREV = { add_trait = sympathy_pagans } }
 					zoroastrian_group = { PREV = { add_trait = sympathy_zoroastrianism } }
 					jewish_group      = { PREV = { add_trait = sympathy_judaism } }
 					indian_group      = { PREV = { add_trait = sympathy_indian } }
+					chinese_traditional_group      = { PREV = { add_trait = sympathy_chinese } }
+					shintoist_group      = { PREV = { add_trait = sympathy_shinto } }
+					old_world_cultist_group      = { PREV = { add_trait = sympathy_old_world_cultist } }
+					buddhist_group      = { PREV = { add_trait = sympathy_buddhism } }
+					esoteric      = { PREV = { add_trait = sympathy_esoteric } }
+					syncratic_group      = { PREV = { add_trait = sympathy_syncratic } }
+					oceanic      = { PREV = { add_trait = sympathy_oceanic } }
 				}
 			}
 		}
@@ -653,7 +662,10 @@ letter_event = {
 
 			location = {
 				owner = {
-					religion_group = pagan_group
+					OR = {
+						religion_group = pagan_group
+						religion_group = old_world_cultist_group
+					}
 				}
 			}
 
@@ -689,7 +701,7 @@ letter_event = {
 		job_spiritual = {
 			show_scope_change = no
 
-			cancel_job_action = yes
+			cancel_job_action = action_inquisition
 
 			opinion = {
 				name = opinion_grateful
@@ -719,7 +731,7 @@ letter_event = {
 		job_spiritual = {
 			show_scope_change = no
 
-			cancel_job_action = yes
+			cancel_job_action = action_inquisition
 
 			opinion = {
 				name = opinion_grateful

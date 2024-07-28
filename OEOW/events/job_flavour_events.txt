@@ -8,7 +8,6 @@
 #
 # Written by Sara Wendel-Örtqvist
 
-
 ### Councillors are good at their work ###
 
 # Chancellor is good at his/her job
@@ -28,7 +27,6 @@ character_event = {
 	trigger = {
 		is_nomadic = no
 		is_tribal = no
-
 		job_chancellor = {
 			diplomacy >= 12
 			is_smart_trigger = yes
@@ -42,13 +40,11 @@ character_event = {
 
 	option = {
 		name = EVTOPTA75000
-
 		add_character_modifier = {
 			name = town_appreciate
 			days = 432
 		}
 	}
-
 	option = {
 		name = EVTOPTB75000
 
@@ -94,7 +90,6 @@ character_event = {
 		job_marshal = {
 			martial >= 12
 			is_smart_trigger = yes
-
 			location = {
 				NOT = { has_province_modifier = troops_increases }
 			}
@@ -110,7 +105,6 @@ character_event = {
 			name = troops_likes_marshal
 			days = 432
 		}
-
 		if = {
 			limit = { has_dlc = "Reapers" }
 
@@ -126,7 +120,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75001
 
@@ -166,9 +159,7 @@ character_event = {
 
 		any_demesne_province = {
 			revolt_risk >= 0.02
-			owned_by = PREV
 		}
-
 		job_treasurer = {
 			stewardship >= 12
 			is_smart_trigger = yes
@@ -182,13 +173,11 @@ character_event = {
 
 	option = {
 		name = EVTOPTA75002
-
 		add_character_modifier = {
 			name = steward_taxincome
 			days = 432
 		}
 	}
-
 	option = {
 		name = EVTOPTB75002
 
@@ -244,13 +233,11 @@ character_event = {
 
 	option = {
 		name = EVTOPTA75003
-
 		add_character_modifier = {
 			name = increase_arrest_chance
 			days = 432
 		}
 	}
-
 	option = {
 		name = EVTOPTB75003
 
@@ -328,7 +315,6 @@ character_event = {
 			days = 432
 		}
 	}
-
 	option = {
 		name = EVTOPTA75005
 
@@ -399,7 +385,6 @@ character_event = {
 
 	trigger = {
 		independent = no
-
 		liege = {
 			war = no
 			NOT = { has_character_modifier = lustful_chancellor_timer }
@@ -410,7 +395,6 @@ character_event = {
 				at_location = ROOT
 				is_female = no
 				trait = lustful
-
 				NOR = {
 					character = ROOT
 					trait = celibate
@@ -455,14 +439,12 @@ character_event = {
 				factor = 2
 				trait = envious
 			}
-
 			mult_modifier = {
 				factor = 0.05
 				trait = kind
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75010
 
@@ -475,7 +457,6 @@ character_event = {
 				factor = 0.05
 				trait = envious
 			}
-
 			mult_modifier = {
 				factor = 3
 				trait = kind
@@ -499,13 +480,11 @@ character_event = {
 
 		FROM = {
 			show_scope_change = no
-
 			reverse_opinion = {
 				name = opinion_complaining
 				who = ROOT
 				years = 3
 			}
-
 			character_event = {
 				id = 75012
 				days = 1
@@ -513,12 +492,9 @@ character_event = {
 				tooltip = EVTTOOLTIP75012
 			}
 		}
-
 		job_chancellor = {
 			show_scope_change = no
-
 			imprison = FROM
-
 			character_event = {
 				id = 75013
 				days = 1
@@ -527,19 +503,16 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75011
 
 		job_chancellor = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_my_saviour
 				who = FROM
 				years = 2
 			}
-
 			character_event = {
 				id = 75014
 				days = 1
@@ -547,16 +520,13 @@ character_event = {
 				tooltip = EVTTOOLTIP75014
 			}
 		}
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_betrayed
 				who = ROOT
 				years = 2
 			}
-
 			character_event = {
 				id = 75015
 				days = 1
@@ -692,7 +662,6 @@ character_event = {
 				}
 			}
 		}
-
 		liege = {
 			show_scope_change = no
 
@@ -702,7 +671,6 @@ character_event = {
 				random = 2
 				tooltip = EVTTOOLTIP75021
 			}
-
 			random_vassal = {
 				show_scope_change = no
 
@@ -712,7 +680,6 @@ character_event = {
 						value < 0
 					}
 				}
-
 				character_event = {
 					id = 75022
 					days = 1
@@ -722,14 +689,12 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75020
 
 		trigger = {
 			liege = {
 				is_married = yes
-
 				spouse = {
 					is_abroad = no
 					prisoner = no
@@ -742,7 +707,6 @@ character_event = {
 				}
 			}
 		}
-
 		liege = {
 			show_scope_change = no
 
@@ -752,7 +716,6 @@ character_event = {
 				random = 2
 				tooltip = EVTTOOLTIP75023
 			}
-
 			spouse = {
 				show_scope_change = no
 
@@ -765,7 +728,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTC75020
 
@@ -802,16 +764,13 @@ character_event = {
 					value < 0
 				}
 			}
-
 			opinion = {
 				name = opinion_glad
 				who = ROOT
 				years = 5
 			}
 		}
-
 		scaled_wealth = -0.1
-
 		FROM = {
 			show_scope_change = no
 
@@ -820,7 +779,6 @@ character_event = {
 				who = ROOT
 				years = 2
 			}
-
 			character_event = {
 				id = 75026
 				days = 1
@@ -842,16 +800,13 @@ character_event = {
 					value < 0
 				}
 			}
-
 			opinion = {
 				name = opinion_glad
 				who = ROOT
 				years = 5
 			}
 		}
-
 		prestige = 10
-
 		FROM = {
 			show_scope_change = no
 
@@ -906,7 +861,6 @@ character_event = {
 			who = spouse
 			years = 5
 		}
-
 		scaled_wealth = -0.1
 
 		opinion = {
@@ -914,7 +868,6 @@ character_event = {
 			who = FROM
 			years = 2
 		}
-
 		FROM = {
 			show_scope_change = no
 
@@ -926,7 +879,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75023 # It's just his/her job
 
@@ -946,7 +898,6 @@ character_event = {
 				who = ROOT
 				years = 2
 			}
-
 			character_event = {
 				id = 75027
 				days = 1
@@ -996,7 +947,6 @@ character_event = {
 				years = 2
 			}
 		}
-
 		scaled_wealth = -0.1
 
 		opinion = {
@@ -1004,7 +954,6 @@ character_event = {
 			who = FROM
 			years = 2
 		}
-
 		FROM = {
 			show_scope_change = no
 
@@ -1016,7 +965,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75025 # It's just his/her job
 
@@ -1029,9 +977,7 @@ character_event = {
 				years = 2
 			}
 		}
-
 		prestige = 10
-
 		FROM = {
 			show_scope_change = no
 
@@ -1108,7 +1054,6 @@ character_event = {
 		name = EVTOPTA75030
 
 		prestige = -5
-
 		liege = {
 			character_event = {
 				id = 75031
@@ -1139,7 +1084,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75031 # Ignore it
 
@@ -1165,7 +1109,6 @@ character_event = {
 				is_ruler = no
 			}
 		}
-
 		FROM = {
 			show_scope_change = no
 
@@ -1198,13 +1141,11 @@ character_event = {
 				tooltip = EVTTOOLTIP75035
 			}
 		}
-
 		random = {
 			chance = 25
 			add_trait_fully_wroth_effect = yes
 		}
 	}
-
 	option = {
 		name = EVTOPTB75032
 
@@ -1313,7 +1254,6 @@ character_event = {
 
 		liege = {
 			is_nomadic = no
-
 			any_courtier = {
 				is_adult = yes
 				prisoner = no
@@ -1342,7 +1282,6 @@ character_event = {
 						has_character_flag = banished_religion
 					}
 				}
-
 				save_event_target_as = target_infidel
 			}
 		}
@@ -1362,7 +1301,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75040 # Demand to liege that X should be exiled.
 
@@ -1413,13 +1351,11 @@ character_event = {
 
 		event_target:target_infidel = {
 			show_scope_change = no
-
 			death = {
 				death_reason = death_execution_burning
 				killer = ROOT
 			}
 		}
-
 		FROM = {
 			show_scope_change = no
 
@@ -1436,7 +1372,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75041
 
@@ -1445,7 +1380,6 @@ character_event = {
 			who = event_target:target_infidel
 			years = 2
 		}
-
 		any_courtier = {
 			show_scope_change = no
 
@@ -1455,14 +1389,12 @@ character_event = {
 				religion = ROOT
 				NOT = { character = ROOT }
 			}
-
 			opinion = {
 				name = opinion_ignored_infidel
 				who = ROOT
 				years = 5
 			}
 		}
-
 		FROM = {
 			character_event = {
 				id = 75044
@@ -1509,7 +1441,6 @@ character_event = {
 				years = 5
 			}
 		}
-
 		FROM = {
 			show_scope_change = no
 
@@ -1526,7 +1457,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75042
 
@@ -1535,7 +1465,6 @@ character_event = {
 			who = event_target:target_infidel
 			years = 2
 		}
-
 		any_courtier = {
 			show_scope_change = no
 
@@ -1545,14 +1474,12 @@ character_event = {
 				prisoner = no
 				NOT = { character = ROOT }
 			}
-
 			opinion = {
 				name = opinion_ignored_infidel
 				who = ROOT
 				years = 5
 			}
 		}
-
 		FROM = {
 			character_event = {
 				id = 75046
@@ -1660,7 +1587,6 @@ character_event = {
 					is_adult = yes
 					prisoner = no
 				}
-
 				save_event_target_as = target_heretic
 			}
 		}
@@ -1680,7 +1606,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75050 # Demand to liege that X should be exiled.
 
@@ -1710,16 +1635,13 @@ character_event = {
 
 		event_target:target_heretic = {
 			show_scope_change = no
-
 			death = {
 				death_reason = death_execution_burning
 				killer = ROOT
 			}
 		}
-
 		any_courtier = {
 			show_scope_change = no
-
 			limit = {
 				religion = event_target:target_heretic
 				prisoner = no
@@ -1729,17 +1651,14 @@ character_event = {
 					character = event_target:target_heretic
 				}
 			}
-
 			opinion = {
 				name = opinion_burned_same_faith
 				who = ROOT
 				years = 5
 			}
 		}
-
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_satisfied
 				who = ROOT
@@ -1753,7 +1672,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75051
 
@@ -1762,24 +1680,20 @@ character_event = {
 			who = event_target:target_heretic
 			years = 5
 		}
-
 		any_courtier = {
 			show_scope_change = no
-
 			limit = {
 				trait = zealous
 				religion = ROOT
 				prisoner = no
 				NOT = { character = ROOT }
 			}
-
 			opinion = {
 				name = opinion_ignored_infidel
 				who = ROOT
 				years = 5
 			}
 		}
-
 		FROM = {
 			character_event = {
 				id = 75054
@@ -1826,7 +1740,6 @@ character_event = {
 				years = 5
 			}
 		}
-
 		FROM = {
 			show_scope_change = no
 
@@ -1843,7 +1756,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75052
 
@@ -1852,7 +1764,6 @@ character_event = {
 			who = event_target:target_heretic
 			years = 2
 		}
-
 		any_courtier = {
 			show_scope_change = no
 
@@ -1862,14 +1773,12 @@ character_event = {
 				prisoner = no
 				NOT = { character = ROOT }
 			}
-
 			opinion = {
 				name = opinion_ignored_infidel
 				who = ROOT
 				years = 5
 			}
 		}
-
 		FROM = {
 			character_event = {
 				id = 75056
@@ -1994,8 +1903,6 @@ character_event = {
 			random_demesne_province = {
 				show_scope_change = no
 
-				limit = { owned_by = PREV }
-
 				add_province_modifier = {
 					name = arbitrary_steward
 					years = 5
@@ -2059,8 +1966,6 @@ character_event = {
 			random_demesne_province = {
 				show_scope_change = no
 
-				limit = { owned_by = PREV }
-
 				add_province_modifier = {
 					name = just_steward
 					years = 5
@@ -2088,10 +1993,8 @@ character_event = {
 				trait = charitable
 			}
 		}
-
 		any_demesne_province = {
 			has_disease = yes
-			owned_by = PREV
 		}
 	}
 
@@ -2131,12 +2034,9 @@ character_event = {
 			random_demesne_province = {
 				show_scope_change = no
 
-				limit = {
-					has_disease = yes
-					owned_by = PREV
-				}
+				limit = { has_disease = yes }
 
-				reduce_disease = -0.33
+				reduce_disease = 0.33
 			}
 		}
 	}
@@ -2168,11 +2068,8 @@ character_event = {
 		name = EVTOPTA75075
 
 		scaled_wealth = 0.2
-
 		random_demesne_province = {
 			show_scope_change = no
-
-			limit = { owned_by = PREV }
 
 			add_province_modifier = {
 				name = peasants_upset
@@ -2180,7 +2077,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75075
 
@@ -2208,7 +2104,6 @@ character_event = {
 		name = EVTOPTA75076
 
 		change_stewardship = -1
-
 		opinion = {
 			name = opinion_betrayed
 			who = FROM
@@ -2233,10 +2128,8 @@ character_event = {
 		job_treasurer = {
 			trait = diligent
 		}
-
 		any_demesne_province = {
 			has_province_modifier = thieves_guild
-			owned_by = PREV
 		}
 	}
 
@@ -2258,19 +2151,14 @@ character_event = {
 				years = 2
 			}
 		}
-
 		random_demesne_province = {
 			show_scope_change = no
 
-			limit = {
-				has_province_modifier = thieves_guild
-				owned_by = PREV
-			}
+			limit = { has_province_modifier = thieves_guild }
 
 			remove_province_modifier = thieves_guild
 		}
 	}
-
 	option = {
 		name = EVTOPTB75080
 
@@ -2294,11 +2182,9 @@ character_event = {
 		job_treasurer = {
 			stewardship >= 15
 		}
-
 		any_demesne_province = {
 			is_capital = yes
 			NOT = { has_province_modifier = intelligent_steward }
-			owned_by = PREV
 		}
 	}
 
@@ -2310,15 +2196,10 @@ character_event = {
 		name = EVTOPTA75085 # Adapt his ideas
 
 		scaled_wealth = -0.1
-
 		random_demesne_province = {
 			show_scope_change = no
 
-			limit = {
-				is_capital = yes
-				NOT = { has_province_modifier = intelligent_steward }
-				owned_by = PREV
-			}
+			limit = { is_capital = yes }
 
 			add_province_modifier = {
 				name = intelligent_steward
@@ -2328,13 +2209,11 @@ character_event = {
 			increase_prosperity_effect = yes
 		}
 	}
-
 	option = {
 		name = EVTOPTB75085
 
 		job_treasurer = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_dislike
 				who = ROOT
@@ -2362,8 +2241,6 @@ character_event = {
 		wealth < 1500
 
 		any_demesne_province = {
-			owned_by = PREV
-
 			OR = {
 				has_province_modifier = highway_robber_band
 				has_province_modifier = thieves_guild
@@ -2394,7 +2271,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75090
 
@@ -2434,7 +2310,6 @@ character_event = {
 			character_event = { id = 75092 }
 		}
 	}
-
 	option = {
 		name = EVTOPTB75091
 
@@ -2444,10 +2319,8 @@ character_event = {
 			limit = {
 				FROM = { wealth >= 50 }
 			}
-
 			wealth = 50
 		}
-
 		FROM = {
 			character_event = { id = 75093 }
 		}
@@ -2531,14 +2404,12 @@ character_event = {
 				years = 3
 				hidden = yes
 			}
-
 			character_event = {
 				id = 75096
 				tooltip = EVTTOOLTIP75096
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75095
 
@@ -2582,7 +2453,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75096 # Admit it
 
@@ -2631,13 +2501,11 @@ character_event = {
 					wealth >= 1
 				}
 			}
-
 			wealth = FROM
 		}
 
 		FROM = {
 			show_scope_change = no
-
 			opinion = {
 				name = opinion_dislike
 				who = ROOT
@@ -2647,7 +2515,6 @@ character_event = {
 			character_event = { id = 75099 }
 		}
 	}
-
 	option = {
 		name = EVTOPTB75098
 
@@ -2658,7 +2525,6 @@ character_event = {
 			character_event = { id = 75100 }
 		}
 	}
-
 	option = {
 		name = EVTOPTC75098
 
@@ -2723,14 +2589,11 @@ character_event = {
 	trigger = {
 		has_job_title = job_marshal
 		war = no
-
 		liege = {
 			any_demesne_province = {
 				has_province_modifier = highway_robber_band
-				owned_by = PREV
 			}
 		}
-
 		OR = {
 			trait = diligent
 			trait = brave
@@ -2759,7 +2622,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75105
 
@@ -2785,21 +2647,14 @@ character_event = {
 			95 = {
 				random_demesne_province = {
 					show_scope_change = no
-
-					limit = {
-						has_province_modifier = highway_robber_band
-						owned_by = PREV
-					}
-
+					limit = { has_province_modifier = highway_robber_band }
 					remove_province_modifier = highway_robber_band
 				}
-
 				add_character_modifier = {
 					name = marshal_highway_robbers
 					years = 5
 				}
 			}
-
 			5 = {
 				FROM = {
 					show_scope_change = no
@@ -2809,7 +2664,6 @@ character_event = {
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75106
 
@@ -2817,21 +2671,14 @@ character_event = {
 			50 = {
 				random_demesne_province = {
 					show_scope_change = no
-
-					limit = {
-						has_province_modifier = highway_robber_band
-						owned_by = PREV
-					}
-
+					limit = { has_province_modifier = highway_robber_band }
 					remove_province_modifier = highway_robber_band
 				}
-
 				add_character_modifier = {
 					name = marshal_highway_robbers
 					years = 5
 				}
 			}
-
 			20 = {
 				FROM = {
 					show_scope_change = no
@@ -2839,7 +2686,6 @@ character_event = {
 					add_maimed_trait_effect = yes
 				}
 			}
-
 			20 = {
 				FROM = {
 					show_scope_change = no
@@ -2847,7 +2693,6 @@ character_event = {
 					add_trait_wounded_effect = yes
 				}
 			}
-
 			10 = {
 				FROM = {
 					show_scope_change = no
@@ -2937,15 +2782,12 @@ character_event = {
 		random_demesne_province = {
 			show_scope_change = no
 
-			limit = { owned_by = PREV }
-
 			add_province_modifier = {
 				name = peasants_upset
 				years = 2
 			}
 		}
 	}
-
 	option = {
 		name = EVTOPTB75111
 
@@ -2978,13 +2820,11 @@ character_event = {
 				years = 3
 			}
 		}
-
 		random = {
 			chance = 25
 			add_trait_fully_just_effect = yes
 		}
 	}
-
 	option = {
 		name = EVTOPTC75111
 
@@ -2996,7 +2836,6 @@ character_event = {
 				who = ROOT
 				years = 3
 			}
-
 			character_event = {
 				id = 75114
 				tooltip = EVTTOOLTIP75114
@@ -3007,8 +2846,6 @@ character_event = {
 
 		random_demesne_province = {
 			show_scope_change = no
-
-			limit = { owned_by = PREV }
 
 			add_province_modifier = {
 				name = peasants_upset
@@ -3099,7 +2936,6 @@ character_event = {
 
 		capital_scope = {
 			show_scope_change = no
-
 			add_province_modifier = {
 				name = marshal_improves_capital
 				years = 5
@@ -3108,7 +2944,6 @@ character_event = {
 			increase_prosperity_effect = yes
 		}
 	}
-
 	option = {
 		name = EVTOPTB75120
 

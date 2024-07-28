@@ -30,14 +30,12 @@ character_event = {
 	desc = evt_chancellor_001_desc_a
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_diplomacy
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_improve_relations
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			any_province_lord = {
 				# No reason to improve relations with irrelevant barons
@@ -45,7 +43,6 @@ character_event = {
 					limit = { real_tier = BARON }
 					same_liege = ROOT
 				}
-
 				is_priest = no
 
 				NOR = {
@@ -59,7 +56,110 @@ character_event = {
 	mean_time_to_happen = {
 		months = 100
 
+		modifier = {
+			factor = 0.92
+			trait = emul_hammurabi
+		}
+		modifier = {
+			factor = 0.92
+			liege = {
+				trait = emul_hammurabi
+			}
+		}
+		
 		job_event_mtth_modifier_diplomacy_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = erudite
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = scholar
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -132,6 +232,7 @@ letter_event = {
 	}
 }
 
+
 # 911: The Chancellor's attempts to improve relations with lord is sabotaged
 character_event = {
 	id = chancellor.101
@@ -139,14 +240,12 @@ character_event = {
 	desc = evt_chancellor_101_desc_a
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_diplomacy
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_improve_relations
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			any_province_lord = {
 				is_priest = no
@@ -163,6 +262,98 @@ character_event = {
 		years = 10
 
 		job_event_mtth_modifier_inverted_diplomacy_score = yes
+		mult_modifier = {
+			factor = 1.07
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = erudite
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = scholar
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = just
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 0.88
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -225,6 +416,7 @@ letter_event = {
 	border = GFX_event_letter_frame_diplomacy
 
 	show_from_from = yes
+
 	is_triggered_only = yes
 
 	option = {
@@ -250,7 +442,6 @@ character_event = {
 	desc = evt_chancellor_201_desc_a
 	picture = GFX_evt_council
 	border = GFX_event_normal_frame_diplomacy
-
 	has_job_title = yes
 
 	trigger = {
@@ -282,7 +473,6 @@ character_event = {
 								}
 							}
 						}
-
 						AND = {
 							ROOT = {
 								diplomacy >= 15
@@ -305,7 +495,6 @@ character_event = {
 								}
 							}
 						}
-
 						AND = {
 							ROOT = {
 								liege = {
@@ -313,7 +502,6 @@ character_event = {
 									NOT = { has_character_flag = kingdom_claimed_with_ambition }
 								}
 							}
-
 							kingdom = {
 								NOT = { claimed_by = PREVPREVPREV } # liege
 
@@ -364,6 +552,98 @@ character_event = {
 				bloodline_is_active_for = PREV
 			}
 		}
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = erudite
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = scholar
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -376,7 +656,6 @@ character_event = {
 					liege = {
 						has_ambition = obj_become_king
 						NOT = { has_character_flag = kingdom_claimed_with_ambition }
-
 						ROOT = {
 							location = {
 								kingdom = {
@@ -391,7 +670,6 @@ character_event = {
 						}
 					}
 				}
-
 				random = {
 					chance = 2
 
@@ -409,11 +687,9 @@ character_event = {
 						factor = 2 # 20% chance
 						diplomacy >= 22
 					}
-
 					location = {
 						kingdom = {
 							save_event_target_as = target_title
-
 							holder_scope = {
 								character_event = {
 									id = chancellor.202
@@ -422,11 +698,9 @@ character_event = {
 							}
 						}
 					}
-
 					liege = {
 						set_character_flag = kingdom_claimed_with_ambition
 					}
-
 					set_character_flag = claim_done
 				}
 			}
@@ -455,7 +729,6 @@ character_event = {
 						}
 					}
 				}
-
 				random = {
 					chance = 10
 
@@ -468,11 +741,9 @@ character_event = {
 						factor = 1.5 # 30% chance
 						diplomacy >= 20
 					}
-
 					location = {
 						duchy = {
 							save_event_target_as = target_title
-
 							holder_scope = {
 								character_event = {
 									id = chancellor.202
@@ -481,7 +752,6 @@ character_event = {
 							}
 						}
 					}
-
 					set_character_flag = claim_done
 				}
 			}
@@ -490,7 +760,6 @@ character_event = {
 			if = {
 				limit = {
 					NOT = { has_character_flag = claim_done }
-
 					liege = {
 						ROOT = {
 							location = {
@@ -510,11 +779,9 @@ character_event = {
 						}
 					}
 				}
-
 				location = {
 					county = {
 						save_event_target_as = target_title
-
 						holder_scope = {
 							character_event = {
 								id = chancellor.202
@@ -524,7 +791,6 @@ character_event = {
 					}
 				}
 			}
-
 			clr_character_flag = claim_done
 		}
 	}
@@ -626,7 +892,6 @@ letter_event = {
 		}
 
 		add_claim = event_target:target_title
-
 		FROM = {
 			show_scope_change = no
 
@@ -656,12 +921,10 @@ letter_event = {
 				days = 7
 			}
 		}
-
-		if = {
-			limit = { has_global_flag = ck2_tutorial_2 }
-			long_character_event = { id = 107300 }
-		}
-
+		#if = {
+		#	limit = { has_global_flag = ck2_tutorial_2 }
+		#	long_character_event = { id = 107300 }
+		#}
 		ai_chance = {
 			factor = 90
 
@@ -687,6 +950,7 @@ letter_event = {
 		}
 	}
 
+
 	option = {
 		name = evt_chancellor_203_option_b # Let it go
 
@@ -702,7 +966,6 @@ letter_event = {
 		else = {
 			piety = 20
 		}
-
 		ai_chance = {
 			factor = 10
 
@@ -747,7 +1010,6 @@ character_event = {
 				who = FROM
 			}
 		}
-
 		opinion = {
 			name = opinion_furious
 			who = FROM
@@ -756,6 +1018,7 @@ character_event = {
 	}
 }
 
+
 # 914: A Noble finds out that the Chancellor is trying to fabricate claims
 character_event = {
 	id = chancellor.301
@@ -763,7 +1026,6 @@ character_event = {
 	desc = evt_chancellor_301_desc_a
 	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_diplomacy
-
 	has_job_title = yes
 
 	trigger = {
@@ -810,6 +1072,98 @@ character_event = {
 				bloodline_is_active_for = PREV
 			}
 		}
+		mult_modifier = {
+			factor = 1.07
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = erudite
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = scholar
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = just
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 0.88
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = imbecile
+		}
 	}
 
 	option = {
@@ -844,7 +1198,6 @@ character_event = {
 		name = evt_chancellor_302_option_a # Make him disappear...
 
 		piety = -10
-
 		random_list = {
 			50 = {
 				FROM = {
@@ -857,7 +1210,6 @@ character_event = {
 					}
 				}
 			}
-
 			50 = {
 				character_event = {
 					id = chancellor.306 # Assassination failed
@@ -869,7 +1221,6 @@ character_event = {
 
 		ai_chance = { factor = 40 }
 	}
-
 	option = {
 		name = evt_chancellor_302_option_b # Try to bribe him
 
@@ -887,7 +1238,6 @@ character_event = {
 
 		ai_chance = { factor = 30 }
 	}
-
 	option = {
 		name = evt_chancellor_302_option_c # I better let it be for now
 
@@ -985,7 +1335,6 @@ letter_event = {
 		name = evt_chancellor_307_option_a
 
 		wealth = 50
-
 		FROM = {
 			show_scope_change = no
 
@@ -1001,7 +1350,6 @@ letter_event = {
 			hidden = yes
 		}
 	}
-
 	option = {
 		name = evt_chancellor_307_option_b
 
@@ -1048,6 +1396,7 @@ letter_event = {
 	}
 }
 
+
 ##############################
 # CHANCELLOR
 # JOB: action_sow_dissent
@@ -1060,14 +1409,12 @@ character_event = {
 	desc = evt_chancellor_401_desc_a
 	picture = GFX_evt_spymaster
 	border = GFX_event_normal_frame_diplomacy
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_sow_dissent
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			any_province_lord = {
 				NOT = { same_realm = ROOT }
@@ -1100,6 +1447,98 @@ character_event = {
 				has_bloodline_flag = bloodline_faster_dissent
 				bloodline_is_active_for = PREV
 			}
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = erudite
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = scholar
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
 		}
 	}
 
@@ -1179,7 +1618,6 @@ character_event = {
 				years = 2
 			}
 		}
-
 		opinion = {
 			name = opinion_angry
 			who = FROM
@@ -1204,6 +1642,7 @@ letter_event = {
 	}
 }
 
+
 # 917: Chancellor Discovered
 character_event = {
 	id = chancellor.501
@@ -1211,14 +1650,12 @@ character_event = {
 	desc = evt_chancellor_501_desc_a
 	picture = GFX_evt_spymaster
 	border = GFX_event_normal_frame_diplomacy
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_sow_dissent
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			any_province_lord = {
 				NOT = { same_realm = ROOT }
@@ -1231,6 +1668,98 @@ character_event = {
 		years = 10
 
 		job_event_mtth_modifier_inverted_diplomacy_score = yes
+		mult_modifier = {
+			factor = 1.07
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = erudite
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = scholar
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 1.03
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = just
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 0.97
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 0.88
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = imbecile
+		}
 
 		mult_modifier = {
 			factor = 1.25
@@ -1300,7 +1829,6 @@ character_event = {
 			letter_event = { id = chancellor.505 }
 		}
 	}
-
 	option = {
 		name = evt_chancellor_502_option_b
 
@@ -1468,18 +1996,15 @@ character_event = {
 	desc = evt_chancellor_601_desc_a
 	picture = GFX_evt_market
 	border = GFX_event_normal_frame_diplomacy
-
 	has_job_title = yes
 
 	trigger = {
 		has_job_action = action_clan_sentiment
 		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-
 		location = {
 			owner = {
 				is_nomadic = yes
-
 				ROOT = {
 					liege = {
 						OR = {
@@ -1500,7 +2025,6 @@ character_event = {
 
 		mult_modifier = {
 			factor = 10
-
 			clan_title = {
 				clan = yes # Is the head of a Clan
 			}
@@ -1514,6 +2038,98 @@ character_event = {
 		}
 
 		job_event_mtth_modifier_diplomacy_score = yes
+		mult_modifier = {
+			factor = 0.94
+			trait = diligent
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = erudite
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = scholar
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = socializer
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = gregarious
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = deceitful
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = quick
+		}
+		mult_modifier = {
+			factor = 0.94
+			trait = shrewd
+		}
+		mult_modifier = {
+			factor = 0.92
+			trait = genius
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = fair
+		}
+		mult_modifier = {#You will believe the handsome man/pretty woman wont you?
+			factor = 0.97
+			trait = groomed
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slothful
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = honest
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = just
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = shy
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = uncouth
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = ugly
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = stutter
+		}
+		mult_modifier = {
+			factor = 1.03
+			trait = lisp
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = dull
+		}
+		mult_modifier = {
+			factor = 1.07
+			trait = slow
+		}
+		mult_modifier = {
+			factor = 1.1
+			trait = inbred
+		}
+		mult_modifier = {
+			factor = 1.12
+			trait = imbecile
+		}
 	}
 
 	immediate = {
@@ -1522,7 +2138,6 @@ character_event = {
 				save_event_target_as = liege_clan
 			}
 		}
-
 		location = {
 			owner = {
 				save_event_target_as = target_chief
@@ -1535,10 +2150,8 @@ character_event = {
 
 		event_target:target_chief = {
 			show_scope_change = no
-
 			clan_title = {
 				show_scope_change = no
-
 				clan_opinion = {
 					name = clan_propaganda_effort
 					who = event_target:liege_clan
@@ -1577,10 +2190,8 @@ character_event = {
 		tooltip = {
 			event_target:target_chief = {
 				show_scope_change = no
-
 				clan_title = {
 					show_scope_change = no
-
 					clan_opinion = {
 						name = clan_propaganda_effort
 						who = event_target:liege_clan
