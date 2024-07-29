@@ -708,6 +708,81 @@ RETTYPE_CUL_SCOT = {
 		pikemen_morale = 0.2
 	}
 }
+RETTYPE_GENERIC_GUNMEN_EARLY = 
+{
+	
+	first_type = 6
+	first_amount = 50
+
+	special_troops = gunmen
+	
+	potential = {
+		higher_tier_than = BARON
+		is_tribal = no
+		is_nomadic = no
+		TECH_INFANTRY = 7
+		NOT = { 
+			TECH_INFANTRY = 8
+		}
+	}
+	
+	modifier = {
+		gunmen_offensive = 0.05
+		gunmen_morale = 0.05
+	}
+}
+RETTYPE_GENERIC_GUNMEN = 
+{
+	first_type = 2
+	first_amount = 200
+	
+	second_type = 6
+	second_amount = 50
+
+	special_troops = gunmen
+	
+	potential = {
+		higher_tier_than = BARON
+		is_tribal = no
+		is_nomadic = no
+		TECH_INFANTRY = 8
+	}
+	
+	modifier = {
+		pikemen_defensive = 0.15
+		gunmen_offensive = 0.05
+		gunmen_morale = 0.05
+	}
+}
+RETTYPE_CUL_FLAM = 
+{
+	first_type = 6
+	first_amount = 50
+	special_troops = flamethrowers
+	maintenance_multiplier = 1.5
+	
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no
+		OR = {
+			culture = greek
+			any_realm_province = {
+				OR = {
+			culture = greek
+				}
+			}
+		}
+		NOT = {
+			has_global_flag = greek_fire_lost
+		}
+	}
+	
+	modifier = {
+		flamethrowers_defensive = 0.25
+		flamethrowers_morale = 0.25
+	}
+}
 
 RETTYPE_CUL_BALT = {
 	first_type = 1 # Heavy Infantry

@@ -33,6 +33,163 @@ camel_cavalry_morale = {
 	is_hidden = no
 	max_decimals = 2
 }
+flamethrowers = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+flamethrowers_offensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+flamethrowers_defensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+flamethrowers_morale = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+bike_cavalry = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+bike_cavalry_offensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+bike_cavalry_defensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+bike_cavalry_morale = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+gunmen = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+gunmen_offensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+gunmen_defensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+gunmen_morale = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+chariots = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+chariots_offensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+chariots_defensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+chariots_morale = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+carbineers = {
+    show_as_percent = no
+    is_good = yes
+    is_monthly = no
+    is_hidden = no
+    max_decimals = 0
+}
+
+carbineers_offensive = {
+    show_as_percent = yes
+    is_good = yes
+    is_monthly = no
+    is_hidden = no
+    max_decimals = 2
+}
+
+carbineers_defensive = {
+    show_as_percent = yes
+    is_good = yes
+    is_monthly = no
+    is_hidden = no
+    max_decimals = 2
+}
+
+carbineers_morale = {
+    show_as_percent = yes
+    is_good = yes
+    is_monthly = no
+    is_hidden = no
+    max_decimals = 2
+}
 
 horse_archers = {
 	show_as_percent = no

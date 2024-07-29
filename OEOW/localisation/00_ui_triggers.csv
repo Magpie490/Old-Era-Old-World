@@ -1683,6 +1683,35 @@ judiciary_laws_2_option;Noble;;;;;;;;;;;;;x
 judiciary_laws_3;Clergy Privilege;;;;;;;;;;;;;x
 judiciary_laws_3_desc;The Right to act as judges has been granted to the Clergy, they pay increased tax for this.;;;;;;;;;;;;;x
 judiciary_laws_3_option;Clergy;;;;;;;;;;;;;x
+gunmen;Gunners;;;;;;;;;x
+flamethrowers;Flamethrowers;;;;;;;;;x
+flamethrowers_offensive;Flamethrower Offensive;;;;;;;;;x
+flamethrowers_defensive;Flamethrower Defensive;;;;;;;;;x
+flamethrowers_morale;Flamethrower Morale;;;;;;;;;x
+bike_cavalry;Bike Cavalry;;;;;;;;;x
+bike_cavalry_offensive;Bike Cavalry Offensive;;;;;;;;;x
+bike_cavalry_defensive;Bike Cavalry Defensive;;;;;;;;;x
+bike_cavalry_morale;Bike Cavalry Morale;;;;;;;;;x
+chariots;War Chariots;;;;;;;;;x
+chariot;War Chariot;;;;;;;;;x
+gunmen;Gunners;;;;;;;;;;;;;x
+gunmen_offensive;Gunners Offensive;;;;;;;;;;;;;x
+gunmen_defensive;Gunners Defensive;;;;;;;;;;;;;x
+gunmen_morale;Gunners Morale;;;;;;;;;;;;;x
+gunmen_modifier;Combat Modifier boost to Gunners: $PERC$;;;;;;;;;;;;;x
+chariots;Chariots;;;;;;;;;;;;;x
+chariots_offensive;Chariots Offensive;;;;;;;;;;;;;x
+chariots_defensive;Chariots Defensive;;;;;;;;;;;;;x
+chariots_morale;Chariots Morale;;;;;;;;;;;;;x
+chariots_modifier;Combat Modifier boost to Chariots: $PERC$;;;;;;;;;;;;;x
+RETTYPE_GENERIC_GUNMEN_EARLY;Handcannon Skirmishers;;;;;;;;;x
+RETTYPE_GENERIC_GUNMEN;Early Pike-and-Shot;;;;;;;;;x
+carbineers;Carbineers;;;;;;;;;;;;;x
+carbineers_offensive;Carbineer Offensive;;;;;;;;;;;;;x
+carbineers_defensive;Carbineer Defensive;;;;;;;;;;;;;x
+carbineers_morale;Carbineer Morale;;;;;;;;;;;;;x
+carbineers_modifier;Combat Modifier boost to Handgonners: $PERC$;;;;;;;;;;;;;x
+RETTYPE_CUL_FLAM;Cheirosiphoners;;;;;;;;;;;;;x
 
 RULE_NON_DYNASTIC_SUCCESSION;Non-Dynastic Succession;;;;;;;;;;;;x
 RULE_NON_DYNASTIC_SUCCESSION_LIMITED_DESC;Only select governments (such as Oligarchic Republics) will allow for non-dynastic succession, allowing for infinite play - as long as there are possible heirs.;;;;;;;;;;;;x

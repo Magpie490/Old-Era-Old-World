@@ -57,9 +57,9 @@ TECH_CITY_TAXES_DESC;Encourage trade to gain more taxes from City holdings.;Enco
 TECH_HEAVY_ARMOUR;Heavy Armour;Armure lourde;Schwere Rüstung;;Armadura pesada;;;;;;;;;x
 TECH_HEAVY_ARMOUR_DESC;Improved Armour for heavy infantry and knights.;Armure améliorée pour l'infanterie lourde et les chevaliers.;Verbesserte Rüstung für schwere Infanterie und Ritter.;;Armadura mejorada para infantería pesada y caballeros.;;;;;;;;;x
 TECH_HEAVY_INFANTRY;Heavy Infantry;Infanterie lourde;Schwere Infanterie;;Infantería Pesada;;;;;;;;;x
-TECH_HEAVY_INFANTRY_DESC;Better arms and armor for Heavy infantry and Pikemen.;De meilleures armes et armures pour l'infanterie lourde et pour les piquiers.;Bessere Waffen und Rüstung für schwere Infanterie und Pikeniere.;;Mejor armas y armaduras para la infantería Pesada y los Piqueros.;;;;;;;;;x
+TECH_HEAVY_INFANTRY_DESC;Better arms and armor for Heavy infantry and Spearmen.;De meilleures armes et armures pour l'infanterie lourde et pour les piquiers.;Bessere Waffen und Rüstung für schwere Infanterie und Pikeniere.;;Mejor armas y armaduras para la infantería Pesada y los Piqueros.;;;;;;;;;x
 TECH_INFANTRY_MELEE_WEAPONS;Infantry Melee Weapons;Armes de l'Infanterie;Infanterie-Nahkampfwaffen;;Armas de combate cercano para infantería;;;;;;;;;x
-TECH_INFANTRY_MELEE_WEAPONS_DESC;Improved armament for light infantry, heavy infantry, and pikemen.;Armement amélioré pour l'infanterie, l'infanterie lourde et les piquiers.;Verbesserte Bewaffnung für leichte Infanterie, schwere Infanterie und Spießträger;;Armamento mejorado para infantería ligera, infantería pesada y lanceros.;;;;;;;;;x
+TECH_INFANTRY_MELEE_WEAPONS_DESC;Improved armament for light infantry, heavy infantry, and spearmen.;Armement amélioré pour l'infanterie, l'infanterie lourde et les piquiers.;Verbesserte Bewaffnung für leichte Infanterie, schwere Infanterie und Spießträger;;Armamento mejorado para infantería ligera, infantería pesada y lanceros.;;;;;;;;;x
 TECH_LIGHT_ARMOUR;Light Armour;Armure légère;Leichte Rüstung;;Armadura ligera;;;;;;;;;x
 TECH_LIGHT_ARMOUR_DESC;Improved Armour for skirmish troops.;Armure améliorée pour les troupes d'escarmouches.;Verbesserte Rüstung für Plänkler.;;Armadura mejorada para operaciones de escaramuza.;;;;;;;;;x
 TECH_LIGHT_INFANTRY;Light Infantry;Infanterie légère;Leichte Infanterie;;Infantería Ligera;;;;;;;;;x

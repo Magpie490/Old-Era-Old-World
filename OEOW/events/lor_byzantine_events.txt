@@ -831,7 +831,7 @@ narrative_event = {
 
 	option = {
 		name = EVTOPTBLoR.860
-
+		set_global_flag = greek_fire_lost
 		custom_tooltip = { text = not_interested_in_explosion }
 	}
 }
