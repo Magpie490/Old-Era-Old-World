@@ -1419,7 +1419,7 @@ CRUSADE_WARO_BATTLES;§LBattles:§!;§LBatailles : §!;§LSchlachten:§!;;§LBatallas:§
 CRUSADE_WARO_OCCUPATION;§LOccupation:§!;§LOccupation : §!;§LBesetzungen:§!;;§LOcupación:§!;;;;;;;;;x
 CRUSADER_KINGDOM_NAME;Crusader $NAME$;$NAME$ Croisé;Kreuzritter-$NAME$;;$NAME$ cruzado;;;;;;;;;x
 CU_ACTUAL_HEAVY_INFANTRY;Heavy Infantry;Infanterie lourde;Schwere Infanterie;;Infantería pesada;;;;;;;;;x
-CU_ACTUAL_LIGHT_INFANTRY;Light Infantry;Infanterie légère;Leichte Infanterie;;Infantería ligera;;;;;;;;;x
+CU_ACTUAL_LIGHT_INFANTRY;Skirmishers;Infanterie légère;Leichte Infanterie;;Infantería ligera;;;;;;;;;x
 CU_ARCHERS;Archers;Archers;Bogenschützen;;Arqueros;;;;;;;;;x
 CU_CAVALRY;Mounted Troops;Cavalerie;Kavallerie;;Caballería;;;;;;;;;x
 CU_HEAVY_CAVALRY;Heavy Cavalry;Cavalerie lourde;Schwere Kavallerie;;Caballería pesada;;;;;;;;;x
@@ -3179,13 +3179,13 @@ LIGHT_CAVALRY_DEFENSIVE_FIRE;Light Cavalry Defense;Cavalerie légère – Défense;Le
 LIGHT_CAVALRY_DISCIPLINE;Light Cavalry Discipline;Cavalerie légère – Discipline;Leichte Kavallerie - Disziplin;;Disciplina de caballería ligera;;;;;;;;;x
 LIGHT_CAVALRY_MORALE;Light Cavalry Morale;Cavalerie légère – Moral;Leichte Kavallerie - Moral;;Moral de caballería ligera;;;;;;;;;x
 LIGHT_CAVALRY_OFFENSIVE_FIRE;Light Cavalry Attack;Cavalerie légère – Attaque;Leichte Kavallerie - Angriff;;Ataque de caballería ligera;;;;;;;;;x
-LIGHT_INFANTRY;Light Infantry;Infanterie légère;Leichte Infanterie;;Infantería ligera;;;;;;;;;x
-LIGHT_INFANTRY_COMBAT_MODIFIER;Combat Modifier boost to Light Foot Troops: $PERC$;Boost du Modif. de combat pour l'infanterie légère : $PERC$;Kampfmodifikator-Verstärkung für leichte Fußtruppen: $PERC$;;Modificador de combate Incentivo para Infantería Ligera: $PERC$;;;;;;;;;x
-LIGHT_INFANTRY_DEFENSIVE_FIRE;Light Infantry Defense;Infanterie légère – Défense;Leichte Infanterie - Verteidigung;;Defensa de infantería ligera;;;;;;;;;x
-LIGHT_INFANTRY_DISCIPLINE;Light Infantry Discipline;Infanterie légère – Discipline;Leichte Infanterie - Disziplin;;Disciplina de infantería ligera;;;;;;;;;x
-LIGHT_INFANTRY_MORALE;Light Infantry Morale;Infanterie légère – Moral;Leichte Infanterie - Moral;;Moral de infantería ligera;;;;;;;;;x
-LIGHT_INFANTRY_OFFENSIVE_FIRE;Light Infantry Attack;Infanterie légère – Attaque;Leichte Infanterie - Angriff;;Ataque de infantería ligera;;;;;;;;;x
-LIGHT_TROOPS;light troops;troupes légères;leichte Truppen;;tropas ligeras;;;;;;;;;x
+LIGHT_INFANTRY;Skirmishers;Infanterie légère;Leichte Infanterie;;Infantería ligera;;;;;;;;;x
+LIGHT_INFANTRY_COMBAT_MODIFIER;Combat Modifier boost to Skirmishers Troops: $PERC$;Boost du Modif. de combat pour l'infanterie légère : $PERC$;Kampfmodifikator-Verstärkung für leichte Fußtruppen: $PERC$;;Modificador de combate Incentivo para Infantería Ligera: $PERC$;;;;;;;;;x
+LIGHT_INFANTRY_DEFENSIVE_FIRE;Skirmishers Defense;Infanterie légère – Défense;Leichte Infanterie - Verteidigung;;Defensa de infantería ligera;;;;;;;;;x
+LIGHT_INFANTRY_DISCIPLINE;Skirmishers Discipline;Infanterie légère – Discipline;Leichte Infanterie - Disziplin;;Disciplina de infantería ligera;;;;;;;;;x
+LIGHT_INFANTRY_MORALE;Skirmishers Morale;Infanterie légère – Moral;Leichte Infanterie - Moral;;Moral de infantería ligera;;;;;;;;;x
+LIGHT_INFANTRY_OFFENSIVE_FIRE;Skirmishers Attack;Infanterie légère – Attaque;Leichte Infanterie - Angriff;;Ataque de infantería ligera;;;;;;;;;x
+LIGHT_TROOPS;skirmishers;troupes légères;leichte Truppen;;tropas ligeras;;;;;;;;;x
 LINE_OF_SUCC_COLON;Line of Succession;Ligne de succession;Erbfolge;;Línea sucesoria;;;;;;;;;x
 LINE_OF_SUCCESSION;§YLine of Succession§!;§YLigne de succession§! ;§YErbfolge§!;;§YLínea de sucesión§!;;;;;;;;;x
 LINEAGE;Lineage;Lignée;Blutlinie;;Linaje;;;;;;;;;x
