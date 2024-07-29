@@ -36,8 +36,8 @@ TRIBAL_PIETY_RET_1 = {
 	costs_piety = yes
 
 	potential = {
-		is_tribal = yes
-
+		higher_tier_than = BARON
+		government = tribal_government
 		OR = {
 			religion_openly_bon_or_reformed_trigger = yes
 			religion_openly_baltic_or_reformed_trigger = yes
@@ -67,8 +67,8 @@ TRIBAL_PIETY_RET_2 = {
 	costs_piety = yes
 
 	potential = {
-		is_tribal = yes
-
+		higher_tier_than = BARON
+		government = tribal_government
 		OR = {
 			religion_openly_bon_or_reformed_trigger = yes
 			religion_openly_baltic_or_reformed_trigger = yes
@@ -86,19 +86,45 @@ TRIBAL_PIETY_RET_2 = {
 	}
 }
 
-TRIBAL_RET_1 = {
-	first_type = 0 # Light Infantry
-	first_amount = 150
+FEUDAL_PIETY_RET_1 = {
+	first_type = 5
+	first_amount = 50
+	
+	second_type = 2
+	second_amount = 100
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		trait = zealous
+	}
+	costs_piety = yes
+	
+	modifier = {
+		archers_offensive = -0.15
+		archers_defensive = -0.15
+		archers_morale = 0.8
+		pikemen_defensive = -0.15
+		pikemen_offensive = -0.15
+		pikemen_morale = 0.8
+	}
+}
 
+TRIBAL_RET_1 = {
+	first_type = 0
+	first_amount = 150
+	
+	potential = {
+		higher_tier_than = BARON
+		government = tribal_government
+	}
+	
 	hire_cost = 25
 	costs_prestige = yes
-
+	
 	maintenance_multiplier = 0.75
-
-	potential = {
-		is_tribal = yes
-	}
-
+	
 	modifier = {
 		light_infantry_offensive = 0.2
 		light_infantry_defensive = 0.5
@@ -107,21 +133,22 @@ TRIBAL_RET_1 = {
 }
 
 TRIBAL_RET_2 = {
-	first_type = 0 # Light Infantry
+	first_type = 0
 	first_amount = 100
-
-	second_type = 5 # Archers
+	
+	second_type = 5
 	second_amount = 50
-
+	
+	potential = {
+		higher_tier_than = BARON
+		government = tribal_government
+	}
+	
 	hire_cost = 50
 	costs_prestige = yes
-
+	
 	maintenance_multiplier = 0.75
-
-	potential = {
-		is_tribal = yes
-	}
-
+	
 	modifier = {
 		light_infantry_defensive = 0.6
 		light_infantry_morale = 0.3
@@ -132,46 +159,48 @@ TRIBAL_RET_2 = {
 }
 
 TRIBAL_RET_3 = {
-	first_type = 0 # Light Infantry
+	first_type = 0
 	first_amount = 100
-
-	second_type = 3 # Light Cavalry
+	
+	second_type = 3
 	second_amount = 50
-
+	
+	potential = {
+		higher_tier_than = BARON
+		government = tribal_government
+	}
+	
 	hire_cost = 75
 	costs_prestige = yes
-
+	
 	maintenance_multiplier = 0.75
-
-	potential = {
-		is_tribal = yes
-	}
-
+	
 	modifier = {
 		light_infantry_offensive = 0.6
 		light_infantry_defensive = 0.2
-		light_infantry_morale = 0.1
+		light_infantry_morale = 0.1	
 		light_cavalry_offensive = 0.1
 		light_cavalry_defensive = 0.1
 	}
 }
 
 TRIBAL_RET_4 = {
-	first_type = 0 # Light Infantry
+	first_type = 0
 	first_amount = 100
-
-	second_type = 1 # Heavy Infantry
+	
+	second_type = 1
 	second_amount = 50
-
+	
+	potential = {
+		higher_tier_than = BARON
+		government = tribal_government
+	}
+	
 	hire_cost = 75
 	costs_prestige = yes
-
+	
 	maintenance_multiplier = 0.75
-
-	potential = {
-		is_tribal = yes
-	}
-
+	
 	modifier = {
 		light_infantry_offensive = 0.3
 		light_infantry_defensive = 0.3
@@ -182,22 +211,17 @@ TRIBAL_RET_4 = {
 }
 
 TRIBAL_RET_5 = {
-	first_type = 3 # Light Cavalry
+	first_type = 3
 	first_amount = 50
-
-	second_type = 6 # Special Troops
+	
+	second_type = 6
 	second_amount = 25
 
 	special_troops = horse_archers
-
-	hire_cost = 75
-	costs_prestige = yes
-
-	maintenance_multiplier = 0.75
-
+	
 	potential = {
-		is_tribal = yes
-
+		higher_tier_than = BARON
+		government = tribal_government
 		OR = {
 			culture_group = altaic
 			culture = alan
@@ -206,7 +230,12 @@ TRIBAL_RET_5 = {
 
 		NOT = { culture = jurchen }
 	}
-
+	
+	hire_cost = 75
+	costs_prestige = yes
+	
+	maintenance_multiplier = 0.75
+	
 	modifier = {
 		light_cavalry_offensive = 0.1
 		light_cavalry_defensive = 0.1
@@ -214,18 +243,20 @@ TRIBAL_RET_5 = {
 	}
 }
 
-RETTYPE_INF1 = {
-	first_type = 1 # Heavy Infantry
+RETTYPE_INF1 =
+{
+	first_type = 1
 	first_amount = 200
-
-	second_type = 5 # Archers
+	second_type = 5
 	second_amount = 50
-
+	
 	potential = {
-		is_nomadic = no
+		is_nomadic = no 
 		is_tribal = no
+		ai = yes
+		higher_tier_than = BARON
 	}
-
+	
 	modifier = {
 		archers_offensive = 0.2
 		heavy_infantry_defensive = 0.1
@@ -233,18 +264,20 @@ RETTYPE_INF1 = {
 	}
 }
 
-RETTYPE_INF2 = {
-	first_type = 2 # Pikemen
+RETTYPE_INF2 =
+{
+	first_type = 2
 	first_amount = 250
-
-	second_type = 5 # Archers
+	second_type = 5
 	second_amount = 50
-
+	
 	potential = {
-		is_nomadic = no
+		is_nomadic = no 
 		is_tribal = no
+		ai = yes
+		higher_tier_than = BARON
 	}
-
+	
 	modifier = {
 		archers_defensive = 0.2
 		pikemen_defensive = 0.4
@@ -252,36 +285,40 @@ RETTYPE_INF2 = {
 	}
 }
 
-RETTYPE_CAV1 = {
-	first_type = 4 # Heavy Cavalry
+RETTYPE_CAV1 =
+{
+	first_type = 4
 	first_amount = 50
-
-	second_type = 3 # Light Cavalry
+	second_type = 3
 	second_amount = 200
-
+	
 	potential = {
-		is_nomadic = no
+		is_nomadic = no 
 		is_tribal = no
+		ai = yes
+		higher_tier_than = BARON
 	}
-
+	
 	modifier = {
 		light_cavalry_offensive = 0.2
 		light_cavalry_defensive = 0.2
 	}
 }
 
-RETTYPE_SKIR1 = {
-	first_type = 5 # Archers
+RETTYPE_SKIR1 = 
+{
+	first_type = 5
 	first_amount = 200
-
-	second_type = 1 # Heavy Infantry
+	second_type = 1
 	second_amount = 50
-
+	
 	potential = {
-		is_nomadic = no
+		is_nomadic = no 
 		is_tribal = no
+		ai = yes
+		higher_tier_than = BARON
 	}
-
+	
 	modifier = {
 		archers_offensive = 0.2
 		archers_defensive = 0.1
@@ -289,21 +326,337 @@ RETTYPE_SKIR1 = {
 	}
 }
 
-RETTYPE_SKIR2 = {
-	first_type = 5 # Archers
+RETTYPE_SKIR2 = 
+{
+	first_type = 5
 	first_amount = 150
-
-	second_type = 0 # Light Infantry
+	second_type = 0
 	second_amount = 400
-
+	
 	potential = {
-		is_nomadic = no
+		is_nomadic = no 
 		is_tribal = no
+		ai = yes
+		higher_tier_than = BARON
 	}
-
+	
 	modifier = {
 		archers_offensive = 0.2
 		archers_defensive = 0.1
+		light_infantry_defensive = 0.2
+		light_infantry_morale = 0.2
+	}
+}
+# Normal
+
+RETTYPE_HEV_INF1 =
+{
+	first_type = 1
+	first_amount = 100
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		heavy_infantry_defensive = 0.1
+		heavy_infantry_offensive = 0.1
+	}
+}
+RETTYPE_HEV_INF2 =
+{
+	first_type = 1
+	first_amount = 200
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		heavy_infantry_defensive = 0.1
+		heavy_infantry_offensive = 0.1
+	}
+}
+RETTYPE_HEV_INF3 =
+{
+	first_type = 1
+	first_amount = 250
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		heavy_infantry_defensive = 0.1
+		heavy_infantry_offensive = 0.1
+	}
+}
+
+RETTYPE_SPR_INF1 =
+{
+	first_type = 2
+	first_amount = 100
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		pikemen_defensive = 0.4
+		pikemen_offensive = 0.2
+	}
+}
+RETTYPE_SPR_INF2 =
+{
+	first_type = 2
+	first_amount = 200
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		pikemen_defensive = 0.4
+		pikemen_offensive = 0.2
+	}
+}
+RETTYPE_SPR_INF3 =
+{
+	first_type = 2
+	first_amount = 250
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		pikemen_defensive = 0.4
+		pikemen_offensive = 0.2
+	}
+}
+
+RETTYPE_LIGHT_CAV1 =
+{
+	first_type = 3
+	first_amount = 100
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		light_cavalry_offensive = 0.2
+		light_cavalry_defensive = 0.2
+	}
+}
+RETTYPE_LIGHT_CAV2 =
+{
+	first_type = 3
+	first_amount = 200
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		light_cavalry_offensive = 0.2
+		light_cavalry_defensive = 0.2
+	}
+}
+RETTYPE_LIGHT_CAV3 =
+{
+	first_type = 3
+	first_amount = 250
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		light_cavalry_offensive = 0.2
+		light_cavalry_defensive = 0.2
+	}
+}
+RETTYPE_HEAVY_CAV1 =
+{
+	first_type = 4
+	first_amount = 50
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		knights_offensive = 0.05
+		knights_defensive = 0.05
+	}
+}
+RETTYPE_HEAVY_CAV2 =
+{
+	first_type = 4
+	first_amount = 100
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		knights_offensive = 0.05
+		knights_defensive = 0.05
+	}
+}
+RETTYPE_HEAVY_CAV3 =
+{
+	first_type = 4
+	first_amount = 150
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		knights_offensive = 0.05
+		knights_defensive = 0.05
+	}
+}
+
+RETTYPE_ARCH1 = 
+{
+	first_type = 5
+	first_amount = 100
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		archers_offensive = 0.2
+		archers_defensive = 0.1
+	}
+}
+
+RETTYPE_ARCH2 = 
+{
+	first_type = 5
+	first_amount = 200
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		archers_offensive = 0.2
+		archers_defensive = 0.1
+	}
+}
+
+RETTYPE_ARCH3 = 
+{
+	first_type = 5
+	first_amount = 250
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		archers_offensive = 0.2
+		archers_defensive = 0.1
+	}
+}
+
+RETTYPE_SKIRMISH1 = 
+{
+	first_type = 0
+	first_amount = 100
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		light_infantry_defensive = 0.2
+		light_infantry_morale = 0.2
+	}
+}
+RETTYPE_SKIRMISH2 = 
+{
+	first_type = 0
+	first_amount = 200
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
+		light_infantry_defensive = 0.2
+		light_infantry_morale = 0.2
+	}
+}
+RETTYPE_SKIRMISH3 = 
+{
+	first_type = 0
+	first_amount = 250
+	
+	potential = {
+		higher_tier_than = BARON
+		is_nomadic = no 
+		is_tribal = no
+		ai = no
+	}
+	
+	modifier = {
 		light_infantry_defensive = 0.2
 		light_infantry_morale = 0.2
 	}
@@ -318,6 +671,12 @@ RETTYPE_CUL_ENG = {
 		OR = {
 			culture = english
 			culture = welsh
+			any_realm_province = {
+				OR = {
+			culture = english
+			culture = welsh
+				}
+			}
 		}
 	}
 
@@ -333,7 +692,14 @@ RETTYPE_CUL_SCOT = {
 
 	potential = {
 		is_nomadic = no
-		culture = scottish
+		OR = {
+			culture = scottish
+			any_realm_province = {
+				OR = {
+			culture = scottish
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -353,6 +719,12 @@ RETTYPE_CUL_BALT = {
 		OR = {
 			culture_group = baltic
 			culture_group = finno_ugric
+			any_realm_province = {
+				OR = {
+			culture_group = baltic
+			culture_group = finno_ugric
+				}
+			}
 		}
 	}
 
@@ -373,12 +745,17 @@ RETTYPE_CUL_ALTAIC = {
 
 	potential = {
 		is_nomadic = no
-
+		
 		OR = {
 			culture_group = altaic
 			culture_group = iranian
+			any_realm_province = {
+				OR = {
+			culture_group = altaic
+			culture_group = iranian
+				}
+			}
 		}
-
 		NOT = { culture = jurchen }
 	}
 
@@ -404,6 +781,15 @@ RETTYPE_CUL_FRANK_NOR_GER = {
 			culture = norman
 			culture = german
 			culture = breton
+			any_realm_province = {
+				OR = {
+			culture = french
+			culture = occitan
+			culture = norman
+			culture = german
+			culture = breton
+				}
+			}
 		}
 	}
 
@@ -420,7 +806,14 @@ RETTYPE_CUL_IBER = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = iberian
+			any_realm_province = {
+				OR = {
+		culture_group = iberian
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -439,6 +832,12 @@ RETTYPE_CUL_ITA = {
 		OR = {
 			culture = italian
 			culture = dalmatian
+			any_realm_province = {
+				OR = {
+			culture = italian
+			culture = dalmatian
+				}
+			}
 		}
 	}
 
@@ -458,7 +857,14 @@ RETTYPE_CUL_ROMAN = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = roman
+			any_realm_province = {
+				OR = {
+		culture = roman
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -477,7 +883,14 @@ RETTYPE_CUL_RUS = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = east_slavic
+			any_realm_province = {
+				OR = {
+		culture_group = east_slavic
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -499,6 +912,14 @@ RETTYPE_CUL_NORTHGER = {
 			culture = anglo-saxon
 			culture = saxon
 			culture = frisian
+			any_realm_province = {
+				OR = {
+			culture_group = north_germanic
+			culture = anglo-saxon
+			culture = saxon
+			culture = frisian
+				}
+			}
 		}
 	}
 
@@ -518,6 +939,12 @@ RETTYPE_CUL_HUNG = {
 		OR = {
 			culture = hungarian
 			culture_group = west_slavic
+			any_realm_province = {
+				OR = {
+			culture = hungarian
+			culture_group = west_slavic
+				}
+			}
 		}
 	}
 
@@ -535,8 +962,15 @@ RETTYPE_CUL_ARAB = {
 
 	potential = {
 		is_nomadic = no
-		culture_group = arabic
 
+		OR = {
+		culture_group = arabic
+			any_realm_province = {
+				OR = {
+		culture_group = arabic
+				}
+			}
+		}
 		NOR = {
 			culture = andalusian_arabic
 			culture = maghreb_arabic
@@ -556,7 +990,14 @@ RETTYPE_CUL_ANDALUSIAN = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = andalusian_arabic
+			any_realm_province = {
+				OR = {
+		culture = andalusian_arabic
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -572,7 +1013,14 @@ RETTYPE_CUL_BERBER = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = maghreb_arabic
+			any_realm_province = {
+				OR = {
+		culture = maghreb_arabic
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -592,7 +1040,14 @@ RETTYPE_CUL_BYZ = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = byzantine
+			any_realm_province = {
+				OR = {
+		culture_group = byzantine
+				}
+			}
+		}
 
 		NOR = {
 			culture = coptic
@@ -615,7 +1070,14 @@ RETTYPE_CUL_IRISH = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = irish
+			any_realm_province = {
+				OR = {
+		culture = irish
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -630,7 +1092,14 @@ RETTYPE_CUL_ETHIO = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = ethiopian
+			any_realm_province = {
+				OR = {
+		culture = ethiopian
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -645,7 +1114,14 @@ RETTYPE_CUL_SOMALI = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = somali
+			any_realm_province = {
+				OR = {
+		culture = somali
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -668,6 +1144,13 @@ RETTYPE_CUL_W_AFR = {
 			culture_group = west_african
 			culture_group = central_african
 			culture = daju
+			any_realm_province = {
+				OR = {
+			culture_group = west_african
+			culture_group = central_african
+			culture = daju
+				}
+			}
 		}
 	}
 
@@ -687,7 +1170,14 @@ RETTYPE_CUL_SOUTH_SLA = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = south_slavic
+			any_realm_province = {
+				OR = {
+		culture_group = south_slavic
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -707,7 +1197,14 @@ RETTYPE_CUL_DUTCH = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = dutch
+			any_realm_province = {
+				OR = {
+		culture = dutch
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -729,7 +1226,14 @@ RETTYPE_CUL_NAHUA = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = nahua
+			any_realm_province = {
+				OR = {
+		culture = nahua
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -746,7 +1250,14 @@ RETTYPE_CUL_JEWISH = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = israelite
+			any_realm_province = {
+				OR = {
+		culture_group = israelite
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -770,6 +1281,12 @@ RETTYPE_CUL_INDIAN = {
 		OR = {
 			culture_group = indo_aryan_group
 			culture_group = dravidian_group
+			any_realm_province = {
+				OR = {
+			culture_group = indo_aryan_group
+			culture_group = dravidian_group
+				}
+			}
 		}
 	}
 
@@ -785,7 +1302,14 @@ RETTYPE_CUL_NUBIAN = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = nubian
+			any_realm_province = {
+				OR = {
+		culture = nubian
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -800,7 +1324,14 @@ RETTYPE_CUL_FRA = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = frankish
+			any_realm_province = {
+				OR = {
+		culture = frankish
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -816,7 +1347,14 @@ RETTYPE_CUL_LOM = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = lombard
+			any_realm_province = {
+				OR = {
+		culture = lombard
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -834,7 +1372,14 @@ RETTYPE_CUL_SUEBI = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = suebi
+			any_realm_province = {
+				OR = {
+		culture = suebi
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -854,7 +1399,14 @@ RETTYPE_CUL_PICTISH = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = pictish
+			any_realm_province = {
+				OR = {
+		culture = pictish
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -876,7 +1428,11 @@ HORDE_RETTYPE_CAV1 = {
 	maintenance_multiplier = 0.50
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 	}
 
 	modifier = {
@@ -900,7 +1456,11 @@ HORDE_RETTYPE_CAV2 = {
 	maintenance_multiplier = 0.50
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 	}
 
 	modifier = {
@@ -926,7 +1486,11 @@ HORDE_RETTYPE_CAV3 = {
 	maintenance_multiplier = 0.5
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 	}
 
 	modifier = {
@@ -951,7 +1515,11 @@ HORDE_RETTYPE_CAV4 = {
 	maintenance_multiplier = 0.3
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 	}
 
 	modifier = {
@@ -973,7 +1541,11 @@ HORDE_RETTYPE_CAV5 = {
 	maintenance_multiplier = 0.3
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 
 		# This stops the Mongol Empire from spending all their money on super-expensive retinues
 		NOT = { has_character_modifier = invading_population_halt }
@@ -998,7 +1570,11 @@ HORDE_RETTYPE_CAV6 = {
 	maintenance_multiplier = 0.3
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 
 		# This stops the Mongol Empire from spending all their money on super-expensive retinues
 		NOT = { has_character_modifier = invading_population_halt }
@@ -1022,7 +1598,11 @@ HORDE_RETTYPE_CAV7 = {
 	maintenance_multiplier = 0.3
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 
 		# This stops the Mongol Empire from spending all their money on super-expensive retinues
 		NOT = { has_character_modifier = invading_population_halt }
@@ -1049,7 +1629,11 @@ HORDE_RETTYPE_PAGAN = {
 	maintenance_multiplier = 0.25
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 		religion_group = pagan_group
 	}
 
@@ -1076,7 +1660,11 @@ HORDE_RETTYPE_MUSLIM = {
 	maintenance_multiplier = 0.25
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 		religion_group = muslim
 	}
 
@@ -1103,7 +1691,11 @@ HORDE_RETTYPE_CHRISTIAN = {
 	maintenance_multiplier = 0.25
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 		religion_group = christian
 	}
 
@@ -1129,7 +1721,11 @@ HORDE_RETTYPE_ZOROASTRIAN = {
 	maintenance_multiplier = 0.25
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 		religion_group = zoroastrian_group
 	}
 
@@ -1155,7 +1751,11 @@ HORDE_RETTYPE_JEWISH = {
 	maintenance_multiplier = 0.25
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 		religion_group = jewish_group
 	}
 
@@ -1180,7 +1780,11 @@ HORDE_RETTYPE_EASTERN = {
 	maintenance_multiplier = 0.25
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 		religion_group = indian_group
 	}
 
@@ -1204,7 +1808,11 @@ HORDE_RETTYPE_INDIAN = {
 	hire_cost = 250
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 
 		capital_scope = {
 			region = world_india
@@ -1233,7 +1841,11 @@ HORDE_RETTYPE_DESERT = {
 	hire_cost = 250
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 
 		capital_scope = {
 			terrain = desert
@@ -1258,7 +1870,11 @@ HORDE_RETTYPE_EUROPE = {
 	hire_cost = 250
 
 	potential = {
-		is_nomadic = yes
+		higher_tier_than = BARON
+		OR = {
+			is_nomadic = yes
+			government = nomadtribal_government
+		}
 
 		capital_scope = {
 			OR = {
@@ -1286,7 +1902,14 @@ RETTYPE_CUL_HAN = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = han
+			any_realm_province = {
+				OR = {
+		culture = han
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1307,7 +1930,14 @@ RETTYPE_CUL_TIBET = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = tibetan_group
+			any_realm_province = {
+				OR = {
+		culture_group = tibetan_group
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1329,7 +1959,14 @@ RETTYPE_CUL_JURCHEN = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = jurchen
+			any_realm_province = {
+				OR = {
+		culture = jurchen
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1346,7 +1983,14 @@ RETTYPE_CUL_ASSYRIAN = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = assyrian
+			any_realm_province = {
+				OR = {
+		culture = assyrian
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1364,7 +2008,14 @@ RETTYPE_CUL_COPTIC = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = coptic
+			any_realm_province = {
+				OR = {
+		culture = coptic
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1379,7 +2030,14 @@ RETTYPE_CUL_HORSE = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = horse_group
+			any_realm_province = {
+				OR = {
+		culture_group = horse_group
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1394,7 +2052,14 @@ RETTYPE_CUL_CAT = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = cat_group
+			any_realm_province = {
+				OR = {
+		culture_group = cat_group
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1409,7 +2074,14 @@ RETTYPE_CUL_BEAR = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = bear_group
+			any_realm_province = {
+				OR = {
+		culture_group = bear_group
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1424,7 +2096,14 @@ RETTYPE_CUL_HEDGEHOG = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = hedgehog_group
+			any_realm_province = {
+				OR = {
+		culture_group = hedgehog_group
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1439,7 +2118,14 @@ RETTYPE_CUL_DUCK = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = duck_group
+			any_realm_province = {
+				OR = {
+		culture_group = duck_group
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1455,7 +2141,14 @@ RETTYPE_CUL_DOG = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = dog_group
+			any_realm_province = {
+				OR = {
+		culture_group = dog_group
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1472,7 +2165,14 @@ RETTYPE_CUL_ELEPHANT = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = elephant_group
+			any_realm_province = {
+				OR = {
+		culture_group = elephant_group
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1487,7 +2187,14 @@ RETTYPE_CUL_DRAGON = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture_group = dragon_group
+			any_realm_province = {
+				OR = {
+		culture_group = dragon_group
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1507,7 +2214,14 @@ RETTYPE_CUL_OUTREMER = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = outremer
+			any_realm_province = {
+				OR = {
+		culture = outremer
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1524,7 +2238,14 @@ RETTYPE_CUL_ARBERIAN = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = arberian
+			any_realm_province = {
+				OR = {
+		culture = arberian
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -1543,7 +2264,14 @@ RETTYPE_CUL_SAR = {
 
 	potential = {
 		is_nomadic = no
+		OR = {
 		culture = sardinian
+			any_realm_province = {
+				OR = {
+		culture = sardinian
+				}
+			}
+		}
 	}
 
 	modifier = {
