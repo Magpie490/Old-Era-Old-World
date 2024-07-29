@@ -3,43 +3,20 @@
 ######################
 
 sympathy_christendom = {
-	customizer = no
-	random = no
-
-	opposites = {
+	opposites =  {
 		zealous
 	}
-
+	threat_decay_speed = 0.1
 	potential = {
 		NOT = { religion_group = christian }
 	}
 
 	tolerates_christian = yes		# Tolerates and is tolerated by Christians
-
+	
 	same_opinion_if_same_religion = 5
 
-	male_insult = INSULT_LOVER_OF_HEATHENS
-	female_insult = INSULT_LOVER_OF_HEATHENS
-	male_insult_adj = INSULT_UNPRINCIPLED
-	female_insult_adj = INSULT_UNPRINCIPLED
-	child_insult_adj = INSULT_STUPID
-}
-
-sympathy_indian = {
-	customizer = no
+	customizer = yes
 	random = no
-
-	opposites = {
-		zealous
-	}
-
-	potential = {
-		NOT = { religion_group = indian_group }
-	}
-
-	tolerates_indian_group = yes		# Tolerates and is tolerated by Indian religions
-
-	same_opinion_if_same_religion = 5
 
 	male_insult = INSULT_LOVER_OF_HEATHENS
 	female_insult = INSULT_LOVER_OF_HEATHENS
@@ -49,42 +26,20 @@ sympathy_indian = {
 }
 
 sympathy_islam = {
-	customizer = no
-	random = no
-
-	opposites = {
+	
+	opposites =  {
 		zealous
 	}
-
+	
 	potential = {
 		NOT = { religion_group = muslim }
 	}
-
+	monthly_character_piety = 0.2
 	tolerates_muslim = yes		# Tolerates and is tolerated by Muslims
 
 	same_opinion_if_same_religion = 5
 
-	male_insult = INSULT_LOVER_OF_HEATHENS
-	female_insult = INSULT_LOVER_OF_HEATHENS
-	male_insult_adj = INSULT_UNPRINCIPLED
-	female_insult_adj = INSULT_UNPRINCIPLED
-	child_insult_adj = INSULT_STUPID
-}
-
-sympathy_judaism = {
-	opposites = {
-		zealous
-	}
-
-	potential = {
-		NOT = { religion_group = jewish_group }
-	}
-
-	tolerates_jewish_group = yes		# Tolerates and is tolerated by Jews
-
-	same_opinion_if_same_religion = 5
-
-	customizer = no
+	customizer = yes
 	random = no
 
 	male_insult = INSULT_LOVER_OF_HEATHENS
@@ -93,15 +48,12 @@ sympathy_judaism = {
 	female_insult_adj = INSULT_UNPRINCIPLED
 	child_insult_adj = INSULT_STUPID
 }
-
 sympathy_pagans = {
-	customizer = no
-	random = no
-
-	opposites = {
+	
+	opposites =  {
 		zealous
 	}
-
+	
 	potential = {
 		NOT = { religion_group = pagan_group }
 	}
@@ -109,6 +61,9 @@ sympathy_pagans = {
 	tolerates_pagan_group = yes		# Tolerates and is tolerated by Pagans
 
 	same_opinion_if_same_religion = 5
+	days_of_supply = 15
+	customizer = yes
+	random = no
 
 	male_insult = INSULT_LOVER_OF_HEATHENS
 	female_insult = INSULT_LOVER_OF_HEATHENS
@@ -118,13 +73,11 @@ sympathy_pagans = {
 }
 
 sympathy_zoroastrianism = {
-	customizer = no
-	random = no
-
-	opposites = {
+	
+	opposites =  {
 		zealous
 	}
-
+	
 	potential = {
 		NOT = { religion_group = zoroastrian_group }
 	}
@@ -132,6 +85,9 @@ sympathy_zoroastrianism = {
 	tolerates_zoroastrian_group = yes		# Tolerates and is tolerated by Zoroastrians
 
 	same_opinion_if_same_religion = 5
+	global_tax_modifier = 0.03
+	customizer = yes
+	random = no
 
 	male_insult = INSULT_LOVER_OF_HEATHENS
 	female_insult = INSULT_LOVER_OF_HEATHENS
@@ -139,3 +95,29 @@ sympathy_zoroastrianism = {
 	female_insult_adj = INSULT_UNPRINCIPLED
 	child_insult_adj = INSULT_STUPID
 }
+
+sympathy_judaism = {
+	
+	opposites =  {
+		zealous
+		noahide
+	}
+	
+	potential = {
+		NOT = { religion_group = jewish_group }
+	}
+
+	tolerates_jewish_group = yes		# Tolerates and is tolerated by Jews
+
+	same_opinion_if_same_religion = 5
+	tech_growth_modifier = 0.1
+	customizer = yes
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
