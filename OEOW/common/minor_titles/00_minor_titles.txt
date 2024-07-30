@@ -878,6 +878,7 @@ title_cupbearer = {
 		NOR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
+			has_landed_title = e_hre
 		}
 	}
 
@@ -953,6 +954,7 @@ title_seneschal = {
 		NOR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
+			has_landed_title = e_hre
 		}
 	}
 
@@ -1040,6 +1042,7 @@ title_despot = {
 	message = yes
 	realm_in_name = yes
 	show_as_title = yes
+	is_voter = yes
 
 	dignity = 6.0
 	grant_limit = 1
@@ -3903,8 +3906,9 @@ title_councilmember_king = {
 
 	allowed_to_grant = {
 		higher_real_tier_than = DUKE
-		NOT = {
+		NOR = {
 			government = makhzen_government
+			has_landed_title = e_hre
 		}
 		has_law = law_voting_power_1
 		has_dlc = "Conclave"
@@ -3992,8 +3996,9 @@ title_councilmember_emperor = {
 
 	allowed_to_grant = {
 		real_tier = EMPEROR
-		NOT = {
+		NOR = {
 			government = makhzen_government
+			has_landed_title = e_hre
 		}
 		has_law = law_voting_power_1
 		has_dlc = "Conclave"

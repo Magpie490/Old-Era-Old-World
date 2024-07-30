@@ -352,6 +352,25 @@ hre_feudal_elective = {
 				}
 			}
 		}
+		additive_modifier = {
+			value = 50
+
+			OR = {
+				has_minor_title = archcupbearer
+				has_minor_title = archseneschal
+				has_minor_title = archchamberlain
+				has_minor_title = archtreasurer
+				has_minor_title = archbannerbearer
+				has_minor_title = archcouncillor
+				has_minor_title = archepiscopal
+			}
+
+			FROMFROM = {
+				holder_scope = {
+					religion = ROOT
+				}
+			}
+		}
 
 		additive_modifier = {
 			value = -5

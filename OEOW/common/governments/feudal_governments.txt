@@ -1185,6 +1185,9 @@ feudal_governments = {
 			primary_title = {
 				confederation_title_trigger = yes
 			}
+			NOT = {
+				has_global_flag = hre_centralised_flag
+			}
 		}
 		
 		color = { 245 238 0 }#yellow

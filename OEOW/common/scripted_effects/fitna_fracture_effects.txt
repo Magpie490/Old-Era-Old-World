@@ -3,3 +3,51 @@ ff_clear_civil_war_effect = {
     set_variable = { which = "civil_war_months"  value = 0 }
     set_variable = { which = "civil_war_years"  value = 0 }
 }
+
+set_feudal_government_effect = {
+	else_if = {
+		limit = {
+			is_government_potential = theocratic_feudal_government
+		}
+		set_government_type = theocratic_feudal_government
+	}
+	else_if = {
+		limit = {
+			is_government_potential = roman_imperial_government
+		}
+		set_government_type = roman_imperial_government
+	}
+	else_if = {
+		limit = {
+			is_government_potential = communal_government
+		}
+		set_government_type = communal_government
+	}
+	else_if = {
+		limit = {
+			is_government_potential = phonocratic_government
+		}
+		set_government_type = phonocratic_government
+	}
+	else_if = {
+		limit = {
+			is_government_potential = makhzen_government
+		}
+		set_government_type = makhzen_government
+	}
+	else_if = {
+		limit = {
+			is_government_potential = neoziamet_government
+		}
+		set_government_type = neoziamet_government
+	}
+	else_if = {
+		limit = {
+			is_government_potential = muslim_government
+		}
+		set_government_type = muslim_government
+	}
+	else = {
+		set_government_type = feudal_government
+	}
+}

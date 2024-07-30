@@ -105,8 +105,22 @@ title_darkhan;Darkhan;Darkhan;Darkhan;;Darkhan;;;;;;;;;x
 title_darkhan_desc;Darkhan is a prestigious Mongolian title bestowed by the Khan upon those who have served him exceptionally well. Genghis Khan awarded this title to those allies who aided him during his rise to power.;En Mongolie, le prestigieux titre de darkhan est accordé par les khans à ceux qui les ont servis de manière exceptionnelle. Gengis Khan a décerné ce titre aux alliés qui l'ont aidé durant son ascension vers le pouvoir.;Darkhan ist ein prestigeträchtiger, mongolischer Titel, den der Khan seinen besten Dienern verleiht. Dschingis Khan belohnte damit jene, die ihm zur Macht verhalfen.;;Darkhan es un prestigioso título Mongol otorgado por el Khan a los que le han servido excepcionalmente bien. Genghis Khan concedió este título a los aliados que le ayudaron en su ascenso al poder.;;;;;;;;;x
 title_designated_heir;Designated Heir;Héritier désigné;Gewählter Erbe;;Heredero designado;;;;;;;;;x
 title_designated_heir_desc;Designate this Character as Your Heir;Désigner ce personnage comme héritier;Wählt diesen Charakter als Euren Erben;;Designar a este personaje como tu heredero;;;;;;;;;x
-title_despot;Despot;Despote;Despot;;Déspota;;;;;;;;;x
-title_despot_desc;Despot is the highest honorary title in the Byzantine Empire, second only to the Emperor. It can only be granted to close relatives, traditionally the oldest son.;Le despote est le plus haut titre honorifique de l'Empire byzantin, après celui d'empereur. Seuls les proches parents, traditionnellement le fils aîné, peuvent en bénéficier.;Despot ist der höchste Ehrentitel im Byzantinischen Kaiserreich und untersteht nur dem Kaiser. Er kann nur engen Verwandten verliehen werden, traditionell dem ältesten Sohn.;;El título honorífico de déspota era el más importante del Imperio Bizantino después del de emperador. Puede otorgarse a los familiares cercanos, tradicionalmente al hijo mayor.;;;;;;;;;x
+archcupbearer;Arch-Cupbearer;;;;;;;;;x
+archseneschal;Arch-Seneschal;;;;;;;;;x
+archchamberlain;Arch-Chamberlain;;;;;;;;;x
+archtreasurer;Arch-Treasurer;;;;;;;;;x
+archbannerbearer;Arch-Bannerbearer;;;;;;;;;x
+archcouncillor;Arch-Councillor;;;;;;;;;x
+archepiscopal;Arch-Episcopal;;;;;;;;;x
+archcupbearer_desc;The Arch-Cupbearer is one of the honourary titles awarded to the elector princes of the Holy Roman Empire;;;;;;;;;x
+archseneschal_desc;The Arch-Seneschal is one of the honourary titles awarded to the elector princes of the Holy Roman Empire;;;;;;;;;x
+archchamberlain_desc;The Arch-Chamberlain is one of the honourary titles awarded to the elector princes of the Holy Roman Empire;;;;;;;;;x
+archtreasurer_desc;The Arch-Treasurer is one of the honourary titles awarded to the elector princes of the Holy Roman Empire;;;;;;;;;x
+archbannerbearer_desc;The Arch-Bannerbearer is one of the honourary titles awarded to the elector princes of the Holy Roman Empire;;;;;;;;;x
+archcouncillor_desc;The Arch-Councillor is one of the honourary titles awarded to the elector princes of the Holy Roman Empire;;;;;;;;;x
+archepiscopal_desc;The Arch-Episcopal is one of the honourary titles awarded to the elector princes of the Holy Roman Empire;;;;;;;;;x
+title_despot;Symbasileus;;;;;;;;;x
+title_despot_desc;Symbasileus is the highest honorary title in the Byzantine Empire, second only to the Emperor. It can only be granted to close relatives, traditionally the oldest son.;Le despote est le plus haut titre honorifique de l'Empire byzantin, après celui d'empereur. Seuls les proches parents, traditionnellement le fils aîné, peuvent en bénéficier.;Despot ist der höchste Ehrentitel im Byzantinischen Kaiserreich und untersteht nur dem Kaiser. Er kann nur engen Verwandten verliehen werden, traditionell dem ältesten Sohn.;;El título honorífico de déspota era el más importante del Imperio Bizantino después del de emperador. Puede otorgarse a los familiares cercanos, tradicionalmente al hijo mayor.;;;;;;;;;x
 title_drottseti;Dróttseti;Dróttseti;Dróttseti;;Dróttseti;;;;;;;;;x
 title_drottseti_desc;The Dróttseti serves as a steward of the realm in a function similar to a seneschal, and it is considered to be a very prestigious post.;Le dróttseti est l'intendant du royaume, sa fonction est similaire au sénéchal. C'est un poste que l'on considère des plus prestigieux.;Der Dróttseti dient als Verwalter des Reiches, ähnlich einem Seneschall, und wird als sehr angesehener Posten betrachtet.;;El Dróttseti sirve como regente del reino en una función similar a un senescal, y se considera un puesto muy prestigioso.;;;;;;;;;x
 title_eran_ambaragbed;Eran Ambaragbed;Eran Ambaragbed;Eran Ambaragbed;;Eran Ambaragbed;;;;;;;;;x

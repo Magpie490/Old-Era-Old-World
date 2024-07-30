@@ -24,6 +24,10 @@ spriteTypes = {
 		name = "GFX_demand_liege_title"
 		textureFile = "gfx\\interface\\decision_icon_liegetitle.dds"
 	}
+	spriteType = {
+		name = "GFX_centralise_hre"
+		textureFile = "gfx\\interface\\restore_the_hre_OW.dds"
+	}
 
 	spriteType = {
 		name = "GFX_go_on_hajj"
