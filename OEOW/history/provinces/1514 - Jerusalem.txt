@@ -25,6 +25,35 @@ religion = sunni
 
 # History
 
+1.1.1 = {
+	build_wonder = wonder_city_of_wonders_jeru
+	set_wonder_stage = 4
+	build_wonder_upgrade = upgrade_cow_district_second_temple_jeru
+	build_wonder_upgrade = upgrade_cow_district_tower_of_david
+}
+
+70.7.30 = {
+	add_custom_history = String_great_revolt_jeru
+	destroy_wonder_upgrade = upgrade_cow_district_second_temple_jeru
+	add_custom_history = String_second_temple_destroyed_jeru
+	set_wonder_stage = 1
+	set_wonder_damaged = yes
+	set_wonder_description = wonder_city_of_wonders_jeru_ruined_desc
+}
+
+130.1.1 = {
+	add_custom_history = String_roman_colony_jeru
+	set_wonder_stage = 2
+}
+
+335.9.13 = {
+	build_wonder_upgrade = upgrade_cow_district_holy_sepulchre_jeru
+}
+
+692.1.1 = {
+	build_wonder_upgrade = upgrade_cow_district_dome_rock_jeru
+}
+
 867.1.1 = {
 	b_mirabel = ca_keep_1
 	b_mirabel = ca_training_grounds_1

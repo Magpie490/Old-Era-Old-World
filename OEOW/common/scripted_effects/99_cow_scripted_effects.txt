@@ -1,0 +1,1060 @@
+#cow_wonder_upgrade_decision_effect                         Temporary flag that tracks which Wonder is located in the province.
+#cow_wonder_stage_decision_effect                           Non-functional - Is supposed to track what stage the Wonder is in.
+#cow_post_wonder_stage_decision_effect                      Non-functional - Is supposed to add Wonder Stages depending on what stage the original wonder was.
+#cow_post_wonder_upgrade_decision_effect                    Adds Wonder District depending on which Wonder was previously located in the province.
+#cow_historical_wonder_upgrade_decision_effect              Adds historical City of Wonders depending on which historical location.
+
+cow_wonder_upgrade_decision_effect = {
+	if = {
+		limit = {
+			has_wonder = wonder_cathedral
+		}
+		set_global_flag = cow_cathedral
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_mosque
+		}
+		set_global_flag = cow_mosque
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_synagogue
+		}
+		set_global_flag = cow_synagogue
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_temple_pagan
+		}
+		set_global_flag = cow_temple_pagan
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_temple_buddhist
+		}
+		set_global_flag = cow_temple_buddhist
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_temple_hindu
+		}
+		set_global_flag = cow_temple_hindu
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_statue_ruler
+		}
+		set_global_flag = cow_statue_ruler
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_statue_horse
+		}
+		set_global_flag = cow_statue_horse
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_fortress
+		}
+		set_global_flag = cow_fortress
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_underground_city
+		}
+		set_global_flag = cow_underground_city
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_wall
+		}
+		set_global_flag = cow_wall
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_harbor
+		}
+		set_global_flag = cow_harbor
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_lighthouse
+		}
+		set_global_flag = cow_lighthouse
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_amphitheater
+		}
+		set_global_flag = cow_amphitheater
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_palace
+		}
+		set_global_flag = cow_palace
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_garden
+		}
+		set_global_flag = cow_garden
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_university
+		}
+		set_global_flag = cow_university
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_library
+		}
+		set_global_flag = cow_library
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_mausoleum
+		}
+		set_global_flag = cow_mausoleum
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_pyramid
+		}
+		set_global_flag = cow_pyramid
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_pagan_stones
+		}
+		set_global_flag = cow_pagan_stones
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_aztec_pyramid
+		}
+		set_global_flag = cow_aztec_pyramid
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_pyramid_giza
+		}
+		set_global_flag = cow_pyramid_giza
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_pagan_stones_stonehenge
+		}
+		set_global_flag = cow_pagan_stones_stonehenge
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_mausoleum_halicarnassus
+		}
+		set_global_flag = cow_mausoleum_halicarnassus
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_lighthouse_alexandria
+		}
+		set_global_flag = cow_lighthouse_alexandria
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_temple_hindu_konark
+		}
+		set_global_flag = cow_temple_hindu_konark
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_apostolic_palace
+		}
+		set_global_flag = cow_apostolic_palace
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_house_of_wisdom
+		}
+		set_global_flag = cow_house_of_wisdom
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_underground_city_petra
+		}
+		set_global_flag = cow_underground_city_petra
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_cathedral_hagia_sophia
+		}
+		set_global_flag = cow_cathedral_hagia_sophia
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_cathedral_notre_dame
+		}
+		set_global_flag = cow_cathedral_notre_dame
+	}
+	### ACR ###
+	else_if = {
+		limit = {
+			has_wonder = wonder_crotone_university
+		}
+		set_global_flag = cow_crotone_university
+	}
+	### EMF ###
+	else_if = {
+		limit = {
+			has_wonder = wonder_fire_temple
+		}
+		set_global_flag = cow_wonder_fire_temple
+	}
+	else_if = {
+		limit = {
+			has_wonder = wonder_temple_jain
+		}
+		set_global_flag = cow_temple_jain
+	}
+}
+
+# cow_wonder_stage_decision_effect = {
+	# if = {
+		# limit = {
+			# wonder = {
+				# wonder_stage = 1
+			# }
+		# }
+		# set_global_flag = cow_wonder_stage_1
+	# }
+	# else_if = {
+		# limit = {
+			# wonder = {
+				# wonder_stage = 2
+			# }
+		# }
+		# set_global_flag = cow_wonder_stage_2
+	# }
+	# else_if = {
+		# limit = {
+			# wonder = {
+				# wonder_stage = 3
+			# }
+		# }
+		# set_global_flag = cow_wonder_stage_3
+	# }
+	# else_if = {
+		# limit = {
+			# wonder = {
+				# wonder_stage = 4
+			# }
+		# }
+		# set_global_flag = cow_wonder_stage_4
+	# }
+# }
+
+# cow_post_wonder_stage_decision_effect = {
+	# if = {
+		# limit = {
+			# has_global_flag = cow_wonder_stage_3
+		# }
+		# add_wonder_stage = 2
+		# clr_global_flag = cow_wonder_stage_3
+	# }
+	# else_if = {
+		# limit = {
+			# has_global_flag = cow_wonder_stage_4
+		# }
+		# add_wonder_stage = 3
+		# clr_global_flag = cow_wonder_stage_4
+	# }
+	# else = {
+		# clr_global_flag = cow_wonder_stage_1
+		# clr_global_flag = cow_wonder_stage_2
+		# clr_global_flag = cow_wonder_stage_3
+		# clr_global_flag = cow_wonder_stage_4
+	# }
+# }
+
+cow_post_wonder_upgrade_decision_effect = {
+	if = {
+		limit = {
+			has_global_flag = cow_cathedral
+		}
+		if = {
+			limit = { location = { province_id = 541 } } # Byzantion
+			add_wonder_upgrade = upgrade_cow_district_hagia_sophia
+		}
+		else_if = {
+			limit = { location = { province_id = 281 } } # Ile de France
+			add_wonder_upgrade = upgrade_cow_district_notre_dame
+		}
+		else_if = {
+			limit = { location = { province_id = 464 } } # Roma
+			add_wonder_upgrade = upgrade_cow_district_old_st_peter
+		}
+		else_if = {
+			limit = { location = { province_id = 1499 } } # Antiocheia
+			add_wonder_upgrade = upgrade_cow_district_domus_aurea_anti
+		}
+		else_if = {
+			limit = { location = { province_id = 1514 } } # Jerusalem
+			add_wonder_upgrade = upgrade_cow_district_holy_sepulchre_jeru
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_cathedral }
+		clr_global_flag = cow_cathedral
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_mosque
+		}
+		if = {
+			limit = { location = { province_id = 1514 } } # Jerusalem
+			add_wonder_upgrade = upgrade_cow_district_dome_rock_jeru
+		}
+		else_if = {
+			limit = { location = { province_id = 416 } } # Cordoba
+			add_wonder_upgrade = upgrade_cow_district_mosque_cord
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_mosque }
+		clr_global_flag = cow_mosque
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_synagogue
+		}
+		if = {
+			limit = { location = { province_id = 1514 } } # Jerusalem
+			add_wonder_upgrade = upgrade_cow_district_third_temple_jeru
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_synagogue }
+		clr_global_flag = cow_synagogue
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_temple_pagan
+		}
+		if = {
+			limit = { # Hellenic
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					ROOT_FROM = { religion_openly_in_hellenic_subgroup_trigger = yes }
+				}
+				trigger_else = {
+					ROOT_FROM = { religion_openly_hellenic_or_reformed_trigger = yes }
+				}
+			}
+			if = {
+				limit = { location = { province_id = 464 } } # Roma
+				add_wonder_upgrade = upgrade_cow_district_pantheon_roma
+			}
+			else_if = {
+				limit = { location = { province_id = 1620 } } # Alexandria
+				add_wonder_upgrade = upgrade_cow_district_serapeion_alex
+			}
+			else_if = {
+				limit = { location = { province_id = 501 } } # Athens
+				add_wonder_upgrade = upgrade_cow_district_parthenon_athens
+			}
+			else = { add_wonder_upgrade = upgrade_cow_district_temple_hellenic }
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_temple_pagan }
+		clr_global_flag = cow_temple_pagan
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_temple_buddhist
+		}
+		add_wonder_upgrade = upgrade_cow_district_temple_buddhist
+		clr_global_flag = cow_temple_buddhist
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_temple_hindu
+		}
+		add_wonder_upgrade = upgrade_cow_district_temple_hindu
+		clr_global_flag = cow_temple_hindu
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_statue_ruler
+		}
+		if = {
+			limit = { # Roma
+				location = { province_id = 464 }
+				ROOT_FROM = {
+					OR = {
+						culture = roman
+						culture = italian
+						culture_group = byzantine
+						### ACR ###
+						trigger_if = {
+							limit = { has_global_flag = ancrel }
+							religion_openly_in_hellenic_subgroup_trigger = yes
+						}
+						trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+					}
+				}
+			}
+			add_wonder_upgrade = upgrade_cow_district_colossus_solis
+		}
+		else_if = {
+			limit = { # Byzantion
+				location = { province_id = 541 }
+				ROOT_FROM = {
+					OR = {
+						culture = roman
+						culture = italian
+						culture_group = byzantine
+						### ACR ###
+						trigger_if = {
+							limit = { has_global_flag = ancrel }
+							religion_openly_in_hellenic_subgroup_trigger = yes
+						}
+						trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+					}
+				}
+			}
+			add_wonder_upgrade = upgrade_cow_district_colossus_constantine
+		}
+		else_if = {
+			limit = { # Athens
+				location = { province_id = 501 }
+				ROOT_FROM = {
+					OR = {
+						culture = roman
+						culture = italian
+						culture_group = byzantine
+						### ACR ###
+						trigger_if = {
+							limit = { has_global_flag = ancrel }
+							religion_openly_in_hellenic_subgroup_trigger = yes
+						}
+						trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+					}
+				}
+			}
+			add_wonder_upgrade = upgrade_cow_district_colossus_athena
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_statue_ruler }
+		clr_global_flag = cow_statue_ruler
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_statue_horse
+		}
+		if = {
+			limit = {
+				location = {
+					OR = {
+						province_id = 464 # Roma
+						province_id = 541 # Byzantion
+					}
+				}
+			}
+			add_wonder_upgrade = upgrade_cow_district_horse_statue_incitatus
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_horse_statue }
+		clr_global_flag = cow_statue_horse
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_fortress
+		}
+		if = {
+			limit = { location = { province_id = 541 } } # Byzantion
+			add_wonder_upgrade = upgrade_cow_district_chryseia_pyle
+		}
+		else_if = {
+			limit = { location = { province_id = 464 } } # Roma
+			add_wonder_upgrade = upgrade_cow_district_castra_praetoria
+		}
+		else_if = {
+			limit = { location = { province_id = 1499 } } # Antiocheia
+			add_wonder_upgrade = upgrade_cow_district_akra_anti
+		}
+		else_if = {
+			limit = { location = { province_id = 1514 } } # Jerusalem
+			add_wonder_upgrade = upgrade_cow_district_tower_of_david
+		}
+		else_if = {
+			limit = { location = { province_id = 1476 } } # Baghdad
+			add_wonder_upgrade = upgrade_cow_district_ishtar_gate
+		}
+		else_if = {
+			limit = { location = { province_id = 1463 } } # Shiraz
+			add_wonder_upgrade = upgrade_cow_district_all_nations_parsa
+		}
+		else_if = {
+			limit = { location = { province_id = 1643 } } # Tunis
+			add_wonder_upgrade = upgrade_cow_district_byrsa_carthage
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_fortress }
+		clr_global_flag = cow_fortress
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_underground_city
+		}
+		add_wonder_upgrade = upgrade_cow_district_underground_city
+		clr_global_flag = cow_underground_city
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_wall
+		}
+		if = {
+			limit = { location = { province_id = 541 } } # Byzantion
+			add_wonder_upgrade = upgrade_cow_district_theodosian_walls
+		}
+		else_if = {
+			limit = { location = { province_id = 464 } } # Roma
+			add_wonder_upgrade = upgrade_cow_district_aurelian_walls
+		}
+		else_if = {
+			limit = { location = { province_id = 501 } } # Athens
+			add_wonder_upgrade = upgrade_cow_district_grand_walls_athens
+		}
+		else_if = {
+			limit = {
+				location = { province_id = 1476 } # Baghdad
+				ROOT_FROM = { NOT = { religion_group = muslim } }
+			}
+			add_wonder_upgrade = upgrade_cow_district_grand_walls_baby
+		}
+		else_if = {
+			limit = {
+				location = { province_id = 1476 } # Baghdad
+				ROOT_FROM = { religion_group = muslim }
+			}
+			add_wonder_upgrade = upgrade_cow_district_round_city_baby
+		}
+		else_if = {
+			limit = { location = { province_id = 489 } } # Siracusa
+			add_wonder_upgrade = upgrade_cow_district_grand_walls_syra
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_grand_walls }
+		clr_global_flag = cow_wall
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_harbor
+		}
+		if = {
+			limit = { location = { province_id = 541 } } # Byzantion
+			add_wonder_upgrade = upgrade_cow_district_limen_byz
+		}
+		else_if = {
+			limit = { location = { province_id = 464 } } # Roma
+			add_wonder_upgrade = upgrade_cow_district_portus_roma
+		}
+		else_if = {
+			limit = { location = { province_id = 501 } } # Athens
+			add_wonder_upgrade = upgrade_cow_district_port_of_piraeus
+		}
+		else_if = {
+			limit = { location = { province_id = 1643 } } # Tunis
+			add_wonder_upgrade = upgrade_cow_district_cothon_carthage
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_harbor }
+		clr_global_flag = cow_harbor
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_lighthouse
+		}
+		if = {
+			limit = { location = { province_id = 541 } } # Byzantion
+			add_wonder_upgrade = upgrade_cow_district_pharos_byz
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_lighthouse }
+		clr_global_flag = cow_lighthouse
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_amphitheater
+		}
+		if = {
+			limit = { location = { province_id = 501 } } # Athens
+			add_wonder_upgrade = upgrade_cow_district_odeon_athens
+		}
+		else_if = {
+			limit = { location = { province_id = 489 } } # Siracusa
+			add_wonder_upgrade = upgrade_cow_district_amphitheatre_syra
+		}
+		else_if = {
+			limit = { location = { province_id = 541 } } # Byzantion
+			add_wonder_upgrade = upgrade_cow_district_hippodromos_byz
+		}
+		else_if = {
+			limit = { location = { province_id = 1499 } } # Antiocheia
+			add_wonder_upgrade = upgrade_cow_district_circus_anti
+		}
+		else_if = {
+			limit = { location = { province_id = 464 } } # Roma
+			add_wonder_upgrade = upgrade_cow_district_colosseum
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_amphitheatre }
+		clr_global_flag = cow_amphitheater
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_palace
+		}
+		if = {
+			limit = { location = { province_id = 541 } } # Byzantion
+			add_wonder_upgrade = upgrade_cow_district_mega_palation
+		}
+		else_if = {
+			limit = { location = { province_id = 464 } } # Roma
+			add_wonder_upgrade = upgrade_cow_district_lateran_palace
+		}
+		else_if = {
+			limit = { location = { province_id = 1463 } } # Shiraz
+			add_wonder_upgrade = upgrade_cow_district_apadana_parsa
+		}
+		else_if = {
+			limit = { location = { province_id = 416 } } # Cordoba
+			add_wonder_upgrade = upgrade_cow_district_medina_azahara
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_palace }
+		clr_global_flag = cow_palace
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_garden
+		}
+		if = {
+			limit = { location = { province_id = 541 } } # Byzantion
+			add_wonder_upgrade = upgrade_cow_district_forum_constantine
+		}
+		else_if = {
+			limit = { location = { province_id = 464 } } # Roma
+			add_wonder_upgrade = upgrade_cow_district_forum_romanum
+		}
+		else_if = {
+			limit = { location = { province_id = 1476 } } # Baghdad
+			add_wonder_upgrade = upgrade_cow_district_hanging_gardens_baby
+		}
+		else_if = {
+			limit = { location = { province_id = 1463 } } # Shiraz
+			add_wonder_upgrade = upgrade_cow_district_gardens_parsa
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_garden }
+		clr_global_flag = cow_garden
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_university
+		}
+		if = {
+			limit = { location = { province_id = 541 } } # Byzantion
+			add_wonder_upgrade = upgrade_cow_district_pandidakterion
+		}
+		else_if = {
+			limit = { location = { province_id = 1620 } } # Alexandria
+			add_wonder_upgrade = upgrade_cow_district_mouseion_alex
+		}
+		else_if = {
+			limit = { location = { province_id = 416 } } # Cordoba
+			add_wonder_upgrade = upgrade_cow_district_university_cord
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_university }
+		clr_global_flag = cow_university
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_library
+		}
+		if = {
+			limit = { location = { province_id = 541 } } # Byzantion
+			add_wonder_upgrade = upgrade_cow_district_bibliothekai_byz
+		}
+		else_if = {
+			limit = { location = { province_id = 464 } } # Roma
+			add_wonder_upgrade = upgrade_cow_district_bibliotheca_ulpia
+		}
+		else_if = {
+			limit = { location = { province_id = 1620 } } # Alexandria
+			add_wonder_upgrade = upgrade_cow_district_bibliothekai_alex
+		}
+		else_if = {
+			limit = { location = { province_id = 1476 } } # Baghdad
+			add_wonder_upgrade = upgrade_cow_district_house_of_wisdom
+		}
+		else_if = {
+			limit = { location = { province_id = 489 } } # Siracusa
+			add_wonder_upgrade = upgrade_cow_district_library_syra
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_library }
+		clr_global_flag = cow_library
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_mausoleum
+		}
+		if = {
+			limit = { # Roma
+				location = { province_id = 464 }
+				ROOT_FROM = {
+					OR = {
+						culture_group = latin
+						culture_group = byzantine
+						religion_group = christian
+						### ACR ###
+						trigger_if = {
+							limit = { has_global_flag = ancrel }
+							religion_openly_in_hellenic_subgroup_trigger = yes
+						}
+						trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+					}
+				}
+			}
+			add_wonder_upgrade = upgrade_cow_district_mausoleum_roma
+		}
+		else_if = {
+			limit = { # Byzantion
+				location = { province_id = 541 }
+				ROOT_FROM = {
+					OR = {
+						culture_group = latin
+						culture_group = byzantine
+						religion_group = christian
+						### ACR ###
+						trigger_if = {
+							limit = { has_global_flag = ancrel }
+							religion_openly_in_hellenic_subgroup_trigger = yes
+						}
+						trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+					}
+				}
+			}
+			add_wonder_upgrade = upgrade_cow_district_mausoleion_apostles_byz
+		}
+		else_if = {
+			limit = { # Alexandria
+				location = { province_id = 1620 }
+				ROOT_FROM = {
+					OR = {
+						culture_group = latin
+						culture_group = byzantine
+						culture = coptic
+						culture = egyptian_arabic
+						religion_group = christian
+						### ACR ###
+						trigger_if = {
+							limit = { has_global_flag = ancrel }
+							culture = egyptian_coptic
+						}
+						trigger_if = {
+							limit = { has_global_flag = ancrel }
+							religion_openly_in_hellenic_subgroup_trigger = yes
+						}
+						trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+					}
+					custom_tooltip = { # Custom tooltip to explain the in-game tooltip
+						text = ALEXANDERS_BLOODLINE_DISCOVERED_TT
+						hidden_tooltip = {
+							has_global_flag = flag_alexander_blood_restored
+						}
+					}
+					custom_tooltip = { # Custom tooltip to explain the in-game tooltip
+						text = MUST_HAVE_ALEXANDERS_BLOODLINE_TT
+						hidden_tooltip = {
+							any_owned_bloodline = { has_bloodline_flag = bloodline_alexander }
+						}
+					}
+				}
+			}
+			add_wonder_upgrade = upgrade_cow_district_mausoleion_alexander
+		}
+		else_if = {
+			limit = { # Shiraz
+				location = { province_id = 1463 }
+				ROOT_FROM = {
+					OR = {
+						culture_group = iranian
+						religion_group = zoroastrian_group
+					}
+				}
+			}
+			add_wonder_upgrade = upgrade_cow_district_tomb_of_cyrus
+		}
+		else = { add_wonder_upgrade = upgrade_cow_district_mausoleum }
+		clr_global_flag = cow_mausoleum
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_pyramid
+		}
+		add_wonder_upgrade = upgrade_cow_district_pyramid
+		clr_global_flag = cow_pyramid
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_pagan_stones
+		}
+		add_wonder_upgrade = upgrade_cow_district_pagan_stones
+		clr_global_flag = cow_pagan_stones
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_aztec_pyramid
+		}
+		add_wonder_upgrade = upgrade_cow_district_aztec_pyramid
+		clr_global_flag = cow_aztec_pyramid
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_pyramid_giza
+		}
+		add_wonder_upgrade = upgrade_cow_district_pyramid_giza
+		clr_global_flag = cow_pyramid_giza
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_pagan_stones_stonehenge
+		}
+		add_wonder_upgrade = upgrade_cow_district_stonehenge
+		clr_global_flag = cow_pagan_stones_stonehenge
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_mausoleum_halicarnassus
+		}
+		add_wonder_upgrade = upgrade_cow_district_mausoleum_halicarnassus
+		clr_global_flag = cow_mausoleum_halicarnassus
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_lighthouse_alexandria
+		}
+		add_wonder_upgrade = upgrade_cow_district_pharos_alex
+		clr_global_flag = cow_lighthouse_alexandria
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_temple_hindu_konark
+		}
+		add_wonder_upgrade = upgrade_cow_district_hindu_konark
+		clr_global_flag = cow_temple_hindu_konark
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_apostolic_palace
+		}
+		add_wonder_upgrade = upgrade_cow_district_lateran_palace
+		clr_global_flag = cow_apostolic_palace
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_house_of_wisdom
+		}
+		add_wonder_upgrade = upgrade_cow_district_house_of_wisdom
+		clr_global_flag = cow_house_of_wisdom
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_underground_city_petra
+		}
+		add_wonder_upgrade = upgrade_cow_district_underground_city_petra
+		clr_global_flag = cow_underground_city_petra
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_cathedral_hagia_sophia
+		}
+		add_wonder_upgrade = upgrade_cow_district_hagia_sophia
+		clr_global_flag = cow_cathedral_hagia_sophia
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_cathedral_notre_dame
+		}
+		add_wonder_upgrade = upgrade_cow_district_notre_dame
+		clr_global_flag = cow_cathedral_notre_dame
+	}
+	### ACR ###
+	else_if = {
+		limit = {
+			has_global_flag = cow_crotone_university
+		}
+		add_wonder_upgrade = upgrade_cow_district_crotone_university
+		clr_global_flag = cow_crotone_university
+	}
+	### EMF ###
+	else_if = {
+		limit = {
+			has_global_flag = cow_wonder_fire_temple
+		}
+		add_wonder_upgrade = upgrade_cow_district_temple_fire_temple
+		clr_global_flag = cow_wonder_fire_temple
+	}
+	else_if = {
+		limit = {
+			has_global_flag = cow_temple_jain
+		}
+		add_wonder_upgrade = upgrade_cow_district_temple_jain
+		clr_global_flag = cow_temple_jain
+	}
+}
+
+cow_historical_wonder_upgrade_decision_effect = {
+	if = {
+		limit = { 
+			AND = {
+				has_wonder = no
+				province_id = 541 # Byzantion
+			}
+		}
+		add_wonder = wonder_city_of_wonders_byz
+		wonder = {
+			# cow_post_wonder_stage_decision_effect = yes
+			cow_post_wonder_upgrade_decision_effect = yes
+		}
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				has_wonder = no
+				province_id = 464 # Roma
+			}
+		}
+		add_wonder = wonder_city_of_wonders_roma
+		wonder = {
+			# cow_post_wonder_stage_decision_effect = yes
+			cow_post_wonder_upgrade_decision_effect = yes
+		}
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				has_wonder = no
+				province_id = 1620 # Alexandria
+			}
+		}
+		add_wonder = wonder_city_of_wonders_alex
+		wonder = {
+			# cow_post_wonder_stage_decision_effect = yes
+			cow_post_wonder_upgrade_decision_effect = yes
+		}
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				has_wonder = no
+				province_id = 1499 # Antiocheia
+			}
+		}
+		add_wonder = wonder_city_of_wonders_anti
+		wonder = {
+			# cow_post_wonder_stage_decision_effect = yes
+			cow_post_wonder_upgrade_decision_effect = yes
+		}
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				has_wonder = no
+				province_id = 1514 # Jerusalem
+			}
+		}
+		add_wonder = wonder_city_of_wonders_jeru
+		wonder = {
+			# cow_post_wonder_stage_decision_effect = yes
+			cow_post_wonder_upgrade_decision_effect = yes
+		}
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				has_wonder = no
+				province_id = 1476 # Baghdad
+			}
+		}
+		add_wonder = wonder_city_of_wonders_baby
+		wonder = {
+			# cow_post_wonder_stage_decision_effect = yes
+			cow_post_wonder_upgrade_decision_effect = yes
+		}
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				has_wonder = no
+				province_id = 1335 # Delhi
+			}
+		}
+		add_wonder = wonder_city_of_wonders_delh
+		wonder = {
+			# cow_post_wonder_stage_decision_effect = yes
+			cow_post_wonder_upgrade_decision_effect = yes
+		}
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				has_wonder = no
+				province_id = 482 # Athens
+			}
+		}
+		add_wonder = wonder_city_of_wonders_athens
+		wonder = {
+			# cow_post_wonder_stage_decision_effect = yes
+			cow_post_wonder_upgrade_decision_effect = yes
+		}
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				has_wonder = no
+				province_id = 1463 # Shiraz (Persepolis)
+			}
+		}
+		add_wonder = wonder_city_of_wonders_parsa
+		wonder = {
+			# cow_post_wonder_stage_decision_effect = yes
+			cow_post_wonder_upgrade_decision_effect = yes
+		}
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				has_wonder = no
+				province_id = 1643 # Tunis (Carthage)
+			}
+		}
+		add_wonder = wonder_city_of_wonders_carth
+		wonder = {
+			# cow_post_wonder_stage_decision_effect = yes
+			cow_post_wonder_upgrade_decision_effect = yes
+		}
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				has_wonder = no
+				province_id = 489 # Siracusa
+			}
+		}
+		add_wonder = wonder_city_of_wonders_syra
+		wonder = {
+			# cow_post_wonder_stage_decision_effect = yes
+			cow_post_wonder_upgrade_decision_effect = yes
+		}
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				has_wonder = no
+				province_id = 416 # Cordoba
+			}
+		}
+		add_wonder = wonder_city_of_wonders_cord
+		wonder = {
+			# cow_post_wonder_stage_decision_effect = yes
+			cow_post_wonder_upgrade_decision_effect = yes
+		}
+	}
+}

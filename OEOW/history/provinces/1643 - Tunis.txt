@@ -22,6 +22,34 @@ religion = catholic
 
 # History
 
+# History
+1.1.1 = { # Roman Carthage
+	build_wonder = wonder_city_of_wonders_carth
+	set_wonder_stage = 4
+}
+
+439.10.1 = { # Roman Carthage sacked by Vandals
+	add_custom_history = String_carthage_sacked_by_vandals
+	set_wonder_stage = 2
+}
+
+533.9.13 = { # Roman Carthage reconquered by Belisarius
+	add_custom_history = String_carthage_reconqured_by_belisarius
+	set_wonder_stage = 4
+}
+
+695.1.1 = { # Roman Carthage captured by Islamic invaders
+	add_custom_history = String_carthage_captured_by_muslims
+	set_wonder_stage = 2
+}
+
+699.1.1 = { # Roman Carthage utterly destroyed by Caliphate
+	add_custom_history = String_carthage_destroyed_by_muslims
+	set_wonder_stage = 1
+	set_wonder_damaged = yes
+	set_wonder_description = wonder_city_of_wonders_carth_ruined_desc
+}
+
 867.1.1 = {
 	religion = sunni
 	b_tunis = ca_keep_1

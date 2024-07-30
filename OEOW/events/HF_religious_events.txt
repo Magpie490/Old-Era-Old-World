@@ -33,7 +33,7 @@ character_event = {
 				trait = bloodthirsty_gods_3
 
 				any_realm_wonder_upgrade = {
-					has_wonder_upgrade = upgrade_sacrificial_altar
+					has_wonder_upgrade_flag = sacrificial_altar
 					is_active = yes
 				}
 			}
@@ -50,7 +50,7 @@ character_event = {
 
 			NOT = {
 				any_realm_wonder_upgrade = {
-					has_wonder_upgrade = upgrade_sacrificial_altar
+					has_wonder_upgrade_flag = sacrificial_altar
 					is_active = yes
 				}
 			}
@@ -66,7 +66,7 @@ character_event = {
 			}
 
 			any_realm_wonder_upgrade = {
-				has_wonder_upgrade = upgrade_sacrificial_altar
+				has_wonder_upgrade_flag = sacrificial_altar
 				is_active = yes
 			}
 		}
@@ -81,7 +81,7 @@ character_event = {
 			}
 
 			any_realm_wonder_upgrade = {
-				has_wonder_upgrade = upgrade_sacrificial_altar
+				has_wonder_upgrade_flag = sacrificial_altar
 				is_active = yes
 			}
 		}
@@ -101,7 +101,7 @@ character_event = {
 	immediate = {
 		random_realm_wonder_upgrade = {
 			limit = {
-				has_wonder_upgrade = upgrade_sacrificial_altar
+				has_wonder_upgrade_flag = sacrificial_altar
 				is_active = yes
 			}
 
@@ -116,7 +116,7 @@ character_event = {
 		if = {
 			limit = {
 				any_realm_wonder_upgrade = {
-					has_wonder_upgrade = upgrade_sacrificial_altar
+					has_wonder_upgrade_flag = sacrificial_altar
 					is_active = yes
 				}
 			}
@@ -131,7 +131,7 @@ character_event = {
 
 		trigger = {
 			any_realm_wonder_upgrade = {
-				has_wonder_upgrade = upgrade_sacrificial_altar
+				has_wonder_upgrade_flag = sacrificial_altar
 				is_active = yes
 			}
 		}
@@ -689,7 +689,13 @@ character_event = {
 	trigger = {
 		OR = {
 			has_religion_feature = religion_haruspicy
-			religion_openly_hellenic_or_reformed_trigger = yes
+			### ACR ###
+			religion_openly_celtic_or_reformed_trigger = yes
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = yes
+			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
 		}
 
 		NOR = {
@@ -757,7 +763,13 @@ character_event = {
 	trigger = {
 		OR = {
 			has_religion_feature = religion_haruspicy
-			religion_openly_hellenic_or_reformed_trigger = yes
+			### ACR ###
+			religion_openly_celtic_or_reformed_trigger = yes
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = yes
+			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
 		}
 
 		NOR = {
@@ -812,7 +824,13 @@ character_event = {
 	trigger = {
 		OR = {
 			has_religion_feature = religion_haruspicy
-			religion_openly_hellenic_or_reformed_trigger = yes
+			### ACR ###
+			religion_openly_celtic_or_reformed_trigger = yes
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = yes
+			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
 		}
 
 		NOR = {
@@ -830,7 +848,10 @@ character_event = {
 		}
 
 		if = {
-			limit = { has_religion_feature = religion_ritual_sacrifice }
+			limit = {
+				### ACR ###
+				cl_kinich_uses_human_sacrifice_trigger = yes
+			}
 
 			random_courtier = {
 				limit = {
@@ -870,7 +891,8 @@ character_event = {
 		name = EVTOPTZHF23007
 
 		trigger = {
-			has_religion_feature = religion_ritual_sacrifice
+			### ACR ###
+			cl_kinich_uses_human_sacrifice_trigger = yes
 			event_target:potential_victim = { always = yes }
 		}
 
@@ -923,7 +945,8 @@ character_event = {
 		name = EVTOPTAHF23007
 
 		trigger = {
-			NOT = { has_religion_feature = religion_ritual_sacrifice }
+			### ACR ###
+			cl_kinich_uses_human_sacrifice_trigger = no
 		}
 
 		if = {
@@ -1824,6 +1847,13 @@ character_event = {
 			trait = pagan_branch_2
 			trait = pagan_branch_3
 			trait = pagan_branch_4
+			### ACR ###
+			trait = pagan_branch_5_animist
+			trait = pagan_branch_6_theist
+			trait = pagan_branch_7_intellect
+			trait = pagan_branch_8_might
+			trait = pagan_branch_9_egoist
+			trait = pagan_branch_10_altruist
 		}
 	}
 
@@ -1918,6 +1948,11 @@ character_event = {
 
 	option = {
 		name = EVTOPTDHF23016
+		
+		trigger = {
+			### ACR ###
+			NOT = { has_global_flag = acr_mpb }
+		}
 
 		add_trait = pagan_branch_4
 
@@ -1938,6 +1973,19 @@ character_event = {
 					has_education_diplomacy_trigger = yes
 				}
 			}
+		}
+	}
+	
+	### ACR ###
+	option = {
+	name = EVTOPTXHF23016
+		trigger = { has_global_flag = acr_mpb }
+		
+		hidden_tooltip = {
+			character_event = { id = PB.100 }
+		}
+		ai_chance = { 
+			factor = 70
 		}
 	}
 
@@ -1968,6 +2016,13 @@ character_event = {
 			pagan_branch_2 = { remove_trait = pagan_branch_2 }
 			pagan_branch_3 = { remove_trait = pagan_branch_3 }
 			pagan_branch_4 = { remove_trait = pagan_branch_4 }
+			### ACR ###
+			pagan_branch_5_animist		= { remove_trait = pagan_branch_5_animist }
+			pagan_branch_6_theist		= { remove_trait = pagan_branch_6_theist }
+			pagan_branch_7_intellect	= { remove_trait = pagan_branch_7_intellect }
+			pagan_branch_8_might		= { remove_trait = pagan_branch_8_might }
+			pagan_branch_9_egoist		= { remove_trait = pagan_branch_9_egoist }
+			pagan_branch_10_altruist	= { remove_trait = pagan_branch_10_altruist }
 		}
 
 		add_trait = pagan_branch_1
@@ -1986,6 +2041,13 @@ character_event = {
 			pagan_branch_1 = { remove_trait = pagan_branch_1 }
 			pagan_branch_3 = { remove_trait = pagan_branch_3 }
 			pagan_branch_4 = { remove_trait = pagan_branch_4 }
+			### ACR ###
+			pagan_branch_5_animist		= { remove_trait = pagan_branch_5_animist }
+			pagan_branch_6_theist		= { remove_trait = pagan_branch_6_theist }
+			pagan_branch_7_intellect	= { remove_trait = pagan_branch_7_intellect }
+			pagan_branch_8_might		= { remove_trait = pagan_branch_8_might }
+			pagan_branch_9_egoist		= { remove_trait = pagan_branch_9_egoist }
+			pagan_branch_10_altruist	= { remove_trait = pagan_branch_10_altruist }
 		}
 
 		add_trait = pagan_branch_2
@@ -2004,6 +2066,13 @@ character_event = {
 			pagan_branch_1 = { remove_trait = pagan_branch_1 }
 			pagan_branch_2 = { remove_trait = pagan_branch_2 }
 			pagan_branch_4 = { remove_trait = pagan_branch_4 }
+			### ACR ###
+			pagan_branch_5_animist		= { remove_trait = pagan_branch_5_animist }
+			pagan_branch_6_theist		= { remove_trait = pagan_branch_6_theist }
+			pagan_branch_7_intellect	= { remove_trait = pagan_branch_7_intellect }
+			pagan_branch_8_might		= { remove_trait = pagan_branch_8_might }
+			pagan_branch_9_egoist		= { remove_trait = pagan_branch_9_egoist }
+			pagan_branch_10_altruist	= { remove_trait = pagan_branch_10_altruist }
 		}
 
 		add_trait = pagan_branch_3
@@ -2013,7 +2082,11 @@ character_event = {
 		name = EVTOPTDHF23017
 
 		trigger = {
-			NOT = { trait = pagan_branch_4 }
+			NOR = {
+				trait = pagan_branch_4
+				### ACR ###
+				has_global_flag = acr_mpb
+			}
 		}
 
 		trigger_switch = {
@@ -2022,9 +2095,28 @@ character_event = {
 			pagan_branch_1 = { remove_trait = pagan_branch_1 }
 			pagan_branch_2 = { remove_trait = pagan_branch_2 }
 			pagan_branch_3 = { remove_trait = pagan_branch_3 }
+			### ACR ###
+			pagan_branch_5_animist		= { remove_trait = pagan_branch_5_animist }
+			pagan_branch_6_theist		= { remove_trait = pagan_branch_6_theist }
+			pagan_branch_7_intellect	= { remove_trait = pagan_branch_7_intellect }
+			pagan_branch_8_might		= { remove_trait = pagan_branch_8_might }
+			pagan_branch_9_egoist		= { remove_trait = pagan_branch_9_egoist }
+			pagan_branch_10_altruist	= { remove_trait = pagan_branch_10_altruist }
 		}
 
 		add_trait = pagan_branch_4
+	}
+	
+	### ACR ###
+	option = {
+		name = EVTOPTXHF23017
+		trigger = { has_global_flag = acr_mpb }
+		hidden_tooltip = {
+			character_event = { id = PB.101 }
+		}
+		ai_chance = {
+			factor = 25
+		}
 	}
 
 	after = {
@@ -2081,8 +2173,13 @@ character_event = {
 
 	trigger = {
 		OR = {
-			religion_openly_hellenic_or_reformed_trigger = yes
 			has_religion_feature = religion_astrology
+			### ACR ###
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = yes
+			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
 		}
 	}
 
@@ -2240,8 +2337,16 @@ character_event = {
 		name = EVTOPTAHF23022
 
 		trigger = {
-			NOT = { has_religion_feature = religion_astrology }
-			religion_openly_hellenic_or_reformed_trigger = no
+			NOR = {
+				has_religion_feature = religion_astrology
+				society_member_of = hermetics
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+			}
 		}
 
 		FROM = {
@@ -2288,8 +2393,14 @@ character_event = {
 
 		trigger = {
 			OR = {
-				religion_openly_hellenic_or_reformed_trigger = yes
 				has_religion_feature = religion_astrology
+				society_member_of = hermetics
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
 			}
 		}
 
@@ -2357,8 +2468,14 @@ character_event = {
 
 		trigger = {
 			OR = {
-				religion_openly_hellenic_or_reformed_trigger = yes
 				has_religion_feature = religion_astrology
+				society_member_of = hermetics
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
 			}
 		}
 
@@ -2920,6 +3037,13 @@ character_event = {
 			trait = pagan_branch_3
 			trait = pagan_branch_4
 			has_character_modifier = picked_pagan_branch_cooldown
+			### ACR ###
+			trait = pagan_branch_5_animist
+			trait = pagan_branch_6_theist
+			trait = pagan_branch_7_intellect
+			trait = pagan_branch_8_might
+			trait = pagan_branch_9_egoist
+			trait = pagan_branch_10_altruist
 		}
 	}
 
@@ -3023,7 +3147,11 @@ character_event = {
 
 	option = {
 		name = EVTOPTDHF23016
-
+		trigger = {
+			### ACR ###
+			NOT = { has_global_flag = acr_mpb }
+		}
+		
 		add_trait = pagan_branch_4
 
 		ai_chance = {
@@ -3042,6 +3170,23 @@ character_event = {
 					has_focus = focus_carousing
 					has_education_diplomacy_trigger = yes
 				}
+			}
+		}
+	}
+	
+	### ACR ###
+	option = {
+		name = EVTOPTXHF23016
+		trigger = { has_global_flag = acr_mpb }
+		
+		hidden_tooltip = {
+			character_event = { id = PB.100 }
+		}
+		ai_chance = { 
+			factor = 75 
+			mult_modifier = {
+				factor = 0.1
+				has_focus = focus_war
 			}
 		}
 	}
@@ -3066,6 +3211,9 @@ character_event = {
 			has_religion_feature = religion_equal
 			has_religion_feature = religion_feature_bon
 			has_religion_feature = religion_matriarchal
+			### ACR ###
+			has_religion_feature = religion_feature_celtic
+			has_religion_feature = religion_feature_egyptian
 		}
 	}
 
@@ -3249,12 +3397,18 @@ character_event = {
 				OR = {
 					has_religion_feature = religion_equal
 					has_religion_feature = religion_feature_bon
+					### ACR ###
+					has_religion_feature = religion_feature_celtic
+					has_religion_feature = religion_feature_egyptian
 				}
 
 				FROM = {
 					NOR = {
 						has_religion_feature = religion_equal
 						has_religion_feature = religion_feature_bon
+						### ACR ###
+						has_religion_feature = religion_feature_celtic
+						has_religion_feature = religion_feature_egyptian
 					}
 				}
 			}
@@ -3395,6 +3549,9 @@ character_event = {
 				OR = {
 					has_religion_feature = religion_equal
 					has_religion_feature = religion_feature_bon
+					### ACR ###
+					has_religion_feature = religion_feature_celtic
+					has_religion_feature = religion_feature_egyptian
 				}
 			}
 
@@ -3450,16 +3607,34 @@ character_event = {
 		text = EVTDESCBHF23101
 		trigger = {
 			NOT = { religion_group = christian }
-			religion_secretly_hellenic_or_reformed_trigger = no
-			religion_openly_hellenic_or_reformed_trigger = no
+			### ACR ###
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = no
+			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_secretly_in_hellenic_subgroup_trigger = no
+			}
+			trigger_else = { religion_secretly_hellenic_or_reformed_trigger = no }
 		}
 	}
 	desc = {
 		text = EVTDESCCHF23101
 		trigger = {
 			OR = {
-				religion_secretly_hellenic_or_reformed_trigger = yes
-				religion_openly_hellenic_or_reformed_trigger = yes
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_secretly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_secretly_hellenic_or_reformed_trigger = yes }
 			}
 		}
 	}
@@ -3479,16 +3654,34 @@ character_event = {
 			text = EVTOPTAHF23101_B
 			trigger = {
 				NOT = { religion_group = christian }
-				religion_secretly_hellenic_or_reformed_trigger = no
-				religion_openly_hellenic_or_reformed_trigger = no
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_secretly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_secretly_hellenic_or_reformed_trigger = no }
 			}
 		}
 		name = {
 			text = EVTOPTAHF23101_C
 			trigger = {
 				OR = {
-					religion_secretly_hellenic_or_reformed_trigger = yes
-					religion_openly_hellenic_or_reformed_trigger = yes
+					### ACR ###
+					trigger_if = {
+						limit = { has_global_flag = ancrel }
+						religion_openly_in_hellenic_subgroup_trigger = yes
+					}
+					trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+					trigger_if = {
+						limit = { has_global_flag = ancrel }
+						religion_secretly_in_hellenic_subgroup_trigger = yes
+					}
+					trigger_else = { religion_secretly_hellenic_or_reformed_trigger = yes }
 				}
 			}
 		}
@@ -3512,17 +3705,33 @@ character_event = {
 			text = EVTOPTBHF23101_B
 			trigger = {
 				NOT = { religion_group = christian }
-				religion_secretly_hellenic_or_reformed_trigger = no
-				religion_openly_hellenic_or_reformed_trigger = no
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_secretly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_secretly_hellenic_or_reformed_trigger = no }
 			}
 		}
 		name = {
 			text = EVTOPTBHF23101_C
 			trigger = {
-				OR = {
-					religion_secretly_hellenic_or_reformed_trigger = yes
-					religion_openly_hellenic_or_reformed_trigger = yes
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = yes
 				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_secretly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_secretly_hellenic_or_reformed_trigger = yes }
 			}
 		}
 
@@ -3530,8 +3739,17 @@ character_event = {
 			factor = 99
 
 			trigger = {
-				religion_secretly_hellenic_or_reformed_trigger = no
-				religion_openly_hellenic_or_reformed_trigger = no
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_secretly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_secretly_hellenic_or_reformed_trigger = no }
 
 				NOR = {
 					trait = lunatic
@@ -3563,17 +3781,33 @@ narrative_event = {
 		text = EVTDESCBHF23102
 		trigger = {
 			NOT = { religion_group = christian }
-			religion_secretly_hellenic_or_reformed_trigger = no
-			religion_openly_hellenic_or_reformed_trigger = no
+			### ACR ###
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = no
+			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_secretly_in_hellenic_subgroup_trigger = no
+			}
+			trigger_else = { religion_secretly_hellenic_or_reformed_trigger = no }
 		}
 	}
 	desc = {
 		text = EVTDESCCHF23102
 		trigger = {
-			OR = {
-				religion_secretly_hellenic_or_reformed_trigger = yes
-				religion_openly_hellenic_or_reformed_trigger = yes
+			### ACR ###
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = yes
 			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_secretly_in_hellenic_subgroup_trigger = yes
+			}
+			trigger_else = { religion_secretly_hellenic_or_reformed_trigger = yes }
 		}
 	}
 
@@ -3588,17 +3822,33 @@ narrative_event = {
 			text = EVTOPTAHF23102_B
 			trigger = {
 				NOT = { religion_group = christian }
-				religion_secretly_hellenic_or_reformed_trigger = no
-				religion_openly_hellenic_or_reformed_trigger = no
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_secretly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_secretly_hellenic_or_reformed_trigger = no }
 			}
 		}
 		name = {
 			text = EVTOPTAHF23102_C
 			trigger = {
-				OR = {
-					religion_secretly_hellenic_or_reformed_trigger = yes
-					religion_openly_hellenic_or_reformed_trigger = yes
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = yes
 				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_secretly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_secretly_hellenic_or_reformed_trigger = yes }
 			}
 		}
 
@@ -3651,11 +3901,7 @@ narrative_event = {
 			}
 
 			any_player = {
-				limit = {
-					is_within_diplo_range = ROOT
-					NOT = { character = ROOT }
-				}
-
+				limit = { is_within_diplo_range = ROOT }
 				narrative_event = { id = HF.23103 } # Notification
 			}
 		}
@@ -3685,17 +3931,33 @@ narrative_event = {
 		text = EVTDESCBHF23102
 		trigger = {
 			NOT = { religion_group = christian }
-			religion_secretly_hellenic_or_reformed_trigger = no
-			religion_openly_hellenic_or_reformed_trigger = no
+			### ACR ###
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = no
+			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_secretly_in_hellenic_subgroup_trigger = no
+			}
+			trigger_else = { religion_secretly_hellenic_or_reformed_trigger = no }
 		}
 	}
 	desc = {
 		text = EVTDESCCHF23102
 		trigger = {
-			OR = {
-				religion_secretly_hellenic_or_reformed_trigger = yes
-				religion_openly_hellenic_or_reformed_trigger = yes
+			### ACR ###
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = yes
 			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_secretly_in_hellenic_subgroup_trigger = yes
+			}
+			trigger_else = { religion_secretly_hellenic_or_reformed_trigger = yes }
 		}
 	}
 
@@ -3894,8 +4156,17 @@ character_event = {
 
 		if = {
 			limit = {
-				religion_openly_hellenic_or_reformed_trigger = no
-				religion_secretly_hellenic_or_reformed_trigger = no
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_secretly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_secretly_hellenic_or_reformed_trigger = no }
 			}
 
 			if = {
@@ -3914,7 +4185,12 @@ character_event = {
 
 			trigger = {
 				OR = {
-					religion_secretly_hellenic_or_reformed_trigger = yes
+					### ACR ###
+					trigger_if = {
+						limit = { has_global_flag = ancrel }
+						religion_secretly_in_hellenic_subgroup_trigger = yes
+					}
+					trigger_else = { religion_secretly_hellenic_or_reformed_trigger = yes }
 					trait = lunatic
 					trait = possessed
 					trait = mystic
@@ -3930,7 +4206,12 @@ character_event = {
 			factor = 100
 
 			trigger = {
-				religion_secretly_hellenic_or_reformed_trigger = no
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_secretly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_secretly_hellenic_or_reformed_trigger = no }
 
 				NOR = {
 					trait = lunatic
@@ -3968,10 +4249,7 @@ character_event = {
 
 			hidden_effect = {
 				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_hellenic_pagan_reformed_community
-						owned_by = PREV
-					}
+					limit = { has_province_modifier = secret_hellenic_pagan_reformed_community }
 
 					religion = hellenic_pagan_reformed
 					remove_province_modifier = secret_hellenic_pagan_reformed_community
@@ -3988,10 +4266,7 @@ character_event = {
 
 			hidden_effect = {
 				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_hellenic_pagan_community
-						owned_by = PREV
-					}
+					limit = { has_province_modifier = secret_hellenic_pagan_community }
 
 					religion = hellenic_pagan
 					remove_province_modifier = secret_hellenic_pagan_community
@@ -4181,10 +4456,7 @@ letter_event = {
 					limit = { secret_religion = hellenic_pagan }
 
 					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_hellenic_pagan_community
-							owned_by = PREV
-						}
+						limit = { has_province_modifier = secret_hellenic_pagan_community }
 
 						religion = hellenic_pagan
 						remove_province_modifier = secret_hellenic_pagan_community
@@ -4192,10 +4464,7 @@ letter_event = {
 				}
 				else = {
 					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_hellenic_pagan_reformed_community
-							owned_by = PREV
-						}
+						limit = { has_province_modifier = secret_hellenic_pagan_reformed_community }
 
 						religion = hellenic_pagan_reformed
 						remove_province_modifier = secret_hellenic_pagan_reformed_community
@@ -4205,13 +4474,12 @@ letter_event = {
 
 			if = {
 				limit = { higher_real_tier_than = BARON }
-
 				FROM = { letter_event = { id = HF.23110 } }
+			}
 
-				any_courtier_or_vassal = {
-					limit = { is_theocracy = no }
-					letter_event = { id = HF.23111 } # Keep going until the bottom
-				}
+			any_courtier_or_vassal = {
+				limit = { is_theocracy = no }
+				letter_event = { id = HF.23111 } # Keep going until the bottom
 			}
 		}
 
@@ -4294,10 +4562,7 @@ letter_event = {
 					limit = { secret_religion = hellenic_pagan }
 
 					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_hellenic_pagan_community
-							owned_by = PREV
-						}
+						limit = { has_province_modifier = secret_hellenic_pagan_community }
 
 						religion = hellenic_pagan
 						remove_province_modifier = secret_hellenic_pagan_community
@@ -4305,10 +4570,7 @@ letter_event = {
 				}
 				else = {
 					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_hellenic_pagan_reformed_community
-							owned_by = PREV
-						}
+						limit = { has_province_modifier = secret_hellenic_pagan_reformed_community }
 
 						religion = hellenic_pagan_reformed
 						remove_province_modifier = secret_hellenic_pagan_reformed_community
@@ -4782,12 +5044,24 @@ narrative_event = {
 	option = {
 		name = { # Convert Vassals
 			text = EVTOPTBHF23112
-			trigger = { religion_openly_hellenic_or_reformed_trigger = yes }
+			trigger = {
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+			}
 		}
 		name = { # Abrahamics
 			text = EVTOPTCHF23112
 			trigger = {
-				religion_openly_hellenic_or_reformed_trigger = no
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
 
 				OR = {
 					religion_group = christian
@@ -4799,7 +5073,12 @@ narrative_event = {
 		name = { # Everyone else
 			text = EVTOPTDHF23112
 			trigger = {
-				religion_openly_hellenic_or_reformed_trigger = no
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
 
 				NOR = {
 					religion_group = christian
@@ -4992,11 +5271,7 @@ character_event = {
 			character_event = { id = HF.23116 } # Notification to Emperor
 
 			any_player = {
-				limit = {
-					vassal_of = PREV
-					NOT = { character = PREV }
-				}
-
+				limit = { vassal_of = PREV }
 				character_event = { id = HF.23116 } # Notification to other vassals
 			}
 		}
@@ -5061,7 +5336,14 @@ narrative_event = {
 	option = {
 		name = EVTOPTAHF23117
 
-		trigger = { religion_openly_hellenic_or_reformed_trigger = yes }
+		trigger = {
+			### ACR ###
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = yes
+			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+		}
 
 		if = {
 			limit = { character = FROMFROM } # The reformer
@@ -5070,10 +5352,7 @@ narrative_event = {
 				text = tooltip_peasants_become_hellenes
 
 				any_demesne_province = {
-					limit = {
-						is_occupied = no
-						owned_by = PREV
-					}
+					limit = { is_occupied = no }
 
 					random = {
 						chance = 50
@@ -5101,7 +5380,14 @@ narrative_event = {
 	option = {
 		name = EVTOPTBHF23117
 
-		trigger = { religion_openly_hellenic_or_reformed_trigger = no }
+		trigger = {
+			### ACR ###
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = no
+			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
+		}
 	}
 }
 
@@ -5147,10 +5433,7 @@ character_event = {
 					limit = { secret_religion = hellenic_pagan }
 
 					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_hellenic_pagan_community
-							owned_by = PREV
-						}
+						limit = { has_province_modifier = secret_hellenic_pagan_community }
 
 						religion = hellenic_pagan
 						remove_province_modifier = secret_hellenic_pagan_community
@@ -5158,10 +5441,7 @@ character_event = {
 				}
 				else = {
 					any_demesne_province = {
-						limit = {
-							has_province_modifier = secret_hellenic_pagan_reformed_community
-							owned_by = PREV
-						}
+						limit = { has_province_modifier = secret_hellenic_pagan_reformed_community }
 
 						religion = hellenic_pagan_reformed
 						remove_province_modifier = secret_hellenic_pagan_reformed_community
@@ -5170,10 +5450,10 @@ character_event = {
 			}
 
 			if = {
-				limit = { higher_real_tier_than = BARON }
+				limit = { higher_tier_than = BARON }
 
 				any_courtier_or_vassal = {
-					limit = { is_theocracy = no }
+					limit = { NOT = { is_theocracy = yes } }
 					letter_event = { id = HF.23111 } # Keep going until the bottom
 				}
 			}
@@ -5239,13 +5519,25 @@ character_event = {
 
 	desc = {
 		text = EVTDESCAHF23119
-		trigger = { religion_openly_hellenic_or_reformed_trigger = yes }
+		trigger = {
+			### ACR ###
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = yes
+			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+		}
 	}
 	desc = {
 		text = EVTDESCBHF23119
 		trigger = {
 			NOT = { religion_group = christian }
-			religion_openly_hellenic_or_reformed_trigger = no
+			### ACR ###
+			trigger_if = {
+				limit = { has_global_flag = ancrel }
+				religion_openly_in_hellenic_subgroup_trigger = no
+			}
+			trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
 		}
 	}
 	desc = {
@@ -5258,13 +5550,25 @@ character_event = {
 	option = { # Issue celebrations to facilitate cultural shift
 		name = {
 			text = EVTOPTAHF23119_A
-			trigger = { religion_openly_hellenic_or_reformed_trigger = yes }
+			trigger = {
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+			}
 		}
 		name = {
 			text = EVTOPTAHF23119_B
 			trigger = {
 				NOT = { religion_group = christian }
-				religion_openly_hellenic_or_reformed_trigger = no
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = no
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = no }
 			}
 		}
 		name = {
@@ -5277,8 +5581,6 @@ character_event = {
 
 			any_realm_province = {
 				limit = {
-					held_under_PREV = yes
-
 					distance = {
 						where = c_roma
 						distance < 300
@@ -5300,7 +5602,14 @@ character_event = {
 					if = {
 						limit = {
 							culture = roman
-							ROOT = { religion_openly_hellenic_or_reformed_trigger = yes }
+							ROOT = {
+								### ACR ###
+								trigger_if = {
+									limit = { has_global_flag = ancrel }
+									religion_openly_in_hellenic_subgroup_trigger = yes
+								}
+								trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+							}
 						}
 
 						religion = ROOT
@@ -5334,13 +5643,25 @@ character_event = {
 	option = { # Apologize to the priests
 		name = {
 			text = EVTOPTBHF23119_A
-			trigger = { religion_openly_hellenic_or_reformed_trigger = yes }
+			trigger = {
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+			}
 		}
 		name = {
 			text = EVTOPTBHF23119_B
 			trigger = {
 				NOR = {
-					religion_openly_hellenic_or_reformed_trigger = yes
+					### ACR ###
+					trigger_if = {
+						limit = { has_global_flag = ancrel }
+						religion_openly_in_hellenic_subgroup_trigger = yes
+					}
+					trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
 					religion_group = christian
 				}
 			}
@@ -5531,6 +5852,9 @@ narrative_event = {
 	}
 }
 
+#######################
+# The Return of Neoplatonism
+#######################
 # Players notified
 narrative_event = {
 	id = HF.23123
@@ -5542,7 +5866,274 @@ narrative_event = {
 	hide_from = yes
 	hide_new = yes
 
-	ai = no
+	immediate = {	### ACR ###
+		hidden_tooltip = {
+			create_random_priest = {
+				random_traits = yes
+				dynasty = none
+				religion = ROOT
+				culture = ROOT
+				attributes = {
+					learning = 10
+				}
+				female = no
+				age = 32
+			}
+			new_character = {
+				join_society = monastic_order_skeptics
+				set_society_grandmaster = yes # Set character as Grand Master
+				add_society_currency_massive_effect = yes
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 16
+				}
+				new_character = { join_society = monastic_order_skeptics }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 18
+				}
+				new_character = { join_society = monastic_order_skeptics }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 20
+				}
+				new_character = { join_society = monastic_order_skeptics }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 25
+				}
+				new_character = { join_society = monastic_order_skeptics }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 26
+				}
+				new_character = { join_society = monastic_order_skeptics }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 28
+				}
+				new_character = { join_society = monastic_order_skeptics }
+			}
+			create_random_priest = {
+				random_traits = yes
+				dynasty = none
+				religion = ROOT
+				culture = ROOT
+				attributes = {
+					learning = 10
+				}
+				female = no
+				age = 32
+			}
+			new_character = {
+				join_society = monastic_order_epicureans
+				set_society_grandmaster = yes # Set character as Grand Master
+				add_society_currency_massive_effect = yes
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 16
+				}
+				new_character = { join_society = monastic_order_epicureans }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 18
+				}
+				new_character = { join_society = monastic_order_epicureans }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 20
+				}
+				new_character = { join_society = monastic_order_epicureans }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 25
+				}
+				new_character = { join_society = monastic_order_epicureans }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 26
+				}
+				new_character = { join_society = monastic_order_epicureans }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 28
+				}
+				new_character = { join_society = monastic_order_epicureans }
+			}
+			create_random_priest = {
+				random_traits = yes
+				dynasty = none
+				religion = ROOT
+				culture = ROOT
+				attributes = {
+					learning = 10
+				}
+				female = no
+				age = 32
+			}
+			new_character = {
+				join_society = monastic_order_stoics
+				set_society_grandmaster = yes # Set character as Grand Master
+				add_society_currency_massive_effect = yes
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 16
+				}
+				new_character = { join_society = monastic_order_stoics }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 18
+				}
+				new_character = { join_society = monastic_order_stoics }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 20
+				}
+				new_character = { join_society = monastic_order_stoics }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 25
+				}
+				new_character = { join_society = monastic_order_stoics }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 26
+				}
+				new_character = { join_society = monastic_order_stoics }
+				create_random_priest = {
+					random_traits = yes
+					dynasty = random
+					religion = ROOT
+					culture = ROOT
+					attributes = {
+						learning = 10
+					}
+					female = no
+					age = 28
+				}
+				new_character = { join_society = monastic_order_stoics }
+			}
+		}
+	}
 
 	option = {
 		name = EVTOPTAHF23123
@@ -5553,6 +6144,9 @@ narrative_event = {
 				religion_openly_hellenic_or_reformed_trigger = yes
 				religion_secretly_hellenic_or_reformed_trigger = yes
 				can_join_society = monastic_order_stoics
+				### ACR ###
+				religion = promethean_pagan
+				secret_religion = promethean_pagan
 			}
 		}
 
@@ -5564,15 +6158,149 @@ narrative_event = {
 
 			join_society = monastic_order_stoics
 		}
+		
+		if = {	### ACR ###
+			limit = {
+				character = FROM
+			}
+			set_society_grandmaster = yes
+		}
+		
+		ai_chance = {
+			factor = 40
+			mult_modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+			mult_modifier = {
+				factor = 1.2
+				trait = just
+			}
+		}
 	}
 
 	option = {
 		name = EVTOPTBHF23123
 
 		trigger = {
-			NOT = { society_member_of = monastic_order_stoics }
-			religion_openly_hellenic_or_reformed_trigger = no
-			religion_secretly_hellenic_or_reformed_trigger = no
+			NOR = {
+				society_member_of = monastic_order_stoics
+				religion_openly_hellenic_or_reformed_trigger = yes
+				religion_secretly_hellenic_or_reformed_trigger = yes
+				### ACR ###
+				religion = promethean_pagan
+				secret_religion = promethean_pagan
+				society_member_of = monastic_order_skeptics
+				society_member_of = monastic_order_epicureans
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+			mult_modifier = {
+				factor = 1.2
+				has_education_martial_trigger = yes
+			}
+			mult_modifier = {
+				factor = 1.2
+				has_lifestyle_martial_trigger = yes
+			}
+			mult_modifier = {
+				factor = 1.5
+				trait = imbecile
+			}
+			mult_modifier = {
+				factor = 1.3
+				trait = inbred
+			}
+			mult_modifier = {
+				factor = 1.1
+				trait = slow
+			}
+		}
+	}
+	
+	### ACR ###
+	option = { # skeptics
+		name = EVTOPTCHF23123
+		trigger = {
+			OR = { 
+				society_member_of = monastic_order_skeptics 
+				religion_openly_hellenic_or_reformed_trigger = yes
+				religion_secretly_hellenic_or_reformed_trigger = yes
+                religion = promethean_pagan
+                secret_religion = promethean_pagan
+				can_join_society = monastic_order_skeptics
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { society_member_of = monastic_order_skeptics }
+				can_join_society = monastic_order_skeptics
+			}
+			join_society = monastic_order_skeptics
+		}
+		if = {
+			limit = {
+				character = FROM
+			}
+			set_society_grandmaster = yes
+		}
+		ai_chance = {
+			factor = 35
+			mult_modifier = {
+				factor = 0.75
+				trait = ambitious
+			}
+		}
+	}
+	option = { #epicureans
+		name = EVTOPTDHF23123
+		trigger = {
+			OR = { 
+				society_member_of = monastic_order_epicureans
+				religion_openly_hellenic_or_reformed_trigger = yes
+				religion_secretly_hellenic_or_reformed_trigger = yes
+                religion = promethean_pagan
+                secret_religion = promethean_pagan
+				can_join_society = monastic_order_epicureans
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { society_member_of = monastic_order_epicureans }
+				can_join_society = monastic_order_epicureans
+			}
+			join_society = monastic_order_epicureans
+		}
+		if = {
+			limit = {
+				character = FROM
+			}
+			set_society_grandmaster = yes
+		}
+		ai_chance = {
+			factor = 25
+			mult_modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			mult_modifier = {
+				factor = 0.5
+				trait = gluttonous
+			}
+			mult_modifier = {
+				factor = 0.5
+				trait = lustful
+			}
+			mult_modifier = {
+				factor = 2
+				trait = content
+			}
+			mult_modifier = { # the ambitious would never choose Epicureanism
+				factor = 0
+				trait = ambitious
+			}
 		}
 	}
 }
@@ -6720,10 +7448,8 @@ character_event = {
 		name = EVTOPTAHF23207
 
 		trigger = {
-			OR = {
-				religion_openly_aztec_or_reformed_trigger = yes
-				has_religion_feature = religion_ritual_sacrifice
-			}
+			### ACR ###
+			cl_kinich_uses_human_sacrifice_trigger = yes
 
 			FROM = {
 				location = {
@@ -7151,7 +7877,6 @@ character_event = {
 						is_coastal = yes
 						can_naval_path_to = PREVPREV
 						TECH_NAVAL >= 1
-						held_under_PREV = yes
 
 						OR = {
 							has_building = tb_shipyard_1
@@ -7635,6 +8360,14 @@ narrative_event = {
 					has_religion_feature = religion_adventuring
 					has_religion_feature = religion_seafaring
 				}
+				AND = {		### ACR ###
+					has_religion_feature = religion_adventuring
+					has_religion_feature = religion_feature_slavic
+				}
+				AND = {		### ACR ###
+					has_religion_feature = religion_adventuring
+					has_religion_feature = religion_feature_aztec
+				}
 			}
 		}
 	}
@@ -7648,6 +8381,14 @@ narrative_event = {
 			NAND = {
 				has_religion_feature = religion_adventuring
 				has_religion_feature = religion_seafaring
+			}
+			NAND = {		### ACR ###
+				has_religion_feature = religion_adventuring
+				has_religion_feature = religion_feature_slavic
+			}
+			NAND = {		### ACR ###
+				has_religion_feature = religion_adventuring
+				has_religion_feature = religion_feature_aztec
 			}
 		}
 	}
@@ -7697,7 +8438,6 @@ character_event = {
 						is_coastal = yes
 						can_naval_path_to = PREVPREV
 						TECH_NAVAL >= 1
-						held_under_PREV = yes
 
 						OR = {
 							has_building = tb_shipyard_1
@@ -7751,6 +8491,9 @@ character_event = {
 							has_religion_feature = religion_matriarchal
 							has_religion_feature = religion_equal
 							has_religion_feature = religion_feature_bon
+							### ACR ###
+							has_religion_feature = religion_feature_celtic
+							has_religion_feature = religion_feature_egyptian
 
 							has_game_rule = {
 								name = gender
@@ -8379,6 +9122,8 @@ character_event = {
 			}
 
 			num_of_settlements >= 4 # Only fires for medium or big cities
+			is_tribal = no
+			is_nomadic = no
 			NOT = { has_province_modifier = recent_pirate_infiltration_cooldown }
 
 			location = {
@@ -8388,7 +9133,6 @@ character_event = {
 						is_coastal = yes
 						can_naval_path_to = PREVPREV
 						TECH_NAVAL >= 1
-						held_under_PREV = yes
 
 						OR = {
 							has_building = tb_shipyard_1
@@ -8460,6 +9204,9 @@ character_event = {
 						OR = {
 							has_religion_feature = religion_equal
 							has_religion_feature = religion_feature_bon
+							### ACR ###
+							has_religion_feature = religion_feature_celtic
+							has_religion_feature = religion_feature_egyptian
 
 							AND = {
 								religion_group = pagan_group
@@ -8536,6 +9283,9 @@ character_event = {
 						OR = {
 							has_religion_feature = religion_equal
 							has_religion_feature = religion_feature_bon
+							### ACR ###
+							has_religion_feature = religion_feature_celtic
+							has_religion_feature = religion_feature_egyptian
 						}
 					}
 				}
@@ -9080,11 +9830,22 @@ narrative_event = {
 		controls_religion = yes
 
 		trigger_if = {
-			limit = { religion = hellenic_pagan_reformed } # Part of their features
+			limit = { # Part of their features
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+			}
 			is_alternate_start = no
 		}
 		trigger_else = {
-			has_religion_feature = religion_haruspicy
+			OR = {
+				has_religion_feature = religion_haruspicy
+				### ACR ###
+				religion_openly_celtic_or_reformed_trigger = yes
+			}
 			has_religion_feature = religion_astrology
 		}
 
@@ -9559,10 +10320,7 @@ character_event = {
 
 		hidden_effect = {
 			any_player = {
-				limit = {
-					religion = ROOT
-					NOT = { character = ROOT }
-				}
+				limit = { religion = ROOT }
 
 				if = {
 					limit = { ROOT = { has_character_flag = tempted_faith_1 } }
@@ -9680,10 +10438,19 @@ narrative_event = {
 			has_religion_feature = religion_no_leader
 			is_alternate_start = no
 		}
-		trigger_else = {
-			has_religion_feature = religion_haruspicy
+		trigger_else_if = {
+			limit = { NOT = { religion = titan_pagan } }
+			OR = {
+				has_religion_feature = religion_haruspicy
+				### ACR ###
+				religion_openly_celtic_or_reformed_trigger = yes
+			}
 			has_religion_feature = religion_astrology
 			has_religion_feature = religion_no_leader
+		}
+		### ACR ###
+		trigger_else = {
+			religion = titan_pagan
 		}
 
 		NOR = {
@@ -9963,14 +10730,18 @@ character_event = {
 			is_landed = yes
 			is_incapable = no
 
-			OR = {
-				has_religion_feature = religion_ritual_sacrifice
-				religion_openly_aztec_or_reformed_trigger = yes
-			}
+			### ACR ###
+			cl_kinich_uses_human_sacrifice_trigger = yes
 
 			OR = {
 				has_religion_feature = religion_haruspicy
-				religion_openly_hellenic_or_reformed_trigger = yes
+				### ACR ###
+				religion_openly_celtic_or_reformed_trigger = yes
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
 			}
 
 			NOR = { # Shouldn't already have one of the main effects
@@ -10492,10 +11263,8 @@ character_event = {
 			is_landed = yes
 			is_incapable = no
 
-			OR = {
-				has_religion_feature = religion_ritual_sacrifice
-				religion_openly_aztec_or_reformed_trigger = yes
-			}
+			### ACR ###
+			cl_kinich_uses_human_sacrifice_trigger = yes
 		}
 	}
 
@@ -10525,6 +11294,8 @@ character_event = {
 						OR = {
 							has_religion_feature = religion_holy_family
 							has_religion_feature = religion_feature_zun
+							### ACR ###
+							religion_openly_in_egyptian_subgroup_trigger = yes
 						}
 					}
 
@@ -10589,10 +11360,8 @@ character_event = {
 	is_triggered_only = yes # bloodthirsty_tiered_traits_effect
 
 	trigger = {
-		OR = {
-			has_religion_feature = religion_ritual_sacrifice
-			religion_openly_aztec_or_reformed_trigger = yes
-		}
+		### ACR ###
+		cl_kinich_uses_human_sacrifice_trigger = yes
 
 		NOT = { trait = bloodthirsty_gods_1 }
 	}
@@ -10639,10 +11408,8 @@ character_event = {
 	is_triggered_only = yes # bloodthirsty_tiered_traits_effect
 
 	trigger = {
-		OR = {
-			has_religion_feature = religion_ritual_sacrifice
-			religion_openly_aztec_or_reformed_trigger = yes
-		}
+		### ACR ###
+		cl_kinich_uses_human_sacrifice_trigger = yes
 
 		NOR = {
 			trait = bloodthirsty_gods_2
@@ -10695,10 +11462,8 @@ character_event = {
 	is_triggered_only = yes # bloodthirsty_tiered_traits_effect
 
 	trigger = {
-		OR = {
-			has_religion_feature = religion_ritual_sacrifice
-			religion_openly_aztec_or_reformed_trigger = yes
-		}
+		### ACR ###
+		cl_kinich_uses_human_sacrifice_trigger = yes
 
 		NOT = { trait = bloodthirsty_gods_3 }
 	}
@@ -10755,10 +11520,8 @@ narrative_event = {
 	is_triggered_only = yes # bloodthirsty_tiered_traits_effect
 
 	trigger = {
-		OR = {
-			has_religion_feature = religion_ritual_sacrifice
-			religion_openly_aztec_or_reformed_trigger = yes
-		}
+		### ACR ###
+		cl_kinich_uses_human_sacrifice_trigger = yes
 
 		NOT = {
 			any_owned_bloodline = { # Not already has a Bloodthirsty bloodline
@@ -10848,8 +11611,8 @@ narrative_event = {
 		trigger = {
 			OR = {
 				religion = FROM
-				has_religion_feature = religion_ritual_sacrifice
-				religion_openly_aztec_or_reformed_trigger = yes
+				### ACR ###
+				cl_kinich_uses_human_sacrifice_trigger = yes
 			}
 		}
 	}
@@ -10858,8 +11621,8 @@ narrative_event = {
 		trigger = {
 			NOR = {
 				religion = FROM
-				has_religion_feature = religion_ritual_sacrifice
-				religion_openly_aztec_or_reformed_trigger = yes
+				### ACR ###
+				cl_kinich_uses_human_sacrifice_trigger = yes
 			}
 		}
 	}
@@ -10889,8 +11652,8 @@ narrative_event = {
 			trigger = {
 				OR = {
 					religion = FROM
-					has_religion_feature = religion_ritual_sacrifice
-					religion_openly_aztec_or_reformed_trigger = yes
+					### ACR ###
+					cl_kinich_uses_human_sacrifice_trigger = yes
 				}
 			}
 		}
@@ -10899,8 +11662,8 @@ narrative_event = {
 			trigger = {
 				NOR = {
 					religion = FROM
-					has_religion_feature = religion_ritual_sacrifice
-					religion_openly_aztec_or_reformed_trigger = yes
+					### ACR ###
+					cl_kinich_uses_human_sacrifice_trigger = yes
 				}
 			}
 		}
@@ -10946,7 +11709,22 @@ character_event = {
 		name = EVTOPTBHF23440
 		tooltip_info_custom = EVTOPTBHF23440_tt
 
-		trigger = { has_wonder = wonder_amphitheater }
+		trigger = {
+			### COW ###
+			trigger_if = {
+				limit = { has_global_flag = is_cl_cow_save }
+				OR = {
+					has_wonder = wonder_amphitheater
+					any_realm_wonder = {
+						OR = {
+							has_wonder_upgrade = upgrade_cow_district_amphitheatre
+							has_cow_unique_amphitheatre_district_trigger = yes
+						}
+					}
+				}
+			}
+			trigger_else = { has_wonder = wonder_amphitheater }
+		}
 
 		set_character_flag = flag_preparing_blood_games # Used for on_death notifications.
 		prestige = 200
@@ -12214,7 +12992,15 @@ character_event = {
 
 		trigger = {
 			any_realm_wonder_upgrade = {
-				has_wonder_upgrade = upgrade_animal_cages
+				### COW ###
+				trigger_if = {
+					limit = { has_global_flag = is_cl_cow_save }
+					OR = {
+						has_wonder_upgrade = upgrade_animal_cages
+						has_wonder_upgrade = upgrade_cow_animal_cages
+					}
+				}
+				trigger_else = { has_wonder_upgrade = upgrade_animal_cages }
 				is_active = yes
 			}
 		}
@@ -13129,8 +13915,8 @@ character_event = {
 	has_character_flag = flag_preparing_blood_games
 
 	trigger = {
-		NOT = { has_religion_feature = religion_ritual_sacrifice }
-		religion_openly_aztec_or_reformed_trigger = no
+		### ACR ###
+		cl_kinich_uses_human_sacrifice_trigger = no
 	}
 
 	immediate = {
@@ -13204,17 +13990,15 @@ character_event = {
 		name = {
 			text = EVTOPTAHF23459
 			trigger = {
-				OR = {
-					has_religion_feature = religion_ritual_sacrifice
-					religion_openly_aztec_or_reformed_trigger = yes
-				}
+				### ACR ###
+				cl_kinich_uses_human_sacrifice_trigger = yes
 			}
 		}
 		name = {
 			text = EVTOPTBHF23459
 			trigger = {
-				NOT = { has_religion_feature = religion_ritual_sacrifice }
-				religion_openly_aztec_or_reformed_trigger = no
+				### ACR ###
+				cl_kinich_uses_human_sacrifice_trigger = no
 			}
 		}
 	}
@@ -13357,8 +14141,6 @@ character_event = {
 				text = TOOLTIP_EVTOPTAHF23462
 
 				any_demesne_province = {
-					limit = { owned_by = PREV }
-
 					add_province_modifier = {
 						name = bloodthirsty_mass_sacrifice_province_2
 						years = 10
@@ -13376,8 +14158,6 @@ character_event = {
 				limit = { has_dlc = "Reapers" }
 
 				any_demesne_province = {
-					limit = { owned_by = PREV }
-
 					change_variable = {
 						which = prosperity_value
 						value = -40
@@ -13445,8 +14225,6 @@ character_event = {
 				text = TOOLTIP_EVTOPTBHF23462
 
 				any_demesne_province = {
-					limit = { owned_by = PREV }
-
 					add_province_modifier = {
 						name = bloodthirsty_mass_sacrifice_province_1
 						years = 10
@@ -13464,8 +14242,6 @@ character_event = {
 				limit = { has_dlc = "Reapers" }
 
 				any_demesne_province = {
-					limit = { owned_by = PREV }
-
 					change_variable = {
 						which = prosperity_value
 						value = -20
@@ -13581,8 +14357,8 @@ character_event = {
 					}
 					else_if = {
 						limit = {
-							religion_openly_aztec_or_reformed_trigger = no
-							NOT = { has_religion_feature = religion_ritual_sacrifice }
+							### ACR ###
+							cl_kinich_uses_human_sacrifice_trigger = no
 						}
 
 						character_event = { id = HF.23464 }
@@ -13677,10 +14453,8 @@ character_event = {
 		name = EVTOPTAHF23465
 
 		trigger = {
-			OR = {
-				religion_openly_aztec_or_reformed_trigger = yes
-				has_religion_feature = religion_ritual_sacrifice
-			}
+			### ACR ###
+			cl_kinich_uses_human_sacrifice_trigger = yes
 		}
 
 		random = {
@@ -13698,8 +14472,8 @@ character_event = {
 		name = EVTOPTBHF23465
 
 		trigger = {
-			religion_openly_aztec_or_reformed_trigger = no
-			NOT = { has_religion_feature = religion_ritual_sacrifice }
+			### ACR ###
+			cl_kinich_uses_human_sacrifice_trigger = no
 		}
 	}
 }
@@ -13726,7 +14500,14 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESCCHF23470
-		trigger = { religion = slavic_pagan }
+		trigger = {
+			OR = {
+				religion = slavic_pagan
+				### ACR ###
+				religion = celtic_pagan
+				religion = titan_pagan
+			}
+		}
 	}
 	desc = {
 		text = EVTDESCDHF23470
@@ -13750,7 +14531,13 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESCIHF23470
-		trigger = { religion = zun_pagan }
+		trigger = {
+			OR = {
+				religion = zun_pagan
+				### ACR ###
+				religion = egyptian_pagan
+			}
+		}
 	}
 	desc = {
 		text = EVTDESCLHF23470
@@ -13893,9 +14680,22 @@ character_event = {
 					limit = { has_province_flag = flag_great_pillar_zun }
 					ROOT = { religion_openly_zun_or_reformed_trigger = no }
 				}
-				trigger_else = {
-					has_province_flag = flag_great_pillar_hellenic
+				trigger_else_if = {
+					limit = { has_province_flag = flag_great_pillar_hellenic }
 					ROOT = { religion_openly_hellenic_or_reformed_trigger = no }
+				}
+				### ACR ###
+				trigger_else_if = {
+					limit = { has_province_flag = flag_great_pillar_celtic }
+					ROOT = { religion_openly_celtic_or_reformed_trigger = no }
+				}
+				trigger_else_if = {
+					limit = { has_province_flag = flag_great_pillar_egyptian }
+					ROOT = { religion_openly_egyptian_or_reformed_trigger = no }
+				}
+				trigger_else = {
+					has_province_flag = flag_great_pillar_titan
+					ROOT = { NOT = { religion = titan_pagan } }
 				}
 			}
 
@@ -14149,6 +14949,71 @@ character_event = {
 								}
 							}
 						}
+						
+						### ACR ###
+						flag_great_pillar_celtic = {
+							clr_province_flag = flag_great_pillar_celtic
+
+							celtic_pagan = {
+								religion_authority = {
+									name = destroyed_great_pillar
+									years = 10
+								}
+							}
+
+							ROOT_FROM = {
+								holder_scope = {
+									top_liege = {
+										any_realm_character = {
+											limit = { religion = celtic_pagan }
+											character_event = { id = HF.23474 }
+										}
+									}
+								}
+							}
+						}
+						flag_great_pillar_egyptian = {
+							clr_province_flag = flag_great_pillar_egyptian
+
+							egyptian_pagan = {
+								religion_authority = {
+									name = destroyed_great_pillar
+									years = 10
+								}
+							}
+
+							ROOT_FROM = {
+								holder_scope = {
+									top_liege = {
+										any_realm_character = {
+											limit = { religion = egyptian_pagan }
+											character_event = { id = HF.23474 }
+										}
+									}
+								}
+							}
+						}
+						flag_great_pillar_titan = {
+							clr_province_flag = flag_great_pillar_titan
+
+							titan_pagan = {
+								religion_authority = {
+									name = destroyed_great_pillar
+									years = 10
+								}
+							}
+
+							ROOT_FROM = {
+								holder_scope = {
+									top_liege = {
+										any_realm_character = {
+											limit = { religion = titan_pagan }
+											character_event = { id = HF.23474 }
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -14334,6 +15199,9 @@ character_event = {
 				OR = {
 					has_religion_feature = religion_equal
 					has_religion_feature = religion_feature_bon
+					### ACR ###
+					has_religion_feature = religion_feature_celtic
+					has_religion_feature = religion_feature_egyptian
 				}
 			}
 
@@ -14341,6 +15209,9 @@ character_event = {
 				OR = {
 					has_religion_feature = religion_equal
 					has_religion_feature = religion_feature_bon
+					### ACR ###
+					has_religion_feature = religion_feature_celtic
+					has_religion_feature = religion_feature_egyptian
 				}
 			}
 		}
@@ -14407,6 +15278,9 @@ character_event = {
 				OR = {
 					has_religion_feature = religion_equal
 					has_religion_feature = religion_feature_bon
+					### ACR ###
+					has_religion_feature = religion_feature_celtic
+					has_religion_feature = religion_feature_egyptian
 				}
 
 				is_patrician = no # Always use agnatic
@@ -14452,6 +15326,8 @@ character_event = {
 				has_religion_feature = religion_stable
 				has_religion_feature = religion_feature_slavic
 				has_religion_feature = religion_feature_finnish
+				### ACR ###
+				has_religion_feature = religion_feature_egyptian
 			}
 		}
 	}
@@ -14495,7 +15371,17 @@ character_event = {
 	option = {
 		name = EVTOPTAHF23751
 
-		trigger = { has_religion_feature = religion_astrology } # Synergy
+		trigger = { # Synergy
+			OR = {
+				has_religion_feature = religion_astrology
+				### ACR ###
+				trigger_if = {
+					limit = { has_global_flag = ancrel }
+					religion_openly_in_hellenic_subgroup_trigger = yes
+				}
+				trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+			}
+		}
 
 		custom_tooltip = {
 			text = TT_EVTOPTAHF23751
@@ -14954,6 +15840,11 @@ character_event = {
 								has_religion_feature = religion_meritocratic
 								has_religion_feature = religion_matriarchal
 								has_religion_feature = religion_patriarchal
+								### ACR ###
+								has_religion_feature = religion_feature_finnish
+								has_religion_feature = religion_feature_zun
+								has_religion_feature = religion_feature_bon
+								has_religion_feature = religion_feature_hellenic
 							}
 						}
 
@@ -14973,6 +15864,11 @@ character_event = {
 								has_religion_feature = religion_meritocratic
 								has_religion_feature = religion_matriarchal
 								has_religion_feature = religion_patriarchal
+								### ACR ###
+								has_religion_feature = religion_feature_finnish
+								has_religion_feature = religion_feature_zun
+								has_religion_feature = religion_feature_bon
+								has_religion_feature = religion_feature_hellenic
 							}
 						}
 
@@ -15001,6 +15897,11 @@ character_event = {
 										has_religion_feature = religion_meritocratic
 										has_religion_feature = religion_matriarchal
 										has_religion_feature = religion_patriarchal
+										### ACR ###
+										has_religion_feature = religion_feature_finnish
+										has_religion_feature = religion_feature_zun
+										has_religion_feature = religion_feature_bon
+										has_religion_feature = religion_feature_hellenic
 									}
 								}
 							}
@@ -15024,6 +15925,11 @@ character_event = {
 										has_religion_feature = religion_meritocratic
 										has_religion_feature = religion_matriarchal
 										has_religion_feature = religion_patriarchal
+										### ACR ###
+										has_religion_feature = religion_feature_finnish
+										has_religion_feature = religion_feature_zun
+										has_religion_feature = religion_feature_bon
+										has_religion_feature = religion_feature_hellenic
 									}
 								}
 							}
@@ -15118,6 +16024,11 @@ character_event = {
 						has_religion_feature = religion_meritocratic
 						has_religion_feature = religion_matriarchal
 						has_religion_feature = religion_patriarchal
+						### ACR ###
+						has_religion_feature = religion_feature_finnish
+						has_religion_feature = religion_feature_zun
+						has_religion_feature = religion_feature_bon
+						has_religion_feature = religion_feature_hellenic
 					}
 				}
 			}
@@ -15173,6 +16084,11 @@ character_event = {
 								has_religion_feature = religion_meritocratic
 								has_religion_feature = religion_matriarchal
 								has_religion_feature = religion_patriarchal
+								### ACR ###
+								has_religion_feature = religion_feature_finnish
+								has_religion_feature = religion_feature_zun
+								has_religion_feature = religion_feature_bon
+								has_religion_feature = religion_feature_hellenic
 							}
 						}
 
@@ -15192,6 +16108,11 @@ character_event = {
 								has_religion_feature = religion_meritocratic
 								has_religion_feature = religion_matriarchal
 								has_religion_feature = religion_patriarchal
+								### ACR ###
+								has_religion_feature = religion_feature_finnish
+								has_religion_feature = religion_feature_zun
+								has_religion_feature = religion_feature_bon
+								has_religion_feature = religion_feature_hellenic
 							}
 						}
 
@@ -15220,6 +16141,11 @@ character_event = {
 										has_religion_feature = religion_meritocratic
 										has_religion_feature = religion_matriarchal
 										has_religion_feature = religion_patriarchal
+										### ACR ###
+										has_religion_feature = religion_feature_finnish
+										has_religion_feature = religion_feature_zun
+										has_religion_feature = religion_feature_bon
+										has_religion_feature = religion_feature_hellenic
 									}
 								}
 							}
@@ -15243,6 +16169,11 @@ character_event = {
 										has_religion_feature = religion_meritocratic
 										has_religion_feature = religion_matriarchal
 										has_religion_feature = religion_patriarchal
+										### ACR ###
+										has_religion_feature = religion_feature_finnish
+										has_religion_feature = religion_feature_zun
+										has_religion_feature = religion_feature_bon
+										has_religion_feature = religion_feature_hellenic
 									}
 								}
 							}
@@ -16574,7 +17505,13 @@ narrative_event = {
 	trigger = {
 		NOT = {
 			any_owned_bloodline = {
-				has_bloodline_flag = created_bloodline
+				#has_bloodline_flag = created_bloodline
+				founder = {
+					OR = {
+						character = PREVPREV
+						is_close_relative = PREVPREV
+					}
+				}
 				bloodline_is_active_for = PREV
 			}
 		}
@@ -16650,7 +17587,13 @@ narrative_event = {
 	trigger = {
 		NOT = {
 			any_owned_bloodline = {
-				has_bloodline_flag = created_bloodline
+				#has_bloodline_flag = created_bloodline
+				founder = {
+					OR = {
+						character = PREVPREV
+						is_close_relative = PREVPREV
+					}
+				}
 				bloodline_is_active_for = PREV
 			}
 		}
@@ -16714,7 +17657,12 @@ character_event = {
 	}
 	picture = {
 		trigger = {
-			has_religion_feature = religion_animistic
+			OR = {
+				has_religion_feature = religion_animistic
+				### ACR ###
+				has_religion_feature = religion_feature_celtic
+				has_religion_feature = religion_feature_baltic
+			}
 			religion_openly_west_african_or_reformed_trigger = no
 		}
 		picture = GFX_evt_magic_ritual
@@ -16729,6 +17677,9 @@ character_event = {
 		OR = {
 			religion_openly_west_african_or_reformed_trigger = yes
 			has_religion_feature = religion_animistic
+			### ACR ###
+			has_religion_feature = religion_feature_celtic
+			has_religion_feature = religion_feature_baltic
 		}
 
 		is_lowborn = no
@@ -16911,7 +17862,12 @@ character_event = {
 	picture = {
 		picture = GFX_evt_magic_ritual
 		trigger = {
-			has_religion_feature = religion_animistic
+			OR = {
+				has_religion_feature = religion_animistic
+				### ACR ###
+				has_religion_feature = religion_feature_celtic
+				has_religion_feature = religion_feature_baltic
+			}
 			religion_openly_west_african_or_reformed_trigger = no
 		}
 	}
@@ -17219,6 +18175,9 @@ character_event = {
 		OR = {
 			religion_openly_west_african_or_reformed_trigger = yes
 			has_religion_feature = religion_animistic
+			### ACR ###
+			has_religion_feature = religion_feature_celtic
+			has_religion_feature = religion_feature_baltic
 		}
 
 		is_lowborn = no
@@ -17247,6 +18206,9 @@ character_event = {
 		OR = {
 			religion_openly_west_african_or_reformed_trigger = yes
 			has_religion_feature = religion_animistic
+			### ACR ###
+			has_religion_feature = religion_feature_celtic
+			has_religion_feature = religion_feature_baltic
 		}
 
 		is_save_game = no
@@ -17355,6 +18317,8 @@ character_event = {
 		OR = {
 			has_religion_feature = religion_holy_family
 			has_religion_feature = religion_feature_zun
+			### ACR ###
+			religion_openly_in_egyptian_subgroup_trigger = yes
 		}
 
 		new_character = { is_close_relative = FROM } # Spouses are related
@@ -17450,6 +18414,8 @@ character_event = {
 		OR = {
 			has_religion_feature = religion_holy_family
 			has_religion_feature = religion_feature_zun
+			### ACR ###
+			religion_openly_in_egyptian_subgroup_trigger = yes
 		}
 	}
 
@@ -17476,6 +18442,8 @@ character_event = {
 		OR = {
 			has_religion_feature = religion_holy_family
 			has_religion_feature = religion_feature_zun
+			### ACR ###
+			religion_openly_in_egyptian_subgroup_trigger = yes
 		}
 
 		# religion = FROMFROM

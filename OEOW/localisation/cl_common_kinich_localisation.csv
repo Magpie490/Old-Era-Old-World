@@ -1,0 +1,49 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+bloodthirsty_gods_1_gain;Haemophiliac §G+1.0§!;;;;;;;;;;;;;x
+bloodthirsty_gods_2_gain;Haemophant §G+2.0§!;;;;;;;;;;;;;x
+bloodthirsty_gods_3_gain;Haemoarch §G+3.0§!;;;;;;;;;;;;;x
+kinich_protectshiacaliph;Extremely Well Protected;;;;;;;;;;;;;x
+kinich_protectshiacaliph_desc;[Root.GetFirstNameWithNick] is well aware that many would profit from their death & takes the appropriate steps to protect themself.;;;;;;;;;;;;;x
+mizrahi;Mizrahi;mizrahi;Mizrahi;;Mizrahi;;;;;;;;;x
+kalimi;Kalimi;kalimi;Kalimi;;Kalimi;;;;;;;;;x
+hebrew;Hebrew;hébreu;Hebräisch;;Hebreo;;;;;;;;;x
+mizrahi_DESC;The Mizrachim are Jews who have lived east of the land of Israel since being sent into exile by the Babylonians in the 5th Century BCE.;The Mizrachim are Jews who have lived east of the land of Israel since being sent into exile by the Babylonians in the 5th Century BCE.;The Mizrachim are Jews who have lived east of the land of Israel since being sent into exile by the Babylonians in the 5th Century BCE.;;The Mizrachim are Jews who have lived east of the land of Israel since being sent into exile by the Babylonians in the 5th Century BCE.;;;;;;;;;x
+TOOLTIPMIZRACHI;The Mizrachim are Jews who have lived east of the land of Israel since being sent into exile by the Babylonians in the 5th Century BCE;The Mizrachim are Jews who have lived east of the land of Israel since being sent into exile by the Babylonians in the 5th Century BCE;The Mizrachim are Jews who have lived east of the land of Israel since being sent into exile by the Babylonians in the 5th Century BCE;;The Mizrachim are Jews who have lived east of the land of Israel since being sent into exile by the Babylonians in the 5th Century BCE;;;;;;;;;x
+tribal_count_female_mizrachi;Chieftess;Chieftess;Chieftess;;Chieftess;;;;;;;;;x
+tribal_count_female_hebrew;Chieftess;Chieftess;Chieftess;;Chieftess;;;;;;;;;x
+hebrew_DESC;The Jews who were sent into exile by the Romans in the 2nd century CE are known as members of the Hebrew culture. These are the ancestors of modern Ashkenazi and Sephardi Jews.;The Jews who were sent into exile by the Romans in the 2nd century CE are known as members of the Hebrew culture. These are the ancestors of modern Ashkenazi and Sephardi Jews.;The Jews who were sent into exile by the Romans in the 2nd century CE are known as members of the Hebrew culture. These are the ancestors of modern Ashkenazi and Sephardi Jews.;;The Jews who were sent into exile by the Romans in the 2nd century CE are known as members of the Hebrew culture. These are the ancestors of modern Ashkenazi and Sephardi Jews.;;;;;;;;;x
+TOOLTIPHEBREW;The Jews who were sent into exile by the Romans in the 2nd century CE are known as members of the Hebrew culture. These are the ancestors of modern Ashkenazi and Sephardi Jews.;The Jews who were sent into exile by the Romans in the 2nd century CE are known as members of the Hebrew culture. These are the ancestors of modern Ashkenazi and Sephardi Jews.;The Jews who were sent into exile by the Romans in the 2nd century CE are known as members of the Hebrew culture. These are the ancestors of modern Ashkenazi and Sephardi Jews.;;The Jews who were sent into exile by the Romans in the 2nd century CE are known as members of the Hebrew culture. These are the ancestors of modern Ashkenazi and Sephardi Jews.;;;;;;;;;x
+RULE_GROUP_CL_KINICH;Kinich CleanSlate;xxxxx;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule;§BKinich CleanSlate:§! More Defensive Religions?;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.off;Off;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.off.desc;Defensive Religions mechanics are unchanged;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.jews;Jews;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.jews.desc;All Jewish religions are now considered defensive religions;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.nonchalcedonians;Nonchalcedonians;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.nonchalcedonians.desc;Miaphysitism, Monophysitism, Nestorianism, & Messalianism are now considered defensive religions;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.minor_muslims;Minor Muslims;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.minor_muslims.desc;Yazidis & Druze are now considered defensive religions;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.jews+nonchalcedonians;Jews & Nonchalcedonians;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.jews+nonchalcedonians.desc;Jews & Nonchalcedonian Christians are now considered defensive religions;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.jews+minor_muslims;Jews & Minor Muslims;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.jews+minor_muslims.desc;Jews & Minor Muslim Faiths are now considered defensive religions;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.nonchalcedonians+minor_muslims;Nonchalcedonians & Minor Muslims;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.nonchalcedonians+minor_muslims.desc;Nonchalcedonian Christians & Minor Muslim Faiths are now considered defensive religions;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.all;All;;;;;;;;;;;;;x
+cl_common_kinich_defensive_rule.all.desc;All religions allowed by other combinations of game rules are now considered defensive religions;;;;;;;;;;;;;x
+cl_common_kinich_attrition_rule;§BKinich CleanSlate:§! Defensive Religion Rules?;;;;;;;;;;;;;x
+cl_common_kinich_attrition_rule.attrition_only;Attrition Only;;;;;;;;;;;;;x
+cl_common_kinich_attrition_rule.attrition_only.desc;More defensive religions will only get defensive attrition. §KWill have NO effect if More Defensive Religions are turned off§!;;;;;;;;;;;;;x
+cl_common_kinich_attrition_rule.half_bonus;Half;;;;;;;;;;;;;x
+cl_common_kinich_attrition_rule.half_bonus.desc;More defensive religions will get 1/2 the normal unit bonuses. §KWill have NO effect if More Defensive Religions are turned off§!;;;;;;;;;;;;;x
+cl_common_kinich_attrition_rule.full_bonus;Full;;;;;;;;;;;;;x
+cl_common_kinich_attrition_rule.full_bonus.desc;More defensive religions will get the full unit bonuses. §KWill have NO effect if More Defensive Religions are turned off§!;;;;;;;;;;;;;x
+cl_common_kinich_attrition_rule.half_bonus+attrition;Half + Attrition;;;;;;;;;;;;;x
+cl_common_kinich_attrition_rule.half_bonus+attrition.desc;More defensive religions will get defensive attrition & 1/2 the normal unit bonuses. §KWill have NO effect if More Defensive Religions are turned off§!;;;;;;;;;;;;;x
+cl_common_kinich_attrition_rule.full_bonus+attrition;Full + Attrition;;;;;;;;;;;;;x
+cl_common_kinich_attrition_rule.full_bonus+attrition.desc;More defensive religions will get defensive attrition & the full unit bonuses. §KWill have NO effect if More Defensive Religions are turned off§!;;;;;;;;;;;;;x
+cl_common_kinich_conversion_rule;§BKinich CleanSlate:§! Defensive Religion Conversion?;;;;;;;;;;;;;x
+cl_common_kinich_conversion_rule.off;Default;;;;;;;;;;;;;x
+cl_common_kinich_conversion_rule.off.desc;More defensive religions will not be any harder to convert than usual. §KWill have NO effect if More Defensive Religions are turned off§!;;;;;;;;;;;;;x
+cl_common_kinich_conversion_rule.on;On;;;;;;;;;;;;;x
+cl_common_kinich_conversion_rule.on.desc;More defensive religions will be hard to convert. §KWill have NO effect if More Defensive Religions are turned off§!;;;;;;;;;;;;;x

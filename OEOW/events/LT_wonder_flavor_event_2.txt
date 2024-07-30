@@ -93,7 +93,12 @@ character_event = {
 	war = no
 
 	trigger = {
-		has_wonder = wonder_library
+		OR = {
+			has_wonder = wonder_house_of_wisdom
+			has_wonder = wonder_library
+			### COW ###
+			any_realm_wonder = { has_cow_library_district_trigger = yes }
+		}
 		is_inaccessible_trigger = no
 	}
 
@@ -101,7 +106,12 @@ character_event = {
 		if = {
 			limit = {
 				has_character_flag = currently_working_on_a_book
-				has_wonder = wonder_library
+				 OR = {
+					has_wonder = wonder_house_of_wisdom
+					has_wonder = wonder_library
+					### COW ###
+					any_realm_wonder = { has_cow_library_district_trigger = yes }
+				}
 			}
 
 			repeat_event = {
@@ -113,7 +123,14 @@ character_event = {
 
 	immediate = {
 		random_realm_wonder = {
-			limit = { has_wonder = wonder_library }
+			limit = {
+				OR = {
+					has_wonder = wonder_house_of_wisdom
+					has_wonder = wonder_library
+					### COW ###
+					has_cow_library_district_trigger = yes
+				}
+			}
 			save_event_target_as = target_wonder
 		}
 	}
@@ -151,7 +168,13 @@ character_event = {
 
 	immediate = {
 		random_realm_wonder = {
-			limit = { has_wonder = wonder_garden }
+			limit = {
+				### COW ###
+				OR = { 
+					has_wonder = wonder_garden
+					has_wonder_upgrade = upgrade_cow_fountain_of_youth
+				}
+			}
 			save_event_target_as = target_wonder
 		}
 	}
@@ -286,7 +309,13 @@ character_event = {
 	is_triggered_only = yes # on_wonder_owner_change
 
 	trigger = {
-		FROM = { has_wonder_upgrade = upgrade_traps }
+		FROM = {
+			### COW ###
+			OR = { 
+				has_wonder_upgrade = upgrade_traps
+				has_wonder_upgrade = upgrade_cow_traps
+			}
+		}
 
 		any_courtier = {
 			count >= 2
@@ -302,7 +331,13 @@ character_event = {
 		}
 
 		random_realm_wonder = {
-			limit = { has_wonder_upgrade = upgrade_traps }
+			limit = {
+				### COW ###
+				OR = { 
+					has_wonder_upgrade = upgrade_traps
+					has_wonder_upgrade = upgrade_cow_traps
+				}
+			}
 			save_event_target_as = target_wonder
 		}
 
@@ -393,8 +428,8 @@ letter_event = {
 	trigger = {
 		independent = no
 
-		any_demesne_wonder = {
-			always = yes
+		any_demesne_province = {
+			has_wonder = yes
 		}
 	}
 
@@ -538,7 +573,7 @@ character_event = {
 
 	trigger = {
 		any_realm_wonder = {
-			has_wonder_upgrade = upgrade_herb_garden
+			has_wonder_upgrade_flag = produces_herbs		### COW ###
 		}
 
 		NOT = {
@@ -554,7 +589,7 @@ character_event = {
 	immediate = {
 	#	save_event_target_as = new_owner
 		random_realm_wonder = {
-			limit = { has_wonder_upgrade = upgrade_herb_garden }
+			limit = { has_wonder_upgrade_flag = produces_herbs }		### COW ###
 
 			save_event_target_as = target_wonder
 

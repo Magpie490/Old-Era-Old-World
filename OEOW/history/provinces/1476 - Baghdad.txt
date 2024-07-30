@@ -23,42 +23,82 @@ culture = levantine_arabic
 religion = sunni
 
 # History
-#Continuous development of the House of Wisdom is here reflected by the gradual increase in stage
-#Several galleries for each branch of science were built by Caliph al_Mamun (813-833)
-769.1.1 = {
-	build_wonder = wonder_house_of_wisdom
-	set_wonder_stage = 1
-}
-
-780.1.1 = {
+1.1.1 = {
+	build_wonder = wonder_city_of_wonders_baby
 	set_wonder_stage = 2
 }
 
-813.1.1 = {
+197.1.1 = {		#Sacked by Septimus Severus
+	set_wonder_stage = 1
+	set_wonder_damaged = yes
+	add_custom_history = String_sacked_Septimus_Severus
+}
+
+226.1.1 = {		#Growth under Sassanids
+	set_wonder_damaged = no
 	set_wonder_stage = 3
+	build_wonder_upgrade = upgrade_cow_district_palace
+}
+
+540.6.1 = {		#Khosrau
+	set_wonder_stage = 6
+	build_wonder_upgrade = upgrade_cow_district_grand_walls
+	build_wonder_upgrade = upgrade_cow_district_fortress
+	build_wonder_upgrade = upgrade_cow_district_library
+	add_custom_history = String_Weh_Antiok_Khosrau
+}
+
+628.1.1 = {		#Plague
+	set_wonder_stage = 4
+}
+
+637.1.1 = {		#Rashidun Conquest
+	set_wonder_stage = 2
+	destroy_wonder_upgrade = upgrade_cow_district_grand_walls
+	destroy_wonder_upgrade = upgrade_cow_district_fortress
+	destroy_wonder_upgrade = upgrade_cow_district_library
+	add_custom_history = String_sacked_Rashidun
+}
+
+700.1.1 = {		#Decline under Arabs
+	set_wonder_stage = 1
+}
+
+762.1.1 = {		#Baghdad Founded
+	set_wonder_stage = 3
+	build_wonder_upgrade = upgrade_cow_district_house_of_wisdom
+	add_custom_history = String_Baghdad_Founded
+}
+
+780.1.1 = {
+	set_wonder_stage = 4
+}
+
+813.1.1 = {
+	set_wonder_stage = 5
 }
 
 815.1.1 = {
-	set_wonder_stage = 4
+	set_wonder_stage = 6
 }
 820.1.1 = {
-	build_wonder_upgrade = upgrade_collection_drama
+	build_wonder_upgrade = upgrade_cow_collection_drama
 }
 
 822.1.1 = {
-	build_wonder_upgrade = upgrade_collection_math
+	build_wonder_upgrade = upgrade_cow_collection_math
 }
 
 824.1.1 = {
-	build_wonder_upgrade = upgrade_collection_architecture
+	build_wonder_upgrade = upgrade_cow_collection_architecture
 }
 
 826.1.1 = {
-	build_wonder_upgrade = upgrade_collection_science
+	build_wonder_upgrade = upgrade_cow_collection_science
 }
 
 828.1.1 = {
-	build_wonder_upgrade = upgrade_collection_history
+	build_wonder_upgrade = upgrade_cow_collection_history
 }
 
 867.1.1 = {
@@ -91,4 +131,16 @@ religion = sunni
 
 1258.2.20 = { remove_settlement = b_taji }
 1258.2.20 = { remove_settlement = b_latifiya }
+1258.2.20 = {		#Mongol time
+	destroy_wonder_upgrade = upgrade_cow_district_house_of_wisdom
+	destroy_wonder_upgrade = upgrade_cow_collection_drama
+	destroy_wonder_upgrade = upgrade_cow_collection_math
+	destroy_wonder_upgrade = upgrade_cow_collection_architecture
+	destroy_wonder_upgrade = upgrade_cow_collection_science
+	destroy_wonder_upgrade = upgrade_cow_collection_history
+	set_wonder_stage = 2
+	set_wonder_damaged = yes
+	add_custom_history = String_sacked_Mongols_1
+	add_custom_history = String_sacked_Mongols_2
+}
 1278.1.1 = { b_taji = city }

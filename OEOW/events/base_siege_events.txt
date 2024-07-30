@@ -70,7 +70,11 @@ character_event = {
 
 			siege = {
 				location = {
-					has_wonder_upgrade = upgrade_hidden_gates
+					### COW ###
+					OR = { 
+						has_wonder_upgrade = upgrade_hidden_gates
+						has_wonder_upgrade = upgrade_cow_hidden_gates
+					}
 				}
 			}
 		}
@@ -223,7 +227,11 @@ character_event = {
 
 			siege = {
 				location = {
-					has_wonder_upgrade = upgrade_hidden_gates
+					### COW ###
+					OR = { 
+						has_wonder_upgrade = upgrade_hidden_gates
+						has_wonder_upgrade = upgrade_cow_hidden_gates
+					}
 				}
 			}
 		}

@@ -481,8 +481,6 @@ character_event = {
 
 			preferred_limit = {
 				any_realm_province = {
-					held_under_PREV = yes
-
 					distance = {
 						who = ROOT
 						value > 500
@@ -492,8 +490,6 @@ character_event = {
 
 			random_realm_province = {
 				preferred_limit = {
-					held_under_PREV = yes
-
 					distance = {
 						who = ROOT
 						value > 500
@@ -1351,6 +1347,8 @@ character_event = {
 			OR = {
 				has_wonder = wonder_house_of_wisdom
 				has_wonder = wonder_library
+				### COW ###
+				any_realm_wonder = { has_cow_library_district_trigger = yes }
 			}
 		}
 
@@ -1604,6 +1602,8 @@ character_event = {
 		OR = {
 			has_wonder = wonder_house_of_wisdom
 			has_wonder = wonder_library
+			### COW ###
+			any_realm_wonder = { has_cow_library_district_trigger = yes }
 		}
 	}
 
@@ -1613,6 +1613,8 @@ character_event = {
 				NOR = {
 					has_wonder = wonder_house_of_wisdom
 					has_wonder = wonder_library
+					### COW ###
+					any_realm_wonder = { has_cow_library_district_trigger = yes }
 				}
 			}
 
@@ -1632,8 +1634,6 @@ character_event = {
 		random_playable_ruler = {
 			limit = {
 				any_realm_province = {
-					held_under_PREV = yes
-
 					distance = {
 						who = ROOT
 						value < 500
@@ -1685,8 +1685,6 @@ character_event = {
 		random_playable_ruler = {
 			limit = {
 				any_realm_province = {
-					held_under_PREV = yes
-
 					distance = {
 						who = ROOT
 						value < 500
@@ -1737,8 +1735,6 @@ character_event = {
 		random_playable_ruler = {
 			limit = {
 				any_realm_province = {
-					held_under_PREV = yes
-
 					distance = {
 						who = ROOT
 						value < 500
@@ -2767,6 +2763,7 @@ character_event = { # What happens at the meeting
 					religion_has_incest = yes
 					NOT = { is_close_relative = FROM }
 					is_married = FROM
+					has_oedipus_trait = yes
 				}
 			}
 
@@ -2837,6 +2834,18 @@ character_event = { # What happens at the meeting
 				trait = master_schemer
 				trait = lunatic
 				has_education_intrigue_trigger = yes
+				### Yandere ###
+				trait = yandere
+			}
+			OR = {
+				trait = lunatic
+				ai = no
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+				}
+				### Yandere ###
+				trait = yandere
 			}
 		}
 
@@ -3014,6 +3023,7 @@ character_event = { # Seduction reaction
 						OR = {
 							is_married = ROOT
 							religion_has_incest = yes
+							has_oedipus_trait = yes
 						}
 					}
 				}
@@ -3137,6 +3147,18 @@ character_event = { # Seduction reaction
 				trait = master_schemer
 				trait = lunatic
 				has_education_intrigue_trigger = yes
+				### Yandere ###
+				trait = yandere
+			}
+			OR = {
+				trait = lunatic
+				ai = no
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+				}
+				### Yandere ###
+				trait = yandere
 			}
 		}
 
@@ -3149,6 +3171,75 @@ character_event = { # Seduction reaction
 		FROM = { character_event = { id = LT.20441 days = 5 } }
 
 		# CleanSlate: Seriously? No ai_chance block here? The ai just tries to murder whoever willy-nilly?
+		ai_chance = {
+			factor = 1
+
+			mult_modifier = { 
+				factor = 0.66
+				personal_opinion = {
+					who = FROM
+					value >= 100
+				}
+			}
+			mult_modifier = { 
+				factor = 0.66
+				personal_opinion = {
+					who = FROM
+					value >= 75
+				}
+			}
+			mult_modifier = { 
+				factor = 0.66
+				personal_opinion = {
+					who = FROM
+					value >= 50
+				}
+			}
+			mult_modifier = { 
+				factor = 0.66
+				personal_opinion = {
+					who = FROM
+					value >= 25
+				}
+			}
+			mult_modifier = { 
+				factor = 1.33
+				personal_opinion = {
+					who = FROM
+					value <= -25
+				}
+			}
+			mult_modifier = { 
+				factor = 1.33
+				personal_opinion = {
+					who = FROM
+					value <= -50
+				}
+			}
+			mult_modifier = { 
+				factor = 1.33
+				personal_opinion = {
+					who = FROM
+					value <= -75
+				}
+			}
+			mult_modifier = { 
+				factor = 1.33
+				personal_opinion = {
+					who = FROM
+					value <= -99
+				}
+			}
+			mult_modifier = { 
+				factor = 0.25
+				trait = kind
+			}
+			### Yandere ###
+			mult_modifier = { 
+				factor = 2
+				trait = yandere
+			}
+		}
 	}
 }
 
@@ -3289,7 +3380,7 @@ character_event = { # Murder attempt Reaction. This event can happen to either c
 	is_triggered_only = yes
 
 	immediate = {
-		save_event_target_as = murderer
+		FROM = { save_event_target_as = murderer }
 	}
 
 	option = { # Run away
@@ -3999,7 +4090,13 @@ character_event = {
 	is_triggered_only = yes # on_wonder_upgrade_finish
 
 	trigger = {
-		FROMFROM = { has_wonder_upgrade = upgrade_strategic_exclaves }
+		FROMFROM = {
+			### COW ###
+			OR = { 
+				has_wonder_upgrade = upgrade_strategic_exclaves 
+				has_wonder_upgrade = upgrade_cow_strategic_exclaves
+			}
+		}
 	}
 
 	immediate = {
@@ -4167,6 +4264,16 @@ character_event = {
 						if = {
 							limit = { has_wonder_upgrade = upgrade_bells_golden }
 							destroy_wonder_upgrade = upgrade_bells_golden
+						}
+						
+						### COW ###
+						if = {
+							limit = { has_wonder_upgrade = upgrade_cow_bells }
+							destroy_wonder_upgrade = upgrade_cow_bells
+						}
+						if = {
+							limit = { has_wonder_upgrade = upgrade_cow_bells_golden }
+							destroy_wonder_upgrade = upgrade_cow_bells_golden
 						}
 					}
 

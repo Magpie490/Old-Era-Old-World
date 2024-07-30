@@ -729,8 +729,6 @@ character_event = {
 		# Province for loc
 		random_demesne_province = {
 			limit = {
-				owned_by = PREV
-
 				any_neighbor_province = {
 					has_owner = yes
 					NOT = { owned_by = ROOT }
@@ -760,7 +758,15 @@ character_event = {
 		# If the player has an armory
 		random_realm_wonder_upgrade = {
 			limit = {
-				has_wonder_upgrade = upgrade_armory
+				### COW ###
+				trigger_if = {
+					limit = { has_global_flag = is_cl_cow_save }
+					OR = {
+						has_wonder_upgrade = upgrade_armory
+						has_wonder_upgrade = upgrade_cow_armory
+					}
+				}
+				trigger_else = { has_wonder_upgrade = upgrade_armory }
 				is_active = yes
 			}
 
@@ -2312,6 +2318,19 @@ character_event = {
 					add_artifact = sword_of_heroes
 					new_artifact = { set_artifact_flag = stolen_by_smith }
 				}
+				### ACR ###
+				else_if = {
+					limit = {
+						event_target:smith_employer = {
+							religion_openly_in_celtic_subgroup_trigger = yes
+						}
+					}
+
+					add_artifact = jeweled_torque
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+					add_artifact = sword_of_heroes
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+				}
 				else = {
 					add_artifact = heros_crown
 					new_artifact = { set_artifact_flag = stolen_by_smith }
@@ -2398,6 +2417,19 @@ character_event = {
 					add_artifact = golden_sword
 					new_artifact = { set_artifact_flag = stolen_by_smith }
 				}
+				### ACR ###
+				else_if = {
+					limit = {
+						event_target:smith_employer = {
+							religion_openly_in_celtic_subgroup_trigger = yes
+						}
+					}
+
+					add_artifact = golden_torque
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+					add_artifact = golden_sword
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+				}
 				else = {
 					add_artifact = amber_crown
 					new_artifact = { set_artifact_flag = stolen_by_smith }
@@ -2480,6 +2512,19 @@ character_event = {
 					}
 
 					add_artifact = iron_crown
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+					add_artifact = engraved_sword
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+				}
+				### ACR ###
+				else_if = {
+					limit = {
+						event_target:smith_employer = {
+							religion_openly_in_celtic_subgroup_trigger = yes
+						}
+					}
+
+					add_artifact = silver_torque
 					new_artifact = { set_artifact_flag = stolen_by_smith }
 					add_artifact = engraved_sword
 					new_artifact = { set_artifact_flag = stolen_by_smith }

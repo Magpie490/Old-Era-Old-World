@@ -20,4 +20,11 @@ culture = persian
 religion = zoroastrian
 
 # History
+1.1.1 = {
+	build_wonder = wonder_city_of_wonders_parsa
+	set_wonder_stage = 1
+	set_wonder_damaged = yes
+	set_wonder_description = wonder_city_of_wonders_parsa_ruined_desc
+}
+
 800.1.1 = { religion = sunni }

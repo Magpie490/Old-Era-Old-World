@@ -1,0 +1,143 @@
+# cl_kinich_uses_human_sacrifice_trigger
+# cl_kinich_uses_western_zodiac_trigger
+# cl_kinich_is_prosperous_trigger
+# cl_kinich_is_depopulated_trigger
+# cl_kinich_uses_christian_cataphracts
+# cl_kinich_uses_cataphracts
+# cl_kinich_uses_radhanite_quarters
+# cl_kinich_uses_autocephaly
+
+cl_kinich_uses_human_sacrifice_trigger = {
+	OR = {
+		religion_openly_aztec_or_reformed_trigger = yes
+		has_religion_feature = religion_ritual_sacrifice
+		religion = titan_pagan
+	}
+}
+
+cl_kinich_uses_western_zodiac_trigger = {
+	OR = {
+		society_member_of = hermetics
+		has_religion_feature = religion_astrology
+		trigger_if = {
+			limit = { has_global_flag = ancrel }
+			religion_openly_in_hellenic_subgroup_trigger = yes
+		}
+		trigger_else = { religion_openly_hellenic_or_reformed_trigger = yes }
+		trigger_if = {
+			limit = { has_global_flag = is_kcl_CIML_save }
+			religion = mandean
+		}
+	}
+}
+
+cl_kinich_is_prosperous_trigger = {
+	OR = {
+		has_province_modifier = prosperity_modifier_1
+		has_province_modifier = prosperity_modifier_2
+		has_province_modifier = prosperity_modifier_3
+	}
+}
+
+cl_kinich_is_depopulated_trigger = {
+	OR = {
+		has_province_modifier = depopulated_1
+		has_province_modifier = depopulated_2
+		has_province_modifier = depopulated_3
+	}
+}
+
+cl_kinich_uses_christian_cataphracts = {
+	OR = {
+		culture_group = byzantine
+		culture = greco_arabic
+		culture_group = altaic
+		culture_group = iranian
+		culture_group = magyar
+	}
+}
+
+cl_kinich_uses_cataphracts = {
+	trigger_if = {
+		limit = { any_province = { culture = greco_arabic } }
+		OR = {
+			culture_group = byzantine
+			culture = greco_arabic
+		}
+		NOR = {
+			culture = coptic
+			culture = arberian
+			trigger_if = {
+				limit = { has_global_flag = is_meso_reborn_save }
+				culture = aramean
+			}
+			trigger_if = {
+				limit = { has_global_flag = is_meso_reborn_save }
+				culture = babylonian
+			}
+		}
+	}
+	trigger_else = {
+		culture_group = byzantine
+		NOR = {
+			culture = coptic
+			culture = arberian
+			trigger_if = {
+				limit = { has_global_flag = is_meso_reborn_save }
+				culture = aramean
+			}
+			trigger_if = {
+				limit = { has_global_flag = is_meso_reborn_save }
+				culture = babylonian
+			}
+		}
+	}
+}
+
+cl_kinich_uses_radhanite_quarters = {
+	OR = {
+		culture_group = israelite
+		religion_group = jewish_group
+		trait = sympathy_judaism
+		custom_tooltip = {
+			text = saintly_jewish_bloodline
+			any_owned_bloodline = {
+				bloodline_is_active_for = FROM
+				has_bloodline_flag = jewish_saintly_bloodline
+			}
+		}
+		trigger_if = {
+			limit = {
+				OR = {
+					NOT = { has_global_flag = is_kcl_jews_save }
+					has_global_flag = actually_jew_khazar
+				}
+			}
+			culture = khazar
+		}
+		trigger_if = {
+			limit = {
+				OR = {
+					has_global_flag = is_kcl_jews_save
+					has_global_flag = is_kcl_CIML_save
+				}
+			}
+			has_character_modifier = major_friend_of_the_jews
+		}
+	}
+}
+
+cl_kinich_uses_autocephaly = {
+	OR = {
+		has_religion_feature = religion_autocephaly
+		is_orthodox_branch = yes
+		is_miaphysite_branch = yes
+		trigger_if = {
+			limit = { has_global_flag = is_kcl_CIML_save }
+			is_nestorian_branch = yes
+		}
+		religion_scope = {
+			persistent_event_target:religion_title = { has_title_flag = kcc_uses_autocephaly }
+		}
+	}
+}

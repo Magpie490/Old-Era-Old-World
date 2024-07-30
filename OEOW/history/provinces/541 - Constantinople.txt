@@ -21,14 +21,35 @@ religion = orthodox
 
 # History
 
-537.1.1 = {
-	build_wonder = wonder_cathedral_hagia_sophia
-	set_wonder_stage = 3
+330.5.11 = { # Nova Roma/Constantinople established
+		build_wonder = wonder_city_of_wonders_byz
+		set_wonder_stage = 5
+		build_wonder_upgrade = upgrade_cow_district_mega_palation
+		build_wonder_upgrade = upgrade_cow_district_hippodromos_byz
+		build_wonder_upgrade = upgrade_cow_district_forum_constantine
+		build_wonder_upgrade = upgrade_cow_district_limen_byz
+		# build_wonder_upgrade = upgrade_cow_amphitheatron_byz # Ampitheatron was abandoned due to Christian morals, so you have to rebuild it
 }
 
-# Final form of the Ortodox Hagia Sophia, as the original dome had collapsed in 558 in a earthquake.
-562.12.23 = {
-	set_wonder_stage = 4
+340.1.1 = { # Imperial Library of Constantinople founded by Constantius II during his reign (337–361 AD)
+	build_wonder_upgrade = upgrade_cow_district_bibliothekai_byz
+	set_wonder_stage = 6
+}
+
+413.1.1 = { # Theodosian Walls
+	set_wonder_stage = 7
+	build_wonder_upgrade = upgrade_cow_district_theodosian_walls
+	# build_wonder_upgrade = upgrade_cow_district_chryseia_pyle # Only a gate, not quite a fortress yet
+}
+
+425.1.1 = { #  Imperial University of Constantinople founded by Theodosius II in 425 AD
+	build_wonder_upgrade = upgrade_cow_district_pandidakterion
+	set_wonder_stage = 8
+}
+
+562.12.23 = { # Hagia Sophia - Finalized
+	set_wonder_stage = 9
+	build_wonder_upgrade = upgrade_cow_district_hagia_sophia
 }
 
 
@@ -92,14 +113,26 @@ religion = orthodox
 
 1181.1.1 = { trade_post = b_ziani }
 #4th crusade, Constantinople sacked.
-1204.4.16 = { set_wonder_damaged = yes }
-1204.5.16 = { remove_settlement = b_pempton }
-1204.5.16 = { remove_settlement = b_deuteron }
-1204.5.16 = { remove_settlement = b_hieron }
+1204.5.16= { remove_settlement = b_pempton }
+1204.5.16= { remove_settlement = b_deuteron }
+1204.5.16= { remove_settlement = b_hieron }
+1204.5.16= { # Note lack of space!
+	destroy_wonder_upgrade = upgrade_cow_district_mega_palation
+	destroy_wonder_upgrade = upgrade_cow_district_pandidakterion
+	destroy_wonder_upgrade = upgrade_cow_district_forum_constantine
+	add_custom_history = String_4th_crusade_devastation_byz
+	destroy_wonder_upgrade = upgrade_cow_district_bibliothekai_byz
+	add_custom_history = String_bibliothekai_destroyed_byz
+	set_wonder_stage = 5
+	set_wonder_damaged = yes
+}
 
 
 # Byzantine retake Constantinople
 
 1262.1.1 = { b_hieron = city }
-1317.1.1 = { set_wonder_damaged = no } # repair work ordered by emperor Andronicus II
-1337.1.1 = { b_deuteron = castle }
+1317.1.1 = { set_wonder_damaged = no }
+1337.1.1 = { 
+	b_deuteron = castle
+	build_wonder_upgrade = upgrade_cow_district_chryseia_pyle	# The Golden Gate was arguably expanded into a seperate fortress
+}

@@ -18,6 +18,26 @@ defined_text = {
 	name = GetWonderName
 	use_first_valid = yes
 
+	### COW ###
+	text = { # Unique name (Constantinople)
+		trigger = {
+			has_wonder = wonder_city_of_wonders_byz
+		}
+		localisation_key = wonder_city_of_wonders_byz
+	}
+	text = { # Unique name (Roma)
+		trigger = {
+			has_wonder = wonder_city_of_wonders_roma
+		}
+		localisation_key = wonder_city_of_wonders_roma
+	}
+	text = { # Unique name (Jerusalem)
+		trigger = {
+			has_wonder = wonder_city_of_wonders_jeru
+		}
+		localisation_key = wonder_city_of_wonders_jeru
+	}
+	
 	######### Very rare...
 	text = {
 		trigger = {
@@ -310,6 +330,11 @@ defined_text = {
 				has_wonder = wonder_temple_pagan
 				has_wonder = wonder_temple_buddhist
 				has_wonder = wonder_temple_hindu
+				### COW ###
+				has_wonder = wonder_temple_hellenic_pagan
+				### EMF ###
+				has_wonder = wonder_temple_jain
+				has_wonder = wonder_fire_temple
 			}
 		}
 		localisation_key = String_Divine
@@ -524,6 +549,11 @@ defined_text = {
 				has_wonder = wonder_temple_pagan
 				has_wonder = wonder_temple_buddhist
 				has_wonder = wonder_temple_hindu
+				### COW ###
+				has_wonder = wonder_temple_hellenic_pagan
+				### EMF ###
+				has_wonder = wonder_temple_jain
+				has_wonder = wonder_fire_temple
 			}
 		}
 		localisation_key = String_divine
@@ -589,6 +619,11 @@ defined_text = {
 				has_wonder = wonder_temple_pagan
 				has_wonder = wonder_temple_hindu
 				has_wonder = wonder_temple_buddhist
+				### COW ###
+				has_wonder = wonder_temple_hellenic_pagan
+				### EMF ###
+				has_wonder = wonder_temple_jain
+				has_wonder = wonder_fire_temple
 			}
 		}
 		localisation_key = String_Temple
@@ -735,6 +770,62 @@ defined_text = {
 		trigger = { has_wonder = wonder_cathedral_notre_dame }
 		localisation_key = String_Cathedral
 	}
+	### ACR ###
+	text = {
+		trigger = { has_wonder = wonder_crotone_university }
+		localisation_key = wonder_crotone_university
+	}
+	### COW ###
+	text = {
+		trigger = { has_wonder = wonder_cathedral_hagia_sophia }
+		localisation_key = String_Cathedral
+	}
+	text = {
+		trigger = { 
+			uses_dynamic_name_cow_trigger = yes
+			wonder_stage = 1
+			NOT = { wonder_stage = 3 }
+		}
+		localisation_key = String_cow_City1
+	}
+	text = {
+		trigger = { 
+			uses_dynamic_name_cow_trigger = yes
+			wonder_stage = 3
+			NOT = { wonder_stage = 6 }
+		}
+		localisation_key = String_cow_City2
+	}
+	text = {
+		trigger = { 
+			uses_dynamic_name_cow_trigger = yes
+			wonder_stage = 6
+			NOT = { wonder_stage = 9 }
+		}
+		localisation_key = String_cow_City3
+	}
+	text = {
+		trigger = { 
+			uses_dynamic_name_cow_trigger = yes
+			OR = {
+				wonder_stage = 9
+				wonder_stage = 10
+			}
+		}
+		localisation_key = String_cow_City4
+	}
+	text = {
+		trigger = { has_wonder = wonder_city_of_wonders_byz }
+		localisation_key = String_cow_byz_Basileuousa
+	}
+	text = {
+		trigger = { has_wonder = wonder_city_of_wonders_roma }
+		localisation_key = String_cow_roma_Eternal
+	}
+	text = {
+		trigger = { has_wonder = wonder_city_of_wonders_jeru }
+		localisation_key = String_cow_jeru_Holy
+	}
 
     fallback_text = {
         localisation_key = String_Great_Work
@@ -766,6 +857,11 @@ defined_text = {
 				has_wonder = wonder_temple_hindu
 				has_wonder = wonder_temple_buddhist
 				has_wonder = wonder_temple_hindu_konark
+				### COW ###
+				has_wonder = wonder_temple_hellenic_pagan
+				### EMF ###
+				has_wonder = wonder_temple_jain
+				has_wonder = wonder_fire_temple
 			}
 		}
 		localisation_key = String_temple
@@ -844,6 +940,8 @@ defined_text = {
 			OR = {
 				has_wonder = wonder_university
 				has_wonder = wonder_house_of_wisdom
+				### ACR ###
+				has_wonder = wonder_crotone_university
 			}
 		}
 		localisation_key = String_university
@@ -886,6 +984,17 @@ defined_text = {
 	text = {
 		trigger = { has_wonder = wonder_cathedral_notre_dame }
 		localisation_key = String_cathedral
+	}
+	### COW ###
+	text = {
+		trigger = { has_wonder = wonder_cathedral_hagia_sophia }
+		localisation_key = String_cathedral
+	}
+	text = {
+		trigger = {
+			has_city_of_wonders_trigger = yes
+		}
+		localisation_key = String_cow_city
 	}
 
     fallback_text = {
@@ -966,24 +1075,88 @@ defined_text = {
 defined_text = {
 	name = GetWonderDesc
 
+	### COW ###
+	text = {
+		trigger = { #For City of Wonders (Constantinople)
+			has_wonder = wonder_city_of_wonders_byz
+		}
+		localisation_key = wonder_city_of_wonders_byz_desc
+	}
+	text = {
+		trigger = { #For City of Wonders (Roma)
+			has_wonder = wonder_city_of_wonders_roma
+		}
+		localisation_key = wonder_city_of_wonders_roma_desc
+	}
+	text = {
+		trigger = { #For City of Wonders (Alexandria)
+			has_wonder = wonder_city_of_wonders_alex
+		}
+		localisation_key = wonder_city_of_wonders_alex_desc
+	}
+	text = {
+		trigger = { #For City of Wonders (Antioch)
+			has_wonder = wonder_city_of_wonders_anti
+		}
+		localisation_key = wonder_city_of_wonders_anti_desc
+	}
+	text = {
+		trigger = { #For City of Wonders (Jerusalem)
+			has_wonder = wonder_city_of_wonders_jeru
+		}
+		localisation_key = wonder_city_of_wonders_jeru_desc
+	}
+	text = {
+		trigger = { #For City of Wonders (Babylon/Baghdad)
+			has_wonder = wonder_city_of_wonders_baby
+		}
+		localisation_key = wonder_city_of_wonders_baby_desc
+	}
+	
 	text = {
 		trigger = { # For baby wonders (adds upgrade mention)
 			has_wonder_upgrade = yes
 			num_of_wonder_upgrades < 3
 			wonder_age < 15
+			### COW ###
+			trigger_if = {
+				limit = { has_global_flag = is_cl_cow_save }
+				has_city_of_wonders_trigger = no
+			}
 		}
 		localisation_key = String_Wonder_Desc00
 	}
 	text = { # For wonders that build no upgrades, but stages instead: no upgrade addendum
-		trigger = { has_wonder_upgrade = no }
+		trigger = {
+			has_wonder_upgrade = no
+			### COW ###
+			trigger_if = {
+				limit = { has_global_flag = is_cl_cow_save }
+				has_city_of_wonders_trigger = no
+			}
+		}
 		localisation_key = String_Wonder_Desc01
 	}
 	text = { # Variant 1: mentions an upgrade
-		trigger = { num_of_wonder_upgrades >= 2 }
+		trigger = {
+			num_of_wonder_upgrades >= 2
+			### COW ###
+			trigger_if = {
+				limit = { has_global_flag = is_cl_cow_save }
+				has_city_of_wonders_trigger = no
+			}
+		}
 		localisation_key = String_Wonder_Desc02
 	}
 	text = { # Variant 2: mentions an upgrade
-		trigger = { num_of_wonder_upgrades >= 5 }
+		trigger = {
+			num_of_wonder_upgrades >= 5
+			### COW ###
+			trigger_if = {
+				limit = { has_global_flag = is_cl_cow_save }
+				has_city_of_wonders_trigger = no
+			}
+		}
 		localisation_key = String_Wonder_Desc03
 	}
 }
@@ -1082,6 +1255,8 @@ defined_text = {
 			OR = {
 				has_wonder = wonder_cathedral
 				has_wonder = wonder_temple_pagan
+				### COW ###
+				has_wonder = wonder_temple_hellenic_pagan
 			}
 		}
 		localisation_key = String_brought_people_together
