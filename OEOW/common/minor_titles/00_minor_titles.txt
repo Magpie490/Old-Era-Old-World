@@ -1037,12 +1037,12 @@ title_paramount_knight = {
 
 # Byzantine Titles
 title_despot = {
+	is_high_prio = yes
 	counts_as_purple_born = yes
 	is_unique = yes
 	message = yes
 	realm_in_name = yes
 	show_as_title = yes
-	is_voter = yes
 
 	dignity = 6.0
 	grant_limit = 1
@@ -3909,6 +3909,7 @@ title_councilmember_king = {
 		NOR = {
 			government = makhzen_government
 			has_landed_title = e_hre
+			has_landed_title = e_byzantium
 		}
 		has_law = law_voting_power_1
 		has_dlc = "Conclave"
@@ -3999,6 +4000,7 @@ title_councilmember_emperor = {
 		NOR = {
 			government = makhzen_government
 			has_landed_title = e_hre
+			has_landed_title = e_byzantium
 		}
 		has_law = law_voting_power_1
 		has_dlc = "Conclave"
