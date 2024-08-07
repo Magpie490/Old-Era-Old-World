@@ -3157,7 +3157,7 @@ massive_longbow_volley_tactic = {
 		leader = {
 			OR = {
 				culture = english
-				culture = welsh
+				OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 			}
 		}
 	}

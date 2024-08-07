@@ -4,6 +4,9 @@ e_britannia = {
 	capital = 46 # Middlesex
 
 	welsh = "Prydain"
+			cornish = "Prydain"
+			walas = "Prydain"
+			cumbric = "Prydain"
 	irish = "Alba"
 	scottish = "Alba"
 	pictish = "Alba"
@@ -38,6 +41,9 @@ e_britannia = {
 		culture = anglo-saxon
 
 		welsh = "Lloegyr"
+			cornish = "Lloegyr"
+			walas = "Lloegyr"
+			cumbric = "Lloegyr"
 		pictish = "Lloegyr"
 		breton = "Lloegyr"
 		irish = "Sasana"
@@ -55,6 +61,9 @@ e_britannia = {
 			norman = "Bedford"
 			english = "Bedford"
 			welsh = "Calchwynedd"
+			cornish = "Calchwynedd"
+			walas = "Calchwynedd"
+			cumbric = "Calchwynedd"
 
 			allow = {
 				can_create_duchy = yes
@@ -190,6 +199,9 @@ e_britannia = {
 			capital = 63 # Cumberland
 
 			welsh = "Gogledd Rheged" # North Rheged
+			cornish = "Gogledd Rheged"
+			walas = "Gogledd Rheged"
+			cumbric = "Gogledd Rheged"
 
 			allow = {
 				can_create_duchy = yes
@@ -262,6 +274,9 @@ e_britannia = {
 			english = "Gloucester"
 			roman = "Glevum"
 			welsh = "Guenet"
+			cornish = "Guenet"
+			walas = "Guenet"
+			cumbric = "Guenet"
 
 			allow = {
 				can_create_duchy = yes
@@ -380,6 +395,9 @@ e_britannia = {
 			norman = "Warwick"
 			english = "Warwick"
 			welsh = "Pengwern"
+			cornish = "Pengwern"
+			walas = "Pengwern"
+			cumbric = "Pengwern"
 
 			allow = {
 				can_create_duchy = yes
@@ -453,6 +471,9 @@ e_britannia = {
 			capital = 58 # Lancaster
 
 			welsh = "De Rheged" #South Rheged
+			cornish = "De Rheged"
+			walas = "De Rheged"
+			cumbric = "De Rheged"
 
 			allow = {
 				can_create_duchy = yes
@@ -639,6 +660,9 @@ e_britannia = {
 			norman = "Somerset"
 			english = "Somerset"
 			welsh = "Lloegyr"
+			cornish = "Lloegyr"
+			walas = "Lloegyr"
+			cumbric = "Lloegyr"
 
 			allow = {
 				can_create_duchy = yes
@@ -691,6 +715,9 @@ e_britannia = {
 			norse = "Jorvik"
 			anglo-saxon = "Deira"
 			welsh = "Ebrauc"
+			cornish = "Ebrauc"
+			walas = "Ebrauc"
+			cumbric = "Ebrauc"
 
 			pagan_coa = {
 				template = 0
@@ -714,6 +741,9 @@ e_britannia = {
 				color2 = { 255 255 255 }
 
 				welsh = "Deywr"
+			cornish = "Deywr"
+			walas = "Deywr"
+			cumbric = "Deywr"
 
 				b_hull = {}
 				b_stamford_bridge = {}
@@ -729,6 +759,9 @@ e_britannia = {
 				color2 = { 255 255 255 }
 
 				welsh = "Elmet"
+			cornish = "Elmet"
+			walas = "Elmet"
+			cumbric = "Elmet"
 
 				b_leeds = {}
 				b_doncaster = {}
@@ -749,6 +782,9 @@ e_britannia = {
 				color2 = { 255 255 255 }
 
 				welsh = "Dunoting"
+			cornish = "Dunoting"
+			walas = "Dunoting"
+			cumbric = "Dunoting"
 
 				b_yoredale = {}
 				b_settle = {}
@@ -768,6 +804,9 @@ e_britannia = {
 				swedish = "Jorvik"
 				norse = "Jorvik"
 				welsh = "Ebrauc"
+			cornish = "Ebrauc"
+			walas = "Ebrauc"
+			cumbric = "Ebrauc"
 				roman = "Eboracum"
 
 				b_york = {
@@ -776,6 +815,9 @@ e_britannia = {
 					swedish = "Jorvik"
 					norse = "Jorvik"
 					welsh = "Caer Ebrauc"
+			cornish = "Caer Ebrauc"
+			walas = "Caer Ebrauc"
+			cumbric = "Caer Ebrauc"
 					roman = "Eboracum"
 				}
 				b_richmond = {
@@ -813,6 +855,9 @@ e_britannia = {
 		irish = "Éire"
 		pictish = "Iuerthon"
 		welsh = "Iwerddon"
+			cornish = "Iwerddon"
+			walas = "Iwerddon"
+			cumbric = "Iwerddon"
 		breton = "Iwerzhon"
 		roman = "Hibernia"
 
@@ -1078,11 +1123,17 @@ e_britannia = {
 				norse = "Dyflinn"
 				irish = "Dubhlinn"
 				welsh = "Dulyn"
+			cornish = "Dulyn"
+			walas = "Dulyn"
+			cumbric = "Dulyn"
 
 				b_dublin = {
 					norse = "Dyflinn"
 					irish = "Dubhlinn"
 					welsh = "Dulyn"
+			cornish = "Dulyn"
+			walas = "Dulyn"
+			cumbric = "Dulyn"
 				}
 				b_clondalkin = {}
 				b_finglas = {
@@ -1482,6 +1533,9 @@ e_britannia = {
 		danish = "Skotland"
 		norwegian = "Skottland"
 		welsh = "Alban"
+			cornish = "Alban"
+			walas = "Alban"
+			cumbric = "Alban"
 		irish = "Alba"
 		breton = "Alba"
 		pictish = "Pictland"
@@ -1499,6 +1553,9 @@ e_britannia = {
 
 			pictish = "Alban"
 			welsh = "Alban"
+			cornish = "Alban"
+			walas = "Alban"
+			cumbric = "Alban"
 			irish = "Albanigh"
 
 			allow = {
@@ -1511,46 +1568,73 @@ e_britannia = {
 
 				pictish = "Fotla"
 				welsh = "Focla"
+			cornish = "Focla"
+			walas = "Focla"
+			cumbric = "Focla"
 				irish = "Athfhotla"
 
 				b_blair_atholl = {
 					pictish = "Athfocla"
 					welsh = "Brwydr Focla"
+			cornish = "Brwydr Focla"
+			walas = "Brwydr Focla"
+			cumbric = "Brwydr Focla"
 					irish = "Blàr Athfhotla"
 				}
 				b_glen_dochart = {
 					pictish = "Lanuan"
 					welsh = "Llangwyn"
+			cornish = "Llangwyn"
+			walas = "Llangwyn"
+			cumbric = "Llangwyn"
 					irish = "Cillefhinn"
 				}
 				b_pitlochry = {
 					pictish = "Moulin"
 					welsh = "Porth Craig"
+			cornish = "Porth Craig"
+			walas = "Porth Craig"
+			cumbric = "Porth Craig"
 					irish = "Mhaothlinne"
 				}
 				b_fortingall = {
 					pictish = "Iuenlan"
 					welsh = "Ywenllan"
+			cornish = "Ywenllan"
+			walas = "Ywenllan"
+			cumbric = "Ywenllan"
 					irish = "Iubharcille"
 				}
 				b_grandtully = {
 					pictish = "Uuag"
 					welsh = "Gwag y Rhwdfa"
+			cornish = "Gwag y Rhwdfa"
+			walas = "Gwag y Rhwdfa"
+			cumbric = "Gwag y Rhwdfa"
 					irish = "Lag an Ratha"
 				}
 				b_rannoch = {
 					pictish = "Redan"
 					welsh = "Rhedyn"
+			cornish = "Rhedyn"
+			walas = "Rhedyn"
+			cumbric = "Rhedyn"
 					irish = "Raineach"
 				}
 				b_strathardle = {
 					pictish = "Istrad Ardle"
 					welsh = "Ystrad Aerdôl"
+			cornish = "Ystrad Aerdôl"
+			walas = "Ystrad Aerdôl"
+			cumbric = "Ystrad Aerdôl"
 					irish = "Strath Àrdail"
 				}
 				b_struan = {
 					pictish = "Aberfel"
 					welsh = "Aberfelly"
+			cornish = "Aberfelly"
+			walas = "Aberfelly"
+			cumbric = "Aberfelly"
 					irish = "Obar Pheallaidh"
 				}
 				b_anthrachs = {}
@@ -1562,46 +1646,73 @@ e_britannia = {
 
 				pictish = "Fib"
 				welsh = "Gwidd"
+			cornish = "Gwidd"
+			walas = "Gwidd"
+			cumbric = "Gwidd"
 				irish = "Fìobha"
 
 				b_dunfermline = {
 					pictish = "Dunfurlan"
 					welsh = "Dinfirllyn"
+			cornish = "Dinfirllyn"
+			walas = "Dinfirllyn"
+			cumbric = "Dinfirllyn"
 					irish = "Dùn Phàrlain"
 				}
 				b_cupar = {
 					pictish = "Cafredun"
 					welsh = "Cyffredin"
+			cornish = "Cyffredin"
+			walas = "Cyffredin"
+			cumbric = "Cyffredin"
 					irish = "Compàirt"
 				}
 				b_st_andrews = {
 					pictish = "Pinbed"
 					welsh = "Pennbaedd"
+			cornish = "Pennbaedd"
+			walas = "Pennbaedd"
+			cumbric = "Pennbaedd"
 					irish = "Cill Rígmonaid"
 				}
 				b_kirkcaldy = {
 					pictish = "Caercaled"
 					welsh = "Caer Caledin"
+			cornish = "Caer Caledin"
+			walas = "Caer Caledin"
+			cumbric = "Caer Caledin"
 					irish = "Cair Chaladain"
 				}
 				b_kinross = {
 					pictish = "Pinhadlen"
 					welsh = "Pennhadllin"
+			cornish = "Pennhadllin"
+			walas = "Pennhadllin"
+			cumbric = "Pennhadllin"
 					irish = "Ceann Rois"
 				}
 				b_leuchars = {
 					pictish = "Luchar"
 					welsh = "Brwyn"
+			cornish = "Brwyn"
+			walas = "Brwyn"
+			cumbric = "Brwyn"
 					irish = "Luachar"
 				}
 				b_lochore = {
 					pictish = "Laner"
 					welsh = "Llynaer"
+			cornish = "Llynaer"
+			walas = "Llynaer"
+			cumbric = "Llynaer"
 					irish = "Locháir"
 				}
 				b_falkland = {
 					pictish = "Maluen"
 					welsh = "Malfin"
+			cornish = "Malfin"
+			walas = "Malfin"
+			cumbric = "Malfin"
 					irish = "Fháclainne"
 				}
 			}
@@ -1612,42 +1723,66 @@ e_britannia = {
 
 				pictish = "Circinn"
 				welsh = "Caer Cinn"
+			cornish = "Caer Cinn"
+			walas = "Caer Cinn"
+			cumbric = "Caer Cinn"
 				irish = "Gobharaidh"
 
 				b_scone = {
 					pictish = "Sguun"
 					welsh = "Sgon"
+			cornish = "Sgon"
+			walas = "Sgon"
+			cumbric = "Sgon"
 					irish = "Sgoinde"
 				}
 				b_dunkeld = {
 					pictish = "Dun Celadon"
 					welsh = "Din Celyddon"
+			cornish = "Din Celyddon"
+			walas = "Din Celyddon"
+			cumbric = "Din Celyddon"
 					irish = "Dùn Chailleann"
 				}
 				b_perth = {}
 				b_forteviot = {
 					pictish = "Nan Aruadocet"
 					welsh = "Nant Arwyddocâd"
+			cornish = "Nant Arwyddocâd"
+			walas = "Nant Arwyddocâd"
+			cumbric = "Nant Arwyddocâd"
 					irish = "Fothair Tabhaicht"
 				}
 				b_dundee = {
 					pictish = "Orrea"
 					welsh = "Dindân"
+			cornish = "Dindân"
+			walas = "Dindân"
+			cumbric = "Dindân"
 					irish = "Dùn Dèagh"
 				}
 				b_abernethy = {
 					pictish = "Aber Naiton"
 					welsh = "Aber Neithon"
+			cornish = "Aber Neithon"
+			walas = "Aber Neithon"
+			cumbric = "Aber Neithon"
 					irish = "Obar Neithich"
 				}
 				b_clunie = {
 					pictish = "Luned"
 					welsh = "Llynaedd"
+			cornish = "Llynaedd"
+			walas = "Llynaedd"
+			cumbric = "Llynaedd"
 					irish = "Cluainidh"
 				}
 				b_errol = {
 					pictish = "Landafan"
 					welsh = "Llandyffryn"
+			cornish = "Llandyffryn"
+			walas = "Llandyffryn"
+			cumbric = "Llandyffryn"
 					irish = "Lannfothir"
 				}
 			}
@@ -1658,46 +1793,73 @@ e_britannia = {
 
 				pictish = "Uuanun"
 				welsh = "Ystrad Iwerddon"
+			cornish = "Ystrad Iwerddon"
+			walas = "Ystrad Iwerddon"
+			cumbric = "Ystrad Iwerddon"
 				irish = "Srath Èireann"
 
 				b_crieff = {
 					pictish = "Coiden"
 					welsh = "Coeden"
+			cornish = "Coeden"
+			walas = "Coeden"
+			cumbric = "Coeden"
 					irish = "Craoibh"
 				}
 				b_dunblane = {
 					pictish = "Dul Blaan"
 					welsh = "Dinblyne"
+			cornish = "Dinblyne"
+			walas = "Dinblyne"
+			cumbric = "Dinblyne"
 					irish = "Dùn Bhlàthain"
 				}
 				b_tullibardine = {
 					pictish = "Duunrud"
 					welsh = "Duonrhyd"
+			cornish = "Duonrhyd"
+			walas = "Duonrhyd"
+			cumbric = "Duonrhyd"
 					irish = "Dubhàth"
 				}
 				b_auchterarder = {
 					pictish = "Uchel"
 					welsh = "Hufenaruchel"
+			cornish = "Hufenaruchel"
+			walas = "Hufenaruchel"
+			cumbric = "Hufenaruchel"
 					irish = "Uachdar Ardair"
 				}
 				b_madderty = {
 					pictish = "Pintu"
 					welsh = "Penndu"
+			cornish = "Penndu"
+			walas = "Penndu"
+			cumbric = "Penndu"
 					irish = "Ceanndubh"
 				}
 				b_doune = {
 					pictish = "I Dun"
 					welsh = "Y Din"
+			cornish = "Y Din"
+			walas = "Y Din"
+			cumbric = "Y Din"
 					irish = "An Dùn"
 				}
 				b_inchaffray = {
 					pictish = "Insee Ufirin"
 					welsh = "Ynys Offeren"
+			cornish = "Ynys Offeren"
+			walas = "Ynys Offeren"
+			cumbric = "Ynys Offeren"
 					irish = "Innis Oifrend"
 				}
 				b_kenmore = {
 					pictish = "Bilauc"
 					welsh = "Belauc"
+			cornish = "Belauc"
+			walas = "Belauc"
+			cumbric = "Belauc"
 					irish = "Bealach"
 				}
 			}
@@ -1710,6 +1872,9 @@ e_britannia = {
 			capital = 72 # Galloway
 
 			welsh = "Strathclyde"
+			cornish = "Strathclyde"
+			walas = "Strathclyde"
+			cumbric = "Strathclyde"
 			pictish = "Nouantia"
 			irish = "Gall-Ghaidhealaibh"
 
@@ -1723,47 +1888,74 @@ e_britannia = {
 
 				pictish = "Ueron"
 				welsh = "Aeron"
+			cornish = "Manaw"
+			walas = "Manaw"
+			cumbric = "Manaw"
 				irish = "A' Charraig"
 
 				b_turnberry = {
 					pictish = "Dun Ueron"
 					welsh = "Din Aeron"
+			cornish = "Din Aeron"
+			walas = "Din Aeron"
+			cumbric = "Din Aeron"
 					irish = "Dùn Àir"
 				}
 				b_dunure = {
 					pictish = "Dunauen"
 					welsh = "Din Ywen"
+			cornish = "Din Ywen"
+			walas = "Din Ywen"
+			cumbric = "Din Ywen"
 					irish = "Dùn Iùbhair"
 				}
 				b_maybole = {
 					pictish = "Maescanatan"
 					welsh = "Y Maes Ynfytyn"
+			cornish = "Y Maes Ynfytyn"
+			walas = "Y Maes Ynfytyn"
+			cumbric = "Y Maes Ynfytyn"
 					irish = "Am Magh Baoghail"
 				}
 				b_crossraguel = {
 					pictish = "Crosc Ruagal"
 					welsh = "Croes Rhygal"
+			cornish = "Croes Rhygal"
+			walas = "Croes Rhygal"
+			cumbric = "Croes Rhygal"
 					irish = "Crois Riagal"
 				}
 				b_loch_doon = {
 					scottish = "Balloch"
 					pictish = "Landun"
 					welsh = "Llyndin"
+			cornish = "Llyndin"
+			walas = "Llyndin"
+			cumbric = "Llyndin"
 					irish = "Loch Dhùin"
 				}
 				b_ballantrae = {
 					pictish = "Tretrah"
 					welsh = "Traethtref"
+			cornish = "Traethtref"
+			walas = "Traethtref"
+			cumbric = "Traethtref"
 					irish = "Baile na Tràgha"
 				}
 				b_culzean = {
 					pictish = "Pinaglan"
 					welsh = "Pennyglyn"
+			cornish = "Pennyglyn"
+			walas = "Pennyglyn"
+			cumbric = "Pennyglyn"
 					irish = "Ceann na Gleann"
 				}
 				b_greenan = {
 					pictish = "Abereron"
 					welsh = "Aberaeron"
+			cornish = "Aberaeron"
+			walas = "Aberaeron"
+			cumbric = "Aberaeron"
 					irish = "Inbhir Àir"
 				}
 			}
@@ -1774,46 +1966,73 @@ e_britannia = {
 
 				pictish = "Damnunia"
 				welsh = "Alt Clut"
+			cornish = "Alt Clut"
+			walas = "Alt Clut"
+			cumbric = "Alt Clut"
 				irish = "Dail Chluaidh"
 
 				b_renfrew = {
 					pictish = "Bregurun"
 					welsh = "Brigffroen"
+			cornish = "Brigffroen"
+			walas = "Brigffroen"
+			cumbric = "Brigffroen"
 					irish = "Rinn Friù"
 				}
 				b_st_kentigern = {
 					pictish = "Cantearn"
 					welsh = "Cyndeyrn Sant"
+			cornish = "Cyndeyrn Sant"
+			walas = "Cyndeyrn Sant"
+			cumbric = "Cyndeyrn Sant"
 					irish = "Cill Mungo"
 				}
 				b_glasgow = {
 					pictish = "Catuuris"
 					welsh = "Cathures"
+			cornish = "Cathures"
+			walas = "Cathures"
+			cumbric = "Cathures"
 					irish = "Glaschu"
 				}
 				b_lanark = {
 					pictish = "Lanirc"
 					welsh = "Lanerc"
+			cornish = "Lanerc"
+			walas = "Lanerc"
+			cumbric = "Lanerc"
 					irish = "Lannraig"
 				}
 				b_cadzow = {
 					pictish = "Uuohan"
 					welsh = "Guofan"
+			cornish = "Guofan"
+			walas = "Guofan"
+			cumbric = "Guofan"
 					irish = "Bàile Ghobhainn"
 				}
 				b_bothwell = {
 					pictish = "Mamuanon"
 					welsh = "Mamffynnon"
+			cornish = "Mamffynnon"
+			walas = "Mamffynnon"
+			cumbric = "Mamffynnon"
 					irish = "Tobar na Màthar"
 				}
 				b_lesmahagow = {
 					pictish = "Lanmahau"
 					welsh = "Llanmahagw"
+			cornish = "Llanmahagw"
+			walas = "Llanmahagw"
+			cumbric = "Llanmahagw"
 					irish = "Lios MoChuda"
 				}
 				b_dumbarton = {
 					pictish = "Alcluit"
 					welsh = "Alt Clut"
+			cornish = "Alt Clut"
+			walas = "Alt Clut"
+			cumbric = "Alt Clut"
 					irish = "Dùn Breatainn"
 				}
 			}
@@ -1824,47 +2043,74 @@ e_britannia = {
 
 				pictish = "Nouantia"
 				welsh = "Nofant"
+			cornish = "Nofant"
+			walas = "Nofant"
+			cumbric = "Nofant"
 				irish = "Na Rannaibh"
 				anglo-saxon = "Rhinns"
 
 				b_dumfries = {
 					pictish = "Dunrad"
 					welsh = "Dinrhyd"
+			cornish = "Dinrhyd"
+			walas = "Dinrhyd"
+			cumbric = "Dinrhyd"
 					irish = "Dùn Phris"
 				}
 				b_dunragit = {
 					pictish = "Dunreget"
 					welsh = "Din Rheged"
+			cornish = "Din Rheged"
+			walas = "Din Rheged"
+			cumbric = "Din Rheged"
 					irish = "Dùn Reicheit"
 				}
 				b_whithorn = {
 					pictish = "Taiuuan"
 					welsh = "Tygwyn"
+			cornish = "Tygwyn"
+			walas = "Tygwyn"
+			cumbric = "Tygwyn"
 					irish = "Taigh Mhàrtainn"
 				}
 				b_dunrod = {
 					pictish = "Dun Brin"
 					welsh = "Din Brenin"
+			cornish = "Din Brenin"
+			walas = "Din Brenin"
+			cumbric = "Din Brenin"
 					irish = "Dùn Droighnein"
 				}
 				b_kirkcudbright = {
 					pictish = "Cuthberbatu"
 					welsh = "Cuddbertbetws"
+			cornish = "Cuddbertbetws"
+			walas = "Cuddbertbetws"
+			cumbric = "Cuddbertbetws"
 					irish = "Cill Chuithbeirt"
 				}
 				b_glenluce = {
 					pictish = "Ulanchuan"
 					welsh = "Glynchwyn"
+			cornish = "Glynchwyn"
+			walas = "Glynchwyn"
+			cumbric = "Glynchwyn"
 					irish = "Ghlinn Lus"
 				}
 				b_wigtown = {
 					pictish = "Betrah"
 					welsh = "Faetref"
+			cornish = "Faetref"
+			walas = "Faetref"
+			cumbric = "Faetref"
 					irish = "Baile na h-Ùige"
 				}
 				b_threave = {
 					pictish = "Insee Datrah"
 					welsh = "Ynys Dytref"
+			cornish = "Ynys Dytref"
+			walas = "Ynys Dytref"
+			cumbric = "Ynys Dytref"
 					irish = "Eilean na h-Uisge Dhè"
 				}
 			}
@@ -1878,6 +2124,9 @@ e_britannia = {
 
 			pictish = "Lut"
 			welsh = "Gododdin"
+			cornish = "Ynys Dytref"
+			walas = "Ynys Dytref"
+			cumbric = "Ynys Dytref"
 			irish = "Labhdaidh"
 
 			allow = {
@@ -1890,46 +2139,73 @@ e_britannia = {
 
 				pictish = "Lut"
 				welsh = "Lleuddiniawn"
+			cornish = "Lleuddiniawn"
+			walas = "Lleuddiniawn"
+			cumbric = "Lleuddiniawn"
 				irish = "Labhdaidh"
 
 				b_edinburgh = {
 					pictish = "Dun Eidan"
 					welsh = "Din Eidyn"
+			cornish = "Din Eidyn"
+			walas = "Din Eidyn"
+			cumbric = "Din Eidyn"
 					irish = "Dùn Eideann"
 				}
 				b_stirling = {
 					pictish = "Iutheu"
 					welsh = "Iuddeu"
+			cornish = "Iuddeu"
+			walas = "Iuddeu"
+			cumbric = "Iuddeu"
 					irish = "Sruighlea"
 				}
 				b_abercorn = {
 					pictish = "Abercarn"
 					welsh = "Abercarnedd"
+			cornish = "Abercarnedd"
+			walas = "Abercarnedd"
+			cumbric = "Abercarnedd"
 					irish = "Obar Chùirnidh"
 				}
 				b_linlithgow = {
 					pictish = "Glanaluu"
 					welsh = "Glynallwedd"
+			cornish = "Glynallwedd"
+			walas = "Glynallwedd"
+			cumbric = "Glynallwedd"
 					irish = "Gleann Iucha"
 				}
 				b_falkirk = {
 					pictish = "Ecclescbret"
 					welsh = "Ecclesbrith"
+			cornish = "Ecclesbrith"
+			walas = "Ecclesbrith"
+			cumbric = "Ecclesbrith"
 					irish = "An Eaglais Bhreac"
 				}
 				b_stow_of_wedale = {
 					pictish = "Gallath"
 					welsh = "Galladd"
+			cornish = "Galladd"
+			walas = "Galladd"
+			cumbric = "Galladd"
 					irish = "An Geal Àth"
 				}
 				b_leith = {
 					pictish = "Aberlath"
 					welsh = "Aberlydd"
+			cornish = "Aberlydd"
+			walas = "Aberlydd"
+			cumbric = "Aberlydd"
 					irish = "Inverlìte"
 				}
 				b_torphichen = {
 					pictish = "Trehechan"
 					welsh = "Treffechan"
+			cornish = "Treffechan"
+			walas = "Treffechan"
+			cumbric = "Treffechan"
 					irish = "Tóir Féichín"
 				}
 			}
@@ -1939,46 +2215,73 @@ e_britannia = {
 
 				pictish = "Utudina"
 				welsh = "Din Baer"
+			cornish = "Din Baer"
+			walas = "Din Baer"
+			cumbric = "Din Baer"
 				irish = "Dùn Bár"
 
 				b_dunbar = {
 					pictish = "Dun Ber"
 					welsh = "Din Baer"
+			cornish = "Din Baer"
+			walas = "Din Baer"
+			cumbric = "Din Baer"
 					irish = "Dùn Bár"
 				}
 				b_berwick = {
 					pictish = "Caer Brinech"
 					welsh = "Caer Bryneich"
+			cornish = "Caer Bryneich"
+			walas = "Caer Bryneich"
+			cumbric = "Caer Bryneich"
 					irish = "Bearaig"
 				}
 				b_thirlestane = {
 					pictish = "Lauuether"
 					welsh = "Lauwedder"
+			cornish = "Lauwedder"
+			walas = "Lauwedder"
+			cumbric = "Lauwedder"
 					irish = "Labhdar"
 				}
 				b_tyninghame = {
 					pictish = "Pisctaltreh"
 					welsh = "Pistylltref"
+			cornish = "Pistylltref"
+			walas = "Pistylltref"
+			cumbric = "Pistylltref"
 					irish = "Linnebaile"
 				}
 				b_gordon = {
 					pictish = "Gor Dun"
 					welsh = "Gor Din"
+			cornish = "Gor Din"
+			walas = "Gor Din"
+			cumbric = "Gor Din"
 					irish = "Gòr Dùn"
 				}
 				b_huntly = {
 					pictish = "Istrad Bach"
 					welsh = "Ystrath Bach"
+			cornish = "Ystrath Bach"
+			walas = "Ystrath Bach"
+			cumbric = "Ystrath Bach"
 					irish = "Srath Bhalgaidh"
 				}
 				b_coldingham = {
 					pictish = "Lanbrin"
 					welsh = "Llanbryn"
+			cornish = "Llanbryn"
+			walas = "Llanbryn"
+			cumbric = "Llanbryn"
 					irish = "Cillecnoc"
 				}
 				b_crichton = {
 					pictish = "Finuultreh"
 					welsh = "Ffinioltref"
+			cornish = "Ffinioltref"
+			walas = "Ffinioltref"
+			cumbric = "Ffinioltref"
 					irish = "Criochdún"
 				}
 			}
@@ -1988,46 +2291,73 @@ e_britannia = {
 
 				pictish = "Heluua"
 				welsh = "Guendoleu"
+			cornish = "Guendoleu"
+			walas = "Guendoleu"
+			cumbric = "Guendoleu"
 				irish = "Cealsaidh"
 
 				b_jedburgh = {
 					pictish = "Dungod"
 					welsh = "Dingod"
+			cornish = "Dingod"
+			walas = "Dingod"
+			cumbric = "Dingod"
 					irish = "Dùngot"
 				}
 				b_roxburgh = {
 					pictish = "Iaartreh"
 					welsh = "Iârtref"
+			cornish = "Iârtref"
+			walas = "Iârtref"
+			cumbric = "Iârtref"
 					irish = "Baile na h-Cearc"
 				}
 				b_peebles = {
 					pictish = "Peball"
 					welsh = "Pebyll"
+			cornish = "Pebyll"
+			walas = "Pebyll"
+			cumbric = "Pebyll"
 					irish = "Na Pùballan"
 				}
 				b_melrose = {
 					pictish = "Maelruusan"
 					welsh = "Mailrhosan"
+			cornish = "Mailrhosan"
+			walas = "Mailrhosan"
+			cumbric = "Mailrhosan"
 					irish = "Maol Ros"
 				}
 				b_kelso = {
 					pictish = "Calchanith"
 					welsh = "Calchfynydd"
+			cornish = "Calchfynydd"
+			walas = "Calchfynydd"
+			cumbric = "Calchfynydd"
 					irish = "Cealsaidh"
 				}
 				b_selkirk = {
 					pictish = "Halchraig"
 					welsh = "Halchraig"
+			cornish = "Halchraig"
+			walas = "Halchraig"
+			cumbric = "Halchraig"
 					irish = "Salcraig"
 				}
 				b_maxwell = {
 					pictish = "Mabfanon"
 					welsh = "Mabffynnon"
+			cornish = "Mabffynnon"
+			walas = "Mabffynnon"
+			cumbric = "Mabffynnon"
 					irish = "Tobar na Mac"
 				}
 				b_ednam = {
 					pictish = "Aethontreh"
 					welsh = "Aeddantref"
+			cornish = "Aeddantref"
+			walas = "Aeddantref"
+			cumbric = "Aeddantref"
 					irish = "Baile na h-Aodhàn"
 				}
 			}
@@ -2041,6 +2371,9 @@ e_britannia = {
 
 			pictish = "Fortriu"
 			welsh = "Gwrturio"
+			cornish = "Gwrturio"
+			walas = "Gwrturio"
+			cumbric = "Gwrturio"
 			irish = "Muireb"
 
 			allow = {
@@ -2053,45 +2386,72 @@ e_britannia = {
 
 				pictish = "Cei"
 				welsh = "Cai"
+			cornish = "Cai"
+			walas = "Cai"
+			cumbric = "Cai"
 				irish = "Beanaomh"
 
 				b_aberdeen = {
 					welsh = "Aberdwyafon"
+			cornish = "Aberdwyafon"
+			walas = "Aberdwyafon"
+			cumbric = "Aberdwyafon"
 					irish = "Obar Dabhuin"
 				}
 				b_banff = {
 					pictish = "Banaugluas"
 					welsh = "Benywglwys"
+			cornish = "Benywglwys"
+			walas = "Benywglwys"
+			cumbric = "Benywglwys"
 					irish = "Beanaomh"
 				}
 				b_deer = {
 					pictish = "Ceiru"
 					welsh = "Ceirw"
+			cornish = "Ceirw"
+			walas = "Ceirw"
+			cumbric = "Ceirw"
 					irish = "Fiadh"
 				}
 				b_kintore = {
 					pictish = "Pintar"
 					welsh = "Penntyrau"
+			cornish = "Penntyrau"
+			walas = "Penntyrau"
+			cumbric = "Penntyrau"
 					irish = "Ceann Tòrr"
 				}
 				b_inverurie = {
 					pictish = "Aberury"
 					welsh = "Aberury"
+			cornish = "Aberury"
+			walas = "Aberury"
+			cumbric = "Aberury"
 					irish = "Inbhir Uraidh"
 				}
 				b_fyvie = {
 					pictish = "Carubran"
 					welsh = "Carwbryn"
+			cornish = "Carwbryn"
+			walas = "Carwbryn"
+			cumbric = "Carwbryn"
 					irish = "Fiachein"
 				}
 				b_ellon = {
 					pictish = "Inseeol"
 					welsh = "Ynysol"
+			cornish = "Ynysol"
+			walas = "Ynysol"
+			cumbric = "Ynysol"
 					irish = "Eilean"
 				}
 				b_st_machar = {
 					pictish = "Mabaur"
 					welsh = "Mabfawr Sant"
+			cornish = "Mabfawr Sant"
+			walas = "Mabfawr Sant"
+			cumbric = "Mabfawr Sant"
 					irish = "Naomh Machar"
 				}
 			}
@@ -2106,6 +2466,9 @@ e_britannia = {
 				norse = "Katanæs"
 				pictish = "Cait"
 				welsh = "Caitnys"
+			cornish = "Caitnys"
+			walas = "Caitnys"
+			cumbric = "Caitnys"
 				irish = "Cataibh"
 
 				b_wick = {
@@ -2115,16 +2478,25 @@ e_britannia = {
 					norse = "Vik"
 					pictish = "Aberbachuu"
 					welsh = "Aberbachwy"
+			cornish = "Aberbachwy"
+			walas = "Aberbachwy"
+			cumbric = "Aberbachwy"
 					irish = "Inbhir Ùige"
 				}
 				b_dunbeath = {
 					pictish = "Dunbathac"
 					welsh = "Dinbyddag"
+			cornish = "Dinbyddag"
+			walas = "Dinbyddag"
+			cumbric = "Dinbyddag"
 					irish = "Dùn Beithe"
 				}
 				b_dornoch = {
 					pictish = "Dirnfeth"
 					welsh = "Dyrnfedd"
+			cornish = "Dyrnfedd"
+			walas = "Dyrnfedd"
+			cumbric = "Dyrnfedd"
 					irish = "Dòrnach"
 				}
 				b_thurso = {
@@ -2134,11 +2506,17 @@ e_britannia = {
 					norse = "Tyrså"
 					pictish = "Aberteuafon"
 					welsh = "Abertaewafon"
+			cornish = "Abertaewafon"
+			walas = "Abertaewafon"
+			cumbric = "Abertaewafon"
 					irish = "Inbhir Tarbhainn"
 				}
 				b_dunrobin = {
 					pictish = "Dunrubert"
 					welsh = "Dinraibeart"
+			cornish = "Dinraibeart"
+			walas = "Dinraibeart"
+			cumbric = "Dinraibeart"
 					irish = "Dùnrhobert"
 				}
 				b_freswick = {
@@ -2148,16 +2526,25 @@ e_britannia = {
 					norse = "Fresvik"
 					pictish = "Aberfauur"
 					welsh = "Aberfawr"
+			cornish = "Aberfawr"
+			walas = "Aberfawr"
+			cumbric = "Aberfawr"
 					irish = "Obar Àrdair"
 				}
 				b_latheron = {
 					pictish = "Lathaeron"
 					welsh = "Lladdaeron"
+			cornish = "Lladdaeron"
+			walas = "Lladdaeron"
+			cumbric = "Lladdaeron"
 					irish = "Latharan"
 				}
 				b_golspie = {
 					pictish = "Fostreh"
 					welsh = "Ffostref"
+			cornish = "Ffostref"
+			walas = "Ffostref"
+			cumbric = "Ffostref"
 					irish = "Goillspidh"
 				}
 			}
@@ -2168,46 +2555,73 @@ e_britannia = {
 
 				pictish = "Fortriu"
 				welsh = "Gwrturio"
+			cornish = "Gwrturio"
+			walas = "Gwrturio"
+			cumbric = "Gwrturio"
 				irish = "Muireb"
 
 				b_forres = {
 					pictish = "Uerris"
 					welsh = "Gwerrys"
+			cornish = "Gwerrys"
+			walas = "Gwerrys"
+			cumbric = "Gwerrys"
 					irish = "Farrais"
 				}
 				b_cawdor = {
 					pictish = "Caerdurn"
 					welsh = "Caerdwrn"
+			cornish = "Caerdwrn"
+			walas = "Caerdwrn"
+			cumbric = "Caerdwrn"
 					irish = "Caladar"
 				}
 				b_elgin = {
 					pictish = "Eruan"
 					welsh = "Aergwyn"
+			cornish = "Aergwyn"
+			walas = "Aergwyn"
+			cumbric = "Aergwyn"
 					irish = "Ailgin"
 				}
 				b_nairn = {
 					pictish = "Abernard"
 					welsh = "Abernard"
+			cornish = "Abernard"
+			walas = "Abernard"
+			cumbric = "Abernard"
 					irish = "Inbhir Narann"
 				}
 				b_inverness = {
 					pictish = "Abernis"
 					welsh = "Abernis"
+			cornish = "Abernis"
+			walas = "Abernis"
+			cumbric = "Abernis"
 					irish = "Inbhir Nis"
 				}
 				b_lochindorb = {
 					pictish = "Lansildod"
 					welsh = "Llyn y Sildod"
+			cornish = "Llyn y Sildod"
+			walas = "Llyn y Sildod"
+			cumbric = "Llyn y Sildod"
 					irish = "Loch nan Doirb"
 				}
 				b_kinloss = {
 					pictish = "Canalosc"
 					welsh = "Cynyddullosg"
+			cornish = "Cynyddullosg"
+			walas = "Cynyddullosg"
+			cumbric = "Cynyddullosg"
 					irish = "Cinnlois"
 				}
 				b_urquhart = {
 					pictish = "Urcarthen"
 					welsh = "Aercardden"
+			cornish = "Aercardden"
+			walas = "Aercardden"
+			cumbric = "Aercardden"
 					irish = "Airdchartdan"
 				}
 			}
@@ -2218,11 +2632,17 @@ e_britannia = {
 
 				pictish = "Fidach"
 				welsh = "Gwidauc"
+			cornish = "Gwidauc"
+			walas = "Gwidauc"
+			cumbric = "Gwidauc"
 				irish = "Ros"
 
 				b_applecross = {
 					pictish = "Aporcrosan"
 					welsh = "Aporcrosan"
+			cornish = "Aporcrosan"
+			walas = "Aporcrosan"
+			cumbric = "Aporcrosan"
 					irish = "Obar Crosain"
 				}
 				b_dingwall = {
@@ -2232,35 +2652,56 @@ e_britannia = {
 					norse = "Tingvall"
 					pictish = "Aberpis"
 					welsh = "Aberpeffry"
+			cornish = "Aberpeffry"
+			walas = "Aberpeffry"
+			cumbric = "Aberpeffry"
 					irish = "Inbhir Pheofharain"
 				}
 				b_rosemarkie = {
 					pictish = "Rosanmairch"
 					welsh = "Rhosan Meirchnant"
+			cornish = "Rhosan Meirchnant"
+			walas = "Rhosan Meirchnant"
+			cumbric = "Rhosan Meirchnant"
 					irish = "Ros Mhaircnidh"
 				}
 				b_fortrose = {
 					pictish = "Caerrosan"
 					welsh = "Caerrhosan"
+			cornish = "Caerrhosan"
+			walas = "Caerrhosan"
+			cumbric = "Caerrhosan"
 					irish = "Dùnrois"
 				}
 				b_fearn = {
 					pictish = "Manech Rasan"
 					welsh = "Mynachdy Rhosan"
+			cornish = "Mynachdy Rhosan"
+			walas = "Mynachdy Rhosan"
+			cumbric = "Mynachdy Rhosan"
 					irish = "Manachainn Rois"
 				}
 				b_tain = {
 					welsh = "Duthactref"
+			cornish = "Duthactref"
+			walas = "Duthactref"
+			cumbric = "Duthactref"
 					irish = "Baile Dubhthaich"
 				}
 				b_cromarty = {
 					pictish = "Crucabachu"
 					welsh = "Crwcabachwy"
+			cornish = "Crwcabachwy"
+			walas = "Crwcabachwy"
+			cumbric = "Crwcabachwy"
 					irish = "Crombati"
 				}
 				b_avoch = {
 					pictish = "Aberauc"
 					welsh = "Aberauc"
+			cornish = "Aberauc"
+			walas = "Aberauc"
+			cumbric = "Aberauc"
 					irish = "Abhach"
 				}
 			}
@@ -2273,6 +2714,9 @@ e_britannia = {
 			capital = 71 # Isle of Man
 
 			welsh = "Manaw"
+			cornish = "Manaw"
+			walas = "Manaw"
+			cumbric = "Manaw"
 			norwegian = "Mann"
 			danish = "Mann"
 			swedish = "Mann"
@@ -2294,6 +2738,9 @@ e_britannia = {
 				norse = "Mann"
 				pictish = "Insee Manu"
 				welsh = "Ynys Manaw"
+			cornish = "Aberauc"
+			walas = "Aberauc"
+			cumbric = "Aberauc"
 				irish = "Ellan Mhannin"
 
 				b_peel = {
@@ -2303,31 +2750,49 @@ e_britannia = {
 					norse = "Pålø"
 					pictish = "Pirtinsee"
 					welsh = "Porth Ynys"
+			cornish = "Porth Ynys"
+			walas = "Porth Ynys"
+			cumbric = "Porth Ynys"
 					irish = "Purt ny h-Inshey"
 				}
 				b_rushen = {
 					pictish = "Resan"
 					welsh = "Resyn"
-					irish = "Rosien"
+			cornish = "Resyn"
+			walas = "Resyn"
+			cumbric = "Aberauc"
+					irish Resyn "Rosien"
 				}
 				b_maughold = {
 					pictish = "Mauugan"
 					welsh = "Mawgan Sant"
+			cornish = "Mawgan Sant"
+			walas = "Mawgan Sant"
+			cumbric = "Mawgan Sant"
 					irish = "Macaille"
 				}
 				b_douglas = {
 					pictish = "Duunglasc"
 					welsh = "Duonglassafon"
+			cornish = "Duonglassafon"
+			walas = "Duonglassafon"
+			cumbric = "Duonglassafon"
 					irish = "Duboglassio"
 				}
 				b_kirk_michael = {
 					pictish = "Icluasc Mihagal"
 					welsh = "Eglwys Mihangel"
+			cornish = "Eglwys Mihangel"
+			walas = "Eglwys Mihangel"
+			cumbric = "Eglwys Mihangel"
 					irish = "Cill Micheál"
 				}
 				b_sulby = {
 					pictish = "Drauuglan"
 					welsh = "Drywglyn"
+			cornish = "Drywglyn"
+			walas = "Drywglyn"
+			cumbric = "Drywglyn"
 					irish = "Druígleann"
 					norwegian = "Sõlabyr"
 					danish = "Sõlabyr"
@@ -2336,11 +2801,17 @@ e_britannia = {
 				b_inis_patraic = {
 					pictish = "Inees Pedric"
 					welsh = "Ynys Padric"
+			cornish = "Ynys Padric"
+			walas = "Ynys Padric"
+			cumbric = "Ynys Padric"
 					irish = "Inis Pátraic"
 				}
 				b_laxey = {
 					pictish = "Ahonugad"
 					welsh = "Afoneogiaid"
+			cornish = "Afoneogiaid"
+			walas = "Afoneogiaid"
+			cumbric = "Afoneogiaid"
 					irish = "Uisge Bradán"
 				}
 			}
@@ -2357,6 +2828,9 @@ e_britannia = {
 			norse = "Suðreyjar"
 			pictish = "Insee Hilth"
 			welsh = "Ynysoedd Heledd"
+			cornish = "Afoneogiaid"
+			walas = "Afoneogiaid"
+			cumbric = "Afoneogiaid"
 			irish = "Dál Riata"
 
 			allow = {
@@ -2382,45 +2856,72 @@ e_britannia = {
 
 				pictish = "Ebithan"
 				welsh = "Epiddant"
+			cornish = "Afoneogiaid"
+			walas = "Afoneogiaid"
+			cumbric = "Afoneogiaid"
 				irish = "Airer Goídel"
 
 				b_st_moluag = {
 					pictish = "Malluoc"
 					welsh = "Malluoc Sant"
+			cornish = "Malluoc Sant"
+			walas = "Malluoc Sant"
+			cumbric = "Malluoc Sant"
 					irish = "Naomh Moluóc"
 				}
 				b_dunollie = {
 					pictish = "Dun Ugastel"
 					welsh = "Din Ogystal"
+			cornish = "Din Ogystal"
+			walas = "Din Ogystal"
+			cumbric = "Din Ogystal"
 					irish = " Dùn Ollaigh"
 				}
 				b_loch_awe = {
 					pictish = "Lanahon"
 					welsh = "Llynafon"
+			cornish = "Llynafon"
+			walas = "Llynafon"
+			cumbric = "Llynafon"
 					irish = "Loch Obha"
 				}
 				b_sween = {
 					pictish = "Caer Sauunae"
 					welsh = "Caer Sywny"
+			cornish = "Caer Sywny"
+			walas = "Caer Sywny"
+			cumbric = "Caer Sywny"
 					irish = "Dùn Suibhne"
 				}
 				b_dunstaffnage = {
 					pictish = "Dun Stapan"
 					welsh = "Din Staffpentir"
+			cornish = "Din Staffpentir"
+			walas = "Din Staffpentir"
+			cumbric = "Din Staffpentir"
 					irish = "Dùn Stafhainis"
 				}
 				b_ardchattan = {
 					pictish = "Uchdarcathan"
 					welsh = "Uchdercaddan"
+			cornish = "Uchdercaddan"
+			walas = "Uchdercaddan"
+			cumbric = "Uchdercaddan"
 				}
 				b_kilmun = {
 					pictish = "Caer Muun"
 					welsh = "Caer Munn"
+			cornish = "Caer Munn"
+			walas = "Caer Munn"
+			cumbric = "Caer Munn"
 					irish = "Cill Mhunna"
 				}
 				b_inverary = {
 					pictish = "Aberera"
 					welsh = "Aberaera"
+			cornish = "Aberaera"
+			walas = "Aberaera"
+			cumbric = "Aberaera"
 					irish = "Inbhir Aora"
 				}
 				b_argh = {}
@@ -2436,12 +2937,18 @@ e_britannia = {
 				norse = "Suðreyjar"
 				pictish = "Carnonac"
 				welsh = "Ynysoedd Heledd"
+			cornish = "Ynysoedd Heledd"
+			walas = "Ynysoedd Heledd"
+			cumbric = "Ynysoedd Heledd"
 				irish = "Innse Gall"
 				scottish = "Innse Gall"
 
 				b_snizort = {
 					pictish = "Lantalarc"
 					welsh = "Llantalarican"
+			cornish = "Llantalarican"
+			walas = "Llantalarican"
+			cumbric = "Llantalarican"
 					irish = "Cill Targhlain"
 				}
 				b_stornoway = {
@@ -2451,6 +2958,9 @@ e_britannia = {
 					norse = "Stornavik"
 					pictish = "Laueube"
 					welsh = "Llywiobae"
+			cornish = "Llywiobae"
+			walas = "Llywiobae"
+			cumbric = "Llywiobae"
 					irish = "Steòrnabhagh"
 				}
 				b_uig = {
@@ -2460,11 +2970,17 @@ e_britannia = {
 					norse = "Vik"
 					pictish = "Betret"
 					welsh = "Baetraeth"
+			cornish = "Baetraeth"
+			walas = "Baetraeth"
+			cumbric = "Baetraeth"
 					irish = "Càrnais Ùige"
 				}
 				b_dunvegan = {
 					pictish = "Dun Bachain"
 					welsh = "Din Bychan"
+			cornish = "Din Bychan"
+			walas = "Din Bychan"
+			cumbric = "Din Bychan"
 					irish = "Dùn Bheagain"
 				}
 				b_kiltaraglen = {}
@@ -2478,25 +2994,40 @@ e_britannia = {
 
 				pictish = "Auenle"
 				welsh = "Ywenlle"
+			cornish = "Ywenlle"
+			walas = "Ywenlle"
+			cumbric = "Ywenlle"
 
 				b_iona = {
 					pictish = "Auenle"
 					welsh = "Ywenlle"
+			cornish = "Ywenlle"
+			walas = "Ywenlle"
+			cumbric = "Ywenlle"
 					irish = "Ì Chaluim Chille"
 				}
 				b_finlaggan = {
 					pictish = "Inseepirt"
 					welsh = "Ynysporth"
+			cornish = "Ynysporth"
+			walas = "Ynysporth"
+			cumbric = "Ynysporth"
 					irish = "Port an Eilein"
 				}
 				b_laggan = {
 					pictish = "Nuuathuchel"
 					welsh = "Neuadduchel"
+			cornish = "Neuadduchel"
+			walas = "Neuadduchel"
+			cumbric = "Neuadduchel"
 					irish = "Àird Talla"
 				}
 				b_dunyveg = {
 					pictish = "Dun Galiuu"
 					welsh = "Din Galïau"
+			cornish = "Din Galïau"
+			walas = "Din Galïau"
+			cumbric = "Din Galïau"
 					irish = "Dùn Naomhaig"
 				}
 				b_tobermory = {}
@@ -2517,6 +3048,9 @@ e_britannia = {
 		catholic = 300 # Crusade target weight
 
 		welsh = "Brythoniaid"
+			cornish = "Brythoniaid"
+			walas = "Brythoniaid"
+			cumbric = "Brythoniaid"
 		pictish = "Brythoniaid"
 		breton = "Kembre"
 		irish = "Bhreatain Bheag"
@@ -2601,6 +3135,9 @@ e_britannia = {
 				b_pembroke = {}
 				b_st_davids = {
 					welsh = "Tyddewi"
+			cornish = "Tyddewi"
+			walas = "Tyddewi"
+			cumbric = "Tyddewi"
 					norwegian = "Ramsøy"
 				}
 				b_penycwm = {}
@@ -2621,6 +3158,9 @@ e_britannia = {
 				b_llandeilo = {}
 				b_kidwelly = {
 					welsh = "Cydweli"
+			cornish = "Cydweli"
+			walas = "Cydweli"
+			cumbric = "Cydweli"
 				}
 				b_swansea = {}
 				b_loughor = {}
@@ -2659,6 +3199,9 @@ e_britannia = {
 				color2 = { 255 255 255 }
 
 				welsh = "Morgannwg"
+			cornish = "Morgannwg"
+			walas = "Morgannwg"
+			cumbric = "Morgannwg"
 
 				b_cardiff = {}
 				b_neath = {}
@@ -2783,10 +3326,16 @@ e_britannia = {
 				color2 = { 255 255 255 }
 
 				welsh = Ergyng
+			cornish = "Ergyng"
+			walas = "Ergyng"
+			cumbric = "Ergyng"
 
 				b_st_ethelberts = {}
 				b_hereford = {
 					welsh = "Din Aricon"
+			cornish = "Din Aricon"
+			walas = "Din Aricon"
+			cumbric = "Din Aricon"
 				}
 				b_leominster = {}
 				b_archenfield = {}
@@ -2815,6 +3364,9 @@ e_britannia = {
 				color2 = { 255 255 255 }
 
 				welsh = "Pengwern"
+			cornish = "Pengwern"
+			walas = "Pengwern"
+			cumbric = "Pengwern"
 				anglo-saxon = "Shropshire"
 				english = "Shrewsbury"
 

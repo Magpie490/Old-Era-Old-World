@@ -3389,7 +3389,7 @@
 	name = "Rhodri" # ap Idwal
 	dynasty = 100064 #Gwynedd
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 159020 # Idwal
 	mother = 160047 #Agatha of Brittany
 	700.1.1 = {
@@ -5979,7 +5979,7 @@
 159424 = {
 	name = "Caradog"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 545 #Caradoc
 	240.1.1 = {
 		birth = yes
@@ -5992,7 +5992,7 @@
 159425 = {
 	name = "Meurig"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 545 #Caradoc
 	father = 159424
 	260.1.1 = {
@@ -6006,7 +6006,7 @@
 159426 = {
 	name = "Dynod"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 545 #Caradoc
 	father = 159424
 	281.1.1 = {
@@ -6021,7 +6021,7 @@
 	name = "Ursula"
 	female = yes
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 545 #Caradoc
 	father = 159426
 	286.1.1 = {
@@ -6035,7 +6035,7 @@
 159428 = {
 	name = "Einudd"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029001 #Prydain
 	221.1.1 = {
 		birth = yes
@@ -6048,7 +6048,7 @@
 159429 = {
 	name = "Eudaf" #Hen
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029001 #Prydain
 	father = 159428
 	261.1.1 = {
@@ -6063,7 +6063,7 @@
 	name = "Elen"
 	female = yes
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029001 #Prydain
 	father = 159429
 	340.1.1 = {
@@ -6080,7 +6080,7 @@
 159431 = {
 	name = "Cynan Meiriadog"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159472
 	290.1.1 = {
@@ -6094,7 +6094,7 @@
 159432 = {
 	name = "Cadfan"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159431
 	mother = 159427
@@ -6109,7 +6109,7 @@
 159472 = {
 	name = "Geraint"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029001 #Prydain
 	father = 159428
 	265.1.1 = {
@@ -6123,7 +6123,7 @@
 159435 = {
 	name = "Gwrfawr"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159432
 	330.1.1 = {
@@ -6137,7 +6137,7 @@
 159436 = {
 	name = "Tudwal"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159435
 	360.1.1 = {
@@ -6154,7 +6154,7 @@
 159437 = {
 	name = "Cynfawr"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159436
 	mother = 159811
@@ -6169,7 +6169,7 @@
 159438 = {
 	name = "Custennin" #Constantine of Cornwall
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159437
 	410.1.1 = {
@@ -6183,7 +6183,7 @@
 159439 = {
 	name = "Erbin"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159438
 	430.1.1 = {
@@ -6197,7 +6197,7 @@
 159440 = {
 	name = "Geraint" #Llyngesic
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159439
 	450.1.1 = {
@@ -6214,7 +6214,7 @@
 159441 = {
 	name = "Cadwy"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159440
 	mother = 159753
@@ -6229,7 +6229,7 @@
 159442 = {
 	name = "Custennin"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159441
 	500.1.1 = {
@@ -6245,7 +6245,7 @@
 159443 = {
 	name = "Geraint"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159442
 	530.1.1 = {
@@ -6253,7 +6253,7 @@
 	}
 	577.1.1 = {
 		name = "Gereint"
-		culture = breton
+		culture = cornish
 		dynasty = 1029041 #Devnent
 	}
 	598.1.1 = {
@@ -6264,7 +6264,7 @@
 159444 = {
 	name = "Bledrig"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029041 #Dyfnaint
 	father = 159442
 	535.1.1 = {
@@ -6272,7 +6272,7 @@
 	}
 	577.1.1 = {
 		name = "Bledric"
-		culture = breton
+		culture = cornish
 		dynasty = 1029041 #Devnent
 	}
 	613.1.1 = {
@@ -6284,7 +6284,7 @@
 	name = "Newlyna"
 	female = yes
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159442
 	540.1.1 = {
@@ -6292,7 +6292,7 @@
 	}
 	577.1.1 = {
 		name = "Neulenna"
-		culture = breton
+		culture = cornish
 		dynasty = 1029041 #Devnent
 	}
 	590.1.1 = {
@@ -6303,7 +6303,7 @@
 159752 = {
 	name = "Dywel"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159442
 	543.1.1 = {
@@ -6311,7 +6311,7 @@
 	}
 	577.1.1 = {
 		name = "Domuel"
-		culture = breton
+		culture = cornish
 		dynasty = 1029041 #Devnent
 	}
 	605.1.1 = {
@@ -6323,7 +6323,7 @@
 	name = "Enid"
 	female = yes
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 0 #
 	453.1.1 = {
 		birth = yes
@@ -6336,7 +6336,7 @@
 159754 = {
 	name = "Ermind"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159439
 	452.1.1 = {
@@ -6350,7 +6350,7 @@
 159755 = {
 	name = "Dywel"
 	religion = catholic
-	culture = welsh
+	culture = cornish
 	dynasty = 1029040 #Dyfnaint
 	father = 159439
 	454.1.1 = {
@@ -7760,7 +7760,7 @@
 	intrigue = 3
 	stewardship = 4
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166436
 	957.1.1 = {
 		birth = yes
@@ -7779,7 +7779,7 @@
 	intrigue = 8
 	stewardship = 2
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166437
 	940.1.1 = {
 		birth = yes
@@ -7798,7 +7798,7 @@
 	intrigue = 8
 	stewardship = 2
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166438
 	919.1.1 = {
 		birth = yes
@@ -7817,7 +7817,7 @@
 	intrigue = 4
 	stewardship = 4
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166439
 	895.1.1 = {
 		birth = yes
@@ -7836,7 +7836,7 @@
 	intrigue = 3
 	stewardship = 5
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166440
 	878.1.1 = {
 		birth = yes
@@ -7855,7 +7855,7 @@
 	intrigue = 5
 	stewardship = 3
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166441
 	861.1.1 = {
 		birth = yes
@@ -7877,7 +7877,7 @@
 	intrigue = 3
 	stewardship = 4
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166442
 	mother = 166443
 	844.1.1 = {
@@ -7897,7 +7897,7 @@
 	intrigue = 3
 	stewardship = 6
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166445
 	785.1.1 = {
 		birth = yes
@@ -7916,7 +7916,7 @@
 	intrigue = 2
 	stewardship = 5
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166446
 	768.1.1 = {
 		birth = yes
@@ -7935,7 +7935,7 @@
 	intrigue = 3
 	stewardship = 4
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166448
 	728.1.1 = {
 		birth = yes
@@ -7954,7 +7954,7 @@
 	intrigue = 4
 	stewardship = 5
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166449
 	704.1.1 = {
 		birth = yes
@@ -7973,7 +7973,7 @@
 	intrigue = 3
 	stewardship = 5
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166451
 	678.1.1 = {
 		birth = yes
@@ -7992,7 +7992,7 @@
 	intrigue = 6
 	stewardship = 4
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166453
 	640.1.1 = {
 		birth = yes
@@ -8011,7 +8011,7 @@
 	intrigue = 3
 	stewardship = 4
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166453
 	638.1.1 = {
 		birth = yes
@@ -8030,7 +8030,7 @@
 	intrigue = 4
 	stewardship = 5
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166453
 	635.1.1 = {
 		birth = yes
@@ -8049,7 +8049,7 @@
 	intrigue = 2
 	stewardship = 5
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166455
 	593.1.1 = {
 		birth = yes
@@ -8068,7 +8068,7 @@
 	intrigue = 3
 	stewardship = 5
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166460
 	555.1.1 = {
 		birth = yes
@@ -8087,7 +8087,7 @@
 	intrigue = 2
 	stewardship = 6
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166457
 	568.1.1 = {
 		birth = yes
@@ -8107,7 +8107,7 @@
 	intrigue = 5
 	stewardship = 6
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166458
 	529.1.1 = {
 		birth = yes
@@ -8127,7 +8127,7 @@
 	intrigue = 4
 	stewardship = 5
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166459
 	492.1.1 = {
 		birth = yes
@@ -8146,7 +8146,7 @@
 	intrigue = 6
 	stewardship = 4
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166461
 	464.1.1 = {
 		birth = yes
@@ -8165,7 +8165,7 @@
 	intrigue = 5
 	stewardship = 3
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166461
 	506.1.1 = {
 		birth = yes
@@ -8184,7 +8184,7 @@
 	intrigue = 4
 	stewardship = 8
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166462
 	440.1.1 = {
 		birth = yes
@@ -8204,7 +8204,7 @@
 	intrigue = 6
 	stewardship = 4
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166463
 	422.1.1 = {
 		birth = yes
@@ -8223,7 +8223,7 @@
 	intrigue = 6
 	stewardship = 4
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	add_trait = tough_soldier
 	father = 166464
 	400.1.1 = {
@@ -8239,7 +8239,7 @@
 	# AKA: Cynloyp map Cinhil
 	dynasty = 816
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166465
 	383.1.1 = {
 		birth = yes
@@ -8254,7 +8254,7 @@
 	# AKA: Cinhil map Cluim
 	dynasty = 816
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166466
 	360.1.1 = {
 		birth = yes
@@ -8269,7 +8269,7 @@
 	# AKA: Cluim
 	dynasty = 816
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 252159
 	323.1.1 = {
 		birth = yes
@@ -9775,7 +9775,7 @@
 	name = "Madog" #unknown name
 	dynasty = 816
 	religion = pagan
-	culture = welsh
+	culture = cumbric
 	father = 252141
 	38.1.1 = {
 		birth = yes
@@ -9789,7 +9789,7 @@
 	name = "Cadwr" #unknown name
 	dynasty = 816
 	religion = pagan
-	culture = welsh
+	culture = cumbric
 	father = 252149
 	80.1.1 = {
 		birth = yes
@@ -9803,7 +9803,7 @@
 	name = "Cadwgon" #unknown name
 	dynasty = 816
 	religion = pagan
-	culture = welsh
+	culture = cumbric
 	father = 252150
 	100.1.1 = {
 		birth = yes
@@ -9817,7 +9817,7 @@
 	name = "Corbed" #Corbed/Corvus
 	dynasty = 816
 	religion = pagan
-	culture = welsh
+	culture = cumbric
 	father = 252151
 	120.1.1 = {
 		birth = yes
@@ -9831,7 +9831,7 @@
 	name = "Art Vroisc" #Art Vroisc
 	dynasty = 816
 	religion = pagan
-	culture = welsh
+	culture = cumbric
 	father = 252152
 	150.1.1 = {
 		birth = yes
@@ -9845,7 +9845,7 @@
 	name = "Fer" #Fer
 	dynasty = 816
 	religion = pagan
-	culture = welsh
+	culture = cumbric
 	father = 252153
 	170.1.1 = {
 		birth = yes
@@ -9859,7 +9859,7 @@
 	name = "Duibne Mawr" #Duibne Mawr
 	dynasty = 816
 	religion = pagan
-	culture = welsh
+	culture = cumbric
 	father = 252154
 	192.1.1 = {
 		birth = yes
@@ -9873,7 +9873,7 @@
 	name = "Beinnie" #Beinnie the Briton
 	dynasty = 816
 	religion = pagan
-	culture = welsh
+	culture = cumbric
 	father = 252155
 	212.1.1 = {
 		birth = yes
@@ -9887,7 +9887,7 @@
 	name = "Art" #Art the Young
 	dynasty = 816
 	religion = pagan
-	culture = welsh
+	culture = cumbric
 	father = 252156
 	237.1.1 = {
 		birth = yes
@@ -9901,7 +9901,7 @@
 	name = "Fer" #Fer
 	dynasty = 816
 	religion = pagan
-	culture = welsh
+	culture = cumbric
 	father = 252157
 	256.1.1 = {
 		birth = yes
@@ -9915,7 +9915,7 @@
 	name = "Cursalem" #Cursalem
 	dynasty = 816
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 252158
 	280.1.1 = {
 		birth = yes

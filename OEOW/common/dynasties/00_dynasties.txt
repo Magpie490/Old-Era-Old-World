@@ -16282,7 +16282,748 @@
 	name = "Crwthor"
 	culture = welsh
 }
+#####
 
+155550 = {
+	name = "Ceredigion"
+	culture = walas
+	religion = catholic
+}
+
+155551 = {
+	name = "Caereinion"
+	culture = walas
+}
+
+155552 = {
+	name = "Glastenning"
+	culture = walas
+}
+
+155553 = {
+	name = "Lleyn"
+	culture = walas
+}
+
+155554 = {
+	name = "Mostyn"
+	culture = walas
+}
+
+155555 = {
+	name = "Seisyllwg"
+	culture = walas
+	religion = catholic
+}
+
+155556 = {
+	name = "Rhufoniog"
+	culture = walas
+}
+
+155557 = {
+	name = "Maelor"
+	culture = walas
+}
+
+155558 = {
+	name = "Penllyn"
+	culture = walas
+}
+
+155559 = {
+	name = "Tewdwr"
+	culture = walas
+	religion = catholic
+}
+
+155560 = {
+	name = "Meilyr"
+	culture = walas
+}
+
+155561 = {
+	name = "Mochnant"
+	culture = walas
+}
+
+155562 = {
+	name = "Buellt"
+	culture = walas
+}
+
+155563 = {
+	name = "Llewellyn"
+	culture = walas
+}
+
+155564 = {
+	name = "Mechain"
+	culture = walas
+}
+
+155565 = {
+	name = "Cedewain"
+	culture = walas
+}
+
+155566 = {
+	name = "Penweddig"
+	culture = walas
+}
+
+155567 = {
+	name = "Iâl"
+	culture = walas
+}
+
+155568 = {
+	name = "Amwythig"
+	culture = walas
+}
+
+155569 = {
+	name = "Caerloyw"
+	culture = walas
+}
+
+155570 = {
+	name = "Emlyn"
+	culture = walas
+}
+
+155571 = {
+	name = "Ystrad Tywi"
+	culture = walas
+}
+
+155572 = {
+	name = "Rhuddlan"
+	culture = walas
+}
+
+155573 = {
+	name = "Llwydiarth"
+	culture = walas
+}
+
+155574 = {
+	name = "Aberavon"
+	culture = walas
+}
+
+155575 = {
+	name = "Dunoding"
+	culture = walas
+}
+
+155576 = {
+	name = "Pebidiog"
+	culture = walas
+}
+
+155577 = {
+	name = "Deugleddyf"
+	culture = walas
+}
+
+155578 = {
+	name = "Seisyll"
+	culture = walas
+	religion = catholic
+}
+
+155579 = {
+	name = "Deheuwynt"
+	culture = walas
+}
+
+155580 = {
+	name = "Eginog"
+	culture = walas
+}
+
+155581 = {
+	name = "Gorfynydd"
+	culture = walas
+}
+
+155582 = {
+	name = "Gwyr"
+	culture = walas
+}
+
+155583 = {
+	name = "Senghenydd"
+	culture = walas
+}
+
+155584 = {
+	name = "Rhos"
+	culture = walas
+	religion = catholic
+}
+
+155585 = {
+	name = "Crwthor"
+	culture = walas
+}
+#####
+155650 = {
+	name = "Ceredigion"
+	culture = walas
+	religion = catholic
+}
+
+155651 = {
+	name = "Caereinion"
+	culture = walas
+}
+
+155652 = {
+	name = "Glastenning"
+	culture = walas
+}
+
+155653 = {
+	name = "Lleyn"
+	culture = walas
+}
+
+155654 = {
+	name = "Mostyn"
+	culture = walas
+}
+
+155655 = {
+	name = "Seisyllwg"
+	culture = walas
+	religion = catholic
+}
+
+155656 = {
+	name = "Rhufoniog"
+	culture = walas
+}
+
+155657 = {
+	name = "Maelor"
+	culture = walas
+}
+
+155658 = {
+	name = "Penllyn"
+	culture = walas
+}
+
+155659 = {
+	name = "Tewdwr"
+	culture = walas
+	religion = catholic
+}
+
+155660 = {
+	name = "Meilyr"
+	culture = walas
+}
+
+155661 = {
+	name = "Mochnant"
+	culture = walas
+}
+
+155662 = {
+	name = "Buellt"
+	culture = walas
+}
+
+155663 = {
+	name = "Llewellyn"
+	culture = walas
+}
+
+155664 = {
+	name = "Mechain"
+	culture = walas
+}
+
+155665 = {
+	name = "Cedewain"
+	culture = walas
+}
+
+155666 = {
+	name = "Penweddig"
+	culture = walas
+}
+
+155667 = {
+	name = "Iâl"
+	culture = walas
+}
+
+155668 = {
+	name = "Amwythig"
+	culture = walas
+}
+
+155669 = {
+	name = "Caerloyw"
+	culture = walas
+}
+
+155670 = {
+	name = "Emlyn"
+	culture = walas
+}
+
+155671 = {
+	name = "Ystrad Tywi"
+	culture = walas
+}
+
+155672 = {
+	name = "Rhuddlan"
+	culture = walas
+}
+
+155673 = {
+	name = "Llwydiarth"
+	culture = walas
+}
+
+155674 = {
+	name = "Aberavon"
+	culture = walas
+}
+
+155675 = {
+	name = "Dunoding"
+	culture = walas
+}
+
+155676 = {
+	name = "Pebidiog"
+	culture = walas
+}
+
+155677 = {
+	name = "Deugleddyf"
+	culture = walas
+}
+
+155678 = {
+	name = "Seisyll"
+	culture = walas
+	religion = catholic
+}
+
+155679 = {
+	name = "Deheuwynt"
+	culture = walas
+}
+
+155680 = {
+	name = "Eginog"
+	culture = walas
+}
+
+155681 = {
+	name = "Gorfynydd"
+	culture = walas
+}
+
+155682 = {
+	name = "Gwyr"
+	culture = walas
+}
+
+155683 = {
+	name = "Senghenydd"
+	culture = walas
+}
+
+155684 = {
+	name = "Rhos"
+	culture = walas
+	religion = catholic
+}
+
+155685 = {
+	name = "Crwthor"
+	culture = walas
+}
+#####
+155750 = {
+	name = "Ceredigion"
+	culture = cumbric
+	religion = catholic
+}
+
+155751 = {
+	name = "Caereinion"
+	culture = cumbric
+}
+
+155752 = {
+	name = "Glastenning"
+	culture = cumbric
+}
+
+155753 = {
+	name = "Lleyn"
+	culture = cumbric
+}
+
+155754 = {
+	name = "Mostyn"
+	culture = cumbric
+}
+
+155755 = {
+	name = "Seisyllwg"
+	culture = cumbric
+	religion = catholic
+}
+
+155756 = {
+	name = "Rhufoniog"
+	culture = cumbric
+}
+
+155757 = {
+	name = "Maelor"
+	culture = cumbric
+}
+
+155758 = {
+	name = "Penllyn"
+	culture = cumbric
+}
+
+155759 = {
+	name = "Tewdwr"
+	culture = cumbric
+	religion = catholic
+}
+
+155760 = {
+	name = "Meilyr"
+	culture = cumbric
+}
+
+155761 = {
+	name = "Mochnant"
+	culture = cumbric
+}
+
+155762 = {
+	name = "Buellt"
+	culture = cumbric
+}
+
+155763 = {
+	name = "Llewellyn"
+	culture = cumbric
+}
+
+155764 = {
+	name = "Mechain"
+	culture = cumbric
+}
+
+155765 = {
+	name = "Cedewain"
+	culture = cumbric
+}
+
+155766 = {
+	name = "Penweddig"
+	culture = cumbric
+}
+
+155767 = {
+	name = "Iâl"
+	culture = cumbric
+}
+
+155768 = {
+	name = "Amwythig"
+	culture = cumbric
+}
+
+155769 = {
+	name = "Caerloyw"
+	culture = cumbric
+}
+
+155770 = {
+	name = "Emlyn"
+	culture = cumbric
+}
+
+155771 = {
+	name = "Ystrad Tywi"
+	culture = cumbric
+}
+
+155772 = {
+	name = "Rhuddlan"
+	culture = cumbric
+}
+
+155773 = {
+	name = "Llwydiarth"
+	culture = cumbric
+}
+
+155774 = {
+	name = "Aberavon"
+	culture = cumbric
+}
+
+155775 = {
+	name = "Dunoding"
+	culture = cumbric
+}
+
+155776 = {
+	name = "Pebidiog"
+	culture = cumbric
+}
+
+155777 = {
+	name = "Deugleddyf"
+	culture = cumbric
+}
+
+155778 = {
+	name = "Seisyll"
+	culture = cumbric
+	religion = catholic
+}
+
+155779 = {
+	name = "Deheuwynt"
+	culture = cumbric
+}
+
+155780 = {
+	name = "Eginog"
+	culture = cumbric
+}
+
+155781 = {
+	name = "Gorfynydd"
+	culture = cumbric
+}
+
+155782 = {
+	name = "Gwyr"
+	culture = cumbric
+}
+
+155783 = {
+	name = "Senghenydd"
+	culture = cumbric
+}
+
+155784 = {
+	name = "Rhos"
+	culture = cumbric
+	religion = catholic
+}
+
+155785 = {
+	name = "Crwthor"
+	culture = cumbric
+}
+#####
+155850 = {
+	name = "Ceredigion"
+	culture = cornish
+	religion = catholic
+}
+
+155851 = {
+	name = "Caereinion"
+	culture = cornish
+}
+
+155852 = {
+	name = "Glastenning"
+	culture = cornish
+}
+
+155853 = {
+	name = "Lleyn"
+	culture = cornish
+}
+
+155854 = {
+	name = "Mostyn"
+	culture = cornish
+}
+
+155855 = {
+	name = "Seisyllwg"
+	culture = cornish
+	religion = catholic
+}
+
+155856 = {
+	name = "Rhufoniog"
+	culture = cornish
+}
+
+155857 = {
+	name = "Maelor"
+	culture = cornish
+}
+
+155858 = {
+	name = "Penllyn"
+	culture = cornish
+}
+
+155859 = {
+	name = "Tewdwr"
+	culture = cornish
+	religion = catholic
+}
+
+155860 = {
+	name = "Meilyr"
+	culture = cornish
+}
+
+155861 = {
+	name = "Mochnant"
+	culture = cornish
+}
+
+155862 = {
+	name = "Buellt"
+	culture = cornish
+}
+
+155863 = {
+	name = "Llewellyn"
+	culture = cornish
+}
+
+155864 = {
+	name = "Mechain"
+	culture = cornish
+}
+
+155865 = {
+	name = "Cedewain"
+	culture = cornish
+}
+
+155866 = {
+	name = "Penweddig"
+	culture = cornish
+}
+
+155867 = {
+	name = "Iâl"
+	culture = cornish
+}
+
+155868 = {
+	name = "Amwythig"
+	culture = cornish
+}
+
+155869 = {
+	name = "Caerloyw"
+	culture = cornish
+}
+
+155870 = {
+	name = "Emlyn"
+	culture = cornish
+}
+
+155871 = {
+	name = "Ystrad Tywi"
+	culture = cornish
+}
+
+155872 = {
+	name = "Rhuddlan"
+	culture = cornish
+}
+
+155873 = {
+	name = "Llwydiarth"
+	culture = cornish
+}
+
+155874 = {
+	name = "Aberavon"
+	culture = cornish
+}
+
+155875 = {
+	name = "Dunoding"
+	culture = cornish
+}
+
+155876 = {
+	name = "Pebidiog"
+	culture = cornish
+}
+
+155877 = {
+	name = "Deugleddyf"
+	culture = cornish
+}
+
+155878 = {
+	name = "Seisyll"
+	culture = cornish
+	religion = catholic
+}
+
+155879 = {
+	name = "Deheuwynt"
+	culture = cornish
+}
+
+155880 = {
+	name = "Eginog"
+	culture = cornish
+}
+
+155881 = {
+	name = "Gorfynydd"
+	culture = cornish
+}
+
+155882 = {
+	name = "Gwyr"
+	culture = cornish
+}
+
+155883 = {
+	name = "Senghenydd"
+	culture = cornish
+}
+
+155884 = {
+	name = "Rhos"
+	culture = cornish
+	religion = catholic
+}
+
+155885 = {
+	name = "Crwthor"
+	culture = cornish
+}
+#####
 14286 = {
 	name = "Arfon"
 	culture = welsh

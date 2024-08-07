@@ -1603,6 +1603,9 @@ e_scandinavia = {
 			norse = "Norðreyjar"
 			pictish = "Insee Galeth"
 			welsh = "Ynysoedd Gogledd"
+			cornish = "Ynysoedd Gogledd"
+			walas = "Ynysoedd Gogledd"
+			cumbric = "Ynysoedd Gogledd"
 			irish = "Innse Tuath"
 
 			pagan_coa = {
@@ -1625,6 +1628,9 @@ e_scandinavia = {
 				swedish = "Färöarna"
 				pictish = "Caliu"
 				welsh = "Ynysoedd Ceiliau"
+				cornish = "Ynysoedd Ceiliau"
+				walas = "Ynysoedd Ceiliau"
+				cumbric = "Ynysoedd Ceiliau"
 				irish = "Innse Caora"
 
 				b_skansin = {
@@ -1635,36 +1641,57 @@ e_scandinavia = {
 				b_torshavn = {
 					pictish = "Pirth Taran"
 					welsh = "Porth Taran"
+					cornish = "Porth Taran"
+					walas = "Porth Taran"
+					cumbric = "Porth Taran"
 					irish = "Port Turenn"
 				}
 				b_kirkjubour = {
 					pictish = "Tathinauu"
 					welsh = "Tyddynaueglwys"
+				cornish = "Tyddynaueglwys"
+				walas = "Tyddynaueglwys"
+				cumbric = "Tyddynaueglwys"
 					irish = "Tuathanaseaglais"
 				}
 				b_funningur = {
 					pictish = "Uenaeth"
 					welsh = "Gwynaidd"
+				cornish = "Gwynaidd"
+				walas = "Gwynaidd"
+				cumbric = "Gwynaidd"
 					irish = "Fionnach"
 				}
 				b_kvivik = {
 					pictish = "Culbachuu"
 					welsh = "Culbachwy"
+				cornish = "Culbachwy"
+				walas = "Culbachwy"
+				cumbric = "Culbachwy"
 					irish = "Caolbati"
 				}
 				b_sandur = {
 					pictish = "Insee Tret"
 					welsh = "Ynys Traeth"
+				cornish = "Ynys Traeth"
+				walas = "Ynys Traeth"
+				cumbric = "Ynys Traeth"
 					irish = "Eilean Tràigh"
 				}
 				b_klaksvik = {
 					pictish = "Insee Uun"
 					welsh = "Ynys Edn"
+				cornish = "Ynys Edn"
+				walas = "Ynys Edn"
+				cumbric = "Ynys Edn"
 					irish = "Innis Eun"
 				}
 				b_hov = {
 					pictish = "Icluasc"
 					welsh = "Eglwys"
+				cornish = "Eglwys"
+				walas = "Eglwys"
+				cumbric = "Eglwys"
 					irish = "Eaglais"
 				}
 			}
@@ -1678,6 +1705,9 @@ e_scandinavia = {
 				norse = "Orknö"
 				pictish = "Insee Orc"
 				welsh = "Ynysoedd Orc"
+				cornish = "Eglwys"
+				walas = "Eglwys"
+				cumbric = "Eglwys"
 				irish = "Innse Orc"
 
 				b_kirkwall = {
@@ -1687,6 +1717,9 @@ e_scandinavia = {
 					norse = "Kyrkovik"
 					pictish = "Icluasctreh"
 					welsh = "Eglwystref"
+				cornish = "Eglwys"
+				walas = "Eglwys"
+				cumbric = "Eglwys"
 					irish = "Baile na h-Eaglais"
 				}
 				b_birsay = {
@@ -1696,36 +1729,57 @@ e_scandinavia = {
 					norse = "Birgishærad"
 					pictish = "Brideclauet"
 					welsh = "Ffraidclywed"
+				cornish = "Ffraidclywed"
+				walas = "Ffraidclywed"
+				cumbric = "Ffraidclywed"
 					irish = "Brìghdechuala"
 				}
 				b_orphir = {
 					pictish = "Aerfur"
 					welsh = "Aerfwr"
+				cornish = "Aerfwr"
+				walas = "Aerfwr"
+				cumbric = "Aerfwr"
 					irish = "Ayrfir"
 				}
 				b_westray = {
 					pictish = "Driduana"
 					welsh = "Driduana"
+				cornish = "Driduana"
+				walas = "Driduana"
+				cumbric = "Driduana"
 					irish = "Triduana"
 				}
 				b_wyre = {
 					pictish = "Insee Ware"
 					welsh = "Ynys Wyre"
+				cornish = "Ynys Wyre"
+				walas = "Ynys Wyre"
+				cumbric = "Ynys Wyre"
 					irish = "Innis Weir"
 				}
 				b_egilsay = {
 					pictish = "Insee Icluasc"
 					welsh = "Ynys Eglwys"
+				cornish = "Ynys Eglwys"
+				walas = "Ynys Eglwys"
+				cumbric = "Ynys Eglwys"
 					irish = "Innis Eaglais"
 				}
 				b_sanday = {
 					pictish = "Insee Tiuod"
 					welsh = "Ynys Tywod"
+				cornish = "Ynys Tywod"
+				walas = "Ynys Tywod"
+				cumbric = "Ynys Tywod"
 					irish = "Innis Tràigh"
 				}
 				b_ronaldsay = {
 					pictish = "Insee Ninian"
 					welsh = "Ynys Ninian"
+				cornish = "Ynys Ninian"
+				walas = "Ynys Ninian"
+				cumbric = "Ynys Ninian"
 					irish = "Innis Ronan"
 				}
 			}
@@ -1740,21 +1794,33 @@ e_scandinavia = {
 				norse = "Hjaltland"
 				pictish = "Insee Cait"
 				welsh = "Ynysoedd Cait"
+				cornish = "Ynysoedd Cait"
+				walas = "Ynysoedd Cait"
+				cumbric = "Ynysoedd Cait"
 				irish = "Innse Catt"
 
 				b_scalloway = {
 					pictish = "Bachuuon Maurt"
 					welsh = "Bachwyon Mawrty"
+				cornish = "Bachwyon Mawrty"
+				walas = "Bachwyon Mawrty"
+				cumbric = "Bachwyon Mawrty"
 					irish = "Batin Môrtaigh"
 				}
 				b_muness = {
 					pictish = "Muunis"
 					welsh = "Mwynis"
+				cornish = "Mwynis"
+				walas = "Mwynis"
+				cumbric = "Mwynis"
 					irish = "Mùnis"
 				}
 				b_tingwall = {
 					pictish = "Camanfalioth"
 					welsh = "Cymanfalleoedd"
+				cornish = "Cymanfalleoedd"
+				walas = "Cymanfalleoedd"
+				cumbric = "Cymanfalleoedd"
 					irish = "Coinneamhionad"
 				}
 				b_cunningsburgh = {
@@ -1764,26 +1830,41 @@ e_scandinavia = {
 					norse = "Konungsborg"
 					pictish = "Caer Rui"
 					welsh = "Caer Rhi"
+				cornish = "Caer Rhi"
+				walas = "Caer Rhi"
+				cumbric = "Caer Rhi"
 					irish = "Rìghdùn"
 				}
 				b_sumburgh = {
 					pictish = "Taranupin"
 					welsh = "Taranupenn"
+				cornish = "Taranupenn"
+				walas = "Taranupenn"
+				cumbric = "Taranupenn"
 					irish = "Tàirneanachceann"
 				}
 				b_northmavine = {
 					pictish = "Goglethculder"
 					welsh = "Gogleddculdir"
+				cornish = "Gogleddculdir"
+				walas = "Gogleddculdir"
+				cumbric = "Gogleddculdir"
 					irish = "Tuathcuing"
 				}
 				b_sound = {
 					pictish = "Cliaubae"
 					welsh = "Cleiaubae"
+				cornish = "Cleiaubae"
+				walas = "Cleiaubae"
+				cumbric = "Cleiaubae"
 					irish = "Crèadhbati"
 				}
 				b_yell = {
 					pictish = "Insee Uuan"
 					welsh = "Ynys Gwyn"
+				cornish = "Ynys Gwyn"
+				walas = "Ynys Gwyn"
+				cumbric = "Ynys Gwyn"
 					irish = "Innis Fionn"
 				}
 			}

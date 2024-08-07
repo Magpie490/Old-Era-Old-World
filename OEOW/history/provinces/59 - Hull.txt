@@ -15,14 +15,10 @@ b_wyke = city
 #b_hornsea = castle
 
 # Misc
-culture = anglo-saxon
+culture = walas
 religion = catholic
 
 # History
-866.1.1 = {
-	culture = norse
-	religion = norse_pagan
-}
 954.1.1 = {
 	culture = anglo-saxon
 	religion = catholic

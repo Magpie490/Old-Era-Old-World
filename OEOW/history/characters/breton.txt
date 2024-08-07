@@ -2877,7 +2877,7 @@
 	name = "Cador"
 	dynasty = 1029042 #
 	religion = catholic
-	culture = breton
+	culture = cornish
 	father = 159741
 	1010.1.1 = {
 		birth = yes
@@ -2937,7 +2937,7 @@
 	name = "Dumnarth"
 	dynasty = 1029042
 	religion = catholic
-	culture = breton
+	culture = cornish
 	father = 161282
 	1034.1.1 = {
 		birth = yes
@@ -2968,7 +2968,7 @@
 	name = "Conan"
 	dynasty = 1029042
 	religion = catholic
-	culture = breton
+	culture = cornish
 	father = 161286
 	mother = 161287
 	1062.1.1 = {
@@ -3289,7 +3289,7 @@
 159456 = {
 	name = "Mordaf"
 	religion = catholic
-	culture = breton
+	culture = cornish
 	dynasty = 1029042 #Corneu
 	father = 159455
 	780.1.1 = {
@@ -3303,7 +3303,7 @@
 159457 = {
 	name = "Ferverdyn"
 	religion = catholic
-	culture = breton
+	culture = cornish
 	dynasty = 1029042 #Corneu
 	father = 159456
 	800.1.1 = {
@@ -3317,7 +3317,7 @@
 159458 = {
 	name = "Dumnarth"
 	religion = catholic
-	culture = breton
+	culture = cornish
 	dynasty = 1029042 #Corneu
 	father = 159457
 	830.1.1 = {
@@ -3331,7 +3331,7 @@
 159459 = {
 	name = "Eluid"
 	religion = catholic
-	culture = breton
+	culture = cornish
 	dynasty = 1029042 #Corneu
 	father = 159457
 	840.1.1 = {
@@ -3345,7 +3345,7 @@
 159460 = {
 	name = "Alan"
 	religion = catholic
-	culture = breton
+	culture = cornish
 	dynasty = 1029042 #Corneu
 	father = 159459
 	860.1.1 = {
@@ -3359,7 +3359,7 @@
 159461 = {
 	name = "Hoël"
 	religion = catholic
-	culture = breton
+	culture = cornish
 	dynasty = 1029042 #Corneu
 	father = 159460
 	878.1.1 = {
@@ -3415,7 +3415,7 @@
 159466 = {
 	name = "Conan"
 	religion = catholic
-	culture = breton
+	culture = cornish
 	dynasty = 1029042 #Corneu
 	father = 159461
 	900.1.1 = {
@@ -3429,7 +3429,7 @@
 159467 = {
 	name = "Ricat" #Ricatus, Rygys
 	religion = catholic
-	culture = breton
+	culture = cornish
 	dynasty = 1029042 #Corneu
 	father = 159458
 	866.1.1 = {
@@ -3458,7 +3458,7 @@
 	name = "Salomon" #Selyf
 	dynasty = 1029042 #
 	religion = catholic
-	culture = breton
+	culture = cornish
 	father = 159466
 	919.1.1 = {
 		birth = yes
@@ -3472,7 +3472,7 @@
 	name = "Magalatutus"
 	dynasty = 1029042 #
 	religion = catholic
-	culture = breton
+	culture = cornish
 	father = 159739
 	936.1.1 = {
 		birth = yes
@@ -3486,7 +3486,7 @@
 	name = "Riwal"
 	dynasty = 1029042 #
 	religion = catholic
-	culture = breton
+	culture = cornish
 	father = 159740
 	986.1.1 = {
 		birth = yes

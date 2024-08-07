@@ -6,7 +6,7 @@ tribal = {
 		potential = {
 			OR = {
 				culture = english
-				culture = welsh
+				OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 				has_building = tb_culture_saxon_english_1
 			}
 		}
@@ -14,7 +14,7 @@ tribal = {
 			ROOT = {
 				OR = {
 					culture = english
-					culture = welsh
+					OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 				}
 			}
 		}
@@ -23,7 +23,7 @@ tribal = {
 			ROOT = {
 				OR = {
 					culture = english
-					culture = welsh
+					OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 				}
 			}
 		}
@@ -41,7 +41,7 @@ tribal = {
 		potential = {
 			OR = {
 				culture = english
-				culture = welsh
+				OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 				has_building = tb_culture_saxon_english_1
 				has_building = tb_culture_saxon_english_2
 			}
@@ -50,7 +50,7 @@ tribal = {
 			ROOT = {
 				OR = {
 					culture = english
-					culture = welsh
+					OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 				}
 			}
 		}
@@ -59,7 +59,7 @@ tribal = {
 			ROOT = {
 				OR = {
 					culture = english
-					culture = welsh
+					OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 				}
 			}
 		}
@@ -79,7 +79,7 @@ tribal = {
 		potential = {
 			OR = {
 				culture = english
-				culture = welsh
+				OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 				has_building = tb_culture_saxon_english_1
 				has_building = tb_culture_saxon_english_2
 				has_building = tb_culture_saxon_english_3
@@ -89,7 +89,7 @@ tribal = {
 			ROOT = {
 				OR = {
 					culture = english
-					culture = welsh
+					OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 				}
 			}
 		}
@@ -98,7 +98,7 @@ tribal = {
 			ROOT = {
 				OR = {
 					culture = english
-					culture = welsh
+					OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 				}
 			}
 		}
@@ -116,7 +116,7 @@ tribal = {
 		potential = {
 			OR = {
 				culture = english
-				culture = welsh
+				OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 				has_building = tb_culture_saxon_english_1
 				has_building = tb_culture_saxon_english_2
 				has_building = tb_culture_saxon_english_3
@@ -127,7 +127,7 @@ tribal = {
 			ROOT = {
 				OR = {
 					culture = english
-					culture = welsh
+					OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 				}
 			}
 		}
@@ -136,7 +136,7 @@ tribal = {
 			ROOT = {
 				OR = {
 					culture = english
-					culture = welsh
+					OR = { culture = welsh culture = cornish culture = walas culture = cumbric }
 				}
 			}
 		}
