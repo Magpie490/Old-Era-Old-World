@@ -72,5 +72,4 @@
 	replace_path="history/technology"
 	replace_path="history/titles"
 	replace_path="history/wars"
-	picture="cleanslate.jpg"
 }
