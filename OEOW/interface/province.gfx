@@ -164,7 +164,7 @@ spriteTypes = {
 		name = "GFX_disease_icons"
 		textureFile = "gfx\\interface\\disease_icons.dds"
 		noRefCount = yes
-		noOfFrames = 7
+		noOfFrames = 15
 	}
 
 	spriteType = {
