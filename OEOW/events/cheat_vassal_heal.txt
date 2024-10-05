@@ -1,0 +1,1823 @@
+######################
+#   IN-GAME HEALER   #
+##WRITTEN BY SLVRBUU##
+####CHEAT HAPPENS#####
+######################
+namespace = vheal
+character_event = {
+	id = vheal.1
+	desc = EVTDESCVheal.1
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAAVheal.1
+	}
+	option = {
+		name = EVTOPTBVheal.1
+		tooltip_info = chaste
+		trigger = {
+			FROM = {
+				trait = chaste
+			}
+		}
+		FROM = {
+			remove_trait = chaste
+		}
+	}
+	option = {
+		name = EVTOPTCVheal.1
+		tooltip_info = sickly
+		trigger = {
+			FROM = {
+				trait = sickly
+			}
+		}
+		FROM = {
+			remove_trait = sickly
+		}
+	}
+	option = {
+		name = EVTOPTDVheal.1
+		tooltip_info = has_aztec_disease
+		trigger = {
+			FROM = {
+				trait = has_aztec_disease
+			}
+		}
+		FROM = {
+			remove_trait = has_aztec_disease
+		}
+	}
+	option = {
+		name = EVTOPTEVheal.1
+		tooltip_info = celibate
+		trigger = {
+			FROM = {
+				trait = celibate
+			}
+		}
+		FROM = {
+			remove_trait = celibate
+		}
+	}
+		option = {
+		name = EVTOPTFVheal.1
+		tooltip_info = envious
+		trigger = {
+			FROM = {
+				trait = envious
+			}
+		}
+		FROM = {
+			remove_trait = envious
+		}
+	}
+	option = {
+		name = EVTOPTGVheal.1
+		tooltip_info = cruel
+		trigger = {
+			FROM = {
+				trait = cruel
+			}
+		}
+		FROM = {
+			remove_trait = cruel
+		}
+	}
+	option = {
+		name = EVTOPTHVheal.1
+		tooltip_info = slow
+		trigger = {
+			FROM = {
+				trait = slow
+			}
+		}
+		FROM = {
+			remove_trait = slow
+		}
+	}
+	option = {
+		name = EVTOPTIVheal.1
+		tooltip_info = possessed
+		trigger = {
+			FROM = {
+				trait = possessed
+			}
+		}
+		FROM = {
+			remove_trait = possessed
+		}
+	}
+	option = {
+		name = EVTOPTJVheal.1
+		tooltip_info = drunkard
+		trigger = {
+			FROM = {
+				trait = drunkard
+			}
+		}
+		FROM = {
+			remove_trait = drunkard
+		}
+	}
+	option = {
+		name = EVTOPTKVheal.1
+		tooltip_info = stutter
+		trigger = {
+			FROM = {
+				trait = stutter
+			}
+		}
+		FROM = {
+			remove_trait = stutter
+		}
+	}
+	option = {
+		name = EVTOPTLVheal.1
+		tooltip_info = lisp
+		trigger = {
+			FROM = {
+				trait = lisp
+			}
+		}
+		FROM = {
+			remove_trait = lisp
+		}
+	}
+	option = {
+		name = EVTOPTMVheal.1
+		tooltip_info = hunchback
+		trigger = {
+			FROM = {
+				trait = hunchback
+			}
+		}
+		FROM = {
+			remove_trait = hunchback
+		}
+	}
+	option = {
+		name = EVTOPTNVheal.1
+		tooltip_info = ugly
+		trigger = {
+			FROM = {
+				trait = ugly
+			}
+		}
+		FROM = {
+			remove_trait = ugly
+		}
+	}
+	option = {
+		name = EVTOPTOVheal.1
+		tooltip_info = harelip
+		trigger = {
+			FROM = {
+				trait = harelip
+			}
+		}
+		FROM = {
+			remove_trait = harelip
+		}
+	}
+	option = {
+		name = EVTOPTPVheal.1
+		tooltip_info = dwarf
+		trigger = {
+			FROM = {
+				trait = dwarf
+			}
+		}
+		FROM = {
+			remove_trait = dwarf
+		}
+	}
+	option = {
+		name = EVTOPTQVheal.1
+		tooltip_info = clubfooted
+		trigger = {
+			FROM = {
+				trait = clubfooted
+			}
+		}
+		FROM = {
+			remove_trait = clubfooted
+		}
+	}
+	option = {
+		name = EVTOPTRVheal.1
+		tooltip_info = homosexual
+		trigger = {
+			FROM = {
+				trait = homosexual
+			}
+		}
+		FROM = {
+			remove_trait = homosexual
+		}
+	}
+	option = {
+		name = EVTOPTSVheal.1
+		tooltip_info = imbecile
+		trigger = {
+			FROM = {
+				trait = imbecile
+			}
+		}
+		FROM = {
+			remove_trait = imbecile
+		}
+	}
+	option = {
+		name = EVTOPTTVheal.1
+		tooltip_info = inbred
+		trigger = {
+			FROM = {
+				trait = inbred
+			}
+		}
+		FROM = {
+			remove_trait = inbred
+		}
+	}
+	option = {
+		name = EVTOPTUVheal.1
+		tooltip_info = weak
+		trigger = {
+			FROM = {
+				OR = {
+					trait = weak
+					trait = feeble
+				}
+			}
+		}
+		FROM = {
+			remove_trait = weak
+			remove_trait = feeble
+		}
+	}
+	option = {
+		name = EVTOPTVVheal.1
+		tooltip_info = lustful
+		trigger = {
+			FROM = {
+				trait = lustful
+			}
+		}
+		FROM = {
+			remove_trait = lustful
+		}
+	}
+	option = {
+		name = EVTOPTWVheal.1
+		tooltip_info = slothful
+		trigger = {
+			FROM = {
+				trait = slothful
+			}
+		}
+		FROM = {
+			remove_trait = slothful
+		}
+	}
+	option = {
+		name = EVTOPTXVheal.1
+		tooltip_info = greedy
+		trigger = {
+			FROM = {
+				trait = greedy
+			}
+		}
+		FROM = {
+			remove_trait = greedy
+		}
+	}
+	option = {
+		name = EVTOPTYVheal.1
+		tooltip_info = gluttonous
+		trigger = {
+			FROM = {
+				trait = gluttonous
+			}
+		}
+		FROM = {
+			remove_trait = gluttonous
+		}
+	}
+	option = {
+		name = EVTOPTZVheal.1
+		tooltip_info = wroth
+		trigger = {
+			FROM = {
+				trait = wroth
+			}
+		}
+		FROM = {
+			remove_trait = wroth
+		}
+	}
+	option = {
+		name = EVTOPTAAAVheal.1
+		tooltip_info = proud
+		trigger = {
+			FROM = {
+				trait = proud
+			}
+		}
+		FROM = {
+			remove_trait = proud
+		}
+	}
+	option = {
+		name = EVTOPTABVheal.1
+		tooltip_info = cynical
+		trigger = {
+			FROM = {
+				trait = cynical
+			}
+		}
+		FROM = {
+			remove_trait = cynical
+		}
+	}
+	option = {
+		name = EVTOPTACVheal.1
+		tooltip_info = lunatic
+		trigger = {
+			FROM = {
+				trait = lunatic
+			}
+		}
+		FROM = {
+			remove_trait = lunatic
+		}
+	}
+	option = {
+		name = EVTOPTADVheal.1
+		tooltip_info = stressed
+		trigger = {
+			FROM = {
+				trait = stressed
+			}
+		}
+		FROM = {
+			remove_trait = stressed
+		}
+	}
+	option = {
+		name = EVTOPTAEVheal.1
+		tooltip_info = depressed
+		trigger = {
+			FROM = {
+				trait = depressed
+			}
+		}
+		FROM = {
+			remove_trait = depressed
+		}
+	}
+	option = {
+		name = EVTOPTAFVheal.1
+		tooltip_info = ill
+		trigger = {
+			FROM = {
+				trait = ill
+			}
+		}
+		FROM = {
+			remove_trait = ill
+		}
+	}
+	option = {
+		name = EVTOPTAGVheal.1
+		tooltip_info = pneumonic
+		trigger = {
+			FROM = {
+				trait = pneumonic
+			}
+		}
+		FROM = {
+			remove_trait = pneumonic
+		}
+	}
+	option = {
+		name = EVTOPTAHVheal.1
+		tooltip_info = syphilitic
+		trigger = {
+			FROM = {
+				trait = syphilitic
+			}
+		}
+		FROM = {
+			remove_trait = syphilitic
+		}
+	}
+	option = {
+		name = EVTOPTAIVheal.1
+		tooltip_info = leper
+		trigger = {
+			FROM = {
+				trait = leper
+			}
+		}
+		FROM = {
+			remove_trait = leper
+		}
+	}
+	option = {
+		name = EVTOPTAJVheal.1
+		tooltip_info = wounded
+		trigger = {
+			FROM = {
+				trait = wounded
+			}
+		}
+		FROM = {
+			remove_trait = wounded
+		}
+	}
+	option = {
+		name = EVTOPTAKVheal.1
+		tooltip_info = maimed
+		trigger = {
+			FROM = {
+				trait = maimed
+			}
+		}
+		FROM = {
+			remove_trait = maimed
+		}
+	}
+	option = {
+		name = EVTOPTALVheal.1
+		tooltip_info = infirm
+		trigger = {
+			FROM = {
+				trait = infirm
+			}
+		}
+		FROM = {
+			remove_trait = infirm
+		}
+	}
+	option = {
+		name = EVTOPTAMVheal.1
+		tooltip_info = incapable
+		trigger = {
+			FROM = {
+				trait = incapable
+			}
+		}
+		FROM = {
+			remove_trait = incapable
+		}
+	}
+	option = {
+		name = EVTOPTANVheal.1
+		tooltip_info = has_tuberculosis
+		trigger = {
+			FROM = {
+				trait = has_tuberculosis
+			}
+		}
+		FROM = {
+			remove_trait = has_tuberculosis
+		}
+	}
+	option = {
+		name = EVTOPTAOVheal.1
+		tooltip_info = has_typhoid_fever
+		trigger = {
+			FROM = {
+				trait = has_typhoid_fever
+			}
+		}
+		FROM = {
+			remove_trait = has_typhoid_fever
+		}
+	}
+	option = {
+		name = EVTOPTAPVheal.1
+		tooltip_info = has_typhus
+		trigger = {
+			FROM = {
+				trait = has_typhus
+			}
+		}
+		FROM = {
+			remove_trait = has_typhus
+		}
+	}
+	option = {
+		name = EVTOPTAQVheal.1
+		tooltip_info = has_bubonic_plague
+		trigger = {
+			FROM = {
+				trait = has_bubonic_plague
+			}
+		}
+		FROM = {
+			remove_trait = has_bubonic_plague
+		}
+	}
+	option = {
+		name = EVTOPTARVheal.1
+		tooltip_info = has_measles
+		trigger = {
+			FROM = {
+				trait = has_measles
+			}
+		}
+		FROM = {
+			remove_trait = has_measles
+		}
+	}
+	option = {
+		name = EVTOPTASVheal.1
+		tooltip_info = has_small_pox
+		trigger = {
+			FROM = {
+				trait = has_small_pox
+			}
+		}
+		FROM = {
+			remove_trait = has_small_pox
+		}
+	}
+	option = {
+		name = EVTOPTATVheal.1
+		tooltip_info = blinded
+		trigger = {
+			FROM = {
+				trait = blinded
+			}
+		}
+		FROM = {
+			remove_trait = blinded
+		}
+	}
+	option = {
+		name = EVTOPTAUVheal.1
+		tooltip_info = eunuch
+		trigger = {
+			FROM = {
+				trait = eunuch
+			}
+		}
+		FROM = {
+			remove_trait = eunuch
+		}
+	}
+	option = {
+		name = EVTOPTAVVheal.1
+		tooltip_info = scarred
+		trigger = {
+			FROM = {
+				trait = scarred
+			}
+		}
+		FROM = {
+			remove_trait = scarred
+		}
+	}
+	option = {
+		name = EVTOPTAWVheal.1
+		tooltip_info = kinslayer
+		trigger = {
+			FROM = {
+				trait = kinslayer
+			}
+		}
+		FROM = {
+			remove_trait = kinslayer
+		}
+	}
+	option = {
+		name = EVTOPTAXVheal.1
+		tooltip_info = bastard
+		trigger = {
+			FROM = {
+				trait = bastard
+			}
+		}
+		FROM = {
+			remove_trait = bastard
+		}
+	}
+	option = {
+		name = EVTOPTAYVheal.1
+		tooltip_info = legit_bastard
+		trigger = {
+			FROM = {
+				trait = legit_bastard
+			}
+		}
+		FROM = {
+			remove_trait = legit_bastard
+		}
+	}
+	option = {
+		name = EVTOPTAZVheal.1
+		tooltip_info = paranoid
+		trigger = {
+			FROM = {
+				trait = paranoid
+			}
+		}
+		FROM = {
+			remove_trait = paranoid
+		}
+	}
+	option = {
+		name = EVTOPTBAVheal.1
+		tooltip_info = arbitrary
+		trigger = {
+			FROM = {
+				trait = arbitrary
+			}
+		}
+		FROM = {
+			remove_trait = arbitrary
+		}
+	}
+	option = {
+		name = EVTOPTBBVheal.1
+		tooltip_info = content
+		trigger = {
+			FROM = {
+				trait = content
+			}
+		}
+		FROM = {
+			remove_trait = content
+		}
+	}
+	option = {
+		name = EVTOPTBCVheal.1
+		tooltip_info = shy
+		trigger = {
+			FROM = {
+				trait = shy
+			}
+		}
+		FROM = {
+			remove_trait = shy
+		}
+	}
+	option = {
+		name = EVTOPTBDVheal.1
+		tooltip_info = craven
+		trigger = {
+			FROM = {
+				trait = craven
+			}
+		}
+		FROM = {
+			remove_trait = craven
+		}
+	}
+	option = {
+		name = EVTOPTBEVheal.1
+		tooltip_info = deceitful
+		trigger = {
+			FROM = {
+				trait = deceitful
+			}
+		}
+		FROM = {
+			remove_trait = deceitful
+		}
+	}
+	option = {
+		name = EVTOPTBFVheal.1
+		tooltip_info = hedonist
+		trigger = {
+			FROM = {
+				trait = hedonist
+			}
+		}
+		FROM = {
+			remove_trait = hedonist
+		}
+	}
+	option = {
+		name = EVTOPTBGVheal.1
+		tooltip_info = hand_of_god_player
+		trigger = {
+			FROM = {
+				trait = hand_of_god_player
+			}
+		}
+		FROM = {
+			remove_trait = hand_of_god_player
+		}
+	}
+	option = {
+		name = EVTOPTBHVheal.1
+		tooltip_info = vassal_duty
+		trigger = {
+			FROM = {
+				trait = vassal_duty
+			}
+		}
+		FROM = {
+			remove_trait = vassal_duty
+		}
+	}
+	option = {
+		name = EVTOPTBIVheal.1
+		tooltip_info = bad_priest_christian
+		trigger = {
+			FROM = {
+				OR = {
+					trait = bad_priest_christian
+					trait = bad_priest_muslim
+					trait = bad_priest_norse
+					trait = bad_priest_tengri
+					trait = bad_priest_zoroastrian
+					trait = bad_priest_aztec
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				remove_trait = bad_priest_christian
+				remove_trait = bad_priest_muslim
+				remove_trait = bad_priest_norse
+				remove_trait = bad_priest_tengri
+				remove_trait = bad_priest_zoroastrian
+				remove_trait = bad_priest_aztec
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBJVheal.1
+		tooltip_info = monk
+		trigger = {
+			FROM = {
+				OR = {
+					trait = monk
+					trait = nun
+				}
+			}
+		}
+		FROM = {
+			remove_trait = monk
+			remove_trait = nun
+		}
+	}
+	option = {
+		name = EVTOPTBKVheal.1
+		tooltip_info = dull
+		trigger = {
+			FROM = {
+				trait = dull
+			}
+		}
+		FROM = {
+			remove_trait = dull
+		}
+	}
+	option = {
+		name = EVTOPTBLVheal.1
+		tooltip_info = cough
+		trigger = {
+			FROM = {
+				OR = {
+					trait = cough
+					trait = fever
+					trait = diarrhea
+					trait = vomiting
+					trait = chest_pain
+					trait = cramps
+					trait = rash
+					trait = headache
+					trait = abdominal_pain
+					trait = fatigue
+					trait = malaise
+					trait = infection
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				remove_trait = cough
+				remove_trait = fever
+				remove_trait = diarrhea
+				remove_trait = vomiting
+				remove_trait = chest_pain
+				remove_trait = cramps
+				remove_trait = rash
+				remove_trait = headache
+				remove_trait = abdominal_pain
+				remove_trait = fatigue
+				remove_trait = malaise
+				remove_trait = infection
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBMVheal.1
+		tooltip_info = one_eyed
+		trigger = {
+			FROM = {
+				OR = {
+					trait = one_eyed
+					trait = one_handed
+					trait = one_legged
+					trait = disfigured
+					trait = mangled
+					trait = severely_injured
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				remove_trait = one_eyed
+				remove_trait = one_handed
+				remove_trait = one_legged
+				remove_trait = disfigured
+				remove_trait = mangled
+				remove_trait = severely_injured
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBNVheal.1
+		tooltip_info = excommunicated
+		trigger = {
+			FROM = {
+				trait = excommunicated
+			}
+		}
+		FROM = {
+			remove_trait = excommunicated
+		}
+	}
+	option = {
+		name = EVTOPTBOVheal.1
+		tooltip_info = peasant_leader
+		trigger = {
+			FROM = {
+				trait = peasant_leader
+			}
+		}
+		FROM = {
+			remove_trait = peasant_leader
+		}
+	}
+	option = {
+		name = EVTOPTBPVheal.1
+		tooltip_info = decadent
+		trigger = {
+			FROM = {
+				trait = decadent
+			}
+		}
+		FROM = {
+			remove_trait = decadent
+		}
+	}
+	option = {
+		name = EVTOPTBQVheal.1
+		tooltip_info = stubborn
+		trigger = {
+			FROM = {
+				trait = stubborn
+			}
+		}
+		FROM = {
+			remove_trait = stubborn
+		}
+	}
+	option = {
+		name = EVTOPTBRVheal.1
+		tooltip_info = flu
+		trigger = {
+			FROM = {
+				OR = {
+					trait = flu
+					trait = dysentery
+					trait = gout
+					trait = food_poisoning
+					trait = rabies
+					trait = cancer
+					trait = dancing_plague
+					trait = scurvy
+					trait = sick_incapable
+				}
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				remove_trait = flu
+				remove_trait = dysentery
+				remove_trait = gout
+				remove_trait = food_poisoning
+				remove_trait = rabies
+				remove_trait = cancer
+				remove_trait = dancing_plague
+				remove_trait = scurvy
+				remove_trait = sick_incapable
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBRHeal.0
+		tooltip_info = uncouth
+		trigger = {
+			FROM = {
+				trait = uncouth
+			}
+		}
+		FROM = {
+			remove_trait = uncouth
+		}
+	}
+	option = {
+		name = EVTOPTBSHeal.0
+		tooltip_info = is_fat
+		trigger = {
+			FROM = {
+				trait = is_fat
+			}
+		}
+		FROM = {
+			remove_trait = is_fat
+		}
+	}
+	option = {
+		name = EVTOPTBTHeal.0
+		tooltip_info = is_malnourished
+		trigger = {
+			FROM = {
+				trait = is_malnourished
+			}
+		}
+		FROM = {
+			remove_trait = is_malnourished
+		}
+	}
+	option = {
+		name = EVTOPTBUHeal.0
+		tooltip_info = troubled_pregnancy
+		trigger = {
+			OR = {
+				FROM = {
+					trait = troubled_pregnancy
+					trait = hard_pregnancy
+				}
+			}
+		}
+		FROM = {
+			remove_trait = troubled_pregnancy
+		}
+	}
+	option = {
+		name = EVTOPTBVHeal.0
+		tooltip_info = disinherited
+		trigger = {
+			FROM = {
+				trait = disinherited
+				trait = cannot_marry
+			}
+		}
+		FROM = {
+			remove_trait = disinherited
+			remove_trait = cannot_marry
+		}
+	}
+	option = {
+		name = EVTOPTBWHeal.0
+		tooltip_info = cannibal_trait
+		trigger = {
+			FROM = {
+				trait = cannibal_trait
+			}
+		}
+		FROM = {
+			remove_trait = cannibal_trait
+		}
+	}
+	option = {
+		name = EVTOPTBXHeal.0
+		tooltip_info = slavic_tattoo_1
+		trigger = {
+			FROM = {
+				trait = african_tattoo_1
+				trait = african_tattoo_2
+				trait = african_tattoo_3
+				trait = african_tattoo_4
+				trait = african_tattoo_5
+				trait = african_tattoo_6
+				trait = african_tattoo_7
+				trait = african_tattoo_8
+				trait = african_tattoo_9
+				trait = african_tattoo_10
+				trait = african_tattoo_11
+				trait = african_tattoo_12
+
+				trait = norse_tattoo_1
+				trait = norse_tattoo_2
+				trait = norse_tattoo_3
+				trait = norse_tattoo_4
+				trait = norse_tattoo_5
+				trait = norse_tattoo_6
+
+				trait = slavic_tattoo_1
+				trait = slavic_tattoo_2
+				trait = slavic_tattoo_3
+				trait = slavic_tattoo_4
+				trait = slavic_tattoo_5
+				trait = slavic_tattoo_6
+			}
+		}
+		FROM = {
+			remove_trait = african_tattoo_1
+			remove_trait = african_tattoo_2
+			remove_trait = african_tattoo_3
+			remove_trait = african_tattoo_4
+			remove_trait = african_tattoo_5
+			remove_trait = african_tattoo_6
+			remove_trait = african_tattoo_7
+			remove_trait = african_tattoo_8
+			remove_trait = african_tattoo_9
+			remove_trait = african_tattoo_10
+			remove_trait = african_tattoo_11
+			remove_trait = african_tattoo_12
+
+			remove_trait = norse_tattoo_1
+			remove_trait = norse_tattoo_2
+			remove_trait = norse_tattoo_3
+			remove_trait = norse_tattoo_4
+			remove_trait = norse_tattoo_5
+			remove_trait = norse_tattoo_6
+
+			remove_trait = slavic_tattoo_1
+			remove_trait = slavic_tattoo_2
+			remove_trait = slavic_tattoo_3
+			remove_trait = slavic_tattoo_4
+			remove_trait = slavic_tattoo_5
+			remove_trait = slavic_tattoo_6
+		}
+	}
+}
+
+character_event = {
+	id = vheal.0
+	desc = EVTDESCVheal.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAAVheal.0
+	}
+	option = {
+		name = EVTOPTBVheal.0
+		tooltip_info = chaste
+		trigger = {
+			trait = chaste
+		}
+		remove_trait = chaste
+	}
+	option = {
+		name = EVTOPTCVheal.0
+		tooltip_info = sickly
+		trigger = {
+			trait = sickly
+		}
+		remove_trait = sickly
+	}
+	option = {
+		name = EVTOPTDVheal.0
+		tooltip_info = has_aztec_disease
+		trigger = {
+			trait = has_aztec_disease
+		}
+		remove_trait = has_aztec_disease
+	}
+	option = {
+		name = EVTOPTEVheal.0
+		tooltip_info = celibate
+		trigger = {
+			trait = celibate
+		}
+		remove_trait = celibate
+	}
+		option = {
+		name = EVTOPTFVheal.0
+		tooltip_info = envious
+		trigger = {
+			trait = envious
+		}
+		remove_trait = envious
+	}
+	option = {
+		name = EVTOPTGVheal.0
+		tooltip_info = cruel
+		trigger = {
+			trait = cruel
+		}
+		remove_trait = cruel
+	}
+	option = {
+		name = EVTOPTHVheal.0
+		tooltip_info = slow
+		trigger = {
+			trait = slow
+		}
+		remove_trait = slow
+	}
+	option = {
+		name = EVTOPTIVheal.0
+		tooltip_info = possessed
+		trigger = {
+			trait = possessed
+		}
+		remove_trait = possessed
+	}
+	option = {
+		name = EVTOPTJVheal.0
+		tooltip_info = drunkard
+		trigger = {
+			trait = drunkard
+		}
+		remove_trait = drunkard
+	}
+	option = {
+		name = EVTOPTKVheal.0
+		tooltip_info = stutter
+		trigger = {
+			trait = stutter
+		}
+		remove_trait = stutter
+	}
+	option = {
+		name = EVTOPTLVheal.0
+		tooltip_info = lisp
+		trigger = {
+			trait = lisp
+		}
+		remove_trait = lisp
+	}
+	option = {
+		name = EVTOPTMVheal.0
+		tooltip_info = hunchback
+		trigger = {
+			trait = hunchback
+		}
+		remove_trait = hunchback
+	}
+	option = {
+		name = EVTOPTNVheal.0
+		tooltip_info = ugly
+		trigger = {
+			trait = ugly
+		}
+		remove_trait = ugly
+	}
+	option = {
+		name = EVTOPTOVheal.0
+		tooltip_info = harelip
+		trigger = {
+			trait = harelip
+		}
+		remove_trait = harelip
+	}
+	option = {
+		name = EVTOPTPVheal.0
+		tooltip_info = dwarf
+		trigger = {
+			trait = dwarf
+		}
+		remove_trait = dwarf
+	}
+	option = {
+		name = EVTOPTQVheal.0
+		tooltip_info = clubfooted
+		trigger = {
+			trait = clubfooted
+		}
+		remove_trait = clubfooted
+	}
+	option = {
+		name = EVTOPTRVheal.0
+		tooltip_info = homosexual
+		trigger = {
+			trait = homosexual
+		}
+		remove_trait = homosexual
+	}
+	option = {
+		name = EVTOPTSVheal.0
+		tooltip_info = imbecile
+		trigger = {
+			trait = imbecile
+		}
+		remove_trait = imbecile
+	}
+	option = {
+		name = EVTOPTTVheal.0
+		tooltip_info = inbred
+		trigger = {
+			trait = inbred
+		}
+		remove_trait = inbred
+	}
+	option = {
+		name = EVTOPTUVheal.0
+		tooltip_info = weak
+		trigger = {
+			OR = {
+				trait = weak
+				trait = feeble
+			}
+		}
+		remove_trait = weak
+		remove_trait = feeble
+	}
+	option = {
+		name = EVTOPTVVheal.0
+		tooltip_info = lustful
+		trigger = {
+			trait = lustful
+		}
+		remove_trait = lustful
+	}
+	option = {
+		name = EVTOPTWVheal.0
+		tooltip_info = slothful
+		trigger = {
+			trait = slothful
+		}
+		remove_trait = slothful
+	}
+	option = {
+		name = EVTOPTXVheal.0
+		tooltip_info = greedy
+		trigger = {
+			trait = greedy
+		}
+		remove_trait = greedy
+	}
+	option = {
+		name = EVTOPTYVheal.0
+		tooltip_info = gluttonous
+		trigger = {
+			trait = gluttonous
+		}
+		remove_trait = gluttonous
+	}
+	option = {
+		name = EVTOPTZVheal.0
+		tooltip_info = wroth
+		trigger = {
+			trait = wroth
+		}
+		remove_trait = wroth
+	}
+	option = {
+		name = EVTOPTAAAVheal.0
+		tooltip_info = proud
+		trigger = {
+			trait = proud
+		}
+		remove_trait = proud
+	}
+	option = {
+		name = EVTOPTABVheal.0
+		tooltip_info = cynical
+		trigger = {
+			trait = cynical
+		}
+		remove_trait = cynical
+	}
+	option = {
+		name = EVTOPTACVheal.0
+		tooltip_info = lunatic
+		trigger = {
+			trait = lunatic
+		}
+		remove_trait = lunatic
+	}
+	option = {
+		name = EVTOPTADVheal.0
+		tooltip_info = stressed
+		trigger = {
+			trait = stressed
+		}
+		remove_trait = stressed
+	}
+	option = {
+		name = EVTOPTAEVheal.0
+		tooltip_info = depressed
+		trigger = {
+			trait = depressed
+		}
+		remove_trait = depressed
+	}
+	option = {
+		name = EVTOPTAFVheal.0
+		tooltip_info = ill
+		trigger = {
+			trait = ill
+		}
+		remove_trait = ill
+	}
+	option = {
+		name = EVTOPTAGVheal.0
+		tooltip_info = pneumonic
+		trigger = {
+			trait = pneumonic
+		}
+		remove_trait = pneumonic
+	}
+	option = {
+		name = EVTOPTAHVheal.0
+		tooltip_info = syphilitic
+		trigger = {
+			trait = syphilitic
+		}
+		remove_trait = syphilitic
+	}
+	option = {
+		name = EVTOPTAIVheal.0
+		tooltip_info = leper
+		trigger = {
+			trait = leper
+		}
+		remove_trait = leper
+	}
+	option = {
+		name = EVTOPTAJVheal.0
+		tooltip_info = wounded
+		trigger = {
+			trait = wounded
+		}
+		remove_trait = wounded
+	}
+	option = {
+		name = EVTOPTAKVheal.0
+		tooltip_info = maimed
+		trigger = {
+			trait = maimed
+		}
+		remove_trait = maimed
+	}
+	option = {
+		name = EVTOPTALVheal.0
+		tooltip_info = infirm
+		trigger = {
+			trait = infirm
+		}
+		remove_trait = infirm
+	}
+	option = {
+		name = EVTOPTAMVheal.0
+		tooltip_info = incapable
+		trigger = {
+			trait = incapable
+		}
+		remove_trait = incapable
+	}
+	option = {
+		name = EVTOPTANVheal.0
+		tooltip_info = has_tuberculosis
+		trigger = {
+			trait = has_tuberculosis
+		}
+		remove_trait = has_tuberculosis
+	}
+	option = {
+		name = EVTOPTAOVheal.0
+		tooltip_info = has_typhoid_fever
+		trigger = {
+			trait = has_typhoid_fever
+		}
+		remove_trait = has_typhoid_fever
+	}
+	option = {
+		name = EVTOPTAPVheal.0
+		tooltip_info = has_typhus
+		trigger = {
+			trait = has_typhus
+		}
+		remove_trait = has_typhus
+	}
+	option = {
+		name = EVTOPTAQVheal.0
+		tooltip_info = has_bubonic_plague
+		trigger = {
+			trait = has_bubonic_plague
+		}
+		remove_trait = has_bubonic_plague
+	}
+	option = {
+		name = EVTOPTARVheal.0
+		tooltip_info = has_measles
+		trigger = {
+			trait = has_measles
+		}
+		remove_trait = has_measles
+	}
+	option = {
+		name = EVTOPTASVheal.0
+		tooltip_info = has_small_pox
+		trigger = {
+			trait = has_small_pox
+		}
+		remove_trait = has_small_pox
+	}
+	option = {
+		name = EVTOPTATVheal.0
+		tooltip_info = blinded
+		trigger = {
+			trait = blinded
+		}
+		remove_trait = blinded
+	}
+	option = {
+		name = EVTOPTAUVheal.0
+		tooltip_info = eunuch
+		trigger = {
+			trait = eunuch
+		}
+		remove_trait = eunuch
+	}
+	option = {
+		name = EVTOPTAVVheal.0
+		tooltip_info = scarred
+		trigger = {
+			trait = scarred
+		}
+		remove_trait = scarred
+	}
+	option = {
+		name = EVTOPTAWVheal.0
+		tooltip_info = kinslayer
+		trigger = {
+			trait = kinslayer
+		}
+		remove_trait = kinslayer
+	}
+	option = {
+		name = EVTOPTAXVheal.0
+		tooltip_info = bastard
+		trigger = {
+			trait = bastard
+		}
+		remove_trait = bastard
+	}
+	option = {
+		name = EVTOPTAYVheal.0
+		tooltip_info = legit_bastard
+		trigger = {
+			trait = legit_bastard
+		}
+		remove_trait = legit_bastard
+	}
+	option = {
+		name = EVTOPTAZVheal.0
+		tooltip_info = paranoid
+		trigger = {
+			trait = paranoid
+		}
+		remove_trait = paranoid
+	}
+	option = {
+		name = EVTOPTBAVheal.0
+		tooltip_info = arbitrary
+		trigger = {
+			trait = arbitrary
+		}
+		remove_trait = arbitrary
+	}
+	option = {
+		name = EVTOPTBBVheal.0
+		tooltip_info = content
+		trigger = {
+			trait = content
+		}
+		remove_trait = content
+	}
+	option = {
+		name = EVTOPTBCVheal.0
+		tooltip_info = shy
+		trigger = {
+			trait = shy
+		}
+		remove_trait = shy
+	}
+	option = {
+		name = EVTOPTBDVheal.0
+		tooltip_info = craven
+		trigger = {
+			trait = craven
+		}
+		remove_trait = craven
+	}
+	option = {
+		name = EVTOPTBEVheal.0
+		tooltip_info = deceitful
+		trigger = {
+			trait = deceitful
+		}
+		remove_trait = deceitful
+	}
+	option = {
+		name = EVTOPTBFVheal.0
+		tooltip_info = hedonist
+		trigger = {
+			trait = hedonist
+		}
+		remove_trait = hedonist
+	}
+	option = {
+		name = EVTOPTBGVheal.0
+		tooltip_info = hand_of_god_player
+		trigger = {
+			trait = hand_of_god_player
+		}
+		remove_trait = hand_of_god_player
+	}
+	option = {
+		name = EVTOPTBHVheal.0
+		tooltip_info = vassal_duty
+		trigger = {
+			trait = vassal_duty
+		}
+		remove_trait = vassal_duty
+	}
+	option = {
+		name = EVTOPTBIVheal.0
+		tooltip_info = bad_priest_christian
+		trigger = {
+			OR = {
+			trait = bad_priest_christian
+			trait = bad_priest_muslim
+			trait = bad_priest_norse
+			trait = bad_priest_tengri
+			trait = bad_priest_zoroastrian
+			trait = bad_priest_aztec
+			}
+		}
+		remove_trait = bad_priest_christian
+		hidden_tooltip = {
+			remove_trait = bad_priest_muslim
+			remove_trait = bad_priest_norse
+			remove_trait = bad_priest_tengri
+			remove_trait = bad_priest_zoroastrian
+			remove_trait = bad_priest_aztec
+		}
+	}
+	option = {
+		name = EVTOPTBJVheal.0
+		tooltip_info = monk
+		trigger = {
+			OR = {
+				trait = monk
+				trait = nun
+			}
+		}
+		remove_trait = monk
+		remove_trait = nun
+	}
+	option = {
+		name = EVTOPTBKVheal.0
+		tooltip_info = dull
+		trigger = {
+			trait = dull
+		}
+		remove_trait = dull
+	}
+	option = {
+		name = EVTOPTBLVheal.0
+		tooltip_info = cough
+		trigger = {
+			OR = {
+				trait = cough
+				trait = fever
+				trait = diarrhea
+				trait = vomiting
+				trait = chest_pain
+				trait = cramps
+				trait = rash
+				trait = headache
+				trait = abdominal_pain
+				trait = fatigue
+				trait = malaise
+				trait = infection
+			}
+		}
+		hidden_tooltip = {
+			remove_trait = cough
+			remove_trait = fever
+			remove_trait = diarrhea
+			remove_trait = vomiting
+			remove_trait = chest_pain
+			remove_trait = cramps
+			remove_trait = rash
+			remove_trait = headache
+			remove_trait = abdominal_pain
+			remove_trait = fatigue
+			remove_trait = malaise
+			remove_trait = infection
+		}
+	}
+	option = {
+		name = EVTOPTBMVheal.0
+		tooltip_info = one_eyed
+		trigger = {
+			OR = {
+				trait = one_eyed
+				trait = one_handed
+				trait = one_legged
+				trait = disfigured
+				trait = mangled
+				trait = severely_injured
+			}
+		}
+                hidden_tooltip = {
+					remove_trait = one_eyed
+					remove_trait = one_handed
+					remove_trait = one_legged
+					remove_trait = disfigured
+					remove_trait = mangled
+					remove_trait = severely_injured
+				}
+	}
+	option = {
+		name = EVTOPTBNVheal.0
+		tooltip_info = excommunicated
+		trigger = {
+			trait = excommunicated
+		}
+		remove_trait = excommunicated
+	}
+	option = {
+		name = EVTOPTBOVheal.0
+		tooltip_info = peasant_leader
+		trigger = {
+			trait = peasant_leader
+		}
+		remove_trait = peasant_leader
+	}
+	option = {
+		name = EVTOPTBPVheal.0
+		tooltip_info = decadent
+		trigger = {
+			trait = decadent
+		}
+		remove_trait = decadent
+	}
+	option = {
+		name = EVTOPTBQVheal.0
+		tooltip_info = stubborn
+		trigger = {
+			trait = stubborn
+		}
+		remove_trait = stubborn
+	}
+	option = {
+		name = EVTOPTBRVheal.0
+		tooltip_info = flu
+		trigger = {
+			OR = {
+				trait = flu
+				trait = dysentery
+				trait = gout
+				trait = food_poisoning
+				trait = rabies
+				trait = cancer
+				trait = dancing_plague
+				trait = scurvy
+				trait = sick_incapable
+			}
+		}
+		hidden_tooltip = {
+			remove_trait = flu
+			remove_trait = dysentery
+			remove_trait = gout
+			remove_trait = food_poisoning
+			remove_trait = rabies
+			remove_trait = cancer
+			remove_trait = dancing_plague
+			remove_trait = scurvy
+			remove_trait = sick_incapable
+		}
+	}
+	option = {
+		name = EVTOPTBRHeal.0
+		tooltip_info = uncouth
+		trigger = {
+			trait = uncouth
+		}
+		remove_trait = uncouth
+	}
+	option = {
+		name = EVTOPTBSHeal.0
+		tooltip_info = is_fat
+		trigger = {
+			trait = is_fat
+		}
+		remove_trait = is_fat
+	}
+	option = {
+		name = EVTOPTBTHeal.0
+		tooltip_info = is_malnourished
+		trigger = {
+			trait = is_malnourished
+		}
+		remove_trait = is_malnourished
+	}
+	option = {
+		name = EVTOPTBUHeal.0
+		tooltip_info = troubled_pregnancy
+		trigger = {
+			OR = {
+				trait = troubled_pregnancy
+				trait = hard_pregnancy
+			}
+		}
+		remove_trait = troubled_pregnancy
+	}
+	option = {
+		name = EVTOPTBVHeal.0
+		tooltip_info = disinherited
+		trigger = {
+			trait = disinherited
+			trait = cannot_marry
+		}
+		remove_trait = disinherited
+		remove_trait = cannot_marry
+	}
+	option = {
+		name = EVTOPTBWHeal.0
+		tooltip_info = cannibal_trait
+		trigger = {
+			trait = cannibal_trait
+		}
+		remove_trait = cannibal_trait
+	}
+	option = {
+		name = EVTOPTBXHeal.0
+		tooltip_info = slavic_tattoo_1
+		trigger = {
+			trait = african_tattoo_1
+			trait = african_tattoo_2
+			trait = african_tattoo_3
+			trait = african_tattoo_4
+			trait = african_tattoo_5
+			trait = african_tattoo_6
+			trait = african_tattoo_7
+			trait = african_tattoo_8
+			trait = african_tattoo_9
+			trait = african_tattoo_10
+			trait = african_tattoo_11
+			trait = african_tattoo_12
+
+			trait = norse_tattoo_1
+			trait = norse_tattoo_2
+			trait = norse_tattoo_3
+			trait = norse_tattoo_4
+			trait = norse_tattoo_5
+			trait = norse_tattoo_6
+
+			trait = slavic_tattoo_1
+			trait = slavic_tattoo_2
+			trait = slavic_tattoo_3
+			trait = slavic_tattoo_4
+			trait = slavic_tattoo_5
+			trait = slavic_tattoo_6
+		}
+		hidden_tooltip = {
+			remove_trait = african_tattoo_1
+			remove_trait = african_tattoo_2
+			remove_trait = african_tattoo_3
+			remove_trait = african_tattoo_4
+			remove_trait = african_tattoo_5
+			remove_trait = african_tattoo_6
+			remove_trait = african_tattoo_7
+			remove_trait = african_tattoo_8
+			remove_trait = african_tattoo_9
+			remove_trait = african_tattoo_10
+			remove_trait = african_tattoo_11
+			remove_trait = african_tattoo_12
+
+			remove_trait = norse_tattoo_1
+			remove_trait = norse_tattoo_2
+			remove_trait = norse_tattoo_3
+			remove_trait = norse_tattoo_4
+			remove_trait = norse_tattoo_5
+			remove_trait = norse_tattoo_6
+
+			remove_trait = slavic_tattoo_1
+			remove_trait = slavic_tattoo_2
+			remove_trait = slavic_tattoo_3
+			remove_trait = slavic_tattoo_4
+			remove_trait = slavic_tattoo_5
+			remove_trait = slavic_tattoo_6
+		}
+	}
+}

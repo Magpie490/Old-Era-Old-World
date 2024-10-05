@@ -1,0 +1,93 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_t_cheat_toggle"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_cheat_menu"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_heal_menu"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_trait_menu"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_quick_menu"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_boost_menu"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_create_men"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_create_women"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_create_army"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_create_fleet"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_cheat_toggle_heal"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_main_menu"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_cheat_right_toggle"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_buff_provinces"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_buff_provinces_off"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_buff_provinces_ai"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_buff_provinces_ai_off"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_prosp_provinces"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_prosp_provinces_off"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_buff_d_provinces_off"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_buff_d_provinces"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_t_clean_provinces"
+		texturefile = "gfx\\interface\\decision_icon_cheat_menu.dds"
+	}
+}
+
+

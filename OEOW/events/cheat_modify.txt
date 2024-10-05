@@ -1,0 +1,294 @@
+#########################
+####CHARACTER MODIFIER###
+####
+###
+##
+#
+namespace = modify
+character_event = {
+	id = modify.0
+	desc = EVTDESCModify.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+		option = {
+		name = EVTOPTAModify.0
+		}
+		option = {
+		name = EVTOPTBModify.0
+			trigger = {
+					NOT = { has_character_modifier = cheat_character }
+			}
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = cheat_character
+				duration = -1
+			}
+		}
+		}
+		option = {
+			name = EVTOPTBBModify.0
+				trigger = { has_character_modifier = cheat_character }
+			hidden_tooltip = {
+				remove_character_modifier = cheat_character
+			}
+		}
+}
+#########################
+####PROVINCE MODIFIER####
+####
+###
+##
+#
+character_event = {
+	id = modify.1
+	desc = EVTDESCModify.1
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+		option = {
+		name = EVTOPTAModify.1
+		}
+		option = {
+		name = EVTOPTBModify.1
+			trigger = {
+				job_spymaster = {
+					location = {
+						NOT = { has_province_modifier = cheat_prov }
+					}
+				}
+			}
+			job_spymaster = {
+				hidden_tooltip = {
+					location = {
+						add_province_modifier = {
+							name = cheat_prov
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+		option = {
+		name = EVTOPTBBModify.1
+			trigger = {
+				job_spymaster = {
+					location = {
+						has_province_modifier = cheat_prov
+					}
+				}
+			}
+			job_spymaster = {
+				hidden_tooltip = {
+					location = {
+						if = {
+							limit = { has_province_modifier = cheat_prov }
+							remove_province_modifier = cheat_prov
+						}
+					}
+				}
+			}
+		}
+}
+
+character_event = {
+	id = modify.2
+	desc = EVTDESCModify.2
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+		option = {
+			name = EVTOPTAModify.2
+		}
+		option = {
+			name = EVTOPTBModify.2
+			trigger = {
+				any_character = {
+					has_character_flag = cheat_tar_dead
+				}
+			}
+			any_character = {
+				limit = {
+					has_character_flag = cheat_tar_dead
+				}
+				create_character = {
+					age = 0
+					trait = legit_bastard
+					dynasty = ROOT
+					race = ROOT
+					culture = root
+					female = no
+				}
+				new_character = {
+					if = {
+						limit = {
+							ROOT = { is_female = no }
+						}
+						set_father = ROOT
+					}
+					if = {
+						limit = {
+							ROOT = { is_female = yes }
+						}
+						set_mother = ROOT
+					}
+				}
+				clr_character_flag = cheat_tar_dead
+			}
+		}
+		option = {
+			name = EVTOPTCModify.2
+			trigger = {
+				any_character = {
+					has_character_flag = cheat_tar_dead
+				}
+			}
+			any_character = {
+				limit = {
+					has_character_flag = cheat_tar_dead
+				}
+				create_character = {
+					age = 0
+					trait = legit_bastard
+					dynasty = ROOT
+					race = ROOT
+					culture = root
+					female = yes
+				}
+				new_character = {
+					if = {
+						limit = {
+							ROOT = { is_female = no }
+						}
+						set_father = ROOT
+					}
+					if = {
+						limit = {
+							ROOT = { is_female = yes }
+						}
+						set_mother = ROOT
+					}
+				}
+				clr_character_flag = cheat_tar_dead
+			}
+		}
+}
+character_event = {
+	id = modify.3
+	desc = EVTDESCModify.3
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+		option = {
+			name = EVTOPTAModify.3
+		}
+		option = {
+			name = EVTOPTBModify.3
+			trigger = {
+				any_character = {
+					has_character_flag = cheat_tar_dead
+				}
+			}
+			if = {
+				limit = {
+					is_female = no
+					any_spouse_even_if_dead = { count = 1 }
+				}
+				any_character = {
+					limit = {
+						has_character_flag = cheat_tar_dead
+					}
+					dynasty = ROOT
+					set_father = ROOT
+					ROOT = {
+						any_spouse_even_if_dead = {
+							PREVPREV = {
+								set_mother = PREV
+							}
+						}
+					}
+					any_child_even_if_dead = {
+						dynasty = ROOT
+							any_child_even_if_dead = {
+								dynasty = ROOT
+								any_child_even_if_dead = {
+									dynasty = ROOT
+								}
+							}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_female = no
+					NOT = { any_spouse_even_if_dead = { count = 1 } }
+				}
+				any_character = {
+					limit = {
+						has_character_flag = cheat_tar_dead
+					}
+					dynasty = ROOT
+					set_father = ROOT
+					any_child_even_if_dead = {
+						dynasty = ROOT
+							any_child_even_if_dead = {
+								dynasty = ROOT
+								any_child_even_if_dead = {
+									dynasty = ROOT
+								}
+							}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_female = yes
+					any_spouse_even_if_dead = { count = 1 }
+				}
+				any_character = {
+					limit = {
+						has_character_flag = cheat_tar_dead
+					}
+					dynasty = ROOT
+					set_mother = ROOT
+					ROOT = {
+						any_spouse_even_if_dead = {
+							PREVPREV = {
+								set_father = PREV
+							}
+						}
+					}
+					any_child_even_if_dead = {
+						dynasty = ROOT
+							any_child_even_if_dead = {
+								dynasty = ROOT
+								any_child_even_if_dead = {
+									dynasty = ROOT
+								}
+							}
+					}
+				}
+			}
+			else = {
+				limit = {
+					is_female = yes
+					NOT = { any_spouse_even_if_dead = { count = 1 } }
+				}
+				any_character = {
+					limit = {
+						has_character_flag = cheat_tar_dead
+					}
+					dynasty = ROOT
+					set_mother = ROOT
+					any_child_even_if_dead = {
+						dynasty = ROOT
+							any_child_even_if_dead = {
+								dynasty = ROOT
+								any_child_even_if_dead = {
+									dynasty = ROOT
+								}
+							}
+					}
+				}
+			}
+		}
+}

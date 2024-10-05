@@ -1,0 +1,1101 @@
+######################
+####VASSAL EDITOR#####
+##WRITTEN BY SLVRBUU##
+####CHEAT HAPPENS#####
+######################
+#        MENU        #
+######################
+namespace = vas
+character_event = {
+	id = vas.0
+	desc = EVTDESCVas.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+		option = {
+		name = EVTOPTDVas.0
+	}
+	option = {
+		name = EVTOPTAVas.0
+		trigger = {
+				NOT = {
+					trait = vassal_duty
+				}
+		}
+		add_trait = vassal_duty		
+	}
+		option = {
+		name = EVTOPTAAVas.0
+		tooltip_info = vassal_duty
+		trigger = {
+			trait = vassal_duty
+		}
+		remove_trait = vassal_duty
+	}
+	option = {
+		name = EVTOPTBVas.0
+		trigger = {
+				NOT = {
+					trait = cheat_leadership
+				}
+		}
+		add_trait = cheat_leadership		
+	}
+	option = {
+		name = EVTOPTBBVas.0
+		tooltip_info = cheat_leadership
+		trigger = {
+			trait = cheat_leadership
+		}
+		remove_trait = cheat_leadership
+	}
+	option = {
+		name = EVTOPTCVas.0
+		trigger = {
+				NOT = {
+					trait = healthy_vassal
+				}
+		}
+		add_trait = healthy_vassal		
+	}
+	option = {
+		name = EVTOPTCCVas.0
+		tooltip_info = healthy_vassal
+		trigger = {
+			trait = healthy_vassal
+		}
+		remove_trait = healthy_vassal
+	}
+}
+
+character_event = {
+	id = vas.1
+	desc = EVTDESCVas.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAVas.1
+	}
+	option = {
+		name = EVTOPTBVas.1
+		trigger = {
+				NOT = {
+					trait = anti_pope_p
+				}
+		}
+		add_trait = anti_pope_p		
+	}
+		option = {
+		name = EVTOPTBBVas.1
+		tooltip_info = anti_pope_p
+		trigger = {
+			trait = anti_pope_p
+		}
+		remove_trait = anti_pope_p
+	}
+	option = {
+		name = EVTOPTCVas.1
+		trigger = {
+				NOT = {
+					trait = disloyal_vassal
+				}
+		}
+		add_trait = disloyal_vassal		
+	}
+	option = {
+		name = EVTOPTCCVas.1
+		tooltip_info = disloyal_vassal
+		trigger = {
+			trait = disloyal_vassal
+		}
+		remove_trait = disloyal_vassal
+	}
+	option = {
+	name = EVTOPTDVas.1
+		trigger = {
+				NOT = { has_character_modifier = cheat_statholder }
+		}
+		#change_stewardship = 75
+		#change_learning = 75
+		#change_martial = 75
+		#change_diplomacy = 75
+		#change_intrigue = 75
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = cheat_statholder
+				duration = -1
+			}
+		}
+	}
+		option = {
+		name = EVTOPTDDVas.1
+		trigger = { has_character_modifier = cheat_statholder }
+			#change_stewardship = -75
+			#change_learning = -75
+			#change_martial = -75
+			#change_diplomacy = -75
+			#change_intrigue = -75
+			hidden_tooltip = {
+				remove_character_modifier = cheat_statholder
+			}
+	}
+}
+
+character_event = {
+	id = vas.2
+	desc = EVTDESCVas.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAVas.2
+	}
+	option = {
+		name = EVTOPTBVas.2
+		trigger = {
+				NOT = {
+					trait = elusive_shadow
+				}
+		}
+		add_trait = elusive_shadow
+		hidden_tooltip = {
+			remove_trait = misguided_warrior
+			remove_trait = tough_soldier
+			remove_trait = skilled_tactician
+			remove_trait = brilliant_strategist
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = mastermind_theologian
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = indulgent_wastrel
+			remove_trait = thrifty_clerk
+			remove_trait = fortune_builder
+			remove_trait = naive_appeaser
+			remove_trait = underhanded_rogue
+			remove_trait = charismatic_negotiator
+			remove_trait = amateurish_plotter
+			remove_trait = flamboyant_schemer
+			remove_trait = intricate_webweaver
+			remove_trait = grey_eminence
+			remove_trait = midas_touched
+		}
+	}
+	option = {
+		name = EVTOPTCVas.2
+		trigger = {
+				NOT = {
+					trait = mastermind_theologian
+				}
+		}
+		add_trait = mastermind_theologian
+		hidden_tooltip = {
+			remove_trait = misguided_warrior
+			remove_trait = tough_soldier
+			remove_trait = skilled_tactician
+			remove_trait = brilliant_strategist
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = indulgent_wastrel
+			remove_trait = thrifty_clerk
+			remove_trait = fortune_builder
+			remove_trait = naive_appeaser
+			remove_trait = underhanded_rogue
+			remove_trait = charismatic_negotiator
+			remove_trait = amateurish_plotter
+			remove_trait = flamboyant_schemer
+			remove_trait = intricate_webweaver
+			remove_trait = elusive_shadow
+			remove_trait = grey_eminence
+			remove_trait = midas_touched
+		}	
+	}
+	option = {
+		name = EVTOPTDVas.2
+		trigger = {
+				NOT = {
+					trait = brilliant_strategist
+				}
+		}
+		add_trait = brilliant_strategist
+		hidden_tooltip = {
+			remove_trait = misguided_warrior
+			remove_trait = tough_soldier
+			remove_trait = skilled_tactician
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = mastermind_theologian
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = indulgent_wastrel
+			remove_trait = thrifty_clerk
+			remove_trait = fortune_builder
+			remove_trait = naive_appeaser
+			remove_trait = underhanded_rogue
+			remove_trait = charismatic_negotiator
+			remove_trait = amateurish_plotter
+			remove_trait = flamboyant_schemer
+			remove_trait = intricate_webweaver
+			remove_trait = elusive_shadow
+			remove_trait = grey_eminence
+			remove_trait = midas_touched
+		}	
+	}
+}
+
+character_event = {
+	id = vas.3
+	desc = EVTDESCVas.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAVas.3
+	}
+	option = {
+		name = EVTOPTBVas.3
+		trigger = {
+				NOT = {
+					trait = midas_touched
+				}
+		}
+		add_trait = midas_touched
+		hidden_tooltip = {
+			remove_trait = misguided_warrior
+			remove_trait = tough_soldier
+			remove_trait = skilled_tactician
+			remove_trait = brilliant_strategist
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = mastermind_theologian
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = indulgent_wastrel
+			remove_trait = thrifty_clerk
+			remove_trait = fortune_builder
+			remove_trait = naive_appeaser
+			remove_trait = underhanded_rogue
+			remove_trait = charismatic_negotiator
+			remove_trait = amateurish_plotter
+			remove_trait = flamboyant_schemer
+			remove_trait = intricate_webweaver
+			remove_trait = elusive_shadow
+			remove_trait = grey_eminence
+		}
+	}
+	option = {
+		name = EVTOPTCVas.3
+		trigger = {
+				NOT = {
+					trait = grey_eminence
+				}
+		}
+		add_trait = grey_eminence
+		hidden_tooltip = {
+			remove_trait = misguided_warrior
+			remove_trait = tough_soldier
+			remove_trait = skilled_tactician
+			remove_trait = brilliant_strategist
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = mastermind_theologian
+			remove_trait = indulgent_wastrel
+			remove_trait = thrifty_clerk
+			remove_trait = fortune_builder
+			remove_trait = naive_appeaser
+			remove_trait = underhanded_rogue
+			remove_trait = charismatic_negotiator
+			remove_trait = amateurish_plotter
+			remove_trait = flamboyant_schemer
+			remove_trait = intricate_webweaver
+			remove_trait = elusive_shadow
+			remove_trait = midas_touched
+		}	
+	}
+}
+
+namespace = cheatothers
+
+character_event = {
+	id = cheatothers.0
+	desc = EVTDESCCheatothers.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTDCheatothers.0
+	}
+	option = {
+		name = EVTOPTACheatothers.0
+		trigger = {
+			FROM = {
+				NOT = {
+					trait = vassal_duty
+				}
+			}
+		}
+		FROM = {
+			add_trait = vassal_duty
+		}
+	}
+		option = {
+		name = EVTOPTAACheatothers.0
+		tooltip_info = vassal_duty
+		trigger = {
+			FROM = {
+				trait = vassal_duty
+			}
+		}
+		FROM = {
+			remove_trait = vassal_duty
+		}
+	}
+	option = {
+		name = EVTOPTBCheatothers.0
+		trigger = {
+			FROM = {
+				NOT = {
+					trait = cheat_leadership
+				}
+			}
+		}
+		FROM = {
+			add_trait = cheat_leadership
+		}		
+	}
+	option = {
+		name = EVTOPTBBCheatothers.0
+		tooltip_info = cheat_leadership
+		trigger = {
+			FROM = {
+				trait = cheat_leadership
+			}
+		}
+		FROM = {
+			remove_trait = cheat_leadership
+		}
+	}
+	option = {
+		name = EVTOPTCCheatothers.0
+		trigger = {
+			FROM = {
+				NOT = {
+					trait = healthy_vassal
+				}
+			}
+		}
+		FROM = {
+			add_trait = healthy_vassal
+		}
+	}
+	option = {
+		name = EVTOPTCCCheatothers.0
+		tooltip_info = healthy_vassal
+		trigger = {
+			FROM = {
+				trait = healthy_vassal
+			}
+		}
+		FROM = {
+			remove_trait = healthy_vassal
+		}
+	}
+}
+
+character_event = {
+	id = cheatothers.1
+	desc = EVTDESCCheatothers.1
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTACheatothers.1
+	}
+	option = {
+		name = EVTOPTBCheatothers.1
+		trigger = {
+			FROM = {
+				NOT = {
+					trait = anti_pope_p
+				}
+			}
+		}
+		FROM = {
+			add_trait = anti_pope_p
+		}
+	}
+	option = {
+		name = EVTOPTBBCheatothers.1
+		tooltip_info = anti_pope_p
+		trigger = {
+			FROM = {
+				trait = anti_pope_p
+			}
+		}
+		FROM = {
+			remove_trait = anti_pope_p
+		}
+	}
+	option = {
+		name = EVTOPTCCheatothers.1
+		trigger = {
+			FROM = {
+				NOT = {
+					trait = disloyal_vassal
+				}
+			}
+		}
+		FROM = {
+			add_trait = disloyal_vassal
+		}
+	}
+	option = {
+		name = EVTOPTCCCheatothers.1
+		tooltip_info = disloyal_vassal
+		trigger = {
+			FROM = {
+				trait = disloyal_vassal
+			}
+		}
+		FROM = {
+			remove_trait = disloyal_vassal
+		}
+	}
+	option = {
+	name = EVTOPTDCheatothers.1
+		trigger = {
+			FROM = {
+				NOT = { has_character_modifier = cheat_statholder }
+			}
+		}
+		#change_stewardship = 75
+		#change_learning = 75
+		#change_martial = 75
+		#change_diplomacy = 75
+		#change_intrigue = 75
+		hidden_tooltip = {
+			FROM = {
+				add_character_modifier = {
+					name = cheat_statholder
+					duration = -1
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTDDCheatothers.1
+			trigger = { FROM = { has_character_modifier = cheat_statholder } }
+			#change_stewardship = -75
+			#change_learning = -75
+			#change_martial = -75
+			#change_diplomacy = -75
+			#change_intrigue = -75
+			hidden_tooltip = {
+				FROM = {
+					remove_character_modifier = cheat_statholder
+				}
+			}
+	}
+}
+
+character_event = {
+	id = cheatothers.2
+	desc = EVTDESCCheatothers.1
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTACheatothers.2
+	}
+	option = {
+		name = EVTOPTBCheatothers.2
+		trigger = {
+			FROM = {
+				NOT = {
+					trait = elusive_shadow
+				}
+			}
+		}
+		FROM = {
+			add_trait = elusive_shadow
+			hidden_tooltip = {
+				remove_trait = misguided_warrior
+				remove_trait = tough_soldier
+				remove_trait = skilled_tactician
+				remove_trait = brilliant_strategist
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = mastermind_theologian
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = indulgent_wastrel
+				remove_trait = thrifty_clerk
+				remove_trait = fortune_builder
+				remove_trait = naive_appeaser
+				remove_trait = underhanded_rogue
+				remove_trait = charismatic_negotiator
+				remove_trait = amateurish_plotter
+				remove_trait = flamboyant_schemer
+				remove_trait = intricate_webweaver
+				remove_trait = grey_eminence
+				remove_trait = midas_touched
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCCheatothers.2
+		trigger = {
+			FROM = {
+				NOT = {
+					trait = mastermind_theologian
+				}
+			}
+		}
+		FROM = {
+			add_trait = mastermind_theologian
+			hidden_tooltip = {
+				remove_trait = misguided_warrior
+				remove_trait = tough_soldier
+				remove_trait = skilled_tactician
+				remove_trait = brilliant_strategist
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = indulgent_wastrel
+				remove_trait = thrifty_clerk
+				remove_trait = fortune_builder
+				remove_trait = naive_appeaser
+				remove_trait = underhanded_rogue
+				remove_trait = charismatic_negotiator
+				remove_trait = amateurish_plotter
+				remove_trait = flamboyant_schemer
+				remove_trait = intricate_webweaver
+				remove_trait = elusive_shadow
+				remove_trait = grey_eminence
+				remove_trait = midas_touched
+			}
+		}
+	}
+	option = {
+		name = EVTOPTDCheatothers.2
+		trigger = {
+			FROM = {
+				NOT = {
+					trait = brilliant_strategist
+				}
+			}
+		}
+		FROM = {
+			add_trait = brilliant_strategist
+			hidden_tooltip = {
+				remove_trait = misguided_warrior
+				remove_trait = tough_soldier
+				remove_trait = skilled_tactician
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = mastermind_theologian
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = indulgent_wastrel
+				remove_trait = thrifty_clerk
+				remove_trait = fortune_builder
+				remove_trait = naive_appeaser
+				remove_trait = underhanded_rogue
+				remove_trait = charismatic_negotiator
+				remove_trait = amateurish_plotter
+				remove_trait = flamboyant_schemer
+				remove_trait = intricate_webweaver
+				remove_trait = elusive_shadow
+				remove_trait = grey_eminence
+				remove_trait = midas_touched
+			}
+		}
+	}
+}
+
+character_event = {
+	id = cheatothers.3
+	desc = EVTDESCVas.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTACheatothers.3
+	}
+	option = {
+		name = EVTOPTBCheatothers.3
+		trigger = {
+			FROM = {
+				NOT = {
+					trait = midas_touched
+				}
+			}
+		}
+		FROM = {
+			add_trait = midas_touched
+			hidden_tooltip = {
+				remove_trait = misguided_warrior
+				remove_trait = tough_soldier
+				remove_trait = skilled_tactician
+				remove_trait = brilliant_strategist
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = mastermind_theologian
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = indulgent_wastrel
+				remove_trait = thrifty_clerk
+				remove_trait = fortune_builder
+				remove_trait = naive_appeaser
+				remove_trait = underhanded_rogue
+				remove_trait = charismatic_negotiator
+				remove_trait = amateurish_plotter
+				remove_trait = flamboyant_schemer
+				remove_trait = intricate_webweaver
+				remove_trait = elusive_shadow
+				remove_trait = grey_eminence
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCCheatothers.3
+		trigger = {
+			FROM = {
+				NOT = {
+					trait = grey_eminence
+				}
+			}
+		}
+		FROM = {
+			add_trait = grey_eminence
+			hidden_tooltip = {
+				remove_trait = misguided_warrior
+				remove_trait = tough_soldier
+				remove_trait = skilled_tactician
+				remove_trait = brilliant_strategist
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = mastermind_theologian
+				remove_trait = indulgent_wastrel
+				remove_trait = thrifty_clerk
+				remove_trait = fortune_builder
+				remove_trait = naive_appeaser
+				remove_trait = underhanded_rogue
+				remove_trait = charismatic_negotiator
+				remove_trait = amateurish_plotter
+				remove_trait = flamboyant_schemer
+				remove_trait = intricate_webweaver
+				remove_trait = elusive_shadow
+				remove_trait = midas_touched
+			}
+		}
+	}
+}
+
+character_event = {
+	id = cheatothers.4
+	desc = EVTDESCCheatothers.4
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTACheatothers.4
+	}
+	option = {
+		name = EVTOPTBBCheatothers.4
+		trigger = {
+			FROM = {
+				has_character_modifier = cheat_priest_one
+			}
+		}
+		FROM = {
+			hidden_tooltip = {
+				remove_character_modifier = cheat_priest_one
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBCheatothers.4
+		trigger = {
+			FROM = { NOT = { has_character_modifier = cheat_priest_one } }
+		}
+		FROM = {
+			add_trait = mastermind_theologian
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = cheat_priest_one
+					duration = -1
+				}
+				add_trait = kind
+				add_trait = physician
+				add_trait = chaste
+				add_trait = temperate
+				add_trait = charitable
+				add_trait = diligent
+				add_trait = patient
+				add_trait = humble
+				add_trait = honest
+				add_trait = gregarious
+				add_trait = just
+				add_trait = zealous
+				add_trait = genius
+				add_trait = theologian
+				remove_trait = gardener
+				remove_trait = seducer
+				remove_trait = seductress
+				remove_trait = architect
+				remove_trait = strategist
+				remove_trait = socializer
+				remove_trait = schemer
+				remove_trait = administrator
+				remove_trait = gamer
+				remove_trait = adventurer
+				remove_trait = celibate
+				remove_trait = possessed
+				remove_trait = bad_priest_christian
+				remove_trait = bad_priest_muslim
+				remove_trait = bad_priest_norse
+				remove_trait = bad_priest_tengri
+				remove_trait = bad_priest_zoroastrian
+				remove_trait = bad_priest_aztec
+				remove_trait = imbecile
+				remove_trait = slow
+				remove_trait = quick
+				remove_trait = sympathy_christendom
+				remove_trait = sympathy_islam
+				remove_trait = sympathy_pagans
+				remove_trait = sympathy_zoroastrianism
+				remove_trait = sympathy_judaism
+				remove_trait = sympathy_indian
+				remove_trait = cruel
+				remove_trait = cynical
+				remove_trait = arbitrary
+				remove_trait = craven
+				remove_trait = shy
+				remove_trait = deceitful
+				remove_trait = proud
+				remove_trait = wroth
+				remove_trait = slothful
+				remove_trait = greedy
+				remove_trait = gluttonous
+				remove_trait = lustful
+				remove_trait = envious
+				remove_trait = cruel
+				remove_trait = misguided_warrior
+				remove_trait = tough_soldier
+				remove_trait = skilled_tactician
+				remove_trait = brilliant_strategist
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = indulgent_wastrel
+				remove_trait = thrifty_clerk
+				remove_trait = fortune_builder
+				remove_trait = naive_appeaser
+				remove_trait = underhanded_rogue
+				remove_trait = charismatic_negotiator
+				remove_trait = amateurish_plotter
+				remove_trait = flamboyant_schemer
+				remove_trait = intricate_webweaver
+				remove_trait = elusive_shadow
+				remove_trait = grey_eminence
+				remove_trait = midas_touched
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCCheatothers.4
+		FROM = {
+			add_trait = genius
+			add_trait = strong
+			hidden_tooltip = {
+				add_trait = diligent
+				add_trait = patient
+				add_trait = temperate
+				remove_trait = weak
+				remove_trait = imbecile
+				remove_trait = slow
+				remove_trait = quick
+				remove_trait = cruel
+				remove_trait = cynical
+				remove_trait = arbitrary
+				remove_trait = craven
+				remove_trait = shy
+				remove_trait = deceitful
+				remove_trait = proud
+				remove_trait = wroth
+				remove_trait = slothful
+				remove_trait = greedy
+				remove_trait = gluttonous
+				remove_trait = lustful
+				remove_trait = envious
+				remove_trait = cruel
+			}
+		}
+	}
+		option = {
+		name = EVTOPTDCheatothers.4
+	}
+}
+character_event = {
+	id = cheatothers.5
+	desc = EVTDESCCheatothers.5
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTACheatothers.5
+	}
+	option = {
+		name = EVTOPTBBCheatothers.5
+		trigger = {
+			FROM = {
+				has_character_modifier = cheat_steward_one
+			}
+		}
+		FROM = {
+			hidden_tooltip = {
+				remove_character_modifier = cheat_steward_one
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBCheatothers.5
+		trigger = {
+			FROM = { NOT = { has_character_modifier = cheat_steward_one } }
+		}
+		FROM = {
+			add_trait = midas_touched
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = cheat_steward_one
+					duration = -1
+				}
+				add_trait = kind
+				add_trait = chaste
+				add_trait = temperate
+				add_trait = charitable
+				add_trait = diligent
+				add_trait = patient
+				add_trait = humble
+				add_trait = honest
+				add_trait = gregarious
+				add_trait = just
+				add_trait = genius
+				add_trait = administrator
+				add_trait = ambitious
+				add_trait = just
+				add_trait = genius
+				add_trait = strong
+				remove_trait = gardener
+				remove_trait = seducer
+				remove_trait = seductress
+				remove_trait = architect
+				remove_trait = strategist
+				remove_trait = socializer
+				remove_trait = schemer
+				remove_trait = theologian
+				remove_trait = gamer
+				remove_trait = adventurer
+				remove_trait = celibate
+				remove_trait = hedonist
+				remove_trait = scholar
+				remove_trait = mystic
+				remove_trait = impaler
+				remove_trait = duelist
+				remove_trait = hunter
+				remove_trait = poet
+				remove_trait = falconer
+				remove_trait = content
+				remove_trait = drunkard
+				remove_trait = depressed
+				remove_trait = bad_priest_christian
+				remove_trait = bad_priest_muslim
+				remove_trait = bad_priest_norse
+				remove_trait = bad_priest_tengri
+				remove_trait = bad_priest_zoroastrian
+				remove_trait = bad_priest_aztec
+				remove_trait = imbecile
+				remove_trait = slow
+				remove_trait = quick
+				# remove_trait = sympathy_christendom
+				# remove_trait = sympathy_islam
+				# remove_trait = sympathy_pagans
+				# remove_trait = sympathy_zoroastrianism
+				# remove_trait = sympathy_judaism
+				# remove_trait = sympathy_indian
+				remove_trait = cruel
+				remove_trait = cynical
+				remove_trait = arbitrary
+				remove_trait = craven
+				remove_trait = shy
+				remove_trait = deceitful
+				remove_trait = proud
+				remove_trait = wroth
+				remove_trait = slothful
+				remove_trait = greedy
+				remove_trait = gluttonous
+				remove_trait = lustful
+				remove_trait = envious
+				remove_trait = cruel
+				remove_trait = misguided_warrior
+				remove_trait = tough_soldier
+				remove_trait = skilled_tactician
+				remove_trait = brilliant_strategist
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = mastermind_theologian
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = indulgent_wastrel
+				remove_trait = thrifty_clerk
+				remove_trait = fortune_builder
+				remove_trait = naive_appeaser
+				remove_trait = underhanded_rogue
+				remove_trait = charismatic_negotiator
+				remove_trait = amateurish_plotter
+				remove_trait = flamboyant_schemer
+				remove_trait = intricate_webweaver
+				remove_trait = elusive_shadow
+				remove_trait = grey_eminence
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCCheatothers.5
+		FROM = {
+			add_trait = brilliant_strategist
+			hidden_tooltip = {
+				add_trait = genius
+				add_trait = strong
+				add_trait = kind
+				add_trait = chaste
+				add_trait = temperate
+				add_trait = charitable
+				add_trait = diligent
+				add_trait = patient
+				add_trait = humble
+				add_trait = strategist
+				add_trait = honest
+				add_trait = gregarious
+				add_trait = just
+				add_trait = genius
+				add_trait = ambitious
+				add_trait = just
+				remove_trait = weak
+				remove_trait = imbecile
+				remove_trait = slow
+				remove_trait = quick
+				remove_trait = gardener
+				remove_trait = seducer
+				remove_trait = seductress
+				remove_trati = administrator
+				remove_trait = architect
+				remove_trait = socializer
+				remove_trait = schemer
+				remove_trait = theologian
+				remove_trait = gamer
+				remove_trait = adventurer
+				remove_trait = celibate
+				remove_trait = hedonist
+				remove_trait = scholar
+				remove_trait = mystic
+				remove_trait = impaler
+				remove_trait = duelist
+				remove_trait = hunter
+				remove_trait = poet
+				remove_trait = falconer
+				remove_trait = content
+				remove_trait = drunkard
+				remove_trait = depressed
+				remove_trait = bad_priest_christian
+				remove_trait = bad_priest_muslim
+				remove_trait = bad_priest_norse
+				remove_trait = bad_priest_tengri
+				remove_trait = bad_priest_zoroastrian
+				remove_trait = bad_priest_aztec
+				remove_trait = imbecile
+				remove_trait = slow
+				remove_trait = quick
+				# remove_trait = sympathy_christendom
+				# remove_trait = sympathy_islam
+				# remove_trait = sympathy_pagans
+				# remove_trait = sympathy_zoroastrianism
+				# remove_trait = sympathy_judaism
+				# remove_trait = sympathy_indian
+				remove_trait = cruel
+				remove_trait = cynical
+				remove_trait = arbitrary
+				remove_trait = craven
+				remove_trait = shy
+				remove_trait = deceitful
+				remove_trait = proud
+				remove_trait = wroth
+				remove_trait = slothful
+				remove_trait = greedy
+				remove_trait = gluttonous
+				remove_trait = lustful
+				remove_trait = envious
+				remove_trait = cruel
+				remove_trait = misguided_warrior
+				remove_trait = tough_soldier
+				remove_trait = skilled_tactician
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = mastermind_theologian
+				remove_trait = detached_priest
+				remove_trait = martial_cleric
+				remove_trait = scholarly_theologian
+				remove_trait = indulgent_wastrel
+				remove_trait = thrifty_clerk
+				remove_trait = fortune_builder
+				remove_trait = naive_appeaser
+				remove_trait = underhanded_rogue
+				remove_trait = charismatic_negotiator
+				remove_trait = amateurish_plotter
+				remove_trait = flamboyant_schemer
+				remove_trait = intricate_webweaver
+				remove_trait = elusive_shadow
+				remove_trait = grey_eminence
+				remove_trait = midas_touched
+			}
+		}
+	}
+		option = {
+		name = EVTOPTDCheatothers.5
+	}
+}

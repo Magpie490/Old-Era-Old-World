@@ -1,0 +1,330 @@
+######################
+#IN-GAME STAT EDITOR #
+##WRITTEN BY SLVRBUU##
+####CHEAT HAPPENS#####
+######################
+#        MENU        #
+######################
+namespace = stat
+character_event = {
+	id = stat.0
+	desc = EVTDESCStat.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAStat.0
+                hidden_tooltip = {
+                    character_event = {
+							id = learning.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTBStat.0
+                hidden_tooltip = {
+                    character_event = {
+							id = martial.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTCStat.0
+                hidden_tooltip = {
+                    character_event = {
+							id = diplomacy.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTDStat.0
+                hidden_tooltip = {
+                    character_event = {
+							id = stat.1
+                    }
+				}		
+	}
+}
+
+namespace = stat
+character_event = {
+	id = stat.1
+	desc = EVTDESCStat.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAStat.1
+                hidden_tooltip = {
+                    character_event = {
+							id = stewardship.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTBStat.1
+                hidden_tooltip = {
+                    character_event = {
+							id = intrigue.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTCStat.1
+                hidden_tooltip = {
+                    character_event = {
+							id = stat.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTDStat.1
+                hidden_tooltip = {
+                    character_event = {
+							id = menu.0
+                    }
+				}	
+	}
+}
+#############
+#Stewardship#
+#############
+###MENU###
+##
+#
+namespace = stewardship
+character_event = {
+	id = stewardship.0
+	desc = EVTDESCStewardship.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+		option = {
+		name = EVTOPTAStewardship.0
+			change_stewardship = 10
+                hidden_tooltip = {
+                    character_event = {
+							id = stewardship.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTBStewardship.0
+			change_stewardship = -5
+                hidden_tooltip = {
+                    character_event = {
+							id = stewardship.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTCStewardship.0
+			change_stewardship = -1
+                hidden_tooltip = {
+                    character_event = {
+							id = stewardship.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTDStewardship.0
+                hidden_tooltip = {
+                    character_event = {
+							id = stat.0
+                    }
+				}		
+	}
+}
+
+#########
+#Martial#
+#########
+###MENU##
+##
+#
+namespace = martial
+character_event = {
+	id = martial.0
+	desc = EVTDESCMartial.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+		option = {
+		name = EVTOPTAMartial.0
+			change_martial = 10
+                hidden_tooltip = {
+                    character_event = {
+							id = martial.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTBMartial.0
+			change_martial = -5
+                hidden_tooltip = {
+                    character_event = {
+							id = martial.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTCMartial.0
+			change_martial = -1
+                hidden_tooltip = {
+                    character_event = {
+							id = martial.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTDMartial.0
+                hidden_tooltip = {
+                    character_event = {
+							id = stat.0
+                    }
+				}		
+	}
+}
+
+###########
+#Diplomacy#
+###########
+###MENU###
+##
+#
+namespace = diplomacy
+character_event = {
+	id = diplomacy.0
+	desc = EVTDESCDiplomacy.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+		option = {
+		name = EVTOPTADiplomacy.0
+			change_diplomacy = 10
+                hidden_tooltip = {
+                    character_event = {
+							id = diplomacy.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTBDiplomacy.0
+			change_diplomacy = -5
+                hidden_tooltip = {
+                    character_event = {
+							id = diplomacy.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTCDiplomacy.0
+			change_diplomacy = -1
+                hidden_tooltip = {
+                    character_event = {
+							id = diplomacy.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTDDiplomacy.0
+                hidden_tooltip = {
+                    character_event = {
+							id = stat.0
+                    }
+				}		
+	}
+}
+
+##########
+#Learning#
+##########
+###MENU###
+##
+#
+namespace = learning
+character_event = {
+	id = learning.0
+	desc = EVTDESCLearning.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+		option = {
+		name = EVTOPTALearning.0
+			change_learning = 10
+                hidden_tooltip = {
+                    character_event = {
+							id = learning.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTBLearning.0
+			change_learning = -5
+                hidden_tooltip = {
+                    character_event = {
+							id = learning.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTCLearning.0
+			change_learning = -1
+                hidden_tooltip = {
+                    character_event = {
+							id = learning.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTDLearning.0
+                hidden_tooltip = {
+                    character_event = {
+							id = stat.0
+                    }
+				}		
+	}
+}
+
+##########
+#Intrigue#
+##########
+###MENU###
+##
+#
+namespace = intrigue
+character_event = {
+	id = intrigue.0
+	desc = EVTDESCIntrigue.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+		option = {
+		name = EVTOPTAIntrigue.0
+			change_intrigue = 10
+                hidden_tooltip = {
+                    character_event = {
+							id = intrigue.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTBIntrigue.0
+			change_intrigue = -5
+                hidden_tooltip = {
+                    character_event = {
+							id = intrigue.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTCIntrigue.0
+			change_intrigue = -1
+                hidden_tooltip = {
+                    character_event = {
+							id = intrigue.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTDIntrigue.0
+                hidden_tooltip = {
+                    character_event = {
+							id = stat.0
+                    }
+				}		
+	}
+}

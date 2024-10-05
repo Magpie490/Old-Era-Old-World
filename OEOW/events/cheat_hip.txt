@@ -1,0 +1,63 @@
+######################
+# IN-GAME HIP EDITOR #
+##WRITTEN BY SLVRBUU##
+####CHEAT HAPPENS#####
+######################
+#         HIP        #
+#  Chip = Cheat HIP  #
+######################
+namespace = chip
+character_event = {
+	id = chip.0
+	desc = EVTDESCchip.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAchip.0
+		trigger = {
+			primary_title = {
+				OR = {
+					holder_scope = { has_character_flag = emf_ca_cooldown_@PREV }
+					holder_scope = { has_character_flag = emf_ikc_cooldown_@PREV }
+					holder_scope = { has_character_flag = emf_inv_cooldown_@PREV }
+				}
+			}
+		}
+		custom_tooltip = {
+			text = "TOOLTIPHIP_REMOVELAWCD"
+			hidden_tooltip = {
+				primary_title = {
+					holder_scope = { clr_character_flag = emf_ca_cooldown_@PREV }
+					holder_scope = { clr_character_flag = emf_ikc_cooldown_@PREV }
+					holder_scope = { clr_character_flag = emf_inv_cooldown_@PREV }
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBchip.0
+		trigger = {
+			OR = {
+				has_character_modifier = emf_cb_mod_holy_war_cooldown
+				has_character_modifier = emf_cb_mod_republic_cooldown
+				has_character_modifier = faction_independence_ultimatum_timer
+				has_character_modifier = launched_subjugation
+				has_character_modifier = faction_council_power_ultimatum_timer
+			}
+		}
+			custom_tooltip = {
+				text = "TOOLTIPHIP_REMOVEHWCD"
+				hidden_tooltip = {
+					remove_character_modifier = emf_cb_mod_holy_war_cooldown
+					remove_character_modifier = emf_cb_mod_republic_cooldown
+					remove_character_modifier = faction_independence_ultimatum_timer
+					remove_character_modifier = faction_independence_ultimatum_timer
+					remove_character_modifier = launched_subjugation
+					remove_character_modifier = faction_council_power_ultimatum_timer
+				}
+			}
+	}
+	option = {
+		name = EVTOPTDchip.0
+	}
+}

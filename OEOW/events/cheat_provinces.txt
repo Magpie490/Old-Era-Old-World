@@ -1,0 +1,281 @@
+######################
+#IN-GAME PROVINCE BUFFS#
+## WRITTEN BY SLVRBUU ##
+####CHEAT HAPPENS#####
+######################
+#        PROVINCE BUFFS      #
+######################
+namespace = cheatprov
+province_event = {
+	id = cheatprov.0
+	
+	hide_window = yes
+
+	weight_multiplier = {
+		days = 1
+	}
+	
+	trigger = {
+		location = {
+			owner = {
+				OR = {
+					AND = {
+						ai = YES
+						OR = {
+							liege = {
+								ai = yes
+								OR = {
+									war = no
+									AND = {
+										war = yes
+										is_primary_war_attacker = no
+										is_primary_war_defender = no
+									}
+								}
+								any_liege = {
+									AI = NO
+									has_character_flag = cheat_prov_buff
+									has_character_flag = no_ai_prov_buff
+								}
+							}
+							AND = {
+								liege = {
+									AI = NO
+									has_character_flag = cheat_prov_buff
+									has_character_flag = no_ai_prov_buff
+								}
+								OR = {
+									war = no
+									AND = {
+										war = yes
+										is_primary_war_attacker = no
+										is_primary_war_defender = no
+									}
+								}
+							}
+						}
+					}
+					AND = {
+						AI = NO
+						has_character_flag = cheat_prov_buff
+					}
+				}
+			}
+			OR = {
+				NOT = { has_province_modifier = cheat_prov_lesser }
+				NOT = {
+					any_province_holding = {
+						has_holding_modifier = cheat_hold_fort
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		add_province_modifier = {
+			name = cheat_prov_lesser
+			duration = -1
+		}
+		any_province_holding = {
+			add_holding_modifier = {
+				name = cheat_hold_fort
+				duration = -1
+			}
+		}
+	}
+}
+
+province_event = {
+	id = cheatprov.1
+	
+	hide_window = yes
+
+	weight_multiplier = {
+		days = 1
+	}
+	
+	trigger = {
+		location = {
+			owner = {
+				AI = NO
+				has_character_flag = cheat_prov_prosp
+			}
+			NOT = {
+				has_province_modifier = prosperity_modifier_3
+			}
+		}
+	}
+	
+	immediate = {
+		remove_province_modifier = prosperity_modifier_1
+		remove_province_modifier = prosperity_modifier_2
+		remove_province_modifier = depopulated_1
+		remove_province_modifier = depopulated_2
+		remove_province_modifier = depopulated_3
+		add_province_modifier = { name = prosperity_modifier_3 duration = -1 }
+		set_variable = { which = prosperity_value value = 550 }
+	}
+}
+
+province_event = {
+	id = cheatprov.3
+	
+	hide_window = yes
+
+	weight_multiplier = {
+		days = 1
+	}
+	
+	trigger = {
+		location = {
+			owner = {
+				AI = NO
+				has_character_flag = cheat_prov_prosp
+			}
+			has_disease = yes
+		}
+	}
+	
+	immediate = {
+		reduce_disease = 0.99
+	}
+}
+
+province_event = {
+	id = cheatprov.2
+	
+	hide_window = yes
+	
+	weight_multiplier = {
+		days = 1
+	}
+	
+	trigger = {
+		location = {
+			owner = {
+				OR = {
+					AND = {
+						OR = {
+							liege = {
+								AI = NO
+								NOT = { has_character_flag = no_ai_prov_buff }
+							}
+							top_liege = {
+								AI = NO
+								NOT = { has_character_flag = no_ai_prov_buff }
+							}
+						}
+						ai = YES
+					}
+					AND = {
+						AI = NO
+						NOT = { has_character_flag = cheat_prov_buff }
+					}
+					AND = {
+						ai = yes
+						war = yes
+						OR = {
+							is_primary_war_attacker = yes
+							is_primary_war_defender = yes
+						}
+						liege = {
+							AI = NO
+						}
+					}
+					AND = {
+						liege = {
+							AI = YES
+							war = YES
+							OR = {
+								is_primary_war_attacker = yes
+								is_primary_war_defender = yes
+							}
+							liege = {
+								AI = NO
+							}
+						}
+					}
+					AND = {
+						liege = {
+							liege = {
+								AI = YES
+								war = YES
+								OR = {
+									is_primary_war_attacker = yes
+									is_primary_war_defender = yes
+								}
+								liege = {
+									AI = NO
+								}
+							}
+						}
+					}
+				}
+			}
+			OR = {
+				has_province_modifier = cheat_prov_lesser
+				any_province_holding = {
+					has_holding_modifier = cheat_hold_fort
+				}
+			}
+			
+		}
+	}
+	
+	immediate = {
+		remove_province_modifier = cheat_prov_lesser
+		any_province_holding = {
+			remove_holding_modifier = cheat_hold_fort
+		}
+	}
+}
+province_event = {
+	id = cheatprov.4
+	
+	hide_window = yes
+
+	weight_multiplier = {
+		days = 1
+	}
+	
+	trigger = {
+		location = {
+			owner = {
+				AI = NO
+				has_character_flag = cheat_prov_d_buff
+			}
+			NOT = {
+				has_province_modifier = cheat_prov_d
+			}
+		}
+	}
+	
+	immediate = {
+		remove_province_modifier = depopulated_1
+		remove_province_modifier = depopulated_2
+		remove_province_modifier = depopulated_3
+		add_province_modifier = { name = cheat_prov_d duration = -1 }
+	}
+}
+province_event = {
+	id = cheatprov.5
+	
+	hide_window = yes
+
+	weight_multiplier = {
+		days = 1
+	}
+	
+	trigger = {
+		location = {
+			owner = {
+				NOT = { has_character_flag = cheat_prov_d_buff }
+			}
+		}
+	}
+	
+	immediate = {
+		remove_province_modifier = cheat_prov_d
+	}
+}

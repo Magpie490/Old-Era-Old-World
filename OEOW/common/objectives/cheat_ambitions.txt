@@ -1,0 +1,53 @@
+# Supported types:
+# character, spouse, rivals, friends, liege_titles, vassal_titles, realm_titles, realm_characters, realm_characters_plus, independent_rulers
+
+###############
+# AMBITIONS
+###############
+
+obj_cheat_religion = {
+	type = character
+	
+	allow = {
+		age = 16
+		ai = no
+		is_ruler = yes
+		NOT = {
+			has_character_flag = cheat_rma
+		}
+	}
+	chance = {
+		factor = 100
+	}
+	success = {
+		has_character_flag = cheat_rma
+	}
+	abort = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		religion_authority = {
+			modifier = cheat_religion
+			years = 999
+		}
+		religion_head = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_paragon
+				months = 1200
+			}
+		}
+		any_vassal = {
+			limit = {
+				is_theocracy = yes
+				religion = ROOT
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_paragon
+				months = 1200
+			}
+		}
+	}
+}

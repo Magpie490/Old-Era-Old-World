@@ -1,0 +1,87 @@
+######################
+####Decision Events###
+##WRITTEN BY SLVRBUU##
+####CHEAT HAPPENS#####
+######################
+#        MENU        #
+######################
+namespace = dec
+character_event = {
+	id = dec.0
+	desc = EVTDESCDec.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTADec.0	
+	}
+	option = {
+		name = EVTOPTBDec.0
+		trigger = {
+				NOT = {
+					trait = vassal_duty
+				}
+		}
+		add_trait = vassal_duty
+			hidden_tooltip = {
+				character_event = { id = dec.0 days = 0 }
+			}		
+	}
+		option = {
+		name = EVTOPTBBDec.0
+		tooltip_info = vassal_duty
+		trigger = {
+			trait = vassal_duty
+		}
+		remove_trait = vassal_duty
+			hidden_tooltip = {
+				character_event = { id = dec.0 days = 0 }
+			}
+	}
+	option = {
+		name = EVTOPTCDec.0
+		trigger = {
+				NOT = {
+					trait = cheat_leadership
+				}
+		}
+		add_trait = cheat_leadership
+			hidden_tooltip = {
+				character_event = { id = dec.0 days = 0 }
+			}		
+	}
+	option = {
+		name = EVTOPTCCDec.0
+		tooltip_info = cheat_leadership
+		trigger = {
+			trait = cheat_leadership
+		}
+		remove_trait = cheat_leadership
+			hidden_tooltip = {
+				character_event = { id = dec.0 days = 0 }
+			}
+	}
+	option = {
+		name = EVTOPTDDec.0
+		trigger = {
+				NOT = {
+					trait = healthy_vassal
+				}
+		}
+		add_trait = healthy_vassal
+			hidden_tooltip = {
+				character_event = { id = dec.0 days = 0 }
+			}		
+	}
+	option = {
+		name = EVTOPTDDDec.0
+		tooltip_info = healthy_vassal
+		trigger = {
+			trait = healthy_vassal
+		}
+		remove_trait = healthy_vassal
+			hidden_tooltip = {
+				character_event = { id = dec.0 days = 0 }
+			}
+	}
+}

@@ -1,0 +1,790 @@
+#CODE;;;;;;;;;;;;;;x
+EVTDESCTrait.0;Welcome to the Trait Menu - Now localised! (YOUR CHARACTER ONLY, WILL CAUSE ISSUES IF USED ON OTHER CHARACTERS!);;;;;;;;;;;;;x
+EVTOPTATrait.0;Positive Personality;;;;;;;;;;;;;x
+EVTOPTBTrait.0;Leadership;;;;;;;;;;;;;x
+EVTOPTCTrait.0;Education;;;;;;;;;;;;;x
+EVTOPTDTrait.0;More Traits;;;;;;;;;;;;;x
+EVTOPTATrait.1;Negative Personality;;;;;;;;;;;;;x
+EVTOPTBTrait.1;Positive Virtues;;;;;;;;;;;;;x
+EVTOPTCTrait.1;Negative Virtues;;;;;;;;;;;;;x
+EVTOPTDTrait.1;More Traits;;;;;;;;;;;;;x
+EVTOPTATrait.2;Health Related Traits;;;;;;;;;;;;;x
+EVTOPTBTrait.2;Religious Traits;;;;;;;;;;;;;x
+EVTOPTCTrait.2;Exit;;;;;;;;;;;;;x
+EVTDESCPerson.0;Positive Personality Traits;;;;;;;;;;;;;x
+EVTOPTAPerson.0;Zealous;;;;;;;;;;;;;x
+EVTOPTAAPerson.0;Remove Zealous;;;;;;;;;;;;;x
+EVTOPTBPerson.0;Genius;;;;;;;;;;;;;x
+EVTOPTBBPerson.0;Remove Genius;;;;;;;;;;;;;x
+EVTOPTCPerson.0;Quick;;;;;;;;;;;;;x
+EVTOPTCCPerson.0;Remove Quick;;;;;;;;;;;;;x
+EVTOPTDPerson.0;More;;;;;;;;;;;;;x
+EVTOPTAPerson.1;Strong;;;;;;;;;;;;;x
+EVTOPTAAPerson.1;Remove Strong;;;;;;;;;;;;;x
+EVTOPTBAPerson.1;Crusader;;;;;;;;;;;;;x
+EVTOPTBABPerson.1;Remove Crusader;;;;;;;;;;;;;x
+EVTOPTBBPerson.1;Mujahid;;;;;;;;;;;;;x
+EVTOPTBBBPerson.1;Remove Mujahid;;;;;;;;;;;;;x
+EVTOPTCPerson.1;Brave;;;;;;;;;;;;;x
+EVTOPTCCPerson.1;Remove Brave;;;;;;;;;;;;;x
+EVTOPTDPerson.1;More;;;;;;;;;;;;;x
+EVTOPTAPerson.2;Gregarious;;;;;;;;;;;;;x
+EVTOPTAAPerson.2;Remove Gregarious;;;;;;;;;;;;;x
+EVTOPTBPerson.2;Just;;;;;;;;;;;;;x
+EVTOPTBBPerson.2;Remove Just;;;;;;;;;;;;;x
+EVTOPTCPerson.2;Attractive;;;;;;;;;;;;;x
+EVTOPTCCPerson.2;Remove Attractive;;;;;;;;;;;;;x
+EVTOPTDPerson.2;More;;;;;;;;;;;;;x
+EVTOPTAPerson.3;Celibate;;;;;;;;;;;;;x
+EVTOPTAAPerson.3;Remove Celibate;;;;;;;;;;;;;x
+EVTOPTBPerson.3;Scholar;;;;;;;;;;;;;x
+EVTOPTBBPerson.3;Remove Scholar;;;;;;;;;;;;;x
+EVTOPTCPerson.3;Gardener;;;;;;;;;;;;;x
+EVTOPTCCPerson.3;Remove Gardener;;;;;;;;;;;;;x
+EVTOPTDPerson.3;More;;;;;;;;;;;;;x
+EVTOPTAPerson.4;Mystic;;;;;;;;;;;;;x
+EVTOPTAAPerson.4;Remove Mystic;;;;;;;;;;;;;x
+EVTOPTBPerson.4;Impaler;;;;;;;;;;;;;x
+EVTOPTBBPerson.4;Remove Impaler;;;;;;;;;;;;;x
+EVTOPTCPerson.4;Duelist;;;;;;;;;;;;;x
+EVTOPTCCPerson.4;Remove Duelist;;;;;;;;;;;;;x
+EVTOPTDPerson.4;More;;;;;;;;;;;;;x
+EVTOPTAPerson.5;Hunter;;;;;;;;;;;;;x
+EVTOPTAAPerson.5;Remove Hunter;;;;;;;;;;;;;x
+EVTOPTBPerson.5;Poet;;;;;;;;;;;;;x
+EVTOPTBBPerson.5;Remove Poet;;;;;;;;;;;;;x
+EVTOPTCPerson.5;Falconer;;;;;;;;;;;;;x
+EVTOPTCCPerson.5;Remove Falconer;;;;;;;;;;;;;x
+EVTOPTDPerson.5;More;;;;;;;;;;;;;x
+EVTOPTAPerson.6;Berserker;;;;;;;;;;;;;x
+EVTOPTAAPerson.6;Remove Berserker;;;;;;;;;;;;;x
+EVTOPTBPerson.6;Varangian;;;;;;;;;;;;;x
+EVTOPTBBPerson.6;Remove Varangian;;;;;;;;;;;;;x
+EVTOPTCPerson.6;Viking;;;;;;;;;;;;;x
+EVTOPTCCPerson.6;Remove Viking;;;;;;;;;;;;;x
+EVTOPTDPerson.6;More;;;;;;;;;;;;;x
+EVTOPTAPerson.7;Ambitious;;;;;;;;;;;;;x
+EVTOPTAAPerson.7;Remove Ambitious;;;;;;;;;;;;;x
+EVTOPTBPerson.7;Content;;;;;;;;;;;;;x
+EVTOPTBBPerson.7;Remove Content;;;;;;;;;;;;;x
+EVTOPTCPerson.7;Trusting;;;;;;;;;;;;;x
+EVTOPTCCPerson.7;Remove Trusting;;;;;;;;;;;;;x
+EVTOPTDPerson.7;More;;;;;;;;;;;;;x
+EVTOPTAPerson.8;Honest;;;;;;;;;;;;;x
+EVTOPTAAPerson.8;Remove Honest;;;;;;;;;;;;;x
+EVTOPTBPerson.8;Scarred;;;;;;;;;;;;;x
+EVTOPTBBPerson.8;Remove Scarred;;;;;;;;;;;;;x
+EVTOPTCPerson.8;Seductress;;;;;;;;;;;;;x
+EVTOPTCCPerson.8;Remove Seductress;;;;;;;;;;;;;x
+EVTOPTDPerson.8;More;;;;;;;;;;;;;x
+EVTOPTAPerson.9;Administrator;;;;;;;;;;;;;x
+EVTOPTAAPerson.9;Remove Administrator;;;;;;;;;;;;;x
+EVTOPTBPerson.9;Architect;;;;;;;;;;;;;x
+EVTOPTBBPerson.9;Remove Architect;;;;;;;;;;;;;x
+EVTOPTCPerson.9;Strategist;;;;;;;;;;;;;x
+EVTOPTCCPerson.9;Remove Strategist;;;;;;;;;;;;;x
+EVTOPTDPerson.9;More;;;;;;;;;;;;;x
+EVTOPTAPerson.10;Socializer;;;;;;;;;;;;;x
+EVTOPTAAPerson.10;Remove Socializer;;;;;;;;;;;;;x
+EVTOPTBPerson.10;Schemer;;;;;;;;;;;;;x
+EVTOPTBBPerson.10;Remove Schemer;;;;;;;;;;;;;x
+EVTOPTCPerson.10;Theologian;;;;;;;;;;;;;x
+EVTOPTCCPerson.10;Remove Theologian;;;;;;;;;;;;;x
+EVTOPTDPerson.10;More;;;;;;;;;;;;;x
+EVTOPTAPerson.11;Gamer;;;;;;;;;;;;;x
+EVTOPTAAPerson.11;Remove Gamer;;;;;;;;;;;;;x
+EVTOPTBPerson.11;Back to Trait Menu;;;;;;;;;;;;;x
+EVTOPTCPerson.11;Exit;;;;;;;;;;;;;x
+EVTDESCNperson.0;Negative Personality Traits;;;;;;;;;;;;;x
+EVTOPTANperson.0;Deceitful;;;;;;;;;;;;;x
+EVTOPTAANperson.0;Remove Deceitful;;;;;;;;;;;;;x
+EVTOPTBNperson.0;Craven;;;;;;;;;;;;;x
+EVTOPTBBNperson.0;Remove Craven;;;;;;;;;;;;;x
+EVTOPTCNperson.0;Shy;;;;;;;;;;;;;x
+EVTOPTCCNperson.0;Remove Shy;;;;;;;;;;;;;x
+EVTOPTDNperson.0;More;;;;;;;;;;;;;x
+EVTOPTANperson.1;Arbitrary;;;;;;;;;;;;;x
+EVTOPTAANperson.1;Remove Arbitrary;;;;;;;;;;;;;x
+EVTOPTBNperson.1;Cynical;;;;;;;;;;;;;x
+EVTOPTBBNperson.1;Remove Cynical;;;;;;;;;;;;;x
+EVTOPTCNperson.1;Paranoid;;;;;;;;;;;;;x
+EVTOPTCCNperson.1;Remove Paranoid;;;;;;;;;;;;;x
+EVTOPTDNperson.1;More;;;;;;;;;;;;;x
+EVTOPTANperson.2;Excommunicated;;;;;;;;;;;;;x
+EVTOPTAANperson.2;Remove Excommunicated;;;;;;;;;;;;;x
+EVTOPTBNperson.2;Kinslayer;;;;;;;;;;;;;x
+EVTOPTBBNperson.2;Remove Kinslayer;;;;;;;;;;;;;x
+EVTOPTCNperson.2;Homosexual;;;;;;;;;;;;;x
+EVTOPTCCNperson.2;Remove Homosexual;;;;;;;;;;;;;x
+EVTOPTDNperson.2;More;;;;;;;;;;;;;x
+EVTOPTANperson.3;Bastard;;;;;;;;;;;;;x
+EVTOPTAANperson.3;Remove Bastard;;;;;;;;;;;;;x
+EVTOPTBNperson.3;Legitimate Bastard;;;;;;;;;;;;;x
+EVTOPTBBNperson.3;Remove Legitimate Bastard;;;;;;;;;;;;;x
+EVTOPTCNperson.3;Drunkard;;;;;;;;;;;;;x
+EVTOPTCCNperson.3;Remove Drunkard;;;;;;;;;;;;;x
+EVTOPTDNperson.3;Back to Trait Menu;;;;;;;;;;;;;x
+EVTDESCPvirtues.0;The Seven Virtues!;;;;;;;;;;;;;x
+EVTOPTAPvirtues.0;Chaste;;;;;;;;;;;;;x
+EVTOPTAAPvirtues.0;Remove Chaste;;;;;;;;;;;;;x
+EVTOPTBPvirtues.0;Temperate;;;;;;;;;;;;;x
+EVTOPTBBPvirtues.0;Remove Temperate;;;;;;;;;;;;;x
+EVTOPTCPvirtues.0;Charitable;;;;;;;;;;;;;x
+EVTOPTCCPvirtues.0;Remove Charitable;;;;;;;;;;;;;x
+EVTOPTDPvirtues.0;More;;;;;;;;;;;;;x
+EVTOPTAPvirtues.1;Diligent;;;;;;;;;;;;;x
+EVTOPTAAPvirtues.1;Remove Diligent;;;;;;;;;;;;;x
+EVTOPTBPvirtues.1;Kind;;;;;;;;;;;;;x
+EVTOPTBBPvirtues.1;Remove Kind;;;;;;;;;;;;;x
+EVTOPTCPvirtues.1;Patient;;;;;;;;;;;;;x
+EVTOPTCCPvirtues.1;Remove Patient;;;;;;;;;;;;;x
+EVTOPTDPvirtues.1;More;;;;;;;;;;;;;x
+EVTOPTAPvirtues.2;Humble;;;;;;;;;;;;;x
+EVTOPTAAPvirtues.2;Remove Humble;;;;;;;;;;;;;x
+EVTOPTBPvirtues.2;Back to Trait Menu;;;;;;;;;;;;;x
+EVTOPTCPvirtues.2;Exit;;;;;;;;;;;;;x
+EVTDESCNvirtues.0;The Seven Deadly Sins;;;;;;;;;;;;;x
+EVTOPTANvirtues.0;Lustful;;;;;;;;;;;;;x
+EVTOPTAANvirtues.0;Remove Lustful;;;;;;;;;;;;;x
+EVTOPTBNvirtues.0;Gluttonous;;;;;;;;;;;;;x
+EVTOPTBBNvirtues.0;Remove Gluttonous;;;;;;;;;;;;;x
+EVTOPTCNvirtues.0;Greedy;;;;;;;;;;;;;x
+EVTOPTCCNvirtues.0;Remove Greedy;;;;;;;;;;;;;x
+EVTOPTDNvirtues.0;More;;;;;;;;;;;;;x
+EVTOPTANvirtues.1;Slothful;;;;;;;;;;;;;x
+EVTOPTAANvirtues.1;Remove Slothful;;;;;;;;;;;;;x
+EVTOPTBNvirtues.1;Envious;;;;;;;;;;;;;x
+EVTOPTBBNvirtues.1;Remove Envious;;;;;;;;;;;;;x
+EVTOPTCNvirtues.1;Wroth;;;;;;;;;;;;;x
+EVTOPTCCNvirtues.1;Remove Wroth;;;;;;;;;;;;;x
+EVTOPTDNvirtues.1;More;;;;;;;;;;;;;x
+EVTOPTANvirtues.2;Proud;;;;;;;;;;;;;x
+EVTOPTAANvirtues.2;Remove Proud;;;;;;;;;;;;;x
+EVTOPTBNvirtues.2;Back to Trait Menu;;;;;;;;;;;;;x
+EVTOPTCNvirtues.2;Exit;;;;;;;;;;;;;x
+EVTDESCHealtht.0;Health Related Traits;;;;;;;;;;;;;x
+EVTOPTAHealtht.0;Weak;;;;;;;;;;;;;x
+EVTOPTAAHealtht.0;Remove Weak;;;;;;;;;;;;;x
+EVTOPTBHealtht.0;Inbred;;;;;;;;;;;;;x
+EVTOPTBBHealtht.0;Remove Inbred;;;;;;;;;;;;;x
+EVTOPTCHealtht.0;Imbecile;;;;;;;;;;;;;x
+EVTOPTCCHealtht.0;Remove Imbecile;;;;;;;;;;;;;x
+EVTOPTDHealtht.0;More;;;;;;;;;;;;;x
+EVTOPTAHealtht.1;Slow;;;;;;;;;;;;;x
+EVTOPTAAHealtht.1;Remove Slow;;;;;;;;;;;;;x
+EVTOPTBHealtht.1;Dwarf;;;;;;;;;;;;;x
+EVTOPTBBHealtht.1;Remove Dwarf;;;;;;;;;;;;;x
+EVTOPTCHealtht.1;Ugly;;;;;;;;;;;;;x
+EVTOPTCCHealtht.1;Remove Ugly;;;;;;;;;;;;;x
+EVTOPTDHealtht.1;More;;;;;;;;;;;;;x
+EVTOPTAHealtht.2;Stutter;;;;;;;;;;;;;x
+EVTOPTAAHealtht.2;Remove Stutter;;;;;;;;;;;;;x
+EVTOPTBHealtht.2;Lisp;;;;;;;;;;;;;x
+EVTOPTBBHealtht.2;Remove Lisp;;;;;;;;;;;;;x
+EVTOPTCHealtht.2;Hunchack;;;;;;;;;;;;;x
+EVTOPTCCHealtht.2;Remove Hunchback;;;;;;;;;;;;;x
+EVTOPTDHealtht.2;More;;;;;;;;;;;;;x
+EVTOPTAHealtht.3;Harelip;;;;;;;;;;;;;x
+EVTOPTAAHealtht.3;Remove Harelip;;;;;;;;;;;;;x
+EVTOPTBHealtht.3;Clubfoot;;;;;;;;;;;;;x
+EVTOPTBBHealtht.3;Remove Clubfoot;;;;;;;;;;;;;x
+EVTOPTCHealtht.3;Small Pox;;;;;;;;;;;;;x
+EVTOPTCCHealtht.3;Remove Small Pox;;;;;;;;;;;;;x
+EVTOPTDHealtht.3;More;;;;;;;;;;;;;x
+EVTOPTAHealtht.4;Measles;;;;;;;;;;;;;x
+EVTOPTAAHealtht.4;Remove Measles;;;;;;;;;;;;;x
+EVTOPTBHealtht.4;Bubonic Plague;;;;;;;;;;;;;x
+EVTOPTBBHealtht.4;Remove Bubonic Plague;;;;;;;;;;;;;x
+EVTOPTCHealtht.4;Typhus;;;;;;;;;;;;;x
+EVTOPTCCHealtht.4;Remove Typhus;;;;;;;;;;;;;x
+EVTOPTDHealtht.4;More;;;;;;;;;;;;;x
+EVTOPTAHealtht.5;Typhoid Fever;;;;;;;;;;;;;x
+EVTOPTAAHealtht.5;Remove Typhoid Fever;;;;;;;;;;;;;x
+EVTOPTBHealtht.5;Tuberculosis;;;;;;;;;;;;;x
+EVTOPTBBHealtht.5;Remove Tuberculosis;;;;;;;;;;;;;x
+EVTOPTCHealtht.5;Incapable;;;;;;;;;;;;;x
+EVTOPTCCHealtht.5;Remove Incapable;;;;;;;;;;;;;x
+EVTOPTDHealtht.5;More;;;;;;;;;;;;;x
+EVTOPTAHealtht.6;Infirm;;;;;;;;;;;;;x
+EVTOPTAAHealtht.6;Remove Infirm;;;;;;;;;;;;;x
+EVTOPTBHealtht.6;Maimed;;;;;;;;;;;;;x
+EVTOPTBBHealtht.6;Remove Maimed;;;;;;;;;;;;;x
+EVTOPTCHealtht.6;Wounded;;;;;;;;;;;;;x
+EVTOPTCCHealtht.6;Remove Wounded;;;;;;;;;;;;;x
+EVTOPTDHealtht.6;More;;;;;;;;;;;;;x
+EVTOPTAHealtht.7;Leper;;;;;;;;;;;;;x
+EVTOPTAAHealtht.7;Remove Leper;;;;;;;;;;;;;x
+EVTOPTBHealtht.7;Syphilitic;;;;;;;;;;;;;x
+EVTOPTBBHealtht.7;Remove Syphilitic;;;;;;;;;;;;;x
+EVTOPTCHealtht.7;Pneumonic;;;;;;;;;;;;;x
+EVTOPTCCHealtht.7;Remove Pneumonic;;;;;;;;;;;;;x
+EVTOPTDHealtht.7;More;;;;;;;;;;;;;x
+EVTOPTAHealtht.8;Ill;;;;;;;;;;;;;x
+EVTOPTAAHealtht.8;Remove Ill;;;;;;;;;;;;;x
+EVTOPTBHealtht.8;Possessed;;;;;;;;;;;;;x
+EVTOPTBBHealtht.8;Remove Possessed;;;;;;;;;;;;;x
+EVTOPTCHealtht.8;Lunatic;;;;;;;;;;;;;x
+EVTOPTCCHealtht.8;Remove Lunatic;;;;;;;;;;;;;x
+EVTOPTDHealtht.8;More;;;;;;;;;;;;;x
+EVTOPTAHealtht.9;Depressed;;;;;;;;;;;;;x
+EVTOPTAAHealtht.9;Remove Depressed;;;;;;;;;;;;;x
+EVTOPTBHealtht.9;Stressed;;;;;;;;;;;;;x
+EVTOPTBBHealtht.9;Remove Stressed;;;;;;;;;;;;;x
+EVTOPTCHealtht.9;Blinded;;;;;;;;;;;;;x
+EVTOPTCCHealtht.9;Remove Blinded;;;;;;;;;;;;;x
+EVTOPTDHealtht.9;Back to Trait Menu;;;;;;;;;;;;;x
+EVTDESCTreligious.0;Religious Traits - Don't see anything? Don't worry, there's nothing here for your religion.;;;;;;;;;;;;;x
+EVTOPTATreligious.0;Judaic Sympathy;;;;;;;;;;;;;x
+EVTOPTAATreligious.0;Remove Judaic Sympathy;;;;;;;;;;;;;x
+EVTOPTBTreligious.0;Zoroastrian Sympathy;;;;;;;;;;;;;x
+EVTOPTBBTreligious.0;Remove Zoroastrian Sympathy;;;;;;;;;;;;;x
+EVTOPTCTreligious.0;Pagan Sympathy;;;;;;;;;;;;;x
+EVTOPTCCTreligious.0;Remove Pagan Sympathy;;;;;;;;;;;;;x
+EVTOPTDTreligious.0;More;;;;;;;;;;;;;x
+EVTOPTATreligious.1;Islamic Sympathy;;;;;;;;;;;;;x
+EVTOPTAATreligious.1;Remove Islamic Sympathy;;;;;;;;;;;;;x
+EVTOPTBTreligious.1;Christendom Sympathy;;;;;;;;;;;;;x
+EVTOPTBBTreligious.1;Remove Christendom Sympathy;;;;;;;;;;;;;x
+EVTOPTCTreligious.1;Mutazilite;;;;;;;;;;;;;x
+EVTOPTCCTreligious.1;Remove Mutazilite;;;;;;;;;;;;;x
+EVTOPTDTreligious.1;More;;;;;;;;;;;;;x
+EVTOPTATreligious.2;Ashari;;;;;;;;;;;;;x
+EVTOPTAATreligious.2;Remove Ashari;;;;;;;;;;;;;x
+EVTOPTBTreligious.2;Hajjaj;;;;;;;;;;;;;x
+EVTOPTBBTreligious.2;Remove Hajjaj;;;;;;;;;;;;;x
+EVTOPTCTreligious.2;Pilgrim;;;;;;;;;;;;;x
+EVTOPTCCTreligious.2;Remove Pilgrim;;;;;;;;;;;;;x
+EVTOPTDTreligious.2;Faqih;;;;;;;;;;;;;x
+EVTOPTDDTreligious.2;Remove Faqih;;;;;;;;;;;;;x
+EVTOPTETreligious.2;More;;;;;;;;;;;;;x
+EVTOPTATreligious.3;Hafiz;;;;;;;;;;;;;x
+EVTOPTAATreligious.3;Remove Hafiz;;;;;;;;;;;;;x
+EVTOPTBTreligious.3;Decadent;;;;;;;;;;;;;x
+EVTOPTBBTreligious.3;Remove Decadent;;;;;;;;;;;;;x
+EVTOPTCTreligious.3;More;;;;;;;;;;;;;x
+EVTOPTATreligious.4;Svetambara Jain;;;;;;;;;;;;;x
+EVTOPTAATreligious.4;Remove Svetambara Jain;;;;;;;;;;;;;x
+EVTOPTBTreligious.4;Digambara Jain;;;;;;;;;;;;;x
+EVTOPTBBTreligious.4;Remove Digambara Jain;;;;;;;;;;;;;x
+EVTOPTCTreligious.4;Theravada Buddhist;;;;;;;;;;;;;x
+EVTOPTCCTreligious.4;Remove Theravada Buddhist;;;;;;;;;;;;;x
+EVTOPTDTreligious.4;More;;;;;;;;;;;;;x
+EVTOPTATreligious.5;Vajrayana Buddhist;;;;;;;;;;;;;x
+EVTOPTAATreligious.5;Remove Vajrayana Buddhist;;;;;;;;;;;;;x
+EVTOPTBTreligious.5;Mahayana Buddhist;;;;;;;;;;;;;x
+EVTOPTBBTreligious.5;Remove Mahayana Buddhist;;;;;;;;;;;;;x
+EVTOPTCTreligious.5;Smartist Hindu;;;;;;;;;;;;;x
+EVTOPTCCTreligious.5;Remove Smartist Hindu;;;;;;;;;;;;;x
+EVTOPTDTreligious.5;More;;;;;;;;;;;;;x
+EVTOPTATreligious.6;Shaktist Hindu;;;;;;;;;;;;;x
+EVTOPTAATreligious.6;Remove Shaktist Hindu;;;;;;;;;;;;;x
+EVTOPTBTreligious.6;Vaishnavist Hindu;;;;;;;;;;;;;x
+EVTOPTBBTreligious.6;Remove Vaishnavist Hindu;;;;;;;;;;;;;x
+EVTOPTCTreligious.6;Shaivist Hindu;;;;;;;;;;;;;x
+EVTOPTCCTreligious.6;Remove Shaivist Hindu;;;;;;;;;;;;;x
+EVTOPTDTreligious.6;More;;;;;;;;;;;;;x
+EVTOPTATreligious.7;Sympathy Indian;;;;;;;;;;;;;x
+EVTOPTAATreligious.7;Remove Sympathy Indian;;;;;;;;;;;;;x
+EVTOPTBTreligious.7;Vaishya;;;;;;;;;;;;;x
+EVTOPTBBTreligious.7;Remove Vaishya;;;;;;;;;;;;;x
+EVTOPTCTreligious.7;Kshatriya;;;;;;;;;;;;;x
+EVTOPTCCTreligious.7;Remove Kshatriya;;;;;;;;;;;;;x
+EVTOPTDTreligious.7;More;;;;;;;;;;;;;x
+EVTOPTATreligious.8;Brahmin;;;;;;;;;;;;;x
+EVTOPTAATreligious.8;Remove Brahmin;;;;;;;;;;;;;x
+EVTOPTBTreligious.8;Back to Trait Menu;;;;;;;;;;;;;x
+EVTDESCLeader.0;Leader Traits for Military;;;;;;;;;;;;;x
+EVTOPTALeader.0;Light Foot Leader;;;;;;;;;;;;;x
+EVTOPTAALeader.0;Remove Light Foot Leader;;;;;;;;;;;;;x
+EVTOPTBLeader.0;Heavy Infantry Leader;;;;;;;;;;;;;x
+EVTOPTBBLeader.0;Remove Heavy Infantry Leader;;;;;;;;;;;;;x
+EVTOPTCLeader.0;Cavalry Leader;;;;;;;;;;;;;x
+EVTOPTCCLeader.0;Remove Cavalry Leader;;;;;;;;;;;;;x
+EVTOPTDLeader.0;More;;;;;;;;;;;;;x
+EVTOPTALeader.1;Inspiring Leader;;;;;;;;;;;;;x
+EVTOPTAALeader.1;Remove Inspiring Leader;;;;;;;;;;;;;x
+EVTOPTBLeader.1;Trickster;;;;;;;;;;;;;x
+EVTOPTBBLeader.1;Remove Trickster;;;;;;;;;;;;;x
+EVTOPTCLeader.1;Organizer;;;;;;;;;;;;;x
+EVTOPTCCLeader.1;Remove Organizer;;;;;;;;;;;;;x
+EVTOPTDLeader.1;More;;;;;;;;;;;;;x
+EVTOPTALeader.2;Defensive Leader;;;;;;;;;;;;;x
+EVTOPTAALeader.2;Remove Defensive Leader;;;;;;;;;;;;;x
+EVTOPTBLeader.2;Experimenter;;;;;;;;;;;;;x
+EVTOPTBBLeader.2;Remove Experimenter;;;;;;;;;;;;;x
+EVTOPTCLeader.2;Flanker;;;;;;;;;;;;;x
+EVTOPTCCLeader.2;Remove Flanker;;;;;;;;;;;;;x
+EVTOPTDLeader.2;More;;;;;;;;;;;;;x
+EVTOPTALeader.3;Rough Terrain Leader;;;;;;;;;;;;;x
+EVTOPTAALeader.3;Remove Rough Terrain Leader;;;;;;;;;;;;;x
+EVTOPTBLeader.3;Mountain Terrain Leader;;;;;;;;;;;;;x
+EVTOPTBBLeader.3;Remove Mountain Terrain Leader;;;;;;;;;;;;;x
+EVTOPTCLeader.3;Desert Terrain Leader;;;;;;;;;;;;;x
+EVTOPTCCLeader.3;Remove Desert Terrain Leader;;;;;;;;;;;;;x
+EVTOPTDLeader.3;More;;;;;;;;;;;;;x
+EVTOPTALeader.4;Unyielding Leader;;;;;;;;;;;;;x
+EVTOPTAALeader.4;Remove Unyielding Leader;;;;;;;;;;;;;x
+EVTOPTBLeader.4;Aggressive Leader;;;;;;;;;;;;;x
+EVTOPTBBLeader.4;Remove Aggressive Leader;;;;;;;;;;;;;x
+EVTOPTCLeader.4;More;;;;;;;;;;;;;x
+EVTOPTALeader.5;Siege Leader;;;;;;;;;;;;;x
+EVTOPTAALeader.5;Remove Siege Leader;;;;;;;;;;;;;x
+EVTOPTBLeader.5;Flat Terrain Leader;;;;;;;;;;;;;x
+EVTOPTBBLeader.5;Remove Flat Terrain Leader;;;;;;;;;;;;;x
+EVTOPTCLeader.5;Holy Warrior;;;;;;;;;;;;;x
+EVTOPTCCLeader.5;Remove Holy Warrior;;;;;;;;;;;;;x
+EVTOPTDLeader.5;More;;;;;;;;;;;;;x
+EVTOPTALeader.6;War Elephant Leader;;;;;;;;;;;;;x
+EVTOPTAALeader.6;Remove War Elephant Leader;;;;;;;;;;;;;x
+EVTOPTBLeader.6;Jungle Terrain Leader;;;;;;;;;;;;;x
+EVTOPTBBLeader.6;Remove Jungle Terrain Leader;;;;;;;;;;;;;x
+EVTOPTCLeader.6;Narrow Flank Leader;;;;;;;;;;;;;x
+EVTOPTCCLeader.6;Remove Narrow Flank Leader;;;;;;;;;;;;;x
+EVTOPTDLeader.6;More;;;;;;;;;;;;;x
+EVTOPTALeader.7;Winter Soldier;;;;;;;;;;;;;x
+EVTOPTAALeader.7;Remove Winter Soldier;;;;;;;;;;;;;x
+EVTOPTBLeader.7;Back to Trait Menu;;;;;;;;;;;;;x
+EVTOPTCLeader.7;Exit;;;;;;;;;;;;;x
+EVTDESCSchool.0;Educational Traits;;;;;;;;;;;;;x
+EVTOPTASchool.0;Elusive Shadow;;;;;;;;;;;;;x
+EVTOPTBSchool.0;Grey Eminence;;;;;;;;;;;;;x
+EVTOPTCSchool.0;Midas Touched;;;;;;;;;;;;;x
+EVTOPTDSchool.0;More;;;;;;;;;;;;;x
+EVTOPTASchool.1;Brilliant Strategist;;;;;;;;;;;;;x
+EVTOPTBSchool.1;Mastermind Theologian;;;;;;;;;;;;;x
+EVTOPTCSchool.1;Remove ALL education traits;;;;;;;;;;;;;x
+EVTOPTDSchool.1;Back to Trait Menu;;;;;;;;;;;;;x
+EVTDESCBoost.0;Boosts;;;;;;;;;;;;;x
+EVTOPTABoost.0;Nothing For Now;;;;;;;;;;;;x
+EVTOPTBBoost.0;Just a little Gold;;;;;;;;;;;;x
+EVTOPTCBoost.0;Some Piety good Pope;;;;;;;;;;;;x
+EVTOPTDBoost.0;More Prestige for the [Root.GetTitle]!;;;;;;;;;;;;x
+EVTDESCCdecheal;You need to be healed;;;;;;;;;;;;;x
+EVTOPTACdecheal;Yes, I do!;;;;;;;;;;;;;x
+EVTDESCCdecheal.2;Some Dynasty memebers require healing;;;;;;;;;;;;;x
+EVTOPTACdecheal.2;Yes, they do!;;;;;;;;;;;;;x
+EVTOPTBCdecheal.2;No, not right now.;;;;;;;;;;;;;x
+EVTOPTCCdecheal.2;No, and disable this for now.(re-enable in the main menu);;;;;;;;;;;;;x
+EVTDESCHeal.0;Welcome to the heal menu, it is only recommended for YOUR character. Use the Vassal Heal for anyone else.;;;;;;;;;;;;;x
+EVTOPTAHeal.0;Exit;;;;;;;;;;;;;x
+EVTOPTBHeal.0;I'm Saved for God!;;;;;;;;;;;;;x
+EVTOPTCHeal.0;I feel so...*cough*..Sickly.;;;;;;;;;;;;;x
+EVTOPTDHeal.0;I've got the Western Sickness;;;;;;;;;;;;;x
+EVTOPTEHeal.0;I wait for Marriage.;;;;;;;;;;;;;x
+EVTOPTFHeal.0;I want what they have, how come they have it?;;;;;;;;;;;;;x
+EVTOPTGHeal.0;I will crush everyone;;;;;;;;;;;;;x
+EVTOPTHHeal.0;2 plus 2 is....3.. no 2? ohhh, it's 4.;;;;;;;;;;;;;x
+EVTOPTIHeal.0;Help! I'm being Possessed!;;;;;;;;;;;;;x
+EVTOPTJHeal.0;Just one more.. *hic* more.. *faints*;;;;;;;;;;;;;x
+EVTOPTKHeal.0;Th-th-t-that's all folks!;;;;;;;;;;;;;x
+EVTOPTLHeal.0;That's tho funny!;;;;;;;;;;;;;x
+EVTOPTMHeal.0;Pack me up and ship me to a clock tower.;;;;;;;;;;;;;x
+EVTOPTNHeal.0;Don't look! *eyes shatter*;;;;;;;;;;;;;x
+EVTOPTOHeal.0;Hare what now?;;;;;;;;;;;;;x
+EVTOPTPHeal.0;Some refer to me as a lion with no gold.;;;;;;;;;;;;;x
+EVTOPTQHeal.0;My foot, it looks... off somehow.;;;;;;;;;;;;;x
+EVTOPTRHeal.0;It's all about Adam and Steve or Adina and Eve.;;;;;;;;;;;;;x
+EVTOPTSHeal.0;Hodor;;;;;;;;;;;;;x
+EVTOPTTHeal.0;Targaryens;;;;;;;;;;;;;x
+EVTOPTUHeal.0;When I flex, it goes down. Is that normal?;;;;;;;;;;;;;x
+EVTOPTVheal.0;Who cares about love when you can have sex.;;;;;;;;;;;;;x
+EVTOPTWHeal.0;Meh, get them to do it.;;;;;;;;;;;;;x
+EVTOPTXHeal.0;MORE! I NEED ALL OF IT!;;;;;;;;;;;;;x
+EVTOPTYHeal.0;Apples, oranges, bananas, oh my!;;;;;;;;;;;;;x
+EVTOPTZHeal.0;Feel my SCORN!;;;;;;;;;;;;;x
+EVTOPTAAHeal.0;I can't help it that I am awesome.;;;;;;;;;;;;;x
+EVTOPTABHeal.0;That'll never happen. Don't rely on them.;;;;;;;;;;;;;x
+EVTOPTACHeal.0;WHOHAHAHAHEHWHOAHAHAH;;;;;;;;;;;;;x
+EVTOPTADHeal.0;It's all too much!;;;;;;;;;;;;;x
+EVTOPTAEHeal.0;I just can't take it anymore.;;;;;;;;;;;;;x
+EVTOPTAFHeal.0;*Cough cough*;;;;;;;;;;;;;x
+EVTOPTAGHeal.0;*Wheeze wheeze* get the *wheeze* paper bag.;;;;;;;;;;;;;x
+EVTOPTAHHeal.0;I like gifts, but come on!;;;;;;;;;;;;;x
+EVTOPTAIHeal.0;Call Gerhard!;;;;;;;;;;;;;x
+EVTOPTAJHeal.0;I bet it will heal into a wicked scar.;;;;;;;;;;;;;x
+EVTOPTAKHeal.0;Who needs that limb anyways?;;;;;;;;;;;;;x
+EVTOPTALHeal.0;Just...ZzzzZZzz;;;;;;;;;;;;;x
+EVTOPTAMHeal.0;...;;;;;;;;;;;;;x
+EVTOPTANHeal.0;The Coughing sickness;;;;;;;;;;;;;x
+EVTOPTAOHeal.0;Slow Fever;;;;;;;;;;;;;x
+EVTOPTAPHeal.0;Camp Fever;;;;;;;;;;;;;x
+EVTOPTAQHeal.0;Rats! The Plague!;;;;;;;;;;;;;x
+EVTOPTARHeal.0;The Measles;;;;;;;;;;;;;x
+EVTOPTASHeal.0;Small Pox;;;;;;;;;;;;;x
+EVTOPTATHeal.0;Blinded by the Light!;;;;;;;;;;;;;x
+EVTOPTAUHeal.0;I didn't need those bits. I'll be a spy master.;;;;;;;;;;;;;x
+EVTOPTAVheal.1;There's that wicked Scar!;;;;;;;;;;;;;x
+EVTOPTAWHeal.0;Blood is only so thick.;;;;;;;;;;;;;x
+EVTOPTAXHeal.0;No dynastic name for yoU!;;;;;;;;;;;;;x
+EVTOPTAYHeal.0;Fine.. You can have the name.;;;;;;;;;;;;;x
+EVTOPTAZHeal.0;They're coming for me!;;;;;;;;;;;;;x
+EVTOPTBAHeal.0;Meh, guilty, not guilty, it matters not.;;;;;;;;;;;;;x
+EVTOPTBBHeal.0;I need nothing more than I have.;;;;;;;;;;;;;x
+EVTOPTBCHeal.0;Stay over there, we don't need to talk.;;;;;;;;;;;;;x
+EVTOPTBDHeal.0;I don't NEED to lead the troops, right?;;;;;;;;;;;;;x
+EVTOPTBEHeal.0;Deceitful;;;;;;;;;;;;;x
+EVTOPTBFHeal.0;Hedonist;;;;;;;;;;;;;x
+EVTOPTBGHeal.0;Hand of God;;;;;;;;;;;;;x
+EVTOPTBHHeal.0;Wicked Priest;;;;;;;;;;;;;x
+EVTOPTBIHeal.0;Dull;;;;;;;;;;;;;x
+EVTOPTBJHeal.0;Symptoms;;;;;;;;;;;;;x
+EVTOPTBKHeal.0;Missing Limbs;;;;;;;;;;;;;x
+EVTOPTBLHeal.0;Sickness;;;;;;;;;;;;;x
+EVTOPTBMHeal.0;Bad Priest;;;;;;;;;;;;;x
+EVTOPTBNHeal.0;Excommunicated;;;;;;;;;;;;;x
+EVTOPTBOHeal.0;Peasant Leader;;;;;;;;;;;;;x
+EVTOPTBPHeal.0;Decadent;;;;;;;;;;;;;x
+EVTOPTBQHeal.0;Stubborn;;;;;;;;;;;;;x
+EVTDESCVheal.0;A heal bot for Vassals!;;;;;;;;;;;;;x
+EVTOPTAAVheal.0;Exit;;;;;;;;;;;;;x
+EVTOPTBVheal.0;I'm Saved for God!;;;;;;;;;;;;;x
+EVTOPTCVheal.0;I feel so...*cough*..Sickly.;;;;;;;;;;;;;x
+EVTOPTDVheal.0;I've got the Western Sickness;;;;;;;;;;;;;x
+EVTOPTEVheal.0;I wait for Marriage.;;;;;;;;;;;;;x
+EVTOPTFVheal.0;I want what they have, how come they have it?;;;;;;;;;;;;;x
+EVTOPTGVheal.0;I will crush everyone;;;;;;;;;;;;;x
+EVTOPTHVheal.0;2 plus 2 is....3.. no 2? ohhh, it's 4.;;;;;;;;;;;;;x
+EVTOPTIVheal.0;Help! I'm being Possessed!;;;;;;;;;;;;;x
+EVTOPTJVheal.0;Just one more.. *hic* more.. *faints*;;;;;;;;;;;;;x
+EVTOPTKVheal.0;Th-th-t-that's all folks!;;;;;;;;;;;;;x
+EVTOPTLVheal.0;That's tho funny!;;;;;;;;;;;;;x
+EVTOPTMVheal.0;Pack me up and ship me to a clock tower.;;;;;;;;;;;;;x
+EVTOPTNVheal.0;Don't look! *eyes shatter*;;;;;;;;;;;;;x
+EVTOPTOVheal.0;Hare what now?;;;;;;;;;;;;;x
+EVTOPTPVheal.0;Some refer to me as a lion with no gold.;;;;;;;;;;;;;x
+EVTOPTQVheal.0;My foot, it looks... off somehow.;;;;;;;;;;;;;x
+EVTOPTRVheal.0;It's all about Adam and Steve or Adina and Eve.;;;;;;;;;;;;;x
+EVTOPTSVheal.0;Hodor;;;;;;;;;;;;;x
+EVTOPTTVheal.0;Targaryens;;;;;;;;;;;;;x
+EVTOPTUVheal.0;When I flex, it goes down. Is that normal?;;;;;;;;;;;;;x
+EVTOPTVVheal.0;Who cares about love when you can have sex.;;;;;;;;;;;;;x
+EVTOPTWVheal.0;Meh, get them to do it.;;;;;;;;;;;;;x
+EVTOPTXVheal.0;MORE! I NEED ALL OF IT!;;;;;;;;;;;;;x
+EVTOPTYVheal.0;Apples, oranges, bananas, oh my!;;;;;;;;;;;;;x
+EVTOPTZVheal.0;Feel my SCORN!;;;;;;;;;;;;;x
+EVTOPTAAAVheal.0;I can't help it that I am awesome.;;;;;;;;;;;;;x
+EVTOPTABVheal.0;That'll never happen. Don't rely on them.;;;;;;;;;;;;;x
+EVTOPTACVheal.0;WHOHAHAHAHEHWHOAHAHAH;;;;;;;;;;;;;x
+EVTOPTADVheal.0;It's all too much!;;;;;;;;;;;;;x
+EVTOPTAEVheal.0;I just can't take it anymore.;;;;;;;;;;;;;x
+EVTOPTAFVheal.0;*Cough cough*;;;;;;;;;;;;;x
+EVTOPTAGVheal.0;*Wheeze wheeze* get the *wheeze* paper bag.;;;;;;;;;;;;;x
+EVTOPTAHVheal.0;I like gifts, but come on!;;;;;;;;;;;;;x
+EVTOPTAIVheal.0;Call Gerhard!;;;;;;;;;;;;;x
+EVTOPTAJVheal.0;I bet it will heal into a wicked scar.;;;;;;;;;;;;;x
+EVTOPTAKVheal.0;Who needs that limb anyways?;;;;;;;;;;;;;x
+EVTOPTALVheal.0;Just...ZzzzZZzz;;;;;;;;;;;;;x
+EVTOPTAMVheal.0;...;;;;;;;;;;;;;x
+EVTOPTANVheal.0;The Coughing sickness;;;;;;;;;;;;;x
+EVTOPTAOVheal.0;Slow Fever;;;;;;;;;;;;;x
+EVTOPTAPVheal.0;Camp Fever;;;;;;;;;;;;;x
+EVTOPTAQVheal.0;Rats! The Plague!;;;;;;;;;;;;;x
+EVTOPTARVheal.0;The Measles;;;;;;;;;;;;;x
+EVTOPTASVheal.0;Small Pox;;;;;;;;;;;;;x
+EVTOPTATVheal.0;Blinded by the Light!;;;;;;;;;;;;;x
+EVTOPTAUVheal.0;I didn't need those bits. I'll be a spy master.;;;;;;;;;;;;;x
+EVTOPTAVVheal.0;There's that wicked Scar!;;;;;;;;;;;;;x
+EVTOPTAWVheal.0;Blood is only so thick.;;;;;;;;;;;;;x
+EVTOPTAXVheal.0;No dynastic name for you!;;;;;;;;;;;;;x
+EVTOPTAYVheal.0;Fine.. You can have the name.;;;;;;;;;;;;;x
+EVTOPTAZVheal.0;They're coming for me!;;;;;;;;;;;;;x
+EVTOPTBAVheal.0;Meh, guilty, not guilty, it matters not.;;;;;;;;;;;;;x
+EVTOPTBBVheal.0;I need nothing more than I have.;;;;;;;;;;;;;x
+EVTOPTBCVheal.0;Stay over there, we don't need to talk.;;;;;;;;;;;;;x
+EVTOPTBDVheal.0;I don't NEED to lead the troops, right?;;;;;;;;;;;;;x
+EVTOPTBEVheal.0;Deceitful;;;;;;;;;;;;;x
+EVTOPTBFVheal.0;Hedonist;;;;;;;;;;;;;x
+EVTOPTBGVheal.0;Hand of God;;;;;;;;;;;;;x
+EVTOPTBHVheal.0;Vassal Duty;;;;;;;;;;;;;x
+EVTOPTBIVheal.0;Bad Priest;;;;;;;;;;;;;x
+EVTOPTBJVheal.0;Monk Or Nun;;;;;;;;;;;;;x
+EVTOPTBKVheal.0;Dull;;;;;;;;;;;;;x
+EVTOPTBLVheal.0;Symptoms;;;;;;;;;;;;;x
+EVTOPTBMVheal.0;Missings Limbs;;;;;;;;;;;;;x
+EVTOPTBNVheal.0;Exommunicated;;;;;;;;;;;;;x
+EVTOPTBOVheal.0;Peasant Leader;;;;;;;;;;;;;x
+EVTOPTBPVheal.0;Decadent;;;;;;;;;;;;;x
+EVTOPTBQVheal.0;Stubborn;;;;;;;;;;;;;x
+EVTOPTBRVheal.0;Sickness;;;;;;;;;;;;;x
+EVTDESCVheal.1;A heal bot for Vassals!;;;;;;;;;;;;;x
+EVTOPTAAVheal.1;Exit;;;;;;;;;;;;;x
+EVTOPTBVheal.1;I'm Saved for God!;;;;;;;;;;;;;x
+EVTOPTCVheal.1;I feel so...*cough*..Sickly.;;;;;;;;;;;;;x
+EVTOPTDVheal.1;I've got the Western Sickness;;;;;;;;;;;;;x
+EVTOPTEVheal.1;I wait for Marriage.;;;;;;;;;;;;;x
+EVTOPTFVheal.1;I want what they have, how come they have it?;;;;;;;;;;;;;x
+EVTOPTGVheal.1;I will crush everyone;;;;;;;;;;;;;x
+EVTOPTHVheal.1;2 plus 2 is....3.. no 2? ohhh, it's 4.;;;;;;;;;;;;;x
+EVTOPTIVheal.1;Help! I'm being Possessed!;;;;;;;;;;;;;x
+EVTOPTJVheal.1;Just one more.. *hic* more.. *faints*;;;;;;;;;;;;;x
+EVTOPTKVheal.1;Th-th-t-that's all folks!;;;;;;;;;;;;;x
+EVTOPTLVheal.1;That's tho funny!;;;;;;;;;;;;;x
+EVTOPTMVheal.1;Pack me up and ship me to a clock tower.;;;;;;;;;;;;;x
+EVTOPTNVheal.1;Don't look! *eyes shatter*;;;;;;;;;;;;;x
+EVTOPTOVheal.1;Hare what now?;;;;;;;;;;;;;x
+EVTOPTPVheal.1;Some refer to me as a lion with no gold.;;;;;;;;;;;;;x
+EVTOPTQVheal.1;My foot, it looks... off somehow.;;;;;;;;;;;;;x
+EVTOPTRVheal.1;It's all about Adam and Steve or Adina and Eve.;;;;;;;;;;;;;x
+EVTOPTSVheal.1;Hodor;;;;;;;;;;;;;x
+EVTOPTTVheal.1;Targaryens;;;;;;;;;;;;;x
+EVTOPTUVheal.1;When I flex, it goes down. Is that normal?;;;;;;;;;;;;;x
+EVTOPTVVheal.1;Who cares about love when you can have sex.;;;;;;;;;;;;;x
+EVTOPTWVheal.1;Meh, get them to do it.;;;;;;;;;;;;;x
+EVTOPTXVheal.1;MORE! I NEED ALL OF IT!;;;;;;;;;;;;;x
+EVTOPTYVheal.1;Apples, oranges, bananas, oh my!;;;;;;;;;;;;;x
+EVTOPTZVheal.1;Feel my SCORN!;;;;;;;;;;;;;x
+EVTOPTAAAVheal.1;I can't help it that I am awesome.;;;;;;;;;;;;;x
+EVTOPTABVheal.1;That'll never happen. Don't rely on them.;;;;;;;;;;;;;x
+EVTOPTACVheal.1;WHOHAHAHAHEHWHOAHAHAH;;;;;;;;;;;;;x
+EVTOPTADVheal.1;It's all too much!;;;;;;;;;;;;;x
+EVTOPTAEVheal.1;I just can't take it anymore.;;;;;;;;;;;;;x
+EVTOPTAFVheal.1;*Cough cough*;;;;;;;;;;;;;x
+EVTOPTAGVheal.1;*Wheeze wheeze* get the *wheeze* paper bag.;;;;;;;;;;;;;x
+EVTOPTAHVheal.1;I like gifts, but come on!;;;;;;;;;;;;;x
+EVTOPTAIVheal.1;Call Gerhard!;;;;;;;;;;;;;x
+EVTOPTAJVheal.1;I bet it will heal into a wicked scar.;;;;;;;;;;;;;x
+EVTOPTAKVheal.1;Who needs that limb anyways?;;;;;;;;;;;;;x
+EVTOPTALVheal.1;Just...ZzzzZZzz;;;;;;;;;;;;;x
+EVTOPTAMVheal.1;...;;;;;;;;;;;;;x
+EVTOPTANVheal.1;The Coughing sickness;;;;;;;;;;;;;x
+EVTOPTAOVheal.1;Slow Fever;;;;;;;;;;;;;x
+EVTOPTAPVheal.1;Camp Fever;;;;;;;;;;;;;x
+EVTOPTAQVheal.1;Rats! The Plague!;;;;;;;;;;;;;x
+EVTOPTARVheal.1;The Measles;;;;;;;;;;;;;x
+EVTOPTASVheal.1;Small Pox;;;;;;;;;;;;;x
+EVTOPTATVheal.1;Blinded by the Light!;;;;;;;;;;;;;x
+EVTOPTAUVheal.1;I didn't need those bits. I'll be a spy master.;;;;;;;;;;;;;x
+EVTOPTAVVheal.1;There's that wicked Scar!;;;;;;;;;;;;;x
+EVTOPTAWVheal.1;Blood is only so thick.;;;;;;;;;;;;;x
+EVTOPTAXVheal.1;No dynastic name for you!;;;;;;;;;;;;;x
+EVTOPTAYVheal.1;Fine.. You can have the name.;;;;;;;;;;;;;x
+EVTOPTAZVheal.1;They're coming for me!;;;;;;;;;;;;;x
+EVTOPTBAVheal.1;Meh, guilty, not guilty, it matters not.;;;;;;;;;;;;;x
+EVTOPTBBVheal.1;I need nothing more than I have.;;;;;;;;;;;;;x
+EVTOPTBCVheal.1;Stay over there, we don't need to talk.;;;;;;;;;;;;;x
+EVTOPTBDVheal.1;I don't NEED to lead the troops, right?;;;;;;;;;;;;;x
+EVTOPTBEVheal.1;Deceitful;;;;;;;;;;;;;x
+EVTOPTBFVheal.1;Hedonist;;;;;;;;;;;;;x
+EVTOPTBGVheal.1;Hand of God;;;;;;;;;;;;;x
+EVTOPTBHVheal.1;Vassal Duty;;;;;;;;;;;;;x
+EVTOPTBIVheal.1;Bad Priest;;;;;;;;;;;;;x
+EVTOPTBJVheal.1;Monk Or Nun;;;;;;;;;;;;;x
+EVTOPTBKVheal.1;Dull;;;;;;;;;;;;;x
+EVTOPTBLVheal.1;Symptoms;;;;;;;;;;;;;x
+EVTOPTBMVheal.1;Missings Limbs;;;;;;;;;;;;;x
+EVTOPTBNVheal.1;Exommunicated;;;;;;;;;;;;;x
+EVTOPTBOVheal.1;Peasant Leader;;;;;;;;;;;;;x
+EVTOPTBPVheal.1;Decadent;;;;;;;;;;;;;x
+EVTOPTBQVheal.1;Stubborn;;;;;;;;;;;;;x
+EVTOPTBRVheal.1;Sickness;;;;;;;;;;;;;x
+EVTDESCVas.0;Vassal Stuff, good for Vassals!;;;;;;;;;;;;;x
+EVTOPTDVas.0;Exit;;;;;;;;;;;;;x
+EVTOPTAVas.0;Vassalage Duty;;;;;;;;;;;;;x
+EVTOPTAAVas.0;Strip them of their duty.;;;;;;;;;;;;;x
+EVTOPTBVas.0;Make them an exceptional Leader.;;;;;;;;;;;;;x
+EVTOPTBBVas.0;I no longer need their commanding skills.;;;;;;;;;;;;;x
+EVTOPTCVas.0;Make them Healthy;;;;;;;;;;;;;x
+EVTOPTCCVas.0;They are Healthy enough.;;;;;;;;;;;;;x
+EVTOPTAVas.1;Exit;;;;;;;;;;;;;x
+EVTOPTBVas.1;Anti-Pope;;;;;;;;;;;;;x
+EVTOPTBBVas.1;Remove Anti-Pope;;;;;;;;;;;;;x
+EVTOPTCVas.1;Disloyal Vassal;;;;;;;;;;;;;x
+EVTOPTCCVas.1;Remove Disloyal Vassal;;;;;;;;;;;;;x
+EVTOPTDVas.1;Increase Stats;;;;;;;;;;;;;x
+EVTOPTDDVas.1;Remove Increased Stats;;;;;;;;;;;;;x
+EVTOPTAVas.2;Exit;;;;;;;;;;;;;x
+EVTOPTBVas.2;Elusive Shadow;;;;;;;;;;;;;x
+EVTOPTCVas.2;Mastermind Theologian;;;;;;;;;;;;;x
+EVTOPTDVas.2;Brilliant Strategist;;;;;;;;;;;;;x
+EVTOPTAVas.3;Exit;;;;;;;;;;;;;x
+EVTOPTBVas.3;Midas Touched;;;;;;;;;;;;;x
+EVTOPTCVas.3;Grey Eminence;;;;;;;;;;;;;x
+EVTDESCCheatothers.0;What would you like to do with [From.GetFullName] of [From.GetOnlyDynastyName]?;;;;;;;;;;;;;x
+EVTOPTDCheatothers.0;Exit;;;;;;;;;;;;;x
+EVTOPTACheatothers.0;Vassalage Duty;;;;;;;;;;;;;x
+EVTOPTAACheatothers.0;Strip them of their duty.;;;;;;;;;;;;;x
+EVTOPTBCheatothers.0;Make them an exceptional Leader.;;;;;;;;;;;;;x
+EVTOPTBBCheatothers.0;I no longer need their commanding skills.;;;;;;;;;;;;;x
+EVTOPTCCheatothers.0;Make them Healthy;;;;;;;;;;;;;x
+EVTOPTCCCheatothers.0;They are Healthy enough.;;;;;;;;;;;;;x
+EVTDESCCheatothers.1;What would you like to do with [From.GetFullName] of [From.GetOnlyDynastyName]?;;;;;;;;;;;;;x
+EVTOPTACheatothers.1;Exit;;;;;;;;;;;;;x
+EVTOPTBCheatothers.1;Anti-Pope;;;;;;;;;;;;;x
+EVTOPTBBCheatothers.1;Remove Anti-Pope;;;;;;;;;;;;;x
+EVTOPTCCheatothers.1;Disloyal Vassal;;;;;;;;;;;;;x
+EVTOPTCCCheatothers.1;Remove Disloyal Vassal;;;;;;;;;;;;;x
+EVTOPTDCheatothers.1;Increase Stats;;;;;;;;;;;;;x
+EVTOPTDDCheatothers.1;Remove Increased Stats;;;;;;;;;;;;;x
+EVTOPTACheatothers.2;Exit;;;;;;;;;;;;;x
+EVTOPTBCheatothers.2;Elusive Shadow;;;;;;;;;;;;;x
+EVTOPTCCheatothers.2;Mastermind Theologian;;;;;;;;;;;;;x
+EVTOPTDCheatothers.2;Brilliant Strategist;;;;;;;;;;;;;x
+EVTOPTACheatothers.3;Exit;;;;;;;;;;;;;x
+EVTOPTBCheatothers.3;Midas Touched;;;;;;;;;;;;;x
+EVTOPTCCheatothers.3;Grey Eminence;;;;;;;;;;;;;x
+EVTDESCCheatothers.4;What will you do?;;;;;;;;;;;;;x
+EVTOPTACheatothers.4;Exit;;;;;;;;;;;;;x
+EVTOPTBCheatothers.4;I need them to be a capable priest.;;;;;;;;;;;;;x
+EVTOPTBBCheatothers.4;Remove Capable Priest.;;;;;;;;;;;;;x
+EVTOPTCCheatothers.4;I need them to be a smart... and strong!;;;;;;;;;;;;;x
+EVTOPTDCheatothers.4;Nothing Yet.;;;;;;;;;;;;;x
+EVTDESCCheatothers.5;What will you do?;;;;;;;;;;;;;x
+EVTOPTACheatothers.5;Exit;;;;;;;;;;;;;x
+EVTOPTBCheatothers.5;I need them to be a Capable Steward;;;;;;;;;;;;;x
+EVTOPTBBCheatothers.5;Remove Capable Steward.;;;;;;;;;;;;;x
+EVTOPTCCheatothers.5;I need them to be a Strategist;;;;;;;;;;;;;x
+EVTOPTDCheatothers.5;Nothing Yet.;;;;;;;;;;;;;x
+EVTDESCVas.99;The 'Player' has invoked the cheats on you!;;;;;;;;;;;;;x
+EVTOPTAVas.99;Oh nooo!;;;;;;;;;;;;;x
+EVTDESCCouncil.0;Council Related Events;;;;;;;;;;;;;x
+EVTOPTACouncil.0;Religious Conversion;;;;;;;;;;;;;x
+EVTOPTBCouncil.0;Cultural Conversion;;;;;;;;;;;;;x
+EVTOPTCCouncil.0;Get Claims;;;;;;;;;;;;;x
+EVTOPTDCouncil.0;Exit;;;;;;;;;;;;;x
+EVTDESCCouncil.1;Council Related Events;;;;;;;;;;;;;x
+EVTOPTACouncil.1;Convert every person in my realm!;;;;;;;;;;;;;x
+EVTOPTBCouncil.1;Convert just my land;;;;;;;;;;;;;x
+EVTOPTCCouncil.1;Convert EVERYTHING in my Realm.;;;;;;;;;;;;;x
+EVTOPTDCouncil.1;Back;;;;;;;;;;;;;x
+EVTOPTACouncil.2;Culturize every person in my realm!;;;;;;;;;;;;;x
+EVTOPTBCouncil.2;Culturize just my land;;;;;;;;;;;;;x
+EVTOPTCCouncil.2;Culturize EVERYTHING in my Realm.;;;;;;;;;;;;;x
+EVTOPTDCouncil.2;Back;;;;;;;;;;;;;x
+EVTDESCCouncil.3;Get Claims (Place your Chancellor in the location of the actual title you wish to claim. IE: To calim the Kingdom of France, you must place him somewhere in France's De jure borders).;;;;;;;;;;;;;x
+EVTOPTACouncil.3;Claim County;;;;;;;;;;;;;x
+EVTOPTBCouncil.3;Claim Duchy;;;;;;;;;;;;;x
+EVTOPTCCouncil.3;Claim Kingdom;;;;;;;;;;;;;x
+EVTOPTDCouncil.3;Back;;;;;;;;;;;;;x
+EVTDESCStat.0;Stats Page!;;;;;;;;;;;;;x
+EVTOPTAStat.0;Learning;;;;;;;;;;;;;x
+EVTOPTBStat.0;Martial;;;;;;;;;;;;;x
+EVTOPTCStat.0;Diplomacy;;;;;;;;;;;;;x
+EVTOPTDStat.0;More;;;;;;;;;;;;;x
+EVTOPTAStat.1;Stewardship;;;;;;;;;;;;;x
+EVTOPTBStat.1;Intrigue;;;;;;;;;;;;;x
+EVTOPTCStat.1;Back;;;;;;;;;;;;;x
+EVTOPTDStat.1;Main Menu;;;;;;;;;;;;;x
+EVTDESCStewardship.0;Stewardship Page!;;;;;;;;;;;;;x
+EVTOPTAStewardship.0;+10;;;;;;;;;;;;;x
+EVTOPTBStewardship.0;-5;;;;;;;;;;;;;x
+EVTOPTCStewardship.0;-1;;;;;;;;;;;;;x
+EVTOPTDStewardship.0;Stat Menu;;;;;;;;;;;;;x
+EVTDESCMartial.0;Martial Page!;;;;;;;;;;;;;x
+EVTOPTAMartial.0;+10;;;;;;;;;;;;;x
+EVTOPTBMartial.0;-5;;;;;;;;;;;;;x
+EVTOPTCMartial.0;-1;;;;;;;;;;;;;x
+EVTOPTDMartial.0;Stat Menu;;;;;;;;;;;;;x
+EVTDESCDiplomacy.0;Diplomatic Page!;;;;;;;;;;;;;x
+EVTOPTADiplomacy.0;+10;;;;;;;;;;;;;x
+EVTOPTBDiplomacy.0;-5;;;;;;;;;;;;;x
+EVTOPTCDiplomacy.0;-1;;;;;;;;;;;;;x
+EVTOPTDDiplomacy.0;Stat Menu;;;;;;;;;;;;;x
+EVTDESCLearning.0;Learning Page!;;;;;;;;;;;;;x
+EVTOPTALearning.0;+10;;;;;;;;;;;;;x
+EVTOPTBLearning.0;-5;;;;;;;;;;;;;x
+EVTOPTCLearning.0;-1;;;;;;;;;;;;;x
+EVTOPTDLearning.0;Stat Menu;;;;;;;;;;;;;x
+EVTDESCIntrigue;Intrigue Page!;;;;;;;;;;;;;x
+EVTOPTAIntrigue.0;+10;;;;;;;;;;;;;x
+EVTOPTBIntrigue.0;-5;;;;;;;;;;;;;x
+EVTOPTCIntrigue.0;-1;;;;;;;;;;;;;x
+EVTOPTDIntrigue.0;Stat Menu;;;;;;;;;;;;;x
+EVTDESCMenu.0;Main Menu (BETA: Please report any missing text to me on my main mod page.);;;;;;;;;;;;;x
+EVTOPTAMenu.0;Trait Menu;;;;;;;;;;;;;x
+EVTOPTBMenu.0;Stat Menu;;;;;;;;;;;;;x
+EVTOPTCMenu.0;Council Menu;;;;;;;;;;;;;x
+EVTOPTDMenu.0;More Menu;;;;;;;;;;;;;x
+EVTOPTAMenu.1;Tech Menu;;;;;;;;;;;;;x
+EVTOPTBMenu.1;Currency Menu;;;;;;;;;;;;;x
+EVTOPTCMenu.1;Healer Menu;;;;;;;;;;;;;x
+EVTOPTDMenu.1;More Menu;;;;;;;;;;;;;x
+EVTOPTAMenu.2;Main Menu;;;;;;;;;;;;;x
+EVTOPTBMenu.2;Disable Cheat Decision Menu;;;;;;;;;;;;;x
+EVTOPTBBMenu.2;Enable Cheat Decision Menu;;;;;;;;;;;;;x
+EVTOPTCMenu.2;Disable Dynastic Healing;;;;;;;;;;;;;x
+EVTOPTCCMenu.2;Enable Dynastic Healing;;;;;;;;;;;;;x
+EVTOPTDMenu.2;Exit;;;;;;;;;;;;;x
+EVTDESCMenu.90;How Big an army?;;;;;;;;;;;;;x
+EVTOPTAMenu.90;None for now, Thanks.;;;;;;;;;;;;;x
+EVTOPTBMenu.90;5000 Men;;;;;;;;;;;;;x
+EVTOPTCMenu.90;10000 Men;;;;;;;;;;;;;x
+EVTOPTDMenu.90;20000 Men;;;;;;;;;;;;;x
+EVTDESCMenu.91;How Big a Navy?;;;;;;;;;;;;;x
+EVTOPTAMenu.91;None for now, Thanks.;;;;;;;;;;;;;x
+EVTOPTBMenu.91;200 Boats;;;;;;;;;;;;;x
+EVTOPTCMenu.91;500 Boats;;;;;;;;;;;;;x
+EVTOPTDMenu.91;1000 Boats;;;;;;;;;;;;;x
+EVTDESCMenu.99;Misc Things;;;;;;;;;;;;;x
+EVTOPTAMenu.99;Do Nothing;;;;;;;;;;;;;x
+EVTOPTBMenu.99;Unknown Bastard Children;;;;;;;;;;;;;x
+EVTDESCTech.0;Technology is Important, you need more?;;;;;;;;;;;;;x
+EVTOPTATech.0;Advance Cultural Tech;;;;;;;;;;;;;x
+EVTOPTBTech.0;Advance Economy Tech;;;;;;;;;;;;;x
+EVTOPTCTech.0;Advance Military Tech;;;;;;;;;;;;;x
+EVTOPTDTech.0;More;;;;;;;;;;;;;x
+EVTDESCTech.1;Some Extra stuff;;;;;;;;;;;;;x
+EVTOPTATech.1;Hand of God;;;;;;;;;;;;;x
+EVTOPTAATech.1;Remove Hand of God;;;;;;;;;;;;;x
+EVTOPTBTech.1;Add Religious Flag;;;;;;;;;;;;;x
+EVTOPTBBTech.1;Remove Religious Flag;;;;;;;;;;;;;x
+EVTDESCTech.94;Spawn Child of you dynasty;;;;;;;;;;;;;x
+EVTOPTATech.94;Spawn a Female;;;;;;;;;;;;;x
+EVTOPTBTech.94;Spawn a Male;;;;;;;;;;;;;x
+EVTOPTCTech.1;Exit, Please.;;;;;;;;;;;;;x
+EVTDESCTech.95;What Kind?;;;;;;;;;;;;;x
+EVTOPTATech.95;A leader for my Armies;;;;;;;;;;;;;x
+EVTOPTBTech.95;A loyal Vassal to give lands;;;;;;;;;;;;;x
+EVTOPTCTech.95;Exit;;;;;;;;;;;;;x
+EVTDESCTech.98;What Kind?;;;;;;;;;;;;;x
+EVTOPTATech.98;A intriguing woman. (Intrigue);;;;;;;;;;;;;x
+EVTOPTBTech.98;A diplomatic woman. (Diplomacy);;;;;;;;;;;;;x
+EVTOPTCTech.98;A shrewd woman. (Stewardship);;;;;;;;;;;;;x
+EVTOPTDTech.98;More;;;;;;;;;;;;;x
+EVTDESCTech.99;What Kind?;;;;;;;;;;;;;x
+EVTOPTATech.99;A strong woman. (Martial);;;;;;;;;;;;;x
+EVTOPTBTech.99;A educated woman. (Learning);;;;;;;;;;;;;x
+EVTOPTCTech.99;Exit;;;;;;;;;;;;;x
+EVTDESCchip.0;Options for the Historical Immersion Project mod (HIP) do not use if you do note have HIP enabled!;;;;;;;;;;;;;x
+EVTOPTAchip.0;Remove Current Law Cooldowns;;;;;;;;;;;;;x
+EVTOPTBchip.0;Remove Current War Cooldowns;;;;;;;;;;;;;x
+EVTOPTDchip.0;Do Nothing;;;;;;;;;;;;;x
+EVTDESCCountry.1;WARNING: Not tested fully. Crown Laws: Improve them. Will reset to Autonomous Vassals when trying to improve past Absolute Crown Authority.;;;;;;;;;;;;;x
+EVTOPTACountry.1;Increase Centralization;;;;;;;;;;;;;x
+EVTOPTAACountry.1;Decrease Centralization;;;;;;;;;;;;;x
+EVTOPTCCountry.1;Exit;;;;;;;;;;;;;x
+EVTDESCCountry.3;Governments Types;;;;;;;;;;;;;x
+EVTOPTADountry.3;Do Nothing;;;;;;;;;;;;;x
+EVTOPTACountry.3;Increase Government Rank;;;;;;;;;;;;;x
+EVTDESCDec.0;Would you like to quick buff yourself?;;;;;;;;;;;;;x
+EVTOPTADec.0;No thanks.;;;;;;;;;;;;;x
+EVTOPTBDec.0;Dutiful Vassal;;;;;;;;;;;;;x
+EVTOPTBBDec.0;Remove Dutiful Vassal;;;;;;;;;;;;;x
+EVTOPTCDec.0;Commander;;;;;;;;;;;;;x
+EVTOPTCCDec.0;Remove Commander;;;;;;;;;;;;;x
+EVTOPTDDec.0;Healthy;;;;;;;;;;;;;x
+EVTOPTDDDec.0;Remove Healthy;;;;;;;;;;;;;x
+EVTDESCCcounties.0;Test: Counties and Such;;;;;;;;;;;;;x
+EVTOPTACcounties.0;Build me a Castle.;;;;;;;;;;;;;x
+EVTOPTBCcounties.0;Build me a City.;;;;;;;;;;;;;x
+EVTOPTCCcounties.0;Build me a Temple.;;;;;;;;;;;;;x
+EVTOPTDCcounties.0;Exit;;;;;;;;;;;;;x
+EVTDESCMon.0;Currency?;;;;;;;;;;;;;x
+EVTOPTAMon.0;+500 Prestige;;;;;;;;;;;;;x
+EVTOPTBMon.0;+2500 Wealth;;;;;;;;;;;;;x
+EVTOPTCMon.0;+500 Piety;;;;;;;;;;;;;x
+EVTOPTDMon.0;Exit;;;;;;;;;;;;;x
+EVTDESCModify.0;Do you wish to achieve greatness, mi'lord?;;;;;;;;;;;;;x
+EVTOPTAModify.0;No, not right now.;;;;;;;;;;;;;x
+EVTOPTBModify.0;Yes, Aid me!;;;;;;;;;;;;;x
+EVTOPTBBModify.0;The time for greatness is behind me.;;;;;;;;;;;;;x
+EVTDESCModify.1;Do you require aid with your county, mi'lord?;;;;;;;;;;;;;x
+EVTOPTAModify.1;No, not right now.;;;;;;;;;;;;;x
+EVTOPTBModify.1;Yes, Aid me!;;;;;;;;;;;;;x
+EVTOPTBBModify.1;The time for greatness is behind me.;;;;;;;;;;;;;x
+EVTDESCModify.2;Create a child;;;;;;;;;;;;;x
+EVTOPTAModify.2;Do Nothing;;;;;;;;;;;;;x
+EVTOPTBModify.2;Male;;;;;;;;;;;;;x
+EVTOPTCModify.2;Female;;;;;;;;;;;;;x
+EVTDESCModify.3;Dynasty Management;;;;;;;;;;;;;x
+EVTOPTAModify.3;Do Nothing;;;;;;;;;;;;;x
+EVTOPTBModify.3;Join [ROOT.GetOnlyDynastyName];;;;;;;;;;;;;x

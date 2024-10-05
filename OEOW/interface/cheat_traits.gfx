@@ -1,0 +1,81 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_hand_of_god_player"
+		texturefile = "gfx/traits/godplayer.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_vassal_duty"
+		texturefile = "gfx/traits/vassalduty.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_anti_pope_p"
+		texturefile = "gfx/traits/anti_pope_p.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_disloyal_vassal"
+		texturefile = "gfx/traits/disloyal_vassal.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_healthy_vassal"
+		texturefile = "gfx/traits/healthy_vassal.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_cheat_leadership"
+		texturefile = "gfx/traits/cheat_leadership.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_cheat_ruler_bloodline_di"
+		texturefile = "gfx/traits/cheat_ruler_bloodline_di.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_cheat_ruler_bloodline_mi"
+		texturefile = "gfx/traits/cheat_ruler_bloodline_mi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_cheat_ruler_bloodline_sc"
+		texturefile = "gfx/traits/cheat_ruler_bloodline_sc.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_cheat_ruler_bloodline_in"
+		texturefile = "gfx/traits/cheat_ruler_bloodline_in.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_cheat_ruler_bloodline_ec"
+		texturefile = "gfx/traits/cheat_ruler_bloodline_ec.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+}

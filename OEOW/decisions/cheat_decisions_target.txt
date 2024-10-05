@@ -1,0 +1,1433 @@
+# Targetted decisions are possible vs _all_ other characters and shown are in the Diplomacy View, not the Intrigue View. The taker is in the FROM scope.
+#
+# filter = [self/court/home_court/vassals/sub_realm/realm/dynasty/all] ('self' MUST be set for decisions targetting only the taker, the other filter types can be set to lessen CPU load)
+# ai_target_filter = [self/court/home_court/vassals/sub_realm/realm/dynasty/all] (which characters for which the AI evaluates the decision.)
+#	court: all characters in the AI's host court, including prisoners, and characters currently away (wards, prisoners, etc)
+#	home_court: all characters in the AI's home court, including prisoners, and characters currently away (wards, prisoners, etc)
+#	vassals: direct vassal rulers of the AI's employer
+#	sub_realm: all characters below the AI's employer
+#	realm: all characters in the same top realm as the AI
+#	dynasty: all members of the same dynasty
+#	rivals: your rivals plus any character you have an opinion modifier with 'crime = yes' set (the same set of characters the 'is_foe' trigger evaluates)
+#	all: all living characters (Avoid if possible. VERY CPU-HEAVY!)
+#
+
+targetted_decisions = {
+
+	t_cheat_favor = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			has_dlc = "Conclave"
+		}
+		potential = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			reverse_add_favor = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	t_cheat_vas_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			#has_dlc = "Way of Life"
+		}
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = { FROM = { NOT = { has_character_flag = cheattheplayer } } }
+				FROM = { set_character_flag = cheattheplayer }
+			}
+			FROM = { character_event = { id = cheatothers.0 } }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	t_cheat2_vas_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			#has_dlc = "Way of Life"
+		}
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = { FROM = { NOT = { has_character_flag = cheattheplayer } } }
+				FROM = { set_character_flag = cheattheplayer }
+			}
+			FROM = { character_event = { id = cheatothers.1 } }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_cheat3_vas_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			#has_dlc = "Way of Life"
+		}
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = { FROM = { NOT = { has_character_flag = cheattheplayer } } }
+				FROM = { set_character_flag = cheattheplayer }
+			}
+			FROM = { character_event = { id = cheatothers.4 } }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_cheat4_vas_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			#has_dlc = "Way of Life"
+		}
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = { FROM = { NOT = { has_character_flag = cheattheplayer } } }
+				FROM = { set_character_flag = cheattheplayer }
+			}
+			FROM = { character_event = { id = cheatothers.5 } }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_reg1_vas_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			#has_dlc = "Way of Life"
+		}
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = { FROM = { NOT = { has_character_flag = cheattheplayer } } }
+				FROM = { set_character_flag = cheattheplayer }
+			}
+			FROM = { character_event = { id = cheatothers.2 } }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_reg2_vas_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			#has_dlc = "Way of Life"
+		}
+		potential = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = { FROM = { NOT = { has_character_flag = cheattheplayer } } }
+				FROM = { set_character_flag = cheattheplayer }
+			}
+			FROM = { character_event = { id = cheatothers.3 } }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_heal_vas_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			#has_dlc = "Way of Life"
+		}
+		potential = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = { FROM = { NOT = { has_character_flag = cheattheplayer } } }
+				FROM = { set_character_flag = cheattheplayer }
+			}
+			FROM = { character_event = { id = vheal.1 } }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_cheat_make_friend = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			#has_dlc = "Way of Life"
+		}
+		potential = {
+			NOT = { is_friend = FROM }
+			ai = yes
+			# NOT = { FROM = { is_friend = PREV } }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			add_friend = FROM
+			FROM = { add_friend = PREV }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_cheat_make_spouse = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			is_married = no
+			#has_dlc = "Way of Life"
+		}
+		potential = {
+			OR = {
+				AND = {
+					FROM = { is_female = no }
+					is_female = yes
+				}
+				AND = {
+					FROM = { is_female = yes }
+					is_female = no
+				}
+			}
+			NOT = {
+				AND = {
+					is_married = yes
+					is_close_relative = FROM
+				}
+			}
+			ai = yes
+			# NOT = { FROM = { is_friend = PREV } }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_female = no
+					}
+				}
+				FROM = {
+					add_spouse = prev
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_female = yes
+					}
+				}
+				FROM = {
+					add_spouse_matrilineal = prev
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_cheat_make_ally = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			#has_dlc = "Way of Life"
+		}
+		potential = {
+			#NOT = { is_friend = FROM }
+			ai = yes
+			is_ruler = yes
+			is_landed = yes
+		}
+		allow = {
+			from = { ai = no }
+			always = yes
+		}
+		effect = {
+			hidden_tooltip = {
+				opinion = {
+					modifier = in_non_aggression_pact
+					years = 5
+					who = FROM
+					origin_description = EVTTITLE_ZE_8001
+				}
+				FROM = {
+					opinion = {
+						modifier = in_non_aggression_pact
+						years = 5
+						who = ROOT
+						origin_description = EVTTITLE_ZE_8001
+					}
+				}
+				add_friend = FROM
+				FROM = { add_friend = PREV }
+			}
+			add_alliance = { who = FROM years = 25 }
+			FROM = { add_alliance = { who = PREV years = 25 } }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_kill_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			#has_dlc = "Way of Life"
+		}
+		potential = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			death = { death_reason = death_murder_unknown killer = FROM } 
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_independent_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			NOT = { ROOT = { de_facto_liege = ROOT }}
+			is_landed = yes
+			is_ruler = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			custom_tooltip = {
+				text = "tooltip_cheat_independent"
+				hidden_tooltip = {
+					any_liege = {
+						ROOT = {
+							set_defacto_liege = ROOT
+							any_title = {
+								limit = {
+									de_facto_liege = ROOT
+								}
+								remove_claim = PREVPREV
+							}
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_imprison_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			#has_dlc = "Way of Life"
+		}
+		potential = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 IMPRISON = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_create_child = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			FROM = { ai = no }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					ai = no
+				}
+				character_event = { id = tech.93 }
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				FROM = { character_event = { id = tech.94 } }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+###### Credit to makers of AGOT mod, used some of their decison (Minus balancing because it's now a cheat) to produce more random dynasty names -V-v-V-v-
+	t_raise_noble = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			dynasty = none
+			ai = yes
+			is_landed = no
+			host = { character = FROM }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			custom_tooltip = {
+				text = TOOLTIPmake_noble
+				hidden_tooltip = {
+					random_character = { #this so they get an interesting name, rather than 'of <place name>'
+						limit = { 
+							government = feudal_government
+							tier = BARON 
+							is_patrician = no
+							is_theocracy = no
+							is_republic = no
+							NOT = { demesne_size = 2 }
+							NOT = { dynasty = 0 }
+							NOT = { is_close_relative = ROOT }
+						}
+						abdicate_to = ROOT
+						ROOT = {
+							any_courtier = {
+								limit = { is_close_relative = PREV is_ruler = no }
+								move_character = FROM	
+							}
+							abdicate_to = PREV 
+							move_character = FROM
+						}
+						primary_title = { remove_claim = ROOT }
+					}
+					if = { #If you have no baronies to use, failsafe
+						limit = { dynasty = 0	 }
+						dynasty = father_bastard
+					}
+					any_child = {
+						limit = { dynasty = 0 }
+						dynasty = ROOT
+						any_child = {
+							limit = { dynasty = 0 }
+							dynasty = ROOT
+							any_child = {
+								limit = { dynasty = 0 }
+								dynasty = ROOT
+							}
+						}
+					}
+					any_sibling = {
+						limit = {
+							dynasty = 0
+							father_even_if_dead = {
+								dynasty = 0
+								any_child = { character = ROOT }
+							}
+						}
+						dynasty = ROOT
+						father_even_if_dead = { dynasty = ROOT }
+						any_child = {
+							limit = { dynasty = 0 }
+							dynasty = ROOT
+							any_child = {
+								limit = { dynasty = 0 }
+								dynasty = ROOT
+								any_child = {
+									limit = { dynasty = 0 }
+									dynasty = ROOT
+								}
+							}
+						}
+					}
+				}	
+			}			
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+################################### 4/18/2017 - For ease of updating sub-mods
+	t_cheat_indebted_servent = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			ai = yes
+		}
+		allow = {
+			from = { ai = no }
+			# always = yes
+		}
+		effect = {
+			hidden_tooltip = {
+				opinion = {
+					modifier = opinion_loyal_servant
+					years = 10
+					who = FROM
+				}
+				#add_friend = FROM
+				#FROM = { add_friend = PREV }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+################################### 8/15/2017
+	t_cheat_titles = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			ai = yes
+			is_landed = yes
+		}
+		allow = {
+			from = { ai = no }
+			# always = yes
+		}
+		effect = {
+			hidden_tooltip = {
+				any_demesne_title = {
+					FROM = {
+						usurp_title = PREV
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_cheat_claims = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			ai = yes
+		}
+		allow = {
+			from = { ai = no }
+			# always = yes
+		}
+		effect = {
+			hidden_tooltip = {
+				any_claim = {
+					limit = {
+						has_holder = yes
+						OR = {
+							owner = { character = FROM }
+							owner = { is_liege_or_above = FROM }
+						}
+					}
+					remove_claim = ROOT
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_cheat_abdicate_self = {
+		filter = self
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			has_living_children = yes
+			any_child = {
+				dynasty = FROM
+			}
+		}
+		allow = {
+			from = { ai = no }
+			# always = yes
+		}
+		effect = {
+			custom_tooltip = {
+				text = "tooltip_cheat_abdicate"
+				hidden_tooltip = {
+					abdicate = { move = no }
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_cheat_abdicate_target = {
+		filter = dynasty
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			age = 15
+			OR = {
+				AND = {
+					is_female = yes
+					OR = {
+						can_marry = yes
+						is_married_matrilineally = yes
+					}
+				}
+				AND = {
+					is_female = no
+					OR = {
+						can_marry = yes
+						is_married_matrilineally = no
+					}
+				}
+			}
+		}
+		allow = {
+			from = { ai = no }
+			# always = yes
+		}
+		effect = {
+			custom_tooltip = {
+				text = "tooltip_cheat_abdicate_to"
+				hidden_tooltip = {
+					wealth = FROM
+					FROM = {
+						add_trait = content
+						abdicate_to = PREV
+						clear_wealth = yes
+						any_claim = {
+							remove_claim = FROM
+						}
+						if = {
+							limit = {
+								num_of_artifacts = 1
+							}
+							any_artifact = {
+								transfer_artifact = {				
+									from = FROM 					
+									to = ROOT
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	cheat_art_take_pris_dec = {
+		filter = all_including_me
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			prisoner = yes
+			host = { character = FROM }
+		}
+		allow = {
+			num_of_artifacts = 1
+		}
+		effect = {
+			any_artifact = {
+				transfer_artifact = {				
+					from = ROOT 					
+					to = FROM
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+################################### 8/15/2017
+	t_pollinate_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			OR = {
+				AND = {
+					is_female = yes
+					is_pregnant = no
+				}
+				is_female = no
+			}
+		}
+		potential = {
+			OR = {
+				AND = {
+					is_female = yes
+					is_pregnant = no
+				}
+				is_female = no
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+							is_female = yes
+							is_pregnant = no
+						}
+					is_female = no
+				}
+				FROM = { impregnate = PREV }
+			}
+			if = {
+				limit = {
+					is_female = yes
+					NOT = {
+						is_pregnant = yes
+						FROM = {
+							is_female = yes
+						}
+					}
+				}
+				impregnate = FROM
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	t_pollinate_ai_2 = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			OR = {
+				AND = {
+					is_female = yes
+					is_pregnant = no
+					any_spouse_even_if_dead = { count = 1 }
+				}
+				AND = {
+					is_female = no
+					spouse = { is_pregnant = no }
+				}
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					spouse = {
+							is_female = yes
+							is_pregnant = no
+						}
+					is_female = no
+				}
+				spouse = { impregnate = PREV }
+			}
+			if = {
+				limit = {
+					is_female = yes
+					NOT = {
+						is_pregnant = yes
+						spouse_even_if_dead = {
+							is_female = yes
+						}
+					}
+				}
+				spouse_even_if_dead = {
+					root = {
+					impregnate = prev
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_pollinate_ai_3 = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+			OR = {
+				AND = {
+					is_female = yes
+					is_pregnant = no
+				}
+				is_female = no
+			}
+		}
+		potential = {
+			OR = {
+				AND = {
+					is_female = yes
+					is_pregnant = no
+				}
+				is_female = no
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+							is_female = yes
+							is_pregnant = no
+						}
+					is_female = no
+				}
+				FROM = { impregnate_cuckoo = PREV }
+			}
+			if = {
+				limit = {
+					is_female = yes
+					NOT = {
+						is_pregnant = yes
+						FROM = {
+							is_female = yes
+						}
+					}
+				}
+				impregnate_cuckoo = FROM
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	scm_force_divorce = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			OR = {
+				is_married = yes
+				is_married_matrilineally = yes
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			custom_tooltip = { text = chforcedivorce
+				hidden_tooltip = {
+					if = {
+						limit = {
+							is_consort = yes
+						}
+						spouse = {
+							remove_consort = PREV
+						}
+						break = yes
+					}
+					if = {
+						limit = {
+							is_married = yes
+						}
+						spouse = {
+							remove_spouse = PREV
+						}
+						break = yes
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_legitimize_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			trait = bastard
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 add_trait = legit_bastard
+			 remove_trait = bastard
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	cheat_artifact_take = {
+		filter = all
+		third_party_filter = artifacts
+		third_party = ROOT
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			always = yes
+			# num_of_artifacts = 1
+		}
+		third_party_potential = {
+			always = yes
+			#FROMFROM = {
+			#	OR = {
+			#		has_artifact_flag = valyrian_steel
+			#		has_artifact_flag = valyrian_armour
+			#	}
+			#}
+		}
+		third_party_allow = {
+			
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			custom_tooltip = { text = cheattakesword
+				hidden_tooltip = {
+					FROM = {
+						ROOT = {
+							FROMFROM = {
+								set_artifact_flag = previous_holder_@PREV
+								transfer_artifact = { from = ROOT to = PREVPREV }
+							}
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_adopt_spouse_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			host = { character = FROM }
+			NOT = {
+				from = {
+					spouse_even_if_dead = {
+						AND = {
+						dynasty = prev
+						is_child_of = prev
+						}
+					}
+				}
+			}
+			FROM = { is_main_spouse = no }
+			is_landed = no
+			is_ruler = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						NOT = {
+							is_female = yes
+						}
+					}
+				}
+				from = {
+					spouse_even_if_dead = {
+						root = {
+							set_mother = prev
+							dynasty = prev
+							set_father = prevprev
+							hidden_tooltip = {
+								set_real_father = prevprev
+							}
+						}
+					}
+				}
+				hidden_tooltip = {
+					recalc_succession = yes
+					any_child = {
+						limit = { is_child_of = THIS }
+						dynasty = ROOT
+						any_child = {
+							limit = { is_child_of = THIS }
+							dynasty = ROOT
+						any_child = {
+							limit = { is_child_of = THIS }
+							dynasty = ROOT
+						}
+					}
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_female = yes
+					}
+				}
+				from = {
+					spouse_even_if_dead = {
+						root = {
+							set_father = prev
+							dynasty = prev
+							set_mother = prevprev
+							hidden_tooltip = {
+								set_real_father = prev
+							}
+						}
+					}
+				}
+				hidden_tooltip = {
+					recalc_succession = yes
+					any_child = {
+						limit = { is_child_of = THIS }
+						dynasty = ROOT
+						any_child = {
+							limit = { is_child_of = THIS }
+							dynasty = ROOT
+						any_child = {
+							limit = { is_child_of = THIS }
+							dynasty = ROOT
+						}
+					}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_adopt_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			host = { character = FROM }
+			# NOT = { is_close_relative = FROM }
+			is_landed = no
+			is_ruler = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						NOT = {
+							is_female = yes
+						}
+					}
+				}
+				hidden_tooltip = {
+					father = { ROOT = { set_real_father = PREV } }
+					set_mother = 0
+				}
+				set_father = FROM
+				dynasty = FROM
+				hidden_tooltip = {
+					any_child = {
+						limit = { is_child_of = THIS }
+						dynasty = ROOT
+						any_child = {
+							limit = { is_child_of = THIS }
+							dynasty = ROOT
+						any_child = {
+							limit = { is_child_of = THIS }
+							dynasty = ROOT
+						}
+					}
+				}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_female = yes
+					}
+				}
+				set_mother = FROM
+				dynasty = FROM
+				hidden_tooltip = {
+					any_child = {
+						limit = { is_child_of = THIS }
+						dynasty = ROOT
+						any_child = {
+							limit = { is_child_of = THIS }
+							dynasty = ROOT
+						any_child = {
+							limit = { is_child_of = THIS }
+							dynasty = ROOT
+						}
+					}
+				}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_invite_court_ai = {
+		filter = all_including_me
+		ai_target_filter = none
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			NOT = { liege = { character = FROM } is_adult = no }
+			is_landed = no
+			is_ruler = no
+			OR = {
+				is_married = no
+				AND = {
+					is_married = yes
+					spouse = { is_ruler = no is_landed = no }
+					is_adult = yes #No devious kidnapping allowed
+				}
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			move_character = FROM
+			if = {
+				limit = {
+					is_married = yes
+				}
+				spouse = { move_character = FROM }
+			}
+			if = {
+				limit = {
+					num_of_children = 1
+				}
+				any_child = {
+					if = {
+						limit = { is_ruler = no is_adult = no}
+						move_character = FROM
+					}
+					if = {
+						limit = {
+							is_married = no
+							NOT = { num_of_children = 1 }
+						}
+						move_character = FROM
+					}
+					if = {
+						limit = {
+							is_married = no
+							num_of_children = 1
+						}
+						move_character = FROM
+						any_child = {
+							if = {
+								limit = { is_adult = no }
+								move_character = FROM
+							}
+							if = {
+								limit = {
+									is_married = yes
+									NOT = { num_of_children = 1 }
+									spouse = { is_ruler = no }
+								}
+								move_character = FROM
+								spouse = { move_character = FROM }
+							}
+						}
+					}
+					if = {
+						limit = {
+							is_married = yes
+							spouse = { is_ruler = no }
+							NOT = { num_of_children = 1 }
+						}
+						move_character = FROM
+						spouse = {
+							move_character = FROM
+						}
+					}
+					if = {
+						limit = {
+							is_married = yes
+							spouse = { is_ruler = no}
+							num_of_children = 1
+						}
+						move_character = FROM
+						spouse = { move_character }
+						any_child = {
+							if = {
+								limit = { is_ruler = no is_adult = no}
+								move_character = FROM
+							}
+							if = {
+								limit = { is_ruler = no is_married = no}
+								move_character = FROM
+							}
+							if = {
+								limit = {
+									is_married = yes
+									spouse = { is_ruler = no }
+									NOT = { num_of_children = 1 }
+								}
+								move_character = FROM
+								spouse = {
+									move_character = FROM
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

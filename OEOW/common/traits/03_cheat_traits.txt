@@ -1,0 +1,113 @@
+# SPECIAL TRAIT FLAGS
+#
+# pilgrimage = yes		- The character is away and will need a regent, but does not lose any wards, etc
+# incapacitating = yes	- The character is essentially a vegetable
+# immortal = yes		- The character will not die of age or poor health, but can be executed (and killed by event effects)
+# inherit_chance = X	- Chance of passing on the trait to children
+#
+
+############
+# Cheats
+############
+#Hand of God - Super trait - should not effect foreign religious characters not under your realm.
+hand_of_god_player = {
+	cached = yes	#Saved for use in events
+  	customizer = no	#This makes the trait unavailable in Ruler Designer
+	random = no
+	tolerates_christian = yes
+	tolerates_jewish_group = yes
+	tolerates_muslim = yes
+	tolerates_pagan_group = yes
+	tolerates_zoroastrian_group = yes
+	tolerates_indian_group = yes 
+	health = 100
+	immortal = yes
+	sex_appeal_opinion = 1000
+	general_opinion = 2000
+	global_revolt_risk = -100
+	combat_rating = 100
+	demesne_size = 1000
+	build_time_modifier = -1
+	build_cost_modifier = -0.80
+	levy_reinforce_rate = 5
+	culture_flex = -2
+	religion_flex = -2
+	ai_rationality = 100
+	ai_zeal = -100
+	ai_greed = -100
+	ai_honor = 100
+	ai_ambition = 100
+}
+cheat_wealth_trait = {
+	cached = yes	#Saved for use in events
+	customizer = no	#This makes the trait unavailable in Ruler Designer
+	random = no
+	monthly_character_wealth = 100
+}
+#Loyal Vassal - Use this to settle your realm down. All vassals directly below you will love you.
+vassal_duty = {
+	cached = yes	#Saved for use in events
+  	customizer = no	#This makes the trait unavailable in Ruler Designer
+	random = no
+	ai_honor  = 100
+	ai_ambition = -100
+	ai_zeal = 100
+	ai_rationality = 100
+	# liege_opinion = 1000
+	vassal_opinion = 1000
+	child_opinion = 1000
+	spouse_opinion = 1000
+	dynasty_opinion = 1000
+	church_opinion = 1000
+}
+#Originally made for use in making an anti-pope. Use it to make everyone love you, or the person you put it on (ideally to make everyone love your anti-pope for tons of cash!)
+anti_pope_p = {
+	cached = yes	#Saved for use in events
+  	customizer = no	#This makes the trait unavailable in Ruler Designer
+	random = no
+	#fertility = 1
+	general_opinion = 1000
+}
+#Use on a character not in your court, this will make them hate their liege, giving you a higher chance of convincing them to join your court.
+disloyal_vassal = {
+	cached = yes	#Saved for use in events
+  	customizer = no	#This makes the trait unavailable in Ruler Designer
+	random = no
+	liege_opinion = -2000
+	ai_rationality = -100
+	ai_greed = 100
+}
+#Makes you, or anyone you choose super healthy. This will help fight any sort of injuries or ailments. Also it lets them live A LOT longer.
+healthy_vassal = {
+	cached = yes	#Saved for use in events
+  	customizer = no	#This makes the trait unavailable in Ruler Designer
+	random = no
+	health = 100
+	#fertility = 1
+}
+#Super Commander, They will match fast, and end combat fast, victorious. Also gives them health to help ensure they don't die of wounds on the battlefield.
+cheat_leadership = {
+	cached = yes	#Saved for use in events
+  	customizer = no	#This makes the trait unavailable in Ruler Designer
+	random = no
+	martial = 15
+	health = 100
+	monthly_character_prestige = .25
+	command_modifier = {
+		narrow_flank = 0.99
+		morale_defence = 0.2
+		morale_offence = 0.2
+		religious_enemy = 0.2
+		cavalry = 0.99
+		light_infantry = 0.99
+		heavy_infantry = 0.99
+		siege = 5
+		defence = 0.99
+		damage = 0.2
+		flank = 1
+		center = 1
+		pursue = 1
+		retreat = 0.99
+		speed = 5
+	}
+}

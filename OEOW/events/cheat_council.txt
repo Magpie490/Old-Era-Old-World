@@ -1,0 +1,376 @@
+######################
+#   COUNCIL EVENTS   #
+##WRITTEN BY SLVRBUU##
+####CHEAT HAPPENS#####
+######################
+namespace = council
+character_event = {
+	id = council.0
+	desc = EVTDESCCouncil.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+		option = {
+		name = EVTOPTACouncil.0
+			hidden_tooltip = {
+				character_event = { id = council.1 }
+				}	
+		}
+		option = {
+		name = EVTOPTBCouncil.0
+			hidden_tooltip = {
+				character_event = { id = council.2 }
+				}	
+		}
+		option = {
+		name = EVTOPTCCouncil.0
+			hidden_tooltip = {
+				character_event = { id = council.3 }
+				}	
+		}
+		option = {
+		name = EVTOPTDCouncil.0
+		}
+}
+character_event = {
+	id = council.1
+	desc = EVTDESCCouncil.1
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+	name = EVTOPTACouncil.1
+		hidden_tooltip = {
+			any_realm_character = {
+				limit = {
+					NOT = { character = ROOT }
+					NOT = { is_liege_of = ROOT }
+					NOT = { religion = ROOT }
+				}
+				religion = ROOT
+			}
+		}
+	}
+	option = {
+	name = EVTOPTBCouncil.1
+		hidden_tooltip = {
+			any_realm_province = {
+				limit = {
+					NOT = {
+						religion = ROOT
+					}
+				}
+				religion = ROOT
+			}
+		}
+	}
+	option = {
+	name = EVTOPTCCouncil.1
+		hidden_tooltip = {
+			any_realm_character = {
+				limit = {
+					NOT = { character = ROOT }
+					NOT = { is_liege_of = ROOT }
+					NOT = { religion = ROOT }
+				}
+				religion = ROOT
+			}
+			any_realm_province = {
+				limit = {
+					NOT = {
+						religion = ROOT
+					}
+				}
+				religion = ROOT
+			}
+		}
+	}
+		option = {
+		name = EVTOPTDCouncil.1
+				character_event = { id = council.0 }
+		}
+}
+character_event = {
+	id = council.2
+	desc = EVTDESACouncil.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+	name = EVTOPTACouncil.2
+		hidden_tooltip = {
+			any_realm_character = {
+				limit = {
+					NOT = { character = ROOT }
+					NOT = { is_liege_of = ROOT }
+					NOT = { culture = ROOT }
+				}
+			culture = ROOT
+			}
+		}
+	}
+	option = {
+	name = EVTOPTBCouncil.2
+		hidden_tooltip = {
+			any_realm_province = {
+				limit = {
+					NOT = {
+						culture = ROOT
+					}
+				}
+				culture = ROOT
+			}
+		}
+	}
+	option = {
+	name = EVTOPTCCouncil.2
+		hidden_tooltip = {
+			any_realm_character = {
+				limit = {
+					NOT = { character = ROOT }
+					NOT = { is_liege_of = ROOT }
+					NOT = { culture = ROOT }
+				}
+			culture = ROOT
+			}
+			any_realm_province = {
+				limit = {
+					NOT = {
+						culture = ROOT
+					}
+				}
+				culture = ROOT
+			}
+		}
+	}
+		option = {
+		name = EVTOPTDCouncil.2
+				character_event = { id = council.0 }
+		}
+}
+character_event = {
+	id = council.3
+	desc = EVTDESCCouncil.3
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+	name = EVTOPTACouncil.3
+		set_character_flag = cheat_get_claim
+		job_chancellor = {
+			location = {
+				county = {
+					IF = {
+						limit = {
+							is_title_active = THIS
+						}
+						add_claim = ROOT
+					}
+				}
+			}
+		}
+	}
+	option = {
+	name = EVTOPTBCouncil.3
+		set_character_flag = cheat_get_claim
+		job_chancellor = {
+			location = {
+				duchy = {
+					IF = {
+						limit = {
+							is_title_active = THIS
+						}
+						add_claim = ROOT
+					}
+				}
+			}
+		}
+	}
+	option = {
+	name = EVTOPTCCouncil.3
+		job_chancellor = {
+			location = {
+				kingdom = {
+					IF = {
+						limit = {
+							is_title_active = THIS
+						}
+						add_claim = ROOT
+					}
+				}
+			}
+		}
+	}
+		option = {
+		name = EVTOPTDCouncil.3
+				character_event = { id = council.0 }
+		}
+}
+# character_event = {
+	# id = council.90
+	# desc = "What do you wish to Culturize"
+	# picture = GFX_evt_ch_01
+	# is_triggered_only = yes
+	# option = {
+	# name = "Culturize EVERYTHING in my realm!"
+		# hidden_tooltip = {
+			# any_realm_character = {
+				# limit = {
+					# NOT = { character = ROOT }
+					# NOT = { is_liege_of = ROOT }
+					# NOT = { culture = ROOT }
+				# }
+			# culture = ROOT
+			# }
+			# any_realm_province = {
+				# limit = {
+					# NOT = {
+						# culture = ROOT
+					# }
+				# }
+				# culture = ROOT
+			# }
+		# }
+	# }
+# }
+# character_event = {
+	# id = council.91
+	# desc = "What do you wish to Culturize"
+	# picture = GFX_evt_ch_01
+	# is_triggered_only = yes
+	# option = {
+	# name = "Convert EVERYTHING in my realm!"
+		# hidden_tooltip = {
+			# any_realm_character = {
+				# limit = {
+					# NOT = { character = ROOT }
+					# NOT = { is_liege_of = ROOT }
+					# NOT = { religion = ROOT }
+				# }
+				# religion = ROOT
+			# }
+			# any_realm_province = {
+				# limit = {
+					# NOT = {
+						# religion = ROOT
+					# }
+				# }
+				# religion = ROOT
+			# }
+		# }
+	# }
+# }
+#### RELIGION/CULTURE OLD -- DON'T USE
+#character_event = {
+#	id = council.90
+#	desc = "Convert Character"
+#	picture = GFX_evt_ch_01
+#	is_triggered_only = yes
+#	option = {
+#		name = "Convert Everybody"
+#		piety = 5
+#		hidden_tooltip = {
+#		location = {
+#			any_province_character = {
+#				limit = {
+#					NOT = { character = ROOT }
+#					NOT = { is_liege_of = ROOT }
+#					NOT = { religion = ROOT }
+#					OR = {
+#						is_ruler = no
+#						primary_title = {
+#							controls_religion = no
+#							mercenary = no
+#							holy_order = no
+#						}
+#					}
+#					same_realm = ROOT
+#				}
+#				character_event = { id = council.91 days = 1
+#				}
+#			}
+#		}
+#		}
+#	}
+#}
+#character_event = {
+#	id = council.91
+#	desc = "Convert Character"
+#	picture = GFX_evt_ch_01
+#	is_triggered_only = yes
+#	option = {
+#	name = "I submit"
+#		religion = ROOT
+#		hidden_tooltip = {
+#			ROOT = {
+#				piety = 25
+#			}
+#			PREV = {
+#				piety = 15
+#			}
+#		}
+#	}
+#}
+#character_event = {
+#	id = council.92
+#	desc = "Problems in your Realm?"
+#	picture = GFX_evt_ch_01
+#	is_triggered_only = yes
+#	option = {
+#	name = "Nothing for now."
+#	}
+#	option = {
+#	name = "Culturize Everybody!"
+#		hidden_tooltip = {
+#			any_realm_character = {
+#				limit = {
+#					NOT = { character = ROOT }
+#					NOT = { is_liege_of = ROOT }
+#					NOT = { culture = ROOT }
+#				}
+#			culture = ROOT
+#			}
+#			any_realm_province = {
+#				limit = {
+#					NOT = {
+#						culture = ROOT
+#					}
+#				}
+#				culture = ROOT
+#			}
+#		}
+#	}
+#	option = {
+#	name = "Convert Land and People"
+#		hidden_tooltip = {
+#			any_realm_character = {
+#				limit = {
+#					NOT = { character = ROOT }
+#					NOT = { is_liege_of = ROOT }
+#					NOT = { religion = ROOT }
+#				}
+#				religion = ROOT
+#			}
+#			any_realm_province = {
+#				limit = {
+#					NOT = {
+#						religion = ROOT
+#					}
+#				}
+#				religion = ROOT
+#			}
+#		}
+#	}
+#}
+#character_event = {
+#	id = council.93
+#	desc = "Convert Character"
+#	picture = GFX_evt_ch_01
+#	is_triggered_only = yes
+#	option = {
+#	name = "I submit"
+#		culture = ROOT
+#		prestige = 25
+#		hidden_tooltip = {
+#			ROOT = {
+#				prestige = 25
+#			}
+#		}
+#	}
+#}

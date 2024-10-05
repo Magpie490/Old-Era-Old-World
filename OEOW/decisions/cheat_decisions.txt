@@ -1,0 +1,833 @@
+decisions = {
+
+	t_cheat_toggle = {
+		potential = {
+			ai = no
+			NOT = { has_global_flag = cheat_decision_on }
+		}		
+		effect = {
+			if = {
+				limit = { NOT = { has_character_flag = cheat_desc_on } }
+				hidden_tooltip = {
+				set_character_flag = cheat_desc_on
+				set_character_flag = cheat_desc_actionflag
+				}
+			}
+			if = {
+				limit = {
+				has_character_flag = cheat_desc_on
+				NOT = { has_character_flag = cheat_desc_actionflag }
+				}
+				hidden_tooltip = {
+				set_character_flag = cheat_desc_actionflag
+				clr_character_flag = cheat_desc_on
+				}
+			}
+			clr_character_flag = cheat_desc_actionflag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	t_cheat_right_toggle = {
+		potential = {
+			ai = no
+			NOT = { has_global_flag = cheat_decision_on }
+		}		
+		effect = {
+			if = {
+				limit = { NOT = { has_character_flag = cheat_rightdesc_on } }
+				hidden_tooltip = {
+				set_character_flag = cheat_rightdesc_on
+				set_character_flag = cheat_rightdesc_actionflag
+				}
+			}
+			if = {
+				limit = {
+				has_character_flag = cheat_rightdesc_on
+				NOT = { has_character_flag = cheat_rightdesc_actionflag }
+				}
+				hidden_tooltip = {
+				set_character_flag = cheat_rightdesc_actionflag
+				clr_character_flag = cheat_rightdesc_on
+				}
+			}
+			clr_character_flag = cheat_rightdesc_actionflag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_cheat_enforce_peace = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+		}
+		effect = {
+			if = {
+				limit = {
+					has_character_flag = cheat_enforce_peace
+				}
+				custom_tooltip = { text = cheat_enforce_peace_off
+					hidden_tooltip = {
+						clr_character_flag = cheat_enforce_peace
+						break = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_character_flag = cheat_enforce_peace }
+				}
+				custom_tooltip = { text = cheat_enforce_peace_on
+					hidden_tooltip = {
+						set_character_flag = cheat_enforce_peace
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_cheat_toggle_heal = {
+		potential = {
+			ai = no
+			NOT = { has_global_flag = cheat_heal_dyn_auto }
+			has_character_flag = cheat_desc_on
+		}		
+		effect = {
+			if = {
+				limit = { NOT = { has_character_flag = cheat_heal_dyn_auto } }
+				hidden_tooltip = {
+				set_character_flag = cheat_heal_dyn_auto
+				add_character_modifier = {
+					name = cheat_dyn_heal
+					duration = -1
+				}
+				set_character_flag = cheat_desc_actionflag
+				}
+			}
+			if = {
+				limit = {
+				has_character_flag = cheat_heal_dyn_auto
+				NOT = { has_character_flag = cheat_desc_actionflag }
+				}
+				hidden_tooltip = {
+				set_character_flag = cheat_desc_actionflag
+				remove_character_modifier = cheat_dyn_heal
+				clr_character_flag = cheat_heal_dyn_auto
+				}
+			}
+			clr_character_flag = cheat_desc_actionflag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_cheat_toggle_dead_flag_o = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+		}		
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = cheat_tar_dead }
+				}
+				set_character_flag = cheat_tar_dead
+				break = yes
+			}
+			if = {
+				limit = {
+					has_character_flag = cheat_tar_dead
+				}
+				clr_character_flag = cheat_tar_dead
+				break = yes
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	cheat_convert_to_feudalism_indep  = {
+		only_independent = yes
+		is_high_prio = yes
+		
+		potential = {
+			is_playable = yes
+			is_tribal = yes
+			independent = yes
+		}
+		allow = {
+			war = no
+			ai = no
+		}
+		
+		effect = {
+			if = {
+				limit = { ai = no }
+				set_character_flag = achievement_not_a_tribe
+			}
+			
+			if = {
+				limit = {
+					NOT = { religion_group = muslim }
+					NAND = {
+						culture_group = tibetan_group
+						OR = {
+							religion = bon
+							religion = buddhist
+						}
+						higher_tier_than = BARON
+					}
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_FEUDALISM
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = feudal_government
+			}
+			
+			if = {
+				limit = {
+					religion_group = muslim
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_IQTA
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = muslim_government
+			}
+			
+			if = {
+				limit = {
+					culture_group = tibetan_group
+					OR = {
+						religion = bon
+						religion = buddhist
+					}
+					higher_tier_than = BARON
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_FEUDALISM
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = theocratic_feudal_government
+			}
+			
+			if = {
+				limit = {
+					higher_tier_than = king
+				}
+				primary_title = {
+					add_law = feudal_administration
+				}
+			}
+			
+			hidden_tooltip = {
+				any_demesne_title = {
+					limit = {
+						tier = baron
+						holding_type = tribal
+					}
+					convert_to = CASTLE
+					refill_holding_levy = yes
+					
+					if = {
+						limit = {
+							dejure_liege_title = {
+								holder = ROOT
+								location = {
+									num_of_empty_holdings = 2
+								}
+								NOT = {
+									any_direct_de_jure_vassal_title = {
+										holding_type = city
+									}
+								}
+							}
+						}
+						location = {
+							build_holding = {
+								type = city
+							}
+						}
+					}
+					if = {
+						limit = {
+							dejure_liege_title = {
+								holder = ROOT
+								location = {
+									num_of_empty_holdings = 2
+								}
+								NOT = {
+									any_direct_de_jure_vassal_title = {
+										holding_type = temple
+									}
+								}
+							}
+						}
+						location = {
+							build_holding  ={
+								type = temple
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	cheat_form_new_empire = {
+		only_independent = yes
+		is_high_prio = yes
+		
+		potential = {
+			is_playable = yes
+			tier = KING
+			NOT = { tier = EMPEROR }
+			
+			has_dlc = "Charlemagne"
+			
+			holy_order = no
+			ai = no
+		}
+		allow = {
+			is_adult = yes
+			ai = no
+			prisoner = no
+			NOT = { trait = incapable }
+			independent = yes
+			#prestige = 1000
+			#wealth = 300
+		}
+		effect = {
+			primary_title = {
+				create_title = {
+					tier = EMPEROR
+					landless = no
+					temporary = no
+					custom_created = yes
+					culture = ROOT
+					holder = ROOT
+					base_title = THIS
+					copy_title_laws = yes
+				}
+
+			}
+			# wealth = -300
+			custom_tooltip = { text = form_new_kingdom_tooltip }
+			chronicle = {
+				entry = CHRONICLE_FOUNDED_NEW_KINGDOM_OR_EMPIRE
+				portrait = [Root.GetID]
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	cheat_form_new_kingdom = {
+		only_independent = yes
+		is_high_prio = yes
+		
+		potential = {
+			is_playable = yes
+			tier = DUKE
+			NOT = { tier = KING }
+			
+			has_dlc = "Charlemagne"
+			
+			holy_order = no
+			ai = no
+		}
+		allow = {
+			is_adult = yes
+			ai = no
+			prisoner = no
+			NOT = { trait = incapable }
+			independent = yes
+			#prestige = 1000
+			#wealth = 300
+		}
+		effect = {
+			primary_title = {
+				create_title = {
+					tier = KING
+					landless = no
+					temporary = no
+					custom_created = yes
+					culture = ROOT
+					holder = ROOT
+					base_title = THIS
+					copy_title_laws = yes
+				}
+
+			}
+			# wealth = -300
+			custom_tooltip = { text = form_new_kingdom_tooltip }
+			chronicle = {
+				entry = CHRONICLE_FOUNDED_NEW_KINGDOM_OR_EMPIRE
+				portrait = [Root.GetID]
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	cheat_form_new_duchy = {
+		only_independent = yes
+		is_high_prio = yes
+		
+		potential = {
+			is_playable = yes
+			tier = COUNT
+			NOT = { tier = DUKE }
+			
+			has_dlc = "Charlemagne"
+			
+			holy_order = no
+			ai = no
+		}
+		allow = {
+			is_adult = yes
+			ai = no
+			prisoner = no
+			NOT = { trait = incapable }
+			independent = yes
+			#prestige = 1000
+			#wealth = 300
+		}
+		effect = {
+			primary_title = {
+				create_title = {
+					tier = DUKE
+					landless = no
+					temporary = no
+					custom_created = yes
+					culture = ROOT
+					holder = ROOT
+					base_title = THIS
+					copy_title_laws = yes
+				}
+
+			}
+			# wealth = -300
+			custom_tooltip = { text = form_new_kingdom_tooltip }
+			chronicle = {
+				entry = CHRONICLE_FOUNDED_NEW_KINGDOM_OR_EMPIRE
+				portrait = [Root.GetID]
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_add_soc_points = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+			is_in_society = yes
+		}
+		effect = {
+			change_society_currency = 500
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_add_soc_rankup = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+			is_in_society = yes
+			society_rank < 4
+		}
+		effect = {
+			society_rank_up = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_buff_provinces = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+			NOT = { has_character_flag = cheat_prov_buff }
+		}
+		effect = {
+			set_character_flag = cheat_prov_buff
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	t_buff_provinces_off = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+			has_character_flag = cheat_prov_buff
+		}
+		effect = {
+			clr_character_flag = cheat_prov_buff
+			clr_character_flag = no_ai_prov_buff
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	t_buff_provinces_ai = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+			has_character_flag = cheat_prov_buff
+			NOT = { has_character_flag = no_ai_prov_buff }
+		}
+		effect = {
+			set_character_flag = no_ai_prov_buff
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	t_buff_provinces_ai_off = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+			has_character_flag = cheat_prov_buff
+			has_character_flag = no_ai_prov_buff
+		}
+		effect = {
+			clr_character_flag = no_ai_prov_buff
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_prosp_provinces = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+			NOT = { has_character_flag = cheat_prov_prosp }
+		}
+		effect = {
+			set_character_flag = cheat_prov_prosp
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_prosp_provinces_off = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+			has_character_flag = cheat_prov_prosp
+		}
+		effect = {
+			clr_character_flag = cheat_prov_prosp
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_buff_d_provinces = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+			NOT = { has_character_flag = cheat_prov_d_buff }
+		}
+		effect = {
+			set_character_flag = cheat_prov_d_buff
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	t_buff_d_provinces_off = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+			has_character_flag = cheat_prov_d_buff
+		}
+		effect = {
+			clr_character_flag = cheat_prov_d_buff
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_main_menu = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+		}
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = menu.0 days = 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	t_clean_provinces = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+		}
+		effect = {
+			hidden_tooltip = {
+				# any_demesne_title = {
+				# tier = baron
+				# remove_holding_modifier = new_administration
+				# remove_holding_modifier = recently_conquered
+				# remove_holding_modifier = looted_modifier
+				# }
+				any_title_under = {
+					limit = {
+						tier = BARON
+						location = {
+							owner = {
+								OR = {
+									character = FROM
+									is_liege_or_above = FROM
+								}
+							}
+						}
+					}
+					remove_holding_modifier = new_administration
+					remove_holding_modifier = recently_conquered
+					remove_holding_modifier = looted_modifier
+				}
+				any_realm_province = {
+					limit = {
+						OR = {
+							has_province_modifier = highway_robber_band
+							has_province_modifier = smugglers_ring
+							has_province_modifier = thieves_guild
+							has_province_modifier = incompetent_rule
+							has_province_modifier = excessive_bureaucracy
+							has_province_modifier = suspected_impaler
+							has_province_modifier = thugs_rampant
+							has_province_modifier = neglected_development
+							has_province_modifier = merchants_unhappy
+							has_province_modifier = temple_corruption
+							has_province_modifier = local_death_cult
+							has_province_modifier = caravan_raiders
+							has_province_modifier = high_taxes
+							has_province_modifier = heretic_stronghold
+							has_province_modifier = force_converting
+							has_province_modifier = religious_tension
+							has_province_modifier = outlawed_guild
+							has_province_modifier = sold_off_land
+							has_province_modifier = despised_aristocrat
+							has_disease = yes
+						}
+					}
+					remove_province_modifier = highway_robber_band
+					remove_province_modifier = smugglers_ring
+					remove_province_modifier = thieves_guild
+					remove_province_modifier = incompetent_rule
+					remove_province_modifier = excessive_bureaucracy
+					remove_province_modifier = suspected_impaler
+					remove_province_modifier = thugs_rampant
+					remove_province_modifier = neglected_development
+					remove_province_modifier = merchants_unhappy
+					remove_province_modifier = temple_corruption
+					remove_province_modifier = local_death_cult
+					remove_province_modifier = caravan_raiders
+					remove_province_modifier = high_taxes
+					remove_province_modifier = heretic_stronghold
+					remove_province_modifier = force_converting
+					remove_province_modifier = religious_tension
+					remove_province_modifier = outlawed_guild
+					remove_province_modifier = sold_off_land
+					remove_province_modifier = despised_aristocrat
+					reduce_disease = -1.0
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	t_heal_menu = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+		}
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = heal.0 days = 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	t_trait_menu = {
+		potential = {
+			ai = no
+			 has_character_flag = cheat_desc_on
+		}
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = trait.0 days = 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_quick_menu = {
+		potential = {
+			ai = no
+			 has_character_flag = cheat_desc_on
+		}
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = dec.0 days = 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	t_boost_menu = {
+		potential = {
+			AND = {
+				has_character_flag = cheat_desc_on
+				ai = no
+				NOT = {
+					AND = {
+						wealth = 100
+						prestige = 100
+						piety = 100
+					}
+				}
+			}
+		}
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = boost.0 days = 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_create_men = {
+		potential = {
+			AND = {
+				has_character_flag = cheat_desc_on
+				ai = no
+			}
+		}
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = tech.95 days = 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_create_women = {
+		potential = {
+			AND = {
+				has_character_flag = cheat_desc_on
+				ai = no
+			}
+		}
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = tech.98 days = 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_create_child = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+		}
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = tech.94 days = 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_create_army = {
+		potential = {
+			ai = no
+			has_character_flag = cheat_desc_on
+		}
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = menu.90 days = 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_create_fleet = {
+		potential = {
+			has_character_flag = cheat_desc_on
+			ai = no
+		}
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = menu.91 days = 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

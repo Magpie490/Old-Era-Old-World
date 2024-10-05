@@ -1,0 +1,290 @@
+namespace = boost
+character_event = {
+	id = boost.0
+	desc = EVTDESCBoost.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTABoost.0
+	}
+
+	option = {
+		name = EVTOPTBBoost.0
+		trigger = {
+			NOT = { wealth = 100 }
+		}
+		wealth = 250
+	}
+
+	option = {
+		name = EVTOPTCBoost.0
+		trigger = {
+			NOT = { piety = 100 }
+		}
+		piety = 150
+	}
+
+	option = {
+		name = EVTOPTDBoost.0
+		trigger = {
+			NOT = { prestige = 100 }
+		}
+		prestige = 150
+	}
+}
+
+namespace = cdecheal
+character_event = {
+	id = cdecheal.1
+	desc = EVTDESCCdecheal.1
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTACdecheal.0
+		remove_trait = sickly
+		remove_trait = has_aztec_disease
+		remove_trait = stressed
+		remove_trait = depressed
+		remove_trait = pneumonic
+		remove_trait = syphilitic
+		remove_trait = leper
+		remove_trait = wounded
+		remove_trait = maimed
+		remove_trait = infirm
+		remove_trait = incapable
+		remove_trait = has_tuberculosis
+		remove_trait = has_typhoid_fever
+		remove_trait = has_typhus
+		remove_trait = has_bubonic_plague
+		remove_trait = has_measles
+		remove_trait = has_small_pox
+		remove_trait = blinded
+		remove_trait = eunuch
+		remove_trait = ill
+		remove_trait = cough
+		remove_trait = fever
+		remove_trait = diarrhea
+		remove_trait = vomiting
+		remove_trait = chest_pain
+		remove_trait = cramps
+		remove_trait = rash
+		remove_trait = headache
+		remove_trait = abdominal_pain
+		remove_trait = fatigue
+		remove_trait = malaise
+		remove_trait = infection
+		remove_trait = one_eyed
+		remove_trait = one_handed
+		remove_trait = one_legged
+		remove_trait = disfigured
+		remove_trait = mangled
+		remove_trait = severely_injured
+		remove_trait = flu
+		remove_trait = dysentery
+		remove_trait = gout
+		remove_trait = food_poisoning
+		remove_trait = rabies
+		remove_trait = cancer
+		remove_trait = dancing_plague
+		remove_trait = scurvy
+		remove_trait = sick_incapable
+	}
+}
+character_event = {
+	id = cdecheal.2
+	desc = "You have dynasty members needing healing."
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTACdecheal.2
+		any_dynasty_member = {
+			limit = {
+				is_alive = yes
+				or = {
+				trait = sickly
+				trait = has_aztec_disease
+				trait = stressed
+				trait = depressed
+				trait = pneumonic
+				trait = syphilitic
+				trait = leper
+				trait = wounded
+				trait = maimed
+				trait = infirm
+				trait = incapable
+				trait = has_tuberculosis
+				trait = has_typhoid_fever
+				trait = has_typhus
+				trait = has_bubonic_plague
+				trait = has_measles
+				trait = has_small_pox
+				trait = blinded
+				trait = eunuch
+				trait = ill
+				trait = flu
+				trait = dysentery
+				trait = gout
+				trait = food_poisoning
+				trait = rabies
+				trait = cancer
+				trait = dancing_plague
+				trait = scurvy
+				trait = sick_incapable
+				trait = one_eyed
+				trait = one_handed
+				trait = one_legged
+				trait = disfigured
+				trait = mangled
+				trait = severely_injured
+				trait = cough
+				trait = fever
+				trait = diarrhea
+				trait = vomiting
+				trait = chest_pain
+				trait = cramps
+				trait = rash
+				trait = headache
+				trait = abdominal_pain
+				trait = fatigue
+				trait = malaise
+				trait = infection
+				}
+			}
+			character_event = { id = cdecheal.1 }
+		}
+	}
+	option = {
+		name = EVTOPTBCdecheal.2
+	}
+	option = {
+		name = EVTOPTCCdecheal.2
+		set_global_flag = disabled_cheat_flag
+	}
+}
+character_event = {
+	id = cdecheal.3
+	desc = "You have dynasty members needing healing."
+	hide_window = yes
+	weight_multiplier = {
+		days = 1
+	}
+	trigger = {
+		ai = no
+		has_character_flag = cheat_heal_dyn_auto
+		any_dynasty_member = {
+			dynasty = ROOT
+			is_alive = yes
+			OR = {
+				trait = sickly
+				trait = has_aztec_disease
+				trait = stressed
+				trait = depressed
+				trait = pneumonic
+				trait = syphilitic
+				trait = leper
+				trait = wounded
+				trait = maimed
+				trait = infirm
+				trait = incapable
+				trait = has_tuberculosis
+				trait = has_typhoid_fever
+				trait = has_typhus
+				trait = has_bubonic_plague
+				trait = has_measles
+				trait = has_small_pox
+				trait = blinded
+				trait = eunuch
+				trait = ill
+				trait = flu
+				trait = dysentery
+				trait = gout
+				trait = food_poisoning
+				trait = rabies
+				trait = cancer
+				trait = dancing_plague
+				trait = scurvy
+				trait = sick_incapable
+				trait = one_eyed
+				trait = one_handed
+				trait = one_legged
+				trait = disfigured
+				trait = mangled
+				trait = severely_injured
+				trait = cough
+				trait = fever
+				trait = diarrhea
+				trait = vomiting
+				trait = chest_pain
+				trait = cramps
+				trait = rash
+				trait = headache
+				trait = abdominal_pain
+				trait = fatigue
+				trait = malaise
+				trait = infection
+			}
+		}
+	}
+	
+	immediate = {
+		any_dynasty_member = {
+			limit = {
+				is_alive = yes
+				ai = yes
+				or = {
+				trait = sickly
+				trait = has_aztec_disease
+				trait = stressed
+				trait = depressed
+				trait = pneumonic
+				trait = syphilitic
+				trait = leper
+				trait = wounded
+				trait = maimed
+				trait = infirm
+				trait = incapable
+				trait = has_tuberculosis
+				trait = has_typhoid_fever
+				trait = has_typhus
+				trait = has_bubonic_plague
+				trait = has_measles
+				trait = has_small_pox
+				trait = blinded
+				trait = eunuch
+				trait = ill
+				trait = flu
+				trait = dysentery
+				trait = gout
+				trait = food_poisoning
+				trait = rabies
+				trait = cancer
+				trait = dancing_plague
+				trait = scurvy
+				trait = sick_incapable
+				trait = one_eyed
+				trait = one_handed
+				trait = one_legged
+				trait = disfigured
+				trait = mangled
+				trait = severely_injured
+				trait = cough
+				trait = fever
+				trait = diarrhea
+				trait = vomiting
+				trait = chest_pain
+				trait = cramps
+				trait = rash
+				trait = headache
+				trait = abdominal_pain
+				trait = fatigue
+				trait = malaise
+				trait = infection
+				}
+			}
+			character_event = { id = cdecheal.1 }
+		}
+	}
+}

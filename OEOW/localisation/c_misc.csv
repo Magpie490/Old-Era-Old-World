@@ -1,0 +1,169 @@
+#CODE;;;;;;;;;;;;;;x
+hand_of_god_player;Hand of God;Dieu à la Main;Gottes Hand;;La Mano de Dios;;;;;;;;;x
+hand_of_god_player_desc;It's as if God has placed his hand on your shoulder, you feel ALIVE!;C'est comme si Dieu a posé sa main sur votre épaule, vous sentir vivant!;Es ist, als ob Gott hat seine Hand auf die Schulter gelegt, fühlen Sie sich lebendig!;;Es como si Dios ha puesto su mano sobre el hombro, te sientes vivo!;;;;;;;;;x
+vassal_duty;Dutiful;Dévoué;Pflichtbewusst;;Obediente;;;;;;;;;x
+vassal_duty_desc;Your duty is to your god(s), your vassals respect you for it.;Votre devoir est de votre règle.;;Tu deber es la regla.;;;;;;;;;x
+anti_pope_p;Popular Priest;;;;;;;;;;;;;x
+anti_pope_p_desc;A very popular priest, maybe even the next pope.;;;;;;;;;;;;;x
+cheat_prov_lesser;Buffed Province;;;;;;;;;;;;;x
+cheat_hold_fort;Buffed Holding;;;;;;;;;;;;;x
+cheat_character;Greatness!;;;;;;;;;;;;;x
+cheat_prov;Enhanced Province!;;;;;;;;;;;;;x
+cheat_statholder;Stats increased!;;;;;;;;;;;;;x
+cheat_dyn_heal;Protected Dynasty;;;;;;;;;;;;;x
+cheat_dyn_heal_desc;This person's dynasty is protected by some unknown force against diseases and injury;;;;;;;;;;;;;x
+cheat_priest_one;Gifted Priest;;;;;;;;;;;;;x
+cheat_steward_one;Capable Steward;;;;;;;;;;;;;x
+disloyal_vassal;Disloyal Vassal;;;;;;;;;;;;;x
+disloyal_vassal_desc;This is one seriously perturbed vassal.;;;;;;;;;;;;;x
+healthy_vassal;Healthy Vassal;;;;;;;;;;;;;x
+healthy_vassal_desc;This character is the very aspect of healthy living.;;;;;;;;;;;;;x
+cheat_leadership;Outstanding Leader;;;;;;;;;;;;;x
+cheat_leadership_desc;This character is a true war master!;;;;;;;;;;;;;x
+t_buff_provinces;Buff Provinces;;;;;;;;;;;;;x
+t_buff_provinces_desc;Buffs all provinces within your realm.;;;;;;;;;;;;;x
+t_buff_provinces_off;Remove Province Buffs;;;;;;;;;;;;;x
+t_buff_provinces_off_desc;Removes all Province and Holding buffs granted by this cheat.;;;;;;;;;;;;;x
+t_buff_provinces_ai;AI Vassal Buff Provinces;;;;;;;;;;;;;x
+t_buff_provinces_ai_desc;Buffs all provinces within your realm, including vassals.;;;;;;;;;;;;;x
+t_buff_provinces_ai_off;Remove AI Province Buffs;;;;;;;;;;;;;x
+t_buff_provinces_ai_off_desc;Removes all Province and Holding buffs granted by this cheat to AI Vassals.;;;;;;;;;;;;;x
+t_cheat_menu;Activate the Cheat Menu;;;;;;;;;;;;;x
+t_heal_menu;Activate the Heal Menu;;;;;;;;;;;;;x
+t_trait_menu;Activate the Trait Menu;;;;;;;;;;;;;x
+t_quick_menu;Quick Buff;;;;;;;;;;;;;x
+t_boost_menu;Boost to low currency;;;;;;;;;;;;;x
+t_create_men;Create a male character;;;;;;;;;;;;;x
+t_create_women;Create a female character;;;;;;;;;;;;;x
+t_create_child;§R(Cheat)§! Create a Child;;;;;;;;;;;;;x
+t_create_child_desc;Create a child of your dynasty.;;;;;;;;;;;;;x
+t_pollinate_ai_2;§R(Cheat)§! Force Pregnation;;;;;;;;;;;;;x
+t_pollinate_ai_2_desc;Forces them to have children with their spouse, you must continue your dynasty!;;;;;;;;;;;;;x
+t_cheat_make_ally;§R(Cheat)§! Form an Alliance;
+t_cheat_make_ally_desc;Forms an Alliance between [From.GetBestName] and [Root.GetBestName];;;;;;;;;;;;;x
+t_raise_noble;§R(Cheat)§! Raise to Nobility;;;;;;;;;;;;;x
+t_raise_noble_desc;Raises the target character to the status of nobility, granting them a dynasty;;;;;;;;;;;;;x
+t_adopt_spouse_ai;§R(Cheat)§! Adopt with Spouse Dynasty;;;;;;;;;;;;;x
+t_adopt_spouse_ai_desc;Adopts the character with spouses dynasty.  You must not let them fall!;;;;;;;;;;;;;x
+t_independent_ai;§R(Cheat)§! Grant Independence;;;;;;;;;;;;;x
+t_independent_ai_desc;Make [Root.GetBestName] independent. [Root.GetSheHe] will be a free [Root.GetTitle]!;;;;;;;;;;;;;x
+tooltip_cheat_independent;§Y[Root.GetBestName]§! will be granted independence from [Root.GetHerHis] liege §Y[Root.Liege.GetBestName]§!;;;;;;;;;;;;;x
+t_cheat_abdicate_target;§R(Cheat)§! Abdicate To;;;;;;;;;;;;;x
+t_cheat_abdicate_target_desc;[From.GetBestName] will abdicate to [Root.GetBestName];;;;;;;;;;;;;x
+tooltip_cheat_abdicate_to;[From.GetBestName] will abdicate to [Root.GetBestName];;;;;;;;;;;;;x
+t_cheat_abdicate_self;§R(Cheat)§! Abdicate;;;;;;;;;;;;;x
+t_cheat_abdicate_self_desc;[From.GetBestName] will abdicate to their heir.;;;;;;;;;;;;;x
+tooltip_cheat_abdicate;[From.GetBestName] will abdicate to their heir.;;;;;;;;;;;;;x
+cheat_art_take_pris_dec;§R(Cheat)§! Take Artifacts;;;;;;;;;;;;;x
+cheat_art_take_pris_dec_desc;[From.GetBestName] will take any artifacts owned by [Root.GetBestName];;;;;;;;;;;;;x
+t_cheat_title_usurp;§R(Cheat)§! Usurp Title;;;;;;;;;;;;;x
+t_cheat_title_usurp_desc;Usurp §Y[Root.GetName] §! PROVID: §R[Root.GetID]§!;;;;;;;;;;;;;x
+tooltipcheatusurp;[From.GetBestName] will Usurp §Y[Root.GetName] §! PROVID: §R[Root.GetID]§! from [Root.Holder.GetBestName];;;;;;;;;;;;;x
+TOOLTIPmake_noble;[Root.GetTitledFirstName] is given a new house name and a coat of arms\n;;;;;;;;;;;;;x
+TOOLTIPHIP_REMOVELAWCD;[Root.GetTitledFirstName] will be allowed to change laws again.;;;;;;;;;;;;;x
+TOOLTIPHIP_REMOVEHWCD;[Root.GetTitledFirstName] will be allowed to declare special wars again.;;;;;;;;;;;;;x
+t_create_army;Spawn a Army;;;;;;;;;;;;;x
+t_create_fleet;Spawn a Fleet;;;;;;;;;;;;;x
+t_cheat_menu_desc;Opens the Cheat Menu for your character.;;;;;;;;;;;;;x
+t_heal_menu_desc;Opens the Healer for your character;;;;;;;;;;;;;x
+t_trait_menu_desc;Opens the Trait Menu for your character;;;;;;;;;;;;;x
+t_quick_menu_desc;Some times you just need a quick buff!;;;;;;;;;;;;;x
+t_boost_menu_desc;Only meant to be used when you are low on one or the other. Use the currency menu if you just want more.;;;;;;;;;;;;;x
+t_cheat_toggle;Toggle decision list;;;;;;;;;;;;;x
+t_cheat_toggle_desc;Toggle the decision list for your convenience.;;;;;;;;;;;;;x
+t_cheat_right_toggle;Toggles Click menu;;;;;;;;;;;;;x
+t_cheat_right_toggle_desc;Toggles the Right+click menus for you and everyone else. Helps avoid cluttering;;;;;;;;;;;;;x
+t_create_men_desc;Creates a male character.;;;;;;;;;;;;;x
+t_create_women_desc;Creats a woman for marriage... or other things.;;;;;;;;;;;;;x
+t_create_army_desc;Choose to spawn a varied amount of troops at your Capital. These are 'special' troops, they shouldn't cost money.;;;;;;;;;;;;;x
+t_create_fleet_desc;Creates a fleet of 200 vessals in the closest owned sea worthy province to your capital.;;;;;;;;;;;;;x
+t_cheat_health;Healthy Vassals?;;;;;;;;;;;;;x
+t_cheat_health_desc;Find out who has the Healthy Vassal trait.;;;;;;;;;;;;;x
+t_cheat_loyalv;Loyal Vassals?;;;;;;;;;;;;;x
+t_cheat_loyalv_desc;Find out who has the Loyal Vassal trait.;;;;;;;;;;;;;x
+t_cheat_heal_dyn;Heal Dynasty Members!;;;;;;;;;;;;;x
+t_cheat_heal_dyn_desc;This is only possible when one is injured or sick, it does not remove other traits;;;;;;;;;;;;;x
+t_cheat_vas_ai;§R(Cheat)§! Cheat Traits;;;;;;;;;;;;;x
+t_cheat_vas_ai_desc;Toggles cheat traits, such as Healthy Vassal.;;;;;;;;;;;;;x
+t_cheat2_vas_ai;§R(Cheat)§! More Cheat Traits;;;;;;;;;;;;;x
+t_cheat2_vas_ai_desc;Toggles cheat traits, such as Popular priest;;;;;;;;;;;;;x
+t_cheat3_vas_ai;§R(Cheat)§! ATC1 Cheats;;;;;;;;;;;;;x
+t_cheat3_vas_ai_desc;Toggles additional target cheats (ATC), includes Priest and Strong/Genius buffs.;;;;;;;;;;;;;x
+t_cheat4_vas_ai;§R(Cheat)§! ATC2;;;;;;;;;;;;;x
+t_cheat4_vas_ai_desc;Toggles additional target cheats (ATC), includes stewardship and martial buffs.;;;;;;;;;;;;;x
+t_cheat_favor;§R(Cheat)§! Gain Favor;;;;;;;;;;;;;x
+t_cheat_favor_desc;Gain favor with [Root.GetBestName];;;;;;;;;;;;;x
+t_reg1_vas_ai;§R(Cheat)§! Educational Traits;;;;;;;;;;;;;x
+t_reg1_vas_ai_desc;Traits include Intrigue, Learning, and Marshal education.;;;;;;;;;;;;;x
+t_reg2_vas_ai;§R(Cheat)§! More Educational Traits;;;;;;;;;;;;;x
+t_reg2_vas_ai_desc;Traits include Stewardship, and Diplomacy education.;;;;;;;;;;;;;x
+t_heal_vas_ai;§R(Cheat)§! Heal Them;;;;;;;;;;;;;x
+t_heal_vas_ai_desc;Beacons a Doctor with god like abilities.;;;;;;;;;;;;;x
+t_invite_court_ai;§R(Cheat)§! Move to Court;;;;;;;;;;;;;x
+t_invite_court_ai_desc;Moves them to your court, so long as they are unlanded;;;;;;;;;;;;;x
+t_legitimize_ai;§R(Cheat)§! Legitimize Them!;;;;;;;;;;;;;x
+t_legitimize_ai_desc;Sometimes you marry a bastard who would better suit you legitimized.;;;;;;;;;;;;;x
+t_adopt_ai;§R(Cheat)§! Adopt Them;;;;;;;;;;;;;x
+t_adopt_ai_desc;Adopt them, and make them part of your dynasty, this will also adopt their children, and any of their children.;;;;;;;;;;;;;x
+t_cheat_make_friend;§R(Cheat)§! Befriend Them;;;;;;;;;;;;;x
+t_cheat_make_friend_desc;[From.GetFirstName] will befriend [This.GetFirstName], making [This.GetHerHim] one of your best friends.;;;;;;;;;;;;;x
+t_cheat_make_spouse;§R(Cheat)§! Make Spouse;;;;;;;;;;;;;x
+t_cheat_make_spouse_desc;[This.GetFirstName] will become the spouse of [From.GetFirstName]. If [From.GetFirstName] is a §Yfemale§!, it will become a §Ymatrilineal§! marriage;;;;;;;;;;;;;x
+t_cheat_indebted_servent;§R(Cheat)§! Indebted Servant;;;;;;;;;;;;;x
+t_cheat_indebted_servent_desc;[This.GetFirstName] will be an indebted servant of [From.GetFirstName] for ten years. During that time [This.GetFirstName] will have a hard time saying no to any requests from [From.GetFirstName].;;;;;;;;;;;;;x
+t_imprison_ai;§R(Cheat)§! Imprison Them;;;;;;;;;;;;;x
+t_imprison_ai_desc;Need them closer to you? Like in your dungeon closer? Hire the most effective thugs to abduct them and bring them directly to your dungeons.;;;;;;;;;;;;;x
+t_pollinate_ai;§R(Cheat)§! Have Child With Them;;;;;;;;;;;;;x
+t_pollinate_ai_desc;You will seduce them with your wiles and new life will form;;;;;;;;;;;;;x
+t_pollinate_ai_3;§R(Cheat)§! Have Secret Child With Them;;;;;;;;;;;;;x
+t_pollinate_ai_3_desc;You will seduce them with your wiles and new life will form, none the wiser will be the onlookers.;;;;;;;;;;;;;x
+scm_force_divorce;§R(Cheat)§! Divorce;;;;;;;;;;;;;x
+scm_force_divorce_desc;§Y[From.GetBestName]§! will divorce §Y[ROOT.GetName]§! from [ROOT.GetHersHis] Spouse.;;;;;;;;;;;;;x
+chforcedivorce;Divorce;;;;;;;;;;;;;x
+cheat_artifact_take;§R(Cheat)§! Take Artifacts;;;;;;;;;;;;;x
+cheat_artifact_take_desc;Take an artifact from §Y[This.GetBestName]§!.;;;;;;;;;;;;;x
+t_kill_ai;§R(Cheat)§! Kill Them;;;;;;;;;;;;;x
+t_kill_ai_desc;Call forth the most effective assassins in all of the world. None can escape their grasp, and none shall know who pointed the way.;;;;;;;;;;;;;x
+t_cheat_titles;§R(Cheat)§! Usurp Titles;;;;;;;;;;;;;x
+t_cheat_titles_desc;[From.GetFirstName] will usurp all of [This.GetFirstName]'s titles. [This.GetFirstName] will still have claims on said tiles.;;;;;;;;;;;;;x
+t_cheat_claims;§R(Cheat)§! Remove Claims;;;;;;;;;;;;;x
+t_cheat_claims_desc;[This.GetFirstName] will renounce all claims on titles in your direct demesne, but will retain [This.GetHerHis] claims on other titles not within your demesne.;;;;;;;;;;;;;x
+t_clean_provinces;Clean Provinces;;;;;;;;;;;;;x
+t_clean_provinces_desc;Cleans the province baronies of negative modifiers like Looted or New Administration.;;;;;;;;;;;;;x
+t_prosp_provinces;Enable Auto-Prosper;;;;;;;;;;;;;x
+t_prosp_provinces_desc;Enables Automatic Prosperity for all your provinces, only yours.;;;;;;;;;;;;;x
+t_prosp_provinces_off;Disable Auto-Prosper;;;;;;;;;;;;;x
+t_prosp_provinces_off_desc;Disables Automatic Prosperity for all your provinces;;;;;;;;;;;;;x
+t_buff_d_provinces;Auto-Disease Resistant;;;;;;;;;;;;;x
+t_buff_d_provinces_desc;Enables the automatic Disease Resistant buff;;;;;;;;;;;;;x
+t_buff_d_provinces_off;Disable Auto-Disease Resistant;;;;;;;;;;;;;x
+t_buff_d_provinces_off_desc;Disables the automatic Disease Resistant buff;;;;;;;;;;;;;x
+t_cheat_toggle_heal;Toggle Auto-Dynastic Healing;;;;;;;;;;;;;x
+t_cheat_toggle_heal_desc;Toggles on, or off, the automatic healing of your dynasty;;;;;;;;;;;;;x
+cheat_enforce_peace_off;Toggle off Enforced Peace;;;;;;;;;;;;;x
+cheat_enforce_peace_on;Toggle on Enforced Peace;;;;;;;;;;;;;x
+t_cheat_enforce_peace;Toggle Enforced Peace;;;;;;;;;;;;;x
+t_cheat_enforce_peace_desc;Read Tooltip to see if it's toggled off or on;;;;;;;;;;;;;x
+t_cheat_toggle_dead_flag_o;Add Dead Flag;;;;;;;;;;;;;x
+t_cheat_toggle_dead_flag_o_desc;Adds a flag to your character to be used with modify.2 on another character to create a legitimate bastard child of their dynasty, or modify.3 to be come a child of the character. Useful for reviving dynasties;;;;;;;;;;;;;x
+cheat.bastardfatherheirs;§M[This.GetFullName]§! \n (ID: §G[This.GetID]§! ) is the §R[This.GetSonDaughter]§! of: \n §Y[Root.GetDynName]§! , and §Y[This.Mother.GetDynName]§!;;;;;;;;;;;;;x
+cheat_pillage_settlement;Freely Pillage Settlement;;;;;;;;;;;;;x
+cheat_pillage_settlement_desc;Freely pillage the settlement without having to wait. The Mongolians didn't stop in Baghdad;;;;;;;;;;;;;x
+t_destroy_holding;Destroy This Settlement;;;;;;;;;;;;;;x
+t_destroy_holding_desc;Destroy this settlement to make room for grander things.;;;;;;;;;;;;;;x
+t_convert_tribal;§R(Cheat)§! Convert to Tribal;;;;;;;;;;;;;;x
+t_convert_tribal_desc;Converts §Y[Root.GetName]§! to a tribal settlement. PROVID: §R[Root.GetID]§!;;;;;;;;;;;;;;x
+t_convert_temple;§R(Cheat)§! Convert to a Temple;;;;;;;;;;;;;;x
+t_convert_temple_desc;Converts §Y[Root.GetName]§! to a Temple settlement. PROVID: §R[Root.GetID]§!;;;;;;;;;;;;;;x
+t_convert_castle;§R(Cheat)§! Convert to a Castle;;;;;;;;;;;;;;x
+t_convert_castle_desc;Converts §Y[Root.GetName]§! to a Castle settlement. PROVID: §R[Root.GetID]§!;;;;;;;;;;;;;;x
+t_convert_city;§R(Cheat)§! Convert to a City;;;;;;;;;;;;;;x
+t_convert_city_desc;Converts §Y[Root.GetName]§! to a City settlement. PROVID: §R[Root.GetID]§!;;;;;;;;;;;;;;x
+obj_cheat_religion_desc;[This.GetTitledFirstName] would like to see his religion at its peak with cheats.;;;;;;;;;;;;x
+obj_cheat_religion_title;Raise Religious Authority;;;;;;;;;;;;x
+t_cheat_trait_manage;Find Traits;;;;;;;;;;;;;x
+t_cheat_trait_manage_desc;Find out who has custom traits.;;;;;;;;;;;;;x
+t_main_menu;Main Menu;;;;;;;;;;;;;x
+t_main_menu_desc;Toggles the Main Menu for ease of access.;;;;;;;;;;;;;x
+t_crown_law;TEST: Crown Laws;;;;;;;;;;;;;x
+t_crown_law_desc;Because you don't care what your vassals want.;;;;;;;;;;;;;x

@@ -1,0 +1,530 @@
+######################
+#IN-GAME TECH EDITOR #
+##WRITTEN BY SLVRBUU##
+####CHEAT HAPPENS#####
+######################
+#        Tech        #
+######################
+namespace = tech
+character_event = {
+	id = tech.0
+	desc = EVTDESCTech.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATech.0
+			culture_techpoints = 1000
+                hidden_tooltip = {
+                    character_event = {
+							id = tech.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBTech.0
+			economy_techpoints  = 1000
+                hidden_tooltip = {
+                    character_event = {
+							id = tech.0
+                    }
+				}
+	}
+
+	option = {
+		name = EVTOPTCTech.0
+			military_techpoints  = 1000
+                hidden_tooltip = {
+                    character_event = {
+							id = tech.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDTech.0
+                hidden_tooltip = {
+                    character_event = {
+							id = tech.1
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = tech.1
+	desc = EVTDESCTech.1
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATech.1
+		trigger = {
+				NOT = {
+					trait = hand_of_god_player
+				}
+		}
+		add_trait = hand_of_god_player
+                hidden_tooltip = {
+                    character_event = {
+							id = tech.1
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTAATech.1
+		tooltip_info = hand_of_god_player
+		trigger = {
+			trait = hand_of_god_player
+		}
+		remove_trait = hand_of_god_player
+                hidden_tooltip = {
+                    character_event = {
+							id = tech.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBTech.1
+		trigger = {
+				NOT = {
+					has_character_flag = cheat_rma
+				}
+		}
+		set_character_flag = cheat_rma
+                hidden_tooltip = {
+                    character_event = {
+							id = tech.1
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTBBTech.1
+		trigger = {
+					has_character_flag = cheat_rma
+		}
+		clr_character_flag = cheat_rma
+                hidden_tooltip = {
+                    character_event = {
+							id = tech.1
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTCTech.1
+	}
+}
+
+character_event = {
+	id = tech.2
+	desc = EVTDESCTech.2
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATech.2
+			any_character = {
+				limit = {
+					ai = no
+					has_trait = hand_of_god_player
+				}
+				dynasty = root
+			}
+	}
+	option = {
+		name = EVTOPTCTech.2
+	}
+}
+###### SPAWN CHARACTERS
+###### KIDS
+character_event = {
+	id = tech.93
+	desc = EVTDESCTech.94
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATech.94
+		create_character = {
+			random_traits = no
+			dynasty = ROOT
+			religion = ROOT
+			culture = ROOT
+			age = 0
+			female = yes
+		}
+		new_character = {
+			hidden_tooltip = {
+				if = {
+					limit = {
+						ROOT = {
+							NOT = {
+								is_female = yes
+							}
+						}
+					}
+					set_father = ROOT
+					set_real_father = ROOT
+					ROOT = {
+						spouse = {
+							new_character = {
+								set_mother = prev
+							}
+						}
+					}
+					recalc_succession = yes
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = yes
+						}
+					}
+					set_mother = ROOT
+					ROOT = {
+						spouse = {
+							new_character = {
+								set_father = prev
+								set_real_father = prev
+							}
+						}
+					}
+					recalc_succession = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBTech.94
+		create_character = {
+			random_traits = no
+			dynasty = ROOT
+			religion = ROOT
+			culture = ROOT
+			age = 0
+			female = no
+		}
+		new_character = {
+			hidden_tooltip = {
+				if = {
+					limit = {
+						ROOT = {
+							NOT = {
+								is_female = yes
+							}
+						}
+					}
+					set_father = ROOT
+					set_real_father = ROOT
+					ROOT = {
+						spouse = {
+							new_character = {
+								set_mother = prev
+							}
+						}
+					}
+					recalc_succession = yes
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_female = yes
+						}
+					}
+					set_mother = ROOT
+					ROOT = {
+						spouse = {
+							new_character = {
+								set_father = prev
+								set_real_father = prev
+							}
+						}
+					}
+					recalc_succession = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCTech.94
+	}
+}
+character_event = {
+	id = tech.94
+	desc = EVTDESCTech.94
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATech.94
+		FROM = {
+			create_character = {
+				random_traits = no
+				dynasty = FROM
+				
+				religion = FROM
+				culture = FROM
+				age = 0
+				female = yes
+			}
+			new_character = {
+				hidden_tooltip = {
+					if = {
+						limit = {
+							FROM = {
+								NOT = {
+									is_female = yes
+								}
+							}
+						}
+						set_father = FROM
+						set_real_father = FROM
+						FROM = {
+							spouse = {
+								new_character = {
+									set_mother = prev
+								}
+							}
+						}
+						recalc_succession = yes
+					}
+					if = {
+						limit = {
+							FROM = {
+								is_female = yes
+							}
+						}
+						set_mother = FROM
+						FROM = {
+							spouse = {
+								new_character = {
+									set_father = prev
+									set_real_father = prev
+								}
+							}
+						}
+						recalc_succession = yes
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBTech.94
+		FROM = {
+			create_character = {
+				random_traits = no
+				dynasty = FROM
+				religion = FROM
+				culture = FROM
+				age = 0
+				female = no
+			}
+			new_character = {
+				hidden_tooltip = {
+					if = {
+						limit = {
+							FROM = {
+								NOT = {
+									is_female = yes
+								}
+							}
+						}
+						set_father = FROM
+						set_real_father = FROM
+						FROM = {
+							spouse = {
+								new_character = {
+									set_mother = prev
+								}
+							}
+						}
+						recalc_succession = yes
+					}
+					if = {
+						limit = {
+							FROM = {
+								is_female = yes
+							}
+						}
+						set_mother = FROM
+						FROM = {
+							spouse = {
+								new_character = {
+									set_father = prev
+									set_real_father = prev
+								}
+							}
+						}
+						recalc_succession = yes
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCTech.94
+	}
+}
+
+##### SPAWN MALES
+character_event = {
+	id = tech.95
+	desc = EVTDESCTech.95
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+	name = EVTOPTATech.95
+	create_character = {
+		random_traits = yes
+		trait = brilliant_strategist
+			attributes = {
+				martial = 15
+				learning = 10
+				stewardship = 10
+				intrigue = 10
+				diplomacy = 10
+			}
+		dynasty = NONE
+		religion = root
+		culture = root
+		age = 16
+		female = no
+	}
+	}
+	option = {
+	name = EVTOPTBTech.95
+	create_character = {
+		random_traits = yes
+		trait = midas_touched
+			attributes = {
+				martial = 10
+				learning = 10
+				stewardship = 15
+				intrigue = 10
+				diplomacy = 10
+			}
+		dynasty = NONE
+		religion = root
+		culture = root
+		age = 16
+		female = no
+	}
+	}
+	option = {
+		name = EVTOPTCTech.95
+	}
+}
+##### SPAWN FEMALES
+character_event = {
+	id = tech.98
+	desc = EVTDESCTech.98
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+	name = EVTOPTATech.98
+	create_character = {
+		random_traits = yes
+		trait = elusive_shadow
+			attributes = {
+				martial = 10
+				learning = 10
+				stewardship = 10
+				intrigue = 15
+				diplomacy = 10
+			}
+		dynasty = NONE
+		religion = root
+		culture = root
+		age = 16
+		female = yes
+	}
+	}
+	option = {
+	name = EVTOPTBTech.98
+	create_character = {
+		random_traits = yes
+		trait = grey_eminence
+			attributes = {
+				martial = 10
+				learning = 10
+				stewardship = 10
+				intrigue = 10
+				diplomacy = 15
+			}
+		dynasty = NONE
+		religion = root
+		culture = root
+		age = 16
+		female = yes
+	}
+	}
+	option = {
+	name = EVTOPTCTech.98
+	create_character = {
+		random_traits = yes
+		trait = midas_touched
+			attributes = {
+				martial = 10
+				learning = 10
+				stewardship = 15
+				intrigue = 10
+				diplomacy = 10
+			}
+		dynasty = NONE
+		religion = root
+		culture = root
+		age = 16
+		female = yes
+	}
+	}
+	option = {
+		name = EVTOPTDTech.98
+                hidden_tooltip = {
+                    character_event = {
+							id = tech.99
+                    }
+				}
+	}
+}
+character_event = {
+	id = tech.99
+	desc = EVTDESCTech.99
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+	name = EVTOPTATech.99
+	create_character = {
+		random_traits = yes
+		trait = brilliant_strategist
+			attributes = {
+				martial = 15
+				learning = 10
+				stewardship = 10
+				intrigue = 10
+				diplomacy = 10
+			}
+		dynasty = NONE
+		religion = root
+		culture = root
+		age = 16
+		female = yes
+	}
+	}
+	option = {
+	name = EVTOPTBTech.99
+	create_character = {
+		random_traits = yes
+		trait = mastermind_theologian
+			attributes = {
+				martial = 10
+				learning = 15
+				stewardship = 10
+				intrigue = 10
+				diplomacy = 10
+			}
+		dynasty = NONE
+		religion = root
+		culture = root
+		age = 16
+		female = yes
+	}
+	}
+	option = {
+		name = EVTOPTCTech.99
+	}
+}

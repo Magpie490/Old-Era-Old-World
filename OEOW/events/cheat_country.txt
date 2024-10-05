@@ -1,0 +1,650 @@
+namespace = country
+character_event = {
+	id = country.1
+	desc = EVTDESCCountry.1
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTACountry.1
+		trigger = {
+			NOT = {
+				has_law = centralization_0
+				#has_law = centralization_1
+				#has_law = centralization_2
+				#has_law = centralization_3
+			}
+			has_law = centralization_4
+		}
+			primary_title = {
+				add_law = centralization_0
+				revoke_law = centralization_4
+			}
+	}
+	option = {
+		name = EVTOPTAACountry.1
+		trigger = {
+			NOT = {
+				#has_law = centralization_0
+				#has_law = centralization_1
+				#has_law = centralization_2
+				has_law = centralization_3
+				#has_law = centralization_4
+			}
+			has_law = centralization_4
+		}
+			primary_title = {
+				add_law = centralization_3
+				revoke_law = centralization_4
+			}
+	}
+	option = {
+		name = EVTOPTACountry.1
+		trigger = {
+			NOT = {
+				#has_law = centralization_0
+				has_law = centralization_1
+				#has_law = centralization_2
+				#has_law = centralization_3
+				#has_law = centralization_4
+			}
+			has_law = centralization_0
+		}
+			primary_title = {
+				add_law = centralization_1
+				revoke_law = centralization_0
+			}
+	}
+	option = {
+		name = EVTOPTAACountry.1
+		trigger = {
+			NOT = {
+				#has_law = centralization_0
+				#has_law = centralization_1
+				#has_law = centralization_2
+				#has_law = centralization_3
+				has_law = centralization_4
+			}
+			has_law = centralization_0
+		}
+			primary_title = {
+				add_law = centralization_4
+				revoke_law = centralization_0
+			}
+	}
+	option = {
+		name = EVTOPTACountry.1
+		trigger = {
+			NOT = {
+				#has_law = centralization_0
+				#has_law = centralization_1
+				has_law = centralization_2
+				#has_law = centralization_3
+				#has_law = centralization_4
+			}
+			has_law = centralization_1
+		}
+			primary_title = {
+				add_law = centralization_2
+				revoke_law = centralization_1
+			}
+	}
+	option = {
+		name = EVTOPTAACountry.1
+		trigger = {
+			NOT = {
+				has_law = centralization_0
+				#has_law = centralization_1
+				#has_law = centralization_2
+				#has_law = centralization_3
+				#has_law = centralization_4
+			}
+			has_law = centralization_1
+		}
+			primary_title = {
+				add_law = centralization_0
+				revoke_law = centralization_1
+			}
+	}
+	option = {
+		name = EVTOPTACountry.1
+		trigger = {
+			NOT = {
+				#has_law = centralization_0
+				#has_law = centralization_1
+				#has_law = centralization_2
+				has_law = centralization_3
+				#has_law = centralization_4
+			}
+			has_law = centralization_2
+		}
+			primary_title = {
+				add_law = centralization_3
+				revoke_law = centralization_2
+			}
+	}
+	option = {
+		name = EVTOPTAACountry.1
+		trigger = {
+			NOT = {
+				#has_law = centralization_0
+				has_law = centralization_1
+				#has_law = centralization_2
+				#has_law = centralization_3
+				#has_law = centralization_4
+			}
+			has_law = centralization_2
+		}
+			primary_title = {
+				add_law = centralization_1
+				revoke_law = centralization_2
+			}
+	}
+	option = {
+		name = EVTOPTACountry.1
+		trigger = {
+			NOT = {
+				#has_law = centralization_0
+				#has_law = centralization_1
+				#has_law = centralization_2
+				#has_law = centralization_3
+				has_law = centralization_4
+			}
+			has_law = centralization_3
+		}
+			primary_title = {
+				add_law = centralization_4
+				revoke_law = centralization_3
+			}
+	}
+	option = {
+		name = EVTOPTAACountry.1
+		trigger = {
+			NOT = {
+				#has_law = centralization_0
+				#has_law = centralization_1
+				has_law = centralization_2
+				#has_law = centralization_3
+				#has_law = centralization_4
+			}
+			has_law = centralization_3
+		}
+			primary_title = {
+				add_law = centralization_2
+				revoke_law = centralization_3
+			}
+	}
+	option = {
+		name = EVTOPTCCountry.1
+	}
+}
+character_event = {
+	id = country.2
+	desc = EVTDESCcountry.2
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAcountry.2
+		trigger = {
+			NOT = {
+				has_law = crown_authority_0
+				#has_law = crown_authority_1
+				#has_law = crown_authority_2
+				#has_law = crown_authority_3
+			}
+			has_law = crown_authority_4
+		}
+			primary_title = {
+				add_law = crown_authority_0
+				revoke_law = crown_authority_4
+			}
+	}
+	option = {
+		name = EVTOPTAAcountry.2
+		trigger = {
+			NOT = {
+				#has_law = crown_authority_0
+				#has_law = crown_authority_1
+				#has_law = crown_authority_2
+				has_law = crown_authority_3
+				#has_law = crown_authority_4
+			}
+			has_law = crown_authority_4
+		}
+			primary_title = {
+				add_law = crown_authority_3
+				revoke_law = crown_authority_4
+			}
+	}
+	option = {
+		name = EVTOPTAcountry.2
+		trigger = {
+			NOT = {
+				#has_law = crown_authority_0
+				has_law = crown_authority_1
+				#has_law = crown_authority_2
+				#has_law = crown_authority_3
+				#has_law = crown_authority_4
+			}
+			has_law = crown_authority_0
+		}
+			primary_title = {
+				add_law = crown_authority_1
+				revoke_law = crown_authority_0
+			}
+	}
+	option = {
+		name = EVTOPTAAcountry.2
+		trigger = {
+			NOT = {
+				#has_law = crown_authority_0
+				#has_law = crown_authority_1
+				#has_law = crown_authority_2
+				#has_law = crown_authority_3
+				has_law = crown_authority_4
+			}
+			has_law = crown_authority_0
+		}
+			primary_title = {
+				add_law = crown_authority_4
+				revoke_law = crown_authority_0
+			}
+	}
+	option = {
+		name = EVTOPTAcountry.2
+		trigger = {
+			NOT = {
+				#has_law = crown_authority_0
+				#has_law = crown_authority_1
+				has_law = crown_authority_2
+				#has_law = crown_authority_3
+				#has_law = crown_authority_4
+			}
+			has_law = crown_authority_1
+		}
+			primary_title = {
+				add_law = crown_authority_2
+				revoke_law = crown_authority_1
+			}
+	}
+	option = {
+		name = EVTOPTAAcountry.2
+		trigger = {
+			NOT = {
+				has_law = crown_authority_0
+				#has_law = crown_authority_1
+				#has_law = crown_authority_2
+				#has_law = crown_authority_3
+				#has_law = crown_authority_4
+			}
+			has_law = crown_authority_1
+		}
+			primary_title = {
+				add_law = crown_authority_0
+				revoke_law = crown_authority_1
+			}
+	}
+	option = {
+		name = EVTOPTAcountry.2
+		trigger = {
+			NOT = {
+				#has_law = crown_authority_0
+				#has_law = crown_authority_1
+				#has_law = crown_authority_2
+				has_law = crown_authority_3
+				#has_law = crown_authority_4
+			}
+			has_law = crown_authority_2
+		}
+			primary_title = {
+				add_law = crown_authority_3
+				revoke_law = crown_authority_2
+			}
+	}
+	option = {
+		name = EVTOPTAAcountry.2
+		trigger = {
+			NOT = {
+				#has_law = crown_authority_0
+				has_law = crown_authority_1
+				#has_law = crown_authority_2
+				#has_law = crown_authority_3
+				#has_law = crown_authority_4
+			}
+			has_law = crown_authority_2
+		}
+			primary_title = {
+				add_law = crown_authority_1
+				revoke_law = crown_authority_2
+			}
+	}
+	option = {
+		name = EVTOPTAcountry.2
+		trigger = {
+			NOT = {
+				#has_law = crown_authority_0
+				#has_law = crown_authority_1
+				#has_law = crown_authority_2
+				#has_law = crown_authority_3
+				has_law = crown_authority_4
+			}
+			has_law = crown_authority_3
+		}
+			primary_title = {
+				add_law = crown_authority_4
+				revoke_law = crown_authority_3
+			}
+	}
+	option = {
+		name = EVTOPTAAcountry.2
+		trigger = {
+			NOT = {
+				#has_law = crown_authority_0
+				#has_law = crown_authority_1
+				has_law = crown_authority_2
+				#has_law = crown_authority_3
+				#has_law = crown_authority_4
+			}
+			has_law = crown_authority_3
+		}
+			primary_title = {
+				add_law = crown_authority_2
+				revoke_law = crown_authority_3
+			}
+	}
+	option = {
+		name = EVTOPTCcountry.2
+	}
+}
+character_event = {
+	id = country.3
+	desc = EVTDESCCountry.3
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTADountry.3
+	}
+	option = {
+		name = EVTOPTACountry.3
+		trigger = {
+			NOT = {
+				#has_law = feudal_administration
+				#has_law = imperial_administration
+				has_law = ze_administration_laws_0
+				#has_law = ze_administration_laws_1
+				#has_law = ze_administration_laws_2
+			}
+			has_law = ze_administration_laws_2
+		}
+		primary_title = {
+			add_law = {
+				law = ze_administration_laws_0
+				cooldown = no
+				opinion_effect = no
+			}
+			revoke_law = feudal_administration
+			revoke_law = imperial_administration
+			#revoke_law = ze_administration_laws_0
+			revoke_law = ze_administration_laws_1
+			revoke_law = ze_administration_laws_2
+		}
+	}
+	option = {
+		name = EVTOPTACountry.3
+		trigger = {
+			NOT = {
+				#has_law = feudal_administration
+				#has_law = imperial_administration
+				#has_law = ze_administration_laws_0
+				has_law = ze_administration_laws_1
+				#has_law = ze_administration_laws_2
+			}
+			has_law = ze_administration_laws_0
+		}
+		primary_title = {
+			add_law = {
+				law = ze_administration_laws_1
+				cooldown = no
+				opinion_effect = no
+			}
+			revoke_law = feudal_administration
+			revoke_law = imperial_administration
+			revoke_law = ze_administration_laws_0
+			#revoke_law = ze_administration_laws_1
+			revoke_law = ze_administration_laws_2
+		}
+	}
+	option = {
+		name = EVTOPTACountry.3
+		trigger = {
+			NOT = {
+				#has_law = feudal_administration
+				#has_law = imperial_administration
+				#has_law = ze_administration_laws_0
+				#has_law = ze_administration_laws_1
+				has_law = ze_administration_laws_2
+			}
+			has_law = ze_administration_laws_1
+		}
+		primary_title = {
+			add_law = {
+				law = ze_administration_laws_2
+				cooldown = no
+				opinion_effect = no
+			}
+			revoke_law = feudal_administration
+			revoke_law = imperial_administration
+			revoke_law = ze_administration_laws_0
+			revoke_law = ze_administration_laws_1
+			#revoke_law = ze_administration_laws_2
+		}
+	}
+}
+character_event = {
+	id = country.4
+	desc = "You have dynasty members needing healing."
+	# hide_window = yes
+	weight_multiplier = {
+		days = 10
+	}
+	
+	trigger = {
+		OR = {
+			liege = {
+				OR = {
+					AND = {
+						ai = no
+						has_character_flag = cheat_enforce_peace
+					}
+					AND = {
+						is_tributary = yes
+						suzerain = {
+							ai = no
+							has_character_flag = cheat_enforce_peace
+						}
+					}
+				}
+			}
+			liege = {
+				liege = {
+					OR = {
+						AND = {
+							ai = no
+							has_character_flag = cheat_enforce_peace
+						}
+						AND = {
+							is_tributary = yes
+							suzerain = {
+								ai = no
+								has_character_flag = cheat_enforce_peace
+							}
+						}
+					}
+				}
+			}
+			liege = {
+				liege = {
+					liege = {
+						OR = {
+							AND = {
+								ai = no
+								has_character_flag = cheat_enforce_peace
+							}
+							AND = {
+								is_tributary = yes
+								suzerain = {
+									ai = no
+									has_character_flag = cheat_enforce_peace
+								}
+							}
+						}
+					}
+				}
+			}
+			liege = {
+				liege = {
+					liege = {
+						liege = {
+							OR = {
+								AND = {
+									ai = no
+									has_character_flag = cheat_enforce_peace
+								}
+								AND = {
+									is_tributary = yes
+									suzerain = {
+										ai = no
+										has_character_flag = cheat_enforce_peace
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			suzerain = {
+				ai = no
+				has_character_flag = cheat_enforce_peace
+			}
+		}
+		ai = yes
+		war = yes
+		is_primary_war_attacker = yes
+	}
+	option = {
+		name = EVTOPTACountry.4
+		if = {
+			limit = {
+				is_tributary = yes
+				suzerain = {
+					ai = no
+					has_character_flag = cheat_enforce_peace
+				}
+			}
+			suzerain = {
+				ROOT = {
+					any_war = {
+						limit = {
+						NOT = { defender = { character = PREVPREV } }
+						attacker = { character = ROOT }
+						}
+						end_war = invalid
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					liege = {
+						OR = {
+							AND = {
+								ai = no
+								has_character_flag = cheat_enforce_peace
+							}
+							AND = {
+								is_tributary = yes
+								suzerain = {
+									ai = no
+									has_character_flag = cheat_enforce_peace
+								}
+							}
+						}
+					}
+					liege = {
+						liege = {
+							OR = {
+								AND = {
+									ai = no
+									has_character_flag = cheat_enforce_peace
+								}
+								AND = {
+									is_tributary = yes
+									suzerain = {
+										ai = no
+										has_character_flag = cheat_enforce_peace
+									}
+								}
+							}
+						}
+					}
+					liege = {
+						liege = {
+							liege = {
+								OR = {
+									AND = {
+										ai = no
+										has_character_flag = cheat_enforce_peace
+									}
+									AND = {
+										is_tributary = yes
+										suzerain = {
+											ai = no
+											has_character_flag = cheat_enforce_peace
+										}
+									}
+								}
+							}
+						}
+					}
+					liege = {
+						liege = {
+							liege = {
+								liege = {
+									OR = {
+										AND = {
+											ai = no
+											has_character_flag = cheat_enforce_peace
+										}
+										AND = {
+											is_tributary = yes
+											suzerain = {
+												ai = no
+												has_character_flag = cheat_enforce_peace
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			liege = {
+				ROOT = {
+					any_war = {
+						limit = {
+						NOT = { defender = { character = PREVPREV } }
+						attacker = { character = ROOT }
+						}
+						end_war = invalid
+					}
+				}
+			}
+		}
+		else = {
+		}
+        ai_chance = {
+        	factor = 100
+		}
+	}
+}

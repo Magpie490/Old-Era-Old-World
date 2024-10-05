@@ -1,0 +1,431 @@
+# Targetted decisions are possible vs _all_ other characters and shown are in the Diplomacy View, not the Intrigue View. The taker is in the FROM scope.
+#
+# filter = [self/court/home_court/vassals/sub_realm/realm/dynasty/all] ('self' MUST be set for decisions targetting only the taker, the other filter types can be set to lessen CPU load)
+# ai_target_filter = [self/court/home_court/vassals/sub_realm/realm/dynasty/all] (which characters for which the AI evaluates the decision.)
+#	court: all characters in the AI's host court, including prisoners, and characters currently away (wards, prisoners, etc)
+#	home_court: all characters in the AI's home court, including prisoners, and characters currently away (wards, prisoners, etc)
+#	vassals: direct vassal rulers of the AI's employer
+#	sub_realm: all characters below the AI's employer
+#	realm: all characters in the same top realm as the AI
+#	dynasty: all members of the same dynasty
+#	rivals: your rivals plus any character you have an opinion modifier with 'crime = yes' set (the same set of characters the 'is_foe' trigger evaluates)
+#	all: all living characters (Avoid if possible. VERY CPU-HEAVY!)
+#	
+
+# Written by Henrik "Groogy" Hansson
+settlement_decisions = {
+	cheat_pillage_settlement = {
+		filter = owned
+		ai_target_filter = none
+		# is_high_prio = yes
+		
+		from_potential = {
+			# is_nomadic = yes
+			has_dlc = "Horse Lords"
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		
+		potential = {
+			NOT = { holding_type = nomad }
+			has_siege = no
+			controlled_by = FROM
+		}
+		allow = {
+			#location = {
+				#NOT = { has_province_modifier = recently_burnt_the_land }
+				#OR = {
+				#	owner = { character = FROM }
+				#	NOT = { has_province_modifier = recently_burnt_the_land_not_owner }
+				#}
+			#}
+			OR = {
+				owner = {
+					character = FROM
+				}
+				num_of_buildings = 4
+			}
+			#OR = {
+			#	FROM = {
+			#		independent = yes
+			#		
+			#		custom_tooltip = { 
+			#			text = TT_NOT_SAME_REALM
+			#			hidden_tooltip = {
+			#				FROM = {
+			#					top_liege = {
+			#						PREVPREV = {
+			#							holder_scope = {
+			#								top_liege = {
+			#									NOT = { character = PREVPREVPREV }
+			#								}
+			#							} 
+			#						}
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#}
+		}
+		effect = {
+			if = {
+				limit = { NOT = { holding_type = tribal } }
+				FROM = {
+					if = {
+						limit = {
+							location = {
+								owner = {
+									character = FROM
+								}
+							}
+						}
+						wealth = 50
+					}
+					if = {
+						limit = {
+							NOT = {
+								location = {
+									owner = {
+										character = FROM
+									}
+								}
+							}
+						}
+						wealth = 10
+					}
+					random_list = {
+						10 = { military_techpoints = 10 }
+						10 = { economy_techpoints = 10 }
+						10 = { culture_techpoints = 10 }
+					}
+				}
+			}
+			if = {
+				limit = { holding_type = tribal }
+				FROM = {
+					if = {
+						limit = {
+							owner = {
+								character = FROM
+							}
+						}
+						wealth = 25
+					}
+					if = {
+						limit = {
+							NOT = {
+								owner = {
+									character = FROM
+								}
+							}
+						}
+						wealth = 5
+					}
+					random_list = {
+						10 = { military_techpoints = 2 }
+						10 = { economy_techpoints = 2 }
+						10 = { culture_techpoints = 2 }
+					}
+				}
+			}
+
+			# location = {
+				# if = {
+					# limit = { 
+						# any_province_holding = {
+							# NOT = { holding_type = nomad }
+						# }
+					# }
+					# if = {
+						# limit = { 
+							# owner = { 
+								# character = FROM
+							# }
+						# }
+						# add_province_modifier = {
+							# modifier = burnt_the_land
+							# years = 8
+							# stacking = yes
+						# }
+						# add_province_modifier = {
+							# modifier = recently_burnt_the_land
+							# months = 6
+						# }
+					# }
+					# if = {
+						# limit = {
+							# NOT = {
+								# owner = { 
+									# character = FROM
+								# }
+							# }
+						# }
+						# add_province_modifier = {
+							# modifier = recently_burnt_the_land_not_owner
+							# years = 10
+						# }
+					# }
+				# }
+			# }
+
+			custom_tooltip = {
+				text = "PILLAGE_DESTROY_BUILDINGS"
+				hidden_tooltip = {
+					if = {
+						limit = { 
+							owner = { 
+								character = FROM
+							}
+						}
+						destroy_random_building = THIS
+						destroy_random_building = THIS
+					}
+					if = {
+						limit = {
+							NOT = {
+								owner = { 
+									character = FROM
+								}
+							}
+						}
+						destroy_random_building = THIS
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_any_building = yes }
+					owner = {
+						character = FROM
+					}
+				}
+				destroy_settlement = THIS
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { # Only for tribal holdings
+				factor = 0
+				NOT = { holding_type = tribal }
+			}
+		}
+	}
+	t_destroy_holding = {
+		filter = owned
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+		}
+		allow = {
+			is_capital = no
+			OR = {
+				AND = {
+					owner = {
+						character = FROM
+					}
+				}
+				AND = {
+					owner = {
+						ROOT = { de_facto_liege = FROM }
+					}
+				}
+			}
+		}
+		effect = {
+			destroy_settlement = THIS
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_invite_local = {
+		filter = all
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			location = {
+				FROM = {
+					create_character = {
+						religion = PREV
+						culture = PREV
+						race = PREV
+						age = 16
+						random_traits = yes
+						trait = shrewd
+						trait = robust
+						dynasty = none
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_convert_city = {
+		filter = owned
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			NOT = { holding_type = city }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			convert_to = city
+			refill_holding_levy = yes
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_convert_castle = {
+		filter = owned
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			NOT = { holding_type = castle }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			convert_to = castle
+			refill_holding_levy = yes
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_convert_temple = {
+		filter = owned
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			NOT = { holding_type = temple }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			convert_to = temple
+			refill_holding_levy = yes
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_convert_tribal = {
+		filter = owned
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			NOT = { holding_type = tribal }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			convert_to = tribal
+			refill_holding_levy = yes
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+trade_post_decisions = {
+	t_size_trade_post = {
+		filter = all
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			seize_trade_post = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	t_destroy_trade_post = {
+		filter = all
+		
+		from_potential = {
+			has_character_flag = cheat_rightdesc_on
+			ai = no
+		}
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			destroy_tradepost = THIS
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

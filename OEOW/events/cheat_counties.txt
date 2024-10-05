@@ -1,0 +1,64 @@
+namespace = ccounties
+character_event = {
+	id = ccounties.0
+	desc = "TEST: Counties and Such"
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTACcounties.0
+		trigger = {
+			job_spymaster = {
+				location = {
+					NOT = { num_of_settlements = 7 }
+				}
+			}
+		}
+		job_spymaster = {
+			location = {
+				build_holding = {
+					type = castle
+					holder = ROOT
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBCcounties.0
+		trigger = {
+			job_spymaster = {
+				location = {
+					NOT = { num_of_settlements = 7 }
+				}
+			}
+		}
+		job_spymaster = {
+			location = {
+				build_holding = {
+					type = city
+					holder = ROOT
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCCcounties.0
+		trigger = {
+			job_spymaster = {
+				location = {
+					NOT = { num_of_settlements = 7 }
+				}
+			}
+		}
+		job_spymaster = {
+			location = {
+				build_holding = {
+					type = temple
+					holder = root
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTDCcounties.0
+	}
+}

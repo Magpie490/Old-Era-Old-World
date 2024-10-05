@@ -1,0 +1,42 @@
+######################
+#IN-GAME MONETARY ADD#
+##WRITTEN BY SLVRBUU##
+####CHEAT HAPPENS#####
+######################
+namespace = mon
+character_event = {
+	id = mon.0
+	desc = EVTDESCMon.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAMon.0
+		prestige = 500
+        hidden_tooltip = {
+                character_event = {
+						id = mon.0
+                 }
+		}
+	}
+	option = {
+		name = EVTOPTBMon.0
+		wealth = 2500
+        hidden_tooltip = {
+                character_event = {
+						id = mon.0
+                 }
+		}
+	}
+	option = {
+		name = EVTOPTCMon.0
+		piety = 500
+        hidden_tooltip = {
+                character_event = {
+						id = mon.0
+                 }
+		}
+	}
+	option = {
+		name = EVTOPTDMon.0
+	}
+}

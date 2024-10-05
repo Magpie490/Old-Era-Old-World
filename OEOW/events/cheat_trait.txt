@@ -1,0 +1,4790 @@
+######################
+# IN-GAME TRAIT MENU #
+##WRITTEN BY SLVRBUU##
+####CHEAT HAPPENS#####
+######################
+#        MENU        #
+######################
+namespace = trait
+character_event = {
+	id = trait.0
+	desc = EVTDESCTrait.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATrait.0
+		hidden_tooltip = {
+			character_event = {
+				id = person.0
+			}
+		}		
+	}
+	option = {
+		name = EVTOPTBTrait.0
+		hidden_tooltip = {
+			character_event = {
+				id = leader.0
+			}
+		}		
+	}
+	option = {
+		name = EVTOPTCTrait.0
+		hidden_tooltip = {
+			character_event = {
+				id = school.0
+			}
+		}		
+	}
+	option = {
+		name = EVTOPTDTrait.0
+		hidden_tooltip = {
+			character_event = {
+				id = trait.1
+			}
+		}	
+	}
+}
+character_event = {
+	id = trait.1
+	desc = EVTDESCTrait.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATrait.1
+		hidden_tooltip = {
+			character_event = {
+				id = nperson.0
+			}
+		}		
+	}
+	option = {
+		name = EVTOPTBTrait.1
+		hidden_tooltip = {
+			character_event = {
+				id = pvirtues.0
+			}
+		}		
+	}
+	option = {
+		name = EVTOPTCTrait.1
+		hidden_tooltip = {
+			character_event = {
+				id = nvirtues.0
+			}
+		}		
+	}
+	option = {
+		name = EVTOPTDTrait.1
+		hidden_tooltip = {
+			character_event = {
+				id = trait.2
+			}
+		}	
+	}
+}
+character_event = {
+	id = trait.2
+	desc = EVTDESCTrait.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATrait.2
+		hidden_tooltip = {
+			character_event = {
+				id = healtht.0
+			}
+		}		
+	}
+	option = {
+		name = EVTOPTBTrait.2
+		hidden_tooltip = {
+			character_event = {
+				id = treligious.0
+			}
+		}		
+	}
+	option = {
+		name = EVTOPTCTrait.2
+	}
+}
+##################################
+#PERSONALITY AND LIFESTYLE TRAITS#
+##################################
+###MENU###
+##
+#
+
+namespace = person
+character_event = {
+	id = person.0
+	desc = "EVTDESCPerson.0"
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAPerson.0
+		trigger = {
+				NOT = {
+					trait = zealous
+				}
+		}
+		add_trait = zealous
+                hidden_tooltip = {
+					remove_trait = cynical
+					remove_trait = sympathy_pagans
+					remove_trait = sympathy_christendom
+					remove_trait = sympathy_islam
+					remove_trait = sympathy_zoroastrianism
+					remove_trait = sympathy_judaism
+					remove_trait = sympathy_indian
+                    character_event = {
+							id = person.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPerson.0
+		trigger = {
+					trait = zealous
+		}
+                hidden_tooltip = {
+					remove_trait = zealous
+                    character_event = {
+							id = person.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPerson.0
+		trigger = {
+				NOT = {
+					trait = genius
+				}
+		}
+		add_trait = genius
+                hidden_tooltip = {
+					remove_trait = slow
+					remove_trait = imbecile
+                    character_event = {
+							id = person.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBPerson.0
+		trigger = {
+					trait = genius
+		}
+                hidden_tooltip = {
+					remove_trait = genius
+                    character_event = {
+							id = person.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPerson.0
+		trigger = {
+				NOT = {
+					trait = quick
+				}
+		}
+		add_trait = quick
+                hidden_tooltip = {
+					remove_trait = slow
+					remove_trait = imbecile
+                    character_event = {
+							id = person.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCPerson.0
+		trigger = {
+					trait = quick
+		}
+                hidden_tooltip = {
+					remove_trait = quick
+                    character_event = {
+							id = person.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPerson.0
+                hidden_tooltip = {
+                    character_event = {
+							id = person.1
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = person.1
+	desc = EVTDESCPerson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAPerson.1
+		trigger = {
+				NOT = {
+					trait = strong
+				}
+		}
+		add_trait = strong
+                hidden_tooltip = {
+					remove_trait = weak
+                    character_event = {
+							id = person.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPerson.1
+		trigger = {
+					trait = strong
+		}
+                hidden_tooltip = {
+					remove_trait = strong
+                    character_event = {
+							id = person.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBAPerson.1
+		trigger = {
+			AND = {
+				religion_group = christian
+				NOT = {
+					trait = crusader
+				}
+			}
+		}
+		add_trait = crusader
+                hidden_tooltip = {
+					remove_trait = mujahid
+                    character_event = {
+							id = person.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBABPerson.1
+		trigger = {
+					trait = crusader
+		}
+                hidden_tooltip = {
+					remove_trait = crusader
+                    character_event = {
+							id = person.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBPerson.1
+		trigger = {
+			AND = {
+				religion_group = muslim
+				NOT = {
+					trait = mujahid
+				}
+			}
+		}
+		add_trait = mujahid
+                hidden_tooltip = {
+					remove_trait = crusader
+                    character_event = {
+							id = person.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBBPerson.1
+		trigger = {
+					trait = mujahid
+		}
+                hidden_tooltip = {
+					remove_trait = mujahid
+                    character_event = {
+							id = person.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPerson.1
+		trigger = {
+				NOT = {
+					trait = brave
+				}
+		}
+		add_trait = brave
+                hidden_tooltip = {
+					remove_trait = craven
+                    character_event = {
+							id = person.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCPerson.1
+		trigger = {
+					trait = brave
+		}
+                hidden_tooltip = {
+					remove_trait = brave
+                    character_event = {
+							id = person.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPerson.1
+                hidden_tooltip = {
+                    character_event = {
+							id = person.2
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = person.2
+	desc = EVTDESCPerson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAPerson.2
+		trigger = {
+				NOT = {
+					trait = gregarious
+				}
+		}
+		add_trait = gregarious
+                hidden_tooltip = {
+					remove_trait = shy
+                    character_event = {
+							id = person.2
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTAAPerson.2
+		trigger = {
+					trait = gregarious
+		}
+                hidden_tooltip = {
+					remove_trait = gregarious
+                    character_event = {
+							id = person.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPerson.2
+		trigger = {
+				NOT = {
+					trait = just
+				}
+		}
+		add_trait = just
+                hidden_tooltip = {
+					remove_trait = arbitrary
+                    character_event = {
+							id = person.2
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTBBPerson.2
+		trigger = {
+					trait = just
+		}
+                hidden_tooltip = {
+					remove_trait = just
+                    character_event = {
+							id = person.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPerson.2
+		trigger = {
+				NOT = {
+					trait = fair
+				}
+		}
+		add_trait = fair
+                hidden_tooltip = {
+					remove_trait = ugly
+                    character_event = {
+							id = person.2
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTCCPerson.2
+		trigger = {
+					trait = fair
+		}
+                hidden_tooltip = {
+					remove_trait = fair
+                    character_event = {
+							id = person.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPerson.2
+                hidden_tooltip = {
+                    character_event = {
+							id = person.3
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = person.3
+	desc = EVTDESCPerson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAPerson.3
+		trigger = {
+				NOT = {
+					trait = celibate
+				}
+		}
+		add_trait = celibate
+                hidden_tooltip = {
+					remove_trait = hedonist
+                    character_event = {
+							id = person.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPerson.3
+		trigger = {
+					trait = celibate
+		}
+                hidden_tooltip = {
+					remove_trait = celibate
+                    character_event = {
+							id = person.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPerson.3
+		trigger = {
+				NOT = {
+					trait = scholar
+				}
+		}
+		add_trait = scholar
+                hidden_tooltip = {
+                    character_event = {
+							id = person.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBPerson.3
+		trigger = {
+					trait = scholar
+		}
+                hidden_tooltip = {
+					remove_trait = scholar
+                    character_event = {
+							id = person.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPerson.3
+		trigger = {
+				NOT = {
+					trait = gardener
+				}
+		}
+		add_trait = gardener
+                hidden_tooltip = {
+                    character_event = {
+							id = person.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCPerson.3
+		trigger = {
+					trait = gardener
+		}
+                hidden_tooltip = {
+					remove_trait = gardener
+                    character_event = {
+							id = person.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPerson.3
+                hidden_tooltip = {
+                    character_event = {
+							id = person.4
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = person.4
+	desc = EVTDESCPerson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAPerson.4
+		trigger = {
+				NOT = {
+					trait = mystic
+				}
+		}
+		add_trait = mystic
+                hidden_tooltip = {
+                    character_event = {
+							id = person.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPerson.4
+		trigger = {
+					trait = mystic
+		}
+                hidden_tooltip = {
+					remove_trait = mystic
+                    character_event = {
+							id = person.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPerson.4
+		trigger = {
+				NOT = {
+					trait = impaler
+				}
+		}
+		add_trait = impaler
+                hidden_tooltip = {
+                    character_event = {
+							id = person.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBPerson.4
+		trigger = {
+					trait = impaler
+		}
+                hidden_tooltip = {
+					remove_trait = impaler
+                    character_event = {
+							id = person.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPerson.4
+		trigger = {
+				NOT = {
+					trait = duelist
+				}
+		}
+		add_trait = duelist
+                hidden_tooltip = {
+                    character_event = {
+							id = person.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCPerson.4
+		trigger = {
+					trait = duelist
+		}
+                hidden_tooltip = {
+					remove_trait = duelist
+                    character_event = {
+							id = person.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPerson.4
+                hidden_tooltip = {
+                    character_event = {
+							id = person.5
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = person.5
+	desc = EVTDESCPerson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAPerson.5
+		trigger = {
+				NOT = {
+					trait = hunter
+				}
+		}
+		add_trait = hunter
+                hidden_tooltip = {
+                    character_event = {
+							id = person.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPerson.5
+		trigger = {
+					trait = hunter
+		}
+                hidden_tooltip = {
+					remove_trait = hunter
+                    character_event = {
+							id = person.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPerson.5
+		trigger = {
+				NOT = {
+					trait = poet
+				}
+		}
+		add_trait = poet
+                hidden_tooltip = {
+                    character_event = {
+							id = person.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBPerson.5
+		trigger = {
+					trait = poet
+		}
+                hidden_tooltip = {
+					remove_trait = poet
+                    character_event = {
+							id = person.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPerson.5
+		trigger = {
+				NOT = {
+					trait = falconer
+				}
+		}
+		add_trait = falconer
+                hidden_tooltip = {
+                    character_event = {
+							id = person.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCPerson.5
+		trigger = {
+					trait = falconer
+		}
+                hidden_tooltip = {
+					remove_trait = falconer
+                    character_event = {
+							id = person.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPerson.5
+                hidden_tooltip = {
+                    character_event = {
+							id = person.6
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = person.6
+	desc = EVTDESCPerson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAPerson.6
+		trigger = {
+				NOT = {
+					trait = berserker
+				}
+		}
+		add_trait = berserker
+                hidden_tooltip = {
+                    character_event = {
+							id = person.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPerson.6
+		trigger = {
+					trait = berserker
+		}
+                hidden_tooltip = {
+					remove_trait = berserker
+                    character_event = {
+							id = person.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPerson.6
+		trigger = {
+				NOT = {
+					trait = varangian
+				}
+		}
+		add_trait = varangian
+                hidden_tooltip = {
+                    character_event = {
+							id = person.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBPerson.6
+		trigger = {
+					trait = varangian
+		}
+                hidden_tooltip = {
+					remove_trait = varangian
+                    character_event = {
+							id = person.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPerson.6
+		trigger = {
+				NOT = {
+					trait = viking
+				}
+		}
+		add_trait = viking
+                hidden_tooltip = {
+                    character_event = {
+							id = person.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCPerson.6
+		trigger = {
+					trait = viking
+		}
+                hidden_tooltip = {
+					remove_trait = viking
+                    character_event = {
+							id = person.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPerson.6
+                hidden_tooltip = {
+                    character_event = {
+							id = person.7
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = person.7
+	desc = EVTDESCPerson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAPerson.7
+		trigger = {
+				NOT = {
+					trait = ambitious
+				}
+		}
+		add_trait = ambitious
+                hidden_tooltip = {
+                    character_event = {
+							id = person.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPerson.7
+		trigger = {
+					trait = ambitious
+		}
+                hidden_tooltip = {
+					remove_trait = ambitious
+                    character_event = {
+							id = person.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPerson.7
+		trigger = {
+				NOT = {
+					trait = content
+				}
+		}
+		add_trait = content
+                hidden_tooltip = {
+                    character_event = {
+							id = person.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBPerson.7
+		trigger = {
+					trait = content
+		}
+                hidden_tooltip = {
+					remove_trait = content
+                    character_event = {
+							id = person.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPerson.7
+		trigger = {
+				NOT = {
+					trait = trusting
+				}
+		}
+		add_trait = trusting
+                hidden_tooltip = {
+                    character_event = {
+							id = person.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCPerson.7
+		trigger = {
+					trait = trusting
+		}
+                hidden_tooltip = {
+					remove_trait = trusting
+                    character_event = {
+							id = person.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPerson.7
+                hidden_tooltip = {
+                    character_event = {
+							id = person.8
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = person.8
+	desc = EVTDESCPerson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAPerson.8
+		trigger = {
+				NOT = {
+					trait = honest
+				}
+		}
+		add_trait = honest
+                hidden_tooltip = {
+                    character_event = {
+							id = person.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPerson.8
+		trigger = {
+					trait = honest
+		}
+                hidden_tooltip = {
+					remove_trait = honest
+                    character_event = {
+							id = person.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPerson.8
+		trigger = {
+				NOT = {
+					trait = scarred
+				}
+		}
+		add_trait = scarred
+                hidden_tooltip = {
+                    character_event = {
+							id = person.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBPerson.8
+		trigger = {
+					trait = scarred
+		}
+                hidden_tooltip = {
+					remove_trait = scarred
+                    character_event = {
+							id = person.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPerson.8
+		trigger = {
+				NOT = {
+					trait = seductress
+				}
+		}
+		add_trait = seductress
+                hidden_tooltip = {
+                    character_event = {
+							id = person.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCPerson.8
+		trigger = {
+					trait = seductress
+		}
+                hidden_tooltip = {
+					remove_trait = seductress
+                    character_event = {
+							id = person.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPerson.8
+                hidden_tooltip = {
+                    character_event = {
+							id = person.9
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = person.9
+	desc = EVTDESCPerson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAPerson.9
+		trigger = {
+				NOT = {
+					trait = administrator
+				}
+		}
+		add_trait = administrator
+                hidden_tooltip = {
+                    character_event = {
+							id = person.9
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPerson.9
+		trigger = {
+					trait = administrator
+		}
+                hidden_tooltip = {
+					remove_trait = administrator
+                    character_event = {
+							id = person.9
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPerson.9
+		trigger = {
+				NOT = {
+					trait = architect
+				}
+		}
+		add_trait = architect
+                hidden_tooltip = {
+                    character_event = {
+							id = person.9
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBPerson.9
+		trigger = {
+					trait = architect
+		}
+                hidden_tooltip = {
+					remove_trait = architect
+                    character_event = {
+							id = person.9
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPerson.9
+		trigger = {
+				NOT = {
+					trait = strategist
+				}
+		}
+		add_trait = strategist
+                hidden_tooltip = {
+                    character_event = {
+							id = person.9
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCPerson.9
+		trigger = {
+					trait = strategist
+		}
+                hidden_tooltip = {
+					remove_trait = strategist
+                    character_event = {
+							id = person.9
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPerson.9
+                hidden_tooltip = {
+                    character_event = {
+							id = person.10
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = person.10
+	desc = EVTDESCPerson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAPerson.10
+		trigger = {
+				NOT = {
+					trait = socializer
+				}
+		}
+		add_trait = socializer
+                hidden_tooltip = {
+                    character_event = {
+							id = person.10
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPerson.10
+		trigger = {
+					trait = socializer
+		}
+                hidden_tooltip = {
+					remove_trait = socializer
+                    character_event = {
+							id = person.10
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPerson.10
+		trigger = {
+				NOT = {
+					trait = schemer
+				}
+		}
+		add_trait = schemer
+                hidden_tooltip = {
+                    character_event = {
+							id = person.10
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBPerson.10
+		trigger = {
+					trait = schemer
+		}
+                hidden_tooltip = {
+					remove_trait = schemer
+                    character_event = {
+							id = person.10
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPerson.10
+		trigger = {
+				NOT = {
+					trait = theologian
+				}
+		}
+		add_trait = theologian
+                hidden_tooltip = {
+                    character_event = {
+							id = person.10
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCPerson.10
+		trigger = {
+					trait = theologian
+		}
+                hidden_tooltip = {
+					remove_trait = theologian
+                    character_event = {
+							id = person.10
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPerson.10
+                hidden_tooltip = {
+                    character_event = {
+							id = person.11
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = person.11
+	desc = EVTDESCPerson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAPerson.11
+		trigger = {
+				NOT = {
+					trait = gamer
+				}
+		}
+		add_trait = gamer
+                hidden_tooltip = {
+                    character_event = {
+							id = person.11
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPerson.11
+		trigger = {
+					trait = gamer
+		}
+                hidden_tooltip = {
+					remove_trait = gamer
+                    character_event = {
+							id = person.11
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPerson.11
+                hidden_tooltip = {
+                    character_event = {
+							id = trait.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPerson.11
+	}
+}
+
+#############################
+##NEGATIVE PERSONALITY TRAITS
+#############################
+###MENU###
+##
+#
+namespace = nperson
+character_event = {
+	id = nperson.0
+	desc = EVTDESCNperson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTANperson.0
+		trigger = {
+				NOT = {
+					trait = deceitful
+				}
+		}
+		add_trait = deceitful
+                hidden_tooltip = {
+					remove_trait = honest
+                    character_event = {
+							id = nperson.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAANperson.0
+		trigger = {
+					trait = deceitful
+		}
+                hidden_tooltip = {
+					remove_trait = deceitful
+                    character_event = {
+							id = nperson.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBNperson.0
+		trigger = {
+				NOT = {
+					trait = craven
+				}
+		}
+		add_trait = craven
+                hidden_tooltip = {
+					remove_trait = brave
+                    character_event = {
+							id = nperson.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBNperson.0
+		trigger = {
+					trait = craven
+		}
+                hidden_tooltip = {
+					remove_trait = craven
+                    character_event = {
+							id = nperson.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCNperson.0
+		trigger = {
+				NOT = {
+					trait = shy
+				}
+		}
+		add_trait = shy
+                hidden_tooltip = {
+					remove_trait = gregarious
+                    character_event = {
+							id = nperson.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCNperson.0
+		trigger = {
+					trait = shy
+		}
+                hidden_tooltip = {
+					remove_trait = shy
+                    character_event = {
+							id = nperson.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDNperson.0
+                hidden_tooltip = {
+                    character_event = {
+							id = nperson.1
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = nperson.1
+	desc = EVTDESCNperson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTANperson.1
+		trigger = {
+				NOT = {
+					trait = arbitrary
+				}
+		}
+		add_trait = arbitrary
+                hidden_tooltip = {
+					remove_trait = just
+                    character_event = {
+							id = nperson.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAANperson.1
+		trigger = {
+					trait = arbitrary
+		}
+                hidden_tooltip = {
+					remove_trait = arbitrary
+                    character_event = {
+							id = nperson.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBNperson.1
+		trigger = {
+				NOT = {
+					trait = cynical
+				}
+		}
+		add_trait = cynical
+                hidden_tooltip = {
+					remove_trait = zealous
+                    character_event = {
+							id = nperson.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBNperson.1
+		trigger = {
+					trait = cynical
+		}
+                hidden_tooltip = {
+					remove_trait = cynical
+                    character_event = {
+							id = nperson.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCNperson.1
+		trigger = {
+				NOT = {
+					trait = paranoid
+				}
+		}
+		add_trait = paranoid
+                hidden_tooltip = {
+					remove_trait = trusting
+                    character_event = {
+							id = nperson.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCNperson.1
+		trigger = {
+					trait = paranoid
+		}
+                hidden_tooltip = {
+					remove_trait = paranoid
+                    character_event = {
+							id = nperson.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDNperson.1
+                hidden_tooltip = {
+                    character_event = {
+							id = nperson.2
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = nperson.2
+	desc = EVTDESCNperson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTANperson.2
+		trigger = {
+				NOT = {
+					trait = excommunicated
+				}
+		}
+		add_trait = excommunicated
+                hidden_tooltip = {
+                    character_event = {
+							id = nperson.2
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTAANperson.2
+		trigger = {
+					trait = excommunicated
+		}
+                hidden_tooltip = {
+					remove_trait = excommunicated
+                    character_event = {
+							id = nperson.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBNperson.2
+		trigger = {
+				NOT = {
+					trait = kinslayer
+				}
+		}
+		add_trait = kinslayer
+                hidden_tooltip = {
+                    character_event = {
+							id = nperson.2
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTBBNperson.2
+		trigger = {
+					trait = kinslayer
+		}
+                hidden_tooltip = {
+					remove_trait = kinslayer
+                    character_event = {
+							id = nperson.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCNperson.2
+		trigger = {
+				NOT = {
+					trait = homosexual
+				}
+		}
+		add_trait = homosexual
+                hidden_tooltip = {
+                    character_event = {
+							id = nperson.2
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTCCNperson.2
+		trigger = {
+					trait = homosexual
+		}
+                hidden_tooltip = {
+					remove_trait = homosexual
+                    character_event = {
+							id = nperson.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDNperson.2
+                hidden_tooltip = {
+                    character_event = {
+							id = nperson.3
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = nperson.3
+	desc = EVTDESCNperson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTANperson.3
+		trigger = {
+				NOT = {
+					trait = bastard
+				}
+		}
+		add_trait = bastard
+                hidden_tooltip = {
+				remove_trait = legit_bastard
+                    character_event = {
+							id = nperson.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAANperson.3
+		trigger = {
+					trait = bastard
+		}
+                hidden_tooltip = {
+					remove_trait = bastard
+                    character_event = {
+							id = nperson.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBNperson.3
+		trigger = {
+				NOT = {
+					trait = legit_bastard
+				}
+		}
+		add_trait = legit_bastard
+                hidden_tooltip = {
+                    character_event = {
+							id = nperson.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBNperson.3
+		trigger = {
+					trait = legit_bastard
+		}
+                hidden_tooltip = {
+					remove_trait = legit_bastard
+                    character_event = {
+							id = nperson.3
+                    }
+				}
+	}
+		option = {
+		name = EVTOPTCNperson.3
+		trigger = {
+				NOT = {
+					trait = drunkard
+				}
+		}
+		add_trait = drunkard
+                hidden_tooltip = {
+                    character_event = {
+							id = nperson.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCNperson.3
+		trigger = {
+					trait = drunkard
+		}
+                hidden_tooltip = {
+					remove_trait = drunkard
+                    character_event = {
+							id = nperson.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDNperson.3
+                hidden_tooltip = {
+                    character_event = {
+							id = trait.1
+                    }
+				}
+	}
+}
+########################
+##POSITIVE VIRTUE TRAITS
+########################
+###MENU###
+##
+#
+namespace = pvirtues
+character_event = {
+	id = pvirtues.0
+	desc = EVTDESCPvirtues.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAPvirtues.0
+		trigger = {
+				NOT = {
+					trait = chaste
+				}
+		}
+		add_trait = chaste
+                hidden_tooltip = {
+					remove_trait = lustful
+                    character_event = {
+							id = pvirtues.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPvirtues.0
+		trigger = {
+					trait = chaste
+		}
+                hidden_tooltip = {
+					remove_trait = chaste
+                    character_event = {
+							id = pvirtues.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPvirtues.0
+		trigger = {
+				NOT = {
+					trait = temperate
+				}
+		}
+		add_trait = temperate
+                hidden_tooltip = {
+					remove_trait = gluttonous
+                    character_event = {
+							id = pvirtues.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBPvirtues.0
+		trigger = {
+					trait = temperate
+		}
+                hidden_tooltip = {
+					remove_trait = temperate
+                    character_event = {
+							id = pvirtues.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPvirtues.0
+		trigger = {
+				NOT = {
+					trait = charitable
+				}
+		}
+		add_trait = charitable
+                hidden_tooltip = {
+					remove_trait = greedy
+                    character_event = {
+							id = pvirtues.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCPvirtues.0
+		trigger = {
+					trait = charitable
+		}
+                hidden_tooltip = {
+					remove_trait = charitable
+                    character_event = {
+							id = pvirtues.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPvirtues.0
+                hidden_tooltip = {
+                    character_event = {
+							id = pvirtues.1
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = pvirtues.1
+	desc = EVTDESCPvirtues.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAPvirtues.1
+		trigger = {
+				NOT = {
+					trait = diligent
+				}
+		}
+		add_trait = diligent
+                hidden_tooltip = {
+					remove_trait = slothful
+                    character_event = {
+							id = pvirtues.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPvirtues.1
+		trigger = {
+					trait = diligent
+		}
+                hidden_tooltip = {
+					remove_trait = diligent
+                    character_event = {
+							id = pvirtues.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPvirtues.1
+		trigger = {
+				NOT = {
+					trait = kind
+				}
+		}
+		add_trait = kind
+                hidden_tooltip = {
+					remove_trait = envious
+					remove_trait = cruel
+                    character_event = {
+							id = pvirtues.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBPvirtues.1
+		trigger = {
+					trait = kind
+		}
+                hidden_tooltip = {
+					remove_trait = kind
+                    character_event = {
+							id = pvirtues.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPvirtues.1
+		trigger = {
+				NOT = {
+					trait = patient
+				}
+		}
+		add_trait = patient
+                hidden_tooltip = {
+					remove_trait = wroth
+                    character_event = {
+							id = pvirtues.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCPvirtues.1
+		trigger = {
+					trait = patient
+		}
+                hidden_tooltip = {
+					remove_trait = patient
+                    character_event = {
+							id = pvirtues.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDPvirtues.1
+                hidden_tooltip = {
+                    character_event = {
+							id = pvirtues.2
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = pvirtues.2
+	desc = EVTOPTBBNperson.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAPvirtues.2
+		trigger = {
+				NOT = {
+					trait = humble
+				}
+		}
+		add_trait = humble
+                hidden_tooltip = {
+					remove_trait = proud
+                    character_event = {
+							id = pvirtues.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAPvirtues.2
+		trigger = {
+					trait = humble
+		}
+                hidden_tooltip = {
+					remove_trait = humble
+                    character_event = {
+							id = pvirtues.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBPvirtues.2
+                hidden_tooltip = {
+                    character_event = {
+							id = trait.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCPvirtues.2
+	}
+}
+########################
+##NEGATIVE VIRTUE TRAITS
+########################
+###MENU###
+##
+#
+namespace = nvirtues
+character_event = {
+	id = nvirtues.0
+	desc = EVTDESCNvirtues.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTANvirtues.0
+		trigger = {
+				NOT = {
+					trait = lustful
+				}
+		}
+		add_trait = lustful
+                hidden_tooltip = {
+					remove_trait = chaste
+                    character_event = {
+							id = nvirtues.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAANvirtues.0
+		trigger = {
+					trait = lustful
+		}
+                hidden_tooltip = {
+					remove_trait = lustful
+                    character_event = {
+							id = nvirtues.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBNvirtues.0
+		trigger = {
+				NOT = {
+					trait = gluttonous
+				}
+		}
+		add_trait = gluttonous
+                hidden_tooltip = {
+					remove_trait = temperate
+                    character_event = {
+							id = nvirtues.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBNvirtues.0
+		trigger = {
+					trait = gluttonous
+		}
+                hidden_tooltip = {
+					remove_trait = gluttonous
+                    character_event = {
+							id = nvirtues.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCNvirtues.0
+		trigger = {
+				NOT = {
+					trait = greedy
+				}
+		}
+		add_trait = greedy
+                hidden_tooltip = {
+					remove_trait = charitable
+                    character_event = {
+							id = nvirtues.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCNvirtues.0
+		trigger = {
+					trait = greedy
+		}
+                hidden_tooltip = {
+					remove_trait = greedy
+                    character_event = {
+							id = nvirtues.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDNvirtues.0
+                hidden_tooltip = {
+                    character_event = {
+							id = nvirtues.1
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = nvirtues.1
+	desc = EVTDESCNvirtues.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTANvirtues.1
+		trigger = {
+				NOT = {
+					trait = slothful
+				}
+		}
+		add_trait = slothful
+                hidden_tooltip = {
+					remove_trait = diligent
+                    character_event = {
+							id = nvirtues.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAANvirtues.1
+		trigger = {
+					trait = slothful
+		}
+                hidden_tooltip = {
+					remove_trait = slothful
+                    character_event = {
+							id = nvirtues.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBNvirtues.1
+		trigger = {
+				NOT = {
+					trait = envious
+				}
+		}
+		add_trait = envious
+                hidden_tooltip = {
+					remove_trait = kind
+                    character_event = {
+							id = nvirtues.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBNvirtues.1
+		trigger = {
+					trait = envious
+		}
+                hidden_tooltip = {
+					remove_trait = envious
+                    character_event = {
+							id = nvirtues.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCNvirtues.1
+		trigger = {
+				NOT = {
+					trait = wroth
+				}
+		}
+		add_trait = wroth
+                hidden_tooltip = {
+					remove_trait = patient
+                    character_event = {
+							id = nvirtues.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCNvirtues.1
+		trigger = {
+					trait = wroth
+		}
+                hidden_tooltip = {
+					remove_trait = wroth
+                    character_event = {
+							id = nvirtues.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDNvirtues.1
+                hidden_tooltip = {
+                    character_event = {
+							id = nvirtues.2
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = nvirtues.2
+	desc = EVTDESCNvirtues.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTANvirtues.2
+		trigger = {
+				NOT = {
+					trait = proud
+				}
+		}
+		add_trait = proud
+                hidden_tooltip = {
+					remove_trait = humble
+                    character_event = {
+							id = nvirtues.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAANvirtues.2
+		trigger = {
+					trait = proud
+		}
+                hidden_tooltip = {
+					remove_trait = proud
+                    character_event = {
+							id = nvirtues.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBNvirtues.2
+                hidden_tooltip = {
+                    character_event = {
+							id = trait.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCNvirtues.2
+	}
+}
+##############
+#HEALTH TRAITS
+##############
+###MENU###
+##
+#
+namespace = healtht
+character_event = {
+	id = healtht.0
+	desc = EVTDESCHealtht.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAHealtht.0
+		trigger = {
+				NOT = {
+					trait = weak
+				}
+		}
+		add_trait = weak
+                hidden_tooltip = {
+					remove_trait = strong
+                    character_event = {
+							id = healtht.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAHealtht.0
+		trigger = {
+					trait = weak
+		}
+                hidden_tooltip = {
+					remove_trait = weak
+                    character_event = {
+							id = healtht.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBHealtht.0
+		trigger = {
+				NOT = {
+					trait = inbred
+				}
+		}
+		add_trait = inbred
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBHealtht.0
+		trigger = {
+					trait = inbred
+		}
+                hidden_tooltip = {
+					remove_trait = inbred
+                    character_event = {
+							id = healtht.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCHealtht.0
+		trigger = {
+				NOT = {
+					trait = imbecile
+				}
+		}
+		add_trait = imbecile
+                hidden_tooltip = {
+					remove_trait = slow
+					remove_trait = quick
+					remove_trait = genius
+                    character_event = {
+							id = healtht.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCHealtht.0
+		trigger = {
+					trait = imbecile
+		}
+                hidden_tooltip = {
+					remove_trait = imbecile
+                    character_event = {
+							id = healtht.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDHealtht.0
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.1
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = healtht.1
+	desc = EVTDESCHealtht.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAHealtht.1
+		trigger = {
+				NOT = {
+					trait = slow
+				}
+		}
+		add_trait = slow
+                hidden_tooltip = {
+					remove_trait = imbecile
+					remove_trait = quick
+					remove_trait = genius
+                    character_event = {
+							id = healtht.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAHealtht.1
+		trigger = {
+					trait = slow
+		}
+                hidden_tooltip = {
+					remove_trait = slow
+                    character_event = {
+							id = healtht.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBHealtht.1
+		trigger = {
+				NOT = {
+					trait = dwarf
+				}
+		}
+		add_trait = dwarf
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBHealtht.1
+		trigger = {
+					trait = dwarf
+		}
+                hidden_tooltip = {
+					remove_trait = dwarf
+                    character_event = {
+							id = healtht.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCHealtht.1
+		trigger = {
+				NOT = {
+					trait = ugly
+				}
+		}
+		add_trait = ugly
+                hidden_tooltip = {
+					remove_trait = fair
+                    character_event = {
+							id = healtht.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCHealtht.1
+		trigger = {
+					trait = ugly
+		}
+                hidden_tooltip = {
+					remove_trait = ugly
+                    character_event = {
+							id = healtht.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDHealtht.1
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.2
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = healtht.2
+	desc = EVTDESCHealtht.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAHealtht.2
+		trigger = {
+				NOT = {
+					trait = stutter
+				}
+		}
+		add_trait = stutter
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.2
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTAAHealtht.2
+		trigger = {
+					trait = stutter
+		}
+                hidden_tooltip = {
+					remove_trait = stutter
+                    character_event = {
+							id = healtht.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBHealtht.2
+		trigger = {
+				NOT = {
+					trait = lisp
+				}
+		}
+		add_trait = lisp
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.2
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTBBHealtht.2
+		trigger = {
+					trait = lisp
+		}
+                hidden_tooltip = {
+					remove_trait = lisp
+                    character_event = {
+							id = healtht.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCHealtht.2
+		trigger = {
+				NOT = {
+					trait = hunchback
+				}
+		}
+		add_trait = hunchback
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.2
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTCCHealtht.2
+		trigger = {
+					trait = hunchback
+		}
+                hidden_tooltip = {
+					remove_trait = hunchback
+                    character_event = {
+							id = healtht.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDHealtht.2
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.3
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = healtht.3
+	desc = EVTDESCHealtht.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAHealtht.3
+		trigger = {
+				NOT = {
+					trait = harelip
+				}
+		}
+		add_trait = harelip
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAHealtht.3
+		trigger = {
+					trait = harelip
+		}
+                hidden_tooltip = {
+					remove_trait = harelip
+                    character_event = {
+							id = healtht.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBHealtht.3
+		trigger = {
+				NOT = {
+					trait = clubfooted
+				}
+		}
+		add_trait = clubfooted
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBHealtht.3
+		trigger = {
+					trait = clubfooted
+		}
+                hidden_tooltip = {
+					remove_trait = clubfooted
+                    character_event = {
+							id = healtht.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCHealtht.3
+		trigger = {
+				NOT = {
+					trait = has_small_pox
+				}
+		}
+		add_trait = has_small_pox
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCHealtht.3
+		trigger = {
+					trait = has_small_pox
+		}
+                hidden_tooltip = {
+					remove_trait = has_small_pox
+                    character_event = {
+							id = healtht.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDHealtht.3
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.4
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = healtht.4
+	desc = EVTDESCHealtht.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAHealtht.4
+		trigger = {
+				NOT = {
+					trait = has_measles
+				}
+		}
+		add_trait = has_measles
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAHealtht.4
+		trigger = {
+					trait = has_measles
+		}
+                hidden_tooltip = {
+					remove_trait = has_measles
+                    character_event = {
+							id = healtht.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBHealtht.4
+		trigger = {
+				NOT = {
+					trait = has_bubonic_plague
+				}
+		}
+		add_trait = has_bubonic_plague
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBHealtht.4
+		trigger = {
+					trait = has_bubonic_plague
+		}
+                hidden_tooltip = {
+					remove_trait = has_bubonic_plague
+                    character_event = {
+							id = healtht.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCHealtht.4
+		trigger = {
+				NOT = {
+					trait = has_typhus
+				}
+		}
+		add_trait = has_typhus
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCHealtht.4
+		trigger = {
+					trait = has_typhus
+		}
+                hidden_tooltip = {
+					remove_trait = has_typhus
+                    character_event = {
+							id = healtht.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDHealtht.4
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.5
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = healtht.5
+	desc = EVTDESCHealtht.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAHealtht.5
+		trigger = {
+				NOT = {
+					trait = has_typhoid_fever
+				}
+		}
+		add_trait = has_typhoid_fever
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAHealtht.5
+		trigger = {
+					trait = has_typhoid_fever
+		}
+                hidden_tooltip = {
+					remove_trait = has_typhoid_fever
+                    character_event = {
+							id = healtht.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBHealtht.5
+		trigger = {
+				NOT = {
+					trait = has_tuberculosis
+				}
+		}
+		add_trait = has_tuberculosis
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBHealtht.5
+		trigger = {
+					trait = has_tuberculosis
+		}
+                hidden_tooltip = {
+					remove_trait = has_tuberculosis
+                    character_event = {
+							id = healtht.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCHealtht.5
+		trigger = {
+				NOT = {
+					trait = incapable
+				}
+		}
+		add_trait = incapable
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCHealtht.5
+		trigger = {
+					trait = incapable
+		}
+                hidden_tooltip = {
+					remove_trait = incapable
+                    character_event = {
+							id = healtht.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDHealtht.5
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.6
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = healtht.6
+	desc = EVTDESCHealtht.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAHealtht.6
+		trigger = {
+				NOT = {
+					trait = infirm
+				}
+		}
+		add_trait = infirm
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAHealtht.6
+		trigger = {
+					trait = infirm
+		}
+                hidden_tooltip = {
+					remove_trait = infirm
+                    character_event = {
+							id = healtht.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBHealtht.6
+		trigger = {
+				NOT = {
+					trait = maimed
+				}
+		}
+		add_trait = maimed
+                hidden_tooltip = {
+					remove_trait = wounded
+                    character_event = {
+							id = healtht.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBHealtht.6
+		trigger = {
+					trait = maimed
+		}
+                hidden_tooltip = {
+					remove_trait = maimed
+                    character_event = {
+							id = healtht.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCHealtht.6
+		trigger = {
+				NOT = {
+					trait = wounded
+				}
+		}
+		add_trait = wounded
+                hidden_tooltip = {
+					remove_trait = maimed
+                    character_event = {
+							id = healtht.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCHealtht.6
+		trigger = {
+					trait = wounded
+		}
+                hidden_tooltip = {
+					remove_trait = wounded
+                    character_event = {
+							id = healtht.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDHealtht.6
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.7
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = healtht.7
+	desc = EVTDESCHealtht.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAHealtht.7
+		trigger = {
+				NOT = {
+					trait = leper
+				}
+		}
+		add_trait = leper
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAHealtht.7
+		trigger = {
+					trait = leper
+		}
+                hidden_tooltip = {
+					remove_trait = leper
+                    character_event = {
+							id = healtht.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBHealtht.7
+		trigger = {
+				NOT = {
+					trait = syphilitic
+				}
+		}
+		add_trait = syphilitic
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBHealtht.7
+		trigger = {
+					trait = syphilitic
+		}
+                hidden_tooltip = {
+					remove_trait = syphilitic
+                    character_event = {
+							id = healtht.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCHealtht.7
+		trigger = {
+				NOT = {
+					trait = pneumonic
+				}
+		}
+		add_trait = pneumonic
+                hidden_tooltip = {
+					remove_trait = ill
+                    character_event = {
+							id = healtht.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCHealtht.7
+		trigger = {
+					trait = pneumonic
+		}
+                hidden_tooltip = {
+					remove_trait = pneumonic
+                    character_event = {
+							id = healtht.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDHealtht.7
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.8
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = healtht.8
+	desc = EVTDESCHealtht.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAHealtht.8
+		trigger = {
+				NOT = {
+					trait = ill
+				}
+		}
+		add_trait = ill
+                hidden_tooltip = {
+					remove_trait = pneumonic
+                    character_event = {
+							id = healtht.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAHealtht.8
+		trigger = {
+					trait = ill
+		}
+                hidden_tooltip = {
+					remove_trait = ill
+                    character_event = {
+							id = healtht.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBHealtht.8
+		trigger = {
+				NOT = {
+					trait = possessed
+				}
+		}
+		add_trait = possessed
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBHealtht.8
+		trigger = {
+					trait = possessed
+		}
+                hidden_tooltip = {
+					remove_trait = possessed
+                    character_event = {
+							id = healtht.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCHealtht.8
+		trigger = {
+				NOT = {
+					trait = lunatic
+				}
+		}
+		add_trait = lunatic
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCHealtht.8
+		trigger = {
+					trait = lunatic
+		}
+                hidden_tooltip = {
+					remove_trait = lunatic
+                    character_event = {
+							id = healtht.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDHealtht.8
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.9
+                    }
+				}
+	}
+}
+character_event = {
+	id = healtht.9
+	desc = EVTDESCHealtht.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAHealtht.9
+		trigger = {
+				NOT = {
+					trait = depressed
+				}
+		}
+		add_trait = depressed
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.9
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAAHealtht.9
+		trigger = {
+					trait = depressed
+		}
+                hidden_tooltip = {
+					remove_trait = depressed
+                    character_event = {
+							id = healtht.9
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBHealtht.9
+		trigger = {
+				NOT = {
+					trait = stressed
+				}
+		}
+		add_trait = stressed
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.9
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBHealtht.9
+		trigger = {
+					trait = stressed
+		}
+                hidden_tooltip = {
+					remove_trait = stressed
+                    character_event = {
+							id = healtht.9
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCHealtht.9
+		trigger = {
+				NOT = {
+					trait = blinded
+				}
+		}
+		add_trait = blinded
+                hidden_tooltip = {
+                    character_event = {
+							id = healtht.9
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCHealtht.9
+		trigger = {
+					trait = blinded
+		}
+                hidden_tooltip = {
+					remove_trait = blinded
+                    character_event = {
+							id = healtht.9
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDHealtht.9
+                hidden_tooltip = {
+                    character_event = {
+							id = trait.2
+                    }
+				}
+	}
+}
+########################
+## RELIGIOUS TRAITS
+########################
+###MENU###
+##
+#
+namespace = treligious
+character_event = {
+	id = treligious.0
+	desc = EVTDESCTreligious.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATreligious.0
+		trigger = {
+				NOT = {
+					religion_group = jewish_group
+					trait = sympathy_judaism
+				}
+		}
+		add_trait = sympathy_judaism
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAATreligious.0
+		trigger = {
+			trait = sympathy_judaism
+		}
+                hidden_tooltip = {
+					remove_trait = sympathy_judaism
+                    character_event = {
+							id = treligious.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBTreligious.0
+		trigger = {
+				NOT = {
+					religion_group = zoroastrian_group
+					trait = sympathy_zoroastrianism
+				}
+		}
+		add_trait = sympathy_zoroastrianism
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBTreligious.0
+		trigger = {
+			trait = sympathy_zoroastrianism
+		}
+                hidden_tooltip = {
+					remove_trait = sympathy_zoroastrianism
+                    character_event = {
+							id = treligious.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCTreligious.0
+		trigger = {
+				NOT = {
+					religion_group = pagan_group
+					trait = sympathy_pagans
+				}
+		}
+		add_trait = sympathy_pagans
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCTreligious.0
+		trigger = {
+					trait = sympathy_pagans
+		}
+                hidden_tooltip = {
+					remove_trait = sympathy_pagans
+                    character_event = {
+							id = treligious.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDTreligious.0
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.1
+                    }
+				}
+	}
+}
+
+character_event = {
+	id = treligious.1
+	desc = EVTDESCTreligious.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATreligious.1
+		trigger = {
+				NOT = {
+					religion_group = muslim
+					trait = sympathy_islam
+				}
+		}
+		add_trait = sympathy_islam
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAATreligious.1
+		trigger = {
+			trait = sympathy_islam
+		}
+                hidden_tooltip = {
+					remove_trait = sympathy_islam
+                    character_event = {
+							id = treligious.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBTreligious.1
+		trigger = {
+				NOT = {
+					religion_group = christian
+					trait = sympathy_christendom
+				}
+		}
+		add_trait = sympathy_christendom
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBTreligious.1
+		trigger = {
+			trait = sympathy_christendom
+		}
+                hidden_tooltip = {
+					remove_trait = sympathy_christendom
+                    character_event = {
+							id = treligious.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCTreligious.1
+		trigger = {
+			AND = {
+				religion_group = muslim
+				NOT = {
+					trait = mutazilite
+				}
+			}
+		}
+		add_trait = mutazilite
+                hidden_tooltip = {
+					remove_trait = ashari
+                    character_event = {
+							id = treligious.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCTreligious.1
+		trigger = {
+			trait = mutazilite
+		}
+                hidden_tooltip = {
+					remove_trait = mutazilite
+                    character_event = {
+							id = treligious.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDTreligious.1
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.2
+                    }
+				}
+	}
+}
+character_event = {
+	id = treligious.2
+	desc = EVTDESCTreligious.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATreligious.2
+		trigger = {
+			AND = {
+				religion_group = muslim
+				NOT = {
+					trait = ashari
+				}
+			}
+		}
+		add_trait = ashari
+                hidden_tooltip = {
+					remove_trait = mutazilite
+                    character_event = {
+							id = treligious.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAATreligious.2
+		trigger = {
+					trait = ashari
+		}
+                hidden_tooltip = {
+					remove_trait = ashari
+                    character_event = {
+							id = treligious.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBTreligious.2
+		trigger = {
+			AND = {
+				religion_group = muslim
+				NOT = {
+					trait = hajjaj
+				}
+			}
+		}
+		add_trait = hajjaj
+                hidden_tooltip = {
+					remove_trait = on_hajj
+                    character_event = {
+							id = treligious.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBTreligious.2
+		trigger = {
+					trait = hajjaj
+		}
+                hidden_tooltip = {
+					remove_trait = hajjaj
+                    character_event = {
+							id = treligious.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCTreligious.2
+		trigger = {
+			AND = {
+				religion_group = christian
+				NOT = {
+					trait = pilgrim
+				}
+			}
+		}
+		add_trait = pilgrim
+                hidden_tooltip = {
+					remove_trait = on_pilgrimage
+                    character_event = {
+							id = treligious.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCTreligious.2
+		trigger = {
+					trait = pilgrim
+		}
+                hidden_tooltip = {
+					remove_trait = pilgrim
+                    character_event = {
+							id = treligious.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDTreligious.2
+		trigger = {
+			AND = {
+				religion_group = muslim
+				NOT = {
+					trait = faqih
+				}
+			}
+		}
+		add_trait = faqih
+                hidden_tooltip = {
+					remove_trait = on_hajj
+                    character_event = {
+							id = treligious.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDDTreligious.2
+		trigger = {
+					trait = faqih
+		}
+                hidden_tooltip = {
+					remove_trait = faqih
+                    character_event = {
+							id = treligious.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTETreligious.2
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.3
+                    }
+				}
+	}
+}
+character_event = {
+	id = treligious.3
+	desc = EVTDESCTreligious.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATreligious.3
+		trigger = {
+			AND = {
+				religion_group = muslim
+				NOT = {
+					trait = hafiz
+				}
+			}
+		}
+		add_trait = hafiz
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAATreligious.3
+		trigger = {
+					trait = hafiz
+		}
+                hidden_tooltip = {
+					remove_trait = hafiz
+                    character_event = {
+							id = treligious.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBTreligious.3
+		trigger = {
+			AND = {
+				religion_group = muslim
+				NOT = {
+					trait = decadent
+				}
+			}
+		}
+		add_trait = decadent
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBTreligious.3
+		trigger = {
+					trait = decadent
+		}
+                hidden_tooltip = {
+					remove_trait = decadent
+                    character_event = {
+							id = treligious.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCTreligious.3
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.4
+                    }
+				}
+	}
+}
+character_event = {
+	id = treligious.4
+	desc = EVTDESCTreligious.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATreligious.4
+		trigger = {
+			AND = {
+				religion_group = indian_group
+				religious_branch = jain
+				NOT = {
+					trait = svetambara_jain
+				}
+			}
+		}
+		add_trait = svetambara_jain
+                hidden_tooltip = {
+					remove_trait = digambara_jain
+                    character_event = {
+							id = treligious.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAATreligious.4
+		trigger = {
+					trait = svetambara_jain
+		}
+                hidden_tooltip = {
+					remove_trait = svetambara_jain
+                    character_event = {
+							id = treligious.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBTreligious.4
+		trigger = {
+			AND = {
+				religion_group = indian_group
+				religious_branch = jain
+				NOT = {
+					trait = digambara_jain
+				}
+			}
+		}
+		add_trait = digambara_jain
+                hidden_tooltip = {
+					remove_trait = svetambara_jain
+                    character_event = {
+							id = treligious.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBTreligious.4
+		trigger = {
+					trait = digambara_jain
+		}
+                hidden_tooltip = {
+					remove_trait = digambara_jain
+                    character_event = {
+							id = treligious.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCTreligious.4
+		trigger = {
+			AND = {
+				religion_group = indian_group
+				religious_branch = buddhist
+				NOT = {
+					trait = theravada_buddhist
+				}
+			}
+		}
+		add_trait = theravada_buddhist
+                hidden_tooltip = {
+					remove_trait = vajrayana_buddhist
+					remove_trait = mahayana_buddhist
+                    character_event = {
+							id = treligious.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCTreligious.4
+		trigger = {
+					trait = theravada_buddhist
+		}
+                hidden_tooltip = {
+					remove_trait = theravada_buddhist
+                    character_event = {
+							id = treligious.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDTreligious.4
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.5
+                    }
+				}
+	}
+}
+character_event = {
+	id = treligious.5
+	desc = EVTDESCTreligious.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATreligious.5
+		trigger = {
+			AND = {
+				religion_group = indian_group
+				religious_branch = buddhist
+				NOT = {
+					trait = vajrayana_buddhist
+				}
+			}
+		}
+		add_trait = vajrayana_buddhist
+                hidden_tooltip = {
+					remove_trait = theravada_buddhist
+					remove_trait = mahayana_buddhist
+                    character_event = {
+							id = treligious.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAATreligious.5
+		trigger = {
+					trait = vajrayana_buddhist
+		}
+                hidden_tooltip = {
+					remove_trait = vajrayana_buddhist
+                    character_event = {
+							id = treligious.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBTreligious.5
+		trigger = {
+			AND = {
+				religion_group = indian_group
+				religious_branch = buddhist
+				NOT = {
+					trait = mahayana_buddhist
+				}
+			}
+		}
+		add_trait = mahayana_buddhist
+                hidden_tooltip = {
+					remove_trait = theravada_buddhist
+					remove_trait = vajrayana_buddhist
+                    character_event = {
+							id = treligious.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBTreligious.5
+		trigger = {
+					trait = mahayana_buddhist
+		}
+                hidden_tooltip = {
+					remove_trait = mahayana_buddhist
+                    character_event = {
+							id = treligious.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCTreligious.5
+		trigger = {
+			AND = {
+				religion_group = indian_group
+				religious_branch = hindu
+				NOT = {
+					trait = smartist_hindu
+				}
+			}
+		}
+		add_trait = smartist_hindu
+                hidden_tooltip = {
+					remove_trait = vaishnavist_hindu
+					remove_trait = shaktist_hindu
+					remove_trait = shaivist_hindu
+                    character_event = {
+							id = treligious.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCTreligious.5
+		trigger = {
+					trait = smartist_hindu
+		}
+                hidden_tooltip = {
+					remove_trait = smartist_hindu
+                    character_event = {
+							id = treligious.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDTreligious.5
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.6
+                    }
+				}
+	}
+}
+character_event = {
+	id = treligious.6
+	desc = EVTDESCTreligious.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATreligious.6
+		trigger = {
+			AND = {
+				religion_group = indian_group
+				religious_branch = hindu
+				NOT = {
+					trait = shaktist_hindu
+				}
+			}
+		}
+		add_trait = shaktist_hindu
+                hidden_tooltip = {
+					remove_trait = vaishnavist_hindu
+					#remove_trait = shaktist_hindu
+					remove_trait = shaivist_hindu
+					remove_trait = smartist_hindu
+                    character_event = {
+							id = treligious.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAATreligious.6
+		trigger = {
+					trait = shaktist_hindu
+		}
+                hidden_tooltip = {
+					remove_trait = shaktist_hindu
+                    character_event = {
+							id = treligious.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBTreligious.6
+		trigger = {
+			AND = {
+				religion_group = indian_group
+				religious_branch = hindu
+				NOT = {
+					trait = vaishnavist_hindu
+				}
+			}
+		}
+		add_trait = vaishnavist_hindu
+                hidden_tooltip = {
+					#remove_trait = vaishnavist_hindu
+					remove_trait = shaktist_hindu
+					remove_trait = shaivist_hindu
+					remove_trait = smartist_hindu
+                    character_event = {
+							id = treligious.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBTreligious.6
+		trigger = {
+					trait = vaishnavist_hindu
+		}
+                hidden_tooltip = {
+					remove_trait = vaishnavist_hindu
+                    character_event = {
+							id = treligious.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCTreligious.6
+		trigger = {
+			AND = {
+				religion_group = indian_group
+				religious_branch = hindu
+				NOT = {
+					trait = shaivist_hindu
+				}
+			}
+		}
+		add_trait = shaivist_hindu
+                hidden_tooltip = {
+					remove_trait = vaishnavist_hindu
+					remove_trait = shaktist_hindu
+					#remove_trait = shaivist_hindu
+					remove_trait = smartist_hindu
+                    character_event = {
+							id = treligious.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCTreligious.6
+		trigger = {
+					trait = shaivist_hindu
+		}
+                hidden_tooltip = {
+					remove_trait = shaivist_hindu
+                    character_event = {
+							id = treligious.6
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDTreligious.6
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.7
+                    }
+				}
+	}
+}
+character_event = {
+	id = treligious.7
+	desc = EVTDESCTreligious.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATreligious.7
+		trigger = {
+			NOT = {
+				religion_group = indian_group
+				trait = sympathy_indian
+			}
+		}
+		add_trait = sympathy_indian
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAATreligious.7
+		trigger = {
+					trait = sympathy_indian
+		}
+                hidden_tooltip = {
+					remove_trait = sympathy_indian
+                    character_event = {
+							id = treligious.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBTreligious.7
+		trigger = {
+			AND = {
+				religion_group = indian_group
+				NOT = {
+					trait = vaishya
+				}
+			}
+		}
+		add_trait = vaishya
+                hidden_tooltip = {
+					remove_trait = brahmin
+					remove_trait = kshatriya
+					#remove_trait = vaishya
+                    character_event = {
+							id = treligious.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBTreligious.7
+		trigger = {
+					trait = vaishya
+		}
+                hidden_tooltip = {
+					remove_trait = vaishya
+                    character_event = {
+							id = treligious.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCTreligious.7
+		trigger = {
+			AND = {
+				religion_group = indian_group
+				NOT = {
+					trait = kshatriya
+				}
+			}
+		}
+		add_trait = kshatriya
+                hidden_tooltip = {
+					remove_trait = brahmin
+					#remove_trait = kshatriya
+					remove_trait = vaishya
+                    character_event = {
+							id = treligious.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCTreligious.7
+		trigger = {
+					trait = kshatriya
+		}
+                hidden_tooltip = {
+					remove_trait = kshatriya
+                    character_event = {
+							id = treligious.7
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDTreligious.7
+                hidden_tooltip = {
+                    character_event = {
+							id = treligious.8
+                    }
+				}
+	}
+}
+character_event = {
+	id = treligious.8
+	desc = EVTDESCTreligious.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTATreligious.8
+		trigger = {
+			AND = {
+				religion_group = indian_group
+				NOT = {
+					trait = brahmin
+				}
+			}
+		}
+		add_trait = brahmin
+                hidden_tooltip = {
+					#remove_trait = brahmin
+					remove_trait = kshatriya
+					remove_trait = vaishya
+                    character_event = {
+							id = treligious.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAATreligious.8
+		trigger = {
+					trait = Brahmin
+		}
+                hidden_tooltip = {
+					remove_trait = brahmin
+                    character_event = {
+							id = treligious.8
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBTreligious.8
+                hidden_tooltip = {
+                    character_event = {
+							id = trait.0
+                    }
+				}
+	}
+}
+################
+##LEADER TRAITS#
+################
+###MENU###
+##
+#
+namespace = leader
+character_event = {
+	id = leader.0
+	desc = EVTDESCLeader.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+		option = {
+		name = EVTOPTALeader.0
+				trigger = {
+				NOT = {
+					trait = light_foot_leader
+				}
+		}
+		add_trait = light_foot_leader
+                hidden_tooltip = {
+					remove_trait = heavy_infantry_leader
+                    character_event = {
+							id = leader.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTAALeader.0
+		trigger = {
+					trait = light_foot_leader
+		}
+                hidden_tooltip = {
+					remove_trait = light_foot_leader
+                    character_event = {
+							id = leader.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBLeader.0
+				trigger = {
+				NOT = {
+					trait = heavy_infantry_leader
+				}
+		}
+		add_trait = heavy_infantry_leader
+                hidden_tooltip = {
+					remove_trait = light_foot_leader
+                    character_event = {
+							id = leader.0
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTBBLeader.0
+		trigger = {
+					trait = heavy_infantry_leader
+		}
+                hidden_tooltip = {
+					remove_trait = heavy_infantry_leader
+                    character_event = {
+							id = leader.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCLeader.0
+				trigger = {
+				NOT = {
+					trait = cavalry_leader
+				}
+		}
+		add_trait = cavalry_leader
+                hidden_tooltip = {
+					remove_trait = light_foot_leader
+                    character_event = {
+							id = leader.0
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTCCLeader.0
+		trigger = {
+					trait = cavalry_leader
+		}
+                hidden_tooltip = {
+					remove_trait = cavalry_leader
+                    character_event = {
+							id = leader.0
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDLeader.0
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.1
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = leader.1
+	desc = EVTDESCLeader.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTALeader.1
+				trigger = {
+				NOT = {
+					trait = inspiring_leader
+				}
+		}
+		add_trait = inspiring_leader
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.1
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTAALeader.1
+		trigger = {
+					trait = inspiring_leader
+		}
+                hidden_tooltip = {
+					remove_trait = inspiring_leader
+                    character_event = {
+							id = leader.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBLeader.1
+				trigger = {
+				NOT = {
+					trait = trickster
+				}
+		}
+		add_trait = trickster
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.1
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTBBLeader.1
+		trigger = {
+					trait = trickster
+		}
+                hidden_tooltip = {
+					remove_trait = trickster
+                    character_event = {
+							id = leader.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCLeader.1
+				trigger = {
+				NOT = {
+					trait = organizer
+				}
+		}
+		add_trait = organizer
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.1
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTCCLeader.1
+		trigger = {
+					trait = organizer
+		}
+                hidden_tooltip = {
+					remove_trait = organizer
+                    character_event = {
+							id = leader.1
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDLeader.1
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.2
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = leader.2
+	desc = EVTDESCLeader.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTALeader.2
+				trigger = {
+				NOT = {
+					trait = defensive_leader
+				}
+		}
+		add_trait = defensive_leader
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.2
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTAALeader.2
+		trigger = {
+					trait = defensive_leader
+		}
+                hidden_tooltip = {
+					remove_trait = defensive_leader
+                    character_event = {
+							id = leader.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBLeader.2
+				trigger = {
+				NOT = {
+					trait = experimenter
+				}
+		}
+		add_trait = experimenter
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.2
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTBBLeader.2
+		trigger = {
+					trait = experimenter
+		}
+                hidden_tooltip = {
+					remove_trait = experimenter
+                    character_event = {
+							id = leader.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCLeader.2
+				trigger = {
+				NOT = {
+					trait = flanker
+				}
+		}
+		add_trait = flanker
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.2
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTCCLeader.2
+		trigger = {
+					trait = flanker
+		}
+                hidden_tooltip = {
+					remove_trait = flanker
+                    character_event = {
+							id = leader.2
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDLeader.2
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.3
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = leader.3
+	desc = EVTDESCLeader.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTALeader.3
+				trigger = {
+				NOT = {
+					trait = rough_terrain_leader
+				}
+		}
+		add_trait = rough_terrain_leader
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.3
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTAALeader.3
+		trigger = {
+					trait = rough_terrain_leader
+		}
+                hidden_tooltip = {
+					remove_trait = rough_terrain_leader
+                    character_event = {
+							id = leader.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBLeader.3
+				trigger = {
+				NOT = {
+					trait = mountain_terrain_leader
+				}
+		}
+		add_trait = mountain_terrain_leader
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.3
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTBBLeader.3
+		trigger = {
+					trait = mountain_terrain_leader
+		}
+                hidden_tooltip = {
+					remove_trait = mountain_terrain_leader
+                    character_event = {
+							id = leader.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCLeader.3
+				trigger = {
+				NOT = {
+					trait = desert_terrain_leader
+				}
+		}
+		add_trait = desert_terrain_leader
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.3
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTCCLeader.3
+		trigger = {
+					trait = desert_terrain_leader
+		}
+                hidden_tooltip = {
+					remove_trait = desert_terrain_leader
+                    character_event = {
+							id = leader.3
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDLeader.3
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.4
+                    }
+				}	
+	}
+}
+
+character_event = {
+	id = leader.4
+	desc = EVTDESCLeader.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTALeader.4
+				trigger = {
+				NOT = {
+					trait = unyielding_leader
+				}
+		}
+		add_trait = unyielding_leader
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.4
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTAALeader.4
+		trigger = {
+					trait = unyielding_leader
+		}
+                hidden_tooltip = {
+					remove_trait = unyielding_leader
+                    character_event = {
+							id = leader.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBLeader.4
+				trigger = {
+				NOT = {
+					trait = aggressive_leader
+				}
+		}
+		add_trait = aggressive_leader
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBLeader.4
+		trigger = {
+					trait = aggressive_leader
+		}
+                hidden_tooltip = {
+					remove_trait = aggressive_leader
+                    character_event = {
+							id = leader.4
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCLeader.4
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.5
+                    }
+				}		
+	}
+}
+character_event = {
+	id = leader.5
+	desc = EVTDESCLeader.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTALeader.5
+				trigger = {
+				NOT = {
+					trait = siege_leader
+				}
+		}
+		add_trait = siege_leader
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTAALeader.5
+		trigger = {
+					trait = siege_leader
+		}
+                hidden_tooltip = {
+					remove_trait = siege_leader
+                    character_event = {
+							id = leader.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBLeader.5
+				trigger = {
+				NOT = {
+					trait = flat_terrain_leader
+				}
+		}
+		add_trait = flat_terrain_leader
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTBBLeader.5
+		trigger = {
+					trait = flat_terrain_leader
+		}
+                hidden_tooltip = {
+					remove_trait = flat_terrain_leader
+                    character_event = {
+							id = leader.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCLeader.5
+				trigger = {
+				NOT = {
+					trait = holy_warrior
+				}
+		}
+		add_trait = holy_warrior
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTCCLeader.5
+		trigger = {
+					trait = holy_warrior
+		}
+                hidden_tooltip = {
+					remove_trait = holy_warrior
+                    character_event = {
+							id = leader.5
+                    }
+				}
+	}
+	option = {
+		name = EVTOPTDLeader.5
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.6
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = leader.6
+	desc = EVTDESCLeader.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTALeader.6
+		trigger = {
+			NOT = {
+				trait = war_elephant_leader
+			}
+		}
+		add_trait = war_elephant_leader
+		hidden_tooltip = {
+			character_event = {
+				id = leader.6
+			}
+		}
+	}
+	option = {
+		name = EVTOPTAALeader.6
+		trigger = {
+			trait = war_elephant_leader
+		}
+		hidden_tooltip = {
+			remove_trait = war_elephant_leader
+			character_event = {
+				id = leader.6
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBLeader.6
+		trigger = {
+			NOT = {
+				trait = jungle_terrain_leader
+			}
+		}
+		add_trait = jungle_terrain_leader
+		hidden_tooltip = {
+			character_event = {
+				id = leader.6
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBBLeader.6
+		trigger = {
+			trait = jungle_terrain_leader
+		}
+		hidden_tooltip = {
+			remove_trait = jungle_terrain_leader
+			character_event = {
+				id = leader.6
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCLeader.6
+		trigger = {
+			NOT = {
+				trait = narrow_flank_leader
+			}
+		}
+		add_trait = narrow_flank_leader
+		hidden_tooltip = {
+			character_event = {
+				id = leader.6
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCCLeader.6
+		trigger = {
+			trait = narrow_flank_leader
+		}
+		hidden_tooltip = {
+			remove_trait = narrow_flank_leader
+			character_event = {
+				id = leader.6
+			}
+		}
+	}
+	option = {
+		name = EVTOPTDLeader.6
+                hidden_tooltip = {
+                    character_event = {
+							id = leader.7
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = leader.7
+	desc = EVTDESCLeader.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTALeader.7
+		trigger = {
+			NOT = {
+				trait = winter_soldier
+			}
+		}
+		add_trait = winter_soldier
+		hidden_tooltip = {
+			character_event = {
+				id = leader.6
+			}
+		}
+	}
+	option = {
+		name = EVTOPTAALeader.7
+		trigger = {
+			trait = winter_soldier
+		}
+		hidden_tooltip = {
+			remove_trait = winter_soldier
+			character_event = {
+				id = leader.6
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBLeader.7
+                hidden_tooltip = {
+                    character_event = {
+							id = trait.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTCLeader.7	
+	}
+}
+
+###################
+##EDUCATION TRAITS#
+###################
+###MENU###
+##
+#
+
+namespace = school
+character_event = {
+	id = school.0
+	desc = EVTDESCSchool.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASchool.0
+		trigger = {
+				NOT = {
+					trait = elusive_shadow
+				}
+		}
+		add_trait = elusive_shadow
+                hidden_tooltip = {
+					remove_trait = amateurish_plotter
+					remove_trait = flamboyant_schemer
+					remove_trait = intricate_webweaver
+                    character_event = {
+							id = school.0
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTBSchool.0
+		trigger = {
+				NOT = {
+					trait = grey_eminence
+				}
+		}
+		add_trait = grey_eminence
+                hidden_tooltip = {
+					remove_trait = naive_appeaser
+					remove_trait = underhanded_rogue
+					remove_trait = charismatic_negotiator
+                    character_event = {
+							id = school.0
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTCSchool.0
+		trigger = {
+				NOT = {
+					trait = midas_touched
+				}
+		}
+		add_trait = midas_touched
+                hidden_tooltip = {
+					remove_trait = indulgent_wastrel
+					remove_trait = thrifty_clerk
+					remove_trait = fortune_builder
+                    character_event = {
+							id = school.0
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTDSchool.0
+                hidden_tooltip = {
+                    character_event = {
+							id = school.1
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = school.1
+	desc = EVTDESCSchool.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTASchool.1
+		trigger = {
+				NOT = {
+					trait = brilliant_strategist
+				}
+		}
+		add_trait = brilliant_strategist
+                hidden_tooltip = {
+					remove_trait = misguided_warrior
+					remove_trait = tough_soldier
+					remove_trait = skilled_tactician
+                    character_event = {
+							id = school.1
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTBSchool.1
+		trigger = {
+				NOT = {
+					trait = mastermind_theologian
+				}
+		}
+		add_trait = mastermind_theologian
+                hidden_tooltip = {
+					remove_trait = detached_priest
+					remove_trait = martial_cleric
+					remove_trait = scholarly_theologian
+                    character_event = {
+							id = school.1
+                    }
+				}	
+	}
+	option = {
+		name = EVTOPTCSchool.1
+		hidden_tooltip = {
+			remove_trait = misguided_warrior
+			remove_trait = tough_soldier
+			remove_trait = skilled_tactician
+			remove_trait = brilliant_strategist
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = mastermind_theologian
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = indulgent_wastrel
+			remove_trait = thrifty_clerk
+			remove_trait = fortune_builder
+			remove_trait = naive_appeaser
+			remove_trait = underhanded_rogue
+			remove_trait = charismatic_negotiator
+			remove_trait = amateurish_plotter
+			remove_trait = flamboyant_schemer
+			remove_trait = intricate_webweaver
+			remove_trait = elusive_shadow
+			remove_trait = grey_eminence
+			remove_trait = midas_touched
+				character_event = {
+					id = school.1
+				}
+		}
+	}
+	option = {
+		name = EVTOPTDSchool.1
+                hidden_tooltip = {
+                    character_event = {
+							id = trait.0
+                    }
+				}		
+	}
+}

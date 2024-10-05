@@ -1,0 +1,330 @@
+######################
+#IN-GAME TRAIT EDITOR#
+##WRITTEN BY SLVRBUU##
+####CHEAT HAPPENS#####
+######################
+#        MENU        #
+######################
+namespace = menu
+character_event = {
+	id = menu.0
+	desc = EVTDESCMenu.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+		option = {
+		name = EVTOPTAMenu.0
+                hidden_tooltip = {
+                    character_event = {
+							id = trait.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTBMenu.0
+                hidden_tooltip = {
+                    character_event = {
+							id = stat.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTCMenu.0
+                hidden_tooltip = {
+                    character_event = {
+							id = council.0
+                    }
+				}		
+	}
+		option = {
+		name = EVTOPTDMenu.0
+                hidden_tooltip = {
+                    character_event = {
+							id = menu.1
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = menu.1
+	desc = EVTDESCMenu.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+		option = {
+		name = EVTOPTAMenu.1
+                hidden_tooltip = {
+                    character_event = {
+							id = tech.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTBMenu.1
+                hidden_tooltip = {
+                    character_event = {
+							id = mon.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTCMenu.1
+                hidden_tooltip = {
+                    character_event = {
+							id = heal.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTDMenu.1
+                hidden_tooltip = {
+                    character_event = {
+							id = menu.2
+                    }
+				}		
+	}
+}
+
+character_event = {
+	id = menu.2
+	desc = EVTDESCMenu.0
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAMenu.2
+                hidden_tooltip = {
+                    character_event = {
+							id = menu.0
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTBMenu.2
+		trigger = {
+				NOT = {
+					has_global_flag = cheat_decision_on
+				}
+		}
+		set_global_flag = cheat_decision_on
+                hidden_tooltip = {
+                    character_event = {
+							id = menu.2
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTBBMenu.2
+		trigger = {
+					has_global_flag = cheat_decision_on
+		}
+		clr_global_flag = cheat_decision_on
+                hidden_tooltip = {
+                    character_event = {
+							id = menu.2
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTCMenu.2
+		trigger = {
+				NOT = {
+					has_global_flag = disabled_cheat_flag
+				}
+		}
+		set_global_flag = disabled_cheat_flag
+                hidden_tooltip = {
+                    character_event = {
+							id = menu.2
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTCCMenu.2
+		trigger = {
+					has_global_flag = disabled_cheat_flag
+		}
+		clr_global_flag = disabled_cheat_flag
+                hidden_tooltip = {
+                    character_event = {
+							id = menu.2
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTDMenu.2
+	}
+}
+character_event = {
+	id = menu.90
+	desc = EVTDESCMenu.90
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAMenu.90	
+	}
+	option = {
+		name = EVTOPTBMenu.90
+			hidden_tooltip = {
+				capital_scope = {
+					ROOT = {
+						spawn_unit = {
+							province = PREV
+							owner = ROOT
+							disband_on_peace = no
+							troops = {
+								light_cavalry = { 1000 1000  }
+								light_infantry = { 1000 1000  }
+								pikemen = { 500 500 }
+								horse_archers = { 500 500 }
+								heavy_infantry = { 500 500  }
+								knights = { 500 500 }
+								archers = { 1000 1000 }
+							}
+						}
+					}
+				}
+			}
+                hidden_tooltip = {
+                    character_event = {
+							id = menu.90
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTCMenu.90
+			hidden_tooltip = {
+				capital_scope = {
+					ROOT = {
+						spawn_unit = {
+							province = PREV
+							owner = ROOT
+							disband_on_peace = no
+							troops = {
+								light_cavalry = { 2000 2000  }
+								light_infantry = { 2000 2000  }
+								pikemen = { 1000 1000 }
+								horse_archers = { 1000 1000 }
+								heavy_infantry = { 1000 1000  }
+								knights = { 1000 1000 }
+								archers = { 2000 2000 }
+							}
+						}
+					}
+				}
+			}
+                hidden_tooltip = {
+                    character_event = {
+							id = menu.90
+                    }
+				}		
+	}
+	option = {
+		name = EVTOPTDMenu.90
+			hidden_tooltip = {
+				capital_scope = {
+					ROOT = {
+						spawn_unit = {
+							province = PREV
+							owner = ROOT
+							disband_on_peace = no
+							troops = {
+								light_cavalry = { 3000 3000  }
+								light_infantry = { 3000 3000  }
+								pikemen = { 3000 3000 }
+								horse_archers = { 3000 3000 }
+								heavy_infantry = { 3000 3000  }
+								knights = { 2000 2000 }
+								archers = { 3000 3000 }
+							}
+						}
+					}
+				}
+			}
+                hidden_tooltip = {
+                    character_event = {
+							id = menu.90
+                    }
+				}		
+	}
+}
+character_event = {
+	id = menu.91
+	desc = EVTDESCMenu.91
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAMenu.91	
+	}
+	option = {
+		name = EVTOPTBMenu.91
+		hidden_tooltip = {
+			capital_scope = {
+				ROOT = {
+					spawn_fleet = {
+						province = closest
+						owner = ROOT
+						disband_on_peace = no
+						troops = {
+							galleys = { 200 200 }
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTCMenu.91
+		hidden_tooltip = {
+			capital_scope = {
+				ROOT = {
+					spawn_fleet = {
+						province = closest
+						owner = ROOT
+						disband_on_peace = no
+						troops = {
+							galleys = { 500 500 }
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTDMenu.91
+		hidden_tooltip = {
+			capital_scope = {
+				ROOT = {
+					spawn_fleet = {
+						province = closest
+						owner = ROOT
+						disband_on_peace = no
+						troops = {
+							galleys = { 1000 1000 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+character_event = {
+	id = menu.99
+	desc = EVTDESCMenu.99
+	picture = GFX_evt_ch_01
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAMenu.99
+	}
+	option = {
+		name = EVTOPTBMenu.99
+		any_character = {
+			limit = {
+				is_alive = yes
+				real_father = { character = ROOT }
+			}
+			show_scope_change = no
+			custom_tooltip = {
+				text = cheat.bastardfatherheirs
+			}
+		}
+	}
+}
