@@ -163,7 +163,7 @@ iberian = {
 			Jaume_Jacob Joan_John Jofré_Godfrey
 			Ott_Otto
 			Pere_Peter Ponç_Pons Ponç
-			-Hug Ramon_Raymond Ramon-Berenguer_Raymond-Berengar Ramon-Folc Roger_Roger
+			Ramon_Raymond Ramon-Berenguer_Raymond-Berengar Ramon-Folc Roger_Roger
 			Sanç_Sancho Sunyer_Sunyer
 			Udalard
 		}

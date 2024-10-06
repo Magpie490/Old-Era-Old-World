@@ -27,7 +27,7 @@ latin = {
 		color = { 0.8 0.8 0.2 }
 
 		male_names = {
-			Adalbert_Albert Adémar_Adémar Adrien_Adrian Aimery_Aymeric Alain_Alan Aldebert_Albert Aldéric Alphonse_Alphonse Amaury_Amalric Amédée Ancel André_Andrew Angelbert Antoine_Antonius Archambaud_Archibald Arnaud_Arnold Arnault_Arnold Arnoul_Arnulf Aubry Aymar
+			Adalbert_Albert Adémar_Adémar Adrien_Adrian Aimery_Aymeric Alain_Alan Aldebert_Albert Aldéric Alphonse_Alphonse Amaury_Amalric Amédée Ancel André_Andrew Angelbert Antoine_Antonius Archambaud_Archibald Arnaud_Arnold Arnault_Arnold Arnoul_Arnulf Aubry_Aubrey Aymar
 			Barthélémi_Bartolomeus Baudouin_Baldwin Benoît_Benedict Bérenger_Berengar Bernard_Bernard Bertrand_Bertrand Bohemond Boson_Boson Bouchard_Bouchard
 			Centule_Centule Charles_Charles Clotaire_Lothair
 			Ebbon Édouard_Edward Enguerrand Érrard Étienne_Stephen Eudes_Otto Eustache_Eustace Evrard
@@ -36,14 +36,14 @@ latin = {
 			Hélie Hamelin Henri_Henry Herbert_Herbert Hildebert Hugues_Hugh Humbert_Humbert
 			Jacques_Jacob Jaufré_Godfrey Jaspert Jean_John Josselin_Joscelin Jourdain_Jordan Julien_Julian
 			Léon Léonard Lothaire_Lothair Louis_Louis Loup_Lupo
-			Manassès_Manasseh Mathieu_Matthew Maurice_Maurice
+			Manassès_Manasseh Marc_Mark Mathieu_Matthew Maurice_Maurice
 			Nicolas_Nicholas
 			Ogier Onfroy Orson_Ursus Othon_Otto
 			Payen_Pagan Philippe_Philip Pierre_Peter
 			Raimbaut Raoul_Ralph Raymond_Raymond Raynaud_Reinhold Renaud_Reinhold Richard_Richard Robert_Robert Robin Roger_Roger Rorgon Rorgues Roubaud
 			Savary Sigismond_Sigmund Simon_Simon
 			Thibault_Theobald Thiébaut_Theobald Thierry_Thierry Thomas_Thomas
-			Valeran
+			Valeran_Valeran
 			Yves
 		}
 
@@ -160,7 +160,7 @@ latin = {
 		male_names = {
 			Abbondanzio Abbondio Abelardo_Abelard Abelino Achille Adalberto_Albert Adelfo Adelmio_Adelmo Adelmo_Adelmo Adone Adriano_Adrian Agapito Agostino_Augustine Aimone Alamanno Alarico_Alaric Albano Alberico Alberto_Albert Albino Alboino_Alwin Alcide Aldobrandino Aleardo Aleramo Alessandro_Alexander Alessio_Alexis Alighiero Alvise Ambrogio_Ambrosius Amedeo Anastasio_Anastasius Andrea_Andrew Angelo_Angel Annibale Anselmo_Anselm Antonino_Antoninus Antonio_Antonius Antoniotto Arcibaldo_Archibald Arderico Armando_Armand Arnolfo_Arnulf Arrigo Arsenio Artemio Ascanio Astorre Atenolfo_Atenulf Attilio Augusto_August Aurelio_Aurelius Ausilio Ausonio Averado Azzo Azzone
 			Baldassarre Baldovino_Baldwin Barnaba_Barnabas Bartolomeo_Bartolomeus Basilio_Basil Bassiano Basso Battista Beltrano_Bertrand Benedetto_Benedict Benvenuto Berardo Bernabò_Barnabas Bernardo_Bernard Berto Bertoldo_Berthold Biagio Bonaventura Bonifacio_Bonifacius Borso Bruno_Bruno Bruto Buonconte Buoso
-			Callisto_Callistus Camillo_Camillus Candido Cangrande Carlo_Charles Cassio Castore Cataldo Catone Cecco Cesare_Caesar Chiaffredo Chiano Ciro  Ciuccio Claudio_Claudius Clemente_Clement Comita Conone Cornelio_Cornelius Corradino Corrado_Konrad Cosimo Cosma_Cosmas Costante_Constans Costantino_Constantine Costanzo_Constantius Cristoforo_Christopher
+			Callisto_Callistus Camillo_Camillus Candido Cangrande Carlo_Charles Cassio Castore Cataldo Catone Cecco Cesare_Caesar Chiaffredo Chiano Ciro Ciuccio Claudio_Claudius Clemente_Clement Comita Conone Cornelio_Cornelius Corradino Corrado_Konrad Cosimo Cosma_Cosmas Costante_Constans Costantino_Constantine Costanzo_Constantius Cristoforo_Christopher
 			Damiano_Damian Davide_David Demetrio_Demetrius Dioniso_Dionysus Doménico_Dominic Durante
 			Eduardo_Edward Elio Emmanuele_Manuel Ennio Enrico_Henry Enzio Enzo Ercole_Heracles Eriprando Ermenegildo Ettore_Hector Eugenio_Eugene Ezio Ezzelino Fabrizio
 			Fausto_Faustus Federigo_Frederick Felice_Felix Ferdinando_Ferdinand Ferruccio Filippo_Philip Fiorello Flavio Folco_Folke Fortunato Fosco Francesco_Francis Fresco
@@ -168,7 +168,7 @@ latin = {
 			Iacopo_Jacob Igino Innocenzo_Innocent Ippolito_Hippolytus Isnardo
 			Jacopo_Jacob
 			Lamberto_Lambert Landolfo_Landolf Landone Lanfranco Lattanzio Lazzarino Lazzaro_Lazarus Lealdo Leonardo_Leonard Leone_Leo Leonello_Lionel Leopoldo_Leopold Libero Lionello_Lionel Livio Lodovico_Louis Lorenzo_Laurence Luca_Luke Luchino Lucio_Lucius Luigi_Louis
-			Malacresta Manfredo Manuele_Manuel Marco_Marcus Mariano_Marius Marino_Marinus Mario_Marius Marsiglio Martino_Martin Massimo_Maximus Mastino Matteo_Matthew Merigo Michelangelo Michele_Michael
+			Malacresta Manfredo Manuele_Manuel Marco_Mark Mariano_Marius Marino_Marinus Mario_Marius Marsiglio Martino_Martin Massimo_Maximus Mastino Matteo_Matthew Merigo Michelangelo Michele_Michael
 			Napoleone Nazareno Nestore Niccolò_Nicholas Nicola_Nicholas Nino Nolfo
 			Oberto Obizzino Obizzo Oddone Omero Onorio Oreste Orlando Ottavio_Octavius Ottobono Ottone_Otto
 			Pagano_Pagan Pancrazio_Pancras Pandolfo_Randolph Paolo_Paul Pasquale_Pascal Patrizio_Patrick Pellegrino Pericle Pietro_Peter Pio Prospero
@@ -307,7 +307,7 @@ latin = {
 			Hadrianus_Adrian Herculius_Heracles Honorius
 			Joannes_John Jovianus Julianus_Julian Julius_Julius Julius-Caesar Junius Justinus_Justin Justinianus_Justinian
 			Leo_Leo Leontius_Leontius Liberius Licinius Lucius
-			Magnus_Magnus Marcellinus Marcellus Marcianus Marcus_Marcus Marinus Marius Martinus Maximianus Maximinus Maximus_Maximus
+			Magnus_Magnus Marcellinus Marcellus Marcianus Marcus_Mark Marinus Marius Martinus Maximianus Maximinus Maximus_Maximus
 			Nepotianus Nerva Numerianus
 			Octavianus Octavius Otho
 			Paulinus Paulus_Paul Petronius Philippus_Philip Pompeius Pontianus Priscus Probus Publius
@@ -367,7 +367,7 @@ latin = {
 			Gaucoli Gauzoli Gervasius Giuco Give
 			Jugno_Junius Juliano_Julius Junius_Junius
 			Laurenzo_Laurence Leonardus_Leonard Loncho Lucarus_Luke
-			Mare_Marcus Marco_Marcus Maroe_Marinus Marinus_Marinus Matheus_Matthew Michael_Michael
+			Mare_Mark Marco_Mark Maroe_Marinus Marinus_Marinus Matheus_Matthew Michael_Michael
 			Nale_Cornelius Nichiforus_Nikephoros Nicola_Nicholas
 			Pascalis_Pascal Pasqualis_Pascal Petragna_Peter Petrus_Peter Piero_Peter Perue_Peter
 			Rassinus Rusco
@@ -482,7 +482,7 @@ latin = {
 			Jacopu_Jacob Jagu Jerone_Jerome Jisepu_Joseph Juanne
 			Kipriane Kiprianu
 			Larentu_Lawrence Leonardu_Leonard Lisandru_Alexander Loce Luca_Lucas Lucia_Lucas Lussuria
-			Manfredu_Manfred Mankia Marcu_Marcus Marianu_Marius Massimilla Matia_Matthias Mauru_Mauro Mazeu_Matthew Micheli_Michael Migali_Michael Mikelli_Michael Mugedi Murtina_Martin
+			Manfredu_Manfred Mankia Marcu_Mark Marianu_Marius Massimilla Matia_Matthias Mauru_Mauro Mazeu_Matthew Micheli_Michael Migali_Michael Mikelli_Michael Mugedi Murtina_Martin
 			Nigola_Nicholas Nurake
 			Okeri Olisae Orsocorre Orzocor
 			Pagiti Pascale_Pascal Patriziu_Patrick Paulu_Paul Pedru_Peter Pelegrine Perdu_Peter Pirillu Ponzu Porcellu Porkinu Presnage Pretu Pupa

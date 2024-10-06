@@ -27,22 +27,23 @@ west_germanic = {
 		color = { 0.8 0.2 0.2 }
 
 		male_names = {
-			Adam_Adam Alan_Alan Albert_Albert Alexander_Alexander Alfred Andrew_Andrew Anselm_Anselm Arnold_Arnold Arthur_Arthur Aubrey
-			Christopher_Christopher
+			Adam_Adam Alan_Alan Albert_Albert Alexander_Alexander Alfred_Alfred Andrew_Andrew Anselm_Anselm Arnold_Arnold Arthur_Arthur Aubrey_Aubrey
+			Baldwin_Baldwin Bernard_Bernard
+			Charles_Charles Christopher_Christopher
 			David_David
 			Edmund_Edmund Edward_Edward Eric_Erik Eustace_Eustace
-			Fulk_Folke
+			Francis_Francis Fulk_Folke
 			Geoffrey_Godfrey George_George Gerald_Gerald Gilbert_Gilbert Godfrey_Godfrey Gregory_Gregory Guy_Guy
 			Henry_Henry Hugh_Hugh Humphrey
-			Jocelyn John_John Jordan_Jordan
-			Laurence_Laurence Lionel_Lionel
-			Mark_Marcus Martin_Martin Matthew_Matthew Maurice_Maurice Michael_Michael
-			Nicholas_Nicholas
+			Jocelyn John_John Jordan_Jordan Julian_Julian
+			Laurence_Laurence Lionel_Lionel Louis_Louis
+			Mark_Mark Martin_Martin Matthew_Matthew Maurice_Maurice Michael_Michael
+			Nicholas_Nicholas Nigel Norman
 			Paul_Paul Peter_Peter Philip_Philip
 			Ralph_Ralph Randolph_Randolph Reginald_Reinhold Richard_Richard Robert_Robert Roger_Roger
 			Simon_Simon Stephen_Stephen
 			Theobald_Theobald Thomas_Thomas
-			Waleran Walter_Walter William_William
+			Waleran_Valeran Walter_Walter William_William
 		}
 
 		female_names = {
@@ -97,7 +98,7 @@ west_germanic = {
 			Hacon_Hakon Harold_Harold Heahberht Hereberht_Herbert Hereweald_Hereweald Hereweard Hlothere_Lothair Hrodberht_Robert
 			Inwær_Ingvar
 			Leofheah Leofhelm Leofric Leofweald Leofwine
-			Maccus_Maccus Morcar_Marcus Mærleswegn
+			Maccus_Maccus Morcar_Mark Mærleswegn
 			Offa_Uffe Onlaf_Olaf Ordgar Oscytel Oshere Osmund Osric Osræd Osulf_Osulf Osweald Oswine Oswulf_Osulf
 			Petre_Peter
 			Rædwald Rædwulf_Ralph Rægenweald_Reinhold

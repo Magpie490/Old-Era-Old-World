@@ -38,7 +38,7 @@ north_germanic = {
 			Ingólfr_Ingolf Ingemar Ingjald Ivar_Ivar
 			Jedvard_Edward Jon_John
 			Karl_Charles Kettil Kettilmund Kjartan Klas_Nicholas Knut_Knut Kol Kolbjörn
-			Magnus_Magnus Markus_Marcus Magni_Magne Mats_Matthew
+			Magnus_Magnus Markus_Mark Magni_Magne Mats_Matthew
 			Nils_Nicholas Niklas_Nicholas
 			Oddr_Odd Ofeig Olafr_Olaf Ormr_Orm Örvar_Orvar Öysteinn_Eysteinn Ottarr_Ottar
 			Refr Refil Ragnarr_Rainer Rikulfr Rögnvaldr_Ragnvald
@@ -118,7 +118,7 @@ north_germanic = {
 			Jedvard_Edward Johan_John
 			Karl_Charles Kettil Kettilmund Klas_Nicholas Knut_Knut Kol Kolbjörn
 			Lars_Laurence
-			Magnus_Magnus Markus_Marcus Mats_Matthew
+			Magnus_Magnus Markus_Mark Mats_Matthew
 			Nils_Nicholas Niklas_Nicholas
 			Odd_Odd Olaf_Olaf Orvar_Orvar Östen_Eysteinn
 			Peder_Peter

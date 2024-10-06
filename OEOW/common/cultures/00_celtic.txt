@@ -99,7 +99,7 @@ celtic = {
 			James_Jacob John_John
 			Kenneth_Kenneth Kentigern_Kentigern
 			Lachlan_Roland Laurence_Laurence Lennon_Lennon Lulach
-			Macbeth Magnus_Magnus Malcolm_Malcolm Maldoven_Maldoven Maldred_Maldred Malise_Malise Malmure_Malmure Maoilios Marcas_Marcus Matad_Matad Matthew_Matthew Michael_Michael Morgan_Morgan Muir Mungo_Mungo Murdoch_Murdoch Murray
+			Macbeth Magnus_Magnus Malcolm_Malcolm Maldoven_Maldoven Maldred_Maldred Malise_Malise Malmure_Malmure Maoilios Marcas_Mark Matad_Matad Matthew_Matthew Michael_Michael Morgan_Morgan Muir Mungo_Mungo Murdoch_Murdoch Murray
 			Neil_Nigel Ninian_Ninian
 			Oscar_Oscar
 			Patrick_Patrick Paul_Paul Peter_Peter Philip_Philip
@@ -225,7 +225,7 @@ celtic = {
 			Harri_Henry Herewallt_Hereweald Huw_Hugh Hywel_Hywel
 			Iago_Jacob Ivor_Ivar Idnerth_Idnerth Idwal_Idwal Idwallon_Idwallon Iestyn_Justin Ieuan_John Ifor_Ivar Io Ioan_John Iolo Iorwerth Ithel_Ithel
 			Lles_Lucius Llew_Leon Llyr Llywarch_Llywarch Llywelyn
-			Macsen_Maximos Madog_Matad Mael_Mael Maelcwn_Malcolm Maelgwn_Melgwn Maenyrch March_Marcus Maredudd_Murdoch Math_Matthew Mawgan_Mawgan Meilyr Meirchion_Marcianus Meiriadog_Meriadoc Meirion_Marianus Merfyn_Merfyn Meurig_Maurice Mihangel_Michael Morfarch_Morfarch Morgan_Morgan Morien_Morgen Morydd Mwyn_Mungo Myrddin_Martin
+			Macsen_Maximos Madog_Matad Mael_Mael Maelcwn_Malcolm Maelgwn_Melgwn Maenyrch March_Mark Maredudd_Murdoch Math_Matthew Mawgan_Mawgan Meilyr Meirchion_Marcianus Meiriadog_Meriadoc Meirion_Marianus Merfyn_Merfyn Meurig_Maurice Mihangel_Michael Morfarch_Morfarch Morgan_Morgan Morien_Morgen Morydd Mwyn_Mungo Myrddin_Martin
 			Neithon_Nathan Nowy_Nowy Nynniaw
 			Oswallt_Oswald Owain_Eugene Oucydd_Eochaid
 			Padern Padrig_Patrick Pandoff Pasgen_Pascentius Padarn_Paternus Pawl_Paul Pedr_Peter Peredyr Publig Pyr
@@ -292,7 +292,7 @@ celtic = {
 			Harri_Henry Herewallt_Hereweald Huw_Hugh Hywel_Hywel
 			Iago_Jacob Ivor_Ivar Idnerth_Idnerth Idwal_Idwal Idwallon_Idwallon Iestyn_Justin Ieuan_John Ifor_Ivar Io Ioan_John Iolo Iorwerth Ithel_Ithel
 			Lles_Lucius Llew_Leon Llyr Llywarch_Llywarch Llywelyn
-			Macsen_Maximos Madog_Matad Mael_Mael Maelcwn_Malcolm Maelgwn_Melgwn Maenyrch March_Marcus Maredudd_Murdoch Math_Matthew Mawgan_Mawgan Meilyr Meirchion_Marcianus Meiriadog_Meriadoc Meirion_Marianus Merfyn_Merfyn Meurig_Maurice Mihangel_Michael Morfarch_Morfarch Morgan_Morgan Morien_Morgen Morydd Mwyn_Mungo Myrddin_Martin
+			Macsen_Maximos Madog_Matad Mael_Mael Maelcwn_Malcolm Maelgwn_Melgwn Maenyrch March_Mark Maredudd_Murdoch Math_Matthew Mawgan_Mawgan Meilyr Meirchion_Marcianus Meiriadog_Meriadoc Meirion_Marianus Merfyn_Merfyn Meurig_Maurice Mihangel_Michael Morfarch_Morfarch Morgan_Morgan Morien_Morgen Morydd Mwyn_Mungo Myrddin_Martin
 			Neithon_Nathan Nowy_Nowy Nynniaw
 			Oswallt_Oswald Owain_Eugene Oucydd_Eochaid
 			Padern Padrig_Patrick Pandoff Pasgen_Pascentius Padarn_Paternus Pawl_Paul Pedr_Peter Peredyr Publig Pyr
@@ -358,7 +358,7 @@ celtic = {
 			Harri_Henry Herewallt_Hereweald Huw_Hugh Hywel_Hywel
 			Iago_Jacob Ivor_Ivar Idnerth_Idnerth Idwal_Idwal Idwallon_Idwallon Iestyn_Justin Ieuan_John Ifor_Ivar Io Ioan_John Iolo Iorwerth Ithel_Ithel
 			Lles_Lucius Llew_Leon Llyr Llywarch_Llywarch Llywelyn
-			Macsen_Maximos Madog_Matad Mael_Mael Maelcwn_Malcolm Maelgwn_Melgwn Maenyrch March_Marcus Maredudd_Murdoch Math_Matthew Mawgan_Mawgan Meilyr Meirchion_Marcianus Meiriadog_Meriadoc Meirion_Marianus Merfyn_Merfyn Meurig_Maurice Mihangel_Michael Morfarch_Morfarch Morgan_Morgan Morien_Morgen Morydd Mwyn_Mungo Myrddin_Martin
+			Macsen_Maximos Madog_Matad Mael_Mael Maelcwn_Malcolm Maelgwn_Melgwn Maenyrch March_Mark Maredudd_Murdoch Math_Matthew Mawgan_Mawgan Meilyr Meirchion_Marcianus Meiriadog_Meriadoc Meirion_Marianus Merfyn_Merfyn Meurig_Maurice Mihangel_Michael Morfarch_Morfarch Morgan_Morgan Morien_Morgen Morydd Mwyn_Mungo Myrddin_Martin
 			Neithon_Nathan Nowy_Nowy Nynniaw
 			Oswallt_Oswald Owain_Eugene Oucydd_Eochaid
 			Padern Padrig_Patrick Pandoff Pasgen_Pascentius Padarn_Paternus Pawl_Paul Pedr_Peter Peredyr Publig Pyr
@@ -424,7 +424,7 @@ celtic = {
 			Harri_Henry Herewallt_Hereweald Huw_Hugh Hywel_Hywel
 			Iago_Jacob Ivor_Ivar Idnerth_Idnerth Idwal_Idwal Idwallon_Idwallon Iestyn_Justin Ieuan_John Ifor_Ivar Io Ioan_John Iolo Iorwerth Ithel_Ithel
 			Lles_Lucius Llew_Leon Llyr Llywarch_Llywarch Llywelyn
-			Macsen_Maximos Madog_Matad Mael_Mael Maelcwn_Malcolm Maelgwn_Melgwn Maenyrch March_Marcus Maredudd_Murdoch Math_Matthew Mawgan_Mawgan Meilyr Meirchion_Marcianus Meiriadog_Meriadoc Meirion_Marianus Merfyn_Merfyn Meurig_Maurice Mihangel_Michael Morfarch_Morfarch Morgan_Morgan Morien_Morgen Morydd Mwyn_Mungo Myrddin_Martin
+			Macsen_Maximos Madog_Matad Mael_Mael Maelcwn_Malcolm Maelgwn_Melgwn Maenyrch March_Mark Maredudd_Murdoch Math_Matthew Mawgan_Mawgan Meilyr Meirchion_Marcianus Meiriadog_Meriadoc Meirion_Marianus Merfyn_Merfyn Meurig_Maurice Mihangel_Michael Morfarch_Morfarch Morgan_Morgan Morien_Morgen Morydd Mwyn_Mungo Myrddin_Martin
 			Neithon_Nathan Nowy_Nowy Nynniaw
 			Oswallt_Oswald Owain_Eugene Oucydd_Eochaid
 			Padern Padrig_Patrick Pandoff Pasgen_Pascentius Padarn_Paternus Pawl_Paul Pedr_Peter Peredyr Publig Pyr
@@ -491,7 +491,7 @@ celtic = {
 			Iacob_Jacob Iarcun Iarnbud Iarncant Iarncar Iarndetguid Iarnegon_Jarnegon Iarnuallon Iarnuocon Iarnhitin Iedechael Iehan_John Ilcarthon Ildut Iliud Inisian Iocilin_Joscelin Iodoc Ionas_Jonah Iosep_Joseph Iudcum Iuduallon_Idwallon Iudhael_Ithel Iudicael_Judicael Iudnerth_Idnerth Iudnimet_Ednyfed Iustoc Iudoc Iudual_Idwal Iumael Iunceneu Iunuocon Iunmonoc
 			Jord_George
 			Leucum Loi Lorens_Laurence Louenan Loumarch_Llywarch Louïs_Louis
-			Maelcon_Maelgwn Maeldoï Maelhuedoc Maeloc Maelscoet Maelscuet Maenceneu Maenci March_Marcus Marthin_Martin Matheudoï Mathias_Matthew Matoc_Matad Matuid Maugan Mauric_Maurice Medrod_Mordred Meldroc Meriadoc_Meriadoc Mermin_Merfyn Meugan_Mawgan Meven Michel_Michael Morcant_Morgan Morcondeleu Morgen_Morgen Morguethen Morhaetho Mormarch_Morfarch Morvan Mortiern
+			Maelcon_Maelgwn Maeldoï Maelhuedoc Maeloc Maelscoet Maelscuet Maenceneu Maenci March_Mark Marthin_Martin Matheudoï Mathias_Matthew Matoc_Matad Matuid Maugan Mauric_Maurice Medrod_Mordred Meldroc Meriadoc_Meriadoc Mermin_Merfyn Meugan_Mawgan Meven Michel_Michael Morcant_Morgan Morcondeleu Morgen_Morgen Morguethen Morhaetho Mormarch_Morfarch Morvan Mortiern
 			Neven Nicolas_Nicholas Nodethael Nodhoiarn Nominoë Nougui_Nowy
 			Oliuer_Oliver Oswallt_Oswald
 			Padric_Patrick Paol_Paul Pascueten_Pasquitan Patern_Paternus Petroc Phelippe_Phillip Piran Prigent Primael Primarhoc Putrael Pêr_Peter
