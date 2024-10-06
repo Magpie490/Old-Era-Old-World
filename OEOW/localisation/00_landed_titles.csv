@@ -15779,6 +15779,10 @@ d_zyriane;Zyriane;Zyrie;;;;;;;;;;;;;x
 d_zyriane_adj;Zyrian;zyrian;Zyrianisch;;zirio;;;;;;;;;;x
 e_abyssinia;Abyssinia;Abyssinie;Abessinien;;Abisinia;;;;;;;;;x
 e_abyssinia_adj;Abyssinian;abyssinienne;Abessinisch;;Abisinia;;;;;;;;;x
+
+e_angevin;Angevin Empire;Empire Plantagenêt;Angevinisches Reich;;;;;;;;;;;;x
+e_angevin_adj;Angevin;Plantagenêt;Angevinisches;;Angevino;;;;;;;;;x
+
 e_arabia;Arabian Empire;Empire arabe;Arabisches Reich;;Imperio árabe;;;;;;;;;x
 e_arabia_adj;Arabian;arabe;Arabisch;;Árabe;;;;;;;;;x
 e_bengal;Bengal Empire;Empire bengalais;Bengalreich;;Imperio de Bengala;;;;;;;;;x
