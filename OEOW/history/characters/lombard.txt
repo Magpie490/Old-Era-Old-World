@@ -763,7 +763,7 @@
 }
 
 190262 = {
-	name = "Peter" #duke of friuli
+	name = "Petrus" #duke of friuli
 	dynasty = 1044052 #Munichingi
 	religion = catholic
 	culture = lombard
@@ -865,7 +865,7 @@
 }
 
 190158 = {
-	name = "Sicard" #fictional
+	name = "Sikard" #fictional
 	dynasty = 1044044 #Sicard
 	religion = catholic
 	culture = lombard
@@ -1684,7 +1684,7 @@
 }
 
 190269 = {
-	name = "John" #count of Bologna
+	name = "Ioann" #count of Bologna
 	dynasty = 1044063 #Ursingi
 	religion = catholic
 	culture = lombard
@@ -1796,7 +1796,7 @@
 }
 
 190277 = {
-	name = "Peter" #count of Corsica
+	name = "Petrus" #count of Corsica
 	dynasty = 1044065 #Adalbertingi
 	religion = catholic
 	culture = lombard
@@ -2519,7 +2519,7 @@
 }
 
 190328 = {
-	name = "Peter" #count of Orvieto/Orbetello
+	name = "Petrus" #count of Orvieto/Orbetello
 	dynasty = 1044082 #Petringi
 	religion = catholic
 	culture = lombard

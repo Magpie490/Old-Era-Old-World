@@ -37214,6 +37214,7 @@
 		data = { 0 8 0 10 0 0 0 }
 		religion = catholic
 	}
+	used_for_random = no
 }
 
 1044032 = {
@@ -37272,6 +37273,7 @@
 		data = { 0 8 0 17 0 0 0 }
 		religion = catholic
 	}
+	used_for_random = no
 }
 
 1044045 = {
@@ -37330,6 +37332,7 @@
 		data = { 0 8 0 7 0 0 0 }
 		religion = catholic
 	}
+	used_for_random = no
 }
 
 1044054 = {
@@ -37388,6 +37391,7 @@
 		data = { 0 8 0 25 0 0 0 }
 		religion = catholic
 	}
+	used_for_random = no
 }
 
 1044067 = {
@@ -37427,7 +37431,7 @@
 }
 
 1044073 = {
-	name = "Rodoaldingi"
+	name = "Paldingi"
 	culture = lombard
 	religion = catholic
 }
@@ -50665,7 +50669,7 @@
 }
 
 1062609 = {
-	name = "Theoderisian"
+	name = "Adaloaldingi"
 	culture = lombard
 	religion = catholic
 }

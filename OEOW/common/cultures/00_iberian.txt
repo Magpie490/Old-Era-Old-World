@@ -289,7 +289,7 @@ iberian = {
 			Nunno_Nuno
 			Oliba Ordonno_Ordono
 			Pelagio_Pelagius Petro_Peter
-			Ranimiro_Ramiro Rekkaredo_Richard Rodericho_Roderick
+			Ranimiro_Ramiro Rekkaredo_Reccared Rodericho_Roderick
 			Sans_Sancho Silo Suneario_Sunyer Suniefredo
 			Theodoricho_Theodoric
 			Veremondo_Vermudo
