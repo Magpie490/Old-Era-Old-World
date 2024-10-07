@@ -11455,6 +11455,7 @@
 		data = { 0 7 0 36 0 0 0 }
 		religion = catholic
 	}
+	used_for_random = no
 }
 
 8601 = {
@@ -11465,6 +11466,7 @@
 		data = { 0 7 0 12 0 0 0 }
 		religion = catholic
 	}
+	used_for_random = no
 }
 
 8602 = {
@@ -38764,35 +38766,41 @@
 1046030 = {
 	name = "Erwigiana"
 	culture = visigothic
+	used_for_random = no
 }
 
 1046031 = {
 	name = "Kindasuinthiana"
 	culture = visigothic
+	used_for_random = no
 }
 
 1046032 = {
 	name = "Khintiliana"
 	culture = visigothic
 	religion = catholic
+	used_for_random = no
 }
 
 1046033 = {
 	name = "Lywigildiana"
 	culture = visigothic
 	religion = catholic
+	used_for_random = no
 }
 
 1046034 = {
 	name = "Sesebutiana"
 	culture = visigothic
 	religion = catholic
+	used_for_random = no
 }
 
 1046035 = {
 	name = "Balthes"
 	culture = visigothic
 	religion = catholic
+	used_for_random = no
 }
 
 1042133 = {
