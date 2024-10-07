@@ -51240,3 +51240,13 @@
 	culture = maghreb_arabic #zanata
 	religion = ibadi
 }
+
+#Semi fictional dynasties for Visigoths
+1069093 = { name="de Narbona" culture=visigothic }
+1069094 = { name="de Tolosa" culture=visigothic }
+1069095 = { name="de Carcasona" culture=visigothic }
+1069096 = { name="Liuveriches" culture=visigothic }
+1069097 = { name="Rekkared" culture=visigothic }
+1069098 = { name="de Çaragoça" culture=visigothic }
+1069099 = { name="de Fois" culture=visigothic }
+1069100 = { name="de Toledo" culture=visigothic }
