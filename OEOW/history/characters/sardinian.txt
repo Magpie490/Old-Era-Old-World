@@ -1,6 +1,6 @@
 145908 = {
 	name = "Lucia"
-	dynasty = 1022322
+	dynasty = 1022320
 	religion = catholic
 	culture = sardinian
 	741.1.1 = {
