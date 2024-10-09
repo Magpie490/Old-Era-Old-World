@@ -42,7 +42,7 @@ latin = {
 			Payen_Pagan Philippe_Philip Pierre_Peter
 			Raimbaut Raoul_Ralph Raymond_Raymond Raynaud_Reinhold Renaud_Reinhold Richard_Richard Robert_Robert Robin Roger_Roger Rorgon Rorgues Roubaud
 			Savary Sigismond_Sigmund Simon_Simon
-			Thibault_Theobald Thiébaut_Theobald Thierry_Thierry Thomas_Thomas
+			Thibault_Theobald Thiébaut_Theobald Thierry_Theodoric Thomas_Thomas
 			Valeran_Valeran
 			Yves
 		}
@@ -110,7 +110,7 @@ latin = {
 			Odo_Otto Orderic Osbern Osmond Oswulf Oswyn
 			Radolf_Ralph Radulf_Ralph Randolf_Randolph Ranulf Raymond_Raymond Rayner_Rainer Richard_Richard  Robert_Robert Roger_Roger Rolland Roscelin
 			Sayer Serlo Serril Sewal Silvester_Silvester Simon_Simon Stefen_Stephen
-			Tancred_Tancredi Torf Turold Turquetil Turstin Tybalt_Theobald
+			Tancred_Tancred Torf Turold Turquetil Turstin Tybalt_Theobald
 			Walter_Walter William_William Wymund
 		}
 
@@ -174,8 +174,8 @@ latin = {
 			Pagano_Pagan Pancrazio_Pancras Pandolfo_Randolph Paolo_Paul Pasquale_Pascal Patrizio_Patrick Pellegrino Pericle Pietro_Peter Pio Prospero
 			Rafaello_Raphael Radul Raimondo_Raymond Rainero_Rainer Raineri_Rainer Riccardo_Richard Rinaldo_Reinhold Rizzardo Roberto_Robert Rodolfo_Ralph Rolando_Roland Rosso Ruggiero
 			Salinguerra Salvatore_Salvador Salvestro_Silvester Sante_Sancho Saverio Sciarra Sebastiano_Sebastian Secondotto Serafino_Seraphin Sergio_Sergius Sesto_Sextus Settimio_Septimus Severino_Severin Severo_Severus Silvano Silvestro_Silvester Simone_Simon Simonetto Sinibaldo Sinucello Sozzo Spinetto Stefano_Stephen Stentore
-			Taddeo Tedaldo Tedice Teodoro_Theodore Tibaldo_Theobald Tiziano Tommaso_Thomas Torgodorio Torquato
-			Ubaldo Uberto_Hubert Ugo_Hugh Ugoccione Ugolino Umberto_Humbert Urbano_Urban
+			Taddeo_Thaddeus Tedaldo Tedice Teodoro_Theodore Tibaldo_Theobald Tiziano Tommaso_Thomas Torgodorio Torquato
+			Ubaldo_Hugbald Uberto_Hubert Ugo_Hugh Ugoccione Ugolino Umberto_Humbert Urbano_Urban
 			Valentino_Valentin Valerio_Valerius Vincentello Vincenzo_Vincent Virginio Vitale Vittore_Victor Vittorio_Victor
 			Zaccaria_Zachary
 		}
@@ -231,7 +231,7 @@ latin = {
 			Adhémar Acfred_Alfred Aimeric_Aymeric Alberic_Alberic Albert_Albert Aldebert_Albert Alias_Elijah Anfòs_Alphonse Amalric_Amalric Amaneus Ancelmes André_Andrew Archambaut_Archibald Arnaut_Arnold Artau_Artal Aton Audoïn Aymar_Aymeric Aymeric_Aymeric Aznar_Aznar
 			Barral Bartoumiéu_Bartolomeus Baudoïn_Baldwin Beneset_Benedict Bérard_Bernard Berenguié_Berengar Bermond_Vermudo Bernat_Bernard Bernat-Aton Bernat-Ezi Bertrand_Bertrand Blasi_Blaise Borel Boson_Boson
 			Carles_Charles Clamenç_Clement Centolh_Centule
-			Dàvi_David Dat_Theodat Dodon Doumenge Duran
+			Dàvi_David Dat_Theodat Dodon Doumenge_Dominic Duran
 			Ebles_Otto Emmanuèl_Manuel Enric_Henry Ermengau Estève_Stephen
 			Filip_Philip Ferrand_Ferdinand Florènç Folquet_Folke Francés_Francis Frederi_Frederick
 			Garcia_Garcia Gaston_Gaston Gausbert_Gausbert Gautier_Walter Gilbèrt_Gilbert Girard_Gerard Girvais Godafres_Godfrey Gui_Guy Guichard Guigues_Guy Guilhèm_William Guiraud_Gerald Guitart_Gerard
@@ -244,8 +244,8 @@ latin = {
 			Pèire_Peter Péire-Arnaut Péire-Raimond Peranudet Pol_Paul Pons_Pons
 			Raimond_Raymond Raimond-Berenguié_Raymond-Berengar Rainaut_Reinhold Rainer_Rainer Raolf_Ralph Ricard_Richard Robèrt_Robert Rogier_Roger
 			Sancho_Sancho Savarics Simon_Simon
-			Tièrri_Thierry Tibaud_Theobald Toumas_Thomas
-			Ubald Ubert_Humbert Uc_Hugh Ugues_Hugh
+			Tièrri_Theodoric Tibaud_Theobald Toumas_Thomas
+			Ubald_Hugbald Ubert_Humbert Uc_Hugh Ugues_Hugh
 			Vézian Vicenç_Vincent
 		}
 
@@ -338,7 +338,7 @@ latin = {
 			Valeria_Valeria Verina Victoria Vigilantia Viviana_Viviana
 		}
 
-		from_dynasty_prefix = "of "
+		from_dynasty_prefix = "ad "
 
 		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
 		pat_grf_name_chance = 50
@@ -363,7 +363,7 @@ latin = {
 			Andre_Andrew Andreas_Andrew
 			Bisti Blaxius
 			Calenda Clime Comes
-			Domagna_Dominik
+			Domagna_Dominic
 			Gaucoli Gauzoli Gervasius Giuco Give
 			Jugno_Junius Juliano_Julius Junius_Junius
 			Laurenzo_Laurence Leonardus_Leonard Loncho Lucarus_Luke
@@ -420,13 +420,13 @@ latin = {
 			Hélie Hamelin Henri_Henry Herbert_Herbert Hildebert Hugues_Hugh Humbert_Humbert
 			Jacques_Jacob Jaufré_Godfrey Jaspert Jean_John Josselin_Joscelin Jourdain_Jordan Julien_Julian
 			Léon Léonard Lothaire_Lothair Louis_Louis Loup_Lupo
-			Manassès_Manasseh Mathieu_Matthew Maurice_Maurice
+			Manassès_Manasseh Marc_Mark Mathieu_Matthew Maurice_Maurice
 			Nicolas_Nicholas
 			Ogier Onfroy Orson_Ursus Othon_Otto
 			Payen_Pagan Philippe_Philip Pierre_Peter
 			Raimbaut Raoul_Ralph Raymond_Raymond Raynaud_Reinhold Renaud_Reinhold Richard_Richard Robert_Robert Robin Roger_Roger Rorgon Rorgues Roubaud
 			Savary Sigismond_Sigmund Simon_Simon
-			Thibault_Theobald Thiébaut_Theobald Thierry_Thierry Thomas_Thomas
+			Thibault_Theobald Thiébaut_Theobald Thierry_Theodoric Thomas_Thomas
 			Valeran
 			Yves
 		}
