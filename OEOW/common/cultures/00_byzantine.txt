@@ -26,7 +26,7 @@ byzantine = {
 			Jakub_Jacob Jetmir Jeton
 			Koja Kostandin_Constantine Kreshnik Kushtrim
 			Leka Lekë Leotrim Leutrim Liridon Lulëzim
-			Moisi Muriq Muzaka
+			Moisi_Moses Muriq Muzaka
 			Pal Perparim Pjetër_Peter Progon Pëllumb
 			Skender
 			Tanush Teodor
@@ -70,7 +70,7 @@ byzantine = {
 			Ishkhan_Ishkhan Ivane_John
 			Kapriel_Gabriel Khachik Khosrov_Khosrau
 			Levon_Leo
-			Malkhas_Malkhas Mamigon Manuel_Manuel Margos_Marcus Melek Mihrdat_Mithridates Mikayel_Michael Mleh Mushegh Mushel Mzhezh
+			Malkhas_Malkhas Mamigon Manuel_Manuel Margos_Mark Melek Mihrdat_Mithridates Mikayel_Michael Mleh Mushegh Mushel Mzhezh
 			Nerseh_Narses
 			Oshin
 			Roupen_Reuben
@@ -121,7 +121,7 @@ byzantine = {
 			Iakobos_Jacob Ignatios_Ignatius Innokentios_Innocent Ioannes_John Ioannikios Iordanes_Jordan Ioseph_Joseph Isaakios_Isaac Isaias_Isaiah Isidoros_Isidoros Ioulianos_Julian Ioustinianos_Justinian Ioustinos_Justin
 			Kaisarios_Caesar Kallinikos Kallistos_Callistus Komitas Konstantinos_Constantine Konstantios_Constantius Konstas_Constans Kosmas_Cosmas Kyriakos_Cyriacus Kyrillos_Cyril Kyros
 			Laurentios_Laurence Lazaros_Lazarus Leon_Leo Leontios_Leontius Loukas_Luke
-			Makarios Manuel Markos_Marcus Matthaios_Matthew Maurikios_Maurice Maximos_Maximus Megistos_Magnus Meletios Methodios Michael_Michael Narses
+			Makarios Manuel Markos_Mark Matthaios_Matthew Maurikios_Maurice Maximos_Maximus Megistos_Magnus Meletios Methodios Michael_Michael Narses
 			Neophytos Nikephoros_Nikephoros Niketas Nikodemos Nikolaos_Nicholas Niphon
 			Orestes
 			Pamphilios Pankratios_Pancras Pantoleon Paschalis_Pascal Pavlos_Paul Pelagios_Pelagius Petros_Peter Philaretos Philippos_Philip Philotheos Phokas Photios Polykarpos Porphyrios Prokopios_Procopius Pyrros
