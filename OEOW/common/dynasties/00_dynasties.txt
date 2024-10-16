@@ -38758,7 +38758,7 @@
 1046025 = {
 	name = "Theodoricciana"
 	culture = visigothic
-	religion = catholic
+	religion = orthodox
 }
 
 1046026 = {

@@ -4370,7 +4370,7 @@
 200223 = {
 	name = "Theodericho"
 	dynasty = 1046025
-	religion = catholic
+	religion = orthodox
 	culture = visigothic
 	718.1.1 = {
 		birth = yes
