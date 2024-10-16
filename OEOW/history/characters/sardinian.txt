@@ -1,7 +1,7 @@
 145908 = {
 	name = "Lucia"
 	dynasty = 1022320
-	religion = catholic
+	religion = orthodox
 	culture = sardinian
 	741.1.1 = {
 		birth = yes

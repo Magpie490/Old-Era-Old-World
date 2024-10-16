@@ -9461,7 +9461,7 @@
 	intrigue = 5
 	stewardship = 6
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 163104
 	827.1.1 = {
 		birth = yes
@@ -9483,7 +9483,7 @@
 	intrigue = 5
 	stewardship = 2
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166447
 	750.1.1 = {
 		birth = yes
@@ -9502,7 +9502,7 @@
 	intrigue = 3
 	stewardship = 5
 	religion = catholic
-	culture = welsh
+	culture = cumbric
 	father = 166454
 	611.1.1 = {
 		birth = yes
