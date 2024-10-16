@@ -31,7 +31,7 @@ arabic = {
 			Sa'daddin Sadiq Sami Samir Shaiban Shamir Shujah Sulayman_Solomon
 			Talib
 			Ubayd Uways
-			Yahya_Yahya Ya'qub_Jacob Youkhanna_John Yusuf_Joseph
+			Yahya_John Ya'qub_Jacob Youkhanna_John Yusuf_Joseph
 			Zeyd
 		}
 
@@ -87,7 +87,7 @@ arabic = {
 			Ugdada Ugwistan Umar_Umar Uqess'un Uregh Urtilian Urz'ig Uzmir Uzza
 			Wahab Watt'as
 			Xamida
-			Yabdas Yaghmurasen Yahya_Yahya Yattuy Yeften Yeh'lem Yiliyen Yuba Yugerten Yugurthen Youkhanna_John Yunes_Jonah Yusuf_Joseph Yuva
+			Yabdas Yaghmurasen Yahya_John Yattuy Yeften Yeh'lem Yiliyen Yuba Yugerten Yugurthen Youkhanna_John Yunes_Jonah Yusuf_Joseph Yuva
 			Z'effun Zafir Zalelsan Zayar Zer'wal Zigza Ziri Zubeyr
 		}
 
@@ -157,7 +157,7 @@ arabic = {
 			Taimur Tawfiq
 			Umaya
 			Wahid
-			Yahya_Yahya Ya'qub_Jacob Yasar Youkhanna_John
+			Yahya_John Ya'qub_Jacob Yasar Youkhanna_John
 			Zahir
 		}
 
@@ -194,7 +194,7 @@ arabic = {
 		color = { 0.1 0.6 0.1 }
 
 		male_names = {
-			Aaron_Aaron Abanoub Abderahman_Abderrahman Abdul-Aziz Abdul-Haq Abdul-Madjid Abdul-Salaam Abdullah_Abdullah Abianos_Abijah Abisalom Ablarion Abraam_Abraham Abu-Bakr_Abu-Bakr Adnan Agathon_Agathos Agathonikos_Agathonikos Agathos_Agathos Ahmad_Ahmad Akbar_Akbar Alam Ali_Ali Amr Androus_Andrew Anthinos_Anthimos Arsenios_Arsenios Ashraf_Ashraf Asim Athanasios_Athanasius
+			Aaron_Aaron Abanoub Abderahman_Abderrahman Abdul-Aziz_Abdulaziz Abdul-Haq Abdul-Madjid Abdul-Salaam Abdullah_Abdullah Abianos_Abijah Abisalom Ablarion Abraam_Abraham Abu-Bakr_Abu-Bakr Adnan Agathon_Agathos Agathonikos_Agathonikos Agathos_Agathos Ahmad_Ahmad Akbar_Akbar Alam Ali_Ali Amr Androus_Andrew Anthinos_Anthimos Arsenios_Arsenios Ashraf_Ashraf Asim Athanasios_Athanasius
 			Badr Bashir Biktor_Victor Binyamin_Benjamin Bishoi_Bishara Boutros_Peter
 			Danyal_Daniel Dawlat Da’oud_David
 			Ezra_Ezra
@@ -214,7 +214,7 @@ arabic = {
 			Tadros_Theodore Tajaddin Tayyib Touma_Thomas
 			Usama
 			Walid
-			Yahya_Yahya Yared Yassir Youkhanna_John Youssef_Joseph
+			Yahya_John Yared Yassir Youkhanna_John Youssef_Joseph
 			Zaia_Isaiah Zakariyah_Zachary
 		}
 

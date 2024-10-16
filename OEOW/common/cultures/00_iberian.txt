@@ -17,7 +17,7 @@ iberian = {
 		color = { 0.55 0.42 0.04 }
 
 		male_names = {
-			Alfontso_Alphonse Alvar_Oliver Antso_Sancho Aznar_Aznar
+			Abdala_Abdullah Alfontso_Alphonse Alvar_Oliver Antso_Sancho Aznar_Aznar
 			Belasko_Vasco Bermudo_Vermudo Bernart_Bernard
 			Diego_Diaco Donato_Donatus
 			Egidio_Egidius Eneko_Inigo Erramun_Raymond
@@ -26,7 +26,7 @@ iberian = {
 			Herramel
 			Joanes_John
 			Ladron Lope_Lupo Luis_Louis
-			Manrike_Amalric Martín_Martin Munio_Munio
+			Manrike_Amalric Martín_Martin Mohamed_Muhammad Munio_Munio
 			Nuño_Nuno
 			Obeko_Obeko Ordoño_Ordono
 			Pelaio_Pelagius Piarres_Peter
@@ -35,7 +35,7 @@ iberian = {
 			Ximeno_Simon
 			Zentulo_Centule
 
-			#Abdala Isa Ismail Mohamed Motarrif Muza Saad Salama Taur Yahya Yunus Zahir
+			#Isa Ismail Motarrif Muza Saad Salama Taur Yahya Yunus Zahir
 		}
 
 		female_names = {
@@ -278,14 +278,15 @@ iberian = {
 		color = { 0.55 0.55 0.15 }
 
 		male_names = {
-			Adelfonso_Alphonse Agila Airmanagildo Alaricho_Alaric Aloito Assur Athanagildo
+			Abdela_Abdullah Abdelaçiç_Abdulaziz Abdelmelic_Abdulmalik Adelfonso_Alphonse Agila Airmanagildo Alaricho_Alaric Aloito Amet_Ahmad Assur Athanagildo
 			Berengario_Berengar
 			Diaco_Diaco
 			Fafila Friedenando_Ferdinand Friednand_Ferdinand Froila_Froila
 			Garçi_Garcia Gonçalo_Gonzalo Gundemar Guttier_Walter
+			Hacan_Hasan
 			Johan_John
 			Liuva Liuvericho Lupo_Lupo
-			Mauregato Monnio_Munio
+			Mahomat_Muhammad Mauregato Monnio_Munio
 			Nunno_Nuno
 			Oliba Ordonno_Ordono
 			Pelagio_Pelagius Petro_Peter
@@ -295,8 +296,8 @@ iberian = {
 			Veremondo_Vermudo
 			Wifredo_Wilfred Wimarano Witiza
 
-			#Abdela_Abdullah Abdelaçiç Abdelmelic Abdeluahid Abderrabmen Abrafim Ambroz Amet_Ahmad Ayyub Çacharya
-			#Çelim Çulema Hacan Hamdan Harun Içag Mahomat_Muhammad Maruan Muça Omar
+			#Abdeluahid Abderrabmen Abrafim Ambroz Ayyub Çacharya
+			#Çelim Çulema Hamdan Harun Içag Maruan Muça Omar
 			#Xabrit Yabya Yafar Yuçuf Yunus
 		}
 

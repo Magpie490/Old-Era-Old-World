@@ -17,10 +17,9 @@ muslim = {
 
 	# Names given only to Muslim characters (base names)
 	male_names = {
-		Abbas Abdul Abdullah Abolhassan Abu-Bakr Ahmad Akbar Allahyar Ali Ali-Fay Ali-Kolon Ali-Zalil
-		Hasan Hossein Hussayn
-		Ismail
-		Mahmud Mohammed Muammar Muhammad
+		Abbas Abdul Abdulaziz Abdullah Abdulmalik Abolhassan Abu-Bakr Ahmad Akbar Allahyar Ali Ali-Fay Ali-Kolon Ali-Zalil
+		Hasan Hossein Hussayn		
+		Mahmud Muammar Muhammad
 	}
 
 	# Names given only to Muslim characters (base names)
