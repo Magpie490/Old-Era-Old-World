@@ -31,7 +31,10 @@ title_chouri_king;Chouri;;;;;;;;;;;;;x
 title_chouri_king_desc;This title represents a member of a liege's Choura Council.;;;;;;;;;x,,,,,,,,;;;;
 title_chouri_emperor;Chouri;;;;;;;;;;;;;x
 title_chouri_emperor_desc;This title represents a member of a liege's Choura Council.;;;;;;;;;x,,,,,,,,;;;;
+succ_dynastic_meritocratic_desc;The Imperial Council and the Commanders of the Imperial Army can influence the selection of the new Emperor from the Imperial family. Unlike Feudal Electors, each member of the Imperial Court has a different voting strength, based on his prestige, minor titles and attributes, making some electors more influential than others. The Emperor wields the most influence, unless disfigured, deformed or underage. Close relatives of the ruling Emperor are all viable candidates for succession.;;;;;;x
+WAR_NAME_EMF_FACTION_SUCC_DYNASTIC_MERITOCRATIC;$ORDER$$SECOND_ADJ$ Civil War to Restore Dynastic Meritocratic Succession in $OTHER_TITLE$;;;;$ORDER$ Guerra Civil $SECOND_ADJ$ para restaurar la Sucesión Electiva Imperial en $OTHER_TITLE$;;;;;;;;;x
 
+succ_dynastic_meritocratic;Dynastic Meritocratic;;;;;;;;;x
 ca_dirt_road;Dirt Roads;;;;;;;;;x
 ca_dirt_road_desc;Permanent and maintained dirt roads exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
 ca_stone_road;Stone Roads;;;;;;;;;x
@@ -46,6 +49,10 @@ tp_stone_road;Stone Roads;;;;;;;;;x
 tp_stone_road_desc;Permanent and maintained stone roads exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
 ct_stone_highway;Stone Highways;;;;;;;;;x
 ct_stone_highway_desc;Permanent and maintained stone highways exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
+ct_tolled_brick_highway;Tolled Brick Highways;;;;;;;;;x
+ct_tolled_brick_highway_desc;Permanent and maintained Brick highways exist in this province and increase the speed of transporting goods and armies. Though they require Tolls to be upkept.;;;;;;;;;x
+ct_waystation_brick_highway;Waystationed Brick Highways;;;;;;;;;x
+ct_waystation_brick_highway_desc;Permanent and maintained Brick highways exist in this province and increase the speed of transporting goods and armies. There now also exist a system of waystations funded by the regional government to restock armies, travellers and messengers. Though they require Tolls to be upkept.;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 tp_stone_highway;Stone Highways;;;;;;;;;x
 tp_stone_highway_desc;Permanent and maintained stone highways exist in this province and increase the speed of transporting goods and armies.;;;;;;;;;x
 ca_stone_highway;Stone Highways;;;;;;;;;x

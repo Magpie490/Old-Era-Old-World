@@ -1244,6 +1244,10 @@ character_event = { # Meet Warrior
 		}
 
 		add_friend = event_target:great_warrior_target
+					add_alliance = {
+						who = event_target:great_warrior_target
+						years = 100
+					}
 		add_trait = brawny
 		add_trait_fully_silently_wroth_effect = yes
 
@@ -1259,6 +1263,10 @@ character_event = { # Meet Warrior
 		}
 
 		add_friend = event_target:great_warrior_target
+					add_alliance = {
+						who = event_target:great_warrior_target
+						years = 100
+					}
 		add_trait = brawny
 		add_trait_fully_silently_patient_effect = yes
 
@@ -1275,6 +1283,10 @@ character_event = { # Meet Warrior
 		}
 
 		add_friend = event_target:great_warrior_target
+					add_alliance = {
+						who = event_target:great_warrior_target
+						years = 100
+					}
 
 		any_player = {
 			limit = {
@@ -1438,6 +1450,10 @@ character_event = {
 
 	after = {
 		add_friend = event_target:wise_man_target
+					add_alliance = {
+						who = event_target:wise_man_target
+						years = 100
+					}
 
 		# Back to the journey tombola!
 		clear_event_target = wise_man_target
@@ -2584,6 +2600,10 @@ character_event = {
 			limit = { has_character_flag = posse@event_target:child_of_destiny }
 
 			add_friend = event_target:child_of_destiny
+					add_alliance = {
+						who = event_target:child_of_destiny
+						years = 100
+					}
 			clr_character_flag = posse@event_target:child_of_destiny
 
 			opinion = {
@@ -2709,6 +2729,10 @@ character_event = {
 
 		imprison = no
 		add_friend = event_target:savior_target
+					add_alliance = {
+						who = event_target:savior_target
+						years = 100
+					}
 
 		if = {
 			limit = { is_landed = yes }
@@ -2992,12 +3016,20 @@ character_event = {
 		name = HF_240_OPTA
 
 		add_friend = event_target:friend_target_1
+					add_alliance = {
+						who = event_target:friend_target_1
+						years = 100
+					}
 	}
 
 	option = {
 		name = HF_240_OPTB
 
 		add_friend = event_target:friend_target_2
+					add_alliance = {
+						who = event_target:friend_target_2
+						years = 100
+					}
 
 		event_target:friend_target_2 = {
 			show_scope_change = no
@@ -3021,6 +3053,10 @@ character_event = {
 		name = HF_240_OPTC
 
 		add_friend = event_target:friend_target_3
+					add_alliance = {
+						who = event_target:friend_target_3
+						years = 100
+					}
 
 		event_target:friend_target_3 = {
 			show_scope_change = no

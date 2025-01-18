@@ -2486,6 +2486,10 @@ character_event = {
 				}
 
 				add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 			}
 			else = { # otherwise, add opinions... (*actually* added in follow-up)
 				opinion = {
@@ -2663,6 +2667,10 @@ character_event = {
 			}
 
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 		else = { # Otherwise, add opinions...
 			opinion = {
@@ -3972,6 +3980,10 @@ character_event = {
 				}
 
 				add_friend = event_target:other_combatant
+					add_alliance = {
+						who = event_target:other_combatant
+						years = 100
+					}
 			}
 			else = { # otherwise, add opinions... (*actually* added in follow-up)
 				opinion = {
@@ -4091,6 +4103,10 @@ character_event = {
 			}
 
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 		else = {
 			opinion = {

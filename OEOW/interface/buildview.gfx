@@ -98,7 +98,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_buildview_building_strip_small"
 		textureFile = "gfx\\interface\\buildview_building_strip_small.tga"
-		noOfFrames = 15
+		noOfFrames = 400
 	}
 
 	spriteType = {

@@ -106,6 +106,10 @@ decisions = {
 					grant_title_no_opinion = c_calatrava
 					set_defacto_liege = ROOT
 					add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 					save_event_target_as = grandmaster_of_calatrava
 
 					opinion = {
@@ -463,6 +467,10 @@ decisions = {
 					grant_title_no_opinion = c_santiago
 					set_defacto_liege = ROOT
 					add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 					save_event_target_as = grandmaster_of_santiago
 
 					opinion = {
@@ -804,6 +812,10 @@ decisions = {
 
 					grant_title_no_opinion = d_teutonic_order
 					add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 				#	save_event_target_as = teutonic_hochmeister
 
 					opinion = {
@@ -1184,6 +1196,10 @@ decisions = {
 
 					grant_title_no_opinion = d_holy_sepulchre
 					add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 
 					opinion = {
 						name = opinion_formed_order

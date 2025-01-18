@@ -1337,7 +1337,11 @@ character_event = {
 		random = {
 			chance = 50
 
-			tooltip = { add_friend = event_target:potential_friend }
+			tooltip = { add_friend = event_target:potential_friend
+					add_alliance = {
+						who = event_target:potential_friend
+						years = 100
+					} }
 			set_character_flag = new_friend
 		}
 
@@ -1421,6 +1425,10 @@ character_event = {
 		if = {
 			limit = { has_character_flag = new_friend }
 			add_friend = event_target:potential_friend
+					add_alliance = {
+						who = event_target:potential_friend
+						years = 100
+					}
 			clr_character_flag = new_friend
 		}
 	}
@@ -1867,6 +1875,10 @@ character_event = {
 				}
 
 				add_friend = event_target:interrupting_child
+					add_alliance = {
+						who = event_target:interrupting_child
+						years = 100
+					}
 			}
 		}
 	}
@@ -1982,6 +1994,10 @@ character_event = {
 				}
 
 				add_friend = event_target:interrupting_child
+					add_alliance = {
+						who = event_target:interrupting_child
+						years = 100
+					}
 			}
 		}
 	}
@@ -4517,12 +4533,20 @@ character_event = {
 		}
 
 		add_friend = event_target:monastic_friend
+					add_alliance = {
+						who = event_target:monastic_friend
+						years = 100
+					}
 	}
 
 	option = { # Focus on monastic duties
 		name = EVTOPTA_MNM_4439
 
-		tooltip = { add_friend = event_target:monastic_friend }
+		tooltip = { add_friend = event_target:monastic_friend
+					add_alliance = {
+						who = event_target:monastic_friend
+						years = 100
+					} }
 
 		piety = 25
 
@@ -4535,7 +4559,11 @@ character_event = {
 	option = { # Pursue the friendship further
 		name = EVTOPTB_MNM_4439
 
-		tooltip = { add_friend = event_target:monastic_friend }
+		tooltip = { add_friend = event_target:monastic_friend
+					add_alliance = {
+						who = event_target:monastic_friend
+						years = 100
+					} }
 
 		custom_tooltip = {
 			text = monastic_may_lead_to_more
@@ -4668,7 +4696,8 @@ character_event = {
 		}
 
 		add_lover = event_target:monastic_friend
-		hidden_effect = { remove_friend = event_target:monastic_friend }
+		hidden_effect = { remove_friend = event_target:monastic_friend 
+			break_alliance = event_target:monastic_friend}
 	}
 }
 
@@ -6335,6 +6364,10 @@ character_event = {
 			}
 
 			add_friend = event_target:monastic_poet
+					add_alliance = {
+						who = event_target:monastic_poet
+						years = 100
+					}
 		}
 		else_if = {
 			limit = {
@@ -6439,6 +6472,7 @@ character_event = {
 		if = {
 			limit = { is_friend = event_target:monastic_poet }
 			remove_friend = event_target:monastic_poet
+			break_alliance = event_target:monastic_poet
 		}
 		else_if = {
 			limit = {

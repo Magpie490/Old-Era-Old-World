@@ -32,6 +32,29 @@ character_event = {
 		}
 	}
 }
+character_event = { 
+	id = cleanup.5588
+	hide_window = yes
+	only_rulers = yes
+	is_triggered_only = yes
+	immediate = {
+		primary_title = {
+			set_the_kings_peace = no
+			set_the_kings_full_peace = no
+		}
+	}
+}
+character_event = { 
+	id = cleanup.5589
+	hide_window = yes
+	only_rulers = yes
+	is_triggered_only = yes
+	immediate = {
+		primary_title = {
+			set_the_kings_full_peace = no
+		}
+	}
+}
 province_event = {
 	id = cleanup.6777
 	hide_window = yes	
@@ -719,12 +742,44 @@ character_event = {
 		}
 	}
 }
+province_event = {
+	id = cleanup.6776
+	hide_window = yes	
+	
+	trigger = {
+		OR = {
+			climate = severe_winter
+			climate = normal_winter
+		}
+		terrain = mountain
+		OR = {
+			month == 9
+			month == 10
+			month == 11
+			month == 1
+			month == 2
+		}
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+	immediate={
+		add_province_modifier = {
+			name = snowblockspasses_modifier
+			stacking = no
+			duration = 50
+		}
+	}
+}
 character_event = { 
 	id = cleanup.21005
 	hide_window = yes
 	
 	trigger = {
-		has_job_title = job_treasurer
+		OR = {
+			has_job_title = job_treasurer
+			has_minor_title = title_master_of_the_audit
+		}
 		NOR = {
 			trait = steward_4
 			trait = diplomat_1

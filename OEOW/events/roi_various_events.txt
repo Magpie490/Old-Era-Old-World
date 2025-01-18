@@ -3659,6 +3659,10 @@ character_event = {
 		name = EVTOPTA_RoI_164
 
 		add_friend = event_target:white_elephant_donor
+					add_alliance = {
+						who = event_target:white_elephant_donor
+						years = 100
+					}
 
 		character_event = {
 			id = RoI.165
@@ -4703,6 +4707,10 @@ character_event = {
 			limit = { has_dharmic_religion_trigger = yes }
 
 			add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 		}
 	}
 }

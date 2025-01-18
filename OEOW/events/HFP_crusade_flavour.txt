@@ -1067,7 +1067,11 @@ character_event = {
 		name = EVTOPTA_HFP_42201
 
 		random_list = {
-			50 = { add_friend = event_target:other_crusader }
+			50 = { add_friend = event_target:other_crusader 
+					add_alliance = {
+						who = event_target:other_crusader
+						years = 100
+					}}
 
 			50 = {
 				reverse_opinion = {
@@ -1252,6 +1256,10 @@ character_event = {
 			}
 
 			add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 		}
 	}
 
@@ -2050,6 +2058,10 @@ character_event = {
 		}
 
 		add_friend = new_character
+					add_alliance = {
+						who = new_character
+						years = 100
+					}
 	}
 
 	option = {
@@ -2131,6 +2143,10 @@ character_event = {
 			}
 
 			add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 
 			random = { chance = 50 add_trait = cynical }
 			random = { chance = 50 add_trait = diligent }
@@ -2551,6 +2567,10 @@ character_event = {
 		}
 
 		add_friend = event_target:holy_order_meeting
+					add_alliance = {
+						who = event_target:holy_order_meeting
+						years = 100
+					}
 	}
 
 	option = {
@@ -3530,6 +3550,7 @@ character_event = {
 			show_scope_change = no
 			limit = { religion_group = jewish_group }
 			remove_friend = ROOT
+			break_alliance = ROOT
 		}
 	}
 

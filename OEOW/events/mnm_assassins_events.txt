@@ -1773,6 +1773,10 @@ character_event = {
 			}
 
 			add_friend = event_target:assassins_sacrifice
+					add_alliance = {
+						who = event_target:assassins_sacrifice
+						years = 100
+					}
 		}
 
 		hidden_effect = {
@@ -6934,6 +6938,10 @@ character_event = {
 		trigger = { has_character_flag = drug_friend }
 
 		add_friend = event_target:slacker_buddy
+					add_alliance = {
+						who = event_target:slacker_buddy
+						years = 100
+					}
 		clr_character_flag = drug_friend
 	}
 
@@ -8811,6 +8819,10 @@ character_event = {
 		name = EVTOPTA_MNM_6903
 
 		add_friend = event_target:friend_or_foe
+					add_alliance = {
+						who = event_target:friend_or_foe
+						years = 100
+					}
 	}
 
 	# Love?
@@ -9135,6 +9147,10 @@ character_event = {
 		trigger = { FROM = { has_character_flag = not_interested } }
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 	}
 
 	# Nah
@@ -9290,6 +9306,10 @@ character_event = {
 		}
 		else = {
 			add_friend = event_target:assassins_plotter
+					add_alliance = {
+						who = event_target:assassins_plotter
+						years = 100
+					}
 		}
 
 		back_plot = event_target:assassins_plotter

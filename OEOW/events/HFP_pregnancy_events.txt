@@ -554,59 +554,71 @@ character_event = {
 				}
 			}
 
-			if = {
-				limit = { has_character_flag = mother_craved_quail }
-
-				clr_character_flag = mother_craved_quail
-
-				random = {
-					chance = 70
-
-					ROOT = { add_trait = clubfooted }
-
-					character_event = {
-						id = HFP.20582 # Notify mother child gains 2 diplomacy
-						days = 950
-						random = 550
+		if = { 
+			limit = { 
+				mother = { has_character_flag = mother_craved_quail } 
+			} 
+			random_list = {
+				33 = { 
+					add_trait = clubfooted
+					mother = { 
+						character_event = { id = HFP.20582 days = 950 random = 550 } #Notify mother child gains 2 diplomacy.
+						clr_character_flag = mother_craved_quail 
 					}
 				}
-			}
-
-			if = {
-				limit = { has_character_flag = mother_craved_hare }
-
-				clr_character_flag = mother_craved_hare
-
-				random = {
-					chance = 70
-
-					ROOT = { add_trait = harelip }
-
-					character_event = {
-						id = HFP.20583 # Notify mother child gains 2 intrigue
-						days = 950
-						random = 550
+				33 = { mother = { clr_character_flag = mother_craved_quail } } #Nothing happens
+				1 = { 
+					mother = { clr_character_flag = mother_craved_quail } 
+					add_trait = androgynous
+				} #Nothing happens
+				33 = { 
+					mother = { clr_character_flag = mother_craved_quail } 
+					add_trait = fair
+				} #Nothing happens
+			} 
+		}
+		if = { 
+			limit = { 
+				mother = { has_character_flag = mother_craved_hare } 
+			} 
+			random_list = {
+				33 = { 
+					add_trait = harelip
+					mother = { 
+						character_event = { id = HFP.20583 days = 950 random = 550 } #Notify mother child gains 2 intrigue.
+						clr_character_flag = mother_craved_hare 
 					}
 				}
-			}
-
-			if = {
-				limit = { has_character_flag = mother_craved_trout }
-
-				clr_character_flag = mother_craved_trout
-
-				random = {
-					chance = 70
-
-					ROOT = { add_trait = ugly }
-
-					character_event = {
-						id = HFP.20584 # Notify mother child gains 2 learning
-						days = 950
-						random = 550
+				34 = { mother = { clr_character_flag = mother_craved_hare } } #Nothing happens
+				33 = { 
+					mother = { clr_character_flag = mother_craved_hare } 
+					add_trait = fecund
+				} #Nothing happens
+			} 
+		}
+		if = { 
+			limit = { 
+				mother = { has_character_flag = mother_craved_trout } 
+			} 
+			random_list = {
+				33 = { 
+					add_trait = ugly
+					mother = { 
+						character_event = { id = HFP.20584 days = 950 random = 550 } #Notify mother child gains 2 learning.
+						clr_character_flag = mother_craved_trout 
 					}
 				}
-			}
+				33 = { mother = { clr_character_flag = mother_craved_trout } } #Nothing happens
+				1 = { 
+					mother = { clr_character_flag = mother_craved_trout } 
+					add_trait = genius
+				} #Nothing happens
+				33 = { 
+					mother = { clr_character_flag = mother_craved_trout } 
+					add_trait = quick
+				} #Nothing happens
+			} 
+		}
 		}
 
 		if = {
@@ -11846,6 +11858,10 @@ character_event = {
 		}
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		remove_trait_silently_stressed_effect = yes
 
 		add_character_modifier = {
@@ -11926,6 +11942,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -14894,6 +14914,10 @@ character_event = {
 		name = EVTOPTAHFP20016
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			character_event = { id = HFP.20017 } # Notification to relative
@@ -14922,6 +14946,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }

@@ -1515,6 +1515,10 @@ character_event = {
 		trigger = { NOT = { is_friend = event_target:scoped_WL_co_hunter } }
 
 		add_friend = event_target:scoped_WL_co_hunter
+					add_alliance = {
+						who = event_target:scoped_WL_co_hunter
+						years = 100
+					}
 
 		hidden_effect = { change_variable = { which = wl_ritual_hunting value = 3 } }
 	}
@@ -1920,6 +1924,10 @@ character_event = {
 		trigger = { NOT = { is_friend = event_target:scoped_WL_co_hunter } }
 
 		add_friend = event_target:scoped_WL_co_hunter
+					add_alliance = {
+						who = event_target:scoped_WL_co_hunter
+						years = 100
+					}
 
 		hidden_effect = { change_variable = { which = wl_ritual_hunting value = 3 } }
 	}

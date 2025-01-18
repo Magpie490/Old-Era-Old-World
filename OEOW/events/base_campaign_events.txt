@@ -179,6 +179,10 @@ character_event = {
 
 			prestige = 5
 			add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 
 			if = {
 				limit = { has_dlc = "Conclave" }
@@ -208,6 +212,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 			if = {
 				limit = { has_dlc = "Conclave" }

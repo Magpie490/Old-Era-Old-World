@@ -1821,6 +1821,10 @@ character_event = {
 		name = EVTOPTAHF25223
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		FROM = { character_event = { id = HF.25224 } }
 
 		ai_chance = {
@@ -1894,7 +1898,11 @@ character_event = {
 	option = {
 		name = EVTOPTAHF25224
 
-		tooltip = { add_friend = FROM }
+		tooltip = { add_friend = FROM 
+					add_alliance = {
+						who = FROM
+						years = 100
+					}}
 	}
 }
 
@@ -6987,7 +6995,11 @@ character_event = {
 		}
 
 		add_society_currency_tiny_effect = yes
-		tooltip = { add_friend = FROM }
+		tooltip = { add_friend = FROM 
+					add_alliance = {
+						who = FROM
+						years = 100
+					}}
 		FROM = { character_event = { id = HF.25298 } } # Inform winner.
 
 		ai_chance = {
@@ -7210,6 +7222,10 @@ character_event = {
 		name = EVTOPTAHF25298
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		warrior_lodge_drinking_game_cleanup_effect = yes
 	}
 

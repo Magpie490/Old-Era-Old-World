@@ -3955,6 +3955,10 @@ character_event = {
 			}
 
 			add_friend = event_target:infiltration_companion
+					add_alliance = {
+						who = event_target:infiltration_companion
+						years = 100
+					}
 		}
 		else = {
 			reverse_opinion = {
@@ -5518,6 +5522,10 @@ character_event = {
 		else_if = {
 			limit = { has_relationship_omen_modifier_trigger = yes }
 			add_friend = event_target:envisioned_friend
+					add_alliance = {
+						who = event_target:envisioned_friend
+						years = 100
+					}
 		}
 		else_if = {
 			limit = { has_power_omen_modifier_trigger = yes }
@@ -9069,6 +9077,10 @@ character_event = {
 			}
 
 			add_friend = event_target:great_minds_agreer
+					add_alliance = {
+						who = event_target:great_minds_agreer
+						years = 100
+					}
 		}
 		else = {
 			reverse_opinion = {
@@ -14128,6 +14140,10 @@ character_event = {
 		name = EVTOPTA_MNM_1962
 
 		add_friend = event_target:stargazing_guest
+					add_alliance = {
+						who = event_target:stargazing_guest
+						years = 100
+					}
 		set_character_flag = stargazing_become_friends
 	}
 }
@@ -14147,6 +14163,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = event_target:stargazing_host
+					add_alliance = {
+						who = event_target:stargazing_host
+						years = 100
+					}
 		}
 	}
 }
@@ -15534,6 +15554,7 @@ character_event = { # Progress - Friends upset about missed event
 			random = {
 				chance = 30
 				remove_friend = ROOT
+			break_alliance = ROOT
 			}
 
 			opinion = {

@@ -4263,6 +4263,10 @@ character_event = {
 		}
 
 		add_friend = FROMFROM
+					add_alliance = {
+						who = FROMFROM
+						years = 100
+					}
 
 		FROMFROM = {
 			character_event = { id = HF.22033 }
@@ -4327,6 +4331,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }

@@ -1111,6 +1111,10 @@ character_event = {
 		trigger = { has_character_flag = trade_friend }
 
 		add_friend = event_target:foreign_ruler
+					add_alliance = {
+						who = event_target:foreign_ruler
+						years = 100
+					}
 
 		random = {
 			chance = 50
@@ -2848,6 +2852,10 @@ character_event = {
 			}
 
 			add_friend = ROOT
+					add_alliance = {
+						who = event_target:ROOT
+						years = 100
+					}
 		}
 	}
 

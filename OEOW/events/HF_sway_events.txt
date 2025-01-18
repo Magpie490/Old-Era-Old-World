@@ -14565,6 +14565,10 @@ character_event = {
 		name = EVTOPTAHFP21106
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			character_event = { id = HF.21107 }
@@ -14590,6 +14594,10 @@ character_event = {
 		name = EVTOPTAHFP21107
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		hidden_effect = {
 			FROM = {
@@ -14608,6 +14616,7 @@ character_event = {
 		name = EVTOPTBHFP21107
 
 		remove_friend = FROM
+			break_alliance = FROM
 
 		FROM = {
 			character_event = { id = HF.21108 }
@@ -14629,6 +14638,7 @@ character_event = {
 		name = EVTOPTAHFP21108
 
 		remove_friend = FROM
+			break_alliance = FROM
 	}
 }
 

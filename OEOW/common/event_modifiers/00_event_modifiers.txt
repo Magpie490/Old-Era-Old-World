@@ -187,6 +187,14 @@ stone_highways_modifier = {
 	local_movement_speed = 0.15
 	icon = 50
 }
+tolled_brick_highway_modifier = {
+	local_movement_speed = 0.2
+	icon = 50
+}
+waystation_brick_highway_modifier = {
+	local_movement_speed = 0.25
+	icon = 50
+}
 
 aspiring_duelist = {
 	martial = 1
@@ -6885,6 +6893,11 @@ well_spoken = {
 	diplomacy = 2
 }
 
+snowblockspasses_modifier = {
+	local_movement_speed = -1
+	max_attrition = 0.02
+	icon = 130
+}
 confused_by_diplomacy = {
 	icon = 21
 	diplomacy = -2

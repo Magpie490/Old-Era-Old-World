@@ -7449,6 +7449,10 @@ character_event = {
 			}
 
 			add_friend = event_target:satanic_orgiast
+					add_alliance = {
+						who = event_target:satanic_orgiast
+						years = 100
+					}
 		}
 
 		if = {
@@ -8104,6 +8108,11 @@ character_event = {
 				}
 
 				add_friend = event_target:satanic_reveler
+					add_alliance = {
+						who = event_target:satanic_reveler
+						years = 100
+					}
+		}
 			}
 		}
 
@@ -8450,6 +8459,10 @@ character_event = {
 				}
 
 				add_friend = event_target:satanic_reveler
+					add_alliance = {
+						who = event_target:satanic_reveler
+						years = 100
+					}
 			}
 		}
 
@@ -8462,6 +8475,7 @@ character_event = {
 			if = {
 				limit = { is_friend = event_target:satanic_reveler }
 				remove_friend = event_target:satanic_reveler
+			break_alliance = event_target:satanic_reveler
 			}
 			else_if = {
 				limit = {
@@ -9376,6 +9390,7 @@ narrative_event = {
 				if = {
 					limit = { is_friend = event_target:demon_summoner }
 					remove_friend = event_target:demon_summoner
+			break_alliance = event_target:demon_summoner
 				}
 			}
 		}
@@ -9859,6 +9874,10 @@ character_event = {
 			}
 			else = {
 				add_friend = event_target:dw_buddy
+					add_alliance = {
+						who = event_target:dw_buddy
+						years = 100
+					}
 			}
 		}
 
@@ -9949,6 +9968,10 @@ character_event = {
 			}
 
 			add_friend = event_target:dw_buddy
+					add_alliance = {
+						who = event_target:dw_buddy
+						years = 100
+					}
 		}
 
 		add_society_currency_minor_effect = yes
@@ -10017,6 +10040,7 @@ character_event = {
 
 		hidden_effect = {
 			remove_friend = event_target:local_ruler
+			break_alliance = event_target:local_ruler
 			remove_lover = event_target:local_ruler
 		}
 

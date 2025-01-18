@@ -260,7 +260,15 @@ targetted_decisions = {
 		}
 		effect = {
 			add_friend = FROM
-			FROM = { add_friend = PREV }
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
+			FROM = { add_friend = PREV 
+					add_alliance = {
+						who = PREV
+						years = 100
+					}}
 		}
 		revoke_allowed = {
 			always = no
@@ -366,8 +374,16 @@ targetted_decisions = {
 						origin_description = EVTTITLE_ZE_8001
 					}
 				}
-				add_friend = FROM
-				FROM = { add_friend = PREV }
+			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
+			FROM = { add_friend = PREV 
+					add_alliance = {
+						who = PREV
+						years = 100
+					}}
 			}
 			add_alliance = { who = FROM years = 25 }
 			FROM = { add_alliance = { who = PREV years = 25 } }

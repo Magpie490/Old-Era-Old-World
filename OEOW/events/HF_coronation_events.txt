@@ -7087,6 +7087,10 @@ character_event = {
 		name = EVTOPTAHF20307
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		FROM = { character_event = { id = HF.20308 } }
 
 		ai_chance = {
@@ -7155,6 +7159,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -8958,7 +8966,15 @@ character_event = {
 		}
 		else = {
 			add_friend = FROMFROM
+					add_alliance = {
+						who = FROMFROM
+						years = 100
+					}
 			add_friend = FROMFROMFROM
+					add_alliance = {
+						who = FROMFROMFROM
+						years = 100
+					}
 		}
 	}
 }
@@ -9755,6 +9771,10 @@ character_event = {
 		trigger = { diplomacy >= 10 }
 
 		add_friend = event_target:coronation_knight
+					add_alliance = {
+						who = event_target:coronation_knight
+						years = 100
+					}
 
 		ai_chance = { factor = 10 }
 	}

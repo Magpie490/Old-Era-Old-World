@@ -1600,6 +1600,8 @@ on_adulthood = {
 
 on_adolescence = { # Checked on 12th birthday.
 	events = {
+		# Child may inherit lifestyle/hobby trait
+		edu.1
 	}
 
 	random_events = {

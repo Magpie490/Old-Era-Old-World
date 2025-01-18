@@ -1397,6 +1397,10 @@ character_event = {
 						}
 
 						add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 						save_event_target_as = target_friend
 					}
 				}
@@ -1435,6 +1439,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = event_target:target_friend
+					add_alliance = {
+						who = event_target:target_friend
+						years = 100
+					}
 		}
 	}
 }

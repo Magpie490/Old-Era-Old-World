@@ -865,6 +865,7 @@ character_event = { # You decide what to do
 
 			limit = { religion_group = jewish_group }
 			remove_friend = ROOT
+			break_alliance = ROOT
 		}
 	}
 

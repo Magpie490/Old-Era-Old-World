@@ -539,6 +539,10 @@ character_event = { # Win!
 					random = {
 						chance = 5
 						add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 					}
 				}
 
@@ -859,6 +863,10 @@ character_event = { # Lose...
 					random = {
 						chance = 5
 						add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 					}
 				}
 
@@ -1319,6 +1327,10 @@ character_event = { # Won, but both wounded
 					random = {
 						chance = 5
 						add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 					}
 				}
 
@@ -1633,6 +1645,10 @@ character_event = { # Lost, but both wounded
 					random = {
 						chance = 5
 						add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 					}
 				}
 
@@ -2777,7 +2793,11 @@ character_event = {
 				NOT = { is_friend = event_target:teacher }
 			}
 
-			tooltip = { add_friend = event_target:teacher } # *actually* added in the follow-up
+			tooltip = { add_friend = event_target:teacher 
+					add_alliance = {
+						who = event_target:teacher 
+						years = 100
+					}} # *actually* added in the follow-up
 		}
 
 		ai_chance = {
@@ -3085,7 +3105,11 @@ character_event = {
 						has_opinion_modifier = { who = event_target:teacher name = opinion_budding_friendship }
 					}
 				}
-				tooltip = { add_friend = event_target:teacher }
+				tooltip = { add_friend = event_target:teacher 
+					add_alliance = {
+						who = event_target:teacher 
+						years = 100
+					}}
 			}
 			else = { # otherwise, add opinions... (*actually* added in follow-up)
 				tooltip = {
@@ -3305,6 +3329,10 @@ character_event = {
 				NOT = { is_friend = event_target:student }
 			}
 			add_friend = event_target:student
+					add_alliance = {
+						who = event_target:student 
+						years = 100
+					}
 		}
 	}
 
@@ -3368,6 +3396,10 @@ character_event = {
 					}
 				}
 				add_friend = event_target:student
+					add_alliance = {
+						who = event_target:student 
+						years = 100
+					}
 			}
 			else = { # otherwise, add opinions...
 				opinion = {

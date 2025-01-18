@@ -828,6 +828,10 @@ character_event = {
 		name = EVTOPTAHF25013
 
 		add_friend = event_target:scoped_slavic_savior
+					add_alliance = {
+						who = event_target:scoped_slavic_savior
+						years = 100
+					}
 	}
 
 	option = {

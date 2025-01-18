@@ -287,3 +287,71 @@ character_event = {
 		}
 	}
 }
+character_event = {
+	id = ATV.66
+	hide_window = yes
+	trigger = {
+		any_demesne_province = {
+			hospital_has_building = ct_tolled_brick_highway
+			NOT = {
+				has_province_modifier = tolled_brick_highway_modifier
+			}
+		}
+		NOT = {
+			has_province_modifier = tolled_brick_highway_modifier
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				hospital_has_building = ct_tolled_brick_highway
+				NOT = {
+					has_province_modifier = tolled_brick_highway_modifier
+				}
+			}
+
+			add_province_modifier = { 
+				name = tolled_brick_highway_modifier 
+				duration = 1095 
+				hidden = yes
+			}
+		}
+	}
+}
+character_event = {
+	id = ATV.67
+	hide_window = yes
+	trigger = {
+		any_demesne_province = {
+			hospital_has_building = ct_waystation_brick_highway
+			NOT = {
+				has_province_modifier = waystation_brick_highway_modifier
+			}
+		}
+		NOT = {
+			has_province_modifier = waystation_brick_highway_modifier
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				hospital_has_building = ct_waystation_brick_highway
+				NOT = {
+					has_province_modifier = waystation_brick_highway_modifier
+				}
+			}
+
+			add_province_modifier = { 
+				name = waystation_brick_highway_modifier 
+				duration = 1095 
+				hidden = yes
+			}
+		}
+	}
+}

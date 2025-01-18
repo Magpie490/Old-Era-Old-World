@@ -133,6 +133,10 @@ character_event = {
 			show_scope_change = no
 
 			add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 
 			character_event = {
 				id = 100002
@@ -176,6 +180,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -409,6 +417,10 @@ character_event = {
 		name = EVTOPTA100007
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -461,6 +473,10 @@ character_event = {
 		name = EVTOPTB100008
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -490,6 +506,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -528,6 +548,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -627,6 +651,10 @@ character_event = {
 			show_scope_change = no
 
 			add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 
 			character_event = {
 				id = 100016
@@ -686,6 +714,10 @@ character_event = {
 		}
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 	}
 
 	option = {
@@ -932,6 +964,10 @@ character_event = {
 		name = EVTOPTA100021
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		remove_trait = shy
 
 		if = {
@@ -1005,6 +1041,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -1265,6 +1305,10 @@ character_event = {
 		name = EVTOPTB100026
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -1353,6 +1397,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -1432,6 +1480,10 @@ character_event = {
 		name = EVTOPTC100030
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -1722,6 +1774,10 @@ character_event = {
 		name = EVTOPTA100036
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -1787,6 +1843,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -1960,6 +2020,10 @@ character_event = {
 		name = EVTOPTA100041
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -2054,6 +2118,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -2233,6 +2301,10 @@ character_event = {
 		name = EVTOPTA100051
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -2304,6 +2376,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 
 		remove_trait_silently_chaste_effect = yes
@@ -2750,6 +2826,10 @@ character_event = {
 		name = EVTOPTB100068
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -2777,6 +2857,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 
@@ -3052,6 +3136,10 @@ character_event = {
 		name = EVTOPTA100074
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -3104,6 +3192,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 
@@ -3283,6 +3375,10 @@ character_event = {
 		}
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -3350,6 +3446,10 @@ character_event = {
 			}
 
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -3599,6 +3699,10 @@ character_event = {
 		name = EVTOPTA100094
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -3645,6 +3749,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -3816,6 +3924,10 @@ character_event = {
 		name = EVTOPTA100101
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -3903,6 +4015,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 
@@ -4146,6 +4262,10 @@ character_event = {
 		trigger = { has_character_flag = crusader_prestige }
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		clr_character_flag = crusader_prestige
 
 		FROM = {
@@ -4168,6 +4288,10 @@ character_event = {
 		trigger = { has_character_flag = crusader_piety }
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		clr_character_flag = crusader_piety
 
 		FROM = {
@@ -4255,6 +4379,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 
@@ -4267,6 +4395,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -4523,6 +4655,10 @@ character_event = {
 		name = EVTOPTA100111
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			show_scope_change = no
@@ -4606,6 +4742,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 
@@ -4728,6 +4868,10 @@ character_event = {
 			}
 
 			add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 
 			character_event = {
 				id = 100116
@@ -4757,6 +4901,10 @@ character_event = {
 		name = EVTOPTA100116
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 	}
 
 	option = {
@@ -4773,6 +4921,7 @@ character_event = {
 				}
 
 				remove_friend = ROOT
+			break_alliance = ROOT
 			}
 
 			character_event = {
@@ -4796,6 +4945,7 @@ character_event = {
 		name = EVTOPTA100117
 
 		remove_friend = FROM
+			break_alliance = FROM
 
 		opinion = {
 			name = opinion_sad
@@ -5716,6 +5866,10 @@ character_event = {
 		name = EVTOPTA100172
 
 		add_friend = event_target:start_friend
+					add_alliance = {
+						who = event_target:start_friend
+						years = 100
+					}
 
 		event_target:start_friend = {
 			show_scope_change = no
@@ -5858,6 +6012,10 @@ character_event = {
 		}
 
 		add_friend = event_target:start_friend
+					add_alliance = {
+						who = event_target:start_friend
+						years = 100
+					}
 	}
 
 	option = {
@@ -6031,6 +6189,7 @@ character_event = {
 			show_scope_change = no
 
 			remove_friend = ROOT
+			break_alliance = ROOT
 
 			character_event = {
 				id = 100184
@@ -6082,6 +6241,7 @@ character_event = {
 		name = EVTOPTA100181
 
 		remove_friend = FROM
+			break_alliance = FROM
 
 		FROM = {
 			show_scope_change = no
@@ -6215,6 +6375,7 @@ character_event = {
 
 		tooltip = {
 			remove_friend = FROM
+			break_alliance = FROM
 		}
 	}
 }
@@ -6234,6 +6395,7 @@ character_event = {
 
 		tooltip = {
 			remove_friend = FROM
+			break_alliance = FROM
 		}
 	}
 }
@@ -8931,6 +9093,7 @@ character_event = {
 			show_scope_change = no
 
 			remove_friend = ROOT
+			break_alliance = ROOT
 
 			character_event = {
 				id = 100351
@@ -8975,6 +9138,7 @@ character_event = {
 		name = EVTOPTA100351
 
 		remove_friend = FROM
+			break_alliance = FROM
 	}
 
 	option = {
@@ -9007,6 +9171,7 @@ character_event = {
 		name = EVTOPTA100352
 
 		remove_friend = FROM
+			break_alliance = FROM
 
 		FROM = {
 			show_scope_change = no
@@ -9069,6 +9234,7 @@ character_event = {
 
 		clr_character_flag = friends_nomore
 		remove_friend = FROM
+			break_alliance = FROM
 	}
 }
 
@@ -10357,6 +10523,7 @@ character_event = {
 			if = {
 				limit = { is_friend = event_target:target_rival }
 				remove_friend = event_target:target_rival
+			break_alliance = event_target:target_rival
 			}
 		}
 
@@ -10485,6 +10652,7 @@ character_event = {
 		if = {
 			limit = { is_friend = FROMFROM }
 			remove_friend = FROMFROM
+			break_alliance = FROMFROM
 		}
 
 		tooltip = {

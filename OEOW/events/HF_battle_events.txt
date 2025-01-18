@@ -4766,6 +4766,10 @@ character_event = {
 
 				tooltip = {
 					add_friend = event_target:my_fellow_commander
+					add_alliance = {
+						who = event_target:my_fellow_commander
+						years = 100
+					}
 				}
 			}
 			else = { # Otherwise, add opinions... (*actually* added in follow-up)
@@ -4883,6 +4887,10 @@ character_event = {
 				}
 
 				add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 			}
 			else = {
 				opinion = {
@@ -4953,6 +4961,10 @@ character_event = {
 
 			tooltip = {
 				add_friend = event_target:my_fellow_commander
+					add_alliance = {
+						who = event_target:my_fellow_commander
+						years = 100
+					}
 			}
 		}
 		else = { # Otherwise, add opinions... (*actually* added in follow-up)
@@ -5098,6 +5110,10 @@ character_event = {
 			}
 
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 		else = {
 			opinion = {

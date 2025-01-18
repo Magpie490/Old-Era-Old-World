@@ -23,6 +23,13 @@ ca_culture_animal_1;Animal Farm;Ferme des animaux;Tierfarm;;Granja de animales;;
 ca_culture_animal_2;Animal Farm;Ferme des animaux;Tierfarm;;Granja de animales;;;;;;;;;x
 ca_culture_animal_3;Animal Farm;Ferme des animaux;Tierfarm;;Granja de animales;;;;;;;;;x
 ca_culture_animal_4;Animal Farm;Ferme des animaux;Tierfarm;;Granja de animales;;;;;;;;;x
+ca_beaurcratic_headquarters_1;County Office;;;;;;;;;;;;;x
+ca_beaurcratic_headquarters_2;Magistrate;;;;;;;;;;;;;x
+ca_beaurcratic_headquarters_3;Magistrate and Law Court;;;;;;;;;;;;;x
+ct_beaurcratic_headquarters_1;County Office;;;;;;;;;;;;;x
+ct_beaurcratic_headquarters_2;Magistrate;;;;;;;;;;;;;x
+ct_beaurcratic_headquarters_3;Magistrate and Law Court;;;;;;;;;;;;;x
+beaurcratic_headquarters_1_desc;The regional bureau through which all administration of this area is carried out. Its primary function is the collection of taxes and recording census data.;;;;;;;;;;;;;x
 ca_culture_animal_desc;An idyllic collection of fields and meadows, perfect for any type of animal!;Un ensemble idyllique de prés et de prairies, parfait pour tout type d'animaux !;Eine idyllische Sammlung von Feldern und Wiesen, ideal für alle Tierarten!;;Un conjunto idílico de campos y praderas, ¡perfecto para animales de cualquier clase!;;;;;;;;;x
 ca_culture_arberian_1;Stratiotet Stables;Écuries d'estradiot;Stratiot-Ställe;;Establos de estradiotes;;;;;;;;;x
 ca_culture_arberian_1_desc;These stables allow ruler to maintain a force of Stratiotet, elite Arberian light cavalry.;Ces écuries permettent au seigneur de maintenir une force d'estradiots, cavalerie légère d'élite arbérienne.;Diese Ställe erlauben es dem Herrscher eine Streitmacht aus leichter arberischer Kavallerie von Stratiotet aufrechtzuerhalten.;;Estos establos permiten mantener una fuerza de estradiotes, la caballería de élite de Arberia;;;;;;;;;x

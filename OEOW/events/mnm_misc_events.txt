@@ -1465,6 +1465,10 @@ character_event = {
 		name = EVTOPTA_MNM_10045
 
 		add_friend = event_target:potential_friend
+					add_alliance = {
+						who = event_target:potential_friend
+						years = 100
+					}
 
 		ai_chance = {
 			factor = 75

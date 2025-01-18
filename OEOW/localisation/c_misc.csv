@@ -14,12 +14,93 @@ cheat_dyn_heal;Protected Dynasty;;;;;;;;;;;;;x
 cheat_dyn_heal_desc;This person's dynasty is protected by some unknown force against diseases and injury;;;;;;;;;;;;;x
 cheat_priest_one;Gifted Priest;;;;;;;;;;;;;x
 cheat_steward_one;Capable Steward;;;;;;;;;;;;;x
+pillage_settlement_2;Pillage Holding;Piller la propriété;Siedlung plündern;;Saquear establecimiento;;;;;;;;;x
+pillage_settlement_2_desc;Start Pillaging this Holding.\n\nWhile Pillaging this Holding the revolt risk of the entire Province will be increased significantly, but in exchange you will receive the following every §Y6 months§! until the holding is completely destroyed:;Commencer à piller cette propriété.\n\nPiller cette propriété augmente significativement le risque de révolte du comté, mais en échange vous recevrez tous les §Y6 mois§! jusqu'à la destruction complète de la propriété les choses suivantes :;Beginnt mit der Plünderung dieser Liegenschaft.\n\nWährend diese Liegenschaft geplündert wird, steigt das Aufstandsrisiko in der gesamten Provinz enorm. Im Gegenzug erhaltet Ihr aber alle §Y6 Monate§! bis zur vollständigen Zerstörung der Liegenschaft Folgendes:;;Empezar a saquear este asentamiento.\n\nSaquear este asentamiento aumentará considerablemente el riesgo de rebelión de toda la provincia, pero a cambio recibirás lo siguiente cada §Y6 meses§! hasta que el asentamiento haya sido totalmente destruido: ;;;;;;;;;x
+recently_burnt_the_land;Recently Pillaged;Pillée récemment;Kürzlich geplündert;;Recientemente saqueado;;;;;;;;;x
+burnt_the_land;Ravaged Lands;Terres dévastées;Verwüstete Länder;;Tierras devastadas;;;;;;;;;x
+grant_pope_defacto_ownership_catholic;Transfer Monestary Land;;;;;;;;;;;;;x
+grant_pope_defacto_ownership_catholic_desc;In return for a gift of gold the church will take defacto ownership of the land a monestary is hosted on.;;;;;;;;;;;;;x
+scourge_of_god;Blood of [This.GetFirstNameWithNick];;;;;;;;;x
+scourge_of_god;This character claims descent from [This.GetFirstNameWithNick] who collapsed a great empire under his military might;;;;;;;;;x
+
+dismantle_mega_empire_cb;Dismantle Threat of [Recipient.PrimaryTitle.GetFullName];;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;
+dismantle_mega_empire_cb_desc;The power and size of this Empire must be halted before it can grow exponentially.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;
+CB_NAME_DISMANTLE_MEGA_EMPIRE;Dismantle the threat of [Recipient.PrimaryTitle.GetFullName];;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;
+WAR_NAME_DISMANTLE_MEGA_EMPIRE;War to Dismantle the threat of [Recipient.PrimaryTitle.GetFullName];;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;
+dismantle_mega_empire_success_tt;[This.GetTitledName] will have [This.GetHerHis] Empire dismantled.;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;
+skirmisher_guard;Skirmisher Guard;;;;;;;;;;;;;x
+heavy_infantry_guard;Heavy Infantry Guard;;;;;;;;;;;;;x
+spear_guard;Spear Guard;;;;;;;;;;;;;x
+light_cavalry_guard;Light Cavalry Guard;;;;;;;;;;;;;x
+heavy_cavalry_guard;Heavy Cavalry Guard;;;;;;;;;;;;;x
+ranged_guard;Ranged Guard;;;;;;;;;;;;;x
+skirmisher_guard_desc;Equipped with Slings, Javalins and Axes, this guard allows the general to better command Skirmishers by integrating into their structure.;;;;;;;;;;;;;x
+heavy_infantry_guard_desc;Equipped with Heavy Armour and weapons, this guard allows the general to better command Heavy Infantry by integrating into their structure.;;;;;;;;;;;;;x
+spear_guard_desc;Equipped with Light Armour and Spears, this guard allows the general to better command Spear troops by integrating into their structure.;;;;;;;;;;;;;x
+light_cavalry_guard_desc;Equipped with Light Armour and fast Mounts, this guard allows the general to better command Light Cavalry by integrating into their structure.;;;;;;;;;;;;;x
+heavy_cavalry_guard_desc;Equipped with Heavy Armour and Large Mounts, this guard allows the general to better command Heavy Cavalry by integrating into their structure.;;;;;;;;;;;;;x
+ranged_guard_desc;Equipped with Bows, Guns or Crossbows, this guard allows the general to better command Ranged troops by integrating into their structure.;;;;;;;;;;;;;x
+FEUDAL_ART_RET_1;Heavy Artillery;;;;;;;;;x
+heavy_artillery;Heavy Artillery;;;;;;;;;x
+heavy_artillery_offensive;Heavy Artillery Offensive;;;;;;;;;x
+heavy_artillery_defensive;Heavy Artillery Defensive;;;;;;;;;x
+heavy_artillery_morale;Heavy Artillery Morale;;;;;;;;;x
+FEUDAL_PRESTIGE_RET_1;Super Heavy Noble Infantry;;;;;;;;;x
+superheavy_infantry;Super Heavy Noble Infantry;;;;;;;;;x
+superheavy_infantry_offensive;Super Heavy Noble Infantry Offensive;;;;;;;;;x
+superheavy_infantry_defensive;Super Heavy Noble Infantry Defensive;;;;;;;;;x
+superheavy_infantry_morale;Super Heavy Noble Infantry Morale;;;;;;;;;x
+title_master_of_the_audit;Master of the Audit;;;;;;;;;x
+title_master_of_the_audit_desc;The master of the audit is tasked with supervising all areas of government, and bringing any acts of corruption they detect to light. It is a position of great trust, since nobody audits the master of the audit...;;;;;;;;;x
+choose_skirmisher_guard;Choose a Skirmisher Guard;;;;;;;;;;;;;x
+choose_skirmisher_guard_descI shall take a Skirmisher guard to accompany me into battle;;;;;;;;;;;;;x
+choose_heavy_infantry_guard;Choose a Heavy Infantry Guard;;;;;;;;;;;;;x
+choose_heavy_infantry_guard_desc;I shall take a Heavy Infantry guard to accompany me into battle;;;;;;;;;;;;;x
+choose_spear_guard;Choose a Spear Guard;;;;;;;;;;;;;x
+choose_spear_guard_desc;I shall take a Spear guard to accompany me into battle;;;;;;;;;;;;;x
+choose_light_cavalry_guard;Choose a Light Cavalry Guard;;;;;;;;;;;;;x
+choose_light_cavalry_guard_desc;I shall take a Light Cavalry guard to accompany me into battle;;;;;;;;;;;;;x
+choose_heavy_cavalry_guard;Choose a Heavy Cavalry Guard;;;;;;;;;;;;;x
+choose_heavy_cavalry_guard_desc;I shall take a Heavy Cavalry guard to accompany me into battle;;;;;;;;;;;;;x
+choose_ranged_guard;Choose a Ranged Guard;;;;;;;;;;;;;x
+choose_ranged_guard_desc;I shall take a ranged guard to accompany me into battle;;;;;;;;;;;;;x
+snowblockspasses_modifier;Snowstorms blocking mountain passes;;;;;;;;;x
+EVTDESCA_EDU_2;I have been observing my ward [From.GetName] recently, and I have noticed that [From.GetSheHe] has been getting into the same kind of interests as me. Should I do something about this?;;;;;;;;;;;;;x
+EVTOPTA_EDU_2;There's no need for that.;;;;;;;;;;;;;x
+EVTOPTB_EDU_2;Try to get [From.GetHerHim] to stop.;;;;;;;;;;;;;x
+child_lifestyle_no_intervention;Your ward will pick up one of your lifestyles.;;;;;;;;;;;;;x
+child_lifestyle_intervention;You will try to stop your ward from picking up one of your hobbies, though you are not guaranteed to succeed.;;;;;;;;;;;;;x
+EVTDESCA_EDU_3;Recently I have gained interest in one of [Educator.GetTitledFirstName]'s hobbies. Though a small occupation at first, I feel like I could do this for the rest of my life.;;;;;;;;;;;;;x
+EVTOPTA_EDU_3;The castle has never been this efficient before!;;;;;;;;;;;;;x
+EVTOPTB_EDU_3;So the difference between a trebuchet and a catapult is...;;;;;;;;;;;;;x
+EVTOPTC_EDU_3;My sword is an extension of my arm.;;;;;;;;;;;;;x
+EVTOPTD_EDU_3;Now what is this 'En passant'...;;;;;;;;;;;;;x
+EVTOPTE_EDU_3;There's nothing better than to see your work bear fruits.;;;;;;;;;;;;;x
+EVTOPTF_EDU_3;Nobody throws parties better than me!;;;;;;;;;;;;;x
+EVTOPTG_EDU_3;It is not about efficiency, but the thrill of the hunt.;;;;;;;;;;;;;x
+EVTOPTH_EDU_3;it is amazing how much the human body can endure...;;;;;;;;;;;;;x
+EVTOPTI_EDU_3;Better to stab someone in the back than be the one stabbed.;;;;;;;;;;;;;x
+EVTOPTJ_EDU_3;The best kind of knowledge is the hidden one.;;;;;;;;;;;;;x
+EVTOPTK_EDU_3;The pen is mighter than the sword.;;;;;;;;;;;;;x
+EVTOPTL_EDU_3;I wonder what my friends are up to...;;;;;;;;;;;;;x
+EVTOPTM_EDU_3;So Knights are good at flanking, but Spearmen are..;;;;;;;;;;;;;x
+EVTOPTN_EDU_3;Truth is revealed in [Root.Religion.GetScriptureName].;;;;;;;;;;;;;x
+EVTOPTO_EDU_3;Roses are red, violets are blue...;;;;;;;;;;;;;x
+EVTOPTP_EDU_3;Good thing I like rabbit!;;;;;;;;;;;;;x
+EVTOPTQ_EDU_3;My head hurts....;;;;;;;;;;;;;x
+EVTOPTR_EDU_3;I have gained a distaste for meat.;;;;;;;;;;;;;x
+EVTOPTS_EDU_3;Fish fear me, no beast dare make a sound in my presence.;;;;;;;;;;;;;x
+EVTOPTT_EDU_3;So that's how you get girls to like you!;;;;;;;;;;;;;x
+EVTOPTU_EDU_3;So that's how you get boys to like you!;;;;;;;;;;;;;x
 disloyal_vassal;Disloyal Vassal;;;;;;;;;;;;;x
 disloyal_vassal_desc;This is one seriously perturbed vassal.;;;;;;;;;;;;;x
 healthy_vassal;Healthy Vassal;;;;;;;;;;;;;x
 healthy_vassal_desc;This character is the very aspect of healthy living.;;;;;;;;;;;;;x
 cheat_leadership;Outstanding Leader;;;;;;;;;;;;;x
 cheat_leadership_desc;This character is a true war master!;;;;;;;;;;;;;x
+ethiopian_imperial_government_FEATURES;§Y*§! This government is §MBureaucratic§! and thus can either §Gbenefit from an efficient bureaucracy§! if the ruler and councillors are talented and virtuous or §Rsuffer from a corrupt bureaucracy§! if the ruler and councillors are inept and sinful(if fitna fracture is enabled);;;;;;;;;x
+ethiopian_imperial_government;Fetha Nägäst;;;;;;x
+ethiopian_imperial_government_desc;The Fetha Nägäst or "Law of Kings" is the Ethiopian legal code, written long before the Event and based largely on ancient Byzantine law, albeit with greater focus on ecclesiastical law and monastic towns. The Imperial family holds great influence over the Empire, the successor being elected by Councilors and Commanders from among the ruling dynasty.;;;;;;x
 t_buff_provinces;Buff Provinces;;;;;;;;;;;;;x
 t_buff_provinces_desc;Buffs all provinces within your realm.;;;;;;;;;;;;;x
 t_buff_provinces_off;Remove Province Buffs;;;;;;;;;;;;;x

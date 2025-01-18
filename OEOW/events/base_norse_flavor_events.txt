@@ -452,6 +452,10 @@ character_event = {
 				}
 
 				add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 			}
 		}
 	}
@@ -491,6 +495,10 @@ character_event = {
 				}
 
 				add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 			}
 		}
 	}
@@ -556,6 +564,10 @@ character_event = {
 				}
 
 				add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 			}
 		}
 
@@ -609,6 +621,10 @@ character_event = {
 			}
 
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 
 		clr_character_flag = was_diagnosed_lucky

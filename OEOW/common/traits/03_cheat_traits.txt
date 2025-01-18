@@ -44,6 +44,63 @@ cheat_wealth_trait = {
 	random = no
 	monthly_character_wealth = 100
 }
+
+skirmisher_guard = {#skirmishers
+	
+	combat_rating = -5
+	command_modifier = {
+		speed = 0.1
+		light_infantry = 0.1
+		bike_cavalry = 0.1
+	}
+}
+ranged_guard = {#skirmishers
+	
+	combat_rating = -10
+	command_modifier = {
+		speed = 0.1
+		archers = 0.1
+		gunmen = 0.1
+	}
+}
+
+heavy_infantry_guard = {#proper infantry
+	
+	combat_rating = 15
+	command_modifier = {
+		heavy_infantry = 0.1
+		flamethrowers = 0.1
+		superheavy_infantry = 0.1
+	}
+}
+spear_guard = {#proper infantry
+	
+	combat_rating = 15
+	command_modifier = {
+		pikemen = 0.1
+		speed = 0.1
+	}
+}
+
+light_cavalry_guard = {#cavalry
+	combat_rating = 5
+	command_modifier = {
+		speed = 0.2
+		camel_cavalry = 0.1
+		horse_archers = 0.1
+		light_cavalry = 0.1
+		carbineers = 0.1
+	}
+}
+heavy_cavalry_guard = {#cavalry
+	combat_rating = 20
+	command_modifier = {
+		speed = 0.05
+		war_elephants = 0.1
+		chariots = 0.1
+		knights = 0.1
+	}
+}
 #Loyal Vassal - Use this to settle your realm down. All vassals directly below you will love you.
 vassal_duty = {
 	cached = yes	#Saved for use in events

@@ -4562,6 +4562,10 @@ character_event = {
 			show_scope_change = no
 
 			add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 		}
 
 		clr_character_flag = best_friends_forever

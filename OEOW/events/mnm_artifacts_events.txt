@@ -2420,6 +2420,10 @@ narrative_event = {
 		random = {
 			chance = 20
 			add_friend = event_target:relic_hunter
+					add_alliance = {
+						who = event_target:relic_hunter
+						years = 100
+					}
 		}
 	}
 
@@ -2804,6 +2808,10 @@ character_event = {
 		random = {
 			chance = 20
 			add_friend = event_target:relic_hunter
+					add_alliance = {
+						who = event_target:relic_hunter
+						years = 100
+					}
 		}
 	}
 

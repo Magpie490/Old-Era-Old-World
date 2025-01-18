@@ -1,6 +1,7 @@
-# All global modifiers are here
-# They are applied from certain game-features
-# Effects are fully scriptable here
+# All global modifiers are here.  They are applied from certain game-features.
+#
+# Effects are fully scriptable here.
+
 # The names can NOT be removed or changed since the code references them
 
 ##########################################################################
@@ -54,7 +55,7 @@ very_hard_ai = {
 ##########################################################################
 
 province_base_values = {
-	supply_limit = 5 # 5K troops
+	supply_limit = 10 # 10K troops
 }
 
 coastal = {
@@ -73,7 +74,6 @@ sea_zone = {
 land_province = {
 	max_attrition = 0.05
 }
-
 
 mild_winter = {
 	supply_limit = -2
@@ -96,7 +96,8 @@ severe_winter = {
 	levy_reinforce_rate = -0.15
 }
 
-out_of_supply = {
+out_of_supply = 
+{
 	max_attrition = 0.1
 }
 
@@ -105,7 +106,7 @@ no_adjacent_controlled = {
 
 # Another culture in the same culture group
 same_culture_group = {
-	local_revolt_risk = 0.02
+	local_revolt_risk = 0.01
 }
 
 # A culture in another culture group
@@ -115,18 +116,19 @@ non_accepted_culture = {
 
 # Another religion in the same religion group
 same_religion_group = {
-	local_revolt_risk = 0.02
+	local_revolt_risk = 0.01
 }
 
 # A religion in another religion group
 different_religion = {
-	local_revolt_risk = 0.03
+	local_revolt_risk = 0.02
 }
 
 # County vs Count is heresy vs parent religion
 county_heresy = {
-	local_revolt_risk = 0.04
+	local_revolt_risk = 0.03
 }
+
 # Nomads: Pressure from minor Clans to form another Major Clan
 # Multiplied by the number counties held above the required proportion (see define MIN_CLAN_LAND_PROPORTION)
 nomad_ruling_clan_too_powerful = {
@@ -135,147 +137,132 @@ nomad_ruling_clan_too_powerful = {
 
 # Isolated county
 county_isolated = {
-	local_revolt_risk = 0.05
+	local_revolt_risk = 0.04
 }
 
 new_administration = {
-	icon = 19
-
 	levy_reinforce_rate = -0.7
 	local_tax_modifier = -0.3
+	icon = 19
 }
 
 recently_conquered = {
-	icon = 19
-
 	levy_size = -2
 	levy_reinforce_rate = -1
 	local_tax_modifier = -1
+	icon = 19
 }
 
 occupied = {
-	icon = 19
-
 	levy_size = -2
 	levy_reinforce_rate = -1
 	local_tax_modifier = -1.5
+	icon = 19
 }
 
 occupied_different_culture = {
-	icon = 20
-
 	levy_size = -0.25
 	levy_reinforce_rate = -0.25
 	local_tax_modifier = -0.25
+	icon = 20
 }
 
 occupied_different_culturegroup = {
-	icon = 20
-
 	levy_size = -0.5
 	levy_reinforce_rate = -0.5
 	local_tax_modifier = -0.5
+	icon = 20
 }
 
 occupied_different_religion = {
-	icon = 35
-
 	levy_size = -0.5
 	levy_reinforce_rate = -0.5
 	local_tax_modifier = -0.5
+	icon = 35
 }
 
 occupied_different_religiongroup = {
-	icon = 35
-
 	levy_size = -2
 	levy_reinforce_rate = -0.5
 	local_tax_modifier = -0.75
+	icon = 35
 }
 
 looted_modifier = {
-	icon = 24
-
 	local_tax_modifier = -0.25
+	
+	icon = 24
 }
 
 maintaining_mercenary_band = {
-	icon = 31
-
 	levy_size = -0.025
 	levy_reinforce_rate = -0.10
 	max_manpower_mult = -0.1
 	manpower_growth = -0.1
+	icon = 31
 }
 
 maintaining_mercenary_band_2 = {
-	icon = 31
-
 	levy_size = -0.05
 	levy_reinforce_rate = -0.20
 	max_manpower_mult = -0.1
 	manpower_growth = -0.1
+	icon = 31
 }
 
 maintaining_mercenary_band_3 = {
-	icon = 31
-
 	levy_size = -0.075
 	levy_reinforce_rate = -0.30
 	max_manpower_mult = -0.1
 	manpower_growth = -0.1
+	icon = 31
 }
 
 maintaining_mercenary_band_4 = {
-	icon = 31
-
 	levy_size = -0.1
 	levy_reinforce_rate = -0.40
 	max_manpower_mult = -0.1
 	manpower_growth = -0.1
+	icon = 31
 }
 
 maintaining_mercenary_band_5 = {
-	icon = 31
-
 	levy_size = -0.125
 	levy_reinforce_rate = -0.50
 	max_manpower_mult = -0.1
 	manpower_growth = -0.1
+	icon = 31
 }
 
 maintaining_mercenary_band_6 = {
-	icon = 31
-
 	levy_size = -0.15
 	levy_reinforce_rate = -0.60
 	max_manpower_mult = -0.1
 	manpower_growth = -0.1
+	icon = 31
 }
 
 maintaining_mercenary_band_7 = {
-	icon = 31
-
 	levy_size = -0.175
 	levy_reinforce_rate = -0.70
 	max_manpower_mult = -0.1
 	manpower_growth = -0.1
+	icon = 31
 }
 
 occupied_tutorial = {
 	icon = 19
-
 	levy_size = -2
 	garrison_size = -0.9
 }
-
 troops_tutorial = {
 	icon = 19
-
 	levy_size = 4
 }
 
 under_siege = {
+	local_tax_modifier = -0.1
+	disease_defence = -1
 }
 
 revolt_risk = {
@@ -283,15 +270,13 @@ revolt_risk = {
 }
 
 foreign_rebels = {
+	local_revolt_risk = 0.04
 	icon = 1
-
-	local_revolt_risk = 0.05
 }
 
 jizya_tax = {
-	icon = 4
-
 	local_tax_modifier = 0.25
+	icon = 4
 }
 
 settled_adventurer = {
@@ -302,143 +287,249 @@ settled_adventurer = {
 # Combat Static Modifiers
 ##########################################################################
 
-river_crossing = {
+river_crossing = {	
 	icon = 2
-
 	archers_defensive = -0.1
-	archers_offensive = -0.05
 	light_infantry_defensive = -0.1
-	light_infantry_offensive = -0.1
 	pikemen_defensive = -0.15
-	pikemen_offensive = -0.15
 	heavy_infantry_defensive = -0.15
-	heavy_infantry_offensive = -0.15
+	flamethrowers_defensive = -0.175
 	light_cavalry_defensive = -0.125
-	light_cavalry_offensive = -0.125
+	bike_cavalry_defensive = -0.125
 	knights_defensive = -0.15
-	knights_offensive = -0.15
 	horse_archers_defensive = -0.125
+	carbineers_defensive = -0.125
+	gunmen_defensive = -0.1
+	chariots_defensive = -0.125
+
+	archers_offensive = -0.05
+	light_infantry_offensive = -0.1
+	pikemen_offensive = -0.15
+	heavy_infantry_offensive = -0.15
+	flamethrowers_offensive = -0.175
+	light_cavalry_offensive = -0.125
+	bike_cavalry_offensive = -0.125
+	knights_offensive = -0.15
 	horse_archers_offensive = -0.075
+	carbineers_offensive = -0.075
+	gunmen_offensive = -0.15
+	chariots_offensive = -0.125
 }
 
-major_river_crossing = {
+major_river_crossing = {	
 	icon = 2
-
 	archers_defensive = -0.2
-	archers_offensive = -0.1
 	light_infantry_defensive = -0.2
-	light_infantry_offensive = -0.2
 	pikemen_defensive = -0.3
-	pikemen_offensive = -0.3
 	heavy_infantry_defensive = -0.3
-	heavy_infantry_offensive = -0.3
 	light_cavalry_defensive = -0.25
-	light_cavalry_offensive = -0.25
+	flamethrowers_defensive = -0.325
+	bike_cavalry_defensive = -0.25
 	knights_defensive = -0.3
-	knights_offensive = -0.3
 	horse_archers_defensive = -0.25
+	carbineers_defensive = -0.25
+	gunmen_defensive = -0.2
+	chariots_defensive = -0.25
+
+	archers_offensive = -0.1
+	light_infantry_offensive = -0.2
+	pikemen_offensive = -0.3
+	heavy_infantry_offensive = -0.3
+	light_cavalry_offensive = -0.25
+	flamethrowers_offensive = -0.325
+	bike_cavalry_offensive = -0.25
+	knights_offensive = -0.3
 	horse_archers_offensive = -0.15
+	carbineers_offensive = -0.15
+	gunmen_offensive = -0.15
+	chariots_offensive = -0.25
 }
 
 strait_crossing = {
 	icon = 3
+	archers_defensive = -0.25
+	light_infantry_defensive = -0.25
+	pikemen_defensive = -0.35
+	heavy_infantry_defensive = -0.35
+	light_cavalry_defensive = -0.3
+	flamethrowers_defensive = -0.35
+	bike_cavalry_defensive = -0.3
+	knights_defensive = -0.35
+	horse_archers_defensive = -0.3
+	carbineers_defensive = -0.3
+	gunmen_defensive = -0.25
+	chariots_defensive = -0.3
 
-	archers_defensive = -0.15
-	archers_offensive = -0.1
-	light_infantry_defensive = -0.15
-	light_infantry_offensive = -0.15
-	pikemen_defensive = -0.3
-	pikemen_offensive = -0.3
-	heavy_infantry_defensive = -0.3
-	heavy_infantry_offensive = -0.3
-	light_cavalry_defensive = -0.2
-	light_cavalry_offensive = -0.2
-	knights_defensive = -0.3
-	knights_offensive = -0.3
-	horse_archers_defensive = -0.2
+	archers_offensive = -0.15
+	light_infantry_offensive = -0.25
+	pikemen_offensive = -0.35
+	heavy_infantry_offensive = -0.35
+	light_cavalry_offensive = -0.3
+	flamethrowers_offensive = -0.35
+	bike_cavalry_offensive = -0.3
+	knights_offensive = -0.35
 	horse_archers_offensive = -0.2
+	carbineers_offensive = -0.2
+	gunmen_offensive = -0.2
+	chariots_offensive = -0.3
 }
 
 amphibious_landing = {
 	icon = 4
-
 	archers_defensive = -0.15
-	archers_offensive = -0.1
 	light_infantry_defensive = -0.15
-	light_infantry_offensive = -0.15
 	pikemen_defensive = -0.2
-	pikemen_offensive = -0.2
 	heavy_infantry_defensive = -0.2
-	heavy_infantry_offensive = -0.2
 	light_cavalry_defensive = -0.175
-	light_cavalry_offensive = -0.175
+	flamethrowers_defensive = -0.225
+	bike_cavalry_defensive = -0.175
 	knights_defensive = -0.2
-	knights_offensive = -0.2
 	horse_archers_defensive = -0.175
+	carbineers_defensive = -0.175
+	gunmen_defensive = -0.15
+	chariots_defensive = -0.175
+
+	archers_offensive = -0.1
+	light_infantry_offensive = -0.15
+	pikemen_offensive = -0.2
+	heavy_infantry_offensive = -0.2
+	light_cavalry_offensive = -0.175
+	flamethrowers_offensive = -0.225
+	bike_cavalry_offensive = -0.175
+	knights_offensive = -0.2
 	horse_archers_offensive = -0.125
+	carbineers_offensive = -0.125
+	gunmen_offensive = -0.15
+	chariots_offensive = -0.175
 }
 
 defenderbonus_mountain = {
 	icon = 1
-
 	archers_defensive = 1.0
-	archers_offensive = 0.5
 	light_infantry_defensive = 1.0
-	light_infantry_offensive = 1.0
+	bike_cavalry_defensive = 1.0
 	pikemen_defensive = 0.5
 	heavy_infantry_defensive = 0.5
+	flamethrowers_defensive = 0.6
+	gunmen_defensive = 1.0
 
+	archers_offensive = 0.5
+	light_infantry_offensive = 1.0
+	bike_cavalry_offensive = 1.0
+	gunmen_offensive = 0.5
 }
 
 defenderbonus_hills = {
 	icon = 1
-
 	archers_defensive = 0.5
-	archers_offensive = 0.2
 	light_infantry_defensive = 0.3
+	bike_cavalry_defensive = 0.3
 	pikemen_defensive = 0.2
-	pikemen_offensive = 0.1
 	heavy_infantry_defensive = 0.2
 	horse_archers_defensive = 0.15
-	horse_archers_offensive = 0.10
+	carbineers_defensive = 0.15
 	light_cavalry_defensive = 0.15
+	gunmen_defensive = 0.5
+
+	archers_offensive = 0.2
+	pikemen_offensive = 0.1
+	horse_archers_offensive = 0.10
+	carbineers_offensive = 0.10
+	gunmen_offensive = 0.2
 }
 
 defenderbonus_jungle = {
 	icon = 1
-
 	archers_defensive = 0.3
 	light_infantry_defensive = 0.5
-	light_infantry_offensive = 0.5
+	bike_cavalry_defensive = 0.5
 	pikemen_defensive = 0.2
-	pikemen_offensive = 0.1
 	heavy_infantry_defensive = 0.1
-	heavy_infantry_offensive = 0.1
 	horse_archers_defensive = -0.25
+	carbineers_defensive = -0.25
+	gunmen_defensive = -0.1
+
+	light_infantry_offensive = 0.5
+	heavy_infantry_offensive = 0.1
+	bike_cavalry_offensive = 0.5
+	flamethrowers_offensive = 0.1
+	pikemen_offensive = 0.1
 	horse_archers_offensive = -0.15
+	carbineers_offensive = -0.15
+	gunmen_offensive = -0.1
 }
 
 defenderbonus_forest = {
 	icon = 1
-
 	archers_defensive = 0.3
 	light_infantry_defensive = 0.3
-	light_infantry_offensive = 0.3
 	pikemen_defensive = 0.1
-	pikemen_offensive = 0.1
 	heavy_infantry_defensive = 0.1
+	bike_cavalry_defensive = 0.3
+	flamethrowers_defensive = 0.1
+	gunmen_defensive = 0.3
+
+	light_infantry_offensive = 0.3
 	heavy_infantry_offensive = 0.1
+	bike_cavalry_offensive = 0.3
+	flamethrowers_offensive = 0.1
+	pikemen_offensive = 0.1
+	gunmen_offensive = -0.05
 }
 
 defenderbonus_desert = {
 	icon = 1
-
 	horse_archers_defensive = 0.15
-	horse_archers_offensive = 0.15
+	carbineers_defensive = 0.15
 	light_cavalry_defensive = 0.15
-	light_cavalry_offensive = 0.15
 	camel_cavalry_defensive = 0.50
+	chariots_defensive = 0.2
+
+	horse_archers_offensive = 0.15
+	carbineers_offensive = 0.15
+	light_cavalry_offensive = 0.15
 	camel_cavalry_offensive = 0.50
+	chariots_offensive = 0.2
+}
+
+defenderbonus_tells = {
+	icon = 1
+	archers_defensive = 0.55
+	light_infantry_defensive = 0.35
+	pikemen_defensive = 0.25
+	heavy_infantry_defensive = 0.25
+	bike_cavalry_defensive = 0.35
+	flamethrowers_defensive = 0.3
+	gunmen_defensive = 0.55
+	knights_defensive = -0.2
+
+	archers_offensive = 0.25
+	pikemen_offensive = 0.15
+	knights_offensive = -0.2
+	gunmen_offensive = 0.25
+}
+
+defenderbonus_karst = {
+	icon = 1
+	archers_defensive = 0.5
+	light_infantry_defensive = 0.4
+	bike_cavalry_defensive = 0.4
+	pikemen_defensive = 0.4
+	heavy_infantry_defensive = 0.2
+	flamethrowers_defensive = 0.2
+	horse_archers_defensive = -0.15
+	carbineers_defensive = -0.15
+	light_cavalry_defensive = -0.15
+	knights_defensive = -0.2
+	gunmen_defensive = 0.5
+
+	archers_offensive = 0.2
+	pikemen_offensive = -0.1
+	horse_archers_offensive = -0.10
+	carbineers_offensive = -0.10
+	light_cavalry_offensive = -0.15
+	knights_offensive = -0.2
+	gunmen_offensive = 0.2
 }
 
 personally_leading_troops = {
@@ -454,6 +545,7 @@ static_diplomacy_mod = {
 }
 
 static_intrigue_mod = {
+	plot_power_modifier = 0.01
 }
 
 static_stewardship_mod = {
@@ -473,7 +565,7 @@ static_learning_mod = {
 ##########################################################################
 
 base_values = {
-	land_organisation = 0.2 # 20% morale recovery
+	land_organisation = 0.2			#20% morale recovery.
 }
 
 war = {
@@ -632,10 +724,10 @@ age_very_old = {
 	combat_rating = -35
 }
 
-
+#MNM Modifier
 
 ##########################################################################
-# Job Action Modifiers (Monks & Mystics Offmap Modifier)
+# Job Action Modifiers
 ##########################################################################
 
 statecraft_liege_mod = {
@@ -646,19 +738,17 @@ apostate_liege_mod = {
 	monthly_character_piety = 0.030
 }
 
-# Only one of the two is used, the appropriate one for your government type
 organize_army_liege_mod = {
-	retinue_maintenence_cost = -0.01
+	retinue_maintenence_cost = -0.01	# only one of the two is used, the appropriate one for your government type
 	horde_maintenence_cost = -0.01
 }
-
 ##########################################################################
-# MNM Modifier
+# #MNM Modifier
 ##########################################################################
 
 successful_mission = {
 	society_influence = 1
-	static_modifier_cap = 10 # How many you can stack together
+	static_modifier_cap = 10 #How many you can stack together
 }
 
 failed_mission = {
@@ -667,7 +757,7 @@ failed_mission = {
 }
 
 ##########################################################################
-# Government modifiers
+# #Government modifiers
 ##########################################################################
 
 # Applied for Nomads if the province is in the steppe, desert, and plains
@@ -675,6 +765,7 @@ nomad_horse_offensive_modifier = {
 	light_cavalry_offensive = 0.05
 	knights_offensive = 0.05
 	horse_archers_offensive = 0.05
+	carbineers_offensive = 0.05
 }
 
 # Applied for Nomads if the province is in the artctic, hills, or mountains
@@ -682,6 +773,7 @@ nomad_horse_defensive_modifier = {
 	light_cavalry_defensive = 0.05
 	knights_defensive = 0.05
 	horse_archers_defensive = 0.05
+	carbineers_defensive = 0.05
 }
 
 # Applied to tribal holdings if you're of the wrong religion group
@@ -720,7 +812,7 @@ tribal_wrong_culture_modifier = {
 }
 
 ###########################################################################
-# Liege levy modifiers
+# #Liege levy modifiers
 ##########################################################################
 # Of the following, the one highest up that is applicable will be applied. E.G., capital_county overrides capital_duchy
 
@@ -731,6 +823,7 @@ capital_county_independent_holder = {
 
 # Applied to your holdings in your capital province if you're a count and a vassal
 capital_county_vassal_count = {
+	
 }
 
 # Applied to your holdings in your capital province if you're above count level and a vassal

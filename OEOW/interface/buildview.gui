@@ -444,7 +444,7 @@ guiTypes = {
 		iconType = {
 			name = "icon_type"
 			spriteType = "GFX_buildview_building_strip_small"
-			position = { x = 9993 y = 3 }
+			position = { x = 305 y = 6 }
 			orientation = "UPPER_LEFT"
 			frame = 1
 		}

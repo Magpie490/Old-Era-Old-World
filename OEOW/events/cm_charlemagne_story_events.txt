@@ -821,6 +821,10 @@ character_event = {
 		name = EVTOPTA_CM_1052
 
 		add_friend = new_character
+					add_alliance = {
+						who = new_character
+						years = 100
+					}
 	}
 }
 

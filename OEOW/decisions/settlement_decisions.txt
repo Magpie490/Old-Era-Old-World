@@ -11,7 +11,149 @@
 #
 
 settlement_decisions = {
-
+grant_pope_defacto_ownership_catholic = {
+		only_independent = yes
+		filter = realm_owned
+		ai_target_filter = realm_owned
+		ai_check_interval = 48
+		
+		from_potential = {
+			is_playable = yes
+			OR = {
+				religion = catholic
+				religion = fraticelli
+				religion = koptic
+				religion = sevillian
+			}
+			NOT = {
+				has_character_modifier = sisu_change_cooldown
+			}
+		}
+		
+		potential = {
+			holding_type = temple
+			location = {
+				OR = {
+					conditional_tooltip = {
+						trigger = {
+							religion = catholic
+						}
+						religion = catholic
+					}
+					conditional_tooltip = {
+						trigger = {
+							religion = fraticelli
+						}
+						religion = fraticelli
+					}
+					conditional_tooltip = {
+						trigger = {
+							religion = koptic
+						}
+						religion = koptic
+					}
+					conditional_tooltip = {
+						trigger = {
+							religion = sevillian
+						}
+						religion = sevillian
+					}
+				}
+			}
+			holder_scope = {
+				OR = {
+					character = FROM
+					any_liege = {
+						character = FROM
+					}
+				}
+			}
+		}
+		
+		allow = {
+			FROM = {
+				independent = yes
+				age = 16
+				war = no
+				in_command = no
+				prisoner = no
+				is_incapable = no
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						religion = catholic
+					}
+				}
+				k_papacy = {
+					holder_scope = {
+						grant_title = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						religion = fraticelli
+					}
+				}
+				d_fraticelli = {
+					holder_scope = {
+						grant_title = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						religion = koptic
+					}
+				}
+				k_koptic = {
+					holder_scope = {
+						grant_title = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						religion = sevillian
+					}
+				}
+				k_sevillian_pope = {
+					holder_scope = {
+						grant_title = ROOT
+					}
+				}
+			}
+			FROM = {
+				add_character_modifier = {
+					modifier = sisu_change_cooldown
+					hidden = yes
+					months = 24
+				}
+				wealth = 400
+				piety = 150
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { 
+				factor = 0.01
+			}
+			modifier = { 
+				factor = 0.5
+			}
+		}
+	}
 	convert_tribal_to_castle = {
 		# filter = owned # CleanSlate: Nonfunctional
 		ai_target_filter = owned
@@ -395,259 +537,701 @@ settlement_decisions = {
 		}
 	}
 
-	pillage_settlement = {
-		# filter = owned # CleanSlate: Nonfunctional
-		ai_target_filter = owned
-		ai_check_interval = 3
-
-		is_high_prio = yes
-
+	pillage_settlement_2 = {
 		only_independent = yes
-
+		filter = owned
+		ai_target_filter = owned
+		is_high_prio = yes
+		ai_check_interval = 3
+		
 		from_potential = {
-			independent = yes
-			has_dlc = "Horse Lords"
-
+			is_playable = yes
 			OR = {
 				is_nomadic = yes
 				is_tribal = yes
+				trait = cruel
+				trait = impaler
+				trait = aggressive_leader
+				trait = viking
+				trait = pirate
+				trait = ravager
+				trait = seaking
+				trait = sea_queen
+				trait = deceitful
+				trait = arbitrary
+				trait = greedy
+				trait = berserker
+				trait = wroth
 			}
+			NOR = {
+				trait = kind
+				trait = charitable
+				trait = just
+			}
+			has_dlc = "Horse Lords"
 		}
-
+		
 		potential = {
-			holder = FROM
 			NOT = { holding_type = nomad }
-
-			trigger_if = {
-				limit = { holding_type = tribal }
-				FROM = { is_tribal = no }
-			}
-
-			trigger_if = {
-				limit = { FROM = { is_nomadic = no } }
-
+			OR = {
+				FROM = { is_nomadic = yes }
 				location = {
-					num_of_settlements >= 2
+					num_of_settlements = 2
 				}
 			}
-		}
-
-		allow = {
-			holder_scope = {
-				independent = yes
+			OR = {
+				owner = { NOT = { character = FROM } }
+				AND = {
+					FROM = { is_nomadic = yes }
+					location = { NOT = { religion_group = FROM } }
+				}
 			}
-
 			has_siege = no
+			controller = { character = FROM }
+		}
+		
+		allow = {
 			NOT = { has_holding_modifier = recently_burnt_the_land }
-
+			controller = { independent = yes }
+			has_siege = no
 			custom_tooltip = {
 				text = stop_pillaging_custom_tooltip
-
-				NOT = { has_holding_modifier = stop_burning_land }
+				hidden_tooltip = {
+					NOT = { has_holding_modifier = stop_burning_land }
+				}
 			}
 		}
-
+		
 		effect = {
-			hidden_effect = {
-				location = { save_event_target_as = nickname_location }
-
-				FROM = {
-					save_event_target_as = nickname_receiver
-
-					if = {
-						limit = {
-							has_nickname = no
-							is_adult = yes
-							is_incapable = no
-						}
-
-						random_list = {
-							5 = { give_nickname = nick_the_destroyer }
-
-							5 = {
-								trigger = {
-									NOT = { religion = event_target:nickname_location }
-								}
-
-								give_nickname = nick_the_scourge_of_god
-							}
-
-							5 = {
-								trigger = {
-									NOT = { religion = event_target:nickname_location }
-								}
-
-								give_nickname = nick_the_slayer_of_culture
-							}
-
-							5 = { give_nickname = nick_the_terror_of_provincename }
-
-							5 = {
-								trigger = {
-									NOT = { religion = event_target:nickname_location }
-								}
-
-								give_nickname = nick_the_culture_marauder
-							}
-
-							75 = { }
-						}
-					}
-				}
-			}
-
-			if = {
-				limit = { holding_type = tribal }
-
-				FROM = {
-					show_scope_change = no
-
-					wealth = 25
-					population = 150
-				}
-			}
-
-			else = {
-				FROM = {
-					show_scope_change = no
-
-					wealth = 50
-
-					custom_tooltip = {
-						text = gain_tech_custom_tooltip
-
-						random_list = {
-							33 = { military_techpoints = 5 }
-							33 = { economy_techpoints = 5 }
-							33 = { culture_techpoints = 5 }
-						}
-					}
-				}
-			}
-
-			custom_tooltip = {
-				text = PILLAGE_DESTROY_BUILDINGS
-
-				destroy_random_building = THIS
-				destroy_random_building = THIS
-
-				add_holding_modifier = {
-					name = recently_burnt_the_land
-					months = 7
-				}
-			}
-
-			hidden_effect = {
-				location = {
-					add_province_modifier = {
-						name = rampaging_nomads
-						years = 10
-					}
-
-					add_province_modifier = {
-						name = burnt_the_land
-						years = 10
-					}
-				}
-			}
-
-			FROM = {
+			
+			hidden_tooltip = {
+				location = { save_event_target_as = nickname_target }
+				FROM = { save_event_target_as = nickname_receiver }
 				if = {
 					limit = {
-						NAND = {
-							has_character_modifier = pillage_cooldown
-
-							any_demesne_title = {
-								tier = BARON
-								has_holding_modifier = recently_burnt_the_land
-								NOT = { has_holding_modifier = stop_burning_land }
+						controller = { 
+							has_nickname = no
+							is_adult = yes
+							NOT = { trait = incapable }
+						}
+					}
+					random_list = {
+						5 = {
+							controller = { give_nickname = nick_the_destroyer }
+						}
+						5 = {
+							controller = { give_nickname = nick_the_scourge_of_god }
+							modifier = {
+								factor = 0
+								event_target:nickname_target = { religion = FROM }
+							}
+						}
+						5 = {
+							controller = { give_nickname = nick_the_slayer_of_culture }
+							modifier = {
+								factor = 0
+								event_target:nickname_target = { culture = FROM }
+							}
+						}
+						5 = {
+							controller = { give_nickname = nick_the_terror_of_provincename }
+						}
+						5 = {
+							controller = { give_nickname = nick_the_culture_marauder }
+							modifier = {
+								factor = 0
+								event_target:nickname_target = { culture = FROM }
+							}
+						}
+						75 = {}
+					}
+				}
+			}
+			location = {
+				random_list = {
+					15 = {
+						random_list = {
+							33 = { change_random_civ_tech = -1 }
+							34 = { change_random_eco_tech = -1 }
+							33 = { change_random_mil_tech  = -1 }
+						}
+					}
+					85 = {
+					
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { holding_type = tribal } }
+				FROM = {
+					wealth = 100
+				}
+				custom_tooltip = {
+					text = gain_tech_custom_tooltip
+					hidden_tooltip = {
+						FROM = {
+							random_list = {
+								10 = { military_techpoints = 10 }
+								10 = { economy_techpoints = 10 }
+								10 = { culture_techpoints = 10 }
 							}
 						}
 					}
-
-					character_event = {
-						id = HL.4800
-						months = 6
-					}
-
-					add_character_modifier = {
-						name = pillage_cooldown
-						months = 6
-						hidden = yes
+				}
+			}
+			if = {
+				limit = { holding_type = tribal }
+				FROM = { 
+					wealth = 50 
+					population = 150 
+				}
+			}
+			custom_tooltip = {
+				text = "PILLAGE_DESTROY_BUILDINGS"
+				hidden_tooltip = {
+					destroy_random_building = THIS
+					destroy_random_building = THIS
+					destroy_random_building = THIS
+					add_holding_modifier = {
+						modifier = recently_burnt_the_land
+						months = 7
 					}
 				}
 			}
-
-			if = {
-				limit = { num_of_buildings == 0 }
+			
+			location = {
+				random = {
+					chance = 5
+					increase_depopulation_effect = yes
+				}
+			}
+			hidden_tooltip = {
+			
+				location = {
+					add_province_modifier = {
+						modifier = rampaging_nomads
+						years = 10
+					}
+				}
 
 				location = {
-					province_event = {
-						id = HL.4810
-						days = 1
-					}
-
-					province_event = {
-						id = HL.4814
-						days = 2
-						random = 2
+					add_province_modifier = {
+						modifier = burnt_the_land
+						years = 10
 					}
 				}
-
-				destroy_settlement = THIS
+			
+				if = {
+					limit = {
+						OR = {
+							FROM = { 
+								NOT = { has_character_modifier = pillage_cooldown } 
+							}
+							FROM = {
+								NOT = {
+									any_realm_province = {
+										any_province_holding = {
+											owner = { character = FROM }
+											has_holding_modifier = recently_burnt_the_land
+											NOT = { has_holding_modifier = stop_burning_land }
+										}
+									}
+								}
+							}
+						}
+					}
+					FROM = { character_event = { id = HL.4800 days = 180 } }
+					FROM = {
+						add_character_modifier = {
+							modifier = pillage_cooldown
+							hidden = yes
+							months = 5
+						}
+					}
+				}
 			}
+			
+			if = {
+				limit = {
+					ROOT = {
+						NOT = { has_any_building = yes }
+						owner = {
+							character = FROM
+						}
+						NOT = {
+							is_capital = yes
+						}
+					}
+				}
+				hidden_tooltip = {
+					location = {
+						province_event = { id = HL.4810 days = 1 }
+						province_event = { id = HL.4814 days = 2 random = 2 }
+					}
+				}
+				ROOT = {
+					destroy_settlement = THIS
+				}
+			}
+			
 		}
-
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
-
-			trigger = {
-				holding_type = tribal
+			modifier = { 
+				factor = 0.5
+			}
+			modifier = { 
+				factor = 0.1
+				trait = kind
+			}
+			modifier = { 
+				factor = 0.1
+				trait = humble
+			}
+			modifier = { 
+				factor = 0.1
+				trait = just
+			}
+			modifier = { 
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = { 
+				factor = 1.5
+				trait = greedy
+			}
+			modifier = { 
+				factor = 1.5
+				location = {
+					NOT = {
+						religion_group = FROM
+					}
+				}
+				trait = zealous
+			}
+			modifier = { 
+				factor = 0.25
+				location = {
+					religion_group = FROM
+				}
+				trait = zealous
 			}
 		}
 	}
-
-	stop_pillage_settlement = {
-		# filter = owned # CleanSlate: Nonfunctional
-
-		ai = no
-
+	
+	grant_pope_defacto_ownership_catholic = {
+		only_independent = yes
+		filter = realm_owned
+		ai_target_filter = realm_owned
+		ai_check_interval = 48
+		
 		from_potential = {
-			has_dlc = "Horse Lords"
-
+			is_playable = yes
+			OR = {
+				religion = catholic
+				religion = fraticelli
+				religion = miaphysite
+				religion = monophysite
+			}
+			NOT = {
+				has_character_modifier = sisu_change_cooldown
+			}
+		}
+		
+		potential = {
+			holding_type = temple
+			location = {
+				OR = {
+					conditional_tooltip = {
+						trigger = {
+							religion = catholic
+						}
+						religion = catholic
+					}
+					conditional_tooltip = {
+						trigger = {
+							religion = fraticelli
+						}
+						religion = fraticelli
+					}
+					conditional_tooltip = {
+						trigger = {
+							religion = miaphysite
+						}
+						religion = miaphysite
+					}
+					conditional_tooltip = {
+						trigger = {
+							religion = monophysite
+						}
+						religion = monophysite
+					}
+				}
+			}
+			holder_scope = {
+				OR = {
+					character = FROM
+					any_liege = {
+						character = FROM
+					}
+				}
+			}
+		}
+		
+		allow = {
+			FROM = {
+				independent = yes
+				age = 16
+				war = no
+				in_command = no
+				prisoner = no
+				is_incapable = no
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						religion = catholic
+					}
+				}
+				k_papacy = {
+					holder_scope = {
+						grant_title = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						religion = fraticelli
+					}
+				}
+				d_fraticelli = {
+					holder_scope = {
+						grant_title = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						religion = monophysite
+					}
+				}
+				d_monophysite = {
+					holder_scope = {
+						grant_title = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						religion = miaphysite
+					}
+				}
+				d_miaphysite = {
+					holder_scope = {
+						grant_title = ROOT
+					}
+				}
+			}
+			FROM = {
+				add_character_modifier = {
+					modifier = sisu_change_cooldown
+					hidden = yes
+					months = 24
+				}
+				wealth = 400
+				piety = 150
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { 
+				factor = 0.01
+			}
+			modifier = { 
+				factor = 0.5
+			}
+		}
+	}
+	pillage_settlement = {
+		only_independent = yes
+		filter = owned
+		ai_target_filter = owned
+		is_high_prio = yes
+		ai_check_interval = 3
+		
+		from_potential = {
+			is_playable = yes
 			OR = {
 				is_nomadic = yes
 				is_tribal = yes
 			}
+			has_dlc = "Horse Lords"
 		}
-
+		
 		potential = {
-			holder = FROM # filter doesn't seem to be enough
-			has_holding_modifier = recently_burnt_the_land
-
-			trigger_if = {
-				limit = { holding_type = tribal }
+			NOT = { holding_type = nomad }
+			OR = {
+				NOT = { holding_type = tribal }
 				FROM = { is_tribal = no }
 			}
-
-			NOR = {
-				has_holding_modifier = stop_burning_land
-				holding_type = nomad
+			OR = {
+				FROM = { is_nomadic = yes }
+				location = {
+					num_of_settlements = 2
+				}
+			}
+			owner = { character = FROM }
+		}
+		
+		allow = {
+			NOT = { has_holding_modifier = recently_burnt_the_land }
+			owner = { independent = yes }
+			has_siege = no
+			custom_tooltip = {
+				text = stop_pillaging_custom_tooltip
+				hidden_tooltip = {
+					NOT = { has_holding_modifier = stop_burning_land }
+				}
 			}
 		}
+		
+		effect = {
+			
+			hidden_tooltip = {
+				location = { save_event_target_as = nickname_target }
+				FROM = { save_event_target_as = nickname_receiver }
+				if = {
+					limit = {
+						owner = { 
+							has_nickname = no
+							is_adult = yes
+							NOT = { trait = incapable }
+						}
+					}
+					random_list = {
+						5 = {
+							owner = { give_nickname = nick_the_destroyer }
+						}
+						5 = {
+							owner = { give_nickname = nick_the_scourge_of_god }
+							modifier = {
+								factor = 0
+								event_target:nickname_target = { religion = FROM }
+							}
+						}
+						5 = {
+							owner = { give_nickname = nick_the_slayer_of_culture }
+							modifier = {
+								factor = 0
+								event_target:nickname_target = { culture = FROM }
+							}
+						}
+						5 = {
+							owner = { give_nickname = nick_the_terror_of_provincename }
+						}
+						5 = {
+							owner = { give_nickname = nick_the_culture_marauder }
+							modifier = {
+								factor = 0
+								event_target:nickname_target = { culture = FROM }
+							}
+						}
+						75 = {}
+					}
+				}
+			}
+			
+			location = {
+				random_list = {
+					15 = {
+						random_list = {
+							33 = { change_random_civ_tech = -1 }
+							34 = { change_random_eco_tech = -1 }
+							33 = { change_random_mil_tech  = -1 }
+						}
+					}
+					85 = {
+					
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { holding_type = tribal } }
+				FROM = {
+					wealth = 50
+				}
+				custom_tooltip = {
+					text = gain_tech_custom_tooltip
+					hidden_tooltip = {
+						FROM = {
+							random_list = {
+								10 = { military_techpoints = 10 }
+								10 = { economy_techpoints = 10 }
+								10 = { culture_techpoints = 10 }
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = { holding_type = tribal }
+				FROM = { 
+					wealth = 25 
+					population = 150 
+				}
+			}
+			
+			custom_tooltip = {
+				text = "PILLAGE_DESTROY_BUILDINGS"
+				hidden_tooltip = {
+					destroy_random_building = THIS
+					destroy_random_building = THIS
+					add_holding_modifier = {
+						modifier = recently_burnt_the_land
+						months = 7
+					}
+				}
+			}
+			
+			location = {
+				random = {
+					chance = 5
+					increase_depopulation_effect = yes
+				}
+			}
+			hidden_tooltip = {
+			
+				location = {
+					add_province_modifier = {
+						modifier = rampaging_nomads
+						years = 10
+					}
+				}
 
+				location = {
+					add_province_modifier = {
+						modifier = burnt_the_land
+						years = 10
+					}
+				}
+			
+				if = {
+					limit = {
+						OR = {
+							FROM = { 
+								NOT = { has_character_modifier = pillage_cooldown } 
+							}
+							FROM = {
+								NOT = {
+									any_realm_province = {
+										any_province_holding = {
+											owner = { character = FROM }
+											has_holding_modifier = recently_burnt_the_land
+											NOT = { has_holding_modifier = stop_burning_land }
+										}
+									}
+								}
+							}
+						}
+					}
+					FROM = { character_event = { id = HL.4800 days = 180 } }
+					FROM = {
+						add_character_modifier = {
+							modifier = pillage_cooldown
+							hidden = yes
+							months = 6
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = { has_any_building = yes }
+					owner = {
+						character = FROM
+					}
+				}
+				hidden_tooltip = {
+					location = {
+						province_event = { id = HL.4810 days = 1 }
+						province_event = { id = HL.4814 days = 2 random = 2 }
+					}
+				}
+				destroy_settlement = THIS
+			}
+			
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { # Only for tribal holdings
+				factor = 0
+				NOT = { holding_type = tribal }
+			}
+		}
+	}
+	stop_pillage_settlement = {
+		only_playable = yes
+		filter = owned
+		ai_target_filter = owned
+		
+		from_potential = {
+			is_playable = yes
+			OR = {
+				is_nomadic = yes
+				is_tribal = yes
+				trait = cruel
+				trait = impaler
+				trait = wroth
+			}
+			has_dlc = "Horse Lords"
+		}
+		
+		potential = {
+			has_holding_modifier = recently_burnt_the_land
+			NOT = { has_holding_modifier = stop_burning_land }
+			NOT = { holding_type = nomad }
+			owner = { character = FROM }
+		}
+		
 		allow = {
 			has_holding_modifier = recently_burnt_the_land
-		}
-
-		effect = {
-			add_holding_modifier = {
-				name = stop_burning_land
-				years = 1
-				hidden = yes
+			hidden_tooltip = {
+				NOT = { has_holding_modifier = stop_burning_land }
 			}
 		}
-
+		
+		effect = {
+			
+			hidden_tooltip = {
+				add_holding_modifier = {
+					modifier = stop_burning_land
+					hidden = yes
+					years = 1
+				}
+			}
+			
+		}
+		revoke_allowed = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 0
 		}

@@ -15,7 +15,7 @@ nomadic_governments = {
 			muslim_government
 			makhzen_government
 			neoziamet_government
-			
+			ethiopian_imperial_government
 			
 			communal_government
 			

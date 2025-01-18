@@ -1344,6 +1344,10 @@ character_event = {
 		name = EVTOPTA_MNM_8034
 
 		add_friend = event_target:new_friend_far_away_from_home
+					add_alliance = {
+						who = event_target:new_friend_far_away_from_home
+						years = 100
+					}
 	}
 }
 

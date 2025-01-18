@@ -7585,6 +7585,10 @@ character_event = {
 		random = {
 			chance = 20
 			add_friend = event_target:court_physician
+					add_alliance = {
+						who = event_target:court_physician
+						years = 100
+					}
 		}
 
 		any_courtier = {

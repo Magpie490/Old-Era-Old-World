@@ -2600,6 +2600,10 @@ character_event = {
 				}
 
 				add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 
 				character_event = {
 					id = 72026
@@ -2625,6 +2629,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -2675,6 +2683,10 @@ character_event = {
 				}
 
 				add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 
 				character_event = {
 					id = 72028
@@ -2700,6 +2712,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }
@@ -4385,6 +4401,10 @@ character_event = {
 			}
 
 			add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 
 			character_event = {
 				id = 72081
@@ -4409,6 +4429,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }

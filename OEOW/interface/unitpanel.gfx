@@ -293,13 +293,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_unitpanel_specialtroops_bigstrip"
 		textureFile = "gfx\\interface\\unitpanel_specialunits_bigstrip.dds"
-		noOfFrames = 16
+		noOfFrames = 20
 	}
 
 	spriteType = {
 		name = "GFX_unitpanel_unitstrip_small_normal"
 		textureFile = "gfx\\interface\\unitpanel_unitstrip_small.dds"
-		noOfFrames = 16
+		noOfFrames = 20
 	}
 
 	spriteType = {

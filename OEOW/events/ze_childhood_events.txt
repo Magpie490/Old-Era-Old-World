@@ -615,6 +615,10 @@ character_event = {
 
 		set_character_flag = child_haughty_version_1_option_2
 		add_friend = event_target:haughty_events_char_1
+					add_alliance = {
+						who = event_target:haughty_events_char_1
+						years = 100
+					}
 
 		event_target:haughty_events_char_1 = {
 			character_event = { id = ZE.12002 }
@@ -819,6 +823,11 @@ character_event = {
 		}
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
+
 
 		FROM = {
 			clr_character_flag = child_haughty_version_1_option_2
@@ -1591,6 +1600,10 @@ character_event = {
 
 		add_trait = affectionate
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 	}
 
 	option = {
@@ -1599,6 +1612,10 @@ character_event = {
 		trigger = { has_character_flag = child_affectionate_version_1_option_1 }
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			character_event = { id = ZE.12016 }
@@ -1615,6 +1632,10 @@ character_event = {
 
 		add_trait = affectionate
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			character_event = { id = ZE.12016 }
@@ -1627,6 +1648,10 @@ character_event = {
 		trigger = { has_character_flag = child_affectionate_version_2_option_1 }
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		add_character_modifier = {
 			name = good_times
@@ -1694,6 +1719,10 @@ character_event = {
 		}
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			clr_character_flag = child_affectionate_version_1_option_1
@@ -1710,6 +1739,10 @@ character_event = {
 		}
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		add_character_modifier = {
 			name = good_times
@@ -1951,6 +1984,10 @@ character_event = {
 
 		set_character_flag = child_timid_version_2_option_2
 		add_friend = event_target:timid_events_char_1
+					add_alliance = {
+						who = event_target:timid_events_char_1
+						years = 100
+					}
 
 		event_target:timid_events_char_1 = {
 			character_event = { id = ZE.12022 }
@@ -2154,6 +2191,10 @@ character_event = {
 		}
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			clr_character_flag = child_timid_version_2_option_2
@@ -2832,6 +2873,10 @@ character_event = {
 
 		add_trait = rowdy
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		add_character_modifier = {
 			name = good_times
@@ -2852,6 +2897,10 @@ character_event = {
 		}
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		add_character_modifier = {
 			name = good_times
@@ -2951,6 +3000,10 @@ character_event = {
 		}
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			clr_character_flag = child_rowdy_version_2_option_1
@@ -4052,6 +4105,10 @@ character_event = {
 
 			tooltip = {
 				add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 				remove_trait = drunkard
 			}
 
@@ -4249,6 +4306,10 @@ character_event = {
 		}
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		remove_trait = drunkard
 
 		FROM = {
@@ -4559,6 +4620,10 @@ character_event = {
 
 			tooltip = {
 				add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 			}
 
 			character_event = { id = ZE.12062 }
@@ -4746,6 +4811,10 @@ character_event = {
 		}
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			character_event = { id = ZE.12067 } # Clear all flags
@@ -5891,6 +5960,10 @@ character_event = {
 			show_scope_change = no
 
 			add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 			character_event = { id = ZE.12082 }
 		}
 
@@ -6059,6 +6132,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 
 		FROM = {
@@ -8138,6 +8215,10 @@ character_event = {
 			show_scope_change = no
 
 			add_friend = ROOT
+					add_alliance = {
+						who = ROOT
+						years = 100
+					}
 			character_event = { id = ZE.12112 }
 		}
 
@@ -8338,6 +8419,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 
 		FROM = {
@@ -9584,6 +9669,10 @@ character_event = {
 		name = EVTOPTA_ZE_12232 # Answer
 
 		add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 
 		FROM = {
 			clr_character_flag = ZE_12236_add_brooding
@@ -9636,6 +9725,10 @@ character_event = {
 
 		tooltip = {
 			add_friend = FROM
+					add_alliance = {
+						who = FROM
+						years = 100
+					}
 		}
 	}
 }

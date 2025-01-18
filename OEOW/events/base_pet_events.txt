@@ -869,6 +869,10 @@ character_event = {
 		}
 		else = {
 			add_friend = event_target:new_cat_owner
+					add_alliance = {
+						who = event_target:new_cat_owner
+						years = 100
+					}
 		}
 	}
 }
@@ -912,6 +916,7 @@ character_event = {
 			text = EVTOPTA_77853_TOOLTIP
 
 			remove_friend = event_target:new_cat_owner
+			break_alliance = event_target:new_cat_owner
 			remove_lover = event_target:new_cat_owner
 		}
 
@@ -958,6 +963,7 @@ character_event = {
 		if = {
 			limit = { is_friend = event_target:cat_hater }
 			remove_friend = event_target:cat_hater
+			break_alliance = event_target:cat_hater
 		}
 
 		if = {

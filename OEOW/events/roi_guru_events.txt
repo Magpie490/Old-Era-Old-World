@@ -1434,6 +1434,10 @@ character_event = {
 		name = EVTOPTB_RoI_3151
 
 		add_friend = event_target:fake_guru
+					add_alliance = {
+						who = event_target:fake_guru
+						years = 100
+					}
 	}
 }
 

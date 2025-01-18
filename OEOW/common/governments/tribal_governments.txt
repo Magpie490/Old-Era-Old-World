@@ -17,6 +17,7 @@ tribal_governments = {
 			neoziamet_government
 			viceroyal_government
 			
+			ethiopian_imperial_government
 			communal_government
 			
 			
@@ -104,7 +105,7 @@ tribal_governments = {
 			makhzen_government
 			neoziamet_government
 			viceroyal_government
-			
+			ethiopian_imperial_government
 			communal_government
 			
 			
