@@ -28,6 +28,10 @@ spriteTypes = {
 		name = "GFX_centralise_hre"
 		textureFile = "gfx\\interface\\restore_the_hre_OW.dds"
 	}
+	spriteType = {
+		name = "GFX_improve_education_trait"
+		texturefile = "gfx\\interface\\decisions\\learning_reform.dds"
+	}	
 
 	spriteType = {
 		name = "GFX_go_on_hajj"
