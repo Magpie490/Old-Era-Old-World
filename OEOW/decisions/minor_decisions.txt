@@ -90,39 +90,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -235,39 +233,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -403,39 +399,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -537,39 +531,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -1555,39 +1547,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -1806,39 +1796,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -1942,39 +1930,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -2080,39 +2066,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -2577,39 +2561,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -2736,39 +2718,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -2895,39 +2875,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -3071,39 +3049,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -3277,39 +3253,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
@@ -3417,39 +3391,37 @@ decisions = {
 					}
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_0
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_peace = yes
-					set_the_kings_full_peace = yes
+				set_the_kings_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5588
-					months = 3
+					months = 2
 				}
 			}
-			conditional_tooltip = {
-				trigger = { 
+			if = {
+				limit = { 
 					primary_title = {
 						has_law = vassal_wars_law_1
 					}
 					independent = yes
 					is_landed = yes
 				}
-				set_council_malcontent = no
 				primary_title = {
-					set_the_kings_full_peace = yes
+				set_the_kings_full_peace = yes
 				}
 				character_event = {
 					id = cleanup.5589
-					months = 3
+					months = 2
 				}
 			}
 		}
