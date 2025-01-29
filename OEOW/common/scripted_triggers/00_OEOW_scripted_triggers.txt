@@ -18,6 +18,14 @@ neoziamet_government_trigger = {
 		culture_group = byzantine
 		culture_group = south_slavic
 	}
+	NOT = {
+		capital_scope = {
+			OR = {
+				region = world_asia
+				region = world_africa_west
+			}
+		}
+	}
 }
 makhzen_government_trigger = {
 	religion_group = muslim
