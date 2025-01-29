@@ -334,7 +334,14 @@ feudal_governments = {
 				is_government_potential = eastern_feudal
 				is_government_potential = confucian_bureaucracy
 			}
-			
+			NOT = {
+				capital_scope = {
+					OR = {
+						region = world_asia
+						region = world_africa_west
+					}
+				}
+			}
 			isnt_forced_to_theocracy = yes
 			neoziamet_government_trigger = yes
 			is_patrician = no
