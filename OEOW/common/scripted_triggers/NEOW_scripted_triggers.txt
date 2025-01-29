@@ -1239,19 +1239,6 @@ holder_not_confederation_trigger = {
 	}
 }
 
-confederation_title_trigger = {
-	OR = {
-		title = e_german_confederation
-		title = e_karnataka
-		title = k_cyprus_league
-		title = k_kimberlian_confederacy
-		title = e_padania
-		title = e_aegean
-		title = e_kedah
-		title = k_kawthoolei
-		has_title_flag = is_a_confederacy
-	}
-}
 
 uses_mandala_government_trigger = {
 	OR = {
