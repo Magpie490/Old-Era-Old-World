@@ -227,7 +227,7 @@ action_squeeze_peasants_2 = {
 
 	trigger = {
 		any_province_lord = {
-			character = FROM
+			same_realm = FROM
 		}
 		
 		NOT = {
@@ -268,7 +268,7 @@ action_squeeze_peasants_3 = {
 
 	trigger = {
 		any_province_lord = {
-			character = FROM
+			same_realm = FROM
 		}
 		
 		NOT = {
@@ -309,7 +309,7 @@ action_squeeze_peasants_4 = {
 
 	trigger = {
 		any_province_lord = {
-			character = FROM
+			same_realm = FROM
 		}
 		
 		NOT = {
@@ -838,7 +838,7 @@ action_train_troops_2 = {
 
 	trigger = {
 		any_province_lord = {
-			character = FROM
+			same_realm = FROM
 		}
 		NOT = {
 			FROM = {
@@ -909,7 +909,7 @@ action_train_troops_3 = {
 
 	trigger = {
 		any_province_lord = {
-			character = FROM
+			same_realm = FROM
 		}
 		NOT = {
 			FROM = {
@@ -980,7 +980,7 @@ action_train_troops_4 = {
 
 	trigger = {
 		any_province_lord = {
-			character = FROM
+			same_realm = FROM
 		}
 		NOT = {
 			FROM = {
@@ -1038,7 +1038,6 @@ action_train_troops_4 = {
 		AOS.1009
 	}
 }
-
 action_train_troops_nomadic = {
 	attribute = martial
 	manpower_growth = 0.015
@@ -1116,10 +1115,7 @@ action_assist_arrest_2 = {
 
 	trigger = {
 		any_province_lord = {
-			OR = {
-				character = FROM
-				is_liege_or_above = FROM
-			}
+			same_realm = FROM
 		}
 		
 		NOT = {
@@ -1212,10 +1208,7 @@ action_assist_arrest_4 = {
 
 	trigger = {
 		any_province_lord = {
-			OR = {
-				character = FROM
-				is_liege_or_above = FROM
-			}
+			same_realm = FROM
 		}
 		
 		NOT = {
@@ -1249,7 +1242,6 @@ action_assist_arrest_4 = {
 
 	events = { }
 }
-
 action_organize_army = {
 	attribute = martial
 	liege_modifier = organize_army_liege_mod
@@ -1451,10 +1443,16 @@ action_fight_corruption_1 = {
 			OR = {
 				government = eastern_feudal
 				government = chinese_imperial_government
-				government = neoziamet_government
+				government = bhutanese_decayed_government
+				government = bhutanese_restored_government
 				government = roman_imperial_government
 				government = ethiopian_imperial_government
+				government = mandate_heaven
+				government = divan
+				government = neoziamet_government
+				government = oligarchic_republic
 				government = merchant_republic_government
+				government = mandala_government
 			}
 		}
 	}
@@ -1476,10 +1474,16 @@ action_fight_corruption_2 = {
 			OR = {
 				government = eastern_feudal
 				government = chinese_imperial_government
-				government = neoziamet_government
+				government = bhutanese_decayed_government
+				government = bhutanese_restored_government
 				government = roman_imperial_government
 				government = ethiopian_imperial_government
+				government = mandate_heaven
+				government = divan
+				government = neoziamet_government
+				government = oligarchic_republic
 				government = merchant_republic_government
+				government = mandala_government
 			}
 		}
 	}
@@ -1501,10 +1505,16 @@ action_fight_corruption_3 = {
 			OR = {
 				government = eastern_feudal
 				government = chinese_imperial_government
-				government = neoziamet_government
+				government = bhutanese_decayed_government
+				government = bhutanese_restored_government
 				government = roman_imperial_government
 				government = ethiopian_imperial_government
+				government = mandate_heaven
+				government = divan
+				government = neoziamet_government
+				government = oligarchic_republic
 				government = merchant_republic_government
+				government = mandala_government
 			}
 		}
 	}
