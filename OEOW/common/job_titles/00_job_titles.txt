@@ -31,31 +31,42 @@ job_chancellor = {
 	action = action_fabricate_claims
 	action = action_clan_sentiment		# Replaces Fabricate Claims for Nomads
 	action = action_sow_dissent
+	action = action_proclaim_law
 
 	allow = {
 		can_be_chancellor_trigger = yes
 	}
 
 	dismiss_trigger = {
-		show_only_failed_conditions = yes
-
 		FROM = {
 			show_scope_change = no
 
 			# Powerful vassals can't be fired from the council under Full Council Authority
-			OR = {
-				NOT = { has_law = succession_voting_power_1 }
+			trigger_if = {
+				limit = {
+					has_law = succession_voting_power_1
+					ROOT = { is_powerful_vassal = yes }
+				}
 
-				ROOT = {
-					show_scope_change = no
+				OR = {
+					has_law = succession_voting_power_0
+					ROOT = {
+						show_scope_change = no
 
-					is_powerful_vassal = no
+						is_powerful_vassal = no
+					}
 				}
 			}
 
-			custom_tooltip = {
-				text = not_swapping_tt
-				NOT = { has_character_flag = swapping_councillors }
+			trigger_if = {
+				limit = {
+					has_character_flag = swapping_councillors
+				}
+				custom_tooltip = {
+					text = not_swapping_tt
+
+					NOT = { has_character_flag = swapping_councillors }
+				}
 			}
 		}
 	}
@@ -67,14 +78,18 @@ job_chancellor = {
 		if = {
 			limit = {
 				FROM = {
-					NOT = { has_character_flag = swapping_councillors }
+					NOT = {
+						has_character_flag = swapping_councillors
+					}
 				}
 
-				is_incapable = no
+				NOR = {
+					is_incapable = yes
+					trait = sick_incapable
+				}
 			}
-
-			opinion = { who = FROM name = opinion_fired_from_council }
-			opinion = { who = FROM name = opinion_recently_fired }
+			opinion = { who = FROM modifier = opinion_fired_from_council }
+			opinion = { who = FROM modifier = opinion_recently_fired }
 		}
 
 		if = {
@@ -91,7 +106,7 @@ job_chancellor = {
 
 		if = {
 			limit = {
-				practical_age < 65
+				age < 65
 				health >= 3
 				is_sick_or_injured_trigger = no
 				can_be_councilmember_king_trigger = yes
@@ -99,8 +114,8 @@ job_chancellor = {
 
 			FROM = {
 				opinion = {
-					name = opinion_resigned_from_council
 					who = ROOT
+					modifier = opinion_resigned_from_council
 				}
 			}
 		}
@@ -131,25 +146,35 @@ job_marshal = {
 	}
 
 	dismiss_trigger = {
-		show_only_failed_conditions = yes
-
 		FROM = {
 			show_scope_change = no
 
 			# Powerful vassals can't be fired from the council under Full Council Authority
-			OR = {
-				NOT = { has_law = succession_voting_power_1 }
+			trigger_if = {
+				limit = {
+					has_law = succession_voting_power_1
+					ROOT = { is_powerful_vassal = yes }
+				}
 
-				ROOT = {
-					show_scope_change = no
+				OR = {
+					has_law = succession_voting_power_0
+					ROOT = {
+						show_scope_change = no
 
-					is_powerful_vassal = no
+						is_powerful_vassal = no
+					}
 				}
 			}
 
-			custom_tooltip = {
-				text = not_swapping_tt
-				NOT = { has_character_flag = swapping_councillors }
+			trigger_if = {
+				limit = {
+					has_character_flag = swapping_councillors
+				}
+				custom_tooltip = {
+					text = not_swapping_tt
+
+					NOT = { has_character_flag = swapping_councillors }
+				}
 			}
 		}
 	}
@@ -158,16 +183,17 @@ job_marshal = {
 		if = {
 			limit = {
 				FROM = {
-					government = roman_imperial_government
+					has_law = succ_byzantine_elective
 
 					any_courtier_or_vassal = {
+						NOT = { character = ROOT }
+
 						# Check if any other vassal or courtier has higher martial than current character
 						attribute_diff = {
-							character = ROOT
+							character = PREVPREV
 							attribute = martial
 							value > 5
 						}
-
 						# Check that said vassal or courtier would be a viable marshal
 						can_be_marshal_trigger = yes
 					}
@@ -175,8 +201,9 @@ job_marshal = {
 			}
 
 			if = {
-				limit = { martial < 2 }
-
+				limit = {
+					martial < 2
+				}
 				FROM = {
 					change_variable = {
 						which = byzantine_credibility_appointed_sycophant
@@ -185,8 +212,9 @@ job_marshal = {
 				}
 			}
 			else_if = {
-				limit = { martial < 4 }
-
+				limit = {
+					martial < 4
+				}
 				FROM = {
 					change_variable = {
 						which = byzantine_credibility_appointed_sycophant
@@ -195,8 +223,9 @@ job_marshal = {
 				}
 			}
 			else_if = {
-				limit = { martial < 6 }
-
+				limit = {
+					martial < 6
+				}
 				FROM = {
 					change_variable = {
 						which = byzantine_credibility_appointed_sycophant
@@ -205,8 +234,9 @@ job_marshal = {
 				}
 			}
 			else_if = {
-				limit = { martial < 8 }
-
+				limit = {
+					martial < 8
+				}
 				FROM = {
 					change_variable = {
 						which = byzantine_credibility_appointed_sycophant
@@ -215,8 +245,9 @@ job_marshal = {
 				}
 			}
 			else_if = {
-				limit = { martial < 10 }
-
+				limit = {
+					martial < 10
+				}
 				FROM = {
 					change_variable = {
 						which = byzantine_credibility_appointed_sycophant
@@ -225,8 +256,9 @@ job_marshal = {
 				}
 			}
 			else_if = {
-				limit = { martial < 12 }
-
+				limit = {
+					martial < 12
+				}
 				FROM = {
 					change_variable = {
 						which = byzantine_credibility_appointed_sycophant
@@ -241,19 +273,19 @@ job_marshal = {
 		if = {
 			limit = {
 				FROM = {
-					NOT = { has_character_flag = swapping_councillors }
+					NOT = {
+						has_character_flag = swapping_councillors
+					}
 				}
 
-				is_incapable = no
+				NOR = {
+					is_incapable = yes
+					trait = sick_incapable
+				}
 			}
-
-			opinion = { who = FROM name = opinion_fired_from_council }
-			opinion = { who = FROM name = opinion_recently_fired }
-
-			character_event = {
-				id = HFP.20806 # Good Byzantine Marshal was discharged
-				days = 1
-			}
+			opinion = { who = FROM modifier = opinion_fired_from_council }
+			opinion = { who = FROM modifier = opinion_recently_fired }
+			character_event = { id = HFP.20806 days = 1 } # Good Byzantine Marshal was discharged
 		}
 
 		if = {
@@ -270,7 +302,7 @@ job_marshal = {
 
 		if = {
 			limit = {
-				practical_age < 65
+				age < 65
 				health >= 3
 				is_sick_or_injured_trigger = no
 				can_be_councilmember_king_trigger = yes
@@ -278,8 +310,8 @@ job_marshal = {
 
 			FROM = {
 				opinion = {
-					name = opinion_resigned_from_council
 					who = ROOT
+					modifier = opinion_resigned_from_council
 				}
 			}
 		}
@@ -311,25 +343,35 @@ job_treasurer = {
 	}
 
 	dismiss_trigger = {
-		show_only_failed_conditions = yes
-
 		FROM = {
 			show_scope_change = no
 
 			# Powerful vassals can't be fired from the council under Full Council Authority
-			OR = {
-				NOT = { has_law = succession_voting_power_1 }
+			trigger_if = {
+				limit = {
+					has_law = succession_voting_power_1
+					ROOT = { is_powerful_vassal = yes }
+				}
 
-				ROOT = {
-					show_scope_change = no
+				OR = {
+					has_law = succession_voting_power_0
+					ROOT = {
+						show_scope_change = no
 
-					is_powerful_vassal = no
+						is_powerful_vassal = no
+					}
 				}
 			}
 
-			custom_tooltip = {
-				text = not_swapping_tt
-				NOT = { has_character_flag = swapping_councillors }
+			trigger_if = {
+				limit = {
+					has_character_flag = swapping_councillors
+				}
+				custom_tooltip = {
+					text = not_swapping_tt
+
+					NOT = { has_character_flag = swapping_councillors }
+				}
 			}
 		}
 	}
@@ -341,16 +383,19 @@ job_treasurer = {
 		if = {
 			limit = {
 				FROM = {
-					NOT = { has_character_flag = swapping_councillors }
+					NOT = {
+						has_character_flag = swapping_councillors
+					}
 				}
 
-				is_incapable = no
+				NOR = {
+					is_incapable = yes
+					trait = sick_incapable
+				}
 			}
-
-			opinion = { who = FROM name = opinion_fired_from_council }
-			opinion = { who = FROM name = opinion_recently_fired }
+			opinion = { who = FROM modifier = opinion_fired_from_council }
+			opinion = { who = FROM modifier = opinion_recently_fired }
 		}
-
 
 		if = {
 			limit = { has_character_flag = relic_hunter }
@@ -366,7 +411,7 @@ job_treasurer = {
 
 		if = {
 			limit = {
-				practical_age < 65
+				age < 65
 				health >= 3
 				is_sick_or_injured_trigger = no
 				can_be_councilmember_king_trigger = yes
@@ -374,8 +419,8 @@ job_treasurer = {
 
 			FROM = {
 				opinion = {
-					name = opinion_resigned_from_council
 					who = ROOT
+					modifier = opinion_resigned_from_council
 				}
 			}
 		}
@@ -405,25 +450,35 @@ job_spymaster = {
 	}
 
 	dismiss_trigger = {
-		show_only_failed_conditions = yes
-
 		FROM = {
 			show_scope_change = no
 
 			# Powerful vassals can't be fired from the council under Full Council Authority
-			OR = {
-				NOT = { has_law = succession_voting_power_1 }
+			trigger_if = {
+				limit = {
+					has_law = succession_voting_power_1
+					ROOT = { is_powerful_vassal = yes }
+				}
 
-				ROOT = {
-					show_scope_change = no
+				OR = {
+					has_law = succession_voting_power_0
+					ROOT = {
+						show_scope_change = no
 
-					is_powerful_vassal = no
+						is_powerful_vassal = no
+					}
 				}
 			}
 
-			custom_tooltip = {
-				text = not_swapping_tt
-				NOT = { has_character_flag = swapping_councillors }
+			trigger_if = {
+				limit = {
+					has_character_flag = swapping_councillors
+				}
+				custom_tooltip = {
+					text = not_swapping_tt
+
+					NOT = { has_character_flag = swapping_councillors }
+				}
 			}
 		}
 	}
@@ -435,14 +490,18 @@ job_spymaster = {
 		if = {
 			limit = {
 				FROM = {
-					NOT = { has_character_flag = swapping_councillors }
+					NOT = {
+						has_character_flag = swapping_councillors
+					}
 				}
 
-				is_incapable = no
+				NOR = {
+					is_incapable = yes
+					trait = sick_incapable
+				}
 			}
-
-			opinion = { who = FROM name = opinion_fired_from_council }
-			opinion = { who = FROM name = opinion_recently_fired }
+			opinion = { who = FROM modifier = opinion_fired_from_council }
+			opinion = { who = FROM modifier = opinion_recently_fired }
 		}
 
 		if = {
@@ -459,7 +518,7 @@ job_spymaster = {
 
 		if = {
 			limit = {
-				practical_age < 65
+				age < 65
 				health >= 3
 				is_sick_or_injured_trigger = no
 				can_be_councilmember_king_trigger = yes
@@ -467,8 +526,8 @@ job_spymaster = {
 
 			FROM = {
 				opinion = {
-					name = opinion_resigned_from_council
 					who = ROOT
+					modifier = opinion_resigned_from_council
 				}
 			}
 		}
@@ -499,31 +558,46 @@ job_spiritual = {
 	}
 
 	dismiss_trigger = {
-		show_only_failed_conditions = yes
-
 		FROM = {
 			show_scope_change = no
 
 			# Muslims can't fire Court Imams sharing their religion
-			NAND = {
-				religion_group = muslim
-				religion = ROOT
-			}
-
-			# Powerful vassals can't be fired from the council under Full Council Authority
-			OR = {
-				NOT = { has_law = succession_voting_power_1 }
+			trigger_if = {
+				limit = { religion_group = muslim }
 
 				ROOT = {
 					show_scope_change = no
 
-					is_powerful_vassal = no
+					NOT = { religion = FROM }
 				}
 			}
 
-			custom_tooltip = {
-				text = not_swapping_tt
-				NOT = { has_character_flag = swapping_councillors }
+			# Powerful vassals can't be fired from the council under Full Council Authority
+			trigger_if = {
+				limit = {
+					has_law = succession_voting_power_1
+					ROOT = { is_powerful_vassal = yes }
+				}
+
+				OR = {
+					has_law = succession_voting_power_0
+					ROOT = {
+						show_scope_change = no
+
+						is_powerful_vassal = no
+					}
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					has_character_flag = swapping_councillors
+				}
+				custom_tooltip = {
+					text = not_swapping_tt
+
+					NOT = { has_character_flag = swapping_councillors }
+				}
 			}
 		}
 	}
@@ -535,14 +609,18 @@ job_spiritual = {
 		if = {
 			limit = {
 				FROM = {
-					NOT = { has_character_flag = swapping_councillors }
+					NOT = {
+						has_character_flag = swapping_councillors
+					}
 				}
 
-				is_incapable = no
+				NOR = {
+					is_incapable = yes
+					trait = sick_incapable
+				}
 			}
-
-			opinion = { who = FROM name = opinion_fired_from_council }
-			opinion = { who = FROM name = opinion_recently_fired }
+			opinion = { who = FROM modifier = opinion_fired_from_council }
+			opinion = { who = FROM modifier = opinion_recently_fired }
 		}
 
 		if = {
@@ -559,7 +637,7 @@ job_spiritual = {
 
 		if = {
 			limit = {
-				practical_age < 65
+				age < 65
 				health >= 3
 				is_sick_or_injured_trigger = no
 				can_be_councilmember_king_trigger = yes
@@ -567,8 +645,8 @@ job_spiritual = {
 
 			FROM = {
 				opinion = {
-					name = opinion_resigned_from_council
 					who = ROOT
+					modifier = opinion_resigned_from_council
 				}
 			}
 		}
@@ -576,7 +654,6 @@ job_spiritual = {
 }
 
 job_first_magistrate = {
-	is_treasurer = yes
 	lift_fow = yes
 	lift_neighbor_fow = yes
 	attribute = stewardship
@@ -692,7 +769,6 @@ job_first_magistrate = {
 }
 
 job_second_magistrate = {
-	is_treasurer = yes
 	lift_fow = yes
 	lift_neighbor_fow = yes
 	attribute = stewardship
@@ -808,7 +884,6 @@ job_second_magistrate = {
 }
 
 job_third_magistrate = {
-	is_treasurer = yes
 	lift_fow = yes
 	lift_neighbor_fow = yes
 	attribute = stewardship
