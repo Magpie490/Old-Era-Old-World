@@ -69,6 +69,11 @@ targeted_decisions = {
 			trigger_else = {
 				FROM = { NOT = { has_religion_feature = religion_matriarchal } }
 			}
+			NOR = {
+				trait = dog
+				trait = cat
+				trait = horse
+			}
 		}
 
 		allow = {
