@@ -671,17 +671,18 @@ job_first_magistrate = {
 	
 	allow = {
 		can_be_treasurer_trigger = yes
-		FROM = {
-			OR = {
-				tier = EMPEROR
-				tier = KING
-			}
-			NOR ={
-				is_tribal = yes
-				is_nomadic = yes
-			}
-			independent = yes
-		}
+#		FROM = {
+#			OR = {
+#				tier = EMPEROR
+#				tier = KING
+#				government = oligarchic_republic
+#			}
+#			NOR ={
+#				is_tribal = yes
+#				is_nomadic = yes
+#			}
+#			independent = yes
+#		}
 	}
 
 	dismiss_trigger = {
@@ -787,17 +788,18 @@ job_second_magistrate = {
 	
 	allow = {
 		can_be_treasurer_trigger = yes
-		FROM = {
-			OR = {
-				tier = EMPEROR
-				tier = KING
-			}
-			NOR ={
-				is_tribal = yes
-				is_nomadic = yes
-			}
-			independent = yes
-		}
+#		FROM = {
+#			OR = {
+#				tier = EMPEROR
+#				tier = KING
+#				government = oligarchic_republic
+#			}
+#			NOR ={
+#				is_tribal = yes
+#				is_nomadic = yes
+#			}
+#			independent = yes
+#		}
 	}
 
 	dismiss_trigger = {
@@ -903,17 +905,18 @@ job_third_magistrate = {
 	
 	allow = {
 		can_be_treasurer_trigger = yes
-		FROM = {
-			OR = {
-				tier = EMPEROR
-				tier = KING
-			}
-			NOR ={
-				is_tribal = yes
-				is_nomadic = yes
-			}
-			independent = yes
-		}
+#		FROM = {
+#			OR = {
+#				tier = EMPEROR
+#				tier = KING
+#				government = oligarchic_republic
+#			}
+#			NOR ={
+#				is_tribal = yes
+#				is_nomadic = yes
+#			}
+#			independent = yes
+#		}
 	}
 
 	dismiss_trigger = {
