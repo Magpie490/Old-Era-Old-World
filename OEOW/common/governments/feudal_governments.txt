@@ -42,7 +42,7 @@ feudal_governments = {
 			viceroyal_government
 		}
 		potential = {		
-			
+			isnt_forced_to_theocracy = yes
 			NOR = {
 				is_government_potential = roman_imperial_government
 				is_government_potential = ethiopian_imperial_government
@@ -56,12 +56,9 @@ feudal_governments = {
 				is_government_potential = eastern_feudal
 				is_government_potential = confucian_bureaucracy
 			}
-			
-			isnt_forced_to_theocracy = yes
 			makhzen_government_trigger = no
 			neoziamet_government_trigger = no
 			iqta_religion_trigger = no
-			
 			is_patrician = no
 		}
 		
@@ -73,7 +70,7 @@ feudal_governments = {
 			city_vassal_tax_modifier = 0.05
 			tradevalue = 5
 			city_levy_size = 0.05
-			city_vassal_vassal_max_levy = 0.05
+			city_vassal_max_levy = 0.05
 		}
 		
 		dukes_called_kings = yes
@@ -148,11 +145,9 @@ feudal_governments = {
 				is_government_potential = eastern_feudal
 				is_government_potential = confucian_bureaucracy
 			}
-			
 			isnt_forced_to_theocracy = yes
 			iqta_religion_trigger = yes
 			is_patrician = no
-			
 		}
 		
 		color = { 10 138 57 }
@@ -514,7 +509,7 @@ feudal_governments = {
 		}
 		frame_suffix = "_theocraticfeudal"
 		potential = {
-			
+			isnt_forced_to_theocracy = yes
 			NOR = {
 				is_government_potential = roman_imperial_government
 				is_government_potential = ethiopian_imperial_government
@@ -526,8 +521,8 @@ feudal_governments = {
 				is_government_potential = eastern_feudal
 				is_government_potential = confucian_bureaucracy
 			}
-			isnt_forced_to_theocracy = yes
 			uses_theocratic_feudal = yes
+			higher_tier_than = BARON
 			is_patrician = no
 			
 		}
@@ -537,6 +532,7 @@ feudal_governments = {
 		uses_piety_for_law_change = yes
 		dukes_called_kings = yes
 		barons_need_dynasty = yes
+		uses_decadence = yes
 
 		can_build_tribal = no
 		
@@ -1041,6 +1037,7 @@ feudal_governments = {
 		}
 		capital_move_delay = 2000
 		
+		commander_limit = 4
 		can_usurp_kingdoms_and_empires = no
 		can_imprison_without_reason = no
 		can_revoke_without_reason = no
