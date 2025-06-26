@@ -70,7 +70,7 @@ byzantine = {
 			Ishkhan_Ishkhan Ivane_John
 			Kapriel_Gabriel Khachik Khosrov_Khosrau
 			Levon_Leo
-			Malkhas_Malkhas Mamigon Manuel_Manuel Margos_Mark Melek Mihrdat_Mithridates Mikayel_Michael Mleh Mushegh Mushel Mzhezh
+			Malkhas_Malkhas Mamigon Manuel_Emmanuel Margos_Mark Melek Mihrdat_Mithridates Mikayel_Michael Mleh Mushegh Mushel Mzhezh
 			Nerseh_Narses
 			Oshin
 			Roupen_Reuben
@@ -111,20 +111,20 @@ byzantine = {
 		color = { 0.8 0.3 0.8 }
 
 		male_names = {
-			Adrianos_Adrian Akakios_Acacius Alexandros_Alexander Alexios_Alexis Anastasios_Anastasius Anatolios Andreas_Andrew Andronikos_Andronicus Anthemios Anthimos Antiochos Antonios_Antonius Apollonios Arsenios Artemios Athanasios_Athanasius
-			Bardas Bartholomaios_Bartolomeus Basileios_Basil Belisarios_Belisarius Boethios Bosporios
+			Adrianos_Adrian Aetios_Aetius Akakios_Acacius Alexandros_Alexander Alexios_Alexis Anastasios_Anastasius Anatolios_Anatolius Andreas_Andrew Andronikos_Andronicus Anthemios_Anthemius Anthimos_Anthimus Antiochos_Antiochus Antonios_Antonius Apollonios_Apollonius Arsenios_Arsenius Artemios_Artemius Athanasios_Athanasius
+			Bardas Bartholomaios_Bartolomeus Basileios_Basil Belisarios_Belisarius Boethios_Boethius Bosporios_Bosporius
 			Christophoros_Christopher Chrysanthos Chrysogonos
 			Damianos_Damian Daniel_Daniel David_David Demetrios_Demetrius Diogenes Dionysios_Dionysus Dorotheos
 			Eirenaios Eudoxios Eustratios Eugenios_Eugene Euphemios Eusebios_Eusebius Eustathios_Eustace Evangelos
 			Gabriel_Gabriel Gennadios_Gennadius Georgios_George Gerasimos Germanos_Germanus Gregoras_Gregory Gregorios_Gregory
-			Hektorios_Hector Helias_Elijah Herakleios_Heracles Hierotheos Himerios Hippolytos_Hippolytus Hypatios
-			Iakobos_Jacob Ignatios_Ignatius Innokentios_Innocent Ioannes_John Ioannikios Iordanes_Jordan Ioseph_Joseph Isaakios_Isaac Isaias_Isaiah Isidoros_Isidoros Ioulianos_Julian Ioustinianos_Justinian Ioustinos_Justin
-			Kaisarios_Caesar Kallinikos Kallistos_Callistus Komitas Konstantinos_Constantine Konstantios_Constantius Konstas_Constans Kosmas_Cosmas Kyriakos_Cyriacus Kyrillos_Cyril Kyros
+			Hektorios_Hector Helias_Elijah Herakleios_Heracles Hierotheos Himerios_Himerius Hippolytos_Hippolytus Hypatios_Hypatius
+			Iakobos_Jacob Ignatios_Ignatius Innokentios_Innocent Ioannes_John Ioannikios Iordanes_Jordan Ioseph_Joseph Isaakios_Isaac Isaias_Isaiah Isidoros_Isidore Ioulianos_Julian Ioustinianos_Justinian Ioustinos_Justin
+			Kaisarios_Caesar Kallinikos_Callinicus Kallistos_Callistus Komitas Konstantinos_Constantine Konstantios_Constantius Konstas_Constans Kosmas_Cosmas Kyriakos_Cyriacus Kyrillos_Cyril Kyros_Cyrus
 			Laurentios_Laurence Lazaros_Lazarus Leon_Leo Leontios_Leontius Loukas_Luke
-			Makarios Manuel Markos_Mark Matthaios_Matthew Maurikios_Maurice Maximos_Maximus Megistos_Magnus Meletios Methodios Michael_Michael Narses
-			Neophytos Nikephoros_Nikephoros Niketas Nikodemos Nikolaos_Nicholas Niphon
+			Makarios_Macarius Manuel_Emmanuel Markos_Mark Matthaios_Matthew Maurikios_Maurice Maximos_Maximus Megistos_Magnus Meletios Methodios_Mehtodius Michael_Michael 
+			Narses Neophytos_Neophytus Nikephoros_Nicephorus Niketas Nikodemos_Nicodemus Nikolaos_Nicholas Niphon
 			Orestes
-			Pamphilios Pankratios_Pancras Pantoleon Paschalis_Pascal Pavlos_Paul Pelagios_Pelagius Petros_Peter Philaretos Philippos_Philip Philotheos Phokas Photios Polykarpos Porphyrios Prokopios_Procopius Pyrros
+			Pamphilios Pankratios_Pancras Pantoleon Paschalis_Pascal Pavlos_Paul Pelagios_Pelagius Petros_Peter Philaretos Philippos_Philip Philotheos Phokas Photios_Photius Polykarpos Porphyrios_Porphyrius Prokopios_Procopius Pyrros_Pyrrhus
 			Raphail_Raphael Romanos_Roman
 			Sabas Samuel_Samuel Serapion_Seraphin Sebastianos_Sebastian Sergios_Sergius Stephanos_Stephen Staurakios Symeon_Simon Symmachos_Symmachus
 			Theocharistos Theodoros_Theodore Theodosios_Theodosios Theodotos_Theodat Theodoulos Theoktistos Theophanes Theophilos Theophylaktos Thomas_Thomas  Tiberios_Tiberius Traianos_Trajan Timotheos_Timothy Tryphon
@@ -328,7 +328,7 @@ byzantine = {
 
 		male_names = {
 			Aaron_Aaron Abanoub Abderahman_Abderrahman Abianos_Abijah Abisalom Ablarion Abraam_Abraham Agathon_Agathos Agathonikos_Agathonikos Agathos_Agathos
-			Ahmod Aiai Aha Akhom Amon Amakhte An Andronicus Androus_Andrew Anthinos_Anthimos Apanoub Apahour Apamon Apas Aretee Arsenios_Arsenios Ashraf_Ashraf Athanasios_Athanasius
+			Ahmod Aiai Aha Akhom Amon Amakhte An Andronicus Androus_Andrew Anthinos_Anthimos Apanoub Apahour Apamon Apas Aretee Arsenios_Arsenius Ashraf_Ashraf Athanasios_Athanasius
 			Beet Bertouet Biktor_Victor Binyamin_Benjamin Bishoi_Bishara Bolis_Paul Boutros_Peter
 			Cosmas_Cosmos
 			Damianos_Damian Danyal_Daniel Da’oud_David
