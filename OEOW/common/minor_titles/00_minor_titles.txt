@@ -307,7 +307,7 @@ title_commander = {
 	allowed_to_hold = {
 		trigger_if = {
 			limit = {
-				NOT = {	has_character_flag = special_marshal }
+				NOT = { has_character_flag = special_marshal }
 			}
 
 			is_adult = yes
@@ -327,6 +327,7 @@ title_commander = {
 			}
 		}
 
+		mercenary = no
 		prisoner = no
 		is_incapable = no
 		is_inaccessible_trigger = no
@@ -1037,7 +1038,6 @@ title_paramount_knight = {
 
 # Byzantine Titles
 title_despot = {
-	is_high_prio = yes
 	counts_as_purple_born = yes
 	is_unique = yes
 	message = yes
@@ -3964,7 +3964,7 @@ title_councilmember_king = {
 	retire_effect = {
 		if = {
 			limit = {
-				age < 65
+				practical_age < 65
 				health >= 3
 				is_sick_or_injured_trigger = no
 				can_be_councilmember_king_trigger = yes
@@ -4055,10 +4055,10 @@ title_councilmember_emperor = {
 	retire_effect = {
 		if = {
 			limit = {
-				age < 65
+				practical_age < 65
 				health >= 3
 				is_sick_or_injured_trigger = no
-				can_be_councilmember_king_trigger = yes
+				can_be_councilmember_emperor_trigger = yes
 			}
 
 			FROM = {
